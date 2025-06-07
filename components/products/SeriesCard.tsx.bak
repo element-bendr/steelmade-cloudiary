@@ -1,0 +1,55 @@
+import React from "react"
+import Image from "next/image"
+import Link from "next/link"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../../components/ui/card"
+import { Badge } from "../../components/ui/badge"
+import { Button } from "../../components/ui/button"
+import { ArrowRight } from "lucide-react"
+import { SeriesMetadata } from "@/types"
+
+interface SeriesCardProps {
+  series: SeriesMetadata
+  productType: string
+  seriesId: string
+}
+
+export function SeriesCard({ series, productType, seriesId }: SeriesCardProps) {
+  return (
+    <Card className="morphism-card group flex flex-col overflow-hidden transition-all duration-300 hover:shadow-morphism-lg">
+      <div className="relative aspect-video overflow-hidden rounded-t-lg before:absolute before:inset-0 before:bg-gradient-morphism before:opacity-0 before:transition-opacity group-hover:before:opacity-30">
+        <Image
+          src={series.coverImage}
+          alt={series.title}
+          fill
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
+          sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+        />
+      </div>
+      <CardHeader className="pb-2">
+        <CardTitle className="text-2xl font-semibold text-text">{series.title}</CardTitle>
+        <CardDescription className="text-text-muted leading-relaxed">{series.description}</CardDescription>
+      </CardHeader>
+      <CardContent className="flex-grow">
+        <div className="flex flex-wrap gap-2">
+        {series.features.map((feature) => (
+            <Badge 
+              key={feature} 
+              variant="secondary" 
+              className="morphism-surface bg-white/50 text-text-muted transition-all duration-300 hover:bg-white/70 hover:shadow-morphism"
+            >
+              {feature}
+            </Badge>
+          ))}
+        </div>
+      </CardContent>
+      <CardFooter>
+        <Link href={`/${productType}/${seriesId}`} className="w-full">
+          <Button className="morphism-button w-full gap-2 transition-all duration-300 hover:shadow-morphism-lg hover:bg-accent-light">
+            Learn More
+            <ArrowRight className="h-4 w-4" />
+          </Button>
+        </Link>
+      </CardFooter>
+    </Card>
+  )
+}

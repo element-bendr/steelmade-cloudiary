@@ -1,0 +1,242 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Consolidate Product Series Pages and Centralize Logic",
+      "description": "Consolidate product series page components to reduce duplication and improve maintainability. Implement a dynamic route for product series pages and centralize product fetching logic in helper functions. Ensure all components utilize the OptimizedCloudinaryImage component for image handling.",
+      "details": "",
+      "testStrategy": "",
+      "status": "pending",
+      "dependencies": [],
+      "priority": "medium",
+      "subtasks": [
+        {
+          "id": 1.1,
+          "title": "Document and Standardize Product Variant Rendering",
+          "description": "Analyze how product variants (colors, configurations, etc.) are currently displayed on product detail pages. Create documentation for the variant rendering approach and implement a standardized component that can be reused across all product types. Ensure variant selection uses accessible UI controls and displays variant-specific images from Cloudinary.",
+          "status": "pending"
+        },
+        {
+          "id": 1.2,
+          "title": "Centralize Product Fetching Logic in Helper Functions",
+          "description": "Create centralized helper functions for product data retrieval to eliminate code duplication across pages. Implement utility functions to retrieve products by category, series, or ID, and standardize error handling for missing products. Document the API for these helper functions and ensure they're used consistently throughout the application.",
+          "status": "pending"
+        },
+        {
+          "id": 1.3,
+          "title": "Implement Dynamic Routes for Product Series Pages",
+          "description": "Replace individual series page files with a dynamic route that handles all product series. Create a dynamic route at app/[categoryId]/[seriesId]/page.tsx that can render any product series based on URL parameters. Ensure the implementation handles all existing product series without visual or functional changes.",
+          "status": "pending"
+        },
+        {
+          "id": 1.4,
+          "title": "Display Selected Variant Name Next to Contact Us Button",
+          "description": "Add a text label next to the 'Contact Us' button to display the selected variant name on product detail pages. Ensure the label updates dynamically based on the selected variant and is styled appropriately for visibility.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Identify the contact button component in product detail pages\n2. Modify the component to accept and display the selected variant name\n3. Update the state management to track the currently selected variant\n4. Style the variant name label to be visually connected to the Contact Us button\n5. Ensure the label updates dynamically when a different variant is selected\n6. Add conditional rendering to hide the label when no variant is selected\n7. Make sure the variant name is included in any contact form or email template\n\n## Expected UI\n- The variant name should appear in a subtle but visible style next to the Contact Us button\n- Format: \"Selected: [Variant Name]\" or simply \"[Variant Name]\"\n- When changing variants, the text should update immediately\n\n## Accessibility Considerations\n- Ensure proper color contrast for the variant label text\n- Consider adding an aria-label to improve screen reader experience",
+          "dependencies": [1.1]
+        },
+        {
+          "id": 2.4,
+          "title": "Implement Contact Button with Variant Display",
+          "description": "Implement the ContactButtonWithVariant component to display the selected variant name next to the Contact Us button. Ensure it receives the selected variant as a prop and updates dynamically. Add accessibility features for screen readers.",
+          "details": "",
+          "status": "pending",
+          "dependencies": [1.1, 1.4],
+          "parentTaskId": 1
+        },
+        {
+          "id": 2.5,
+          "title": "Integrate ContactButtonWithVariant in Product Detail Pages",
+          "description": "Update all product detail pages to use the new ContactButtonWithVariant component. Ensure the variant selection state is properly passed to the component and that it updates correctly when variants are selected.",
+          "details": "## Implementation Steps\n\n1. Identify all product detail page components that use a contact button\n2. Replace the existing contact button with the ContactButtonWithVariant component\n3. Ensure the current variant selection state is passed to the component\n4. Verify that the variant name updates correctly when different variants are selected\n5. Test on mobile and desktop to ensure responsive behavior works correctly\n\n## Expected Outcome\n- All product detail pages should display the selected variant name next to the Contact Us button\n- The variant name should update in real-time when the user selects different variants\n- The layout should be responsive, stacking on mobile and side-by-side on desktop",
+          "status": "pending",
+          "dependencies": [2.4],
+          "parentTaskId": 1
+        },
+        {
+          "id": 2.6,
+          "title": "Fix Variant Data Rendering in Product Detail Pages",
+          "description": "Address the mismatch between variant data structure in the product catalog and how it's accessed in components. Ensure that variant information is properly displayed on product pages.",
+          "status": "pending",
+          "details": "## Issue\n\nThe variant data in the product catalog uses properties like `variantId` and `variantName`, but components like `ContactButtonWithVariant` expect properties named `id` and `name`. This mismatch causes variant data not to render correctly.\n\n## Implementation Steps\n\n1. Examine all product detail page components that use variant data\n2. Update the components to use the correct property names (`variantId` instead of `id`, `variantName` instead of `name`), or\n3. Create adapters/mappers that transform the variant data to match the expected format\n4. Ensure consistent property naming in new components\n5. Update type definitions to reflect the actual data structure\n6. Test variant selection and display on all product detail pages\n\n## Expected Outcome\n- Variant data correctly displays in all components\n- Selected variant names appear next to Contact Us buttons\n- Consistent property naming across the application",
+          "dependencies": [1.1, 2.4],
+          "parentTaskId": 1
+        },
+        {
+          "id": 2.7,
+          "title": "Fix Product Detail Page Rendering for Director Series Products",
+          "description": "Resolve issues with the product detail page not rendering correctly for specific products like ashley-director-chair in the Director Series.",
+          "status": "pending",
+          "details": "## Issue\n\nThe product detail page at `/chairs/director-series/ashley-director-chair` is not rendering correctly. This could be due to missing dynamic route handlers, incorrect data access, or component rendering issues.\n\n## Implementation Steps\n\n1. Confirm that a dynamic route handler exists at `app/chairs/[seriesId]/[productId]/page.tsx`\n2. If missing, implement the dynamic route handler to parse URL parameters and fetch the correct product\n3. Verify that the product data is being correctly accessed from the director-series data structure\n4. Debug any rendering issues in the product detail component\n5. Ensure proper error handling for cases where products don't exist\n6. Test with multiple products from the series to confirm consistent rendering\n\n## Expected Outcome\n- The product detail page renders correctly for all products in the Director Series\n- All product information including variants, specifications, and images displays properly\n- Navigation between the series page and product detail pages works seamlessly",
+          "dependencies": [1.3, 2.6],
+          "parentTaskId": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Enhance Product Detail Page Design",
+      "description": "Improve the visual design and user experience of product detail pages to align with brand style guidelines and create a premium shopping experience.",
+      "details": "## Design Objectives\n\n- Create a more premium visual presentation for product details\n- Improve image gallery with zoom functionality and better thumbnail navigation\n- Enhance typography and spacing for better readability\n- Add subtle animations and transitions for a more polished feel\n- Ensure consistent styling with the rest of the website\n\n## Implementation Areas\n\n1. Product image gallery\n2. Variant selection UI\n3. Specifications and details presentation\n4. Contact button styling\n5. Overall layout and spacing\n6. Responsive behavior on different screen sizes",
+      "status": "pending",
+      "dependencies": [2.7],
+      "priority": "high",
+      "subtasks": [
+        {
+          "id": 3.1,
+          "title": "Implement Enhanced Product Image Gallery",
+          "description": "Improve the product image gallery with larger images, smooth zoom functionality, and better thumbnail navigation.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Replace the current image display with a more sophisticated gallery component\n2. Add image zoom on hover/click functionality\n3. Improve thumbnail navigation with active state indicators\n4. Implement smooth transitions between images\n5. Ensure the gallery works well on mobile devices\n\n## Expected Outcome\n- More engaging product images that allow customers to see details\n- Intuitive navigation between different product views\n- Consistent look and feel with the premium nature of the products"
+        },
+        {
+          "id": 3.2,
+          "title": "Refine Variant Selection UI",
+          "description": "Enhance the variant selection interface with more visual feedback and clearer indication of the selected option.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Redesign variant selection buttons with more visual distinctiveness\n2. Add color swatches for variants with color options\n3. Improve the visual feedback when a variant is selected\n4. Add subtle animations for state changes\n5. Ensure appropriate spacing between variant options\n\n## Expected Outcome\n- More intuitive variant selection process\n- Clearer visual indication of the currently selected variant\n- Better alignment with overall brand aesthetics"
+        },
+        {
+          "id": 3.3,
+          "title": "Improve Product Specifications Layout",
+          "description": "Enhance the presentation of product specifications and details with better typography, spacing, and visual organization.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Redesign the specifications table with improved typography\n2. Add visual separators between specification groups\n3. Highlight key specifications that differentiate the product\n4. Ensure consistent spacing and alignment\n5. Optimize the layout for different screen sizes\n\n## Expected Outcome\n- More scannable and readable product specifications\n- Better visual hierarchy to highlight important information\n- Consistent styling with the rest of the website"
+        },
+        {
+          "id": 3.4,
+          "title": "Refine Product Detail UI with Brand Colors and Image Interaction",
+          "description": "Update the product detail page by removing redundant label text, implementing image click functionality to change variants, adjusting image size, and incorporating brand colors.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Remove the redundant label next to the Contact Us button\n2. Implement functionality to change the selected variant when clicking on product images\n3. Adjust the image size to ensure it's not too large on bigger screens\n4. Update the color scheme to use brand colors (red and its gradients)\n5. Ensure consistent styling throughout the page\n\n## Expected Outcome\n- More intuitive user interaction with product images\n- Better visual consistency with brand identity\n- Improved layout with appropriate image sizing\n- Cleaner UI without redundant elements",
+          "dependencies": [3.1, 3.2]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Improve Layout Balance and Cohesion on Product Detail Page",
+      "description": "Enhance the product detail page layout to create better visual balance, utilize empty space below thumbnails, and improve overall cohesion.",
+      "status": "pending",
+      "priority": "medium",
+      "details": "## Current Issues\n\n- Empty space below thumbnails not being utilized\n- Specification and details section takes up too much horizontal space\n- Visual imbalance between left and right columns\n\n## Implementation Steps\n\n1. Restructure the product detail layout for better balance\n2. Utilize the empty space below thumbnails for additional content\n3. Improve the width and spacing of the specification/details panels\n4. Create visual connection between product images and specification content\n5. Ensure consistent spacing and padding throughout the layout\n\n## Expected Outcome\n\n- More balanced visual layout with better space utilization\n- Improved reading experience for product specifications\n- Better visual flow between product images and related information\n- Consistent aesthetic throughout the product detail page",
+      "subtasks": [
+        {
+          "id": 4.1,
+          "title": "Restructure Product Detail Layout Grid",
+          "description": "Modify the grid layout to better distribute content and create visual balance.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Adjust the grid layout structure to create a more balanced design\n2. Optimize column widths for different screen sizes\n3. Ensure proper alignment between elements\n4. Maintain responsive behavior across device sizes"
+        },
+        {
+          "id": 4.2,
+          "title": "Utilize Empty Space Below Thumbnails",
+          "description": "Add useful content or visual elements to the empty space below the product thumbnails.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Add relevant product information in the empty space\n2. Consider adding quick specification highlights, product badges, or testimonials\n3. Ensure new content aligns visually with the rest of the design\n4. Maintain proper spacing and visual hierarchy"
+        },
+        {
+          "id": 4.3,
+          "title": "Optimize Specification Panel Width and Layout",
+          "description": "Adjust the specification and details panels to create better visual balance and improve readability.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Adjust width constraints for specification panels\n2. Improve spacing and layout of specification items\n3. Ensure consistent styling across all information panels\n4. Enhance visual connection between related information"
+        }
+      ],
+      "dependencies": [3.4]
+    },
+    {
+      "id": 5,
+      "title": "Implement Modern Feature List Design Globally",
+      "description": "Implement the modern, minimalistic feature list design with bold numbers and glassmorphism effects across all product pages",
+      "status": "completed",
+      "priority": "medium",
+      "completedDate": "2023-11-15",
+      "details": "## Implementation Details\n\n- Added glassmorphism effects with backdrop blur and semi-transparent backgrounds\n- Replaced bullet points with bold numbered indicators\n- Created responsive grid layout for feature items\n- Added subtle animations and hover effects\n- Ensured consistent styling across all product pages\n- Improved visual hierarchy and readability",
+      "subtasks": [
+        {
+          "id": 5.1,
+          "title": "Create Glassmorphism Feature Component",
+          "description": "Design and implement the feature list component with glassmorphism effects",
+          "status": "completed",
+          "details": "Created a modern design with frosted glass background, decorative gradient elements, and improved typography"
+        },
+        {
+          "id": 5.2,
+          "title": "Replace Bullet Points with Numbered Indicators",
+          "description": "Replace traditional bullet points with bold, numbered indicators",
+          "status": "completed",
+          "details": "Implemented bold numbered squares with proper spacing and hover effects"
+        },
+        {
+          "id": 5.3,
+          "title": "Implement Responsive Grid Layout",
+          "description": "Create a responsive grid layout for feature items",
+          "status": "completed",
+          "details": "Implemented a grid that adapts from 1 to 3 columns based on screen size"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Implement Product Data Service Layer",
+      "description": "Create a service layer for product data to replace mock data with real backend connections",
+      "status": "pending",
+      "priority": "high",
+      "details": "## Current State\n\nWe are currently using mock data in the product-utils.ts file for product information. This approach is suitable for development but needs to be replaced with a proper service layer for production.\n\n## Implementation Steps\n\n1. Create a ProductService interface that defines all required methods\n2. Implement a mock version that uses the current data for development\n3. Implement a real version that connects to a backend API or CMS\n4. Add environment-based configuration to switch between implementations\n5. Update all component imports to use the service layer\n\n## Success Criteria\n\n- All product data is retrieved through the service layer\n- No breaking changes to component interfaces\n- Proper error handling for API failures\n- Caching mechanism for improved performance\n- Type safety maintained throughout the implementation",
+      "subtasks": [
+        {
+          "id": 6.1,
+          "title": "Design ProductService Interface",
+          "description": "Create the interface that defines all methods required for product data retrieval",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Define methods for all current functionality in product-utils.ts\n2. Add methods for future requirements like filtering and searching\n3. Ensure proper type definitions for all methods\n4. Document the interface with JSDoc comments"
+        },
+        {
+          "id": 6.2,
+          "title": "Implement MockProductService",
+          "description": "Create a mock implementation using the current data structure",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Implement all interface methods using the current mock data\n2. Add simulated delays to mimic network requests\n3. Implement error conditions for testing\n4. Add logging for debugging"
+        },
+        {
+          "id": 6.3,
+          "title": "Implement ApiProductService",
+          "description": "Create a real implementation that connects to backend APIs",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Set up API client with proper authentication\n2. Implement all interface methods using API calls\n3. Add proper error handling and retries\n4. Implement caching for performance\n5. Add response transformation to match expected types"
+        },
+        {
+          "id": 6.4,
+          "title": "Create Service Factory",
+          "description": "Implement a factory pattern to select the appropriate service implementation",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create a factory function that returns the appropriate service\n2. Use environment variables to control which implementation to use\n3. Add fallback mechanism if configuration is missing"
+        },
+        {
+          "id": 6.5,
+          "title": "Update Components",
+          "description": "Update all components to use the service layer instead of direct imports",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Identify all components that import from product-utils.ts\n2. Update imports to use the service layer\n3. Add error handling for API failures\n4. Add loading states for async data fetching"
+        }
+      ],
+      "dependencies": [4, 5]
+    }
+  ],
+  "observations": [
+    {
+      "id": 1,
+      "title": "Implementing ContactButtonWithVariant Component",
+      "description": "The ContactButtonWithVariant component has been implemented in the components/products directory. It handles displaying the selected variant name next to the Contact Us button and includes proper accessibility attributes.",
+      "content": "## Component Implementation Details\n\nThe `ContactButtonWithVariant` component has been implemented with the following features:\n\n1. **Responsive Layout**:\n   - Stack layout on mobile (button above variant name)\n   - Horizontal layout on larger screens (button beside variant name)\n\n2. **Accessibility Features**:\n   - `aria-label` on the button that includes the variant name when selected\n   - `aria-live=\"polite\"` on the variant text to announce changes to screen readers\n\n3. **Styling**:\n   - Muted text color for the variant name\n   - Consistent spacing and alignment\n   - Full-width button on mobile, auto-width on larger screens\n\n4. **State Handling**:\n   - Conditionally renders the variant name only when a variant is selected\n   - Accepts a null selectedVariant for when no variant is chosen\n\n## Usage Example\n\nTo use this component in a product detail page:\n\n```tsx\n<ContactButtonWithVariant\n  selectedVariant={currentlySelectedVariant}\n  onContactClick={handleContactFormOpen}\n  className=\"mt-6\"\n/>\n```\n\nWhere `currentlySelectedVariant` is a state variable that updates when the user selects different product options.\n\n## Next Steps\n\n1. Update product detail pages to use this component\n2. Ensure the variant selection state is properly passed to this component\n3. Connect the contact form to include the selected variant information"
+    },
+    {
+      "id": 2,
+      "title": "Implemented Dynamic Product Detail Page Routes",
+      "description": "Created a dynamic route handler to properly render product detail pages like /chairs/director-series/ashley-director-chair.",
+      "content": "## Implementation Details\n\n1. **Dynamic Route Handler**:\n   - Created a dynamic route handler at `app/chairs/[seriesId]/[productId]/page.tsx`\n   - Implemented proper data fetching and error handling\n   - Added metadata generation for SEO\n\n2. **Centralized Product Fetching**:\n   - Created utility functions in `lib/utils/product-utils.ts`\n   - Implemented functions to get products and series by ID\n   - Designed for future extensibility to other categories\n\n3. **Product Detail Component**:\n   - Implemented a robust `ProductDetailPage` component\n   - Added support for product variants with proper TypeScript typing\n   - Created a responsive layout with image gallery and specifications\n   - Integrated the `ContactButtonWithVariant` component\n\n4. **Error Handling**:\n   - Added a custom not-found page\n   - Implemented proper error checks for missing products\n   - Added informative messages to guide users\n\n## Benefits\n\n- **Consistent Interface**: All product detail pages now use the same component structure\n- **Improved Type Safety**: Added TypeScript interfaces that match our data structure\n- **Better UX**: Users see proper error pages instead of broken content\n- **Maintainable Code**: Centralized data fetching reduces duplication\n\n## Next Steps\n\n- Extend the implementation to handle other product categories and series\n- Optimize image loading with responsive Cloudinary transformations\n- Add breadcrumb navigation for better user orientation\n- Implement related products section at the bottom of detail pages"
+    }
+  ]
+}

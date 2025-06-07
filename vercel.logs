@@ -1,0 +1,27 @@
+     at shouldIgnore (/vercel/path0/node_modules/next/dist/build/collect-build-traces.js:86:7)
+    at /vercel/path0/node_modules/next/dist/build/collect-build-traces.js:86:23
+    at Array.every (<anonymous>)
+    at shouldIgnore (/vercel/path0/node_modules/next/dist/build/collect-build-traces.js:86:7)
+    at /vercel/path0/node_modules/next/dist/build/collect-build-traces.js:86:23
+    at Array.every (<anonymous>)
+    at shouldIgnore (/vercel/path0/node_modules/next/dist/build/collect-build-traces.js:86:7)
+    at /vercel/path0/node_modules/next/dist/build/collect-build-traces.js:86:23
+    at Array.every (<anonymous>)
+    at shouldIgnore (/vercel/path0/node_modules/next/dist/build/collect-build-traces.js:86:7)
+    at /vercel/path0/node_modules/next/dist/build/collect-build-traces.js:86:23
+    at Array.every (<anonymous>)
+    at shouldIgnore (/vercel/path0/node_modules/next/dist/build/collect-build-traces.js:86:7)
+    at /vercel/path0/node_modules/next/dist/build/collect-build-traces.js:86:23
+    at Array.every (<anonymous>)
+    at shouldIgnore (/vercel/path0/node_modules/next/dist/build/collect-build-traces.js:86:7)
+    at /vercel/path0/node_modules/next/dist/build/collect-build-traces.js:86:23
+    at Array.every (<anonymous>)
+    at shouldIgnore (/vercel/path0/node_modules/next/dist/build/collect-build-traces.js:86:7)
+    at /vercel/path0/node_modules/next/dist/build/collect-build-traces.js:86:23
+    at Array.every (<anonymous>)
+    at shouldIgnore (/vercel/path0/node_modules/next/dist/build/collect-build-traces.js:86:7)
+    at /vercel/path0/node_modules/next/dist/build/collect-build-traces.js:86:23
+    at Array.every (<anonymous>)
+    at shouldIgnore (/vercel/path0/node_modules/next/dist/build/collect-build-traces.js:86:7)
+    at /vercel/path0/node_modules/next/dist/build/collect-build-traces.js:86:23
+Error: Command "npm run build" exited with 1
