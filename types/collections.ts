@@ -1,5 +1,6 @@
 import type { ImageAsset } from "./image-types"
 import type { ProductData } from "./products"
+// Remove conflicting import as we have a local declaration
 
 // Product specifications types
 export interface CommonSpecs {

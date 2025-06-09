@@ -1,22 +1,26 @@
-"use client"
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Variant, isLegacyVariant, adaptLegacyVariant } from '@/types/variants';
+import { ProductVariant, isLegacyVariant, adaptLegacyVariant } from '@/types/product-variants-unified';
 
-interface ContactButtonWithVariantProps {
-  selectedVariant: Variant | any | null;
+interface ContactButtonProps {
+  selectedVariant: ProductVariant | any | null;
   onContactClick: () => void;
   className?: string;
+  buttonText?: string;
 }
 
-export function ContactButtonWithVariant({
+/**
+ * A standardized contact button component with variant information
+ * This component handles both standard and legacy variant formats
+ */
+export function ContactButton({
   selectedVariant,
   onContactClick,
-  className = ''
-}: ContactButtonWithVariantProps) {
+  className = '',
+  buttonText = 'Contact Us'
+}: ContactButtonProps) {
   // Handle legacy variant format if present
-  let variant: Variant | null = null;
+  let variant: ProductVariant | null = null;
   
   if (selectedVariant) {
     if (isLegacyVariant(selectedVariant)) {
@@ -33,9 +37,9 @@ export function ContactButtonWithVariant({
       <Button
         onClick={onContactClick}
         className="w-full sm:w-auto"
-        aria-label={variant ? `Contact us about ${variant.name}` : "Contact us"}
+        aria-label={variant ? `${buttonText} about ${variant.name}` : buttonText}
       >
-        Contact Us
+        {buttonText}
       </Button>
       
       {variant && (

@@ -180,49 +180,198 @@
     },
     {
       "id": 6,
-      "title": "Implement Product Data Service Layer",
-      "description": "Create a service layer for product data to replace mock data with real backend connections",
+      "title": "Implement Product Data Manager",
+      "description": "Create a product data manager to improve organization of static product data and integrate with Cloudinary images",
       "status": "pending",
       "priority": "high",
-      "details": "## Current State\n\nWe are currently using mock data in the product-utils.ts file for product information. This approach is suitable for development but needs to be replaced with a proper service layer for production.\n\n## Implementation Steps\n\n1. Create a ProductService interface that defines all required methods\n2. Implement a mock version that uses the current data for development\n3. Implement a real version that connects to a backend API or CMS\n4. Add environment-based configuration to switch between implementations\n5. Update all component imports to use the service layer\n\n## Success Criteria\n\n- All product data is retrieved through the service layer\n- No breaking changes to component interfaces\n- Proper error handling for API failures\n- Caching mechanism for improved performance\n- Type safety maintained throughout the implementation",
+      "details": "## Current State\n\nWe are currently using mock data in the product-utils.ts file for product information. This approach can be improved by creating a better organized data management system that integrates with our Cloudinary image assets.\n\n## Implementation Steps\n\n1. Create a ProductDataManager class to centralize product data access\n2. Enhance type definitions for better type safety and consistency\n3. Implement Cloudinary integration for product images\n4. Add caching for improved performance\n5. Update component imports to use the new data manager\n\n## Success Criteria\n\n- All product data is retrieved through the data manager\n- No breaking changes to component interfaces\n- Proper error handling for missing data\n- Integration with Cloudinary for product images\n- Type safety maintained throughout the implementation\n- Improved maintainability and organization of product data",
       "subtasks": [
         {
           "id": 6.1,
-          "title": "Design ProductService Interface",
-          "description": "Create the interface that defines all methods required for product data retrieval",
+          "title": "Design ProductDataManager Class",
+          "description": "Create a class that centralizes and organizes product data access methods",
           "status": "pending",
-          "details": "## Implementation Steps\n\n1. Define methods for all current functionality in product-utils.ts\n2. Add methods for future requirements like filtering and searching\n3. Ensure proper type definitions for all methods\n4. Document the interface with JSDoc comments"
+          "details": "## Implementation Steps\n\n1. Define methods for all current functionality in product-utils.ts\n2. Add helper methods for common operations like filtering and searching\n3. Ensure proper type definitions for all data structures\n4. Document the class with JSDoc comments"
         },
         {
           "id": 6.2,
-          "title": "Implement MockProductService",
-          "description": "Create a mock implementation using the current data structure",
+          "title": "Implement Data Storage and Retrieval",
+          "description": "Organize product data storage and implement robust retrieval methods",
           "status": "pending",
-          "details": "## Implementation Steps\n\n1. Implement all interface methods using the current mock data\n2. Add simulated delays to mimic network requests\n3. Implement error conditions for testing\n4. Add logging for debugging"
+          "details": "## Implementation Steps\n\n1. Organize product data in a structured, maintainable way\n2. Implement getter methods for products by category, series, and ID\n3. Add validation for data integrity\n4. Implement error handling for missing products\n5. Add logging for debugging"
         },
         {
           "id": 6.3,
-          "title": "Implement ApiProductService",
-          "description": "Create a real implementation that connects to backend APIs",
+          "title": "Integrate Cloudinary Image Handling",
+          "description": "Create utilities for working with Cloudinary images for products",
           "status": "pending",
-          "details": "## Implementation Steps\n\n1. Set up API client with proper authentication\n2. Implement all interface methods using API calls\n3. Add proper error handling and retries\n4. Implement caching for performance\n5. Add response transformation to match expected types"
+          "details": "## Implementation Steps\n\n1. Create helper methods to construct Cloudinary URLs for product images\n2. Implement image transformation utilities for different display contexts\n3. Add fallback handling for missing images\n4. Create type definitions for image data\n5. Document the Cloudinary integration approach"
         },
         {
           "id": 6.4,
-          "title": "Create Service Factory",
-          "description": "Implement a factory pattern to select the appropriate service implementation",
+          "title": "Implement Data Caching",
+          "description": "Add caching mechanisms to improve performance",
           "status": "pending",
-          "details": "## Implementation Steps\n\n1. Create a factory function that returns the appropriate service\n2. Use environment variables to control which implementation to use\n3. Add fallback mechanism if configuration is missing"
+          "details": "## Implementation Steps\n\n1. Implement memory caching for product data\n2. Add cache invalidation strategies\n3. Optimize data access patterns\n4. Ensure cache is properly typed"
         },
         {
           "id": 6.5,
           "title": "Update Components",
-          "description": "Update all components to use the service layer instead of direct imports",
+          "description": "Update all components to use the ProductDataManager",
           "status": "pending",
-          "details": "## Implementation Steps\n\n1. Identify all components that import from product-utils.ts\n2. Update imports to use the service layer\n3. Add error handling for API failures\n4. Add loading states for async data fetching"
+          "details": "## Implementation Steps\n\n1. Identify all components that import from product-utils.ts\n2. Update imports to use the ProductDataManager\n3. Add appropriate error handling\n4. Add loading states for async operations if needed"
         }
       ],
       "dependencies": [4, 5]
+    },
+    {
+      "id": 7,
+      "title": "Standardize Product Type System and Fix Type Inconsistencies",
+      "description": "Create a consistent type system for product categories throughout the application, eliminating the confusion between ProductType and ProductCategory.",
+      "status": "pending",
+      "priority": "high",
+      "dependencies": [6, 8],
+      "details": "## Current Issues\n\n- Two different types with similar purposes exist: ProductType and ProductCategory\n- Inconsistent usage across components and API functions\n- Type errors when passing values between components\n- Temporary adapter functions currently used as workarounds\n\n## Implementation Steps\n\n1. Analyze all usages of ProductType and ProductCategory\n2. Create a single, unified type definition\n3. Update all component props and function parameters\n4. Fix imports across the codebase\n5. Remove temporary adapter functions\n6. Update tests to use the correct types\n\n## Success Criteria\n\n- All type errors related to product categories resolved\n- Consistent naming and usage across the codebase\n- No adapter functions needed for type conversion\n- Clear documentation of the type system\n- Improved maintainability and type safety",
+      "subtasks": [
+        {
+          "id": 7.1,
+          "title": "Audit Product Type Usage Across Codebase",
+          "description": "Identify all files using ProductType and ProductCategory and document their current implementation.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Search the codebase for all occurrences of ProductType and ProductCategory\n2. Document each file and how it uses these types\n3. Identify inconsistencies and potential issues\n4. Create a plan for standardizing type usage"
+        },
+        {
+          "id": 7.2,
+          "title": "Create Unified Product Category Type System",
+          "description": "Design and implement a single, consistent type system for product categories.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create a centralized product type definition in types/product-categories.ts\n2. Include both internal (slug-based) and display name versions\n3. Add helper functions for converting between formats\n4. Add type guards for runtime type checking\n5. Add comprehensive JSDoc comments explaining the type system"
+        },
+        {
+          "id": 7.3,
+          "title": "Update API Functions to Use Standardized Types",
+          "description": "Modify all API and utility functions to use the new unified type system.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Update functions in lib/api/collections.ts\n2. Update functions in lib/api/products.ts\n3. Update utility functions in lib/utils/product-utils.ts\n4. Ensure proper type annotations for all parameters and return values\n5. Add tests to verify type safety",
+          "dependencies": [7.2]
+        },
+        {
+          "id": 7.4,
+          "title": "Update Component Props and Interfaces",
+          "description": "Modify all component props and interfaces to use the standardized type system.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Update collection and product detail page components\n2. Update navigation components that use product categories\n3. Update any form components that reference product categories\n4. Ensure consistent prop naming across components\n5. Update type imports in all component files",
+          "dependencies": [7.2]
+        },
+        {
+          "id": 7.5,
+          "title": "Remove Temporary Type Adapters",
+          "description": "Remove all temporary type adapter functions and direct type casting.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Identify all temporary adapter functions like adaptCategory\n2. Replace them with proper type-safe implementations\n3. Remove any direct type casting (as any, as ProductCategory, etc.)\n4. Ensure type safety is maintained throughout\n5. Verify no type errors are introduced",
+          "dependencies": [7.3, 7.4]
+        },
+        {
+          "id": 7.6,
+          "title": "Document Type System and Update Examples",
+          "description": "Create documentation for the standardized type system and update code examples.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Document the type system in the project README or wiki\n2. Update code examples in documentation\n3. Add inline comments explaining the type system usage\n4. Create example implementations for future reference\n5. Document any migration considerations for future development",
+          "dependencies": [7.5]
+        }
+      ],
+      "dependencies": [6]
+    },
+    {
+      "id": 8,
+      "title": "Implement Standardized Type System",
+      "description": "Create a standardized type system for product categories, variants, and related entities to ensure type safety throughout the application.",
+      "status": "completed",
+      "priority": "high",
+      "completedDate": "2023-11-18",
+      "details": "## Implementation Details\n\n- Created central type definitions in `types/product-categories-unified.ts` for product categories\n- Established `ProductCategorySlug` for URL-friendly identifiers and `ProductCategoryName` for display names\n- Added type guards for runtime validation (`isValidCategorySlug`, `isValidCategoryName`)\n- Implemented helper functions for conversion between different type formats\n- Updated API functions to use standardized types with proper validation\n- Ensured backward compatibility with existing code through type assertions\n- Added comprehensive documentation on proper usage patterns\n\n## Benefits\n\n- Consistent typing across the entire application\n- Runtime validation to prevent invalid values\n- Clear distinction between URL slugs and display names\n- Improved developer experience with intellisense support\n- Better error messages and debugging\n- Reduced type-related bugs and inconsistencies",
+      "subtasks": [
+        {
+          "id": 8.1,
+          "title": "Create Product Categories Type System",
+          "description": "Implement a centralized type system for product categories with slugs and display names",
+          "status": "completed"
+        },
+        {
+          "id": 8.2,
+          "title": "Add Validation Functions",
+          "description": "Create runtime validation functions and type guards for category values",
+          "status": "completed"
+        },
+        {
+          "id": 8.3,
+          "title": "Update API Functions",
+          "description": "Refactor API functions to use the new standardized type system",
+          "status": "completed"
+        },
+        {
+          "id": 8.4,
+          "title": "Implement Backward Compatibility",
+          "description": "Ensure backward compatibility with existing code through adapter patterns",
+          "status": "completed"
+        },
+        {
+          "id": 8.5,
+          "title": "Document Type System",
+          "description": "Create comprehensive documentation for the type system",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Update Product Category Type System for Specialized Furniture Categories",
+      "description": "Extend our standardized product category type system to include 'hospital-furniture', 'racking-systems', 'school-furniture', 'storage-solutions', 'modular-furniture', and 'office-accessories' and ensure consistency throughout the application",
+      "status": "pending",
+      "priority": "high",
+      "details": "## Current Issue\n\nThe application is using specialized furniture categories ('hospital-furniture', 'racking-systems', and 'school-furniture') in their respective routes, but these categories are not included in our standardized ProductCategorySlug type. This causes type errors when calling API functions that expect a valid ProductCategorySlug.\n\n## Implementation Steps\n\n1. Update the ProductCategorySlug type in types/product-categories.ts and types/product-categories-unified.ts to include all specialized furniture categories\n2. Add appropriate display name mappings for the new categories\n3. Update category lists in components where all categories are enumerated\n4. Ensure all imports use the updated type definitions\n5. Update tests to include the new categories\n\n## Success Criteria\n\n- No type errors in the specialized furniture category routes\n- Consistent usage of the new categories across the application\n- All components and pages that handle product categories work correctly with the new categories\n- Documentation updated to reflect the additions",
+      "subtasks": [
+        {
+          "id": 9.1,
+          "title": "Update ProductCategorySlug Type Definitions",
+          "description": "Add specialized furniture categories to the ProductCategorySlug type in both product-categories.ts and product-categories-unified.ts",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Add 'hospital-furniture', 'racking-systems', and 'school-furniture' to the ProductCategorySlug type union\n2. Add corresponding display names to ProductCategoryName\n3. Update CATEGORY_DISPLAY_NAMES and CATEGORY_SLUGS mappings\n4. Update PRODUCT_CATEGORIES object with metadata for the new categories"
+        },
+        {
+          "id": 9.2,
+          "title": "Update Components With Category Lists",
+          "description": "Update any components that enumerate all product categories to include 'hospital-furniture'",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Update CollectionNav component's categories array\n2. Update category filters in product listing pages\n3. Update navigation menus that include product categories\n4. Update any hardcoded category lists in components or utility functions",
+          "dependencies": [9.1]
+        },
+        {
+          "id": 9.3,
+          "title": "Fix Specialized Furniture Category Routes",
+          "description": "Update the specialized furniture category routes to use the now-valid product category slugs",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Verify that the getProductDetails call works with all specialized furniture categories\n2. Verify that the getSeriesByCategoryAndId call works with these categories\n3. Ensure proper error handling for these categories\n4. Add appropriate metadata generation for these product category pages",
+          "dependencies": [9.1]
+        },
+        {
+          "id": 9.4,
+          "title": "Update Documentation",
+          "description": "Update type system documentation to include the new product categories",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Update docs/type-system.md to include 'hospital-furniture' and 'racking-systems' in examples\n2. Update any other documentation that lists product categories\n3. Add information about the categories in relevant architectural documents",
+          "dependencies": [9.1]
+        },
+        {
+          "id": 9.5,
+          "title": "Add Tests for New Product Categories",
+          "description": "Add or update tests to ensure the new categories work correctly",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Add tests for isValidCategorySlug with 'hospital-furniture' and 'racking-systems'\n2. Add tests for getCategoryDisplayName with these categories\n3. Update any existing tests that enumerate all categories\n4. Add tests for the new category route pages",
+          "dependencies": [9.1, 9.3]
+        }
+      ],
+      "dependencies": [7, 8]
     }
   ],
   "observations": [

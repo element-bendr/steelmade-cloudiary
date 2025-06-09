@@ -10,19 +10,28 @@ export function generateCollectionSchema(collections: CategoryCollections) {
     "@context": "https://schema.org",
     "@type": "ItemList",
     "itemListElement": validCategories.flatMap(([category, subCategories]) =>
-      Object.entries(subCategories).map(([seriesId, series], index) => ({
-        "@type": "Product",
-        "position": index + 1,
-        "name": series.metadata.title,
-        "description": series.metadata.description,
-        "image": series.metadata.coverImage.url,
-        "offers": {
-          "@type": "AggregateOffer",
-          "lowPrice": series.priceRange?.min?.replace("$", "") || "0",
-          "highPrice": series.priceRange?.max?.replace("$", "") || "0",
-          "priceCurrency": "USD"
-        }
-      }))
+      Object.entries(subCategories).map(([seriesId, series], index) => {
+        // Safely access nested properties with fallbacks
+        const title = series?.metadata?.title || seriesId;
+        const description = series?.metadata?.description || '';
+        const imageUrl = series?.metadata?.coverImage?.url || '/images/collections/placeholder-collection.webp';
+        const minPrice = series?.priceRange?.min?.replace('$', '') || '0';
+        const maxPrice = series?.priceRange?.max?.replace('$', '') || '0';
+
+        return {
+          "@type": "Product",
+          "position": index + 1,
+          "name": title,
+          "description": description,
+          "image": imageUrl,
+          "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": minPrice,
+            "highPrice": maxPrice,
+            "priceCurrency": "USD"
+          }
+        };
+      })
     )
   };
 }

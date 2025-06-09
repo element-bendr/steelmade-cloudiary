@@ -2,8 +2,11 @@
 
 import { useState } from "react"
 import { ContactButtonWithVariant } from "@/components/products/ContactButtonWithVariant"
+// Import the Variant type from our standardized variant type system
+import type { ProductVariant as ContactVariant } from "@/types/product-variants-unified" 
 
-interface Variant {
+// Rename our local Variant interface to prevent conflicts
+interface ProductVariant {
   id: string;
   name: string;
 }
@@ -14,19 +17,27 @@ interface Product {
 
 interface ProductActionsProps {
   product: Product;
-  variants: Variant[];
+  variants: ProductVariant[];
 }
 
 // Sample integration in a product detail page
 export function ProductActions({ product, variants }: ProductActionsProps) {
   // State to track the selected variant
-  const [selectedVariant, setSelectedVariant] = useState(variants?.length ? variants[0] : null)
+  const [selectedVariant, setSelectedVariant] = useState<ProductVariant | null>(
+    variants?.length ? variants[0] : null
+  )
   
   // Handle contact button click
   const handleContactClick = () => {
     // Open contact form/modal with product and variant info
     console.log("Contact us about:", product.name, selectedVariant?.name)
   }
+  
+  // Adapt our ProductVariant to the ContactVariant type expected by ContactButtonWithVariant
+  const adaptedVariant = selectedVariant ? {
+    id: selectedVariant.id,
+    name: selectedVariant.name
+  } as ContactVariant : null;
   
   // Render variant selection and contact button
   return (
@@ -55,7 +66,7 @@ export function ProductActions({ product, variants }: ProductActionsProps) {
       
       {/* Contact button */}
       <ContactButtonWithVariant
-        selectedVariant={selectedVariant}
+        selectedVariant={adaptedVariant}
         onContactClick={handleContactClick}
       />
     </div>

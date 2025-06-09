@@ -23,7 +23,8 @@ export function getPortfolioSeries(catalog: ProductCatalog): Series[] {
 
 // For development/testing
 export function getMockData(catalog: ProductCatalog) {
-  return catalog;
+  // Convert catalog to a more flexible type that works with both ProductCategory and ProductCategorySlug
+  return catalog as unknown as Record<string, Record<string, import("@/types/collections").SeriesMetadata>>;
 }
 
 // Helper to get product data in the format expected by the mock data

@@ -2,6 +2,7 @@ import type { ProductCategory } from "@/types/collections";
 import type { Series } from "@/components/portfolio/types";
 import type { ProductData } from "@/types/products";
 import { ProductCatalog } from "./product-types";
+import { ProductCategorySlug } from "@/types/product-categories";
 import { chairs, desks, storage } from "./products";
 import { getPortfolioSeries as getPortfolioSeriesHelper, getMockData as getMockDataHelper, getMockProductsData as getMockProductsDataHelper } from "./product-helpers";
 
@@ -13,7 +14,8 @@ export const productCatalog: ProductCatalog = {
   "school-furniture": {},
   "hospital-furniture": {},
   "racking-systems": {},
-  "modular-furniture": {}
+  "modular-furniture": {},
+  "office-accessories": {}
 };
 
 // Helper functions that use the helpers from product-helpers.ts

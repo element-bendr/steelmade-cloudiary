@@ -583,6 +583,79 @@ The foundational elements for the "modular-furniture" category are now in place,
 
 This modular approach sets a strong foundation for the growing product catalog while making maintenance and updates significantly more manageable.
 
+---
+
+## Type System Standardization and Refactoring (5/22/2025)
+
+**Summary of Changes:**
+
+- **Unified Type System Implementation:**
+  - Created centralized type definitions in `types/product-categories.ts` and `types/variants.ts`
+  - Established clear relationship between slugs (e.g., "chairs") and display names (e.g., "Chairs")
+  - Added comprehensive type guards and conversion utilities
+  - Fixed inconsistencies between `ProductType` and `ProductCategory` across the application
+
+- **API Layer Improvements:**
+  - Updated API functions to use standardized `ProductCategorySlug` type
+  - Added validation for category parameters with detailed error messages
+  - Enhanced error handling with proper error cascading
+  - Fixed type mismatches in route handlers
+
+- **Component and Hook Refactoring:**
+  - Refactored `CollectionDetail`, `CollectionCarousel`, and other components to use the standardized types
+  - Enhanced `useProducts` hook with type-safe category parameter handling
+  - Fixed `useCarouselDrag` hook with proper TypeScript interfaces and event handling
+  - Implemented performance optimizations with `useCallback` for event handlers
+
+- **Variant System Enhancement:**
+  - Created standardized `Variant` interface with consistent property naming
+  - Added backward compatibility for legacy variant formats
+  - Implemented adapter functions to convert between formats
+  - Updated UI components to handle both formats seamlessly
+
+- **Documentation and Developer Experience:**
+  - Created comprehensive type system documentation
+  - Added code examples and migration guidelines
+  - Documented best practices for type safety
+  - Set up consistent patterns for future development
+
+These changes have resolved the type inconsistencies that were causing compilation errors and runtime issues throughout the application. The new type system provides better type safety, improved developer experience, and a more maintainable codebase.
+
+---
+
+## Product Category Type System Expansion (5/24/2025)
+
+**Summary of Changes:**
+
+- **Comprehensive Category Coverage:**
+  - Extended our ProductCategorySlug type to include all specialized furniture categories:
+    - Added 'hospital-furniture' for medical environments
+    - Added 'racking-systems' for industrial storage solutions
+    - Added 'school-furniture' for educational settings
+    - Added 'storage-solutions' for advanced storage products
+    - Added 'modular-furniture' for customizable office setups
+  - Updated corresponding ProductCategoryName entries with proper display names
+
+- **Naming Convention Standardization:**
+  - Applied consistent hyphenated format for all category slugs
+  - Created distinct display names to resolve naming conflicts
+  - Implemented special handling for 'storage' vs 'storage-solutions' naming collision
+  - Used 'Storage Solutions II' as a display name solution for disambiguation
+
+- **Component and API Updates:**
+  - Updated CollectionNav component to include all categories
+  - Fixed type errors in specialized route files
+  - Enhanced API functions to validate all category slugs
+  - Updated ProductCategory and ProductCategorySlug usage throughout the application
+
+- **Developer Experience Improvements:**
+  - Added detailed error messages for invalid categories
+  - Enhanced documentation with category usage examples
+  - Created comprehensive type guards for runtime validation
+  - Maintained backward compatibility with legacy code
+
+This expansion completes our type system standardization effort, providing full coverage for all product categories in the application. The system now handles specialized furniture categories properly, eliminates type errors, and creates a scalable foundation for future category additions. The consistent naming convention and careful handling of naming conflicts ensure a clean, maintainable codebase with strong type safety.
+
 # Project Memory
 
 ## Mobile Navigation Implementation

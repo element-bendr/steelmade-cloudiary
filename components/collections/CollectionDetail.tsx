@@ -8,13 +8,16 @@ import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert"
 import { RefreshCcw } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
-import type { SeriesMetadata, ProductCategory } from "@/types/collections"
+import Image from "next/image"
+import Link from "next/link"
+import type { SeriesMetadata } from "@/types/collections"
 import type { ProductData } from "@/types/products"
+import { ProductCategorySlug, getCategoryDisplayName } from "@/types/product-categories"
 
 interface CollectionDetailProps {
   series: SeriesMetadata
   seriesId: string
-  category: ProductCategory
+  category: ProductCategorySlug
   initialProducts?: ProductData[]
 }
 
@@ -24,7 +27,11 @@ export function CollectionDetail({
   category,
   initialProducts = []
 }: CollectionDetailProps) {
-  const { products, isLoading, error, refetch } = useProducts(category, seriesId)
+  const { products, isLoading, error, refetch } = useProducts(
+    category, 
+    seriesId,
+    initialProducts
+  )
   const [viewMode, setViewMode] = useState<'carousel' | 'grid'>('carousel')
   
   if (error) {
@@ -53,23 +60,39 @@ export function CollectionDetail({
   
   return (
     <div className="space-y-8">
-      <div className="flex flex-col gap-4">
-        <h1 className="text-3xl font-bold">{series.title}</h1>
-        <p className="text-muted-foreground">{series.description}</p>
-        
-        <div className="flex gap-4 mt-2">
-          <Button 
-            variant={viewMode === 'carousel' ? 'default' : 'outline'}
-            onClick={() => setViewMode('carousel')}
-          >
-            Carousel View
-          </Button>
-          <Button 
-            variant={viewMode === 'grid' ? 'default' : 'outline'}
-            onClick={() => setViewMode('grid')}
-          >
-            Grid View
-          </Button>
+      <div className="flex flex-col md:flex-row gap-6 md:items-center">
+        {series.imageUrl && (
+          <div className="relative aspect-video w-full md:w-1/3 rounded-lg overflow-hidden">
+            <Image
+              src={series.imageUrl}
+              alt={series.title}
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              className="object-cover"
+              priority
+            />
+          </div>
+        )}
+        <div className="md:flex-1">
+          <div className="flex items-center gap-3 mb-2">
+            <h5 className="text-sm font-medium text-muted-foreground">
+              {getCategoryDisplayName(category)}
+            </h5>
+          </div>
+          <h1 className="text-3xl font-bold mb-3">{series.title}</h1>
+          <p className="text-muted-foreground mb-4">{series.description}</p>
+          <div className="flex flex-wrap gap-3">
+            <Button asChild>
+              <Link href={`/${category}/${seriesId}/configure`}>
+                Configure
+              </Link>
+            </Button>
+            <Button variant="outline" asChild>
+              <Link href={`/contact?collection=${seriesId}`}>
+                Request Info
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
       

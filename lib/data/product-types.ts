@@ -1,9 +1,21 @@
-import type { ProductCategory, SeriesMetadata } from "@/types/collections";
+import type { ProductCategory as ImportedProductCategory, SeriesMetadata } from "@/types/collections";
 import type { Series } from "@/components/portfolio/types";
 import type { ProductData } from "@/types/products";
 
 // Add this export to the product-types.ts file
-export type ProductCategory = "chairs" | "tables" | "accessories";
+export type ProductType = 
+  | "chairs" 
+  | "tables" 
+  | "accessories" 
+  | "desks" 
+  | "storage" 
+  | "lighting"
+  | "hospital-furniture"
+  | "racking-systems"
+  | "school-furniture"
+  | "storage-solutions"
+  | "modular-furniture"
+  | "office-accessories";
 
 // Extended product data with variants
 export interface ProductVariant {
@@ -23,4 +35,6 @@ export interface ProductSeries extends Omit<SeriesMetadata, 'products'> {
   products: Record<string, ExtendedProductData>;
 }
 
-export type ProductCatalog = Record<ProductCategory, Record<string, ProductSeries>>;
+export type ProductCatalog = {
+  [key: string]: Record<string, ProductSeries>;
+};

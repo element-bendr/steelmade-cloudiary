@@ -1,37 +1,46 @@
+/**
+ * Products API
+ * 
+ * Provides functions for retrieving product data using the unified type system.
+ */
+
 import { cache } from 'react'
 import { APIError } from '@/lib/errors'
 import { collections } from '@/lib/data/collections-data'
-import { MOCK_SERIES, FlexibleSeriesData } from '@/lib/data/mock-data'
-import { ProductCategorySlug, isValidCategorySlug, ProductCategoryName, getCategoryDisplayName } from '@/types/product-categories'
-import { ProductData, ProductType } from '@/types/products'
-import { getProductById as getProductFromService } from '@/lib/services/product-service'
+import { 
+  ProductCategorySlug, 
+  isValidCategorySlug 
+} from '@/types/product-categories-unified'
+import { ProductData } from '@/types/products'
 import { SeriesMetadata } from '@/types/collections'
 
 // Use imported collections data
 const COLLECTIONS_DATA = collections;
 
-// Define a type-safe way to access MOCK_SERIES with any valid ProductCategorySlug
-type MockSeriesData = {
-  [key in ProductCategorySlug]?: Record<string, SeriesMetadata>;
-};
-
 /**
- * Get products by category and series
+ * Get all products for a specific category and series
  */
 export const getProductsByCategoryAndSeries = cache(async (
   category: ProductCategorySlug, 
   seriesId: string
 ): Promise<ProductData[]> => {
   try {
-    // Simulate API fetch delay
-    await new Promise(resolve => setTimeout(resolve, 300));
-    
-    // Validate category and get series data
-    if (!isValidCategorySlug(category) || !COLLECTIONS_DATA[category]) {
-      console.warn(`Invalid category: ${category}`);
+    // Validate inputs
+    if (!category || !seriesId) {
+      console.warn('Invalid arguments: category and seriesId are required');
       return [];
     }
     
+    // Validate category
+    if (!isValidCategorySlug(category)) {
+      console.warn(`Invalid category slug: ${category}`);
+      return [];
+    }
+    
+    // Simulate API fetch delay
+    await new Promise(resolve => setTimeout(resolve, 300));
+    
+    // Get series data
     const seriesData = COLLECTIONS_DATA[category]?.[seriesId];
     if (!seriesData?.products) {
       console.warn(`No products found for series: ${seriesId} in category: ${category}`);
@@ -47,7 +56,7 @@ export const getProductsByCategoryAndSeries = cache(async (
 });
 
 /**
- * Get a product by its ID within a category and series
+ * Get a specific product by its ID within a category and series
  */
 export const getProductById = cache(async (
   category: ProductCategorySlug, 
@@ -55,15 +64,22 @@ export const getProductById = cache(async (
   productId: string
 ): Promise<ProductData | null> => {
   try {
-    // Simulate API fetch delay
-    await new Promise(resolve => setTimeout(resolve, 300));
-    
-    // Validate category and get series data
-    if (!isValidCategorySlug(category) || !COLLECTIONS_DATA[category]) {
-      console.warn(`Invalid category: ${category}`);
+    // Validate inputs
+    if (!category || !seriesId || !productId) {
+      console.warn('Invalid arguments: category, seriesId, and productId are required');
       return null;
     }
     
+    // Validate category
+    if (!isValidCategorySlug(category)) {
+      console.warn(`Invalid category slug: ${category}`);
+      return null;
+    }
+    
+    // Simulate API fetch delay
+    await new Promise(resolve => setTimeout(resolve, 300));
+    
+    // Get series data
     const seriesData = COLLECTIONS_DATA[category]?.[seriesId];
     if (!seriesData?.products) {
       console.warn(`No products found for series: ${seriesId} in category: ${category}`);
@@ -86,17 +102,31 @@ export const getProductById = cache(async (
   }
 });
 
+/**
+ * Get a specific series by category and ID
+ */
 export const getSeriesByCategoryAndId = cache(async (
   category: ProductCategorySlug,
   seriesId: string
 ): Promise<SeriesMetadata | null> => {
   try {
+    // Validate inputs
+    if (!category || !seriesId) {
+      console.warn('Invalid arguments: category and seriesId are required');
+      return null;
+    }
+    
+    // Validate category
+    if (!isValidCategorySlug(category)) {
+      console.warn(`Invalid category slug: ${category}`);
+      return null;
+    }
+    
     // Simulate API fetch delay
     await new Promise(resolve => setTimeout(resolve, 300));
-
-    // Use our type-safe MockSeriesData type
-    const typedMockSeries = MOCK_SERIES as MockSeriesData;
-    const series = typedMockSeries[category]?.[seriesId] || null;
+    
+    // Get series data
+    const series = COLLECTIONS_DATA[category]?.[seriesId] || null;
     return series;
   } catch (error) {
     console.error('Error fetching series by ID:', error);
@@ -104,30 +134,33 @@ export const getSeriesByCategoryAndId = cache(async (
   }
 });
 
+/**
+ * Get all series for a specific category
+ */
 export const getSeriesForCategory = cache(async (
   category: ProductCategorySlug
 ): Promise<Record<string, SeriesMetadata>> => {
   try {
+    // Validate inputs
+    if (!category) {
+      console.warn('Invalid argument: category is required');
+      return {};
+    }
+    
+    // Validate category
+    if (!isValidCategorySlug(category)) {
+      console.warn(`Invalid category slug: ${category}`);
+      return {};
+    }
+    
     // Simulate API fetch delay
     await new Promise(resolve => setTimeout(resolve, 300));
-
-    // Use our type-safe MockSeriesData type
-    const typedMockSeries = MOCK_SERIES as MockSeriesData;
-    const seriesMap = typedMockSeries[category] || {};
+    
+    // Get series data
+    const seriesMap = COLLECTIONS_DATA[category] || {};
     return seriesMap;
   } catch (error) {
     console.error(`Error fetching series for category ${category}:`, error);
     throw new APIError(`Failed to fetch series for category ${category}`, 500);
   }
 });
-
-export async function getProductDetails(productId: string, seriesId: string, categorySlug: ProductCategorySlug): Promise<ProductData | undefined> {
-  try {
-    // Use the getProductById from product-service which uses the consolidated mockData
-    const product = await getProductFromService(categorySlug as unknown as ProductType, seriesId, productId);
-    return product || undefined; // Ensure undefined is returned if product is null
-  } catch (error) {
-    console.error(`Error fetching product details for ${categorySlug}/${seriesId}/${productId}:`, error);
-    return undefined;
-  }
-}

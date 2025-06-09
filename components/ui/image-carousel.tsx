@@ -59,7 +59,8 @@ export function ImageCarousel({
   }, [nextSlide, prevSlide])
 
   // Drag handlers
-  const { isDragging, handlers } = useCarouselDrag({
+  const { isDragging, dragProps } = useCarouselDrag({
+    ref: containerRef,
     onDragLeft: prevSlide,
     onDragRight: nextSlide
   })
@@ -86,7 +87,7 @@ export function ImageCarousel({
           "hover:shadow-2xl hover:border-white/30 hover:from-white/20 hover:to-white/10",
           isDragging && "cursor-grabbing"
         )}
-        {...handlers(containerRef)} // Pass the ref to the handlers function
+        {...dragProps} // Use dragProps for drag handlers
       >      {images.map((image, index) => (
           <div
             key={image.url}
