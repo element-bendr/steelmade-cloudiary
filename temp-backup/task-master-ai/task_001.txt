@@ -1,0 +1,60 @@
+# Task ID: 1
+# Title: Consolidate Product Series Pages and Centralize Logic
+# Status: pending
+# Dependencies: None
+# Priority: medium
+# Description: Consolidate product series page components to reduce duplication and improve maintainability. Implement a dynamic route for product series pages and centralize product fetching logic in helper functions. Ensure all components utilize the OptimizedCloudinaryImage component for image handling.
+# Details:
+
+
+# Test Strategy:
+
+
+# Subtasks:
+## 1.1. Document and Standardize Product Variant Rendering [pending]
+### Dependencies: None
+### Description: Analyze how product variants (colors, configurations, etc.) are currently displayed on product detail pages. Create documentation for the variant rendering approach and implement a standardized component that can be reused across all product types. Ensure variant selection uses accessible UI controls and displays variant-specific images from Cloudinary.
+### Details:
+
+
+## 1.2. Centralize Product Fetching Logic in Helper Functions [pending]
+### Dependencies: None
+### Description: Create centralized helper functions for product data retrieval to eliminate code duplication across pages. Implement utility functions to retrieve products by category, series, or ID, and standardize error handling for missing products. Document the API for these helper functions and ensure they're used consistently throughout the application.
+### Details:
+
+
+## 1.3. Implement Dynamic Routes for Product Series Pages [pending]
+### Dependencies: None
+### Description: Replace individual series page files with a dynamic route that handles all product series. Create a dynamic route at app/[categoryId]/[seriesId]/page.tsx that can render any product series based on URL parameters. Ensure the implementation handles all existing product series without visual or functional changes.
+### Details:
+
+
+## 1.4. Display Selected Variant Name Next to Contact Us Button [pending]
+### Dependencies: None
+### Description: Add a text label next to the 'Contact Us' button to display the selected variant name on product detail pages. Ensure the label updates dynamically based on the selected variant and is styled appropriately for visibility.
+### Details:
+## Implementation Steps
+
+1. Identify the contact button component in product detail pages
+2. Modify the component to accept and display the selected variant name
+3. Update the state management to track the currently selected variant
+4. Style the variant name label to be visually connected to the Contact Us button
+5. Ensure the label updates dynamically when a different variant is selected
+6. Add conditional rendering to hide the label when no variant is selected
+7. Make sure the variant name is included in any contact form or email template
+
+## Expected UI
+- The variant name should appear in a subtle but visible style next to the Contact Us button
+- Format: "Selected: [Variant Name]" or simply "[Variant Name]"
+- When changing variants, the text should update immediately
+
+## Accessibility Considerations
+- Ensure proper color contrast for the variant label text
+- Consider adding an aria-label to improve screen reader experience
+
+## 2.4. Implement Contact Button with Variant Display [pending]
+### Dependencies: None
+### Description: Implement the ContactButtonWithVariant component to display the selected variant name next to the Contact Us button. Ensure it receives the selected variant as a prop and updates dynamically. Add accessibility features for screen readers.
+### Details:
+
+

@@ -1,0 +1,19 @@
+{
+  "name": "@modules/image",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {
+    "@modules/shared": "workspace:*",
+    "fp-ts": "^2.16.1",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "@types/node": "^20.8.7",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "eslint": "^8.52.0",
+    "vitest": "^3.2.3"
+  }
+}

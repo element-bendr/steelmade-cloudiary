@@ -1,0 +1,52 @@
+// filepath: e:\steelmadewebsite\app\chairs\page.tsx
+import { Suspense } from "react";
+import { Metadata } from "next";
+import { getSeriesForCategory } from "@/lib/api/products";
+import ProductGridSkeleton from "@/components/products/ProductGridSkeleton";
+import ChairsSeriesComponent from "@/components/products/ChairsSeriesComponent";
+
+// Revalidate every hour
+export const revalidate = 3600;
+
+export const metadata: Metadata = {
+  title: "Chairs",
+  description: "Explore our diverse collection of high-quality chairs, designed for comfort, style, and durability. Find the perfect seating solution for your home or office.",
+  openGraph: {
+    title: "Chairs | SteelMade",
+    description: "Explore our diverse collection of high-quality chairs.",
+    images: [
+      {
+        url: "/images/chairs/collection-cover.jpg",
+        width: 1200,
+        height: 630,
+        alt: "SteelMade Chair Collection",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Chairs | SteelMade",
+    description: "Explore our diverse collection of high-quality chairs.",
+    images: ["/images/chairs/collection-cover.jpg"],
+  },
+  alternates: {
+    canonical: "/chairs",
+  },
+};
+
+export default function ChairsPage() {
+  return (
+    <main className="container mx-auto px-4 py-8">
+      <h1 className="text-4xl font-bold mb-4">Office Chairs</h1>
+      <p className="text-gray-600 mb-8">
+        Explore our diverse collection of high-quality chairs, designed for comfort, 
+        style, and durability. Find the perfect seating solution for your home or office.
+      </p>
+      
+      {/* Use Suspense for streaming the chair series data */}
+      <Suspense fallback={<ProductGridSkeleton items={8} />}>
+        <ChairsSeriesComponent />
+      </Suspense>
+    </main>
+  );
+}

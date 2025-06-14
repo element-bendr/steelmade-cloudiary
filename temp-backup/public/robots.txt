@@ -1,0 +1,18 @@
+# robots.txt for steelmade.com
+User-agent: *
+Allow: /
+
+# Disallow admin and internal paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /internal/
+
+# Sitemap location
+Sitemap: https://steelmade.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Host
+Host: https://steelmade.com

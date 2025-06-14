@@ -1,0 +1,11 @@
+# Task ID: 1
+# Title: Refactor Director Series Data
+# Status: pending
+# Dependencies: None
+# Priority: high
+# Description: Refactor the Director Series product data to be stored in a structured file.
+# Details:
+Create a new file at lib/data/products/chairs/director-series.ts to hold the Director Series product data. Update the data utility functions to import from this file instead of hardcoding the data. Ensure that all necessary product details, including variants and Cloudinary image URLs, are included in this structured file.
+
+# Test Strategy:
+

@@ -1,0 +1,12 @@
+{
+  "name": "@modules/cart",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {
+    "fp-ts": "^2.16.1",
+    "zod": "^3.22.0",
+    "@modules/shared": "workspace:*"
+  }
+}
