@@ -41,7 +41,15 @@ export interface ExtendedProductData extends BaseProductData {
 
 export interface ProductSeries {
   id: string;
+  title?: string;
   description?: string;
+  seoDescription?: string;
+  category?: string;
+  imageUrl?: string;
+  coverImage?: ProductImage;
+  images?: ProductImage[];
+  features?: string[];
+  lastModified?: string;
   products: Record<string, ExtendedProductData>;
 }
 

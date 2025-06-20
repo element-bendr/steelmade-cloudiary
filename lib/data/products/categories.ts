@@ -1,6 +1,6 @@
 import { ProductCategory } from '@/lib/types/product-types';
 import { directorSeries } from './chairs/director-series';
-import { executiveSeries } from './chairs/executive-series';
+import { executiveSeries } from './chairs/executive-series/index';
 import { gamingSeries } from './chairs/gaming-series';
 
 // Define the chairs category

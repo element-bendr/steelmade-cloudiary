@@ -1,6 +1,6 @@
 import { tycoondirectorchair } from './director-series/tycoon-director-chair';
 import { classicdirectorchair } from './director-series/classic-director-chair';
-import { ashleydirectorchair } from './director-series/ashley-director-chair';
+import { ashleyDirectorChair } from './director-series/ashley-director-chair';
 
 // Export the series data
 export const directorSeries = {
@@ -10,9 +10,9 @@ export const directorSeries = {
   products: {
     'tycoon-director-chair': tycoondirectorchair,
     'classic-director-chair': classicdirectorchair,
-    'ashley-director-chair': ashleydirectorchair
+    'ashley-director-chair': ashleyDirectorChair
   }
 };
 
 // Re-export individual chairs for direct access
-export { tycoondirectorchair, classicdirectorchair, ashleydirectorchair };
+export { tycoondirectorchair, classicdirectorchair, ashleyDirectorChair };
