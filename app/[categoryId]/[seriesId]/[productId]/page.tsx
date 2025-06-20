@@ -76,7 +76,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             {/* Additional images gallery */}
             {product.images && product.images.length > 1 && (
               <div className="grid grid-cols-4 gap-2">
-                {product.images.map((image, index) => (
+                {product.images.map((image: { url: string; alt?: string }, index: number) => (
                   <div key={index} className="bg-white rounded-lg overflow-hidden border cursor-pointer">
                     <Image 
                       src={image.url}
@@ -104,7 +104,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               <div className="mb-6">
                 <h2 className="text-xl font-semibold mb-3">Key Features</h2>
                 <ul className="list-disc pl-5 space-y-1">
-                  {product.features.map((feature, index) => (
+                  {product.features.map((feature: string, index: number) => (
                     <li key={index} className="text-gray-700">{feature}</li>
                   ))}
                 </ul>
@@ -117,7 +117,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 <h2 className="text-xl font-semibold mb-3">Key Features</h2>
                 <div className="bg-gray-50 rounded-lg p-4">
                   <ul className="space-y-2">
-                    {product.features.map((feature, index) => (
+                    {product.features.map((feature: string, index: number) => (
                       <li key={index} className="flex items-start">
                         <span className="inline-flex items-center justify-center rounded-full bg-red-700 text-white h-5 w-5 min-w-[1.25rem] text-xs mr-3 mt-0.5">{index + 1}</span>
                         <span className="text-gray-700">{feature}</span>
@@ -133,7 +133,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
               <div className="mb-6">
                 <h2 className="text-xl font-semibold mb-3">Available Variants</h2>
                 <div className="space-y-4">
-                  {product.variants.map((variant, index) => (
+                  {product.variants.map((variant: any, index: number) => (
                     <div key={index} className="flex items-center space-x-4 p-3 border border-gray-200 rounded-lg">
                       <div className="w-16 h-16 flex-shrink-0 bg-gray-100 rounded-md overflow-hidden">
                         {variant.imageUrl && (
@@ -179,7 +179,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
         
         <div className="text-center py-12">
           <h1 className="text-3xl font-bold mb-4">Product Not Found</h1>
-          <p className="text-gray-600 mb-8">The product you're looking for could not be found.</p>
+          <p className="text-gray-600 mb-8">The product you&apos;re looking for could not be found.</p>
           <Link 
             href={buildSeriesPath(categoryId, seriesId)}
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium"

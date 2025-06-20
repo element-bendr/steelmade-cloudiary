@@ -32,10 +32,10 @@ export async function loadAllDirectorSeriesChairs(): Promise<ExtendedProductData
     const chairPromises = chairFiles.map(async (file) => {
       try {
         // Import the file
-        const module = await import(`./${file}`);
+        const importedModule = await import(`./${file}`);
         
         // Find the exported chair object (usually the default export or named export)
-        const chairObject = Object.values(module)[0] as ExtendedProductData;
+        const chairObject = Object.values(importedModule)[0] as ExtendedProductData;
         
         // Verify it's a valid chair object
         if (chairObject && chairObject.id && chairObject.name) {

@@ -72,7 +72,7 @@ export default function BigBossGoldDirectorChairPage() {
       <div className="container mx-auto px-4 py-8">
         <div className="p-6 bg-yellow-50 rounded-lg text-yellow-700">
           <h2 className="text-xl font-bold mb-2">Product Not Found</h2>
-          <p>Sorry, we couldn't find the BigBoss Gold Director Chair. Please try again later.</p>
+          <p>Sorry, we couldn&apos;t find the BigBoss Gold Director Chair. Please try again later.</p>
         </div>
       </div>
     );

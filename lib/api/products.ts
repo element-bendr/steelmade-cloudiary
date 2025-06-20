@@ -1,7 +1,6 @@
 import { cache } from 'react'
 import { APIError } from '@/lib/errors'
 import { collections } from '@/lib/data/collections-data'
-import { MOCK_SERIES, FlexibleSeriesData } from '@/lib/data/mock-data'
 import { ProductCategorySlug, isValidCategorySlug, ProductCategoryName, getCategoryDisplayName } from '@/types/product-categories'
 import { ProductData, ProductType } from '@/types/products'
 import { getProductById as getProductFromService } from '@/lib/services/product-service'
@@ -83,41 +82,6 @@ export const getProductById = cache(async (
   } catch (error) {
     console.error('Error fetching product by ID:', error);
     throw new APIError('Failed to fetch product', 500);
-  }
-});
-
-export const getSeriesByCategoryAndId = cache(async (
-  category: ProductCategorySlug,
-  seriesId: string
-): Promise<SeriesMetadata | null> => {
-  try {
-    // Simulate API fetch delay
-    await new Promise(resolve => setTimeout(resolve, 300));
-
-    // Use our type-safe MockSeriesData type
-    const typedMockSeries = MOCK_SERIES as MockSeriesData;
-    const series = typedMockSeries[category]?.[seriesId] || null;
-    return series;
-  } catch (error) {
-    console.error('Error fetching series by ID:', error);
-    throw new APIError('Failed to fetch series', 500);
-  }
-});
-
-export const getSeriesForCategory = cache(async (
-  category: ProductCategorySlug
-): Promise<Record<string, SeriesMetadata>> => {
-  try {
-    // Simulate API fetch delay
-    await new Promise(resolve => setTimeout(resolve, 300));
-
-    // Use our type-safe MockSeriesData type
-    const typedMockSeries = MOCK_SERIES as MockSeriesData;
-    const seriesMap = typedMockSeries[category] || {};
-    return seriesMap;
-  } catch (error) {
-    console.error(`Error fetching series for category ${category}:`, error);
-    throw new APIError(`Failed to fetch series for category ${category}`, 500);
   }
 });
 
