@@ -8,6 +8,7 @@ import { OrganizationSchema, WebsiteSchema } from '@/components/seo/json-ld';
 import { ErrorBoundaryWrapper } from '@/components/error-boundary/client-error-boundary';
 import { GoogleAnalytics } from '@/components/analytics/google-analytics';
 import { CriticalScripts } from '@/components/performance/critical-scripts';
+import { AppContextProvider } from '@/context/AppContext';
 
 // Optimize font loading with display swap and preload
 const inter = Inter({ 
@@ -135,7 +136,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <ThemeProvider>
           <ProtectedHeader />
           <ErrorBoundaryWrapper>
-            <main>{children}</main>
+            <AppContextProvider>
+              <main>{children}</main>
+            </AppContextProvider>
           </ErrorBoundaryWrapper>
           <Footer />
         </ThemeProvider>

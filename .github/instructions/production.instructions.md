@@ -6,6 +6,8 @@ all code should be written in TypeScript.
 all code should be written in a functional programming style.
 all code should be written in a declarative style.
 all code should be production ready.
+use Dry principles, always
+no files should be larger than 350 lines of code.
 no sample,no demo, no test code.
 all code should be written in a modular way.
 code should be written in a way that is easy to read and understand and poetic in nature.

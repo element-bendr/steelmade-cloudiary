@@ -15,9 +15,12 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
  **/
 const nextConfig = {    
   images: {
-    domains: [
-      'steelmade-products.cdn.com',
-      'res.cloudinary.com'
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        pathname: '/**',
+      },
     ],
     deviceSizes: [640, 1080, 1920], // Simplified device sizes
     imageSizes: [32, 96, 256], // Simplified image sizes

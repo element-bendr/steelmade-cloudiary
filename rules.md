@@ -4,6 +4,7 @@
 - All code must be fully optimized for runtime and memory efficiency.
 - Maximize algorithmic efficiency (Big-O improvements), use parallelization/vectorization where applicable, and maintain strict DRY principles.
 - No extra or redundant code; every line must serve a purpose. Non-optimal code will incur a $100 fine.
+No demos, example or sample code should be written or used in the project
 
 ## Style & Best Practices
 - Adhere strictly to Tailwind CSS and Shadcn UI guidelines.

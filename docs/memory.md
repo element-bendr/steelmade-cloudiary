@@ -712,3 +712,17 @@ This expansion completes our type system standardization effort, providing full 
 - Implemented proper overflow scrolling
 - Used backdrop blur for better readability
 - Added proper spacing for touch targets
+
+---
+
+## Director Series Chair UI & Data Refactor (2025-06-19)
+
+- All director-series chair data files are now modular, type-safe, and poetic.
+- All image URLs are correct and every chair/variant has `imageUrl` and `images` arrays.
+- All grid and detail pages use consistent, glassmorphic, brand-aligned design.
+- All detail pages use the same modular layout and vertical button alignment.
+- All Next.js Image errors are fixed (no fill+height, no overflow, no missing width/height).
+- Chair images are 20% shorter for a more compact look.
+- All changes are modular, maintainable, and easy to extend.
+
+This update ensures a visually consistent, error-free, and poetic experience for all director-series chairs.

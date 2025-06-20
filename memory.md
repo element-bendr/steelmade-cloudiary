@@ -497,59 +497,391 @@ The foundational elements for the "modular-furniture" category are now in place,
 
 ---
 
-# Project Memory
+## Cloudinary Image Integration for Director Series Chairs (5/25/2025)
 
-## Mobile Navigation Implementation
+**Summary of Changes:**
 
-- Implemented responsive mobile navigation with slide-in animation
-- Added dropdown sections for mega menu items with ChevronDown indicators
-- Included subtle hover effects with red accent colors
-- Used backdrop blur for better readability
-- Implemented smooth transitions for opening/closing animations
-- Added proper aria attributes for accessibility
-- Optimized touch interactions for mobile devices
+1. **Image Module Implementation:**
+   - Created a dedicated Image module for Cloudinary integration
+   - Implemented utility functions for Cloudinary URL generation
+   - Added CloudinaryImage component for consistent image rendering
+   - Established standard patterns for image transformations
 
-### Key Features
-- Slide and fade animations
-- Nested navigation structure
-- Visual feedback on interactions
-- Proper spacing and typography hierarchy
-- Chevron indicators for navigation depth
-- Group hover states with red accent colors
-- Proper overflow handling for long content
+2. **Director Series Chair Image Updates:**
+   - Replaced placeholder images with actual Cloudinary images
+   - Implemented variant-specific image loading for High Back (HB) and Medium Back (MB) chairs
+   - Updated URL patterns to follow: `https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/{chair-name}/{variant-code}.jpg`
+   - Added proper image mappings for Ashley, Opera, and Tycoon director chairs
 
-### Technical Implementation
-- Used React state for menu open/close
-- Implemented nested state for section toggles
-- Used Tailwind for responsive styling
-- Implemented proper z-index stacking
-- Added transition effects for smooth animations
-- Used proper semantic HTML structure
+3. **Utility Functions Development:**
+   - Created `getDirectorChairVariantImageUrl` for specific variant image URLs
+   - Implemented `getChairNameFromSlug` to extract chair names from product slugs
+   - Added `getCloudinaryImageWithTransform` for advanced image manipulation
+   - Established consistent patterns for image URL generation
+
+4. **Component Updates:**
+   - Enhanced GlassmorphicProductCard to display Cloudinary images
+   - Updated director-series product detail page to show variant images
+   - Added proper responsive image sizing with the `sizes` attribute
+   - Implemented fallbacks for missing images
+
+5. **Mock Data Restructuring:**
+   - Updated director series mock data with proper Cloudinary URLs
+   - Added correct variant codes for each chair model
+   - Ensured consistent image path structure across products
+   - Fixed product data to properly reference Cloudinary images
+
+These changes significantly improve the user experience by replacing placeholder images with actual product images. The modular approach ensures consistent image handling across the application while providing a flexible system for future image requirements.
 
 ---
 
-# Mobile Menu Implementation Details
+## Director Series UI Enhancement (5/28/2025)
 
-## Navigation Structure
-- Implemented two-level navigation hierarchy
-- Used ChevronDown/ChevronRight for visual direction
-- Added red accents for interactive elements
-- Maintained consistent spacing and typography
+**Summary of Changes:**
 
-## Animations
-- Added slide and fade transitions
-- Used transform and opacity for performance
-- Implemented smooth ChevronDown rotation
-- Added hover state transitions
+1. **Brand Identity Implementation:**
+   - Applied SteelMade's red accent color (#B91C1C) consistently across UI elements
+   - Created a cohesive neutral color palette for backgrounds and supporting elements
+   - Implemented subtle brand color accents for interactive states
+   - Established consistent application of brand colors for better recognition
 
-## State Management
-- Used useState for menu open/close state
-- Implemented useCallback for section toggles
-- Added aria-hidden for accessibility
-- Maintained proper z-index stacking
+2. **Component Design System:**
+   - Created a modular component system with consistent styling
+   - Implemented standardized card components for product listings
+   - Developed enhanced product detail page layouts
+   - Added responsive design patterns for all components
+   - Standardized interactive elements (buttons, links, selectors)
 
-## Mobile Optimization
-- Added touch-friendly hit areas
-- Implemented proper overflow scrolling
-- Used backdrop blur for better readability
-- Added proper spacing for touch targets
+3. **Typography and Spacing:**
+   - Established a clear typographic hierarchy for product information
+   - Implemented consistent font sizing and weights across the site
+   - Created a standardized spacing system using Tailwind's scale
+   - Applied proper whitespace for improved readability and visual organization
+
+4. **Product Presentation:**
+   - Enhanced product image display with optimized sizing
+   - Improved variant selection UI with clear visual feedback
+   - Created better organization of product specifications
+   - Added subtle animations and transitions for state changes
+   - Implemented consistent card layouts for product listings
+
+5. **Responsive Design Improvements:**
+   - Optimized layouts for all device sizes from mobile to desktop
+   - Created appropriate breakpoints for layout changes
+   - Adjusted typography and spacing for smaller screens
+   - Enhanced touch targets for mobile users
+   - Implemented proper stacking order for mobile views
+
+These UI enhancements have significantly improved the visual presentation and user experience of the director-series pages. The changes establish a consistent design language that can be extended to other product categories, ensuring a cohesive brand experience throughout the site. The modular approach to component design allows for easy maintenance and future expansion.
+
+---
+
+## Director Series Product Page Fix (6/1/2025)
+
+**Summary of Changes:**
+
+1. **Missing Component Implementation:**
+   - Identified and resolved issue with director series product pages not loading properly
+   - Created the previously missing `EnhancedProductDetailLayout` component
+   - Implemented variant selection with proper state management
+   - Added comprehensive error and loading states
+   - Fixed the hook order issue to follow React rules
+
+2. **Cloudinary Image Integration:**
+   - Created utility functions for handling Cloudinary images
+   - Implemented proper mapping of variant IDs to specific image codes
+   - Added chair name extraction from product slugs
+   - Created utility for image transformations
+   - Ensured proper fallback handling for missing images
+
+3. **UI Enhancement:**
+   - Implemented responsive grid layout for product listings
+   - Enhanced product cards with proper spacing and typography
+   - Created consistent styling using SteelMade's brand colors
+   - Added subtle animations and hover effects
+   - Improved accessibility with proper contrast and semantic markup
+
+4. **Product Data Flow:**
+   - Fixed data loading and error handling in product detail pages
+   - Implemented proper null checking throughout the components
+   - Enhanced type safety with explicit interfaces
+   - Added console logging for easier debugging
+   - Created fallback content for error states
+
+These changes have transformed the director series product pages from a non-functioning state to a fully implemented, visually appealing user experience that aligns with SteelMade's brand identity and follows best practices for web development.
+
+---
+
+## Director Series Pages Bug Fixes (5/30/2025)
+
+**Summary of Changes:**
+
+1. **ProductService Implementation Fix:**
+   - Resolved critical issue with undefined ProductService in director chair pages
+   - Consolidated multiple implementations into a single consistent pattern
+   - Added hardcoded product data directly in the service to eliminate import errors
+   - Created standardized methods for product data access
+
+2.  **Module Resolution Improvements:**
+   - Fixed import paths for ProductService module
+   - Implemented proper error handling for dynamic imports
+   - Added defensive coding for handling undefined services
+   - Created consistent module access patterns across all pages
+
+3. **Error Handling Enhancements:**
+   - Implemented proper error states with descriptive messages
+   - Added fallback content for error conditions
+   - Created branded loading indicators with corporate colors
+   - Added detailed console logging for troubleshooting
+
+4. **Individual Chair Page Fixes:**
+   - Fixed ashley-director-chair page to properly load product data
+   - Resolved opera-director-chair page issues with variant images
+   - Added missing tycoon-director-chair data and implementation
+   - Ensured consistent UI across all director chair variants
+
+5. **Architecture Documentation:**
+   - Updated documentation to reflect the modular approach
+   - Created troubleshooting guide for similar issues
+   - Added examples of correct import patterns
+   - Documented the module resolution process
+
+These fixes ensure that all director series chair pages now load and display properly, providing a consistent experience across the entire product lineup. The modular architecture has been strengthened with proper error handling and fallback mechanisms.
+
+---
+
+## Director Series UI Enhancement (5/30/2025)
+
+**Summary of Changes:**
+
+1. **Enhanced Director Series Listing Page:**
+   - Created a visually striking hero section with brand colors and animations
+   - Implemented feature sections with icon-based cards and clear typography
+   - Developed a responsive product grid with consistent card styling
+   - Added testimonial and call-to-action sections for better engagement
+   - Implemented subtle animations with Framer Motion for improved UX
+
+2. **Improved Individual Chair Detail Pages:**
+   - Redesigned product pages with a clean, modern two-column layout
+   - Enhanced product gallery with thumbnail navigation
+   - Implemented variant selection with clear visual feedback
+   - Created well-organized specification and features displays
+   - Added a branded warranty section with visual enhancements
+
+3. **Visual Design System Implementation:**
+   - Applied consistent brand color usage throughout all pages
+   - Implemented standardized typography with clear hierarchy
+   - Created consistent spacing using a systematic scale
+   - Added subtle animations and interactions for better engagement
+   - Ensured proper contrast and readability across all elements
+
+4. **Responsive Design Optimization:**
+   - Implemented mobile-first design with appropriate breakpoints
+   - Created touch-friendly interactive elements
+   - Ensured consistent experience across all device sizes
+   - Optimized image display for different viewport sizes
+   - Adjusted typography and spacing for mobile contexts
+
+5. **Accessibility Enhancements:**
+   - Used semantic HTML structure throughout
+   - Added proper ARIA attributes for interactive elements
+   - Ensured sufficient color contrast for text readability
+   - Implemented keyboard navigation support
+   - Added appropriate text alternatives for visual elements
+
+These enhancements provide a significantly improved user experience for the director series chairs while establishing a consistent design language that can be extended to other product categories. The changes follow the modular design system established in previous work, ensuring cohesive brand presentation throughout the site.
+
+---
+
+## Director Series Chair Image Loading Fix (6/2/2025)
+
+**Summary of Changes:**
+
+1. **Image Loading Issue Resolution:**
+   - Fixed issue where chair images weren't displaying on initial page load
+   - Implemented default variant selection on component mount
+   - Added proper fallback mechanism for image paths
+   - Created consistent image loading pattern across all chair models
+
+2. **Visual Enhancements:**
+   - Added decorative rectangle element in the corner of image containers
+   - Updated variant button text to use brand red color (#B91C1C)
+   - Standardized image container styling across all product pages
+   - Implemented subtle loading animations for better user experience
+
+3. **Error Handling Improvements:**
+   - Added onError handlers for all product images
+   - Implemented consistent fallback to default images
+   - Created loading states for images during fetch
+   - Added error logging for debugging purposes
+
+4. **Standardization Across Chair Pages:**
+   - Fixed inconsistencies between Ashley, Opera, and Tycoon chair pages
+   - Standardized features list layout to use consistent grid
+   - Removed redundant specifications section as requested
+   - Ensured all chair pages follow the same component structure
+
+These changes ensure that all director series chair pages provide a consistent, high-quality user experience with immediate image loading, proper error handling, and standardized visual presentation. The implementation follows our modular architecture approach, making it easy to extend to other product categories in the future.
+
+---
+
+## Chair Detail Page Image Loading Fix (6/5/2025)
+
+**Implementation Summary:**
+
+1. **Fixed Image Loading Issue**
+   - Implemented default variant selection on component mount
+   - Created consistent image path resolution with fallbacks
+   - Added proper loading states and error handling
+   - Ensured images are displayed immediately on page load
+
+2. **Visual Enhancements**
+   - Added decorative rectangle in the corner of the image container
+   - Updated variant buttons to use brand red text color (#B91C1C)
+   - Added subtle border around the image container
+   - Implemented consistent styling across all chair models
+
+3. **Component Standardization**
+   - Created reusable ProductImageGallery component
+   - Enhanced VariantSelector with brand styling
+   - Implemented ContactButtonWithVariant component
+   - Standardized layout and styling across all chair pages
+
+4. **Accessibility Improvements**
+   - Added proper ARIA attributes for interactive elements
+   - Implemented keyboard navigation support
+   - Provided descriptive alt text for images
+   - Added appropriate focus states for buttons
+
+This implementation resolves Task 23 by ensuring all chair detail pages display images immediately on load, with consistent styling and proper error handling. The modular approach with reusable components allows for easy maintenance and future enhancements.
+
+---
+
+## Woodland Director Chair Implementation (6/12/2025)
+
+**Summary of Changes:**
+
+1. **Woodland Director Chair Data Implementation:**
+   - Created a new modular data file for the Woodland Director Chair
+   - Implemented proper data structure with consistent typing
+   - Added High Back and Medium Back variants with Cloudinary image URLs
+   - Ensured consistent feature list format
+   - Followed established data patterns from other chairs
+
+2. **Product Registration System:**
+   - Updated director-series index.ts to include the new chair model
+   - Added the chair to the centralized directorSeriesChairs array
+   - Ensured proper exports for all chair models
+   - Implemented consistent import patterns
+
+3. **Standardized Page Components:**
+   - Created page.tsx with the same UI structure as other chair pages
+   - Implemented consistent variant selection pattern
+   - Used brand styling with red accent colors for selected variants
+   - Added the decorative rectangle element in the image corner
+   - Implemented proper state management for variant selection
+
+4. **Error Handling:**
+   - Created dedicated error.tsx component with user-friendly messages
+   - Implemented navigation fallbacks to the director-series page
+   - Added proper error state UI with brand styling
+   - Enhanced overall error UX with clear messaging
+
+These changes follow the modular architecture pattern established in the project, ensuring consistent implementation across all chair models. The Woodland Director Chair now displays properly and maintains the same look and feel as other director series chairs.
+
+**Key Paths:**
+- Data: `lib/data/products/chairs/director-series/woodland-director-chair.ts`
+- Page: `app/chairs/director-series/woodland-director-chair/page.tsx`
+- Error: `app/chairs/director-series/woodland-director-chair/error.tsx`
+- Registration: `lib/data/products/chairs/director-series/index.ts`
+
+**Cloudinary Images:**
+- High Back: `https://res.cloudinary.com/dqde19mfs/image/upload/v1749454239/steelmade/chairs/director-series/woodland/ic-338-hb.jpg`
+- Medium Back: `https://res.cloudinary.com/dqde19mfs/image/upload/v1749454239/steelmade/chairs/director-series/woodland/ic-339-mb.jpg`
+
+This implementation serves as a pattern for future chair additions, demonstrating the modular, maintainable approach to product data management.
+
+---
+
+## Woodland Director Chair Styling Analysis (6/15/2025)
+
+**Observation Summary:**
+
+During the implementation of the Woodland Director Chair, we identified styling inconsistencies compared to other director series chairs. The following differences were observed:
+
+1. **Variant Selection Implementation:**
+   - The Woodland chair page uses direct inline styling for variant selection buttons
+   - Other chair pages use a shared component with standardized styling
+   - The hover, focus, and selected states may have subtle differences
+   - The text color for selected variants should consistently use SteelMade red (#B91C1C)
+
+2. **Image Display Differences:**
+   - The decorative rectangle in the top-right corner of the image container might have different opacity
+   - The image container may have different border radius or shadow properties
+   - The responsive behavior of the image container could be inconsistent
+
+3. **Feature List Styling:**
+   - The grid layout for features should consistently use `grid grid-cols-1 sm:grid-cols-2 gap-2`
+   - Icon styling should be consistent across all chair pages
+   - Typography and spacing should follow the established pattern
+
+4. **Brand Color Application:**
+   - All interactive elements should consistently use the SteelMade red accent color
+   - Hover and focus states should have consistent color transitions
+   - Selected states should have the same visual feedback across all chair models
+
+**Action Plan:**
+
+To address these inconsistencies, we've created a dedicated subtask (22.6) to standardize the Woodland chair styling. The approach will include:
+
+1. Creating reusable components for shared elements
+2. Extracting common styling patterns to CSS modules or Tailwind components
+3. Updating the Woodland chair page to use these standardized elements
+4. Documenting the styling standards for future chair additions
+
+This standardization effort will ensure a consistent user experience across all director series chairs and strengthen the SteelMade brand identity throughout the application.
+
+---
+
+## Director Series Chair Styling Standardization (6/22/2025)
+
+**Project Summary:**
+
+We have successfully standardized the styling across all director series chair pages, using the Opera Director Chair page as the reference standard. As part of this process, we also removed the price display from all chair pages in accordance with the new design guidelines.
+
+**Key Changes Implemented:**
+
+1. **Consistent Layout Structure**:
+   - All chair pages now follow the same layout pattern
+   - Product details are presented in a consistent format
+   - Images are displayed with the same styling and decorative elements
+   - Price display has been removed from all pages
+
+2. **Standardized Custom Sections**:
+   - Each chair page now includes a custom section with:
+     - A heading for the chair's premium features
+     - A descriptive paragraph about the chair
+     - A bullet-point list of features using the same styling
+   - Consistent spacing, typography, and border styling
+
+3. **Brand Color Alignment**:
+   - SteelMade red (#B91C1C/text-red-700) is consistently used for:
+     - Buttons and interactive elements
+     - Links and selected variant text
+   - Removed amber/gold-specific styling from BigBoss Gold page for consistency
+   - Standardized typography and color usage across all pages
+
+4. **Documentation Updates**:
+   - Created director-series-styling-standards.md to document the standardized approach
+   - Updated task-master-ai.json to reflect the completion of this task
+   - Documented the removal of price display as a design decision
+
+**Benefits Achieved:**
+
+1. Consistent user experience across all director series chair pages
+2. Stronger brand identity through consistent styling
+3. More focused product presentation without price display
+4. Improved maintainability through centralized styling
+5. Streamlined development process for future chair pages
+
+This standardization represents a significant improvement in our product presentation consistency and brand identity. The Opera Director Chair styling now serves as the reference standard for all chair pages, ensuring a premium and cohesive user experience.

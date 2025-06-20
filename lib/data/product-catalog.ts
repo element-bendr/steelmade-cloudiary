@@ -8,7 +8,7 @@ import { getPortfolioSeries as getPortfolioSeriesHelper, getMockData as getMockD
 
 // Single source of truth for all product data
 export const productCatalog: ProductCatalog = {
-  chairs,
+  chairs: chairs,
   desks,
   "storage-solutions": storage,
   "school-furniture": {},

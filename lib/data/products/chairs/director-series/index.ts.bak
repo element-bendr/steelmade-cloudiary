@@ -1,0 +1,34 @@
+// This is a backup of the original index.ts file before cleanup
+// Created as part of task 27.12: Clean Up Director Series Files
+
+import { Chair } from '@/lib/factories/chairFactory';
+
+// Internal collection of chairs for our module
+const directorSeriesChairs: Chair[] = [];
+
+/**
+ * Gets a specific director chair by ID
+ */
+export function getDirectorChair(chairId: string): Chair | undefined {
+  return directorSeriesChairs.find(chair => chair.id === chairId);
+}
+
+/**
+ * Gets all director series chairs
+ */
+export function getAllDirectorChairs(): Chair[] {
+  return directorSeriesChairs;
+}
+
+/**
+ * Registers a new chair in the director series
+ */
+export function registerDirectorChair(chair: Chair): void {
+  // Prevent duplicates
+  if (!directorSeriesChairs.some(c => c.id === chair.id)) {
+    directorSeriesChairs.push(chair);
+  }
+}
+
+// Export for direct access
+export { directorSeriesChairs };

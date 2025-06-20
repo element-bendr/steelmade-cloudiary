@@ -5,3 +5,4 @@ export { ProductSeriesInteractiveFeatures } from './ProductSeriesInteractiveFeat
 export { SeriesCardInteractive } from './SeriesCardInteractive'
 export { SeriesCardStatic } from './SeriesCardStatic'
 export { SeriesGrid } from './series-grid'
+export { default as ProductDetailLayout } from './ProductDetailLayout'

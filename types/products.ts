@@ -47,26 +47,67 @@ export interface ProductCategoryPageData {
   subcategories?: ProductCategoryPageData[];
 }
 
+// Make sure the file in lib/types/product-types.ts and the one in types/products.ts
+// have consistent definitions for product data types
+
+// Define product-related types
+
+// Define a product variant
+export interface ProductVariant {
+  variantId: string;
+  variantName: string;
+  description: string;
+  imageUrl?: string;
+  price?: number;
+  availability?: "in-stock" | "low-stock" | "out-of-stock" | "pre-order";
+}
+
+// Define the base product data structure
 export interface ProductData {
   id: string;
   name: string;
   description: string;
-  seoDescription?: string; // Added seoDescription as optional
-  price?: number;
-  imageUrl: string;
-  images?: ProductImage[];
-  category: ProductCategoryType;
+  category: string;
   seriesId: string;
-  features: string[];
+  imageUrl: string;
+  price: number;
+  features?: string[];
   specifications?: Record<string, string>;
-  inStock: boolean;
+  variants?: ProductVariant[];
   relatedProducts?: string[];
-  materials?: string[]; // Added materials
-  dimensions?: { // Added dimensions
-    width: string;
-    height: string;
-    depth: string;
-    weight: string;
-  };
-  lastModified?: Date | string; // Added lastModified
+}
+
+// Define extended product data with additional fields
+export interface ExtendedProductData extends ProductData {
+  category: string;
+  seriesId: string;
+  weight?: string;
+  dimensions?: string;
+  materials?: string[];
+  warranty?: string;
+  tags?: string[];
+  rating?: number;
+  reviewCount?: number;
+  customizationOptions?: {
+    name: string;
+    options: string[];
+  }[];
+}
+
+// Define a product series
+export interface ProductSeries {
+  id: string;
+  name: string;
+  description: string;
+  imageUrl?: string;
+  products: Record<string, ProductData>;
+}
+
+// Define a product category
+export interface ProductCategory {
+  id: string;
+  name: string;
+  description: string;
+  imageUrl?: string;
+  series: Record<string, ProductSeries>;
 }

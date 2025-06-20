@@ -1,17 +1,14 @@
-import { ProductCatalog } from "../product-types";
-import { chairs } from "./chairs";
-import { desks } from "./desks";
-import { storage } from "./storage";
+// This file serves as the main entry point for all product data in the modular system
+// It's updated automatically by the migration scripts
 
-export { chairs, desks, storage };
+// Import categories
+import { chairs } from './chairs';
 
-export const products: ProductCatalog = {
+// Export combined products object
+export const products = {
   chairs,
-  desks,
-  storage,
-  "hospital-furniture": {},
-  "school-furniture": {},
-  "racking-systems": {},
-  "modular-furniture": {},
-  "office-accessories": {},
+  // Additional categories will be added here as they're migrated
 };
+
+// Export individual categories for direct access
+export { chairs };

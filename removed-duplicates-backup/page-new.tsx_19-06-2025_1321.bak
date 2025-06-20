@@ -1,0 +1,54 @@
+/**
+ * !!! DEPRECATED FILE !!!
+ * 
+ * This file has been deprecated and is scheduled for removal.
+ * Please use the main page.tsx file instead.
+ * 
+ * All functionality from this file has been incorporated into:
+ * app/chairs/director-series/page.tsx
+ * 
+ * If you are seeing this file imported somewhere in the codebase,
+ * please update the import to use the main file.
+ */
+
+"use client";
+
+// Import individual chair data files
+import ashleyDirectorChair from '@/lib/data/products/chairs/director-series/ashley';
+import operaDirectorChair from '@/lib/data/products/chairs/director-series/opera';
+import tycoonDirectorChair from '@/lib/data/products/chairs/director-series/tycoon';
+import bigbossGoldDirectorChair from '@/lib/data/products/chairs/director-series/bigboss-gold';
+import woodlandDirectorChair from '@/lib/data/products/chairs/director-series/woodland';
+import bostonDirectorChair from '@/lib/data/products/chairs/director-series/boston';
+
+import React from 'react';
+import { ChairCard } from '@/components/products/ChairCard';
+import { Metadata } from 'next';
+
+// Collect all chairs into an array
+const chairs = [
+  ashleyDirectorChair,
+  operaDirectorChair,
+  tycoonDirectorChair,
+  bigbossGoldDirectorChair,
+  woodlandDirectorChair,
+  bostonDirectorChair
+];
+
+export default function DirectorSeriesPage() {
+  return (
+    <div className="container mx-auto py-12">
+      <h1 className="text-3xl font-bold text-gray-900 mb-6">Director Series Chairs</h1>
+      <p className="text-gray-600 mb-10 max-w-3xl">
+        Discover our premium Director Series chairs, designed for professionals who demand the best in comfort and style.
+        Each chair is crafted with attention to detail and built to last.
+      </p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {chairs.map((chair) => (
+          <ChairCard key={chair.id} chair={chair} />
+        ))}
+      </div>
+    </div>
+  );
+}

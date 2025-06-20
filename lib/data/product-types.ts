@@ -1,6 +1,51 @@
-import type { ProductCategory as ImportedProductCategory, SeriesMetadata } from "@/types/collections";
-import type { Series } from "@/components/portfolio/types";
-import type { ProductData } from "@/types/products";
+// Core product data types for the modular system
+
+export interface ProductImage {
+  url: string;
+  alt: string;
+  width?: number;
+  height?: number;
+}
+
+export interface ProductVariant {
+  variantId: string;
+  variantName: string;
+  name: string;
+  description?: string;
+  imageUrl: string;
+  specifications?: Record<string, string>;
+  price?: string;
+  sku?: string;
+  inStock?: boolean;
+  imageClass?: string; // Optional custom image class for styling
+}
+
+export interface BaseProductData {
+  id: string;
+  name: string;
+  description: string;
+  category: string;
+  seriesId: string;
+  inStock?: boolean;
+  imageUrl: string;
+}
+
+export interface ExtendedProductData extends BaseProductData {
+  images?: ProductImage[];
+  features?: string[];
+  specifications?: Record<string, string>;
+  variants?: ProductVariant[];
+  price?: string;
+  sku?: string;
+}
+
+export interface ProductSeries {
+  id: string;
+  description?: string;
+  products: Record<string, ExtendedProductData>;
+}
+
+export type ProductCategoryData = Record<string, ProductSeries>;
 
 // Add this export to the product-types.ts file
 export type ProductType = 
@@ -16,25 +61,3 @@ export type ProductType =
   | "storage-solutions"
   | "modular-furniture"
   | "office-accessories";
-
-// Extended product data with variants
-export interface ProductVariant {
-  variantId: string;
-  variantName: string;
-  name: string;
-  description: string;
-  imageUrl: string;
-  specifications: Record<string, string>;
-}
-
-export interface ExtendedProductData extends ProductData {
-  variants?: ProductVariant[];
-}
-
-export interface ProductSeries extends Omit<SeriesMetadata, 'products'> {
-  products: Record<string, ExtendedProductData>;
-}
-
-export type ProductCatalog = {
-  [key: string]: Record<string, ProductSeries>;
-};

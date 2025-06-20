@@ -1,0 +1,91 @@
+{
+  "tasks": [
+    {
+      "id": 27,
+      "title": "Implement Product Module and Remove Legacy System",
+      "description": "Create a modular product data architecture and eliminate the legacy product-utils.ts system. This will improve maintainability, type safety, and set the foundation for future product data management.",
+      "details": "## Current State\n\nThe application currently has two parallel systems:\n\n1. **Legacy System** in `lib/utils/product-utils.ts`:\n   - Uses mock data objects directly in the file\n   - Contains all product data in a single file\n   - Provides simple getter functions\n   - Currently used by the frontend components\n\n2. **Modular System** in `lib/data/products/*`:\n   - Organizes data by category and series\n   - More maintainable and scalable structure\n   - Not fully integrated with frontend components\n\n## Modularization Goals\n\n1. Create a clean, maintainable product data architecture\n2. Centralize product data access through a service layer\n3. Implement proper type safety and validation\n4. Support data fetching from external sources in the future\n5. Enable easy product and variant additions\n6. Ensure all products (including Tycoon Director Chair) work properly",
+      "status": "pending",
+      "priority": "high",
+      "subtasks": [
+        {
+          "id": 27.1,
+          "title": "Set Up Product Module Directory Structure",
+          "description": "Create the directory structure for the product module following the modular architecture pattern.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create module directories:\n   - `/modules/product/`\n   - `/modules/product/types/`\n   - `/modules/product/services/`\n   - `/modules/product/data/categories/chairs/`\n   - `/modules/product/validation/`\n   - `/modules/product/utils/`\n\n2. Set up module entry point in `/modules/product/index.ts`\n3. Create README.md with module documentation"
+        },
+        {
+          "id": 27.2,
+          "title": "Implement Core Product Types",
+          "description": "Create strong TypeScript interfaces for all product-related entities with proper typing.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create `/modules/product/types/index.ts` with:\n   - `ProductCategory` enum\n   - `ProductSeries` enums by category\n   - `ProductImage` interface\n   - `ProductVariant` interface\n   - `Product` interface\n   - `ProductSeries` interface\n   - Type guards and validation helpers\n\n2. Add JSDoc comments for all types\n3. Create a TypeScript barrel file for exporting all types"
+        },
+        {
+          "id": 27.3,
+          "title": "Implement ProductService",
+          "description": "Create a service class that provides methods for accessing product data with proper caching and error handling.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create `/modules/product/services/product-service.ts`\n2. Implement singleton pattern\n3. Add methods for:\n   - `getProductById`\n   - `getProductByCategoryAndSeries`\n   - `getSeriesByCategoryAndId`\n   - `getProductsByCategory`\n   - `getAllSeries`\n4. Implement caching for performance\n5. Add proper error handling\n6. Create helper methods for loading data from modular structure"
+        },
+        {
+          "id": 27.4,
+          "title": "Migrate Product Data to Modular Structure",
+          "description": "Move all product data from the legacy system to the new modular structure, organized by category and series.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create data files for each series:\n   - `/modules/product/data/categories/chairs/director-series.ts`\n   - `/modules/product/data/categories/chairs/executive-series.ts`\n   - etc.\n\n2. Update all product data to use the new type system\n3. Ensure all products (including Tycoon Chair) are properly migrated\n4. Add barrel files for easier imports\n5. Verify data integrity"
+        },
+        {
+          "id": 27.5,
+          "title": "Implement Zod Validation Schemas",
+          "description": "Create Zod schemas for validating product data at module boundaries.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create `/modules/product/validation/product-schema.ts`\n2. Implement Zod schemas for:\n   - `ProductImageSchema`\n   - `ProductVariantSchema`\n   - `ProductSchema`\n   - `ProductSeriesSchema`\n3. Add validation utilities\n4. Integrate validation in the ProductService"
+        },
+        {
+          "id": 27.6,
+          "title": "Create Adapter Layer for Backward Compatibility",
+          "description": "Implement adapter functions that maintain the same interface as the legacy system but use the new product module.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create `/lib/adapters/product-utils-adapter.ts`\n2. Implement adapter functions:\n   - `getProductById`\n   - `getSeriesById`\n   - `getAllProducts`\n   - `getAllSeries`\n3. Mark functions as deprecated\n4. Add JSDoc comments explaining migration path"
+        },
+        {
+          "id": 27.7,
+          "title": "Update Example Product Page",
+          "description": "Create an example page that uses the new product module to demonstrate how to use it.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create `/app/product-example/[productId]/page.tsx`\n2. Implement the page using ProductService\n3. Add proper error handling\n4. Demonstrate how to handle variants and images\n5. Add documentation comments"
+        },
+        {
+          "id": 27.8,
+          "title": "Update Existing Pages to Use New Module",
+          "description": "Gradually update all pages and components to use the new product module instead of the legacy system.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Identify all components that use `product-utils.ts`\n2. Update imports to use either:\n   - Adapter functions temporarily, or\n   - ProductService directly\n3. Update type references\n4. Test each component thoroughly\n5. Document any issues or special cases"
+        },
+        {
+          "id": 27.9,
+          "title": "Write Tests for Product Module",
+          "description": "Create comprehensive tests for the product module to ensure it works correctly.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create unit tests for:\n   - ProductService methods\n   - Type guards and validation\n   - Adapter functions\n2. Create integration tests for:\n   - Module boundaries\n   - Data loading\n3. Test edge cases and error handling\n4. Add test fixtures and mock data"
+        },
+        {
+          "id": 27.10,
+          "title": "Document Product Module Usage",
+          "description": "Create comprehensive documentation for using the product module.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create `/docs/product-module.md`\n2. Document:\n   - Module architecture\n   - How to use the ProductService\n   - How to add new products\n   - How to update existing products\n   - Type system\n   - Migration guide from legacy system\n3. Add code examples\n4. Update main README.md with link to documentation"
+        },
+        {
+          "id": 27.11,
+          "title": "Remove Legacy System",
+          "description": "Once all components are updated, remove the legacy product-utils.ts file and any related code.",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Verify all components use the new module\n2. Remove `/lib/utils/product-utils.ts`\n3. Clean up any unused imports or references\n4. Verify the application still works correctly\n5. Document the removal in CHANGELOG.md"
+        }
+      ]
+    }
+  ]
+}

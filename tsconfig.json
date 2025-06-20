@@ -1,20 +1,20 @@
 {
   "extends": "./tsconfig.paths.json",
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "ESNext",
+    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": ".",
     "plugins": [
       {
         "name": "next"
@@ -22,10 +22,13 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@/components/*": ["./components/*"],
-      "@/lib/*": ["./lib/*"],
-      "@/modules/*": ["./modules/*/src"],
-      "@modules/*": ["modules/*/src"]
+      "@modules/*": ["./modules/*"],
+      "@app/*": ["./app/*"],
+      "@components/*": ["./components/*"],
+      "@lib/*": ["./lib/*"],
+      "@utils/*": ["./utils/*"],
+      "@public/*": ["./public/*"],
+      "@styles/*": ["./styles/*"]
     }
   },
   "include": [

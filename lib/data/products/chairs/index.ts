@@ -1,10 +1,13 @@
-import { ProductCatalog } from "../../product-types";
-import { directorSeries } from "./director-series";
-import { ergonomicSeries } from "./ergonomic-series";
-import { executiveSeries } from "./executive-series";
+import { executiveSeries } from './executive-series';
+import { ProductCategoryData } from '@/lib/data/product-types';
+import { directorSeries } from './director-series';
 
-export const chairs: ProductCatalog["chairs"] = {
-  "director-series": directorSeries,
-  "ergonomic-series": ergonomicSeries,
-  "executive-series": executiveSeries,
+// Export the chairs category with all its series
+export const chairs: ProductCategoryData = {
+  'director-series': directorSeries,
+  'executive-series': executiveSeries
+  // Add more series as they are created
 };
+
+// Re-export individual series for direct access
+export { directorSeries, executiveSeries };

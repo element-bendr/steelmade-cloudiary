@@ -1,419 +1,156 @@
- [{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/image/src/services/ImageOptimizationService.ts",
-	"owner": "typescript",
-	"code": "2322",
-	"severity": 8,
-	"message": "Type 'Either<Error, readonly { [x: string]: any; publicId?: unknown; url?: unknown; width?: unknown; height?: unknown; format?: unknown; resourceType?: unknown; }[]>' is not assignable to type 'Either<Error, { [x: string]: any; publicId?: unknown; url?: unknown; width?: unknown; height?: unknown; format?: unknown; resourceType?: unknown; }[]>'.\n  Type 'Right<readonly { [x: string]: any; publicId?: unknown; url?: unknown; width?: unknown; height?: unknown; format?: unknown; resourceType?: unknown; }[]>' is not assignable to type 'Either<Error, { [x: string]: any; publicId?: unknown; url?: unknown; width?: unknown; height?: unknown; format?: unknown; resourceType?: unknown; }[]>'.\n    Type 'Right<readonly { [x: string]: any; publicId?: unknown; url?: unknown; width?: unknown; height?: unknown; format?: unknown; resourceType?: unknown; }[]>' is not assignable to type 'Right<{ [x: string]: any; publicId?: unknown; url?: unknown; width?: unknown; height?: unknown; format?: unknown; resourceType?: unknown; }[]>'.\n      The type 'readonly { [x: string]: any; publicId?: unknown; url?: unknown; width?: unknown; height?: unknown; format?: unknown; resourceType?: unknown; }[]' is 'readonly' and cannot be assigned to the mutable type '{ [x: string]: any; publicId?: unknown; url?: unknown; width?: unknown; height?: unknown; format?: unknown; resourceType?: unknown; }[]'.",
-	"source": "ts",
-	"startLineNumber": 42,
-	"startColumn": 5,
-	"endLineNumber": 57,
-	"endColumn": 6
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/image/src/services/ImageService.ts",
-	"owner": "typescript",
-	"code": "2307",
-	"severity": 8,
-	"message": "Cannot find module '@modules/shared' or its corresponding type declarations.",
-	"source": "ts",
-	"startLineNumber": 6,
-	"startColumn": 35,
-	"endLineNumber": 6,
-	"endColumn": 52
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/image/src/services/ImageService.ts",
-	"owner": "typescript",
-	"code": "2322",
-	"severity": 8,
-	"message": "Type 'Either<unknown, any>' is not assignable to type 'Either<Error, { [x: string]: any; publicId?: unknown; url?: unknown; width?: unknown; height?: unknown; format?: unknown; resourceType?: unknown; }>'.\n  Type 'Left<unknown>' is not assignable to type 'Either<Error, { [x: string]: any; publicId?: unknown; url?: unknown; width?: unknown; height?: unknown; format?: unknown; resourceType?: unknown; }>'.\n    Type 'Left<unknown>' is not assignable to type 'Left<Error>'.\n      Type 'unknown' is not assignable to type 'Error'.",
-	"source": "ts",
-	"startLineNumber": 10,
-	"startColumn": 5,
-	"endLineNumber": 18,
-	"endColumn": 6
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/image/src/services/ImageService.ts",
-	"owner": "typescript",
-	"code": "2698",
-	"severity": 8,
-	"message": "Spread types may only be created from object types.",
-	"source": "ts",
-	"startLineNumber": 15,
-	"startColumn": 9,
-	"endLineNumber": 15,
-	"endColumn": 22
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/image/src/services/ImageService.ts",
-	"owner": "typescript",
-	"code": "18046",
-	"severity": 8,
-	"message": "'validImage' is of type 'unknown'.",
-	"source": "ts",
-	"startLineNumber": 16,
-	"startColumn": 27,
-	"endLineNumber": 16,
-	"endColumn": 37
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/image/src/types/index.ts",
-	"owner": "typescript",
-	"code": "2307",
-	"severity": 8,
-	"message": "Cannot find module '@modules/shared' or its corresponding type declarations.",
-	"source": "ts",
-	"startLineNumber": 2,
-	"startColumn": 27,
-	"endLineNumber": 2,
-	"endColumn": 44
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/product/src/index.ts",
-	"owner": "typescript",
-	"code": "2308",
-	"severity": 8,
-	"message": "Module './types' has already exported a member named 'ProductImageSchema'. Consider explicitly re-exporting to resolve the ambiguity.",
-	"source": "ts",
-	"startLineNumber": 8,
-	"startColumn": 1,
-	"endLineNumber": 8,
-	"endColumn": 30
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/product/src/index.ts",
-	"owner": "typescript",
-	"code": "2308",
-	"severity": 8,
-	"message": "Module './types' has already exported a member named 'ProductSchema'. Consider explicitly re-exporting to resolve the ambiguity.",
-	"source": "ts",
-	"startLineNumber": 8,
-	"startColumn": 1,
-	"endLineNumber": 8,
-	"endColumn": 30
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/product/src/index.ts",
-	"owner": "typescript",
-	"code": "2308",
-	"severity": 8,
-	"message": "Module './types' has already exported a member named 'ProductVariantSchema'. Consider explicitly re-exporting to resolve the ambiguity.",
-	"source": "ts",
-	"startLineNumber": 8,
-	"startColumn": 1,
-	"endLineNumber": 8,
-	"endColumn": 30
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/product/src/services/ValidationService.ts",
-	"owner": "typescript",
-	"code": "2322",
-	"severity": 8,
-	"message": "Type 'Either<Error, readonly { id: string; description: string; title: string; images?: { id: string; url: string; alt: string; isDefault?: boolean | undefined; }[] | undefined; variants?: { variantId: string; variantName: string; isDefault?: boolean | undefined; }[] | undefined; specifications?: Record<...> | undefined; ...' is not assignable to type 'Either<Error, { id: string; description: string; title: string; images?: { id: string; url: string; alt: string; isDefault?: boolean | undefined; }[] | undefined; variants?: { variantId: string; variantName: string; isDefault?: boolean | undefined; }[] | undefined; specifications?: Record<...> | undefined; }[]>'.\n  Type 'Right<readonly { id: string; description: string; title: string; images?: { id: string; url: string; alt: string; isDefault?: boolean | undefined; }[] | undefined; variants?: { variantId: string; variantName: string; isDefault?: boolean | undefined; }[] | undefined; specifications?: Record<...> | undefined; }[]>' is not assignable to type 'Either<Error, { id: string; description: string; title: string; images?: { id: string; url: string; alt: string; isDefault?: boolean | undefined; }[] | undefined; variants?: { variantId: string; variantName: string; isDefault?: boolean | undefined; }[] | undefined; specifications?: Record<...> | undefined; }[]>'.\n    Type 'Right<readonly { id: string; description: string; title: string; images?: { id: string; url: string; alt: string; isDefault?: boolean | undefined; }[] | undefined; variants?: { variantId: string; variantName: string; isDefault?: boolean | undefined; }[] | undefined; specifications?: Record<...> | undefined; }[]>' is not assignable to type 'Right<{ id: string; description: string; title: string; images?: { id: string; url: string; alt: string; isDefault?: boolean | undefined; }[] | undefined; variants?: { variantId: string; variantName: string; isDefault?: boolean | undefined; }[] | undefined; specifications?: Record<...> | undefined; }[]>'.\n      The type 'readonly { id: string; description: string; title: string; images?: { id: string; url: string; alt: string; isDefault?: boolean | undefined; }[] | undefined; variants?: { variantId: string; variantName: string; isDefault?: boolean | undefined; }[] | undefined; specifications?: Record<...> | undefined; }[]' is 'readonly' and cannot be assigned to the mutable type '{ id: string; description: string; title: string; images?: { id: string; url: string; alt: string; isDefault?: boolean | undefined; }[] | undefined; variants?: { variantId: string; variantName: string; isDefault?: boolean | undefined; }[] | undefined; specifications?: Record<...> | undefined; }[]'.",
-	"source": "ts",
-	"startLineNumber": 26,
-	"startColumn": 5,
-	"endLineNumber": 29,
-	"endColumn": 6
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/product/src/test/setupTests.ts",
-	"owner": "typescript",
-	"code": "2304",
-	"severity": 8,
-	"message": "Cannot find name 'expect'.",
-	"source": "ts",
-	"startLineNumber": 3,
-	"startColumn": 1,
-	"endLineNumber": 3,
-	"endColumn": 7
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/product/src/validation/product-validation.ts",
-	"owner": "typescript",
-	"code": "2307",
-	"severity": 8,
-	"message": "Cannot find module '@modules/shared' or its corresponding type declarations.",
-	"source": "ts",
-	"startLineNumber": 1,
-	"startColumn": 35,
-	"endLineNumber": 1,
-	"endColumn": 52
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/product/tests/services/CloudinaryImageService.test.ts",
-	"owner": "typescript",
-	"code": "2339",
-	"severity": 8,
-	"message": "Property 'getInstance' does not exist on type '{ config: CloudinaryConfig; buildImageUrl: (publicId: string, transformations?: string) => string; createTransformations: (options: ImageOptions) => string; optimizeProductImage: (image: { ...; }, options?: ImageOptions | undefined) => { ...; }; }'.",
-	"source": "ts",
-	"startLineNumber": 5,
-	"startColumn": 42,
-	"endLineNumber": 5,
-	"endColumn": 53
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/product/tests/services/ProductDataService.test.ts",
-	"owner": "typescript",
-	"code": "2749",
-	"severity": 8,
-	"message": "'ProductDataService' refers to a value, but is being used as a type here. Did you mean 'typeof ProductDataService'?",
-	"source": "ts",
-	"startLineNumber": 5,
-	"startColumn": 16,
-	"endLineNumber": 5,
-	"endColumn": 34
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/product/tests/services/ProductDataService.test.ts",
-	"owner": "typescript",
-	"code": "2339",
-	"severity": 8,
-	"message": "Property 'getInstance' does not exist on type '{ cache: ProductCache; getProductById: (id: string) => TaskEither<Error, { id: string; description: string; title: string; images?: { id: string; url: string; alt: string; isDefault?: boolean | undefined; }[] | undefined; variants?: { ...; }[] | undefined; specifications?: Record<...> | undefined; }>; clearCache: ()...'.",
-	"source": "ts",
-	"startLineNumber": 8,
-	"startColumn": 34,
-	"endLineNumber": 8,
-	"endColumn": 45
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/product/tests/services/ProductDataService.test.ts",
-	"owner": "typescript",
-	"code": "2339",
-	"severity": 8,
-	"message": "Property 'getInstance' does not exist on type '{ cache: ProductCache; getProductById: (id: string) => TaskEither<Error, { id: string; description: string; title: string; images?: { id: string; url: string; alt: string; isDefault?: boolean | undefined; }[] | undefined; variants?: { ...; }[] | undefined; specifications?: Record<...> | undefined; }>; clearCache: ()...'.",
-	"source": "ts",
-	"startLineNumber": 13,
-	"startColumn": 42,
-	"endLineNumber": 13,
-	"endColumn": 53
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/product/tests/services/ProductDataService.test.ts",
-	"owner": "typescript",
-	"code": "2339",
-	"severity": 8,
-	"message": "Property 'getInstance' does not exist on type '{ cache: ProductCache; getProductById: (id: string) => TaskEither<Error, { id: string; description: string; title: string; images?: { id: string; url: string; alt: string; isDefault?: boolean | undefined; }[] | undefined; variants?: { ...; }[] | undefined; specifications?: Record<...> | undefined; }>; clearCache: ()...'.",
-	"source": "ts",
-	"startLineNumber": 14,
-	"startColumn": 42,
-	"endLineNumber": 14,
-	"endColumn": 53
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/shared/src/test/utils.ts",
-	"owner": "typescript",
-	"code": "2307",
-	"severity": 8,
-	"message": "Cannot find module '../validation/types' or its corresponding type declarations.",
-	"source": "ts",
-	"startLineNumber": 4,
-	"startColumn": 33,
-	"endLineNumber": 4,
-	"endColumn": 54
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/shared/src/validation/error-handling.ts",
-	"owner": "typescript",
-	"code": "2307",
-	"severity": 8,
-	"message": "Cannot find module './types' or its corresponding type declarations.",
-	"source": "ts",
-	"startLineNumber": 3,
-	"startColumn": 38,
-	"endLineNumber": 3,
-	"endColumn": 47
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/shared/src/validation/index.ts",
-	"owner": "typescript",
-	"code": "2322",
-	"severity": 8,
-	"message": "Type 'Either<Error, readonly T[]>' is not assignable to type 'Either<Error, T[]>'.\n  Type 'Right<readonly T[]>' is not assignable to type 'Either<Error, T[]>'.\n    Type 'Right<readonly T[]>' is not assignable to type 'Right<T[]>'.\n      The type 'readonly T[]' is 'readonly' and cannot be assigned to the mutable type 'T[]'.",
-	"source": "ts",
-	"startLineNumber": 17,
-	"startColumn": 7,
-	"endLineNumber": 20,
-	"endColumn": 8
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/shared/src/validation/index.ts",
-	"owner": "typescript",
-	"code": "2322",
-	"severity": 8,
-	"message": "Type 'Left<Error> | Right<string>' is not assignable to type 'Either<Error, T>'.\n  Type 'Right<string>' is not assignable to type 'Either<Error, T>'.\n    Type 'Right<string>' is not assignable to type 'Right<T>'.\n      Type 'string' is not assignable to type 'T'.\n        'string' is assignable to the constraint of type 'T', but 'T' could be instantiated with a different subtype of constraint 'string'.",
-	"source": "ts",
-	"startLineNumber": 32,
-	"startColumn": 7,
-	"endLineNumber": 37,
-	"endColumn": 8
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/shared/src/validation/index.ts",
-	"owner": "typescript",
-	"code": "2769",
-	"severity": 8,
-	"message": "No overload matches this call.\n  Overload 1 of 2, '(values: readonly [string, ...string[]], params?: RawCreateParams): ZodEnum<[string, ...string[]]>', gave the following error.\n    Argument of type 'readonly T[]' is not assignable to parameter of type 'readonly [string, ...string[]]'.\n      Source provides no match for required element at position 0 in target.\n  Overload 2 of 2, '(values: [string, ...string[]], params?: RawCreateParams): ZodEnum<[string, ...string[]]>', gave the following error.\n    Argument of type 'readonly T[]' is not assignable to parameter of type '[string, ...string[]]'.\n      The type 'readonly T[]' is 'readonly' and cannot be assigned to the mutable type '[string, ...string[]]'.",
-	"source": "ts",
-	"startLineNumber": 33,
-	"startColumn": 16,
-	"endLineNumber": 33,
-	"endColumn": 22
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/test/e2e/playwright.config.ts",
-	"owner": "typescript",
-	"code": "2307",
-	"severity": 8,
-	"message": "Cannot find module '@playwright/test' or its corresponding type declarations.",
-	"source": "ts",
-	"startLineNumber": 1,
-	"startColumn": 39,
-	"endLineNumber": 1,
-	"endColumn": 57
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/test/e2e/tests/cart-flow.test.ts",
-	"owner": "typescript",
-	"code": "2307",
-	"severity": 8,
-	"message": "Cannot find module '@playwright/test' or its corresponding type declarations.",
-	"source": "ts",
-	"startLineNumber": 1,
-	"startColumn": 30,
-	"endLineNumber": 1,
-	"endColumn": 48
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/test/integration/cart-product.test.ts",
-	"owner": "typescript",
-	"code": "2307",
-	"severity": 8,
-	"message": "Cannot find module '@modules/cart' or its corresponding type declarations.",
-	"source": "ts",
-	"startLineNumber": 2,
-	"startColumn": 29,
-	"endLineNumber": 2,
-	"endColumn": 44
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/test/integration/cart-product.test.ts",
-	"owner": "typescript",
-	"code": "2307",
-	"severity": 8,
-	"message": "Cannot find module '@modules/shared' or its corresponding type declarations.",
-	"source": "ts",
-	"startLineNumber": 3,
-	"startColumn": 31,
-	"endLineNumber": 3,
-	"endColumn": 48
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/test/integration/cart-product.test.ts",
-	"owner": "typescript",
-	"code": "18046",
-	"severity": 8,
-	"message": "'result' is of type 'unknown'.",
-	"source": "ts",
-	"startLineNumber": 35,
-	"startColumn": 65,
-	"endLineNumber": 35,
-	"endColumn": 71
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/test/integration/setup.ts",
-	"owner": "typescript",
-	"code": "2307",
-	"severity": 8,
-	"message": "Cannot find module '@modules/cart' or its corresponding type declarations.",
-	"source": "ts",
-	"startLineNumber": 2,
-	"startColumn": 49,
-	"endLineNumber": 2,
-	"endColumn": 64
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/test/integration/setup.ts",
-	"owner": "typescript",
-	"code": "2307",
-	"severity": 8,
-	"message": "Cannot find module '@modules/shared' or its corresponding type declarations.",
-	"source": "ts",
-	"startLineNumber": 3,
-	"startColumn": 35,
-	"endLineNumber": 3,
-	"endColumn": 52
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/ui/src/components/Button.tsx",
-	"owner": "typescript",
-	"code": "2769",
-	"severity": 8,
-	"message": "No overload matches this call.\n  Overload 1 of 3, '(refinement: Refinement<unknown, unknown>): (a: unknown) => Option<unknown>', gave the following error.\n    Argument of type '(data: unknown, params?: InexactPartial<ParseParams> | undefined) => SafeParseReturnType<{ label: string; onClick: (args_0: any, ...args: unknown[]) => void; disabled?: boolean | undefined; variant?: \"primary\" | ... 2 more ... | undefined; size?: \"sm\" | ... 2 more ... | undefined; intent?: \"default\" | ... 3 more ......' is not assignable to parameter of type 'Refinement<unknown, unknown>'.\n      Signature '(data: unknown, params?: InexactPartial<ParseParams> | undefined): SafeParseReturnType<{ label: string; onClick: (args_0: any, ...args: unknown[]) => void; disabled?: boolean | undefined; variant?: \"primary\" | ... 2 more ... | undefined; size?: \"sm\" | ... 2 more ... | undefined; intent?: \"default\" | ... 3 more ... | undefined; loading?: boolean | undefined; }, { ...; }>' must be a type predicate.\n  Overload 2 of 3, '(predicate: Predicate<unknown>): <B extends unknown>(b: B) => Option<B>', gave the following error.\n    Argument of type '(data: unknown, params?: InexactPartial<ParseParams> | undefined) => SafeParseReturnType<{ label: string; onClick: (args_0: any, ...args: unknown[]) => void; disabled?: boolean | undefined; variant?: \"primary\" | ... 2 more ... | undefined; size?: \"sm\" | ... 2 more ... | undefined; intent?: \"default\" | ... 3 more ......' is not assignable to parameter of type 'Predicate<unknown>'.\n      Type 'SafeParseReturnType<{ label: string; onClick: (args_0: any, ...args: unknown[]) => void; disabled?: boolean | undefined; variant?: \"primary\" | \"secondary\" | \"outline\" | undefined; size?: \"sm\" | \"md\" | \"lg\" | undefined; intent?: \"default\" | ... 3 more ... | undefined; loading?: boolean | undefined; }, { ...; }>' is not assignable to type 'boolean'.\n        Type 'SafeParseSuccess<{ label: string; onClick: (args_0: any, ...args: unknown[]) => void; disabled?: boolean | undefined; variant?: \"primary\" | \"secondary\" | \"outline\" | undefined; size?: \"sm\" | \"md\" | \"lg\" | undefined; intent?: \"default\" | ... 3 more ... | undefined; loading?: boolean | undefined; }>' is not assignable to type 'boolean'.\n  Overload 3 of 3, '(predicate: Predicate<unknown>): (a: unknown) => Option<unknown>', gave the following error.\n    Argument of type '(data: unknown, params?: InexactPartial<ParseParams> | undefined) => SafeParseReturnType<{ label: string; onClick: (args_0: any, ...args: unknown[]) => void; disabled?: boolean | undefined; variant?: \"primary\" | ... 2 more ... | undefined; size?: \"sm\" | ... 2 more ... | undefined; intent?: \"default\" | ... 3 more ......' is not assignable to parameter of type 'Predicate<unknown>'.\n      Type 'SafeParseReturnType<{ label: string; onClick: (args_0: any, ...args: unknown[]) => void; disabled?: boolean | undefined; variant?: \"primary\" | \"secondary\" | \"outline\" | undefined; size?: \"sm\" | \"md\" | \"lg\" | undefined; intent?: \"default\" | ... 3 more ... | undefined; loading?: boolean | undefined; }, { ...; }>' is not assignable to type 'boolean'.\n        Type 'SafeParseSuccess<{ label: string; onClick: (args_0: any, ...args: unknown[]) => void; disabled?: boolean | undefined; variant?: \"primary\" | \"secondary\" | \"outline\" | undefined; size?: \"sm\" | \"md\" | \"lg\" | undefined; intent?: \"default\" | ... 3 more ... | undefined; loading?: boolean | undefined; }>' is not assignable to type 'boolean'.",
-	"source": "ts",
-	"startLineNumber": 29,
-	"startColumn": 19,
-	"endLineNumber": 29,
-	"endColumn": 46
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/ui/src/components/Button.tsx",
-	"owner": "typescript",
-	"code": "2345",
-	"severity": 8,
-	"message": "Argument of type 'unknown' is not assignable to parameter of type '{ label: string; onClick: (args_0: any, ...args: unknown[]) => void; disabled?: boolean | undefined; variant?: \"primary\" | \"secondary\" | \"outline\" | undefined; size?: \"sm\" | \"md\" | \"lg\" | undefined; intent?: \"default\" | ... 3 more ... | undefined; loading?: boolean | undefined; }'.",
-	"source": "ts",
-	"startLineNumber": 34,
-	"startColumn": 36,
-	"endLineNumber": 34,
-	"endColumn": 46
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/ui/src/components/Button.tsx",
-	"owner": "typescript",
-	"code": "18046",
-	"severity": 8,
-	"message": "'validProps' is of type 'unknown'.",
-	"source": "ts",
-	"startLineNumber": 35,
-	"startColumn": 18,
-	"endLineNumber": 35,
-	"endColumn": 28
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/ui/src/components/Button.tsx",
-	"owner": "typescript",
-	"code": "18046",
-	"severity": 8,
-	"message": "'validProps' is of type 'unknown'.",
-	"source": "ts",
-	"startLineNumber": 36,
-	"startColumn": 19,
-	"endLineNumber": 36,
-	"endColumn": 29
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/ui/src/components/Button.tsx",
-	"owner": "typescript",
-	"code": "18046",
-	"severity": 8,
-	"message": "'validProps' is of type 'unknown'.",
-	"source": "ts",
-	"startLineNumber": 36,
-	"startColumn": 42,
-	"endLineNumber": 36,
-	"endColumn": 52
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/ui/src/components/Button.tsx",
-	"owner": "typescript",
-	"code": "18046",
-	"severity": 8,
-	"message": "'validProps' is of type 'unknown'.",
-	"source": "ts",
-	"startLineNumber": 38,
-	"startColumn": 10,
-	"endLineNumber": 38,
-	"endColumn": 20
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/modules/ui/src/components/Button.tsx",
-	"owner": "typescript",
-	"code": "18046",
-	"severity": 8,
-	"message": "'validProps' is of type 'unknown'.",
-	"source": "ts",
-	"startLineNumber": 43,
-	"startColumn": 10,
-	"endLineNumber": 43,
-	"endColumn": 20
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/task-master-ai/task-master-ai.json",
-	"owner": "_generated_diagnostic_collection_name_#1",
-	"code": "520",
-	"severity": 4,
-	"message": "Duplicate object key",
-	"source": "json",
-	"startLineNumber": 233,
-	"startColumn": 7,
-	"endLineNumber": 233,
-	"endColumn": 21
-},{
-	"resource": "/e:/steelmade-cloudiary-chairs/task-master-ai/task-master-ai.json",
-	"owner": "_generated_diagnostic_collection_name_#1",
-	"code": "520",
-	"severity": 4,
-	"message": "Duplicate object key",
-	"source": "json",
-	"startLineNumber": 283,
-	"startColumn": 7,
-	"endLineNumber": 283,
-	"endColumn": 21
-}]
+   ○ Compiling /page ...
+ ⚠ ./app/page.tsx
+Attempted import error: 'FeaturedProduct' is not exported from '@/components/home/FeaturedProduct' (imported as 'FeaturedProduct').
+
+Import trace for requested module:
+./app/page.tsx
+Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check your code at page.tsx:49.
+ ⨯ Error: Unsupported Server Component type: undefined
+    at stringify (<anonymous>)
+ ⨯ Error: Unsupported Server Component type: undefined
+    at stringify (<anonymous>)
+digest: "2031642818"
+ ⚠ ./app/page.tsx
+Attempted import error: 'FeaturedProduct' is not exported from '@/components/home/FeaturedProduct' (imported as 'FeaturedProduct').
+
+Import trace for requested module:
+./app/page.tsx
+Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check your code at page.tsx:49.
+ ⨯ Error: Unsupported Server Component type: undefined
+    at stringify (<anonymous>)
+ ⨯ Error: Unsupported Server Component type: undefined
+    at stringify (<anonymous>)
+digest: "2031642818"
+ ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+ ✓ Compiled /page in 415ms (690 modules)
+Warning: React does not recognize the `asChild` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `aschild` instead. If you accidentally passed it from a parent component, remove it from the DOM element.
+    at button
+    at eval (webpack-internal:///(ssr)/./components/ui/button.tsx:38:79)
+    at Lazy
+    at div
+    at div
+    at div
+    at div
+    at section
+    at div
+    at main
+    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:240:11)        
+    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:71:9)  
+    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:79:11)      
+    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:54:9) 
+    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:62:11)     
+    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:336:11)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:128:11)
+    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:152:9)
+    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:227:11)    
+    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:15:44)
+    at Lazy
+    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:345:11)        
+    at Lazy
+    at main
+    at AppContextProvider (webpack-internal:///(ssr)/./context/AppContext.tsx:22:35)
+    at Lazy
+    at ClientErrorBoundary (webpack-internal:///(ssr)/./components/error-boundary/client-error-boundary.tsx:67:9)
+    at ErrorBoundaryWrapper (webpack-internal:///(ssr)/./components/error-boundary/client-error-boundary.tsx:73:33)
+    at Lazy
+    at f (webpack-internal:///(ssr)/./node_modules/next-themes/dist/index.module.js:8:597)
+    at $ (webpack-internal:///(ssr)/./node_modules/next-themes/dist/index.module.js:8:348)
+    at ThemeProvider (webpack-internal:///(ssr)/./components/providers/theme-provider.tsx:13:26)
+    at Lazy
+    at body
+    at html
+    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:71:9)  
+    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:79:11)      
+    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/internal/ReactDevOverlay.js:66:9)
+    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/hot-reloader-client.js:298:11)
+    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:154:11)
+    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:99:9)      
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:128:11)
+    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:426:13)
+    at Lazy
+    at Lazy
+    at E:\steelmade-cloudiary-chairs\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:374733
+    at E:\steelmade-cloudiary-chairs\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:374733
+    at ServerInsertedHTMLProvider (E:\steelmade-cloudiary-chairs\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:38:23140)
+ ○ Compiling /chairs/director-series/page ...
+ ✓ Compiled /chairs/director-series/page in 556ms (736 modules)
+ ✓ Compiled in 405ms (750 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ lib\data\products\chairs\director-series\index.ts (55:2) @ registerDirectorChair
+ ⨯ ReferenceError: Cannot access 'directorSeriesChairs' before initialization
+    at registerDirectorChair (./lib/data/products/chairs/director-series/index.ts:58:5)
+    at eval (./lib/data/products/chairs/director-series/opera.ts:38:62)
+    at (ssr)/./lib/data/products/chairs/director-series/opera.ts (E:\steelmade-cloudiary-chairs\.next\server\app\chairs\director-series\page.js:494:1)
+    at __webpack_require__ (E:\steelmade-cloudiary-chairs\.next\server\webpack-runtime.js:33:42)
+    at eval (./lib/data/products/chairs/director-series/index.ts:9:64)
+    at (ssr)/./lib/data/products/chairs/director-series/index.ts (E:\steelmade-cloudiary-chairs\.next\server\app\chairs\director-series\page.js:483:1)
+    at __webpack_require__ (E:\steelmade-cloudiary-chairs\.next\server\webpack-runtime.js:33:42)
+    at eval (./lib/data/products/chairs/director-series/ashley.ts:6:64)
+    at (ssr)/./lib/data/products/chairs/director-series/ashley.ts (E:\steelmade-cloudiary-chairs\.next\server\app\chairs\director-series\page.js:450:1)
+    at __webpack_require__ (E:\steelmade-cloudiary-chairs\.next\server\webpack-runtime.js:33:42)
+    at eval (./app/chairs/director-series/page.tsx:7:106)
+    at (ssr)/./app/chairs/director-series/page.tsx (E:\steelmade-cloudiary-chairs\.next\server\app\chairs\director-series\page.js:253:1)
+    at __webpack_require__ (E:\steelmade-cloudiary-chairs\.next\server\webpack-runtime.js:33:42)
+    at JSON.parse (<anonymous>)
+  53 |
+  54 |   // Prevent duplicates
+> 55 |   if (directorSeriesChairs.some(c => c.id === chair.id)) {
+     |  ^
+  56 |     console.warn(`Chair with id "${chair.id}" is already registered. Skipping registration.`);
+  57 |     return false;
+  58 |   }
+ ⚠ ./app/page.tsx
+Attempted import error: 'FeaturedProduct' is not exported from '@/components/home/FeaturedProduct' (imported as 'FeaturedProduct').
+
+Import trace for requested module:
+./app/page.tsx
+ ⨯ lib\data\products\chairs\director-series\index.ts (55:2) @ registerDirectorChair
+ ⨯ ReferenceError: Cannot access 'directorSeriesChairs' before initialization
+    at registerDirectorChair (./lib/data/products/chairs/director-series/index.ts:58:5)
+    at eval (./lib/data/products/chairs/director-series/opera.ts:38:62)
+    at (ssr)/./lib/data/products/chairs/director-series/opera.ts (E:\steelmade-cloudiary-chairs\.next\server\app\chairs\director-series\page.js:494:1)
+    at __webpack_require__ (E:\steelmade-cloudiary-chairs\.next\server\webpack-runtime.js:33:42)
+    at eval (./lib/data/products/chairs/director-series/index.ts:9:64)
+    at (ssr)/./lib/data/products/chairs/director-series/index.ts (E:\steelmade-cloudiary-chairs\.next\server\app\chairs\director-series\page.js:483:1)
+    at __webpack_require__ (E:\steelmade-cloudiary-chairs\.next\server\webpack-runtime.js:33:42)
+    at eval (./lib/data/products/chairs/director-series/ashley.ts:6:64)
+    at (ssr)/./lib/data/products/chairs/director-series/ashley.ts (E:\steelmade-cloudiary-chairs\.next\server\app\chairs\director-series\page.js:450:1)
+    at __webpack_require__ (E:\steelmade-cloudiary-chairs\.next\server\webpack-runtime.js:33:42)
+    at eval (./app/chairs/director-series/page.tsx:7:106)
+    at (ssr)/./app/chairs/director-series/page.tsx (E:\steelmade-cloudiary-chairs\.next\server\app\chairs\director-series\page.js:253:1)
+    at __webpack_require__ (E:\steelmade-cloudiary-chairs\.next\server\webpack-runtime.js:33:42)
+    at JSON.parse (<anonymous>)
+  53 |
+  54 |   // Prevent duplicates
+> 55 |   if (directorSeriesChairs.some(c => c.id === chair.id)) {
+     |  ^
+  56 |     console.warn(`Chair with id "${chair.id}" is already registered. Skipping registration.`);
+  57 |     return false;
+  58 |   }
+ ⨯ lib\data\products\chairs\director-series\index.ts (55:2) @ registerDirectorChair
+ ⨯ ReferenceError: Cannot access 'directorSeriesChairs' before initialization
+    at registerDirectorChair (./lib/data/products/chairs/director-series/index.ts:58:5)
+    at eval (./lib/data/products/chairs/director-series/opera.ts:38:62)
+    at (ssr)/./lib/data/products/chairs/director-series/opera.ts (E:\steelmade-cloudiary-chairs\.next\server\app\chairs\director-series\page.js:494:1)
+    at __webpack_require__ (E:\steelmade-cloudiary-chairs\.next\server\webpack-runtime.js:33:42)
+    at eval (./lib/data/products/chairs/director-series/index.ts:9:64)
+    at (ssr)/./lib/data/products/chairs/director-series/index.ts (E:\steelmade-cloudiary-chairs\.next\server\app\chairs\director-series\page.js:483:1)
+    at __webpack_require__ (E:\steelmade-cloudiary-chairs\.next\server\webpack-runtime.js:33:42)
+    at eval (./lib/data/products/chairs/director-series/ashley.ts:6:64)
+    at (ssr)/./lib/data/products/chairs/director-series/ashley.ts (E:\steelmade-cloudiary-chairs\.next\server\app\chairs\director-series\page.js:450:1)
+    at __webpack_require__ (E:\steelmade-cloudiary-chairs\.next\server\webpack-runtime.js:33:42)
+    at eval (./app/chairs/director-series/page.tsx:7:106)
+    at (ssr)/./app/chairs/director-series/page.tsx (E:\steelmade-cloudiary-chairs\.next\server\app\chairs\director-series\page.js:253:1)
+    at __webpack_require__ (E:\steelmade-cloudiary-chairs\.next\server\webpack-runtime.js:33:42)
+    at JSON.parse (<anonymous>)
+  53 |
+  54 |   // Prevent duplicates
+> 55 |   if (directorSeriesChairs.some(c => c.id === chair.id)) {
+     |  ^
+  56 |     console.warn(`Chair with id "${chair.id}" is already registered. Skipping registration.`);
+  57 |     return false;
+  58 |   }

@@ -1,0 +1,526 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Consolidate Product Series Pages and Centralize Logic",
+      "description": "Improve the UI of the director-series page and individual chair detail pages with brand colors and modern design principles",
+      "status": "pending",
+      "priority": "high",
+      "details": "## Current Issues\n\n- Basic UI with minimal styling on director-series page\n- Product detail pages lack visual hierarchy and brand identity\n- Image displays are not optimized for best presentation\n- Variant selection needs better visual feedback\n\n## Implementation Goals\n\n1. **Director Series Overview Page**:\n   - Implement a premium, visually appealing grid layout\n   - Add subtle animations and hover effects\n   - Incorporate brand colors (primary: #B91C1C) for accents\n   - Create consistent card styling with glassmorphism effects\n\n2. **Individual Chair Detail Pages**:\n   - Enhance product image display with proper sizing\n   - Improve variant selection UI with better visual feedback\n   - Create balanced two-column layout with proper whitespace\n   - Organize product specifications in visually appealing sections\n\n3. **Brand Identity Integration**:\n   - Use SteelMade's red accent color consistently for interactive elements\n   - Apply premium, professional aesthetic throughout\n   - Ensure responsive design for all screen sizes\n   - Create consistent typography hierarchy\n\n## Technical Approach\n\n- Follow modular architecture principles\n- Create reusable UI components in the UI module\n- Implement Tailwind utility classes for styling\n- Use CSS variables for brand colors\n- Add subtle animations with Framer Motion",
+      "subtasks": [
+        {
+          "id": 21.1,
+          "title": "Create Enhanced Director Series Grid Component",
+          "description": "Implement an enhanced grid component for the director-series page with modern styling and brand colors",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create a DirectorSeriesGrid component in the UI module\n2. Implement responsive grid layout with consistent spacing\n3. Add subtle animations for item appearance\n4. Apply brand colors for accents and interactive elements\n5. Ensure accessibility standards are maintained"
+        },
+        {
+          "id": 21.2,
+          "title": "Enhance Product Detail Page Layout",
+          "description": "Improve the layout and visual hierarchy of individual chair detail pages",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create a balanced two-column layout for desktop\n2. Optimize image display with proper sizing and positioning\n3. Organize product information with clear visual hierarchy\n4. Implement responsive adjustments for smaller screens\n5. Apply consistent spacing and typography"
+        },
+        {
+          "id": 21.3,
+          "title": "Implement Enhanced Variant Selection UI",
+          "description": "Create an improved variant selection interface with better visual feedback",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Create a VariantSelector component with modern styling\n2. Implement clear visual feedback for selected variants\n3. Add subtle animations for state changes\n4. Apply brand colors for selection indicators\n5. Ensure keyboard navigation and accessibility",
+          "dependencies": [
+            21.2
+          ],
+          "completionDetails": "Enhanced variant selection UI by changing text color to SteelMade red (#B91C1C). Improved visual feedback for selected state. Created consistent styling across all chair pages."
+        },
+        {
+          "id": 21.4,
+          "title": "Implement Click-to-Change Variant Functionality",
+          "description": "Add functionality to change the selected variant when clicking on product thumbnail images",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Update product image gallery to connect with variant selection\n2. Implement click handlers on thumbnail images\n3. Synchronize selected variant state with clicked images\n4. Add visual feedback for the connection between images and variants\n5. Ensure accessibility with proper ARIA attributes",
+          "dependencies": [
+            21.3
+          ],
+          "completionDetails": "Implemented functionality to show a single initial image on load. Added proper state management to change images when variants are selected. Created consistent behavior across all chair pages."
+        },
+        {
+          "id": 21.5,
+          "title": "Implement Consistent Brand Styling",
+          "description": "Apply consistent brand colors and styling across all components",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Create a BrandTheme utility in the UI module\n2. Define brand colors and typography as CSS variables\n3. Apply consistent styling to all UI components\n4. Create reusable patterns for common UI elements\n5. Ensure visual consistency across all pages",
+          "completionDetails": "Added decorative rectangle in the corner of image boxes using brand red color. Standardized styling across all chair pages. Removed inconsistent features display from Tycoon chair page."
+        }
+      ],
+      "dependencies": [
+        3.4,
+        4
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Standardize Director Series Chair Pages UI",
+      "description": "Fix inconsistencies between director series chair pages and standardize the UI across all chair variants",
+      "status": "completed",
+      "priority": "high",
+      "details": "## Current Issues\n\n- Tycoon Director Chair page has features displayed in a vertical list, while Ashley and Opera chairs use a grid layout\n- ProductService import paths are inconsistent across individual chair pages\n- Specifications sections create visual clutter and are inconsistently displayed\n- The UI implementations vary between chair pages causing inconsistent user experience\n\n## Implementation Goals\n\n1. **Standardize Component Usage**:\n   - Create a consistent EnhancedProductDetailLayout component used by all chair pages\n   - Remove specifications section and focus on key features only\n   - Implement a grid-based feature list layout for all chairs\n   - Ensure proper spacing and visual hierarchy\n\n2. **Fix Module Resolution Issues**:\n   - Standardize ProductService import paths across all chair pages\n   - Implement proper error handling for service loading\n   - Create consistent loading and error UI states\n   - Fix the undefined ProductService errors\n\n3. **Modular Component Implementation**:\n   - Create reusable UI components that can be used for future product categories\n   - Implement flexible layout components that adapt to different data structures\n   - Ensure components follow our modular architecture principles\n   - Thoroughly document component usage patterns",
+      "subtasks": [
+        {
+          "id": 22.1,
+          "title": "Standardize Feature List Layout",
+          "description": "Create a consistent feature list layout component with grid styling for all chair pages",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Create a ProductFeatureList component in the UI module\n2. Implement grid layout using 'grid grid-cols-1 sm:grid-cols-2 gap-4'\n3. Add styling for feature items with brand colors\n4. Apply consistent spacing and typography\n5. Test across all chair variants",
+          "completionDetails": "Removed key features section from Tycoon Director Chair page for consistency with other chair pages. Created documentation in ui-standardization.md."
+        },
+        {
+          "id": 22.2,
+          "title": "Remove Specification Sections",
+          "description": "Remove detailed specification sections from all chair pages and focus on key features",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Update ProductService data to emphasize features over specifications\n2. Remove specifications section from EnhancedProductDetailLayout\n3. Ensure product data is consistent across all chair variants\n4. Test to ensure no missing information",
+          "completionDetails": "Removed specifications sections from all director series chair pages to reduce visual clutter and create a more focused product presentation."
+        },
+        {
+          "id": 22.3,
+          "title": "Standardize ProductService Import",
+          "description": "Fix inconsistent import paths for ProductService across chair pages",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Standardize import paths to '@/modules/product/services/ProductService'\n2. Implement consistent error handling for service loading\n3. Add defensive checks for undefined services\n4. Create detailed error messages for troubleshooting"
+        },
+        {
+          "id": 22.4,
+          "title": "Update All Chair Pages",
+          "description": "Update all individual chair pages to use the standardized components",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Update Ashley Director Chair page\n2. Update Opera Director Chair page\n3. Update Tycoon Director Chair page\n4. Test for visual consistency across all pages\n5. Ensure proper responsive behavior",
+          "completionDetails": "Updated all chair pages with consistent styling: single image on load, red variant text, decorative rectangle in image corner, and removed key features section from Tycoon page."
+        },
+        {
+          "id": 22.5,
+          "title": "Document UI Standards",
+          "description": "Create documentation for the standardized UI patterns for product pages",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Document component usage patterns\n2. Create visual examples of correct implementation\n3. Add troubleshooting section for common issues\n4. Document proper import paths and error handling",
+          "completionDetails": "Created ui-standardization.md documentation and updated memory.md with details about the standardized UI patterns for director series chair pages."
+        },
+        {
+          "id": 22.6,
+          "title": "Standardize Woodland Chair Styling",
+          "description": "Ensure the Woodland Director Chair follows the same styling patterns as other director series chairs",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Compare Woodland chair page styling with established chair pages (Ashley, Opera)\n2. Identify specific styling differences in variant selection, image display, and feature list\n3. Update Woodland chair component to use consistent styling classes\n4. Implement the same decorative elements and brand colors\n5. Test across different screen sizes for responsive consistency",
+          "completionDetails": "Created reusable chair components (ChairVariantSelector, ChairImageDisplay, ChairFeatureList, ChairContactButton) and refactored the Woodland chair page to use these standardized components. Enhanced error handling, improved accessibility, and ensured consistent styling with SteelMade brand colors."
+        }
+      ],
+      "dependencies": [
+        1
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Implement Modular Product Data Management System",
+      "description": "Create a standardized system for managing product data with modular, reusable components",
+      "status": "in-progress",
+      "priority": "high",
+      "details": "## Current Issues\n\n- Adding new chair products requires changes in multiple locations\n- Product data structure is inconsistent across different product types\n- Error handling for missing products is inadequate\n- Some product pages show 'product not found' errors\n\n## Implementation Goals\n\n1. **Standardize Product Data Structure**:\n   - Create a consistent interface for all product types\n   - Implement proper typing for product data\n   - Standardize variant handling across products\n   - Ensure all required fields are properly documented\n\n2. **Centralize Product Registration**:\n   - Create a central registry for all products\n   - Implement automatic product discovery\n   - Add proper error handling for missing products\n   - Create debugging tools for product data issues\n\n3. **Create Reusable Product Components**:\n   - Implement modular components for product display\n   - Create standardized page layouts for product details\n   - Add consistent error handling across all product pages\n   - Document component usage patterns\n\n## Technical Approach\n\n- Follow a modular architecture pattern\n- Use TypeScript interfaces for type safety\n- Implement functional programming patterns\n- Create comprehensive documentation",
+      "subtasks": [
+        {
+          "id": 23.1,
+          "title": "Define Product Data Interfaces",
+          "description": "Create standardized interfaces for all product data types",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Define base Product interface\n2. Create specific interfaces for different product types\n3. Document all interface properties\n4. Implement type guards for runtime validation\n5. Create utility functions for type conversion"
+        },
+        {
+          "id": 23.2,
+          "title": "Implement Product Registry System",
+          "description": "Create a centralized system for product registration and discovery",
+          "status": "in-progress",
+          "details": "## Implementation Steps\n\n1. Create a ProductRegistry class/module\n2. Implement registration methods for different product types\n3. Add discovery methods for finding products by ID\n4. Create proper error handling for missing products\n5. Add debugging and logging capabilities"
+        },
+        {
+          "id": 23.3,
+          "title": "Create Product Page Factory",
+          "description": "Implement a factory pattern for generating product pages",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create a PageFactory interface\n2. Implement specific factories for different product types\n3. Add proper error handling for page generation\n4. Create standardized loading and error states\n5. Document the factory usage pattern"
+        },
+        {
+          "id": 23.4,
+          "title": "Migrate Existing Products",
+          "description": "Move all existing products to the new system",
+          "status": "in-progress",
+          "details": "## Implementation Steps\n\n1. Create new data files for all existing products\n2. Update all page components to use the new system\n3. Implement proper error handling for all pages\n4. Test all product pages for correct display\n5. Document the migration process"
+        },
+        {
+          "id": 23.5,
+          "title": "Document Product System",
+          "description": "Create comprehensive documentation for the product system",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Document the product data structure\n2. Create usage examples for adding new products\n3. Document the page generation process\n4. Add troubleshooting guides\n5. Create a product system architecture diagram"
+        }
+      ],
+      "dependencies": [
+        22
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Implement Chair Factory Pattern",
+      "description": "Create a factory pattern for generating chair data and components to streamline new chair additions",
+      "status": "pending",
+      "priority": "high",
+      "details": "## Current Issues\n\n- Adding new chairs requires manually creating multiple files\n- Type errors occur when chair data doesn't match expected interfaces\n- Error handling is inconsistent across chair implementations\n- Cloudinary image URLs follow patterns but are manually entered\n\n## Implementation Goals\n\n1. **Chair Data Factory**:\n   - Create a factory function for generating chair data objects\n   - Implement standardized typing with proper interfaces\n   - Add validation for required fields\n   - Generate consistent data structures\n\n2. **Cloudinary Image URL Generator**:\n   - Create utility functions for generating Cloudinary URLs\n   - Implement pattern-based URL generation\n   - Add validation for image paths\n   - Create consistent naming conventions\n\n3. **Chair Component Factory**:\n   - Implement factory for generating chair page components\n   - Create standardized error and loading components\n   - Add proper typing for all components\n   - Ensure consistent UI across generated components\n\n## Technical Approach\n\n- Follow functional programming patterns\n- Implement type-safe factories\n- Use template-based generation\n- Create comprehensive documentation",
+      "subtasks": [
+        {
+          "id": 24.1,
+          "title": "Create Chair Data Factory",
+          "description": "Implement a factory function for generating chair data objects",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create createChairData factory function\n2. Implement proper typing with TypeScript interfaces\n3. Add validation for required fields\n4. Create utility functions for data transformation\n5. Add documentation and examples"
+        },
+        {
+          "id": 24.2,
+          "title": "Implement Cloudinary URL Generator",
+          "description": "Create utility functions for generating consistent Cloudinary URLs",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create getChairImageUrl function\n2. Implement pattern-based URL generation\n3. Add support for variant-specific images\n4. Create validation for image paths\n5. Document URL patterns and conventions"
+        },
+        {
+          "id": 24.3,
+          "title": "Create Chair Component Factory",
+          "description": "Implement a factory for generating chair page components",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create generateChairPage function\n2. Implement standard chair page template\n3. Add error and loading component generation\n4. Create utility for route generation\n5. Document component factory usage"
+        },
+        {
+          "id": 24.4,
+          "title": "Document Factory System",
+          "description": "Create comprehensive documentation for the chair factory system",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Document factory function interfaces\n2. Create usage examples for adding new chairs\n3. Document the component generation process\n4. Add troubleshooting guides\n5. Create a factory system architecture diagram"
+        },
+        {
+          "id": 24.5,
+          "title": "Refactor Existing Chairs",
+          "description": "Convert existing chairs to use the factory pattern",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Refactor Ashley Director Chair to use factory pattern\n2. Update Opera Director Chair implementation\n3. Convert Tycoon Director Chair to factory approach\n4. Update BigBoss Gold and Woodland chair implementations\n5. Test all chair pages for consistent behavior"
+        },
+        {
+          "id": 24.6,
+          "title": "Implement Boston Director Chairs",
+          "description": "Add Boston chairs to the director series using the factory pattern",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create Boston chair data using the factory pattern\n2. Configure variant data for high-back and mid-back options\n3. Set up Cloudinary image URLs:\n   - High-back: https://res.cloudinary.com/dqde19mfs/image/upload/v1749458919/steelmade/chairs/director-series/boston/ic-06-hb.jpg\n   - Mid-back: https://res.cloudinary.com/dqde19mfs/image/upload/v1749458914/steelmade/chairs/director-series/boston/ic-07-mb.jpg\n4. Generate the Boston chair page component\n5. Add Boston chairs to the director series page grid\n6. Test rendering and variant selection"
+        }
+      ],
+      "dependencies": [
+        23
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Create Chair Component Library",
+      "description": "Develop a standardized component library for chair pages to prevent styling inconsistencies",
+      "status": "pending",
+      "priority": "medium",
+      "details": "## Current Issues\n\n- Chair pages are built individually, leading to styling inconsistencies\n- Common elements like variant selectors and feature lists are reimplemented for each chair\n- Styling changes require updates to multiple files\n- Accessibility implementations vary across chair pages\n\n## Implementation Goals\n\n1. **Extract Reusable Components**:\n   - Create ChairVariantSelector component\n   - Implement ChairImageDisplay component\n   - Develop ChairFeatureList component\n   - Create ChairContactButton component\n\n2. **Standardize Styling**:\n   - Implement consistent Tailwind classes\n   - Create a chair styling theme\n   - Ensure responsive behavior across all components\n   - Apply consistent accessibility patterns\n\n3. **Documentation and Usage**:\n   - Create comprehensive component documentation\n   - Develop usage examples\n   - Implement Storybook for visual component testing\n   - Create a chair page assembly guide\n\n## Technical Approach\n\n- Follow a component-based architecture\n- Implement TypeScript interfaces for props\n- Create composable components with sensible defaults\n- Ensure proper prop forwarding for customization",
+      "subtasks": [
+        {
+          "id": 25.1,
+          "title": "Extract ChairVariantSelector Component",
+          "description": "Create a reusable component for chair variant selection",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create ChairVariantSelector component\n2. Implement TypeScript interfaces for props\n3. Add styling with Tailwind classes\n4. Ensure accessibility with proper ARIA attributes\n5. Add documentation and usage examples"
+        },
+        {
+          "id": 25.2,
+          "title": "Implement ChairImageDisplay Component",
+          "description": "Develop a standardized component for chair image display",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create ChairImageDisplay component\n2. Implement image loading and error states\n3. Add decorative elements and styling\n4. Ensure responsive behavior\n5. Add proper image optimization attributes"
+        },
+        {
+          "id": 25.3,
+          "title": "Create ChairFeatureList Component",
+          "description": "Implement a reusable component for displaying chair features",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create ChairFeatureList component\n2. Implement grid layout with proper responsive behavior\n3. Add icon and text styling\n4. Ensure accessibility\n5. Add customization options"
+        },
+        {
+          "id": 25.4,
+          "title": "Develop ChairContactButton Component",
+          "description": "Create a standardized contact button component",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create ChairContactButton component\n2. Implement proper styling and state handling\n3. Add accessibility attributes\n4. Ensure responsive behavior\n5. Connect with variant selection state"
+        },
+        {
+          "id": 25.5,
+          "title": "Create Chair Page Template",
+          "description": "Develop a standardized template for chair detail pages",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create ChairDetailPage template\n2. Integrate all chair components\n3. Implement consistent layout and spacing\n4. Add proper data flow between components\n5. Create documentation and usage examples"
+        }
+      ],
+      "dependencies": [
+        22
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Merge EnhancedProductDetailLayout with Reusable Chair Components",
+      "description": "Create a centralized product styling approach by combining the EnhancedProductDetailLayout with modular chair components",
+      "status": "completed",
+      "priority": "high",
+      "details": "## Current Issues\n\n- Two parallel styling approaches exist in the codebase\n- EnhancedProductDetailLayout offers premium styling but less modularity\n- Reusable chair components provide modularity but require styling consistency\n- Style changes require updates in multiple locations\n- Product-specific customizations are difficult to implement\n\n## Implementation Goals\n\n1. **Create Unified Styling System**:\n   - Combine the best aspects of both approaches\n   - Maintain EnhancedProductDetailLayout's premium visual quality\n   - Preserve the modularity and maintainability of reusable components\n   - Ensure consistent brand identity across all products\n\n2. **Develop Centralized Layout Component**:\n   - Create a new ProductDetailLayout component\n   - Orchestrate modular components within a consistent layout\n   - Implement responsive behavior with proper breakpoints\n   - Add extension points for product-specific customizations\n\n3. **Standardize Component Styling**:\n   - Extract shared styling patterns to constants\n   - Ensure consistent spacing, typography, and colors\n   - Apply SteelMade brand styling uniformly\n   - Improve accessibility across all components\n\n## Technical Approach\n\n- Use Tailwind CSS for styling consistency\n- Implement TypeScript interfaces for all components\n- Create a component hierarchy with proper prop drilling\n- Add comprehensive documentation and usage examples",
+      "subtasks": [
+        {
+          "id": 26.1,
+          "title": "Create Styling Constants System",
+          "description": "Extract and standardize styling patterns into a shared constants system",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Analyze existing styling in EnhancedProductDetailLayout\n2. Extract common spacing, colors, and typography values\n3. Create a structured constants file for reuse\n4. Document usage patterns and guidelines\n5. Test for visual consistency",
+          "completionDetails": "Created productStyles.ts in lib/styles directory containing structured styling constants for layout, typography, colors, and component-specific styling. Organized in a hierarchical structure for easy maintenance and reuse."
+        },
+        {
+          "id": 26.2,
+          "title": "Enhance Chair Components with Unified Styling",
+          "description": "Update reusable chair components to align with EnhancedProductDetailLayout styling",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Update ChairVariantSelector with enhanced styling\n2. Improve ChairImageDisplay with premium visual elements\n3. Enhance ChairFeatureList with consistent grid and typography\n4. Update ChairContactButton with brand styling\n5. Add proper spacing and visual hierarchy",
+          "completionDetails": "Updated all chair components (ChairVariantSelector, ChairImageDisplay, ChairFeatureList, ChairContactButton) to use the centralized productStyles constants system, ensuring consistent styling patterns across components while maintaining their modular structure."
+        },
+        {
+          "id": 26.3,
+          "title": "Develop ProductDetailLayout Component",
+          "description": "Create a unified layout component that orchestrates modular components",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Implement two-column responsive layout structure\n2. Create consistent component arrangement\n3. Add proper spacing between sections\n4. Implement responsive behavior\n5. Add extension points for customization",
+          "completionDetails": "Created ProductDetailLayout component in components/products directory that orchestrates all chair components within a consistent structure. Implemented flexible prop interfaces for customization, responsive layout, proper error handling, and extension points for product-specific customizations."
+        },
+        {
+          "id": 26.4,
+          "title": "Standardize Data Flow and Props",
+          "description": "Create consistent data interfaces and prop structures across components",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Define standardized prop interfaces\n2. Implement consistent prop drilling pattern\n3. Add proper type safety throughout\n4. Create data transformation utilities\n5. Document prop usage patterns",
+          "completionDetails": "Implemented consistent prop interfaces across all components, standardized data flow through the component hierarchy, added proper type safety for product data, and created flexible options for customization through variantOptions, contactOptions, and layoutOptions props."
+        },
+        {
+          "id": 26.5,
+          "title": "Migrate Chair Pages to New System",
+          "description": "Update all chair detail pages to use the new unified layout",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Update Woodland Director Chair page as a proof of concept\n2. Migrate Tycoon Director Chair page to the new layout\n3. Convert remaining director series chairs\n4. Test for visual consistency across all pages\n5. Fix any product-specific issues",
+          "completionDetails": "Successfully migrated all director series chair pages (Woodland, Tycoon, Ashley, Opera, and BigBoss Gold) to use the new ProductDetailLayout component. Implemented chair-specific customizations through renderCustomSection and layoutOptions props. Created comprehensive documentation and migration guides to assist with the transition."
+        },
+        {
+          "id": 26.6,
+          "title": "Document Unified Styling System",
+          "description": "Create comprehensive documentation for the centralized styling approach",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Document component hierarchy and relationships\n2. Create usage examples for different product types\n3. Add styling guidelines and best practices\n4. Document extension patterns for customization\n5. Create visual reference for styling patterns",
+          "completionDetails": "Created comprehensive documentation in centralized-product-styling-usage.md explaining how to use the centralized styling system. Included basic usage examples, customization options, extension patterns, styling guidelines, troubleshooting tips, and best practices for maintaining consistent styling across product pages."
+        }
+      ],
+      "dependencies": [
+        22,
+        25
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Rebuild Director Series with Consistent Styling",
+      "description": "Remove all existing chairs from director series and reimplement them with consistent styling and structure",
+      "status": "pending",
+      "priority": "high",
+      "details": "## Current Issues\n\n- Inconsistent styling across director series chair products\n- Different implementation patterns used for different chairs\n- Varying component usage across product pages\n- Inconsistent data structures and property names\n\n## Implementation Goals\n\n1. **Remove All Existing Chair Implementations**:\n   - Remove all chair data files\n   - Clear the director series page of existing chair listings\n   - Document the current chair variants and features\n   - Prepare a migration plan for consistent reimplementation\n\n2. **Create Standardized Chair Factory**:\n   - Implement a chair factory function for consistent chair creation\n   - Define standard data structure for all chair products\n   - Create consistent Cloudinary URL pattern\n   - Ensure proper typing and validation\n\n3. **Reimplement All Chairs**:\n   - Add back each chair using the factory pattern\n   - Ensure consistent styling across all chair pages\n   - Implement standardized variant selection\n   - Use centralized ProductDetailLayout for all chairs\n\n## Technical Approach\n\n- Use the Chair Factory Pattern from Task 24\n- Implement consistent data structures\n- Utilize the Unified Styling System from Task 26\n- Document all chair implementations",
+      "subtasks": [
+        {
+          "id": 27.1,
+          "title": "Document Existing Chair Data",
+          "description": "Create inventory of all existing chair data and required information before removal",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Document all chair names, descriptions, and categories\n2. Catalog all variants and their associated images\n3. List all features for each chair model\n4. Identify any chair-specific customizations\n5. Create a reference document for the rebuild process"
+        },
+        {
+          "id": 27.2,
+          "title": "Remove Existing Chair Implementations",
+          "description": "Remove all director series chair implementations from the codebase",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Remove chair data files from lib/data/products/chairs/director-series\n2. Clear chair listings from the director series page\n3. Remove individual chair detail pages\n4. Document the removal process for rollback if needed\n5. Verify that all chair-related code is removed"
+        },
+        {
+          "id": 27.3,
+          "title": "Implement Chair Factory Pattern",
+          "description": "Create a standardized factory function for generating consistent chair data",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Define a consistent Chair interface\n2. Create a createDirectorChair factory function\n3. Implement Cloudinary URL generation utility\n4. Add validation for required fields\n5. Document the factory pattern usage"
+        },
+        {
+          "id": 27.4,
+          "title": "Rebuild Ashley Director Chair",
+          "description": "Implement Ashley Director Chair using the new factory pattern and consistent styling",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create chair data using the factory function\n2. Generate the chair detail page with ProductDetailLayout\n3. Add to director series page with consistent card styling\n4. Test for correct rendering and behavior\n5. Verify styling consistency"
+        },
+        {
+          "id": 27.5,
+          "title": "Rebuild Opera Director Chair",
+          "description": "Implement Opera Director Chair using the new factory pattern and consistent styling",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create chair data using the factory function\n2. Generate the chair detail page with ProductDetailLayout\n3. Add to director series page with consistent card styling\n4. Test for correct rendering and behavior\n5. Verify styling consistency"
+        },
+        {
+          "id": 27.6,
+          "title": "Rebuild Tycoon Director Chair",
+          "description": "Implement Tycoon Director Chair using the new factory pattern and consistent styling",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create chair data using the factory function\n2. Generate the chair detail page with ProductDetailLayout\n3. Add to director series page with consistent card styling\n4. Test for correct rendering and behavior\n5. Verify styling consistency"
+        },
+        {
+          "id": 27.7,
+          "title": "Rebuild BigBoss Gold Director Chair",
+          "description": "Implement BigBoss Gold Director Chair using the new factory pattern and consistent styling",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create chair data using the factory function\n2. Generate the chair detail page with ProductDetailLayout\n3. Add to director series page with consistent card styling\n4. Test for correct rendering and behavior\n5. Verify styling consistency"
+        },
+        {
+          "id": 27.8,
+          "title": "Rebuild Woodland Director Chair",
+          "description": "Implement Woodland Director Chair using the new factory pattern and consistent styling",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create chair data using the factory function\n2. Generate the chair detail page with ProductDetailLayout\n3. Add to director series page with consistent card styling\n4. Test for correct rendering and behavior\n5. Verify styling consistency"
+        },
+        {
+          "id": 27.9,
+          "title": "Rebuild Boston Director Chair",
+          "description": "Implement Boston Director Chair using the new factory pattern and consistent styling",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create chair data using the factory function\n2. Generate the chair detail page with ProductDetailLayout\n3. Add to director series page with consistent card styling\n4. Test for correct rendering and behavior\n5. Verify styling consistency"
+        },
+        {
+          "id": 27.1,
+          "title": "Create Director Series Page with Consistent Styling",
+          "description": "Rebuild the director series overview page with consistent styling for all chair cards",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Create a standardized card component for chair display\n2. Implement consistent grid layout\n3. Add proper hover effects and animations\n4. Ensure responsive behavior across all screen sizes\n5. Test for visual consistency across all chair cards"
+        },
+        {
+          "id": 27.11,
+          "title": "Document New Implementation",
+          "description": "Create comprehensive documentation for the new director series implementation",
+          "status": "pending",
+          "details": "## Implementation Steps\n\n1. Document the chair factory pattern usage\n2. Create examples of adding new chairs\n3. Explain the styling system and ProductDetailLayout usage\n4. Add troubleshooting guidelines\n5. Update architecture documentation"
+        },
+        {
+          "id": 28.9,
+          "title": "Remove Existing Chair Implementations",
+          "description": "Remove Existing Chair Implementations",
+          "details": "## Implementation Steps\n\n1. Remove chair data files from lib/data/products/chairs/director-series\n2. Clear chair listings from the director series page\n3. Remove individual chair detail pages\n4. Document the removal process for rollback if needed\n5. Verify that all chair-related code is removed",
+          "status": "pending",
+          "dependencies": [],
+          "parentTaskId": 27
+        },
+        {
+          "id": 27.12,
+          "title": "Clean Up Director Series Files",
+          "description": "Remove duplicate files and fix index.ts duplicate function errors",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Fix the index.ts file with duplicate registerDirectorChair function\n2. Create a backup branch before removing files\n3. Remove old/duplicate chair data files from lib/data/products/chairs/director-series\n4. Remove unused chair page files from app/chairs/director-series\n5. Verify application builds without errors\n6. Test all chair pages for proper rendering\n7. Document the cleanup process",
+          "dependencies": [],
+          "parentTaskId": 27,
+          "completionDetails": "Fixed duplicate function issue in index.ts by creating a clean implementation with proper function ordering. Created backups of original files. Implemented new director series page with direct chair imports. Created comprehensive documentation including cleanup summary, verification checklist, file removal instructions, and maintenance guide."
+        },
+        {
+          "id": 27.13,
+          "title": "Fix the registerDirectorChair Duplicate Function Error",
+          "description": "Resolve duplicate function definition in director series index file",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Create a clean, new version of the index.ts file\n2. Ensure single function definitions\n3. Test that all chair imports work correctly\n4. Verify no TypeScript errors\n5. Document the fix for future reference",
+          "dependencies": [],
+          "parentTaskId": 27,
+          "completionDetails": "Created a clean index-fixed.ts file with single function definitions, proper documentation, and explicit imports. Created comprehensive documentation in duplicate-function-resolution-strategy.md explaining the issue and solution."
+        },
+        {
+          "id": 27.14,
+          "title": "Create Standardized Director Series Index File",
+          "description": "Implement a clean, well-organized index file for director series chairs",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Create index file with clear separation of concerns\n2. Implement proper type safety\n3. Add explicit imports for all chair files\n4. Add defensive programming for chair registration\n5. Verify all exports are properly typed",
+          "dependencies": [27.13],
+          "parentTaskId": 27,
+          "completionDetails": "Enhanced the existing index.ts file with improved type safety, validation, and defensive programming. Added proper error handling, input validation, and return value typing. Maintained the same file structure to prevent import issues, while adding comprehensive documentation."
+        }
+      ],
+      "dependencies": [
+        24,
+        26
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Consolidate Modular Files",
+      "description": "Create a single version of all modular files in the project to avoid import issues",
+      "status": "completed",
+      "priority": "high",
+      "progressDetails": "Completed file consolidation for 14 duplicate files across the codebase. Created scripts for identifying and safely removing duplicate files. Established best practices for file management and naming standards. Implemented import path guidelines. Created tools to identify and fix naming issues.",
+      "completionDetails": "Successfully consolidated all duplicate files in the codebase. Created comprehensive documentation including file naming standards, import path guidelines, and best practices. Developed supporting tools like lint-file-names.js and rename-file.js to help maintain these standards. Generated a report of remaining file naming issues and created a remediation plan for addressing them.",
+      "details": "## Current Issues\n\n- Multiple versions of the same files exist in the codebase (e.g., index.ts, index-fixed.ts, index-enhanced.ts)\n- Import issues arise when different files import different versions\n- Code duplication leads to maintenance challenges\n- Inconsistent implementations across file versions\n\n## Implementation Goals\n\n1. **Identify Duplicate Files**:\n   - Scan the codebase for temporary and duplicate files\n   - Document all files that need consolidation\n   - Determine the canonical version of each file\n\n2. **Enhance Existing Files**:\n   - Apply improvements directly to existing files\n   - Avoid creating new versions of files\n   - Ensure backward compatibility\n\n3. **Remove Duplicate Files**:\n   - Remove temporary and backup files\n   - Update documentation to reflect changes\n   - Verify application functionality after removal\n\n## Technical Approach\n\n- Use git for version tracking instead of keeping multiple file versions\n- Apply enhancements incrementally to existing files\n- Create comprehensive documentation outside of code files\n- Implement consistent import patterns",
+      "subtasks": [
+        {
+          "id": 28.1,
+          "title": "Document File Consolidation Best Practices",
+          "description": "Create guidelines for maintaining a single version of each file",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Create file-consolidation-best-practices.md document\n2. Document key principles for maintaining single file versions\n3. Outline common issues and solutions\n4. Provide implementation guidelines\n5. Include concrete examples from the Director Series implementation",
+          "completionDetails": "Created comprehensive file-consolidation-best-practices.md document covering single source of truth principles, in-place enhancement guidelines, and proper file organization strategies. Included examples from Director Series implementation and provided guidelines for future development."
+        },
+        {
+          "id": 28.2,
+          "title": "Consolidate Director Series Files",
+          "description": "Apply consolidation principles to the Director Series implementation",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Enhance the existing index.ts file directly\n2. Add improved type safety and validation\n3. Mark temporary files for removal\n4. Document the consolidation process\n5. Update task status to reflect changes",
+          "completionDetails": "Enhanced existing index.ts file with improved type safety, validation, and defensive programming. Created director-series-file-consolidation-report.md documenting the process. Marked temporary index-enhanced.ts and index-fixed.ts files for removal."
+        },
+        {
+          "id": 28.3,
+          "title": "Identify and Consolidate Other Duplicate Files",
+          "description": "Scan the codebase for other instances of duplicate files",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Create a script to identify potential duplicate files\n2. Manually review identified files\n3. Document files requiring consolidation\n4. Create a prioritized consolidation plan\n5. Apply consolidation principles to each case",
+          "completionDetails": "Created script to scan for duplicate files which identified 14 potential duplicate files. Developed scripts for safely removing duplicate files, created file-consolidation-plan.md with prioritized removal strategy, and successfully executed the removal script to clean up all duplicate files."
+        },
+        {
+          "id": 28.4,
+          "title": "Implement File Naming Standards",
+          "description": "Create and enforce consistent file naming standards",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Document file naming conventions\n2. Create guidelines for different file types\n3. Implement linting rules for file names\n4. Update existing files to follow conventions\n5. Document the standards in the project README",
+          "completionDetails": "Enhanced file-consolidation-best-practices.md with comprehensive file naming standards for all file types. Created lint-file-names.js script to identify files that don't follow conventions. Standardized naming patterns for components, utilities, hooks, pages, and other file types."
+        },
+        {
+          "id": 28.5,
+          "title": "Create Import Path Guidelines",
+          "description": "Establish consistent import path patterns",
+          "status": "completed",
+          "details": "## Implementation Steps\n\n1. Document preferred import path styles\n2. Create examples of correct and incorrect imports\n3. Implement linting rules for import paths\n4. Update existing imports to follow guidelines\n5. Create an import troubleshooting guide",
+          "completionDetails": "Enhanced file-consolidation-best-practices.md with comprehensive import path guidelines. Documented preferred import patterns, import organization strategies, and best practices for absolute vs relative imports. Provided concrete examples of good and bad import practices to avoid confusion and import errors."
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "observations": [
+    {
+      "content": "## Component Implementation Details\n\nThe `ContactButtonWithVariant` component has been implemented with the following features:\n\n1. **Responsive Layout**:\n   - Stack layout on mobile (button above variant name)\n   - Horizontal layout on larger screens (button beside variant name)\n\n2. **Accessibility Features**:\n   - `aria-label` on the button that includes the variant name when selected\n   - `aria-live=\"polite\"` on the variant text to announce changes to screen readers\n\n3. **Styling**:\n   - Muted text color for the variant name\n   - Consistent spacing and alignment\n   - Full-width button on mobile, auto-width on larger screens\n\n4. **State Handling**:\n   - Conditionally renders the variant name only when a variant is selected\n   - Accepts a null selectedVariant for when no variant is chosen\n\n## Usage Example\n\nTo use this component in a product detail page:\n\n```tsx\n<ContactButtonWithVariant\n  selectedVariant={currentlySelectedVariant}\n  onContactClick={handleContactFormOpen}\n  className=\"mt-6\"\n/>\n```\n\nWhere `currentlySelectedVariant` is a state variable that updates when the user selects different product options.\n\n## Next Steps\n\n1. Update product detail pages to use this component\n2. Ensure the variant selection state is properly passed to this component\n3. Connect the contact form to include the selected variant information"
+    },
+    {
+      "content": "## UI Standardization Implementation\n\n1. **Feature Display Standardization**:\n   - Removed the key features section from the Tycoon Director Chair page\n   - Created consistent information display across all chair pages\n   - Simplified product information hierarchy\n   - Reduced visual clutter and improved focus on important details\n\n2. **Image Display Enhancement**:\n   - Updated image display to show one consistent image on initial load\n   - Implemented proper aspect ratio and sizing across all chair pages\n   - Added a decorative rectangle in the corner of the image container\n   - Applied consistent loading states and animations\n\n3. **Variant Selection Improvement**:\n   - Changed variant button text color to SteelMade red for better visibility\n   - Enhanced visual feedback for button states (hover, active, selected)\n   - Improved accessibility with proper focus states\n   - Ensured consistent behavior across all chair variants\n\n## Benefits\n\n- **Consistent User Experience**: Users now encounter the same UI patterns across all chair pages\n- **Improved Visual Appeal**: Enhanced styling with brand colors and decorative elements\n- **Reduced Information Overload**: Focusing on essential information improves decision-making\n- **Better Brand Identity**: Consistent use of SteelMade red strengthens brand recognition\n\n## Next Steps\n\n1. Apply these standardized patterns to other product categories\n2. Conduct user testing to validate the improvements\n3. Create a component library to ensure future consistency\n4. Implement similar enhancements for the product grid pages"
+    }
+  ]
+}

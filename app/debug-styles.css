@@ -1,0 +1,66 @@
+/* Debug styling to help identify layout issues */
+
+.debug-layout * {
+  outline: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+.debug-layout .grid {
+  outline: 2px solid rgba(0, 0, 255, 0.3);
+}
+
+.debug-layout h1, 
+.debug-layout h2, 
+.debug-layout h3 {
+  outline: 2px solid rgba(0, 255, 0, 0.3);
+}
+
+.debug-layout img,
+.debug-layout [role="img"] {
+  outline: 2px solid rgba(255, 255, 0, 0.5);
+}
+
+.debug-layout button {
+  outline: 2px solid rgba(255, 0, 255, 0.3);
+}
+
+/* Helper for checking inconsistent spacing */
+.debug-layout .space-y-1 > * + *,
+.debug-layout .space-y-2 > * + *,
+.debug-layout .space-y-3 > * + *,
+.debug-layout .space-y-4 > * + *,
+.debug-layout .space-y-6 > * + * {
+  position: relative;
+}
+
+.debug-layout .space-y-1 > * + *::before,
+.debug-layout .space-y-2 > * + *::before,
+.debug-layout .space-y-3 > * + *::before,
+.debug-layout .space-y-4 > * + *::before,
+.debug-layout .space-y-6 > * + *::before {
+  content: attr(class);
+  position: absolute;
+  top: -16px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 10px;
+  padding: 2px 4px;
+  z-index: 100;
+}
+
+/* Add debug information for styled components */
+.debug-layout [class*="productStyles"] {
+  position: relative;
+}
+
+.debug-layout [class*="productStyles"]::after {
+  content: "productStyles";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0, 100, 0, 0.7);
+  color: white;
+  font-size: 10px;
+  padding: 2px 4px;
+  z-index: 100;
+}

@@ -1,34 +1,54 @@
-import { Metadata } from "next";
-import { notFound } from "next/navigation";
-import ProductSeriesPage from "@/components/products/ProductSeriesPage";
-import { productCatalog } from "@/lib/data/product-catalog";
-import { ProductData } from "@/types/products";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Director Series | SteelMade Office Chairs",
-  description: "Professional director chairs offering versatile and durable seating solutions for film sets and productions.",
-};
+// Import individual chair data files
+import ashleyDirectorChair from '@/lib/data/products/chairs/director-series/ashley';
+import operaDirectorChair from '@/lib/data/products/chairs/director-series/opera';
+import tycoonDirectorChair from '@/lib/data/products/chairs/director-series/tycoon';
+import bigbossGoldDirectorChair from '@/lib/data/products/chairs/director-series/bigboss-gold';
+import woodlandDirectorChair from '@/lib/data/products/chairs/director-series/woodland';
+import bostonDirectorChair from '@/lib/data/products/chairs/director-series/boston';
+import grandezzaDirectorChair from '@/lib/data/products/chairs/director-series/grandezza';
+import kotakDirectorChair from '@/lib/data/products/chairs/director-series/kotak';
+import milanoDirectorChair from '@/lib/data/products/chairs/director-series/milano';
+import monarchDirectorChair from '@/lib/data/products/chairs/director-series/monarch';
+import nissanDirectorChair from '@/lib/data/products/chairs/director-series/nissan';
+import parkerDirectorChair from '@/lib/data/products/chairs/director-series/parker';
+import tridentDirectorChair from '@/lib/data/products/chairs/director-series/trident';
+
+import React from 'react';
+import { ChairCard } from '@/components/products/ChairCard';
+
+// Collect all chairs into an array
+const chairs = [
+  ashleyDirectorChair,
+  operaDirectorChair,
+  tycoonDirectorChair,
+  bigbossGoldDirectorChair,
+  woodlandDirectorChair,
+  bostonDirectorChair,
+  grandezzaDirectorChair,
+  kotakDirectorChair,
+  milanoDirectorChair,
+  monarchDirectorChair,
+  nissanDirectorChair,
+  parkerDirectorChair,
+  tridentDirectorChair
+];
 
 export default function DirectorSeriesPage() {
-  const category = "chairs";
-  const seriesId = "director-series";
-  
-  // Get the series data from our catalog
-  const series = productCatalog.chairs?.[seriesId];
-  
-  if (!series) {
-    notFound();
-  }
-  
-  // Get products for this series
-  const products = Object.values(series.products) as ProductData[];
-  
   return (
-    <ProductSeriesPage
-      category={category}
-      seriesId={seriesId}
-      series={series}
-      products={products}
-    />
+    <div className="container mx-auto py-12">
+      <h1 className="text-3xl font-bold text-gray-900 mb-6">Director Series Chairs</h1>
+      <p className="text-gray-600 mb-10 max-w-3xl">
+        Discover our premium Director Series chairs, designed for professionals who demand the best in comfort and style.
+        Each chair is crafted with attention to detail and built to last.
+      </p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {chairs.map((chair) => (
+          <ChairCard key={chair.id} chair={chair} />
+        ))}
+      </div>
+    </div>
   );
 }

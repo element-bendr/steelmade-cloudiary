@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { ProductCard } from "@/components/products/ProductCard"
 import type { ProductData } from "@/types/products"
+import Link from "next/link"
+import Image from "next/image"
 
 interface ProductGridProps {
   products: ProductData[]
@@ -48,11 +50,36 @@ export function ProductGrid({ products, productsPerPage = 8 }: ProductGridProps)
     <div className="space-y-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {currentProducts.map((product) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            href={`/${product.category}/${product.seriesId}/${product.id}`}
-          />
+          <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <Link href={`/${product.category}/${product.seriesId}/${product.id}`}>
+              <div className="group">
+                <div className="relative h-64 w-full overflow-hidden">
+                  {product.imageUrl ? (
+                    <Image
+                      src={product.imageUrl}
+                      alt={product.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                      <span className="text-gray-400">No image</span>
+                    </div>
+                  )}
+                </div>
+                
+                <div className="p-4">
+                  <h3 className="text-lg font-medium group-hover:text-blue-600 transition-colors">{product.name}</h3>
+                  <p className="text-gray-600 mt-1 text-sm line-clamp-2">{product.description}</p>
+                  <div className="mt-3 flex justify-between items-center">
+                    <span className="text-blue-700 font-semibold">${product.price}</span>
+                    <span className="text-sm text-gray-500">View Details</span>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
         ))}
       </div>
       
