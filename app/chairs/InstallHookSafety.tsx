@@ -12,7 +12,7 @@ export default function InstallHookSafety() {
     const originalEntries = Object.entries;
     
     // Override Object.entries with a safer version
-    Object.entries = function safeEntries(obj) {
+    Object.entries = function safeEntries(obj: object | null | undefined): [string, any][] {
       if (obj === null || obj === undefined) {
         console.warn('Object.entries called with null/undefined, returning empty array');
         return [];

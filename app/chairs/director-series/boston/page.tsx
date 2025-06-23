@@ -5,7 +5,7 @@ import bostonDirectorChair from '@/lib/data/products/chairs/director-series/bost
 import { ChairPageLayout } from '@/components/products/ChairPageLayout';
 
 export default function BostonDirectorChairPage() {
-  const [selectedVariant, setSelectedVariant] = useState(bostonDirectorChair.defaultVariant);
+  const [selectedVariant, setSelectedVariant] = useState(bostonDirectorChair.defaultVariant ?? (bostonDirectorChair.variants?.[0]?.id ?? ''));
   
   return (
     <ChairPageLayout

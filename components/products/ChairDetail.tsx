@@ -13,7 +13,7 @@ interface ChairDetailProps {
  * Standardized component for displaying chair details
  */
 export function ChairDetail({ chair, selectedVariant, onVariantChange }: ChairDetailProps) {
-  const currentVariant = chair.variants.find(v => v.id === selectedVariant);
+  const currentVariant = chair.variants?.find((v: ChairVariant) => v.id === selectedVariant);
   
   if (!currentVariant) {
     return <div className="text-red-600">Variant not found</div>;
@@ -25,7 +25,7 @@ export function ChairDetail({ chair, selectedVariant, onVariantChange }: ChairDe
       <div className="relative">
         <div className="aspect-square relative overflow-hidden rounded-lg bg-gray-100">
           <Image 
-            src={currentVariant.imageUrl}
+            src={currentVariant.imageUrl || ''}
             alt={`${chair.name} - ${currentVariant.name}`}
             width={400}
             height={400}
@@ -44,7 +44,7 @@ export function ChairDetail({ chair, selectedVariant, onVariantChange }: ChairDe
         <div className="mt-8">
           <h2 className="text-lg font-medium text-gray-900">Variants</h2>
           <div className="mt-4 space-y-3">
-            {chair.variants.map((variant) => (
+            {chair.variants?.map((variant: ChairVariant) => (
               <button
                 key={variant.id}
                 onClick={() => onVariantChange(variant.id)}
@@ -64,7 +64,7 @@ export function ChairDetail({ chair, selectedVariant, onVariantChange }: ChairDe
         <div className="mt-8">
           <h2 className="text-lg font-medium text-gray-900">Features</h2>
           <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2">
-            {chair.features.map((feature, index) => (
+            {chair.features?.map((feature: string, index: number) => (
               <li key={index} className="flex items-start">
                 <span className="text-red-700 mr-2">•</span>
                 <span>{feature}</span>

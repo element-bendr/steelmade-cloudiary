@@ -1,7 +1,8 @@
 import { notFound } from 'next/navigation';
-import { getProductDetails, getSeriesByCategoryAndId } from '@/lib/api/products';
+import { getProductDetails } from '../../../../lib/api/products';
 import type { Metadata, ResolvingMetadata } from 'next';
-import ProductPageLayout from '@/components/products/ProductPageLayout';
+import ProductPageLayout from '../../../../components/products/ProductPageLayout';
+import { getSeriesById } from '../../../../lib/services/product-service';
 
 type ProductDetailPageProps = {
   params: {
@@ -29,7 +30,7 @@ export async function generateMetadata(
     openGraph: {
       title: `${product.name} - SteelMade`,
       description: product.description,
-      images: product.images?.length ? product.images.map(img => ({ url: img.url, alt: img.alt })) : (product.imageUrl ? [{ url: product.imageUrl, alt: product.name }] : []),
+      images: product.images?.length ? product.images.map((img: { url: string; alt: string }) => ({ url: img.url, alt: img.alt })) : (product.imageUrl ? [{ url: product.imageUrl, alt: product.name }] : []),
     },
   };
 }
@@ -39,7 +40,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
 
   const [product, series] = await Promise.all([
     getProductDetails(params.productId, params.seriesId, 'storage-solutions'),
-    getSeriesByCategoryAndId('storage-solutions', params.seriesId)
+    getSeriesById('storage-solutions', params.seriesId)
   ]);
 
   console.log('[ProductDetailPage] Fetched product:', product); // Log fetched product

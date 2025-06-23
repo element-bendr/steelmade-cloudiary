@@ -43,10 +43,10 @@ export interface ProductSeries {
   id: string;
   title?: string;
   description?: string;
-  seoDescription?: string;
+  seoDescription: string; // now required
   category?: string;
   imageUrl?: string;
-  coverImage?: ProductImage;
+  coverImage: ProductImage; // now required
   images?: ProductImage[];
   features?: string[];
   lastModified?: string;

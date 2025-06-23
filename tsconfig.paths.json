@@ -4,6 +4,7 @@
       "@/*": ["./*"],
       "@/components/*": ["./components/*"],
       "@/lib/*": ["./lib/*"],
+      "@/types/*": ["./types/*"],
       "@modules/*": ["./modules/*/src"]
     }
   }

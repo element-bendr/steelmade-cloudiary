@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ProductSeriesPage from "@/components/products/ProductSeriesPage";
 import { productCatalog } from "@/lib/data/product-catalog";
-import { ProductData } from "@/types/products";
+import { ExtendedProductData } from "@/lib/data/product-types";
 
 export const metadata: Metadata = {
   title: "Ergonomic Series | SteelMade Office Chairs",
@@ -21,7 +21,7 @@ export default function ErgonomicSeriesPage() {
   }
   
   // Get products for this series
-  const products = Object.values(series.products) as ProductData[];
+  const products = Object.values(series.products) as ExtendedProductData[];
   
   return (
     <ProductSeriesPage

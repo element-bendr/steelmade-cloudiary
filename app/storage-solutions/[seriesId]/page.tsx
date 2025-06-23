@@ -3,6 +3,7 @@ import { notFound } from "next/navigation"
 import { default as ProductSeriesPage } from "@/components/products/ProductSeriesPage"
 import { getSeriesById, getRelatedSeries, getAllSeries, getRevalidateTime, getSeriesProducts } from "@/lib/services/product-service"
 import { getImageUrl } from "@/lib/utils/image-utils"
+import type { ImageAsset } from '@/types/image-types';
 
 interface StorageSeriesPageProps {
   params: {
@@ -16,7 +17,14 @@ export async function generateMetadata({ params }: StorageSeriesPageProps): Prom
 
   const title = `${series.title} | Office Storage | SteelMade`
   const description = series.seoDescription
-  const imageUrl = getImageUrl(series.coverImage)
+  // Defensive mapping: convert ProductImage to ImageAsset for getImageUrl
+  const imageAsset: ImageAsset = {
+    url: series.coverImage?.url || '',
+    width: series.coverImage?.width ?? 1200,
+    height: series.coverImage?.height ?? 630,
+    alt: series.coverImage?.alt || title
+  };
+  const imageUrl = getImageUrl(imageAsset)
 
   return {
     title,
@@ -30,7 +38,7 @@ export async function generateMetadata({ params }: StorageSeriesPageProps): Prom
           url: imageUrl,
           width: 1200,
           height: 630,
-          alt: series.title,
+          alt: series.title || 'Storage Series',
         }
       ],
       locale: "en_US",
@@ -47,7 +55,7 @@ export async function generateMetadata({ params }: StorageSeriesPageProps): Prom
       site: "@steelmade",
     },
     alternates: {
-      canonical: `https://steelmade.com/storage-solutions/${params.seriesId}`, // Updated path
+      canonical: `https://steelmade.com/storage-solutions/${params.seriesId}`,
     },
     robots: {
       index: true,

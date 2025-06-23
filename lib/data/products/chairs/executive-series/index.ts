@@ -1,4 +1,5 @@
-import { ProductSeries } from '../../product-types';
+import { ProductSeries } from '../../../product-types';
+import { toExtendedProductData, isExtendedProductData } from './toExtendedProductData';
 import { skodaExecutiveChair } from './skoda';
 import { commanderExecutiveChair } from './commander';
 import { koreanExecutiveChair } from './korean';
@@ -26,39 +27,51 @@ import { miniGingerDolphinExecutiveChair } from './mini-ginger-dolphin';
 import { phantomExecutiveChair } from './phantom';
 import { wilsonExecutiveChair } from './wilson';
 import { maksonExecutiveChair } from './makson';
-import { safariExecutiveChair } from './safari';
 
 export const executiveSeries: ProductSeries = {
   id: 'executive-series',
+  title: 'Executive Series',
   description: 'Premium chairs designed for executives and high-end office environments.',
-  products: {
-    [commanderExecutiveChair.id]: commanderExecutiveChair,
-    [koreanExecutiveChair.id]: koreanExecutiveChair,
-    [lxExecutiveChair.id]: lxExecutiveChair,
-    [obamaExecutiveChair.id]: obamaExecutiveChair,
-    [benzExecutiveChair.id]: benzExecutiveChair,
-    [dusterExecutiveChair.id]: dusterExecutiveChair,
-    [perkshynlExecutiveChair.id]: perkshynlExecutiveChair,
-    [perkExecutiveChair.id]: perkExecutiveChair,
-    [luxuryExecutiveChair.id]: luxuryExecutiveChair,
-    [amigoExecutiveChair.id]: amigoExecutiveChair,
-    [amazonExecutiveChair.id]: amazonExecutiveChair,
-    [saharaExecutiveChair.id]: saharaExecutiveChair,
-    [siemensExecutiveChair.id]: siemensExecutiveChair,
-    [syndicateExecutiveChair.id]: syndicateExecutiveChair,
-    [vernaExecutiveChair.id]: vernaExecutiveChair,
-    [supremeExecutiveChair.id]: supremeExecutiveChair,
-    [miniMarksonExecutiveChair.id]: miniMarksonExecutiveChair,
-    [venusRevUdExecutiveChair.id]: venusRevUdExecutiveChair,
-    [iranaExecutiveChair.id]: iranaExecutiveChair,
-    [skodaExecutiveChair.id]: skodaExecutiveChair,
-    [jetLazerComputerExecutiveChair.id]: jetLazerComputerExecutiveChair,
-    [premierExecutiveChair.id]: premierExecutiveChair,
-    [nanoExecutiveChair.id]: nanoExecutiveChair,
-    [miniGingerDolphinExecutiveChair.id]: miniGingerDolphinExecutiveChair,
-    [phantomExecutiveChair.id]: phantomExecutiveChair,
-    [wilsonExecutiveChair.id]: wilsonExecutiveChair,
-    [maksonExecutiveChair.id]: maksonExecutiveChair,
-    [safariExecutiveChair.id]: safariExecutiveChair,
-  }
+  seoDescription:
+    'The Executive Series embodies the art of leadership—each chair a throne of innovation, comfort, and prestige. Elevate your workspace with designs that inspire vision and command respect.',
+  coverImage: {
+    url: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749805770/steelmade/chairs/executive-series/amigo/ic-331-hb.jpg',
+    alt: 'A poetic view of the Executive Series chair, radiating authority and comfort.',
+    width: 1200,
+    height: 800
+  },
+  products: Object.fromEntries(
+    [
+      commanderExecutiveChair,
+      koreanExecutiveChair,
+      lxExecutiveChair,
+      obamaExecutiveChair,
+      benzExecutiveChair,
+      dusterExecutiveChair,
+      perkshynlExecutiveChair,
+      perkExecutiveChair,
+      luxuryExecutiveChair,
+      amigoExecutiveChair,
+      amazonExecutiveChair,
+      saharaExecutiveChair,
+      siemensExecutiveChair,
+      syndicateExecutiveChair,
+      vernaExecutiveChair,
+      supremeExecutiveChair,
+      miniMarksonExecutiveChair,
+      venusRevUdExecutiveChair,
+      iranaExecutiveChair,
+      skodaExecutiveChair,
+      jetLazerComputerExecutiveChair,
+      premierExecutiveChair,
+      nanoExecutiveChair,
+      miniGingerDolphinExecutiveChair,
+      phantomExecutiveChair,
+      wilsonExecutiveChair,
+      maksonExecutiveChair
+    ].map(product => {
+      const prod = isExtendedProductData(product) ? product : toExtendedProductData(product);
+      return [prod.id, prod];
+    })
+  ),
 };

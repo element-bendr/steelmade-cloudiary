@@ -26,7 +26,8 @@ const syndicateExecutiveChair = createDirectorChair({
   defaultVariant: 'high-back',
 });
 
-syndicateExecutiveChair.variants.forEach(variant => {
+const variants = syndicateExecutiveChair.variants ?? [];
+variants.forEach(variant => {
   if (variant.id === 'high-back') {
     variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749802268/steelmade/chairs/executive-series/syndicate/ic-59-hb.jpg';
     (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749802268/steelmade/chairs/executive-series/syndicate/ic-59-hb.jpg'];
@@ -37,9 +38,8 @@ syndicateExecutiveChair.variants.forEach(variant => {
     (variant as any).imageClass = 'object-contain p-8 max-h-[420px]';
   }
 });
-
-(syndicateExecutiveChair as any).images = syndicateExecutiveChair.variants.map(v => v.imageUrl);
-(syndicateExecutiveChair as any).imageUrl = syndicateExecutiveChair.variants.find(v => v.id === 'high-back')?.imageUrl || syndicateExecutiveChair.variants[0]?.imageUrl;
+(syndicateExecutiveChair as any).images = variants.map(v => v.imageUrl);
+(syndicateExecutiveChair as any).imageUrl = variants.find(v => v.id === 'high-back')?.imageUrl || variants[0]?.imageUrl;
 
 registerExecutiveChair(syndicateExecutiveChair);
 

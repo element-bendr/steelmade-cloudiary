@@ -5,7 +5,7 @@ import operaDirectorChair from '@/lib/data/products/chairs/director-series/opera
 import { ChairPageLayout } from '@/components/products/ChairPageLayout';
 
 export default function OperaDirectorChairPage() {
-  const [selectedVariant, setSelectedVariant] = useState(operaDirectorChair.defaultVariant);
+  const [selectedVariant, setSelectedVariant] = useState(operaDirectorChair.defaultVariant ?? (operaDirectorChair.variants?.[0]?.id ?? ''));
   
   return (
     <ChairPageLayout

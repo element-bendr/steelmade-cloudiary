@@ -8,7 +8,6 @@ export const operaDirectorChair: ExtendedProductData = {
   seriesId: "director-series",
   inStock: true,
   imageUrl: "https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/opera/ic-340-hb.jpg",
-  price: "1099.99",
   images: [
     { 
       url: "https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/opera/ic-340-hb.jpg", 

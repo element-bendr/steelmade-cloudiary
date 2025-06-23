@@ -7,7 +7,6 @@ export const classicdirectorchair = {
   description: 'Traditional folding director chair with a timeless design.',  category: 'chairs',
   seriesId: 'director-series',
   imageUrl: '/images/products/chairs/classic-director-chair.jpg',
-  price: 799.99,
   features: [
     'Premium canvas seating',
     'Solid wood frame',
@@ -25,12 +24,14 @@ export const classicdirectorchair = {
     {
       variantId: 'natural',
       variantName: 'Natural Finish',
+      name: 'Classic Director Chair - Natural',
       description: 'Light wood finish with tan canvas',
       imageUrl: '/images/products/chairs/classic-director-chair-natural.jpg'
     },
     {
       variantId: 'walnut',
       variantName: 'Walnut Finish',
+      name: 'Classic Director Chair - Walnut',
       description: 'Dark walnut finish with black canvas',
       imageUrl: '/images/products/chairs/classic-director-chair-walnut.jpg'
     }

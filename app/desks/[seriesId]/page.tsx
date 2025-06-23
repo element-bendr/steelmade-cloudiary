@@ -3,7 +3,7 @@ import { notFound } from "next/navigation"
 import { default as ProductSeriesPage } from "@/components/products/ProductSeriesPage"
 import { getSeriesById, getRelatedSeries, getAllSeries, getRevalidateTime } from "@/lib/services/product-service"
 import { getImageUrl } from "@/lib/utils/image-utils"
-import type { ProductData } from "@/types/products"
+import type { ExtendedProductData } from '@/lib/data/product-types';
 
 interface DeskSeriesPageProps {
   params: {
@@ -17,7 +17,17 @@ export async function generateMetadata({ params }: DeskSeriesPageProps): Promise
 
   const title = `${series.title} | Office Desks | SteelMade`
   const description = series.seoDescription
-  const imageUrl = getImageUrl(series.coverImage)
+  // Defensive mapping: convert ProductImage to ImageAsset for getImageUrl
+  const imageUrl = getImageUrl(
+    series.coverImage
+      ? {
+          url: series.coverImage.url,
+          alt: series.coverImage.alt,
+          width: series.coverImage.width ?? 0,
+          height: series.coverImage.height ?? 0,
+        }
+      : undefined
+  )
 
   return {
     title,
@@ -58,7 +68,7 @@ export default async function DeskSeriesPage({ params }: DeskSeriesPageProps) {
 
   if (!series) notFound()
 
-  const products: ProductData[] = []
+  const products: ExtendedProductData[] = []
 
   return (
     <ProductSeriesPage

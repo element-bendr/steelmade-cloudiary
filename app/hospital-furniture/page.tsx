@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { Metadata } from 'next';
-import { getSeriesForCategory } from "@/lib/api/products";
+import { getAllSeries } from "@/lib/services/product-service";
 import ProductCategoryPageLayout from "@/components/products/ProductCategoryPageLayout";
 import { Skeleton } from "@/components/ui/skeleton";
 
@@ -25,8 +25,51 @@ export const metadata: Metadata = {
 };
 
 export default async function HospitalFurniturePage() {
-  // The category key in MOCK_SERIES is 'hospital'
-  const seriesData = await getSeriesForCategory("hospital-furniture");
+  const seriesData = await getAllSeries("hospital-furniture");
+
+  // Defensive mapping: convert ProductSeries to SeriesMetadata for all series
+  const mapProductSeriesToSeriesMetadata = (series: any): import('@/types/collections').SeriesMetadata => ({
+    id: series.id,
+    title: series.title ?? '',
+    description: series.description ?? '',
+    seoDescription: series.seoDescription ?? '',
+    features: series.features ?? [],
+    lastModified: series.lastModified ?? '',
+    products: series.products ?? {},
+    category: series.category ?? 'hospital-furniture',
+    imageUrl: series.imageUrl ?? '',
+    specifications: series.specifications ?? {},
+    tags: series.tags ?? [],
+    coverImage: {
+      url: series.coverImage?.url ?? '',
+      width: series.coverImage?.width ?? 0,
+      height: series.coverImage?.height ?? 0,
+      alt: series.coverImage?.alt ?? '',
+    },
+    images: Array.isArray(series.images)
+      ? series.images.map((img: any) => ({
+          url: img.url ?? '',
+          width: img.width ?? 0,
+          height: img.height ?? 0,
+          alt: img.alt ?? '',
+        }))
+      : [],
+  });
+
+  const mappedSeriesData = Object.fromEntries(
+    Object.entries(seriesData).map(([key, value]) => [
+      key,
+      {
+        ...value,
+        lastModified:
+          value.lastModified &&
+          typeof value.lastModified === 'object' &&
+          Object.prototype.toString.call(value.lastModified) === '[object Date]'
+            ? (value.lastModified as Date).toISOString()
+            : value.lastModified ?? undefined,
+      },
+    ])
+  );
 
   const pageTitle = "Hospital Furniture";
   const pageDescription = "Specialized furniture solutions for healthcare environments. Durable, hygienic, and designed for patient and staff comfort.";
@@ -45,7 +88,7 @@ export default async function HospitalFurniturePage() {
     }>
       <ProductCategoryPageLayout
         category="hospital-furniture"
-        seriesData={seriesData}
+        seriesData={mappedSeriesData}
         pageTitle={pageTitle}
         pageDescription={pageDescription}
         breadcrumbItems={breadcrumbItems}

@@ -32,24 +32,22 @@ const ashleyDirectorChair = createDirectorChair({
 });
 
 // Set correct imageUrl for each variant using the provided working URLs
-ashleyDirectorChair.variants.forEach(variant => {
-  if (variant.imageCode === 'ic-123-hb' || variant.id === 'high-back') {
-    variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/ashley/ic-361-hb.jpg';
-  } else if (variant.imageCode === 'ic-124-mb' || variant.id === 'mid-back') {
-    variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/ashley/ic-362-mb.jpg';
-  }
-});
-
-// Add top-level images array and images array for each variant
-ashleyDirectorChair.images = ashleyDirectorChair.variants.map(v => v.imageUrl);
-ashleyDirectorChair.variants.forEach(variant => {
-  if (variant.imageUrl) {
-    variant.images = [variant.imageUrl];
-  }
-});
+if (ashleyDirectorChair.variants) {
+  ashleyDirectorChair.variants.forEach(variant => {
+    if (variant.imageCode === 'ic-123-hb' || variant.id === 'high-back') {
+      variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/ashley/ic-361-hb.jpg';
+      variant.images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/ashley/ic-361-hb.jpg'];
+    } else if (variant.imageCode === 'ic-124-mb' || variant.id === 'mid-back') {
+      variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/ashley/ic-362-mb.jpg';
+      variant.images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/ashley/ic-362-mb.jpg'];
+    }
+  });
+}
 
 // Set top-level imageUrl for Ashley chair for ChairCard compatibility.
-ashleyDirectorChair.imageUrl = ashleyDirectorChair.variants.find(v => v.id === 'high-back')?.imageUrl || ashleyDirectorChair.variants[0]?.imageUrl;
+if (ashleyDirectorChair.variants && ashleyDirectorChair.variants.length > 0) {
+  ashleyDirectorChair.imageUrl = ashleyDirectorChair.variants.find(v => v.id === 'high-back')?.imageUrl || ashleyDirectorChair.variants[0]?.imageUrl;
+}
 
 // Register this chair with the director series
 registerDirectorChair(ashleyDirectorChair);

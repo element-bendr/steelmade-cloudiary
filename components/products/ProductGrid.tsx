@@ -3,12 +3,12 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import type { ProductData } from "@/types/products"
+import type { ExtendedProductData } from '../../lib/data/product-types';
 import Link from "next/link"
 import Image from "next/image"
 
 interface ProductGridProps {
-  products: ProductData[]
+  products: ExtendedProductData[]
   productsPerPage?: number
 }
 
@@ -48,7 +48,7 @@ export function ProductGrid({ products, productsPerPage = 8 }: ProductGridProps)
   return (
     <div className="space-y-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {currentProducts.map((product) => (
+        {currentProducts.map((product: ExtendedProductData) => (
           <div key={product.id} className="rounded-lg overflow-hidden transition-shadow hover:border hover:border-accent bg-white">
             <Link href={`/${product.category}/${product.seriesId}/${product.id}`}> 
               <div className="group">

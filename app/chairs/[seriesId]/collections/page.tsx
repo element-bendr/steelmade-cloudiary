@@ -30,11 +30,11 @@ export default function Page({ params }: PageProps) {
       height: 800
     };
     // Ensure product.images are correctly typed as ImageAsset[] if they come from ProductData
-    const productImagesAsAssets: ImageAsset[] = product.images?.map(img => ({ 
+    const productImagesAsAssets: ImageAsset[] = product.images?.map((img: { url: string; alt: string; width?: number; height?: number }) => ({ 
       url: img.url, 
       alt: img.alt, 
-      width: img.width, 
-      height: img.height 
+      width: img.width ?? 800, // fallback to 800 if undefined
+      height: img.height ?? 800 // fallback to 800 if undefined
     })) || [];
 
     acc[productId] = {

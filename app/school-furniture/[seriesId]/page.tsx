@@ -1,8 +1,8 @@
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
-import { default as ProductSeriesPage } from "@/components/products/ProductSeriesPage"
-import { getSeriesById, getAllSeries, getRevalidateTime, getSeriesProducts } from "@/lib/services/product-service"
-import { getImageUrl } from "@/lib/utils/image-utils"
+import ProductSeriesPage from "../../../components/products/ProductSeriesPage"
+import { getSeriesById, getAllSeries, getRevalidateTime, getSeriesProducts } from "../../../lib/services/product-service"
+import { getImageUrl } from "../../../lib/utils/image-utils"
 
 interface SchoolFurnitureSeriesPageProps {
   params: {
@@ -16,7 +16,14 @@ export async function generateMetadata({ params }: SchoolFurnitureSeriesPageProp
 
   const title = `${series.title} | School Furniture | SteelMade`
   const description = series.seoDescription
-  const imageUrl = getImageUrl(series.coverImage)
+  // Defensive mapping: convert ProductImage to ImageAsset for getImageUrl
+  const imageAsset = {
+    url: series.coverImage.url,
+    width: series.coverImage.width ?? 1200,
+    height: series.coverImage.height ?? 630,
+    alt: series.coverImage.alt || title
+  }
+  const imageUrl = getImageUrl(imageAsset)
 
   return {
     title,

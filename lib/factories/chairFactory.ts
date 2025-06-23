@@ -1,24 +1,4 @@
-/**
- * Chair Types - Standardized interfaces for chair data
- */
-export interface ChairVariant {
-  id: string;
-  name: string;
-  imageUrl: string;
-  imageCode?: string; // Used for internal reference
-}
-
-export interface Chair {
-  id: string;
-  name: string;
-  description: string;
-  price: string;
-  imageUrl: string;
-  category: string;
-  variants: ChairVariant[];
-  features: string[];
-  defaultVariant: string;
-}
+import type { Chair, ChairVariant } from '../types/chair';
 
 /**
  * Chair creation parameters
@@ -51,7 +31,8 @@ export function createDirectorChair(params: CreateDirectorChairParams): Chair {
     id: variant.id,
     name: variant.name,
     imageUrl: getChairImageUrl(params.id, variant.imageCode),
-    imageCode: variant.imageCode
+    imageCode: variant.imageCode,
+    images: [getChairImageUrl(params.id, variant.imageCode)] // for UI compatibility
   }));
 
   const defaultVariant = params.defaultVariant || variants[0].id;
@@ -66,6 +47,9 @@ export function createDirectorChair(params: CreateDirectorChairParams): Chair {
     category: 'director-series',
     variants,
     features: params.features,
-    defaultVariant
+    defaultVariant,
+    images: variants.map(v => v.imageUrl ?? '') // for UI compatibility, fallback to empty string
   };
 }
+
+export type { Chair, ChairVariant } from '../types/chair';

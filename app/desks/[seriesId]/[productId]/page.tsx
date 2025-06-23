@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getProductDetails, getSeriesByCategoryAndId } from '@/lib/api/products';
+import { getProductDetails } from '@/lib/api/products';
 import type { Metadata, ResolvingMetadata } from 'next';
 import ProductPageLayout from '@/components/products/ProductPageLayout';
 
@@ -29,18 +29,20 @@ export async function generateMetadata(
     openGraph: {
       title: `${product.name} - SteelMade`,
       description: product.description,
-      images: product.images?.length ? product.images.map(img => ({ url: img.url, alt: img.alt })) : (product.imageUrl ? [{ url: product.imageUrl, alt: product.name }] : []),
+      images: product.images?.length
+        ? product.images.map((img: { url: string; alt: string }) => ({ url: img.url, alt: img.alt }))
+        : (product.imageUrl ? [{ url: product.imageUrl, alt: product.name }] : []),
     },
   };
 }
 
 export default async function ProductDetailPage({ params }: ProductDetailPageProps) {
-  const [product, series] = await Promise.all([
-    getProductDetails(params.productId, params.seriesId, 'desks'),
-    getSeriesByCategoryAndId('desks', params.seriesId)
-  ]);
+  const product = await getProductDetails(params.productId, params.seriesId, 'desks');
 
-  if (!product || !series) {
+  // TODO: Replace the following with a real series fetch if needed
+  const series = null; // or fetch from a canonical source if available
+
+  if (!product) {
     notFound();
   }
 

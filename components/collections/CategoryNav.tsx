@@ -1,13 +1,12 @@
 "use client"
 
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { productCategoryDisplayNames, productCategoryPaths } from "@/lib/navigation"
-import type { ProductCategory } from "@/types/collections"
-import type { ProductType } from "@/types/products"
+import { Button } from '../ui/button';
+import { productCategoryDisplayNames, productCategoryPaths } from '../../lib/navigation';
+import type { ProductType } from '../../lib/data/product-types';
 
 interface CategoryNavProps {
-  currentCategory?: ProductCategory
+  currentCategory?: ProductType;
 }
 
 export function CategoryNav({ currentCategory }: CategoryNavProps) {
@@ -20,7 +19,7 @@ export function CategoryNav({ currentCategory }: CategoryNavProps) {
           className="shrink-0"
         >
           <Button
-            variant={currentCategory === title ? "default" : "outline"}
+            variant={currentCategory === slug ? "default" : "outline"}
             className="whitespace-nowrap"
           >
             {title}

@@ -31,7 +31,8 @@ const amazonExecutiveChair = createDirectorChair({
   defaultVariant: 'high-back'
 });
 
-amazonExecutiveChair.variants.forEach(variant => {
+const variants = amazonExecutiveChair.variants ?? [];
+variants.forEach(variant => {
   if (variant.id === 'high-back') {
     variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749802514/steelmade/chairs/executive-series/amazon/ic-53-hb.jpg';
     (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749802514/steelmade/chairs/executive-series/amazon/ic-53-hb.jpg'];
@@ -42,9 +43,8 @@ amazonExecutiveChair.variants.forEach(variant => {
     (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749802784/steelmade/chairs/executive-series/amazon/ic-54-mb.png'];
   }
 });
-
-(amazonExecutiveChair as any).images = amazonExecutiveChair.variants.map(v => v.imageUrl);
-(amazonExecutiveChair as any).imageUrl = amazonExecutiveChair.variants.find(v => v.id === 'high-back')?.imageUrl || amazonExecutiveChair.variants[0]?.imageUrl;
+(amazonExecutiveChair as any).images = variants.map(v => v.imageUrl);
+(amazonExecutiveChair as any).imageUrl = variants.find(v => v.id === 'high-back')?.imageUrl || variants[0]?.imageUrl;
 
 registerExecutiveChair(amazonExecutiveChair);
 

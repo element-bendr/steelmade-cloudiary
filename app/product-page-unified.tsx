@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getProductById, getSeriesByCategoryAndId } from '@/lib/api/products-unified';
-import { ProductCategorySlug, isValidCategorySlug } from '@/types/product-categories-unified';
-import { ProductCard, UnifiedProductData } from '@/components/products/unified/product-card';
-import { VariantSelector, useVariantSelection } from '@/components/products/unified/variant-selector';
-import { ContactButton } from '@/components/products/unified/contact-button';
-import { ProductVariant } from '@/types/product-variants-unified';
+import { getProductById, getSeriesByCategoryAndId } from '../lib/api/products-unified';
+import { ProductCategorySlug, isValidCategorySlug } from '../types/product-categories-unified';
+import { ProductCard, type UnifiedProductData } from '../components/products/unified/product-card';
+import { VariantSelector, useVariantSelection } from '../components/products/unified/variant-selector';
+import { ContactButton } from '../components/products/unified/contact-button';
+import type { ProductVariant } from '../types/product-variants-unified';
 
 interface ProductPageParams {
   category: ProductCategorySlug;
@@ -114,7 +114,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 {Object.entries(product.specifications).map(([key, value]) => (
                   <div key={key} className="py-2">
                     <dt className="text-sm font-medium text-muted-foreground">{key}</dt>
-                    <dd>{value}</dd>
+                    <dd>{String(value)}</dd>
                   </div>
                 ))}
               </dl>
@@ -126,7 +126,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             <div>
               <h2 className="text-xl font-semibold mb-3">Features</h2>
               <ul className="space-y-2">
-                {product.features.map((feature, index) => (
+                {product.features.map((feature: string, index: number) => (
                   <li key={index} className="flex gap-2">
                     <span className="font-bold text-primary">{index + 1}.</span>
                     <span>{feature}</span>

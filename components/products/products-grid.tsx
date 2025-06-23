@@ -1,12 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ProductData } from '@/types/index';
+import type { ExtendedProductData } from '../../lib/data/product-types';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 
 interface ProductsGridProps {
-  products: Record<string, ProductData>;
+  products: Record<string, ExtendedProductData>;
   productType: string;
   seriesId: string;
 }
@@ -26,7 +26,7 @@ export const ProductsGrid: React.FC<ProductsGridProps> = ({
 
   return (
     <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-      {Object.entries(products).map(([productId, product]) => {
+      {Object.entries(products).map(([productId, product]: [string, ExtendedProductData]) => {
         const imageUrl = product.images && product.images.length > 0 && product.images[0] ? product.images[0].url : "/images/placeholder.jpg";
         const imageAlt = product.images && product.images.length > 0 && product.images[0] && product.images[0].alt ? product.images[0].alt : product.name;
 
@@ -46,7 +46,7 @@ export const ProductsGrid: React.FC<ProductsGridProps> = ({
             <p className="text-muted-foreground mb-4 line-clamp-2">{product.description}</p>
             
             <div className="flex flex-wrap gap-2 mb-4">
-              {product.features && product.features.slice(0, 3).map((feature, idx) => (
+              {product.features && product.features.slice(0, 3).map((feature: string, idx: number) => (
                 <Badge key={idx} variant="secondary" className="px-2 py-1 text-xs">
                   {feature}
                 </Badge>

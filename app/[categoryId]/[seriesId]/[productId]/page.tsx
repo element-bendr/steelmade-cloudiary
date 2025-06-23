@@ -3,8 +3,8 @@ import {
   ROUTE_PARAMS, 
   extractProductParams,
   buildSeriesPath
-} from '@/lib/routes/route-config';
-import { getProductById } from '@/lib/modules/product';
+} from '../../../../lib/routes/route-config';
+import { getProductById } from '../../../../lib/api/products';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -31,7 +31,12 @@ export async function generateMetadata({
   
   try {
     const product = await getProductById(categoryId as any, seriesId, productId);
-    
+    if (!product) {
+      return {
+        title: 'Product Not Found - SteelMade Furniture',
+        description: 'The requested product could not be found.',
+      };
+    }
     return {
       title: `${product.name} - SteelMade Furniture`,
       description: product.description,
@@ -51,6 +56,16 @@ export default async function ProductPage({ params }: ProductPageProps) {
   try {
     // Fetch product data using the extracted parameters
     const product = await getProductById(categoryId as any, seriesId, productId);
+    if (!product) {
+      return (
+        <div className="container mx-auto py-12 px-4">
+          <div className="bg-red-100 p-4 rounded-md">
+            <h2 className="text-xl text-red-700">Product Not Found</h2>
+            <p className="text-red-600">The product you are looking for could not be found.</p>
+          </div>
+        </div>
+      );
+    }
     
     return (
       <div className="container mx-auto py-12 px-4">
@@ -75,17 +90,16 @@ export default async function ProductPage({ params }: ProductPageProps) {
             
             {/* Additional images gallery */}
             {product.images && product.images.length > 1 && (
-              <div className="grid grid-cols-4 gap-2">
+              <div className="grid grid-cols-2 gap-2 mt-2">
                 {product.images.map((image: { url: string; alt?: string }, index: number) => (
-                  <div key={index} className="bg-white rounded-lg overflow-hidden border cursor-pointer">
-                    <Image 
-                      src={image.url}
-                      alt={image.alt || `${product.name} - Image ${index + 1}`}
-                      width={200}
-                      height={150}
-                      className="w-full h-auto object-cover"
-                    />
-                  </div>
+                  <Image
+                    key={index}
+                    src={image.url}
+                    alt={image.alt || `${product.name} - Image ${index + 1}`}
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-contain rounded"
+                  />
                 ))}
               </div>
             )}
@@ -94,16 +108,13 @@ export default async function ProductPage({ params }: ProductPageProps) {
           {/* Product Details */}
           <div>
             <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
-            
-            <div className="mb-6">
-              <p className="text-gray-600">{product.description}</p>
-            </div>
+            <p className="text-gray-600">{product.description}</p>
             
             {/* Features */}
             {product.features && product.features.length > 0 && (
               <div className="mb-6">
                 <h2 className="text-xl font-semibold mb-3">Key Features</h2>
-                <ul className="list-disc pl-5 space-y-1">
+                <ul className="list-disc pl-6 mt-4">
                   {product.features.map((feature: string, index: number) => (
                     <li key={index} className="text-gray-700">{feature}</li>
                   ))}
@@ -130,29 +141,13 @@ export default async function ProductPage({ params }: ProductPageProps) {
             
             {/* Variants */}
             {product.variants && product.variants.length > 0 && (
-              <div className="mb-6">
-                <h2 className="text-xl font-semibold mb-3">Available Variants</h2>
-                <div className="space-y-4">
+              <div className="mt-6">
+                <h2 className="text-xl font-semibold mb-2">Variants</h2>
+                <ul className="list-disc pl-6">
                   {product.variants.map((variant: any, index: number) => (
-                    <div key={index} className="flex items-center space-x-4 p-3 border border-gray-200 rounded-lg">
-                      <div className="w-16 h-16 flex-shrink-0 bg-gray-100 rounded-md overflow-hidden">
-                        {variant.imageUrl && (
-                          <Image 
-                            src={variant.imageUrl}
-                            alt={variant.name}
-                            width={64}
-                            height={64}
-                            className="w-full h-full object-cover"
-                          />
-                        )}
-                      </div>
-                      <div>
-                        <h3 className="font-medium">{variant.variantName}</h3>
-                        <p className="text-sm text-gray-500">{variant.description}</p>
-                      </div>
-                    </div>
+                    <li key={index} className="text-gray-700">{variant.variantName || variant.name}</li>
                   ))}
-                </div>
+                </ul>
               </div>
             )}
             

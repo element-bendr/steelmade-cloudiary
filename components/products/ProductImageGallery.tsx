@@ -2,8 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import type { ProductImage } from '@/types/products'; // Assuming ProductImage is defined in types/products.ts
-// If ProductImage is in image-types.ts, use: import type { ImageAsset as ProductImage } from '@/types/image-types';
+import type { ProductImage } from '../../lib/data/product-types';
 
 interface ProductImageGalleryProps {
   images: ProductImage[];
@@ -11,10 +10,9 @@ interface ProductImageGalleryProps {
 }
 
 const ProductImageGallery: React.FC<ProductImageGalleryProps> = ({ images, productName }) => {
-  // Moved useState to the top, before any conditional returns
   const [currentImage, setCurrentImage] = useState(images && images.length > 0 ? images[0] : null);
 
-  if (!images || images.length === 0 || !currentImage) { // Added !currentImage check
+  if (!images || images.length === 0 || !currentImage) {
     return (
       <div className="w-full aspect-[4/3] bg-gray-200 flex items-center justify-center rounded-lg shadow-md">
         <p>No Image Available</p>
@@ -33,14 +31,14 @@ const ProductImageGallery: React.FC<ProductImageGalleryProps> = ({ images, produ
           src={currentImage.url}
           alt={currentImage.alt || productName}
           fill
-          style={{ objectFit: 'contain' }} // Changed to 'contain' to show the whole image
+          style={{ objectFit: 'contain' }}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           priority
         />
       </div>
       {images.length > 1 && (
         <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 gap-2">
-          {images.map((image, index) => (
+          {images.map((image: ProductImage, index: number) => (
             <button
               key={index}
               onClick={() => handleThumbnailClick(image)}

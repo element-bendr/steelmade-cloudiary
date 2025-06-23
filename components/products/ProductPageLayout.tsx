@@ -1,28 +1,29 @@
-import type { ProductData, ProductImage } from "@/types/products";
-import type { ProductCategory, SeriesMetadata } from "@/types/collections";
-import Breadcrumbs, { type BreadcrumbItem } from "@/components/ui/Breadcrumbs"; // Corrected import for Breadcrumbs
-import ProductImageGallery from "@/components/products/ProductImageGallery"; // Corrected import for ProductImageGallery
-import ProductInformation from "@/components/products/ProductInformation"; // Corrected import for ProductInformation
-import { getCategoryUrl, getProductUrl } from "@/lib/navigation"; // Assuming getProductUrl is also in navigation
+import type { ExtendedProductData, ProductImage, ProductSeries } from '../../lib/data/product-types';
+import Breadcrumbs, { type BreadcrumbItem } from '../ui/Breadcrumbs';
+import ProductImageGallery from './ProductImageGallery';
+import ProductInformation from './ProductInformation';
+import { getCategoryUrl, getProductUrl } from '../../lib/navigation';
 
 interface ProductPageLayoutProps {
-  product: ProductData;
-  category: ProductCategory;
-  series: SeriesMetadata | null; // Series might not always be available or needed directly if product has all info
+  product: ExtendedProductData;
+  category: string;
+  series: ProductSeries | null;
   // breadcrumbItems: BreadcrumbItem[]; // Alternative: pass pre-built breadcrumbs
 }
 
 export default function ProductPageLayout({ product, category, series }: ProductPageLayoutProps) {
+  // Ensure category is a ProductType
+  const categorySlug = category as import('../../lib/data/product-types').ProductType;
   const breadcrumbItems: BreadcrumbItem[] = [
     { name: "Home", href: "/" },
-    { name: category.charAt(0).toUpperCase() + category.slice(1), href: getCategoryUrl(category) },
+    { name: categorySlug.charAt(0).toUpperCase() + categorySlug.slice(1), href: getCategoryUrl(categorySlug) },
   ];
 
   if (series) {
-    breadcrumbItems.push({ name: series.title, href: getCategoryUrl(category, product.seriesId) });
+    breadcrumbItems.push({ name: series.title || '', href: getCategoryUrl(categorySlug, product.seriesId) });
   }
   
-  breadcrumbItems.push({ name: product.name, href: getProductUrl(category, product.seriesId, product.id) });
+  breadcrumbItems.push({ name: product.name, href: getProductUrl(categorySlug, product.seriesId, product.id) });
 
   return (
     <main className="container mx-auto px-4 py-8">

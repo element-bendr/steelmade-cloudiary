@@ -1,8 +1,8 @@
 import { Suspense } from "react";
 import { Metadata } from "next";
-import { getSeriesForCategory } from "@/lib/api/products";
-import ProductCategoryPageLayout from "@/components/products/ProductCategoryPageLayout";
-import { Skeleton } from "@/components/ui/skeleton";
+import { getAllSeries } from "../../lib/services/product-service";
+import ProductCategoryPageLayout from "../../components/products/ProductCategoryPageLayout";
+import { Skeleton } from "../../components/ui/skeleton";
 
 // Revalidate every hour
 export const revalidate = 3600;
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 };
 
 export default async function StoragePage() {
-  const seriesData = await getSeriesForCategory("storage-solutions");
+  const seriesData = await getAllSeries("storage-solutions");
 
   const pageTitle = "Storage Solutions";
   const pageDescription = "Optimize your space with our versatile and durable steel storage solutions. From cabinets to shelving, find the perfect fit for your needs.";

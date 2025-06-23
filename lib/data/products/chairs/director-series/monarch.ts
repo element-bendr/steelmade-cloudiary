@@ -31,7 +31,8 @@ const monarchDirectorChair = createDirectorChair({
   defaultVariant: 'high-back'
 });
 
-monarchDirectorChair.variants.forEach(variant => {
+const variants = monarchDirectorChair.variants ?? [];
+variants.forEach(variant => {
   if (variant.id === 'high-back') {
     variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749459625/steelmade/chairs/director-series/monarch/ic-08-hb.jpg';
     (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749459625/steelmade/chairs/director-series/monarch/ic-08-hb.jpg'];
@@ -40,9 +41,8 @@ monarchDirectorChair.variants.forEach(variant => {
     (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749459633/steelmade/chairs/director-series/monarch/ic-09-mb.jpg'];
   }
 });
-
-(monarchDirectorChair as any).images = monarchDirectorChair.variants.map(v => v.imageUrl);
-(monarchDirectorChair as any).imageUrl = monarchDirectorChair.variants.find(v => v.id === 'high-back')?.imageUrl || monarchDirectorChair.variants[0]?.imageUrl;
+(monarchDirectorChair as any).images = variants.map(v => v.imageUrl);
+(monarchDirectorChair as any).imageUrl = variants.find(v => v.id === 'high-back')?.imageUrl || variants[0]?.imageUrl;
 
 registerDirectorChair(monarchDirectorChair);
 

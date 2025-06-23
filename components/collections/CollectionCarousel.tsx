@@ -8,13 +8,13 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { ViewMoreSlide } from "./ViewMoreSlide"
-import type { ProductData } from "@/types/products"
+import type { ExtendedProductData } from '../../lib/data/product-types';
 import type { ProductCategorySlug } from "@/types/product-categories"
 import { useCarouselDrag } from "@/hooks/use-carousel-drag"
 
 interface CollectionCarouselProps {
   title: string
-  products: ProductData[]
+  products: ExtendedProductData[]
   productCategory: ProductCategorySlug
   className?: string
 }

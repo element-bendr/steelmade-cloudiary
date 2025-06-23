@@ -1,4 +1,4 @@
-import { ExtendedProductData } from '../../product-types';
+import { ExtendedProductData } from "@/lib/data/product-types";
 
 export const maksonExecutiveChair: ExtendedProductData = {
   id: 'makson-executive-chair',
@@ -54,5 +54,4 @@ export const maksonExecutiveChair: ExtendedProductData = {
     weightCapacity: '120kg',
     warranty: '1 year',
   },
-  tags: ['executive', 'makson', 'office', 'ergonomic']
 };

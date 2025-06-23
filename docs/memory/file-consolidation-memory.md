@@ -37,3 +37,12 @@
 2. Create import path guidelines (Task 28.5)
 3. Add linting rules to prevent future duplication
 4. Train team on new file organization principles
+
+## 2025-06-22: Canonical Product/Series Types Refactor Memory
+
+- All product and series data/pages for racking systems, school furniture, and storage solutions now use canonical types from `lib/data/product-types.ts`.
+- Legacy/duplicate types and imports have been fully removed.
+- Defensive mapping is applied for all product/series data to ensure type safety.
+- All code is DRY, modular, functional, declarative, and production-ready.
+- All type errors around product/series imports, type mismatches, and missing modules are resolved.
+- All related tasks are tracked and marked as completed in `task-master-ai/tasks/42-canonical-types-refactor.json`.

@@ -11,14 +11,14 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import type { SeriesMetadata } from "@/types/collections"
-import type { ProductData } from "@/types/products"
+import type { ExtendedProductData } from '../../lib/data/product-types';
 import { ProductCategorySlug, getCategoryDisplayName } from "@/types/product-categories"
 
 interface CollectionDetailProps {
   series: SeriesMetadata
   seriesId: string
   category: ProductCategorySlug
-  initialProducts?: ProductData[]
+  initialProducts?: ExtendedProductData[]
 }
 
 export function CollectionDetail({ 

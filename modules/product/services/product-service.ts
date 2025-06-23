@@ -4,7 +4,7 @@
  */
 
 import { Product, ProductVariant } from '../types';
-import { bigBossGoldDirectorChair } from '@/lib/data/products/chairs/director-series/bigbossgold-director-chair';
+import { bigBossGoldDirectorChair } from '@/lib/data/products/chairs/director-series/bigboss-gold-director-chair';
 
 // Director Series Data - hardcoded to avoid import errors
 const directorSeriesData: Record<string, Product> = {
@@ -23,7 +23,6 @@ const directorSeriesData: Record<string, Product> = {
         id: 'ashley-hb',
         variantId: 'hb',
         variantName: 'High Back',
-        isAvailable: true,
         images: [
           'https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/ashley/ic-361-hb.jpg'
         ],
@@ -39,7 +38,6 @@ const directorSeriesData: Record<string, Product> = {
         id: 'ashley-mb',
         variantId: 'mb',
         variantName: 'Medium Back',
-        isAvailable: true,
         images: [
           'https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/ashley/ic-362-mb.jpg'
         ],
@@ -75,7 +73,6 @@ const directorSeriesData: Record<string, Product> = {
         id: 'opera-hb',
         variantId: 'hb',
         variantName: 'High Back',
-        isAvailable: true,
         images: [
           'https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/opera/ic-340-hb.jpg'
         ],
@@ -91,7 +88,6 @@ const directorSeriesData: Record<string, Product> = {
         id: 'opera-mb',
         variantId: 'mb',
         variantName: 'Medium Back',
-        isAvailable: true,
         images: [
           'https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/opera/ic-341-mb.jpg'
         ],
@@ -127,7 +123,6 @@ const directorSeriesData: Record<string, Product> = {
         id: 'tycoon-hb',
         variantId: 'hb',
         variantName: 'High Back',
-        isAvailable: true,
         images: [
           'https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/tycoon/ic-01-hb.jpg'
         ],
@@ -143,7 +138,6 @@ const directorSeriesData: Record<string, Product> = {
         id: 'tycoon-mb',
         variantId: 'mb',
         variantName: 'Medium Back',
-        isAvailable: true,
         images: [
           'https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/tycoon/ic-02-mb.jpg'
         ],
@@ -164,7 +158,25 @@ const directorSeriesData: Record<string, Product> = {
     },
     featured: true
   },
-  'big-boss-gold-director-chair': bigBossGoldDirectorChair
+  'big-boss-gold-director-chair': {
+    id: bigBossGoldDirectorChair.id,
+    slug: 'big-boss-gold-director-chair',
+    name: bigBossGoldDirectorChair.name,
+    description: bigBossGoldDirectorChair.description,
+    categorySlug: bigBossGoldDirectorChair.category,
+    seriesSlug: bigBossGoldDirectorChair.seriesId,
+    images: (bigBossGoldDirectorChair.images ?? []).map(img => typeof img === 'string' ? img : img.url),
+    variants: bigBossGoldDirectorChair.variants?.map(variant => ({
+      id: variant.variantId,
+      variantId: variant.variantId,
+      variantName: variant.variantName,
+      images: [variant.imageUrl],
+      specifications: variant.specifications
+    })) ?? [],
+    specifications: bigBossGoldDirectorChair.specifications,
+    features: bigBossGoldDirectorChair.features,
+    featured: true
+  }
 };
 
 class ProductServiceImpl {

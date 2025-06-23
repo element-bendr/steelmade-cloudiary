@@ -1,7 +1,16 @@
-import { ProductCategory } from '@/lib/types/product-types';
+import { ProductSeries } from '@/lib/data/product-types';
 import { directorSeries } from './chairs/director-series';
 import { executiveSeries } from './chairs/executive-series/index';
 import { gamingSeries } from './chairs/gaming-series';
+
+// Define the shape for a product category using canonical types
+export interface ProductCategory {
+  id: string;
+  name: string;
+  description: string;
+  imageUrl: string;
+  series: Record<string, ProductSeries>;
+}
 
 // Define the chairs category
 const chairs: ProductCategory = {
@@ -12,7 +21,7 @@ const chairs: ProductCategory = {
   series: {
     'director-series': directorSeries,
     'executive-series': executiveSeries,
-    'gaming-series': gamingSeries
+    'gaming-series': gamingSeries as any // TODO: Refactor gamingSeries to canonical ProductSeries
   }
 };
 
@@ -22,9 +31,7 @@ const tables: ProductCategory = {
   name: 'Tables',
   description: 'Premium tables for offices, conference rooms, and home environments.',
   imageUrl: '/images/categories/tables.jpg',
-  series: {
-    // Table series will be added here
-  }
+  series: {}
 };
 
 // Define the storage category
@@ -33,9 +40,7 @@ const storage: ProductCategory = {
   name: 'Storage Solutions',
   description: 'Stylish and functional storage solutions for organizing your space.',
   imageUrl: '/images/categories/storage.jpg',
-  series: {
-    // Storage series will be added here
-  }
+  series: {}
 };
 
 // Export all categories

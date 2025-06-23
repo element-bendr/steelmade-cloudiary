@@ -32,7 +32,8 @@ const operaDirectorChair = createDirectorChair({
 });
 
 // Set imageUrl for each variant using imageCode
-operaDirectorChair.variants.forEach(variant => {
+const variants = operaDirectorChair.variants ?? [];
+variants.forEach(variant => {
   if (variant.imageCode === 'ic-125-hb') {
     variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749454969/steelmade/chairs/director-series/opera/ic-340-hb.jpg';
   } else if (variant.imageCode === 'ic-126-mb') {
@@ -41,15 +42,15 @@ operaDirectorChair.variants.forEach(variant => {
 });
 
 // Add top-level images array and images array for each variant
-(operaDirectorChair as any).images = operaDirectorChair.variants.map(v => v.imageUrl);
-operaDirectorChair.variants.forEach(variant => {
+(operaDirectorChair as any).images = variants.map(v => v.imageUrl);
+variants.forEach(variant => {
   if (variant.imageUrl) {
     (variant as any).images = [variant.imageUrl];
   }
 });
 
 // Set top-level imageUrl for Opera chair for ChairCard compatibility.
-operaDirectorChair.imageUrl = operaDirectorChair.variants.find(v => v.id === 'high-back')?.imageUrl || operaDirectorChair.variants[0]?.imageUrl;
+operaDirectorChair.imageUrl = variants.find(v => v.id === 'high-back')?.imageUrl || variants[0]?.imageUrl;
 
 // Register this chair with the director series
 registerDirectorChair(operaDirectorChair);

@@ -1,6 +1,26 @@
 {
   "tasks": [
     {
+      "id": 1001,
+      "title": "Unify ProductSeries and SeriesMetadata types across codebase",
+      "description": "Remove legacy ProductSeries and related types from types/products.ts. Update all components and pages to use the canonical ProductSeries type from lib/data/product-types.ts. Refactor all usages, props, and imports to expect the unified type. Document the migration in architecture.md and memory.md. Ensure all code is DRY, modular, and production-ready.",
+      "status": "done",
+      "priority": "high",
+      "tags": ["type-unification", "product-series", "refactor", "architecture"],
+      "details": "1. Remove or comment out legacy ProductSeries and related types from types/products.ts.\n2. Update all relevant components (ProductSeriesPage, SeriesGrid, SeriesCardInteractive, SeriesCardStatic, header.tsx) to use the canonical ProductSeries type from lib/data/product-types.ts.\n3. Update props and usages in these components to expect the unified type.\n4. Ensure all imports reference the canonical type.\n5. Add migration notes to documentation.\n6. Test all affected pages/components for correctness and production readiness.\n7. Mark this task as done when all type errors are resolved and documentation is complete.",
+      "dependencies": [],
+      "subtasks": [
+        {
+          "id": 1001.1,
+          "title": "Unify product catalog and utility functions to canonical ProductSeries type",
+          "description": "Refactor product catalog and all utility functions (e.g., getAllSeries, getSeriesById) to ensure all product series data conforms to the canonical ProductSeries type from lib/data/product-types.ts, including required fields like seoDescription and coverImage. Update all usages and document the migration.",
+          "status": "done",
+          "tags": ["type-unification", "product-catalog", "utility-refactor", "architecture"],
+          "details": "1. Refactor product catalog and utility functions to return canonical ProductSeries type.\n2. Ensure all series include seoDescription and coverImage.\n3. Update getAllSeries, getSeriesById, and related utilities.\n4. Update all usages in services and components.\n5. Document the migration in architecture.md and memory.md.\n6. Test all affected code for correctness and production readiness.\n7. Mark this subtask as done when all type errors are resolved and documentation is complete."
+        }
+      ]
+    },
+    {
       "id": 1,
       "title": "Consolidate Product Series Pages and Centralize Logic",
       "description": "Improve the UI of the director-series page and individual chair detail pages with brand colors and modern design principles",
@@ -335,7 +355,7 @@
       "id": 27,
       "title": "Rebuild Director Series with Consistent Styling",
       "description": "Remove all existing chairs from director series and reimplement them with consistent styling and structure",
-      "status": "pending",
+      "status": "done",
       "priority": "high",
       "details": "## Current Issues\n\n- Inconsistent styling across director series chair products\n- Different implementation patterns used for different chairs\n- Varying component usage across product pages\n- Inconsistent data structures and property names\n\n## Implementation Goals\n\n1. **Remove All Existing Chair Implementations**:\n   - Remove all chair data files\n   - Clear the director series page of existing chair listings\n   - Document the current chair variants and features\n   - Prepare a migration plan for consistent reimplementation\n\n2. **Create Standardized Chair Factory**:\n   - Implement a chair factory function for consistent chair creation\n   - Define standard data structure for all chair products\n   - Create consistent Cloudinary URL pattern\n   - Ensure proper typing and validation\n\n3. **Reimplement All Chairs**:\n   - Add back each chair using the factory pattern\n   - Ensure consistent styling across all chair pages\n   - Implement standardized variant selection\n   - Use centralized ProductDetailLayout for all chairs\n\n## Technical Approach\n\n- Use the Chair Factory Pattern from Task 24\n- Implement consistent data structures\n- Utilize the Unified Styling System from Task 26\n- Document all chair implementations",
       "subtasks": [
@@ -513,6 +533,14 @@
         }
       ],
       "dependencies": []
+    },
+    {
+      "id": 27,
+      "title": "Unify Product Series Types and Documentation",
+      "description": "Align and unify ProductSeries, SeriesMetadata, and related types across the codebase. Update all usages and documentation to reflect the unified type structure. Ensure all product series data is type-safe, production-ready, and poetic in nature.",
+      "status": "pending",
+      "priority": "high",
+      "details": "## Implementation Steps\n\n1. Audit all usages of ProductSeries, SeriesMetadata, and related types.\n2. Create a unified type that covers all required fields (coverImage, seoDescription, etc).\n3. Update all product series data files and usages to use the unified type.\n4. Refactor any components or pages that expect the old types.\n5. Update documentation in #architecture and #memory to reflect the new structure.\n6. Test all affected pages and components for correctness.\n7. Mark this task as done when all type errors are resolved and documentation is complete."
     }
   ],
   "observations": [
@@ -522,5 +550,8 @@
     {
       "content": "## UI Standardization Implementation\n\n1. **Feature Display Standardization**:\n   - Removed the key features section from the Tycoon Director Chair page\n   - Created consistent information display across all chair pages\n   - Simplified product information hierarchy\n   - Reduced visual clutter and improved focus on important details\n\n2. **Image Display Enhancement**:\n   - Updated image display to show one consistent image on initial load\n   - Implemented proper aspect ratio and sizing across all chair pages\n   - Added a decorative rectangle in the corner of the image container\n   - Applied consistent loading states and animations\n\n3. **Variant Selection Improvement**:\n   - Changed variant button text color to SteelMade red for better visibility\n   - Enhanced visual feedback for button states (hover, active, selected)\n   - Improved accessibility with proper focus states\n   - Ensured consistent behavior across all chair variants\n\n## Benefits\n\n- **Consistent User Experience**: Users now encounter the same UI patterns across all chair pages\n- **Improved Visual Appeal**: Enhanced styling with brand colors and decorative elements\n- **Reduced Information Overload**: Focusing on essential information improves decision-making\n- **Better Brand Identity**: Consistent use of SteelMade red strengthens brand recognition\n\n## Next Steps\n\n1. Apply these standardized patterns to other product categories\n2. Conduct user testing to validate the improvements\n3. Create a component library to ensure future consistency\n4. Implement similar enhancements for the product grid pages"
     }
+  ],
+  "tags": [
+    { "name": "steelmade", "description": "Main project tag for SteelMade Cloudiary Chairs" }
   ]
 }

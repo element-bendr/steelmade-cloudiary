@@ -1,10 +1,5 @@
-import type { ProductType as ImportedProductType } from "@/types/products"
 import { getAllSeries as getAllSeriesUtil, getSeriesById as getSeriesByIdUtil, getProductById as getProductByIdUtil, getAllProducts as getAllProductsUtil } from "@/lib/utils/product-utils"
-import type { ProductSeries, ExtendedProductData } from "@/lib/utils/product-utils"
-
-export type ProductType = ImportedProductType;
-
-type ProductDataMap = Record<string, ExtendedProductData>
+import type { ProductSeries, ExtendedProductData } from '@/lib/data/product-types';
 
 // Common image paths
 const createImagePath = (series: string, variant: string) => `/images/collections/${series}/${variant}.webp`
@@ -124,3 +119,6 @@ export async function getProductDetails(
 ): Promise<ExtendedProductData | null> {
   return getProductByIdUtil(categorySlug, seriesSlug, productSlug) || null
 }
+
+// Type alias for ProductDataMap using ExtendedProductData
+type ProductDataMap = Record<string, ExtendedProductData>;

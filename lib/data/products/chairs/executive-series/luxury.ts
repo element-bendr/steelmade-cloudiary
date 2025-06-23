@@ -30,7 +30,8 @@ const luxuryExecutiveChair = createDirectorChair({
   defaultVariant: 'high-back',
 });
 
-luxuryExecutiveChair.variants.forEach(variant => {
+const variants = Array.isArray(luxuryExecutiveChair.variants) ? luxuryExecutiveChair.variants : [];
+variants.forEach(variant => {
   if (variant.id === 'high-back') {
     variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749801322/steelmade/chairs/executive-series/luxury/ic-40-hb.jpg';
     (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749801322/steelmade/chairs/executive-series/luxury/ic-40-hb.jpg'];
@@ -41,9 +42,8 @@ luxuryExecutiveChair.variants.forEach(variant => {
     (variant as any).imageClass = 'object-contain p-8 max-h-[420px]';
   }
 });
-
-(luxuryExecutiveChair as any).images = luxuryExecutiveChair.variants.map(v => v.imageUrl);
-(luxuryExecutiveChair as any).imageUrl = luxuryExecutiveChair.variants.find(v => v.id === 'high-back')?.imageUrl || luxuryExecutiveChair.variants[0]?.imageUrl;
+(luxuryExecutiveChair as any).images = variants.map(v => v.imageUrl);
+(luxuryExecutiveChair as any).imageUrl = variants.find(v => v.id === 'high-back')?.imageUrl || variants[0]?.imageUrl;
 
 registerExecutiveChair(luxuryExecutiveChair);
 

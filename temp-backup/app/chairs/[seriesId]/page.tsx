@@ -20,8 +20,18 @@ export async function generateMetadata({ params }: ChairSeriesPageProps): Promis
   if (!series) return {}
 
   const title = `${series.title} | Office Chairs | SteelMade`
-  const description = series.seoDescription
-  const imageUrl = getImageUrl(series.coverImage)
+  const description = series.description
+  // Defensive mapping: convert ProductImage to ImageAsset for getImageUrl
+  const imageUrl = getImageUrl(
+    series.coverImage
+      ? {
+          url: series.coverImage.url,
+          alt: series.coverImage.alt,
+          width: series.coverImage.width ?? 0,
+          height: series.coverImage.height ?? 0,
+        }
+      : undefined
+  );
 
   return {
     title,

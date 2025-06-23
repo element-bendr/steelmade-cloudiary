@@ -1,12 +1,20 @@
+import { ProductSeries } from '../../product-types';
 import { tycoondirectorchair } from './director-series/tycoon-director-chair';
 import { classicdirectorchair } from './director-series/classic-director-chair';
 import { ashleyDirectorChair } from './director-series/ashley-director-chair';
 
 // Export the series data
-export const directorSeries = {
+export const directorSeries: ProductSeries = {
   id: 'director-series',
-  name: 'Director Series',
+  title: 'Director Series',
   description: 'Premium chairs for executives and directors.',
+  seoDescription: 'The Director Series: a poetic union of authority and comfort, designed for those who lead with vision. Each chair is a statement of presence and refined taste.',
+  coverImage: {
+    url: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/ashley/ic-361-hb.jpg',
+    alt: 'Director Series Chair Collection',
+    width: 1200,
+    height: 800
+  },
   products: {
     'tycoon-director-chair': tycoondirectorchair,
     'classic-director-chair': classicdirectorchair,

@@ -32,27 +32,25 @@ const tycoonDirectorChair = createDirectorChair({
 });
 
 // Set correct imageUrl for each variant using the provided working URLs
-// This matches the pattern used in other director chairs for consistency
-
-tycoonDirectorChair.variants.forEach(variant => {
-  if (variant.imageCode === 'ic-127-hb' || variant.id === 'high-back') {
-    variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749458143/steelmade/chairs/director-series/tycoon/ic-01-hb.jpg';
-  } else if (variant.imageCode === 'ic-128-mb' || variant.id === 'mid-back') {
-    variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749458141/steelmade/chairs/director-series/tycoon/ic-02-mb.jpg';
-  }
-  // @ts-ignore: images is used for UI compatibility
-  variant.images = [variant.imageUrl];
-});
+if (tycoonDirectorChair.variants) {
+  tycoonDirectorChair.variants.forEach(variant => {
+    if (variant.imageCode === 'ic-127-hb' || variant.id === 'high-back') {
+      variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749458143/steelmade/chairs/director-series/tycoon/ic-01-hb.jpg';
+      variant.images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749458143/steelmade/chairs/director-series/tycoon/ic-01-hb.jpg'];
+    } else if (variant.imageCode === 'ic-128-mb' || variant.id === 'mid-back') {
+      variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749458141/steelmade/chairs/director-series/tycoon/ic-02-mb.jpg';
+      variant.images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749458141/steelmade/chairs/director-series/tycoon/ic-02-mb.jpg'];
+    }
+  });
+}
 
 // @ts-ignore: images is used for UI compatibility
 tycoonDirectorChair.images = tycoonDirectorChair.variants.map(v => v.imageUrl);
-tycoonDirectorChair.variants.forEach(variant => {
-  if (variant.imageUrl) {
-    variant.images = [variant.imageUrl];
-  }
-});
 
-tycoonDirectorChair.imageUrl = tycoonDirectorChair.variants.find(v => v.id === 'high-back')?.imageUrl || tycoonDirectorChair.variants[0]?.imageUrl;
+// Set top-level imageUrl for Tycoon chair for ChairCard compatibility.
+if (tycoonDirectorChair.variants && tycoonDirectorChair.variants.length > 0) {
+  tycoonDirectorChair.imageUrl = tycoonDirectorChair.variants.find(v => v.id === 'high-back')?.imageUrl || tycoonDirectorChair.variants[0]?.imageUrl;
+}
 
 registerDirectorChair(tycoonDirectorChair);
 

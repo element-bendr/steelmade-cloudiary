@@ -19,7 +19,12 @@ export async function generateMetadata({ params }: ModularFurnitureSeriesPagePro
 
   const title = `${series.title} | Modular Furniture | SteelMade`;
   const description = series.seoDescription;
-  const imageUrl = getImageUrl(series.coverImage);
+  const imageUrl = getImageUrl({
+    url: series.coverImage?.url ?? "",
+    width: series.coverImage?.width ?? 0,
+    height: series.coverImage?.height ?? 0,
+    alt: series.coverImage?.alt ?? "",
+  });
 
   return {
     title,

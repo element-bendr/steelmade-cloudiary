@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getProductDetails, getSeriesByCategoryAndId } from '@/lib/api/products';
+import { getProductById, getSeriesById } from '@/lib/services/product-service';
 import type { Metadata, ResolvingMetadata } from 'next';
 import ProductPageLayout from '@/components/products/ProductPageLayout';
 
@@ -14,7 +14,7 @@ export async function generateMetadata(
   { params }: ProductDetailPageProps,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const product = await getProductDetails(params.productId, params.seriesId, 'racking-systems');
+  const product = await getProductById('racking-systems', params.seriesId, params.productId);
 
   if (!product) {
     return {
@@ -29,22 +29,68 @@ export async function generateMetadata(
     openGraph: {
       title: `${product.name} - SteelMade`,
       description: product.description,
-      images: product.images?.length ? product.images.map(img => ({ url: img.url, alt: img.alt })) : (product.imageUrl ? [{ url: product.imageUrl, alt: product.name }] : []),
+      images: product.images?.length ? product.images.map(img => ({ url: img.url, alt: img.alt })) : [],
     },
   };
 }
 
 export default async function ProductDetailPage({ params }: ProductDetailPageProps) {
   const [product, series] = await Promise.all([
-    getProductDetails(params.productId, params.seriesId, 'racking-systems'),
-    getSeriesByCategoryAndId('racking-systems', params.seriesId)
+    getProductById('racking-systems', params.seriesId, params.productId),
+    getSeriesById('racking-systems', params.seriesId)
   ]);
 
   if (!product || !series) {
     notFound();
   }
 
+  // Defensive mapping: convert ProductSeries to SeriesMetadata
+  const mapProductSeriesToSeriesMetadata = (series: any): import('@/types/collections').SeriesMetadata => ({
+    id: series.id,
+    title: series.title ?? '',
+    description: series.description ?? '',
+    seoDescription: series.seoDescription ?? '',
+    features: series.features ?? [],
+    lastModified: series.lastModified ?? '',
+    products: series.products ?? {},
+    category: series.category ?? 'racking-systems',
+    imageUrl: series.imageUrl ?? '',
+    specifications: series.specifications ?? {},
+    tags: series.tags ?? [],
+    coverImage: {
+      url: series.coverImage?.url ?? '',
+      width: series.coverImage?.width ?? 0,
+      height: series.coverImage?.height ?? 0,
+      alt: series.coverImage?.alt ?? '',
+    },
+    images: Array.isArray(series.images)
+      ? series.images.map((img: any) => ({
+          url: img.url ?? '',
+          width: img.width ?? 0,
+          height: img.height ?? 0,
+          alt: img.alt ?? '',
+        }))
+      : [],
+  });
+
+  // Map SeriesMetadata to ProductSeries for compatibility
+  const mapSeriesMetadataToProductSeries = (series: import('@/types/collections').SeriesMetadata): import('@/lib/data/product-types').ProductSeries => ({
+    id: series.id,
+    title: series.title,
+    description: series.description,
+    seoDescription: series.seoDescription,
+    category: typeof series.category === 'string' ? series.category : undefined,
+    imageUrl: series.imageUrl,
+    coverImage: series.coverImage,
+    images: series.images,
+    features: series.features,
+    lastModified: typeof series.lastModified === 'string' ? series.lastModified : (series.lastModified instanceof Date ? series.lastModified.toISOString() : undefined),
+    products: series.products,
+  });
+
+  const mappedSeries = mapProductSeriesToSeriesMetadata(series);
+
   return (
-    <ProductPageLayout product={product} category="racking-systems" series={series} />
+    <ProductPageLayout product={product} category="racking-systems" series={mapSeriesMetadataToProductSeries(mappedSeries)} />
   );
 }

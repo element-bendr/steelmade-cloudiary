@@ -1,4 +1,4 @@
-import { ExtendedProductData } from "../../product-types";
+import { ExtendedProductData } from "@/lib/data/product-types";
 
 export const perkshynlExecutiveChair: ExtendedProductData = {
   id: "perkshynl",

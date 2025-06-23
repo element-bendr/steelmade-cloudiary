@@ -1,4 +1,4 @@
-import { ValidationService } from '@modules/shared';
+import { ValidationService } from '../../../shared/src/validation/service';
 import { pipe } from 'fp-ts/function';
 import * as E from 'fp-ts/Either';
 import { z } from 'zod';

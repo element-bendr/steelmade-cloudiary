@@ -5,14 +5,10 @@
  */
 
 import { cache } from 'react'
-import { APIError } from '@/lib/errors'
-import { collections } from '@/lib/data/collections-data'
-import { 
-  ProductCategorySlug, 
-  isValidCategorySlug 
-} from '@/types/product-categories-unified'
-import { ProductData } from '@/types/products'
-import { SeriesMetadata } from '@/types/collections'
+import { APIError } from '../errors';
+import { collections } from '../data/collections-data';
+import { ProductCategorySlug } from '../data/product-categories';
+import { ExtendedProductData, ProductSeries } from '../data/product-types';
 
 // Use imported collections data
 const COLLECTIONS_DATA = collections;
@@ -23,7 +19,7 @@ const COLLECTIONS_DATA = collections;
 export const getProductsByCategoryAndSeries = cache(async (
   category: ProductCategorySlug, 
   seriesId: string
-): Promise<ProductData[]> => {
+): Promise<ExtendedProductData[]> => {
   try {
     // Validate inputs
     if (!category || !seriesId) {
@@ -62,7 +58,7 @@ export const getProductById = cache(async (
   category: ProductCategorySlug, 
   seriesId: string, 
   productId: string
-): Promise<ProductData | null> => {
+): Promise<ExtendedProductData | null> => {
   try {
     // Validate inputs
     if (!category || !seriesId || !productId) {
@@ -108,7 +104,7 @@ export const getProductById = cache(async (
 export const getSeriesByCategoryAndId = cache(async (
   category: ProductCategorySlug,
   seriesId: string
-): Promise<SeriesMetadata | null> => {
+): Promise<ProductSeries | null> => {
   try {
     // Validate inputs
     if (!category || !seriesId) {
@@ -139,7 +135,7 @@ export const getSeriesByCategoryAndId = cache(async (
  */
 export const getSeriesForCategory = cache(async (
   category: ProductCategorySlug
-): Promise<Record<string, SeriesMetadata>> => {
+): Promise<Record<string, ProductSeries>> => {
   try {
     // Validate inputs
     if (!category) {
@@ -164,3 +160,18 @@ export const getSeriesForCategory = cache(async (
     throw new APIError(`Failed to fetch series for category ${category}`, 500);
   }
 });
+
+/**
+ * Check if the category slug is valid
+ */
+function isValidCategorySlug(category: string): category is ProductCategorySlug {
+  return [
+    'chairs',
+    'hospital-furniture',
+    'racking-systems',
+    'school-furniture',
+    'storage-solutions',
+    'modular-furniture',
+    'office-accessories',
+  ].includes(category);
+}

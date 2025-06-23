@@ -31,7 +31,8 @@ const tridentDirectorChair = createDirectorChair({
   defaultVariant: 'high-back'
 });
 
-tridentDirectorChair.variants.forEach(variant => {
+const variants = tridentDirectorChair.variants ?? [];
+variants.forEach(variant => {
   if (variant.id === 'high-back') {
     variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1748806921/steelmade/chairs/director-series/trident/ic-249-hb.jpg';
     (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1748806921/steelmade/chairs/director-series/trident/ic-249-hb.jpg'];
@@ -40,9 +41,8 @@ tridentDirectorChair.variants.forEach(variant => {
     (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1748809633/steelmade/chairs/director-series/trident/ic-250-mb.jpg'];
   }
 });
-
-(tridentDirectorChair as any).images = tridentDirectorChair.variants.map(v => v.imageUrl);
-(tridentDirectorChair as any).imageUrl = tridentDirectorChair.variants.find(v => v.id === 'high-back')?.imageUrl || tridentDirectorChair.variants[0]?.imageUrl;
+(tridentDirectorChair as any).images = variants.map(v => v.imageUrl);
+(tridentDirectorChair as any).imageUrl = variants.find(v => v.id === 'high-back')?.imageUrl || variants[0]?.imageUrl;
 
 registerDirectorChair(tridentDirectorChair);
 

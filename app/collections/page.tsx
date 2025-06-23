@@ -6,7 +6,7 @@ import { ProtectedCollectionsGrid } from '@/components/collections/protected-col
 import { CollectionsSkeleton } from '@/components/collections/CollectionsSkeleton';
 import { CollectionsService } from '@/lib/services/collections-service';
 import { Button } from '@/components/ui/button';
-import type { ProductType } from '@/types/products';
+import type { ProductType } from '@/lib/data/product-types';
 import type { SeriesWithProducts, SubCategoryCollections } from '@/types/collections';
 import { useToast } from '@/components/ui/use-toast';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';

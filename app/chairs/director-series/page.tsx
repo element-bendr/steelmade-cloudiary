@@ -4,7 +4,7 @@
 import ashleyDirectorChair from '@/lib/data/products/chairs/director-series/ashley';
 import operaDirectorChair from '@/lib/data/products/chairs/director-series/opera';
 import tycoonDirectorChair from '@/lib/data/products/chairs/director-series/tycoon';
-import bigbossGoldDirectorChair from '@/lib/data/products/chairs/director-series/bigboss-gold';
+import { bigBossGoldDirectorChair } from '@/lib/data/products/chairs/director-series/bigboss-gold-director-chair';
 import woodlandDirectorChair from '@/lib/data/products/chairs/director-series/woodland';
 import bostonDirectorChair from '@/lib/data/products/chairs/director-series/boston';
 import grandezzaDirectorChair from '@/lib/data/products/chairs/director-series/grandezza';
@@ -18,21 +18,41 @@ import tridentDirectorChair from '@/lib/data/products/chairs/director-series/tri
 import React from 'react';
 import { ChairCard } from '@/components/products/ChairCard';
 
+// Helper to map ExtendedProductData to Chair type
+function toChair(data: any): any {
+  const defaultVariant = data.variants?.[0]?.variantId || '';
+  return {
+    id: data.id,
+    name: data.name,
+    description: data.description,
+    price: data.price || '',
+    imageUrl: data.imageUrl,
+    category: data.category || '',
+    features: data.features || [],
+    variants: (data.variants || []).map((variant: any) => ({
+      id: variant.variantId,
+      name: variant.variantName,
+      imageUrl: variant.imageUrl,
+    })),
+    defaultVariant
+  };
+}
+
 // Collect all chairs into an array
 const chairs = [
-  ashleyDirectorChair,
-  operaDirectorChair,
-  tycoonDirectorChair,
-  bigbossGoldDirectorChair,
-  woodlandDirectorChair,
-  bostonDirectorChair,
-  grandezzaDirectorChair,
-  kotakDirectorChair,
-  milanoDirectorChair,
-  monarchDirectorChair,
-  nissanDirectorChair,
-  parkerDirectorChair,
-  tridentDirectorChair
+  toChair(ashleyDirectorChair),
+  toChair(operaDirectorChair),
+  toChair(tycoonDirectorChair),
+  toChair(bigBossGoldDirectorChair),
+  toChair(woodlandDirectorChair),
+  toChair(bostonDirectorChair),
+  toChair(grandezzaDirectorChair),
+  toChair(kotakDirectorChair),
+  toChair(milanoDirectorChair),
+  toChair(monarchDirectorChair),
+  toChair(nissanDirectorChair),
+  toChair(parkerDirectorChair),
+  toChair(tridentDirectorChair)
 ];
 
 export default function DirectorSeriesPage() {

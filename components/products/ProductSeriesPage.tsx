@@ -3,13 +3,12 @@
 import { CollectionCarousel } from "@/components/collections/CollectionCarousel"
 import { ProductGrid } from "@/components/products/ProductGrid"
 import { FeaturedProductsDisplay } from "@/components/products/FeaturedProductsDisplay"
-import type { SeriesMetadata, ProductCategory } from "@/types/collections"
-import type { ProductData } from "@/types/products"
+import type { ProductSeries } from "@/lib/data/product-types"
 
 interface ProductSeriesPageProps {
-  series: SeriesMetadata
-  products: ProductData[]
-  category: ProductCategory
+  series: ProductSeries
+  products: ProductSeries["products"] extends Record<string, infer T> ? T[] : never
+  category: string
   seriesId: string
 }
 

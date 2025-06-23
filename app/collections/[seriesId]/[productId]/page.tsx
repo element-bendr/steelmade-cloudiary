@@ -1,13 +1,13 @@
 import type { Metadata } from "next"
 import { Suspense } from "react"
 import { notFound } from "next/navigation"
-import { getSeriesById, getAllSeries } from "@/lib/api/collections"
+import { getSeriesById, getAllSeries, isValidCategorySlug } from "@/lib/api/collections"
 import { getProductsByCategoryAndSeries } from "@/lib/api/products"
 import { CollectionDetail } from "@/components/collections/CollectionDetail"
 import { CollectionNav } from "@/components/collections/CollectionNav"
 import { RelatedCollections } from "@/components/collections/RelatedCollections"
 import { Skeleton } from "@/components/ui/skeleton"
-import { ProductCategorySlug, isValidCategorySlug } from "@/types/product-categories"
+import { ProductCategorySlug } from "@/lib/data/product-categories"
 
 interface CollectionPageProps {
   params: {
@@ -44,6 +44,24 @@ export async function generateMetadata(
       type: "website",
       images: series.imageUrl ? [{ url: series.imageUrl }] : undefined
     }
+  };
+}
+
+function mapProductSeriesToSeriesMetadata(series: any): import("@/types/collections").SeriesMetadata {
+  return {
+    id: series.id,
+    title: series.title || '',
+    description: series.description || '',
+    seoDescription: series.seoDescription || '',
+    features: series.features || [],
+    lastModified: series.lastModified || '',
+    products: series.products || {},
+    category: series.category || '',
+    imageUrl: series.imageUrl,
+    coverImage: series.coverImage,
+    images: series.images || [],
+    specifications: series.specifications || {},
+    tags: series.tags || [],
   };
 }
 
@@ -110,7 +128,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
       <main className="container py-12">
         <Suspense fallback={<Skeleton className="h-[500px]" />}>
           <CollectionDetail 
-            series={series}
+            series={mapProductSeriesToSeriesMetadata(series)}
             seriesId={params.collectionId}
             category={params.category}
             initialProducts={products}

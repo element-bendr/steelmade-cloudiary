@@ -30,7 +30,8 @@ const amigoExecutiveChair = createDirectorChair({
   defaultVariant: 'high-back',
 });
 
-amigoExecutiveChair.variants.forEach(variant => {
+const variants = Array.isArray(amigoExecutiveChair.variants) ? amigoExecutiveChair.variants : [];
+variants.forEach(variant => {
   if (variant.id === 'high-back') {
     variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749805770/steelmade/chairs/executive-series/amigo/ic-331-hb.jpg';
     (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749805770/steelmade/chairs/executive-series/amigo/ic-331-hb.jpg'];
@@ -41,9 +42,8 @@ amigoExecutiveChair.variants.forEach(variant => {
     (variant as any).imageClass = 'object-contain p-8 max-h-[420px]';
   }
 });
-
-(amigoExecutiveChair as any).images = amigoExecutiveChair.variants.map(v => v.imageUrl);
-(amigoExecutiveChair as any).imageUrl = amigoExecutiveChair.variants.find(v => v.id === 'high-back')?.imageUrl || amigoExecutiveChair.variants[0]?.imageUrl;
+(amigoExecutiveChair as any).images = variants.map(v => v.imageUrl);
+(amigoExecutiveChair as any).imageUrl = variants.find(v => v.id === 'high-back')?.imageUrl || variants[0]?.imageUrl;
 
 registerExecutiveChair(amigoExecutiveChair);
 

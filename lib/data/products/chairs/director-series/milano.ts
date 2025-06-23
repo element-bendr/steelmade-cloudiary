@@ -26,15 +26,15 @@ const milanoDirectorChair = createDirectorChair({
   defaultVariant: 'high-back'
 });
 
-milanoDirectorChair.variants.forEach(variant => {
+const variants = milanoDirectorChair.variants ?? [];
+variants.forEach(variant => {
   if (variant.id === 'high-back') {
     variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1748773743/steelmade/chairs/director-series/milano/ic-251-hb.jpg';
     (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1748773743/steelmade/chairs/director-series/milano/ic-251-hb.jpg'];
   }
 });
-
-(milanoDirectorChair as any).images = milanoDirectorChair.variants.map(v => v.imageUrl);
-(milanoDirectorChair as any).imageUrl = milanoDirectorChair.variants.find(v => v.id === 'high-back')?.imageUrl || milanoDirectorChair.variants[0]?.imageUrl;
+(milanoDirectorChair as any).images = variants.map(v => v.imageUrl);
+(milanoDirectorChair as any).imageUrl = variants.find(v => v.id === 'high-back')?.imageUrl || variants[0]?.imageUrl;
 
 registerDirectorChair(milanoDirectorChair);
 

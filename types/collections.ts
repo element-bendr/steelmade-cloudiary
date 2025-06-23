@@ -1,6 +1,5 @@
 import type { ImageAsset } from "./image-types"
-import type { ProductData } from "./products"
-// Remove conflicting import as we have a local declaration
+import type { ExtendedProductData } from "../lib/data/product-types"
 
 // Product specifications types
 export interface CommonSpecs {
@@ -28,7 +27,7 @@ export interface SeriesMetadata extends BaseImageMetadata {
   seoDescription: string;
   features: string[];
   lastModified: Date | string;
-  products: Record<string, ProductData>;
+  products: Record<string, ExtendedProductData>;
   category: ProductCategory; // Added category
   imageUrl?: string; // Added imageUrl
   specifications?: Record<string, string>; // Added specifications
@@ -50,7 +49,7 @@ export interface SeriesWithProducts extends BaseImageMetadata {
   description: string;
   seoDescription: string;
   features: string[];
-  products: Record<string, ProductData>;
+  products: Record<string, ExtendedProductData>;
   lastModified: Date | string;
   metadata?: CollectionMetadata;
 }
@@ -65,7 +64,7 @@ export interface BaseCollection {
 export interface SubCategoryCollection extends Partial<BaseCollection> {
   metadata: CollectionMetadata;
   series?: SeriesWithProducts[];
-  products?: Record<string, ProductData>;
+  products?: Record<string, ExtendedProductData>;
   priceRange?: { min: string; max: string };
   features?: string[];
   materials?: string[];
@@ -127,7 +126,7 @@ export type ProductCategory =
 
 export interface CollectionData extends SeriesMetadata {
   id: string;
-  products: Record<string, ProductData>; // Changed to match SeriesMetadata
+  products: Record<string, ExtendedProductData>; // Changed to match SeriesMetadata
 }
 
 export interface RelatedCollection {

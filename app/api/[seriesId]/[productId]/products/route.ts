@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getProductsBySeries } from '@/lib/modules/product';
+import { isValidCategorySlug } from '@/types/product-categories-unified';
+import type { ProductCategorySlug } from '@/lib/data/product-categories';
 
 export async function GET(
   request: Request,
@@ -7,7 +9,10 @@ export async function GET(
 ) {
   try {
     const { categoryId, seriesId1 } = params;
-    const products = await getProductsBySeries(seriesId1, categoryId);
+    if (!isValidCategorySlug(categoryId)) {
+      return NextResponse.json({ error: 'Invalid categoryId' }, { status: 400 });
+    }
+    const products = await getProductsBySeries(seriesId1, categoryId as ProductCategorySlug);
     
     return NextResponse.json(products);
   } catch (error) {

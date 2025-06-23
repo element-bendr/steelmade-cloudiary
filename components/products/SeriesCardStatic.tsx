@@ -1,18 +1,20 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { OptimizedImage } from "@/components/ui/optimized-image"
-import type { SeriesMetadata } from "@/types/collections" // Changed path
+import type { ProductSeries } from "@/lib/data/product-types"
 import type { ImageAsset } from "@/types/image-types" // Added import for ImageAsset
 import { getImageUrl, getImageWidth, getImageHeight } from "@/lib/utils/image-utils"
 
 interface SeriesCardStaticProps {
-  series: SeriesMetadata
+  series: ProductSeries
   className?: string
 }
 
 export function SeriesCardStatic({ series, className }: SeriesCardStaticProps) {
   // Ensure coverImage is treated as ImageAsset
   const coverImage = series.coverImage as ImageAsset;
+  const title = series.title ?? series.id;
+  const features = series.features ?? [];
 
   return (
     <div className={className}>
@@ -20,7 +22,7 @@ export function SeriesCardStatic({ series, className }: SeriesCardStaticProps) {
         <div className="relative aspect-video overflow-hidden rounded-t-lg before:absolute before:inset-0 before:bg-gradient-morphism before:opacity-0">
           <OptimizedImage
             src={getImageUrl(coverImage)} // Use the asserted coverImage
-            alt={series.title}
+            alt={title}
             width={getImageWidth(coverImage)} // Use the asserted coverImage
             height={getImageHeight(coverImage)} // Use the asserted coverImage
             className="object-cover w-full h-full"
@@ -28,12 +30,12 @@ export function SeriesCardStatic({ series, className }: SeriesCardStaticProps) {
           />
         </div>
         <CardHeader className="pb-2">
-          <CardTitle className="text-2xl font-semibold text-text">{series.title}</CardTitle>
+          <CardTitle className="text-2xl font-semibold text-text">{title}</CardTitle>
           <CardDescription className="text-text-muted leading-relaxed">{series.description}</CardDescription>
         </CardHeader>
         <CardContent className="flex-grow">
           <div className="flex flex-wrap gap-2">
-            {series.features.map((feature) => (
+            {features.map((feature) => (
               <Badge 
                 key={feature} 
                 variant="secondary" 

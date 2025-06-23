@@ -31,7 +31,8 @@ const grandezzaDirectorChair = createDirectorChair({
   defaultVariant: 'high-back'
 });
 
-grandezzaDirectorChair.variants.forEach(variant => {
+const variants = grandezzaDirectorChair.variants ?? [];
+variants.forEach(variant => {
   if (variant.id === 'high-back') {
     variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749458322/steelmade/chairs/director-series/grandezza/ic-04-hb.jpg';
     (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749458322/steelmade/chairs/director-series/grandezza/ic-04-hb.jpg'];
@@ -40,9 +41,8 @@ grandezzaDirectorChair.variants.forEach(variant => {
     (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749458326/steelmade/chairs/director-series/grandezza/ic-05-mb.jpg'];
   }
 });
-
-(grandezzaDirectorChair as any).images = grandezzaDirectorChair.variants.map(v => v.imageUrl);
-(grandezzaDirectorChair as any).imageUrl = grandezzaDirectorChair.variants.find(v => v.id === 'high-back')?.imageUrl || grandezzaDirectorChair.variants[0]?.imageUrl;
+(grandezzaDirectorChair as any).images = variants.map(v => v.imageUrl);
+(grandezzaDirectorChair as any).imageUrl = variants.find(v => v.id === 'high-back')?.imageUrl || variants[0]?.imageUrl;
 
 registerDirectorChair(grandezzaDirectorChair);
 

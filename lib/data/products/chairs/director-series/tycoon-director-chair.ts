@@ -8,7 +8,6 @@ export const tycoondirectorchair: ExtendedProductData = {
   category: 'chairs',
   seriesId: 'director-series',
   imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/tycoon/ic-01-hb.jpg',  inStock: true,
-  price: '1299.99',
   images: [
     { 
       url: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/tycoon/ic-01-hb.jpg',

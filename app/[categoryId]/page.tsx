@@ -1,7 +1,9 @@
 import { Metadata } from 'next';
-import { extractCategoryParams } from '@/lib/routes/route-config';
-import { getCategory } from '@/lib/data/products/categories';
-import { ProductGrid } from '@/components/products/ProductGrid';
+import { extractCategoryParams } from '../../lib/routes/route-config';
+import { getCategory } from '../../lib/data/products/categories';
+import { ProductGrid } from '../../components/products/ProductGrid';
+import { ProductSeries } from '../../lib/data/product-types';
+import type { ExtendedProductData } from '../../lib/data/product-types';
 
 interface CategoryPageProps {
   params: {
@@ -43,9 +45,9 @@ export default function CategoryPage({ params }: CategoryPageProps) {
   }
   
   // Extract all products from all series in this category
-  const products = Object.values(category.series).flatMap(series => 
+  const products = Object.values(category.series as Record<string, ProductSeries>).flatMap(series => 
     Object.values(series.products || {})
-  ) as ProductData[];
+  ) as ExtendedProductData[];
   
   return (
     <div className="container mx-auto py-12 px-4">

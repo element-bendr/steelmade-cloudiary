@@ -32,24 +32,22 @@ const bostonDirectorChair = createDirectorChair({
 });
 
 // Override the default image URLs with the correct ones
-bostonDirectorChair.variants.forEach(variant => {
-  if (variant.id === 'high-back') {
-    variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749458919/steelmade/chairs/director-series/boston/ic-06-hb.jpg';
-  } else if (variant.id === 'mid-back') {
-    variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749458914/steelmade/chairs/director-series/boston/ic-07-mb.jpg';
-  }
-});
+if (bostonDirectorChair.variants) {
+  bostonDirectorChair.variants.forEach(variant => {
+    if (variant.id === 'high-back') {
+      variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749458919/steelmade/chairs/director-series/boston/ic-06-hb.jpg';
+      variant.images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749458919/steelmade/chairs/director-series/boston/ic-06-hb.jpg'];
+    } else if (variant.id === 'mid-back') {
+      variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749458914/steelmade/chairs/director-series/boston/ic-07-mb.jpg';
+      variant.images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749458914/steelmade/chairs/director-series/boston/ic-07-mb.jpg'];
+    }
+  });
+}
 
 // Update the primary image URL to match the default variant
-bostonDirectorChair.imageUrl = bostonDirectorChair.variants.find(v => v.id === 'high-back')?.imageUrl || bostonDirectorChair.variants[0]?.imageUrl;
-
-// Add top-level images array and images array for each variant
-bostonDirectorChair.images = bostonDirectorChair.variants.map(v => v.imageUrl);
-bostonDirectorChair.variants.forEach(variant => {
-  if (variant.imageUrl) {
-    variant.images = [variant.imageUrl];
-  }
-});
+if (bostonDirectorChair.variants && bostonDirectorChair.variants.length > 0) {
+  bostonDirectorChair.imageUrl = bostonDirectorChair.variants.find(v => v.id === 'high-back')?.imageUrl || bostonDirectorChair.variants[0]?.imageUrl;
+}
 
 // Register this chair with the director series
 registerDirectorChair(bostonDirectorChair);

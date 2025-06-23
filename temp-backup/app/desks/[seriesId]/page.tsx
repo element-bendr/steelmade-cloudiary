@@ -17,7 +17,17 @@ export async function generateMetadata({ params }: DeskSeriesPageProps): Promise
 
   const title = `${series.title} | Office Desks | SteelMade`
   const description = series.seoDescription
-  const imageUrl = getImageUrl(series.coverImage)
+  // Defensive mapping: convert ProductImage to ImageAsset for getImageUrl
+  const imageUrl = getImageUrl(
+    series.coverImage
+      ? {
+          url: series.coverImage.url,
+          alt: series.coverImage.alt,
+          width: series.coverImage.width ?? 0,
+          height: series.coverImage.height ?? 0,
+        }
+      : undefined
+  )
 
   return {
     title,

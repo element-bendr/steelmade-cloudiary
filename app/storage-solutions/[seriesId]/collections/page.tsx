@@ -1,13 +1,43 @@
 'use client';
 
-import { ProtectedCollectionsGrid } from "@/components/collections/protected-collections-grid";
-import { SubCategoryCollection, SeriesMetadata, CollectionMetadata } from "@/types/collections"; 
-import { ProductType } from "@/types/products"; 
-import { useEffect, useState } from "react";
-import { getAllSeries } from "@/lib/api/collections"; 
+import { ProtectedCollectionsGrid } from '../../../../components/collections/protected-collections-grid';
+import { SubCategoryCollection, SeriesMetadata, CollectionMetadata } from '../../../../types/collections';
+import { ProductType } from '../../../../lib/data/product-types';
+import { useEffect, useState } from 'react';
+import { getAllSeries } from '../../../../lib/api/collections'; 
+import type { ProductSeries } from '../../../../lib/data/product-types';
+import type { ImageAsset } from '../../../../types/image-types';
 
 interface CollectionsPageProps {
   params: { seriesId: string };
+}
+
+// Defensive, DRY mapping from ProductSeries to SeriesMetadata
+function mapProductSeriesToSeriesMetadata(
+  series: ProductSeries,
+  category: string = 'storage-solutions'
+): SeriesMetadata {
+  const mapImage = (img: any): ImageAsset => ({
+    url: img?.url || '',
+    width: img?.width ?? 0,
+    height: img?.height ?? 0,
+    alt: img?.alt || ''
+  });
+  return {
+    id: series.id,
+    title: series.title ?? '',
+    description: series.description ?? '',
+    seoDescription: series.seoDescription ?? '',
+    features: series.features ?? [],
+    lastModified: series.lastModified ?? '',
+    products: series.products ?? {},
+    category: category as any,
+    imageUrl: series.imageUrl ?? '',
+    specifications: (series as any).specifications ?? undefined,
+    tags: (series as any).tags ?? undefined,
+    coverImage: mapImage(series.coverImage),
+    images: Array.isArray(series.images) ? series.images.map(mapImage) : [],
+  };
 }
 
 async function getCollectionsBySeriesId(
@@ -17,8 +47,11 @@ async function getCollectionsBySeriesId(
   console.log(`Fetching collections for seriesId: ${seriesId}, type: ${productType}`);
   await new Promise(resolve => setTimeout(resolve, 500));
   
-  const allSeriesForType: Record<string, SeriesMetadata> = await getAllSeries(productType as any); 
-
+  // Change: getAllSeries returns ProductSeries, so map to SeriesMetadata
+  const allSeriesRaw: Record<string, ProductSeries> = await getAllSeries(productType as any);
+  const allSeriesForType: Record<string, SeriesMetadata> = Object.fromEntries(
+    Object.entries(allSeriesRaw).map(([key, value]) => [key, mapProductSeriesToSeriesMetadata(value, productType)])
+  );
   const collections: Record<string, SubCategoryCollection> = {};
   for (const key in allSeriesForType) {
     if (Object.prototype.hasOwnProperty.call(allSeriesForType, key)) {
@@ -38,7 +71,6 @@ async function getCollectionsBySeriesId(
             title: seriesItem.title, 
             description: seriesItem.description,
             coverImage: seriesItem.coverImage, 
-            // slug is not a property of SubCategoryCollection, removed.
             metadata: metadata // Assign the constructed metadata
             // Other optional fields like products, series, priceRange, etc., are not populated in this mock
         };

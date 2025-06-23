@@ -1,6 +1,6 @@
 // Functional, declarative registration for director series chairs
 // This file exists to break circular dependencies between the registry and individual chair modules.
-import type { Chair } from '../../../types/chair';
+import type { Chair } from '@/lib/types/chair';
 
 // Internal registry array, not exported
 const directorSeriesChairs: Chair[] = [];

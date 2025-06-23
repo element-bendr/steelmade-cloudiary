@@ -31,7 +31,8 @@ const kotakDirectorChair = createDirectorChair({
   defaultVariant: 'high-back'
 });
 
-kotakDirectorChair.variants.forEach(variant => {
+const variants = kotakDirectorChair.variants ?? [];
+variants.forEach(variant => {
   if (variant.id === 'high-back') {
     variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749460525/steelmade/chairs/director-series/kotak/ic-13-hb.jpg';
     (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749460525/steelmade/chairs/director-series/kotak/ic-13-hb.jpg'];
@@ -40,9 +41,8 @@ kotakDirectorChair.variants.forEach(variant => {
     (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749460537/steelmade/chairs/director-series/kotak/ic-12-mb.jpg'];
   }
 });
-
-(kotakDirectorChair as any).images = kotakDirectorChair.variants.map(v => v.imageUrl);
-(kotakDirectorChair as any).imageUrl = kotakDirectorChair.variants.find(v => v.id === 'high-back')?.imageUrl || kotakDirectorChair.variants[0]?.imageUrl;
+(kotakDirectorChair as any).images = variants.map(v => v.imageUrl);
+(kotakDirectorChair as any).imageUrl = variants.find(v => v.id === 'high-back')?.imageUrl || variants[0]?.imageUrl;
 
 registerDirectorChair(kotakDirectorChair);
 

@@ -1,8 +1,0 @@
-{
-  "tasks": [
-    {
-      "description": "Refactor project for modular structure to improve maintainability and reduce update complexities. Evaluate Zod for data validation. Aim for minimal disruption.",
-      "status": "todo"
-    }
-  ]
-}

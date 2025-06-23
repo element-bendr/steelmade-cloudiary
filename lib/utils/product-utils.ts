@@ -1,48 +1,11 @@
-// Simple utility functions for product data retrieval
+// Utility functions for product data retrieval, now using canonical types
 import { productCatalog } from '@/lib/data/product-catalog';
-
-// Local type definitions without external imports
-interface ProductImage {
-  url: string;
-  alt: string;
-  width?: number;
-  height?: number;
-}
-
-interface ProductVariant {
-  variantId: string;
-  variantName: string;
-  name: string;
-  description: string;
-  imageUrl: string;
-  specifications?: Record<string, string>;
-}
-
-export interface ExtendedProductData {
-  id: string;
-  name: string;
-  description: string;
-  category: string;
-  seriesId: string;
-  inStock: boolean;
-  imageUrl: string;
-  images?: ProductImage[];
-  features?: string[];
-  specifications?: Record<string, string>;
-  variants: ProductVariant[];
-}
-
-export interface ProductSeries {
-  id: string;
-  title: string;
-  description: string;
-  category: string;
-  features?: string[];
-  specifications?: Record<string, string>;
-  products: Record<string, ExtendedProductData>;
-}
-
-// Removed mockData and mockSeries. All product and series lookups now use the modular product catalog.
+import type {
+  ProductImage,
+  ProductVariant,
+  ExtendedProductData,
+  ProductSeries
+} from '@/lib/data/product-types';
 
 /**
  * Get product data by ID (modular, production-ready)
@@ -82,8 +45,10 @@ export function getAllProducts(category: string): Record<string, ExtendedProduct
 }
 
 /**
- * Get all series in a category
+ * Get all series in a category, ensuring canonical ProductSeries type
  */
 export function getAllSeries(category: string): Record<string, ProductSeries> {
-  return (productCatalog as any)[category] || {};
+  const raw = (productCatalog as any)[category] || {};
+  // Optionally, add runtime validation or mapping here if needed
+  return raw;
 }

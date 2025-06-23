@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { ProductDetailLayout } from '@/components/products';
 
 // Fix import name to match the actual export in the data file
-import { bigbossgoldDirectorChair } from '@/lib/data/products/chairs/director-series/bigboss-gold-director-chair';
+import { bigBossGoldDirectorChair } from '@/lib/data/products/chairs/director-series/bigboss-gold-director-chair';
 
 export default function BigBossGoldDirectorChairPage() {
   const [showContactForm, setShowContactForm] = useState(false);
@@ -42,10 +42,10 @@ export default function BigBossGoldDirectorChairPage() {
     <>
       <ProductDetailLayout
         product={{
-          ...bigbossgoldDirectorChair,
+          ...bigBossGoldDirectorChair,
           // Remove price to match Opera chair styling
           price: '',
-          imageUrl: bigbossgoldDirectorChair.imageUrl || '/images/chairs/placeholder.jpg',
+          imageUrl: bigBossGoldDirectorChair.imageUrl || '/images/chairs/placeholder.jpg',
         }}
         contactOptions={{
           onContactClick: () => setShowContactForm(true),

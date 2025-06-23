@@ -1,11 +1,11 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { ProductData } from "@/types/products"
-import { ProductCategorySlug, isValidCategorySlug } from "@/types/product-categories"
+import { useState, useEffect, useCallback } from "react"
+import type { ExtendedProductData } from "../lib/data/product-types"
+import { ProductCategorySlug, isValidCategorySlug } from "../types/product-categories"
 
 interface UseProductsResult {
-  products: ProductData[]
+  products: ExtendedProductData[]
   isLoading: boolean
   error: string | null
   refetch: () => void
@@ -14,13 +14,13 @@ interface UseProductsResult {
 export function useProducts(
   category: ProductCategorySlug,
   seriesId: string,
-  initialProducts: ProductData[] = []
+  initialProducts: ExtendedProductData[] = []
 ): UseProductsResult {
-  const [products, setProducts] = useState<ProductData[]>(initialProducts)
+  const [products, setProducts] = useState<ExtendedProductData[]>(initialProducts)
   const [isLoading, setIsLoading] = useState(initialProducts.length === 0)
   const [error, setError] = useState<string | null>(null)
   
-  const fetchProducts = async () => {
+  const fetchProducts = useCallback(async () => {
     if (!category || !seriesId) {
       setError("Missing category or series ID")
       setIsLoading(false)
@@ -51,17 +51,15 @@ export function useProducts(
     } finally {
       setIsLoading(false)
     }
-  }
+  }, [category, seriesId])
   
   const refetch = () => {
     fetchProducts()
   }
   
   useEffect(() => {
-    if (initialProducts.length === 0) {
-      fetchProducts()
-    }
-  }, [category, seriesId, initialProducts.length, fetchProducts])
+    fetchProducts()
+  }, [fetchProducts])
   
   return { products, isLoading, error, refetch }
 }

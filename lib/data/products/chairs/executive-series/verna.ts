@@ -26,7 +26,8 @@ const vernaExecutiveChair = createDirectorChair({
   defaultVariant: 'high-back',
 });
 
-vernaExecutiveChair.variants.forEach(variant => {
+const variants = vernaExecutiveChair.variants ?? [];
+variants.forEach(variant => {
   if (variant.id === 'high-back') {
     variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749797677/steelmade/chairs/executive-series/verna/ic-44-hb.jpg';
     (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749797677/steelmade/chairs/executive-series/verna/ic-44-hb.jpg'];
@@ -37,9 +38,8 @@ vernaExecutiveChair.variants.forEach(variant => {
     (variant as any).imageClass = 'object-contain p-8 max-h-[420px]';
   }
 });
-
-(vernaExecutiveChair as any).images = vernaExecutiveChair.variants.map(v => v.imageUrl);
-(vernaExecutiveChair as any).imageUrl = vernaExecutiveChair.variants.find(v => v.id === 'high-back')?.imageUrl || vernaExecutiveChair.variants[0]?.imageUrl;
+(vernaExecutiveChair as any).images = variants.map(v => v.imageUrl);
+(vernaExecutiveChair as any).imageUrl = variants.find(v => v.id === 'high-back')?.imageUrl || variants[0]?.imageUrl;
 
 registerExecutiveChair(vernaExecutiveChair);
 

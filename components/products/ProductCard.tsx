@@ -1,10 +1,10 @@
 import Image from "next/image"
 import Link from "next/link"
-import type { ProductData } from "@/types/products"
+import type { ExtendedProductData } from '../../lib/data/product-types';
 import { cn } from "@/lib/utils"
 
 interface ProductCardProps {
-  product: ProductData
+  product: ExtendedProductData
   href: string
   className?: string
 }

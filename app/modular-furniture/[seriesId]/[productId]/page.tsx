@@ -4,8 +4,8 @@ import { notFound } from "next/navigation";
 import ProductPageLayout from "@/components/products/ProductPageLayout";
 import { getProductDetails, getRevalidateTime, getAllProductsInCategory } from "@/lib/services/product-service";
 import { getImageUrl } from "@/lib/utils/image-utils";
-import type { SeriesMetadata, ProductCategory } from "@/types/collections"; // Added import
-import type { ProductData } from "@/types/products"; // Added import
+import type { SeriesMetadata, ProductCategory } from "@/types/collections";
+import type { ExtendedProductData } from "@/lib/data/product-types";
 
 interface ModularFurnitureProductPageProps {
   params: {
@@ -56,7 +56,7 @@ export default async function ProductPage({ params }: ModularFurnitureProductPag
     description: `Details about ${seriesId.replace(/-/g, ' ')} series.`, // Example
     seoDescription: `SEO description for ${seriesId.replace(/-/g, ' ')}.`, // Example
     features: ["Feature 1", "Feature 2"], // Example
-    lastModified: new Date().toISOString(), // Example
+    lastModified: new Date().toISOString(), // Always string for compatibility
     products: {}, // Example - normally populated with products of this series
     category: "Modular Furniture" as ProductCategory,
     coverImage: { url: "/images/placeholder/series-hero-modular-office.jpg", alt: "Modular Office Series", width: 1200, height: 800 }, // Added width and height
@@ -64,11 +64,26 @@ export default async function ProductPage({ params }: ModularFurnitureProductPag
     // Add other required fields for SeriesMetadata if any, e.g. imageUrl, specifications, tags
   };
 
+  // Map SeriesMetadata to ProductSeries for compatibility
+  const mapSeriesMetadataToProductSeries = (series: SeriesMetadata): import("@/lib/data/product-types").ProductSeries => ({
+    id: series.id,
+    title: series.title,
+    description: series.description,
+    seoDescription: series.seoDescription,
+    category: typeof series.category === 'string' ? series.category : undefined,
+    imageUrl: series.imageUrl,
+    coverImage: series.coverImage,
+    images: series.images,
+    features: series.features,
+    lastModified: typeof series.lastModified === 'string' ? series.lastModified : (series.lastModified instanceof Date ? series.lastModified.toISOString() : undefined),
+    products: series.products,
+  });
+
   return (
     <ProductPageLayout
       product={product}
       category={"modular-furniture" as ProductCategory}
-      series={MOCK_SERIES_DATA}
+      series={mapSeriesMetadataToProductSeries(MOCK_SERIES_DATA)}
     />
   );
 }

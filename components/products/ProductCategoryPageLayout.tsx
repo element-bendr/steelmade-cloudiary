@@ -1,18 +1,16 @@
 'use client'
 
-import type { SeriesMetadata, ProductCategory } from "@/types/collections"
-import { SeriesGrid } from "@/components/products/SeriesGrid"
-import { CategoryNav } from "@/components/collections/CategoryNav"
-// Assuming BreadcrumbSchema and OrganizationSchema are distinct components or handled by structured-data.tsx
-// If these paths are incorrect, they will need adjustment based on your actual SEO component structure.
-import { BreadcrumbSchema, OrganizationSchema } from "@/components/seo/structured-data";
+import type { ProductSeries } from '../../lib/data/product-types';
+import { SeriesGrid } from './SeriesGrid';
+import { CategoryNav } from '../collections/CategoryNav';
+import { BreadcrumbSchema, OrganizationSchema } from '../seo/structured-data';
 
 interface ProductCategoryPageLayoutProps {
-  category: ProductCategory
-  seriesData: Record<string, SeriesMetadata>
-  pageTitle: string
-  pageDescription: string
-  breadcrumbItems: Array<{ name: string; item: string }>
+  category: string;
+  seriesData: Record<string, ProductSeries>;
+  pageTitle: string;
+  pageDescription: string;
+  breadcrumbItems: Array<{ name: string; item: string }>;
 }
 
 export default function ProductCategoryPageLayout({
@@ -42,7 +40,7 @@ export default function ProductCategoryPageLayout({
         </p>
       </div>
 
-      <CategoryNav currentCategory={category} />
+      <CategoryNav currentCategory={category as import('../../lib/data/product-types').ProductType} />
 
       <section className="mt-8">
         <SeriesGrid seriesData={seriesData} productType={category} />

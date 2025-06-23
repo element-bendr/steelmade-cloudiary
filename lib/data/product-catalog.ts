@@ -1,14 +1,14 @@
 import type { ProductCategory } from "@/types/collections";
 import type { Series } from "@/components/portfolio/types";
-import type { ProductData } from "@/types/products";
-import { ProductCatalog } from "./product-types";
-import { ProductCategorySlug } from "@/types/product-categories";
-import { chairs, desks, storage } from "./products";
-import { getPortfolioSeries as getPortfolioSeriesHelper, getMockData as getMockDataHelper, getMockProductsData as getMockProductsDataHelper } from "./product-helpers";
+import { getPortfolioSeries as getPortfolioSeriesHelper, getMockData as getMockDataHelper, getMockProductsData as getMockProductsDataHelper, ProductCatalogData } from "./product-helpers";
+import type { ProductSeries } from "@/lib/data/product-types";
+import { chairs } from "./products/chairs";
+import { desks } from "./products/desks";
+import { storage } from "./products/storage";
 
 // Single source of truth for all product data
-export const productCatalog: ProductCatalog = {
-  chairs: chairs,
+export const productCatalog: ProductCatalogData = {
+  chairs,
   desks,
   "storage-solutions": storage,
   "school-furniture": {},
@@ -29,6 +29,6 @@ export function getMockData() {
 }
 
 // Helper to get product data in the format expected by the mock data
-export function getMockProductsData(): Record<ProductCategory, Record<string, ProductData[]>> {
+export function getMockProductsData(): Record<ProductCategory, Record<string, unknown[]>> {
   return getMockProductsDataHelper(productCatalog);
 }

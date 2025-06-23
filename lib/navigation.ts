@@ -1,39 +1,48 @@
-import type { ProductCategoryDisplay, ProductType } from "@/types/products";
+import type { ProductType } from "../lib/data/product-types";
 
 // Maps ProductType (slug) to its display name (string that should be a ProductCategoryDisplay value)
 export const productCategoryDisplayNames: Record<ProductType, string> = {
   "chairs": "Chairs",
+  "tables": "Tables",
+  "accessories": "Accessories",
   "desks": "Desks",
-  "storage-solutions": "Storage Solutions",
-  "school-furniture": "School Furniture",
+  "storage": "Storage",
+  "lighting": "Lighting",
   "hospital-furniture": "Hospital Furniture",
   "racking-systems": "Racking Systems",
-  "modular-furniture": "Modular Furniture"
+  "school-furniture": "School Furniture",
+  "storage-solutions": "Storage Solutions",
+  "modular-furniture": "Modular Furniture",
+  "office-accessories": "Office Accessories"
 };
 
 // Maps ProductType (slug) to its base URL path
 export const productCategoryPaths: Record<ProductType, string> = {
   "chairs": "/chairs",
+  "tables": "/tables",
+  "accessories": "/accessories",
   "desks": "/desks",
-  "storage-solutions": "/storage-solutions",
-  "school-furniture": "/school-furniture",
+  "storage": "/storage",
+  "lighting": "/lighting",
   "hospital-furniture": "/hospital-furniture",
   "racking-systems": "/racking-systems",
-  "modular-furniture": "/modular-furniture"
+  "school-furniture": "/school-furniture",
+  "storage-solutions": "/storage-solutions",
+  "modular-furniture": "/modular-furniture",
+  "office-accessories": "/office-accessories"
 };
 
-// Helper to map ProductCategoryDisplay display name to ProductType slug
-const displayNameToSlugMap: Partial<Record<ProductCategoryDisplay, ProductType>> = {};
-// Safely iterate over productCategoryDisplayNames keys
+// Helper to map display name to ProductType slug
+const displayNameToSlugMap: Partial<Record<string, ProductType>> = {};
 (Object.keys(productCategoryDisplayNames) as ProductType[]).forEach(slug => {
-  const displayName = productCategoryDisplayNames[slug] as ProductCategoryDisplay;
+  const displayName = productCategoryDisplayNames[slug];
   displayNameToSlugMap[displayName] = slug;
 });
 
 export interface NavigationItem {
   title: string;
   href: string;
-  category?: ProductCategoryDisplay; // e.g. "Chairs"
+  category?: string; // e.g. "Chairs"
   children?: NavigationItem[];
 }
 
@@ -69,7 +78,7 @@ export const mainNavigation: NavigationItem[] = [
       return {
         title: displayName,
         href: productCategoryPaths[slug], // Links to slug-based paths like /chairs, /desks
-        category: displayName as ProductCategoryDisplay, // category is the display name "Chairs", "Desks"
+        category: displayName, // category is the display name "Chairs", "Desks"
       };
     }),
   }

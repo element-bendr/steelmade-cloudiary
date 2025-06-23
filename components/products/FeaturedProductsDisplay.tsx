@@ -1,13 +1,13 @@
 "use client"
 
 import { ProductCard } from "@/components/products/ProductCard"
-import type { ProductData } from "@/types/products"
+import type { ExtendedProductData } from '../../lib/data/product-types';
 import { cn } from "@/lib/utils"
 import Link from "next/link"
 import Image from "next/image"
 
 interface FeaturedProductsDisplayProps {
-  products: ProductData[]
+  products: ExtendedProductData[]
   title?: string
   className?: string
   category: string

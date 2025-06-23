@@ -31,7 +31,8 @@ const nissanDirectorChair = createDirectorChair({
   defaultVariant: 'high-back'
 });
 
-nissanDirectorChair.variants.forEach(variant => {
+const variants = nissanDirectorChair.variants ?? [];
+variants.forEach(variant => {
   if (variant.id === 'high-back') {
     variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749460685/steelmade/chairs/director-series/nissan/ic-253-hb.jpg';
     (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749460685/steelmade/chairs/director-series/nissan/ic-253-hb.jpg'];
@@ -40,9 +41,8 @@ nissanDirectorChair.variants.forEach(variant => {
     (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749460695/steelmade/chairs/director-series/nissan/ic-252-mb.jpg'];
   }
 });
-
-(nissanDirectorChair as any).images = nissanDirectorChair.variants.map(v => v.imageUrl);
-(nissanDirectorChair as any).imageUrl = nissanDirectorChair.variants.find(v => v.id === 'high-back')?.imageUrl || nissanDirectorChair.variants[0]?.imageUrl;
+(nissanDirectorChair as any).images = variants.map(v => v.imageUrl);
+(nissanDirectorChair as any).imageUrl = variants.find(v => v.id === 'high-back')?.imageUrl || variants[0]?.imageUrl;
 
 registerDirectorChair(nissanDirectorChair);
 

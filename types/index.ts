@@ -1,6 +1,5 @@
-// Re-export everything from products.ts
-export * from "./products";
-// export { ProductCategory as ProductCategoryDisplay } from "./products"; // Keep the original export for now
+// Removed broken export from non-existent products.ts
+// export * from "./products";
 
 // Re-export everything from collections.ts
 export * from "./collections";

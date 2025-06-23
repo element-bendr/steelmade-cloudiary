@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { Metadata } from "next";
-import { getSeriesForCategory } from "@/lib/api/products";
+import { getAllSeries } from "@/lib/services/product-service";
 import ProductCategoryPageLayout from "@/components/products/ProductCategoryPageLayout";
 import { Skeleton } from "@/components/ui/skeleton";
 
@@ -34,7 +34,51 @@ export const metadata: Metadata = {
 };
 
 export default async function DesksPage() {
-  const seriesData = await getSeriesForCategory("desks");
+  const seriesData = await getAllSeries("desks");
+
+  // Defensive mapping: convert ProductSeries to SeriesMetadata for all series
+  const mapProductSeriesToSeriesMetadata = (series: any): import('@/types/collections').SeriesMetadata => ({
+    id: series.id,
+    title: series.title ?? '',
+    description: series.description ?? '',
+    seoDescription: series.seoDescription ?? '',
+    features: series.features ?? [],
+    lastModified: series.lastModified ?? '',
+    products: series.products ?? {},
+    category: series.category ?? 'desks',
+    imageUrl: series.imageUrl ?? '',
+    specifications: series.specifications ?? {},
+    tags: series.tags ?? [],
+    coverImage: {
+      url: series.coverImage?.url ?? '',
+      width: series.coverImage?.width ?? 0,
+      height: series.coverImage?.height ?? 0,
+      alt: series.coverImage?.alt ?? '',
+    },
+    images: Array.isArray(series.images)
+      ? series.images.map((img: any) => ({
+          url: img.url ?? '',
+          width: img.width ?? 0,
+          height: img.height ?? 0,
+          alt: img.alt ?? '',
+        }))
+      : [],
+  });
+
+  const mappedSeriesData = Object.fromEntries(
+    Object.entries(seriesData).map(([key, value]) => [
+      key,
+      {
+        ...value,
+        lastModified:
+          value.lastModified &&
+          typeof value.lastModified === 'object' &&
+          Object.prototype.toString.call(value.lastModified) === '[object Date]'
+            ? (value.lastModified as Date).toISOString()
+            : value.lastModified ?? undefined,
+      },
+    ])
+  );
 
   const pageTitle = "Desks";
   const pageDescription = "Discover our premium range of desks, from ergonomic standing desks to classic executive designs. Built for productivity and style.";
@@ -53,7 +97,7 @@ export default async function DesksPage() {
     }>
       <ProductCategoryPageLayout
         category="desks"
-        seriesData={seriesData}
+        seriesData={mappedSeriesData}
         pageTitle={pageTitle}
         pageDescription={pageDescription}
         breadcrumbItems={breadcrumbItems}

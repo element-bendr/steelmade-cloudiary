@@ -1,10 +1,25 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link'; // Ensure Link is imported
-import { ProductType } from '@/types/products';
-import type { SubCategoryCollection } from '@/types/collections';
+import { ProductType } from '../../lib/data/product-types';
 import Image from 'next/image'; // Import next/image for cover images
+
+// Local type definition for SubCategoryCollection (copied from types/collections.ts)
+type SubCategoryCollection = {
+  metadata: any;
+  series?: any[];
+  products?: Record<string, any>;
+  priceRange?: { min: string; max: string };
+  features?: string[];
+  materials?: string[];
+  specifications?: any;
+  seoDescription?: string;
+  coverImage?: any;
+  images?: any[];
+  lastModified?: string;
+  [key: string]: any;
+};
 
 interface CollectionsGridProps {
   collections: SubCategoryCollection[];

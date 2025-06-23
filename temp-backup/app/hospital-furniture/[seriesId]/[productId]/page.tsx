@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { getProductDetails, getSeriesByCategoryAndId } from '@/lib/api/products';
 import type { Metadata, ResolvingMetadata } from 'next';
 import ProductPageLayout from '@/components/products/ProductPageLayout';
+import { getImageUrl } from '@/lib/utils/image-utils';
 
 type ProductDetailPageProps = {
   params: {
@@ -23,13 +24,25 @@ export async function generateMetadata(
     };
   }
 
+  // Defensive mapping for coverImage to ImageAsset
+  const coverImage = product.coverImage
+    ? {
+        url: product.coverImage.url,
+        alt: product.coverImage.alt,
+        width: product.coverImage.width ?? 0,
+        height: product.coverImage.height ?? 0,
+      }
+    : undefined;
+
   return {
     title: `${product.name} - SteelMade`,
     description: product.description,
     openGraph: {
       title: `${product.name} - SteelMade`,
       description: product.description,
-      images: product.images?.length ? product.images.map(img => ({ url: img.url, alt: img.alt })) : (product.imageUrl ? [{ url: product.imageUrl, alt: product.name }] : []),
+      images: product.images?.length
+        ? product.images.map((img: { url: string; alt: string }) => ({ url: img.url, alt: img.alt }))
+        : (product.imageUrl ? [{ url: product.imageUrl, alt: product.name }] : coverImage ? [coverImage] : []),
     },
   };
 }

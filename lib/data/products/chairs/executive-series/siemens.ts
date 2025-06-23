@@ -26,20 +26,21 @@ const siemensExecutiveChair = createDirectorChair({
   defaultVariant: 'high-back',
 });
 
-siemensExecutiveChair.variants.forEach(variant => {
-  if (variant.id === 'high-back') {
-    variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749797285/steelmade/chairs/executive-series/siemens/ic-41-hb.jpg';
-    (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749797285/steelmade/chairs/executive-series/siemens/ic-41-hb.jpg'];
-    (variant as any).imageClass = 'object-contain p-8 max-h-[420px]';
-  } else if (variant.id === 'mid-back') {
-    variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749797285/steelmade/chairs/executive-series/siemens/ic-42-mb.jpg';
-    (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749797285/steelmade/chairs/executive-series/siemens/ic-42-mb.jpg'];
-    (variant as any).imageClass = 'object-contain p-8 max-h-[420px]';
-  }
-});
-
-(siemensExecutiveChair as any).images = siemensExecutiveChair.variants.map(v => v.imageUrl);
-(siemensExecutiveChair as any).imageUrl = siemensExecutiveChair.variants.find(v => v.id === 'high-back')?.imageUrl || siemensExecutiveChair.variants[0]?.imageUrl;
+if (Array.isArray(siemensExecutiveChair.variants)) {
+  siemensExecutiveChair.variants.forEach(variant => {
+    if (variant.id === 'high-back') {
+      variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749797285/steelmade/chairs/executive-series/siemens/ic-41-hb.jpg';
+      (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749797285/steelmade/chairs/executive-series/siemens/ic-41-hb.jpg'];
+      (variant as any).imageClass = 'object-contain p-8 max-h-[420px]';
+    } else if (variant.id === 'mid-back') {
+      variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749797285/steelmade/chairs/executive-series/siemens/ic-42-mb.jpg';
+      (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749797285/steelmade/chairs/executive-series/siemens/ic-42-mb.jpg'];
+      (variant as any).imageClass = 'object-contain p-8 max-h-[420px]';
+    }
+  });
+}
+(siemensExecutiveChair as any).images = Array.isArray(siemensExecutiveChair.variants) ? siemensExecutiveChair.variants.map(v => v.imageUrl) : [];
+(siemensExecutiveChair as any).imageUrl = Array.isArray(siemensExecutiveChair.variants) ? (siemensExecutiveChair.variants.find(v => v.id === 'high-back')?.imageUrl || siemensExecutiveChair.variants[0]?.imageUrl) : undefined;
 
 registerExecutiveChair(siemensExecutiveChair);
 

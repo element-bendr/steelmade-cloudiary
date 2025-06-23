@@ -1,4 +1,4 @@
-import { ExtendedProductData } from '../../product-types';
+import { ExtendedProductData } from "@/lib/data/product-types";
 
 export const nanoExecutiveChair: ExtendedProductData = {
   id: 'nano-executive-chair',
@@ -54,5 +54,4 @@ export const nanoExecutiveChair: ExtendedProductData = {
     weightCapacity: '110kg',
     warranty: '1 year',
   },
-  tags: ['executive', 'nano', 'office', 'ergonomic']
 };

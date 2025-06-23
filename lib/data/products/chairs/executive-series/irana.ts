@@ -20,14 +20,16 @@ const iranaExecutiveChair = createDirectorChair({
   defaultVariant: 'irana',
 });
 
-iranaExecutiveChair.variants.forEach(variant => {
-  variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/irana/ic-62.jpg';
-  (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/irana/ic-62.jpg'];
-  (variant as any).imageClass = 'object-contain p-8 max-h-[420px]';
-});
+if (Array.isArray(iranaExecutiveChair.variants)) {
+  iranaExecutiveChair.variants.forEach(variant => {
+    variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/irana/ic-62.jpg';
+    (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/irana/ic-62.jpg'];
+    (variant as any).imageClass = 'object-contain p-8 max-h-[420px]';
+  });
+}
 
-(iranaExecutiveChair as any).images = iranaExecutiveChair.variants.map(v => v.imageUrl);
-(iranaExecutiveChair as any).imageUrl = iranaExecutiveChair.variants[0]?.imageUrl;
+(iranaExecutiveChair as any).images = Array.isArray(iranaExecutiveChair.variants) ? iranaExecutiveChair.variants.map(v => v.imageUrl) : [];
+(iranaExecutiveChair as any).imageUrl = Array.isArray(iranaExecutiveChair.variants) && iranaExecutiveChair.variants[0]?.imageUrl ? iranaExecutiveChair.variants[0].imageUrl : undefined;
 
 registerExecutiveChair(iranaExecutiveChair);
 

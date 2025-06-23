@@ -26,20 +26,21 @@ const supremeExecutiveChair = createDirectorChair({
   defaultVariant: 'high-back',
 });
 
-supremeExecutiveChair.variants.forEach(variant => {
-  if (variant.id === 'high-back') {
-    variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749803024/steelmade/chairs/executive-series/supreme/ic-55-hb.jpg.jpg';
-    (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749803024/steelmade/chairs/executive-series/supreme/ic-55-hb.jpg.jpg'];
-    (variant as any).imageClass = 'object-contain p-8 max-h-[420px]';
-  } else if (variant.id === 'mid-back') {
-    variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749803013/steelmade/chairs/executive-series/supreme/ic-56-mb.jpg.jpg';
-    (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749803013/steelmade/chairs/executive-series/supreme/ic-56-mb.jpg.jpg'];
-    (variant as any).imageClass = 'object-contain p-8 max-h-[420px]';
-  }
-});
-
-(supremeExecutiveChair as any).images = supremeExecutiveChair.variants.map(v => v.imageUrl);
-(supremeExecutiveChair as any).imageUrl = supremeExecutiveChair.variants.find(v => v.id === 'high-back')?.imageUrl || supremeExecutiveChair.variants[0]?.imageUrl;
+if (Array.isArray(supremeExecutiveChair.variants)) {
+  supremeExecutiveChair.variants.forEach(variant => {
+    if (variant.id === 'high-back') {
+      variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749803024/steelmade/chairs/executive-series/supreme/ic-55-hb.jpg.jpg';
+      (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749803024/steelmade/chairs/executive-series/supreme/ic-55-hb.jpg.jpg'];
+      (variant as any).imageClass = 'object-contain p-8 max-h-[420px]';
+    } else if (variant.id === 'mid-back') {
+      variant.imageUrl = 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749803013/steelmade/chairs/executive-series/supreme/ic-56-mb.jpg.jpg';
+      (variant as any).images = ['https://res.cloudinary.com/dqde19mfs/image/upload/v1749803013/steelmade/chairs/executive-series/supreme/ic-56-mb.jpg.jpg'];
+      (variant as any).imageClass = 'object-contain p-8 max-h-[420px]';
+    }
+  });
+}
+(supremeExecutiveChair as any).images = Array.isArray(supremeExecutiveChair.variants) ? supremeExecutiveChair.variants.map(v => v.imageUrl) : [];
+(supremeExecutiveChair as any).imageUrl = Array.isArray(supremeExecutiveChair.variants) ? (supremeExecutiveChair.variants.find(v => v.id === 'high-back')?.imageUrl || supremeExecutiveChair.variants[0]?.imageUrl) : undefined;
 
 registerExecutiveChair(supremeExecutiveChair);
 

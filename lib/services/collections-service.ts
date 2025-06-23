@@ -1,6 +1,6 @@
 import { CategoryCollections, SubCategoryCollection, SeriesWithProducts, CollectionMetadata } from "@/types/collections";
 import { collections } from "@/lib/data/collections-data";
-import type { ProductType } from "@/types/products";
+import type { ProductType } from "../data/product-types";
 import { ProductSeries } from "@/lib/data/product-types";
 import { ImageAsset } from "@/types/image-types";
 
@@ -96,12 +96,17 @@ export const CollectionsService = {
   async getFeaturedCollections(): Promise<Record<ProductType, Record<string, SeriesWithProducts>>> {
     return {
       "chairs": await this.getCollectionsByType("chairs"),
+      "tables": {},
+      "accessories": {},
       "desks": await this.getCollectionsByType("desks"),
-      "storage-solutions": await this.getCollectionsByType("storage-solutions"),
+      "storage": {},
+      "lighting": {},
       "hospital-furniture": await this.getCollectionsByType("hospital-furniture"),
-      "school-furniture": await this.getCollectionsByType("school-furniture"),
       "racking-systems": await this.getCollectionsByType("racking-systems"),
+      "school-furniture": await this.getCollectionsByType("school-furniture"),
+      "storage-solutions": await this.getCollectionsByType("storage-solutions"),
       "modular-furniture": await this.getCollectionsByType("modular-furniture"),
+      "office-accessories": {},
     };
   },
 

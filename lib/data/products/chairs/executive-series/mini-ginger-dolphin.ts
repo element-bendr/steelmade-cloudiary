@@ -1,4 +1,4 @@
-import { ExtendedProductData } from '../../product-types';
+import { ExtendedProductData } from "@/lib/data/product-types";
 
 export const miniGingerDolphinExecutiveChair: ExtendedProductData = {
   id: 'mini-ginger-dolphin-executive-chair',
@@ -54,5 +54,4 @@ export const miniGingerDolphinExecutiveChair: ExtendedProductData = {
     weightCapacity: '110kg',
     warranty: '1 year',
   },
-  tags: ['executive', 'mini', 'ginger', 'dolphin', 'office', 'ergonomic']
 };

@@ -341,7 +341,7 @@ export const brandButton = (
   };
   
   // Size variations
-  const sizeStyles = {
+  const sizeStyles: Record<SizeKey, { fontSize: string; padding: string }> = {
     sm: {
       fontSize: TYPOGRAPHY.fontSize.sm,
       padding: `${SPACING[1.5]} ${SPACING[3]}`,
@@ -355,17 +355,15 @@ export const brandButton = (
       padding: `${SPACING[2.5]} ${SPACING[5]}`,
     },
   };
-  
   // Border radius variations
-  const roundedStyles = {
+  const roundedStyles: Record<RoundedKey, string> = {
     sm: BORDER_RADIUS.sm,
     md: BORDER_RADIUS.DEFAULT,
     lg: BORDER_RADIUS.lg,
     full: BORDER_RADIUS.full,
   };
-  
   // Variant styles
-  const variantStyles = {
+  const variantStyles: Record<VariantKey, any> = {
     primary: {
       backgroundColor: BRAND_COLORS.primary.DEFAULT,
       color: 'white',
@@ -400,10 +398,32 @@ export const brandButton = (
     },
   };
   
+  // Type guards for safe object indexing
+  const sizeKeys = ['sm', 'md', 'lg'] as const;
+  type SizeKey = typeof sizeKeys[number];
+  function isSizeKey(key: string | undefined): key is SizeKey {
+    return sizeKeys.includes((key ?? 'md') as SizeKey);
+  }
+
+  const roundedKeys = ['sm', 'md', 'lg', 'full'] as const;
+  type RoundedKey = typeof roundedKeys[number];
+  function isRoundedKey(key: string | undefined): key is RoundedKey {
+    return roundedKeys.includes((key ?? 'md') as RoundedKey);
+  }
+
+  const variantKeys = ['primary', 'outline', 'ghost'] as const;
+  type VariantKey = typeof variantKeys[number];
+  function isVariantKey(key: string | undefined): key is VariantKey {
+    return variantKeys.includes((key ?? 'primary') as VariantKey);
+  }
+  
+  const safeSize: SizeKey = isSizeKey(size) ? size! : 'md';
+  const safeRounded: RoundedKey = isRoundedKey(rounded) ? rounded! : 'md';
+  const safeVariant: VariantKey = isVariantKey(variant) ? variant! : 'primary';
   return {
     ...baseStyles,
-    ...sizeStyles[size || 'md'],
-    borderRadius: roundedStyles[rounded || 'md'],
-    ...variantStyles[variant || 'primary'],
+    ...sizeStyles[safeSize],
+    borderRadius: roundedStyles[safeRounded],
+    ...variantStyles[safeVariant],
   };
 };

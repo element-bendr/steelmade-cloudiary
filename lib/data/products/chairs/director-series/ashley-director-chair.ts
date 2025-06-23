@@ -8,7 +8,6 @@ export const ashleyDirectorChair: ExtendedProductData = {
   category: 'chairs',
   seriesId: 'director-series',
   imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/ashley/ic-361-hb.jpg',
-  price: '899.99',
   inStock: true,
   images: [
     { 

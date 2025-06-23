@@ -1,4 +1,4 @@
-import { ExtendedProductData } from '../../product-types';
+import { ExtendedProductData } from "@/lib/data/product-types";
 
 export const jetLazerComputerExecutiveChair: ExtendedProductData = {
   id: 'jet-lazer-computer',
@@ -54,5 +54,4 @@ export const jetLazerComputerExecutiveChair: ExtendedProductData = {
     weightCapacity: '120kg',
     warranty: '1 year',
   },
-  tags: ['executive', 'jet', 'lazer', 'computer', 'office', 'ergonomic']
 };

@@ -1,18 +1,17 @@
 // filepath: e:\steelmadewebsite\app\storage\page.tsx
 import Link from 'next/link';
 import Image from 'next/image';
-import { getAllSeries } from '@/lib/services/product-service'; // Corrected function import
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { getImageUrl } from '@/lib/utils/image-utils';
-import type { ProductCategory } from '@/types/collections'; // Import ProductCategory
+import { getAllSeries } from '../../lib/services/product-service';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '../../components/ui/card';
+import { Button } from '../../components/ui/button';
+import { getImageUrl } from '../../lib/utils/image-utils';
 
 export default async function StoragePage() {
   // Fetch all series for storage-solutions.
-  const seriesData = await getAllSeries('storage-solutions' as ProductCategory);
+  const seriesData = await getAllSeries('storage-solutions');
   
   // Convert the record of series to an array for mapping
-  const seriesList = seriesData ? Object.values(seriesData) : [];
+  const seriesList = seriesData ? Object.values(seriesData) as any[] : [];
 
   // Placeholder data if seriesList is empty (can be removed if API always returns data or if a loading state is preferred)
   if (seriesList.length === 0) {
@@ -23,9 +22,9 @@ export default async function StoragePage() {
         description: 'Versatile and configurable storage units.',
         coverImage: { url: '/images/stock/storage-solution-1.webp', alt: 'Modular Storage System', width: 800, height: 600 },
         images: [],
-        category: 'storage-solutions' as ProductCategory, // Assert type
+        category: 'storage-solutions',
         features: [],
-        lastModified: new Date(),
+        lastModified: new Date().toISOString(),
         products: {},
         seoDescription: '',
       },
@@ -35,9 +34,9 @@ export default async function StoragePage() {
         description: 'Robust racking for industrial use.',
         coverImage: { url: '/images/stock/racking-system-2.webp', alt: 'Heavy Duty Racking', width: 800, height: 600 },
         images: [],
-        category: 'storage-solutions' as ProductCategory, // Assert type
+        category: 'storage-solutions',
         features: [],
-        lastModified: new Date(),
+        lastModified: new Date().toISOString(),
         products: {},
         seoDescription: '',
       },
@@ -47,9 +46,9 @@ export default async function StoragePage() {
         description: 'Secure and stylish office cabinets.',
         coverImage: { url: '/images/stock/office-cabinet-1.webp', alt: 'Office Cabinet', width: 800, height: 600 },
         images: [],
-        category: 'storage-solutions' as ProductCategory, // Assert type
+        category: 'storage-solutions',
         features: [],
-        lastModified: new Date(),
+        lastModified: new Date().toISOString(),
         products: {},
         seoDescription: '',
       },
@@ -59,9 +58,9 @@ export default async function StoragePage() {
         description: 'Exciting new products coming soon.',
         coverImage: { url: '/images/placeholder.jpg', alt: 'Placeholder Image', width: 800, height: 600 }, // Provide a placeholder ImageAsset
         images: [],
-        category: 'storage-solutions' as ProductCategory, // Assert type
+        category: 'storage-solutions',
         features: [],
-        lastModified: new Date(),
+        lastModified: new Date().toISOString(),
         products: {},
         seoDescription: '',
       },
@@ -76,9 +75,9 @@ export default async function StoragePage() {
           height: 600,
         },
         images: [],
-        category: "storage-solutions" as ProductCategory,
+        category: "storage-solutions",
         features: [],
-        lastModified: new Date(),
+        lastModified: new Date().toISOString(),
         products: {},
         seoDescription: "SEO description for placeholder storage series 1.",
       },
@@ -93,9 +92,9 @@ export default async function StoragePage() {
           height: 600,
         },
         images: [],
-        category: "storage-solutions" as ProductCategory,
+        category: "storage-solutions",
         features: [],
-        lastModified: new Date(),
+        lastModified: new Date().toISOString(),
         products: {},
         seoDescription: "SEO description for placeholder storage series 2.",
       },
@@ -110,9 +109,9 @@ export default async function StoragePage() {
           height: 600,
         },
         images: [],
-        category: "storage-solutions" as ProductCategory, // Corrected category value and type assertion
+        category: "storage-solutions", // Corrected category value and type assertion
         features: [],
-        lastModified: new Date(),
+        lastModified: new Date().toISOString(),
         products: {},
         seoDescription: "Durable heavy-duty shelving for all your storage needs.",
       },
@@ -127,9 +126,9 @@ export default async function StoragePage() {
           height: 600,
         },
         images: [],
-        category: "storage-solutions" as ProductCategory, // Corrected category value and type assertion
+        category: "storage-solutions", // Corrected category value and type assertion
         features: [],
-        lastModified: new Date(),
+        lastModified: new Date().toISOString(),
         products: {},
         seoDescription: "Customizable modular cabinets for efficient organization.",
       },
@@ -145,14 +144,14 @@ export default async function StoragePage() {
 
       {seriesList && seriesList.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {seriesList.map((series) => {
+          {(seriesList as any[]).map((series) => {
             const imageUrl = getImageUrl(series.coverImage) || "/images/placeholder.jpg"; // Handle fallback outside
             return (
               <Card key={series.id} className="overflow-hidden group hover:shadow-lg transition-all duration-300">
                 <div className="relative h-52">
                   <Image
                     src={imageUrl} // Use the potentially fallback URL
-                    alt={series.title}
+                    alt={series.title || 'Storage Series'}
                     fill
                     className="object-cover group-hover:scale-105 transition-all duration-500"
                   />

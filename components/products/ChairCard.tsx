@@ -17,7 +17,7 @@ export function ChairCard({ chair, basePath = '/chairs/director-series' }: Chair
       <div className="bg-white/40 backdrop-blur-lg border border-white/30 rounded-2xl overflow-hidden shadow-xl transition-all duration-300 transform group-hover:scale-[1.03] group-hover:shadow-2xl">
         <div className="aspect-square relative overflow-hidden">
           <Image
-            src={chair.imageUrl}
+            src={chair.imageUrl || ''}
             alt={chair.name}
             width={400}
             height={400}

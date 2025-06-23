@@ -4,13 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run typecheck && next build",
     "start": "next start",
     "lint": "next lint",
     "analyze": "ANALYZE=true next build",
     "analyze:win": "set ANALYZE=true && next build",
     "upload-images": "ts-node scripts/upload-images-to-s3.ts",
-    "create-placeholders": "node scripts/create-collection-placeholders.js"
+    "create-placeholders": "node scripts/create-collection-placeholders.js",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.806.0",
