@@ -1,6 +1,6 @@
 import { ProductRepository } from './repository';
 import { ModularProductRepository } from './modular-repository';
-import { ProductCategorySlug } from '@/types/product-categories';
+import { ProductCategorySlug } from '../../../types/product-categories';
 
 // Service class that provides product-related business logic
 export class ProductService {

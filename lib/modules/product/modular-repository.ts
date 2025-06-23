@@ -1,5 +1,5 @@
 import { chairs } from '@/lib/data/products/chairs';
-import { ProductCategorySlug } from '@/lib/data/product-categories';
+import { ProductCategorySlug } from '../../../types/product-categories';
 import { 
   ProductRepository, 
   ProductNotFoundError, 

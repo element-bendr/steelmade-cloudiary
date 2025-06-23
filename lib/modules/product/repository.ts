@@ -4,7 +4,7 @@
  * This file defines the interface for product repositories and common error types.
  */
 
-import { ProductCategorySlug } from '@/lib/data/product-categories';
+import { ProductCategorySlug } from '../../../types/product-categories';
 import { ProductSeries } from '@/lib/data/product-types';
 
 /**

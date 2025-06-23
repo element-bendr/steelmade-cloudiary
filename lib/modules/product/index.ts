@@ -10,7 +10,7 @@ import { ModularProductRepository } from './modular-repository';
 import { LegacyProductRepository } from './legacy-repository';
 import { ProductNotFoundError, SeriesNotFoundError, CategoryNotFoundError } from './repository';
 import { productModuleConfig } from './config';
-import { ProductCategorySlug } from '@/lib/data/product-categories';
+import { ProductCategorySlug } from '../../../types/product-categories';
 
 // Create the appropriate repository based on configuration
 let repository: ProductRepository;

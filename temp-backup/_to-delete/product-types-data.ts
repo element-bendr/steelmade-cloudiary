@@ -1,6 +1,5 @@
 import type { ProductCategory as ImportedProductCategory, SeriesMetadata } from "@/types/collections";
 import type { Series } from "@/components/portfolio/types";
-import type { ProductData } from "@/types/products";
 
 // Add this export to the product-types.ts file
 export type ProductType = 
@@ -27,7 +26,17 @@ export interface ProductVariant {
   specifications: Record<string, string>;
 }
 
-export interface ExtendedProductData extends ProductData {
+export interface ExtendedProductData {
+  id: string;
+  name: string;
+  description: string;
+  category: string;
+  seriesId: string;
+  inStock: boolean;
+  imageUrl: string;
+  images?: Array<{ url: string; alt: string; width: number; height: number }>;
+  features?: string[];
+  specifications?: Record<string, string>;
   variants?: ProductVariant[];
 }
 

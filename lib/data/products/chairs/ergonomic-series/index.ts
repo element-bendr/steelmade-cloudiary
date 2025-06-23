@@ -2,11 +2,15 @@ import { ExtendedProductData, ProductSeries } from '../../../product-types';
 import { berlinErgonomicChair } from './berlin';
 import { rogerErgonomicChair } from './roger';
 import { udErgonomicChair } from './ud';
+import { flamingoErgonomicChair } from './flamingo';
+import { dcErgonomicChair } from './dc';
 
 export const ergonomicSeriesProducts: Record<string, ExtendedProductData> = {
   [berlinErgonomicChair.id]: berlinErgonomicChair,
   [rogerErgonomicChair.id]: rogerErgonomicChair,
-  [udErgonomicChair.id]: udErgonomicChair
+  [udErgonomicChair.id]: udErgonomicChair,
+  [flamingoErgonomicChair.id]: flamingoErgonomicChair,
+  [dcErgonomicChair.id]: dcErgonomicChair
 };
 
 export const ergonomicSeries: ProductSeries = {

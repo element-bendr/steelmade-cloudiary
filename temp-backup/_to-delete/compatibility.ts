@@ -1,5 +1,5 @@
 import { ModularProductRepository } from './modular-repository';
-import { ProductCategorySlug } from '@/types/product-categories';
+import { ProductCategorySlug } from '../../types/product-categories';
 
 // Create a singleton instance of the ModularProductRepository
 const productRepository = new ModularProductRepository();

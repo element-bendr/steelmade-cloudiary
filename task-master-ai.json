@@ -541,6 +541,13 @@
       "status": "pending",
       "priority": "high",
       "details": "## Implementation Steps\n\n1. Audit all usages of ProductSeries, SeriesMetadata, and related types.\n2. Create a unified type that covers all required fields (coverImage, seoDescription, etc).\n3. Update all product series data files and usages to use the unified type.\n4. Refactor any components or pages that expect the old types.\n5. Update documentation in #architecture and #memory to reflect the new structure.\n6. Test all affected pages and components for correctness.\n7. Mark this task as done when all type errors are resolved and documentation is complete."
+    },
+    {
+      "title": "Refactor all chair series to use canonical product-with-variants structure",
+      "description": "Ensure every chair in every series is a single ExtendedProductData object with all variants in the variants array. Update each series index to export a canonical product map. Remove legacy/side-effect-only imports. Document in #architecture and #memory.",
+      "status": "done",
+      "tags": ["refactor", "product-data", "chairs", "variants", "DRY", "modular"],
+      "completedAt": "2025-06-23"
     }
   ],
   "observations": [

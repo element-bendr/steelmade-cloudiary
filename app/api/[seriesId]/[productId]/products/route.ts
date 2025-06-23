@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getProductsBySeries } from '@/lib/modules/product';
 import { isValidCategorySlug } from '@/types/product-categories-unified';
-import type { ProductCategorySlug } from '@/lib/data/product-categories';
+import type { ProductCategorySlug } from '@/types/product-categories';
 
 export async function GET(
   request: Request,

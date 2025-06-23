@@ -1,7 +1,7 @@
 import { cache } from 'react'
 import { APIError } from '../errors';
 import { collections } from '../data/collections-data';
-import { ProductCategorySlug } from '../data/product-categories';
+import { ProductCategorySlug, isValidCategorySlug } from '../../types/product-categories';
 import { ProductSeries } from '../data/product-types'
 
 // Use imported collections data instead of hardcoded data
@@ -59,17 +59,4 @@ export const getSeriesById = cache(async (category: ProductCategorySlug, seriesI
   }
 });
 
-/**
- * Check if the category slug is valid
- */
-export function isValidCategorySlug(category: string): category is ProductCategorySlug {
-  return [
-    'chairs',
-    'hospital-furniture',
-    'racking-systems',
-    'school-furniture',
-    'storage-solutions',
-    'modular-furniture',
-    'office-accessories',
-  ].includes(category);
-}
+export { isValidCategorySlug };

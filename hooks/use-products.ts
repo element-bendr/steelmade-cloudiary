@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react"
 import type { ExtendedProductData } from "../lib/data/product-types"
-import { ProductCategorySlug, isValidCategorySlug } from "../types/product-categories"
+import { ProductCategorySlug, isValidCategorySlug } from '../types/product-categories';
 
 interface UseProductsResult {
   products: ExtendedProductData[]

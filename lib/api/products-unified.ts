@@ -7,7 +7,7 @@
 import { cache } from 'react'
 import { APIError } from '../errors';
 import { collections } from '../data/collections-data';
-import { ProductCategorySlug } from '../data/product-categories';
+import { ProductCategorySlug } from '../../types/product-categories';
 import { ExtendedProductData, ProductSeries } from '../data/product-types';
 
 // Use imported collections data

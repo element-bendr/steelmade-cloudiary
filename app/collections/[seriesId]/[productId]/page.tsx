@@ -7,7 +7,7 @@ import { CollectionDetail } from "@/components/collections/CollectionDetail"
 import { CollectionNav } from "@/components/collections/CollectionNav"
 import { RelatedCollections } from "@/components/collections/RelatedCollections"
 import { Skeleton } from "@/components/ui/skeleton"
-import { ProductCategorySlug } from "@/lib/data/product-categories"
+import { ProductCategorySlug } from '@/types/product-categories'
 
 interface CollectionPageProps {
   params: {
