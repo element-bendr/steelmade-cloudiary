@@ -54,6 +54,8 @@ export const dcErgonomicChair: ExtendedProductData = {
 - **Modular**: Each product is a single, self-contained object.
 - **Extensible**: New variants or features can be added easily.
 - **Declarative & Poetic**: Code is readable, maintainable, and expressive.
+- **Functional**: All code is written in a functional, declarative, and modular style, as per [production instructions](../../.github/instructions/production.instructions.md).
+- **Production Ready**: All code is ready for deployment, integration, and extension.
 
 ## Process for Adding New Products or Categories
 1. Use the canonical template in `lib/templates/product-template.ts`.
@@ -62,13 +64,48 @@ export const dcErgonomicChair: ExtendedProductData = {
 4. Export only the canonical product object from each product file.
 5. Aggregate products in series/category `index.ts` files as needed.
 6. Update documentation and memory as changes are made.
+7. Follow [production instructions](../../.github/instructions/production.instructions.md) for all code and documentation.
 
 ## Template Location
 - `lib/templates/product-template.ts`
 
+## Migration Status
+
+All products in the Ergonomic Series and the following Executive Series products have been migrated to the canonical structure:
+- benz, commander, luxury, obama, korean, lx, duster, perkshynl, perk, skoda, sahara, mini-ginger-dolphin, supreme, venus-rev-ud, irana, jet-lazer-computer, premier, nano, mini-markson, phantom, wilson, makson, amigo, amazon, siemens, syndicate, verna, jet-lazer-computer: Each product is in its own folder with an `index.ts` file.
+- Legacy flat `.ts` files are marked as migrated and safe to delete.
+- Series `index.ts` imports use the canonical folder structure.
+
+## Migration Progress
+
+- Ergonomic Series: All products migrated (flamingo, berlin, roger, ud, dc, mercedes)
+- Executive Series: Migrated (benz, commander, luxury, obama, korean, lx, duster, perkshynl, perk, skoda, sahara, mini-ginger-dolphin, supreme, venus-rev-ud, irana, jet-lazer-computer, premier, nano, mini-markson, phantom, wilson, makson, amigo, amazon, siemens, syndicate, verna, jet-lazer-computer)
+  - Jet/Lazer/Computer Executive Chair migrated to canonical structure (lib/data/products/chairs/executive-series/jet-lazer-computer/index.ts)
+- Director Series: Migrated (classic-director-chair, bigboss-gold, trident, auto-loader)
+  - Created canonical `index.ts` for each in their own folder
+  - Marked legacy files as migrated and safe to delete
+  - Updated imports in `director-series/index.ts` to use canonical structure
+- 2025-06-24: Director Series Batch Migration 2
+  - Migrated to canonical structure: tycoon-director-chair, woodland-director-chair, opera-director-chair, bigboss-gold-director-chair (Director Series)
+  - Created canonical `index.ts` for each in their own folder
+  - Marked legacy files as migrated and safe to delete
+  - Updated imports in `director-series/index.ts` to use canonical structure
+  - All changes follow DRY, modular, declarative, and poetic standards
+- 2025-06-24: Executive Series Siemens Chair Review
+  - Siemens Executive Chair already conforms to canonical structure (single ExtendedProductData object in its own folder)
+  - No migration required for this product
+  - Confirmed DRY, modular, declarative, and poetic standards
+- 2025-06-24: Director Series Ashley Director Chair Migration
+  - Migrated to canonical structure: ashley-director-chair (Director Series)
+  - Created canonical `index.ts` in its own folder
+  - Marked legacy file as migrated and safe to delete
+  - Updated imports in `director-series/index.ts` to use canonical structure
+  - All changes follow DRY, modular, declarative, and poetic standards
+
 ## See Also
 - #memory/canonical-product-data-memory.md
 - #architecture/architecture.md
+- [Production Instructions](../../.github/instructions/production.instructions.md)
 
 ---
-This standard is enforced for all chair products and will be extended to all categories as data is added. All maintainers must follow this structure for clarity, maintainability, and poetic code.
+This standard is enforced for all chair products and will be extended to all categories as data is added. All maintainers must follow this structure for clarity, maintainability, and poetic code. All code must be functional, declarative, modular, and production ready, as described in the [production instructions](../../.github/instructions/production.instructions.md).

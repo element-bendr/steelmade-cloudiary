@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { ProductDetailLayout } from '@/components/products';
 
 // Import the correct data file
-import { tycoondirectorchair as tycoonDirectorChair } from '@/lib/data/products/chairs/director-series/tycoon-director-chair';
+import tycoonDirectorChair from '@/lib/data/products/chairs/director-series/tycoon-director-chair/index';
 
 /**
  * Product detail page for Tycoon Director Chair

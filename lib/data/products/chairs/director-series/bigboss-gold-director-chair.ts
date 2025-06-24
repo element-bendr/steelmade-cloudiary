@@ -1,3 +1,5 @@
+// Legacy file migrated to bigboss-gold-director-chair/index.ts. Safe to delete.
+
 import { ExtendedProductData } from "@/lib/data/product-types";
 
 export const bigBossGoldDirectorChair: ExtendedProductData = {

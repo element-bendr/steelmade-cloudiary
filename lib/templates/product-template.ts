@@ -1,4 +1,5 @@
-import { ExtendedProductData } from '@/lib/data/product-types';
+import type { ExtendedProductData } from '@/lib/data/product-types';
+export type { ExtendedProductData } from '@/lib/data/product-types';
 
 /**
  * Template for creating a new product in any category.

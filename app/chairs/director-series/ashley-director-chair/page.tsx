@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { ProductDetailLayout } from '@/components/products';
 
 // Import the correct data file
-import { ashleyDirectorChair } from '@/lib/data/products/chairs/director-series/ashley-director-chair';
+import ashleyDirectorChair from '@/lib/data/products/chairs/director-series/ashley-director-chair/index';
 
 export default function AshleyDirectorChairPage() {
   const [showContactForm, setShowContactForm] = useState(false);

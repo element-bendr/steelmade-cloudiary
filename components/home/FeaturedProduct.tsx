@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from "@/components/ui/button";
-import { ashleyDirectorChair } from '@/lib/data/products/chairs/director-series/ashley-director-chair';
+import ashleyDirectorChair from '@/lib/data/products/chairs/director-series/ashley-director-chair/index';
 
 const FeaturedProduct = () => {
   const featuredProduct = ashleyDirectorChair;

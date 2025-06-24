@@ -1,19 +1,19 @@
 "use client";
 
 // Import individual chair data files
-import ashleyDirectorChair from '@/lib/data/products/chairs/director-series/ashley';
-import operaDirectorChair from '@/lib/data/products/chairs/director-series/opera';
-import tycoonDirectorChair from '@/lib/data/products/chairs/director-series/tycoon';
-import { bigBossGoldDirectorChair } from '@/lib/data/products/chairs/director-series/bigboss-gold-director-chair';
-import woodlandDirectorChair from '@/lib/data/products/chairs/director-series/woodland';
-import bostonDirectorChair from '@/lib/data/products/chairs/director-series/boston';
-import grandezzaDirectorChair from '@/lib/data/products/chairs/director-series/grandezza';
-import kotakDirectorChair from '@/lib/data/products/chairs/director-series/kotak';
-import milanoDirectorChair from '@/lib/data/products/chairs/director-series/milano';
-import monarchDirectorChair from '@/lib/data/products/chairs/director-series/monarch';
-import nissanDirectorChair from '@/lib/data/products/chairs/director-series/nissan';
-import parkerDirectorChair from '@/lib/data/products/chairs/director-series/parker';
-import tridentDirectorChair from '@/lib/data/products/chairs/director-series/trident';
+import ashleyDirectorChair from '@/lib/data/products/chairs/director-series/ashley-director-chair/index';
+import operaDirectorChair from '@/lib/data/products/chairs/director-series/opera-director-chair/index';
+import tycoonDirectorChair from '@/lib/data/products/chairs/director-series/tycoon-director-chair/index';
+import bigBossGoldDirectorChair from '@/lib/data/products/chairs/director-series/bigboss-gold-director-chair/index';
+import woodlandDirectorChair from '@/lib/data/products/chairs/director-series/woodland-director-chair/index';
+import bostonDirectorChair from '@/lib/data/products/chairs/director-series/boston/index';
+import grandezzaDirectorChair from '@/lib/data/products/chairs/director-series/grandezza/index';
+import kotakDirectorChair from '@/lib/data/products/chairs/director-series/kotak/index';
+import milanoDirectorChair from '@/lib/data/products/chairs/director-series/milano/index';
+import monarchDirectorChair from '@/lib/data/products/chairs/director-series/monarch/index';
+import nissanDirectorChair from '@/lib/data/products/chairs/director-series/nissan/index';
+import parkerDirectorChair from '@/lib/data/products/chairs/director-series/parker/index';
+import tridentDirectorChair from '@/lib/data/products/chairs/director-series/trident/index';
 
 import React from 'react';
 import { ChairCard } from '@/components/products/ChairCard';

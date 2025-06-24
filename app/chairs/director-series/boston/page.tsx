@@ -1,15 +1,23 @@
 "use client";
 
 import React, { useState } from 'react';
-import bostonDirectorChair from '@/lib/data/products/chairs/director-series/boston';
+import bostonDirectorChair from '@/lib/data/products/chairs/director-series/boston/index';
 import { ChairPageLayout } from '@/components/products/ChairPageLayout';
 
 export default function BostonDirectorChairPage() {
-  const [selectedVariant, setSelectedVariant] = useState(bostonDirectorChair.defaultVariant ?? (bostonDirectorChair.variants?.[0]?.id ?? ''));
+  const [selectedVariant, setSelectedVariant] = useState(bostonDirectorChair.variants?.[0]?.variantId ?? '');
   
   return (
     <ChairPageLayout
-      chair={bostonDirectorChair}
+      chair={{
+        ...bostonDirectorChair,
+        images: bostonDirectorChair.images?.map(img => typeof img === 'string' ? img : img.url),
+        variants: bostonDirectorChair.variants?.map(v => ({
+          id: v.variantId,
+          name: v.variantName,
+          imageUrl: v.imageUrl
+        })),
+      }}
       selectedVariant={selectedVariant}
       onVariantChange={setSelectedVariant}
       breadcrumbs={[

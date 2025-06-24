@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { woodlandDirectorChair } from '@/lib/data/products/chairs/director-series/woodland-director-chair';
+import woodlandDirectorChair from '@/lib/data/products/chairs/director-series/woodland-director-chair/index';
 import { ProductDetailLayout } from '@/components/products';
 
 export default function WoodlandDirectorChairPage() {

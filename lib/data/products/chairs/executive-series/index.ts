@@ -1,32 +1,30 @@
 import { ProductSeries } from '../../../product-types';
-import { toExtendedProductData, isExtendedProductData } from './toExtendedProductData';
-import { skodaExecutiveChair } from './skoda';
-import { commanderExecutiveChair } from './commander';
-import { koreanExecutiveChair } from './korean';
-import { lxExecutiveChair } from './lx';
-import { obamaExecutiveChair } from './obama';
-import { benzExecutiveChair } from './benz';
-import { dusterExecutiveChair } from './duster';
-import { perkshynlExecutiveChair } from './perkshynl';
-import { perkExecutiveChair } from './perk';
-import luxuryExecutiveChair from './luxury';
-import amigoExecutiveChair from './amigo';
-import amazonExecutiveChair from './amazon';
-import saharaExecutiveChair from './sahara';
+import { skodaExecutiveChair } from './skoda/index';
+import { commanderExecutiveChair } from './commander/index';
+import { koreanExecutiveChair } from './korean/index';
+import { lxExecutiveChair } from './lx/index';
+import { obamaExecutiveChair } from './obama/index';
+import { benzExecutiveChair } from './benz/index';
+import { dusterExecutiveChair } from './duster/index';
+import { perkshynlExecutiveChair } from './perkshynl/index';
+import { perkExecutiveChair } from './perk/index';
+import { default as luxuryExecutiveChair } from './luxury/index';
+import { amigoExecutiveChair } from './amigo/index';
+import amazon from './amazon/index';
+import { saharaExecutiveChair } from './sahara/index';
 import siemensExecutiveChair from './siemens';
 import syndicateExecutiveChair from './syndicate';
 import vernaExecutiveChair from './verna';
-import supremeExecutiveChair from './supreme';
-import miniMarksonExecutiveChair from './mini-markson';
-import venusRevUdExecutiveChair from './venus-rev-ud';
-import iranaExecutiveChair from './irana';
-import { jetLazerComputerExecutiveChair } from './jet-lazer-computer';
-import { premierExecutiveChair } from './premier';
-import { nanoExecutiveChair } from './nano';
-import { miniGingerDolphinExecutiveChair } from './mini-ginger-dolphin';
-import { phantomExecutiveChair } from './phantom';
-import { wilsonExecutiveChair } from './wilson';
-import { maksonExecutiveChair } from './makson';
+import { supremeExecutiveChair } from './supreme/index';
+import { miniMarksonExecutiveChair } from './mini-markson/index';
+import { venusRevUdExecutiveChair } from './venus-rev-ud/index';
+import { iranaExecutiveChair } from './irana/index';
+import { premierExecutiveChair } from './premier/index';
+import { nanoExecutiveChair } from './nano/index';
+import { miniGingerDolphinExecutiveChair } from './mini-ginger-dolphin/index';
+import { phantomExecutiveChair } from './phantom/index';
+import { wilsonExecutiveChair } from './wilson/index';
+import { maksonExecutiveChair } from './makson/index';
 
 export const executiveSeries: ProductSeries = {
   id: 'executive-series',
@@ -52,7 +50,7 @@ export const executiveSeries: ProductSeries = {
       perkExecutiveChair,
       luxuryExecutiveChair,
       amigoExecutiveChair,
-      amazonExecutiveChair,
+      amazon,
       saharaExecutiveChair,
       siemensExecutiveChair,
       syndicateExecutiveChair,
@@ -61,17 +59,15 @@ export const executiveSeries: ProductSeries = {
       miniMarksonExecutiveChair,
       venusRevUdExecutiveChair,
       iranaExecutiveChair,
-      skodaExecutiveChair,
-      jetLazerComputerExecutiveChair,
       premierExecutiveChair,
       nanoExecutiveChair,
       miniGingerDolphinExecutiveChair,
       phantomExecutiveChair,
       wilsonExecutiveChair,
-      maksonExecutiveChair
-    ].map(product => {
-      const prod = isExtendedProductData(product) ? product : toExtendedProductData(product);
-      return [prod.id, prod];
-    })
+      maksonExecutiveChair,
+      skodaExecutiveChair
+    ]
+      .filter(Boolean)
+      .map((p) => [p.id, p])
   ),
 };

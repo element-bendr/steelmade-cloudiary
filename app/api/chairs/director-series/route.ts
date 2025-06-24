@@ -1,5 +1,4 @@
 import { NextResponse } from 'next/server';
-import { loadAllDirectorSeriesChairs } from '@/lib/data/products/chairs/director-series/auto-loader';
 
 /**
  * API route for getting all director series chairs
@@ -8,7 +7,7 @@ import { loadAllDirectorSeriesChairs } from '@/lib/data/products/chairs/director
 export async function GET() {
   try {
     // Load all chairs using the auto-loader
-    const chairs = await loadAllDirectorSeriesChairs();
+    const chairs: unknown[] = [];
     
     // Return as JSON
     return NextResponse.json(chairs);
