@@ -1,7 +1,7 @@
 import { ExtendedProductData } from '@/lib/templates/product-template';
 
 const bostonDirectorChair: ExtendedProductData = {
-  id: 'boston',
+  id: 'boston-director-chair',
   name: 'Boston Director Chair',
   description: 'The Boston Director Chair combines elegant design with premium comfort, perfect for professional settings.',
   category: 'chairs',

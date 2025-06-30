@@ -1,7 +1,7 @@
 import { ExtendedProductData } from '@/lib/templates/product-template';
 
 const monarchDirectorChair: ExtendedProductData = {
-  id: 'monarch',
+  id: 'monarch-director-chair',
   name: 'Monarch Director Chair',
   description: 'The Monarch Director Chair is a statement of regal comfort and modern design, ideal for executive spaces.',
   category: 'chairs',

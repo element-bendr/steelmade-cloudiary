@@ -1,7 +1,7 @@
 import { ExtendedProductData } from '@/lib/templates/product-template';
 
 const parkerDirectorChair: ExtendedProductData = {
-  id: 'parker',
+  id: 'parker-director-chair',
   name: 'Parker Director Chair',
   description: 'The Parker Director Chair is designed for those who value both aesthetics and comfort in their workspace.',
   category: 'chairs',

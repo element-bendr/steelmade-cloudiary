@@ -1,7 +1,7 @@
 import { ExtendedProductData } from '@/lib/templates/product-template';
 
 const milanoDirectorChair: ExtendedProductData = {
-  id: 'milano',
+  id: 'milano-director-chair',
   name: 'Milano Director Chair',
   description: 'The Milano Director Chair is a fusion of Italian design and executive comfort, perfect for modern offices.',
   category: 'chairs',

@@ -1,7 +1,7 @@
 import { ExtendedProductData } from '@/lib/templates/product-template';
 
 const kotakDirectorChair: ExtendedProductData = {
-  id: 'kotak',
+  id: 'kotak-director-chair',
   name: 'Kotak Director Chair',
   description: 'The Kotak Director Chair blends modern lines with classic comfort, perfect for boardrooms and creative spaces.',
   category: 'chairs',

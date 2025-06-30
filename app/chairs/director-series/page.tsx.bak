@@ -1,8 +1,0 @@
-// First let's back up the existing director series page
-import React from 'react';
-import { Metadata } from 'next';
-import { ChairCard } from '@/components/products/ChairCard';
-import { directorSeriesChairs } from '@/lib/data/products/chairs/director-series';
-
-// This is a backup of the original page.tsx file
-// The content will be preserved here for reference

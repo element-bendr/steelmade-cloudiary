@@ -1,7 +1,7 @@
 import { ExtendedProductData } from '@/lib/data/product-types';
 
 const bigBossGoldDirectorChair: ExtendedProductData = {
-  id: 'bigbossgold-director-chair',
+  id: 'bigboss-gold-director-chair',
   name: 'BigBoss Gold Director Chair',
   description: 'The BigBoss Gold Director Chair combines luxury with ergonomic design for executive comfort and style.',
   category: 'chairs',

@@ -1,7 +1,7 @@
 import { ExtendedProductData } from '@/lib/templates/product-template';
 
 const nissanDirectorChair: ExtendedProductData = {
-  id: 'nissan',
+  id: 'nissan-director-chair',
   name: 'Nissan Director Chair',
   description: 'The Nissan Director Chair offers a blend of ergonomic support and contemporary style for discerning professionals.',
   category: 'chairs',

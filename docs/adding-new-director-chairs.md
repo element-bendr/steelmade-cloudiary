@@ -1,148 +1,85 @@
-# Adding New Director Series Chairs
-
-This guide explains how to add new chairs to the Director Series using the standardized factory pattern.
+# Adding New Director Series Chairs (2025 Canonical Pattern)
 
 ## Overview
 
-The Director Series chairs use a consistent factory pattern that ensures uniform data structure, styling, and functionality. This approach simplifies the process of adding new chairs while maintaining consistency across the product line.
+Director Series chairs now use a canonical, DRY, and modular data structure. All chair data is registered in `lib/data/products/chairs/director-series/index.ts` as part of the `directorSeries.products` object. No runtime registry or manual array is needed. UI pages use this canonical object for all lookups and listings.
 
-## Prerequisites
+## Canonical List of Director Series Chairs
 
-Before adding a new chair, ensure you have:
+The following chairs are currently part of the canonical Director Series:
 
-1. Chair details (name, description, features)
-2. Images for each variant (high-back, mid-back)
-3. Cloudinary image codes for each variant
+- Ashley Director Chair
+- Opera Director Chair
+- Tycoon Director Chair
+- BigBoss Gold Director Chair
+- Woodland Director Chair
+- Boston Director Chair
+- Grandezza Director Chair
+- Kotak Director Chair
+- Milano Director Chair
+- Monarch Director Chair
+- Nissan Director Chair
+- Parker Director Chair
+- Trident Director Chair
 
-## Step-by-Step Guide
+Each chair is defined in its own folder as an `index.ts` file and registered in the `products` map in `lib/data/products/chairs/director-series/index.ts`.
 
-### 1. Create the Chair Data File
+## How to Add a New Chair
 
-Create a new file in `lib/data/products/chairs/director-series/` with the chair's name (e.g., `executive.ts`):
+1. **Create the Chair Data File**
+   - Add a new folder and `index.ts` for your chair in `lib/data/products/chairs/director-series/`.
+   - Export an `ExtendedProductData` object with all chair details and variants.
 
-```typescript
-import { createDirectorChair } from '@/lib/factories/chairFactory';
-import { registerDirectorChair } from './index';
+2. **Register in Canonical Index**
+   - Import your chair in `lib/data/products/chairs/director-series/index.ts`.
+   - Add it to the `products` map using `[yourChair.id]: yourChair`.
 
-/**
- * Executive Director Chair data
- */
-const executiveDirectorChair = createDirectorChair({
-  id: 'executive',
-  name: 'Executive Director Chair',
-  description: 'The Executive Director Chair combines premium materials with exceptional comfort for professional settings.',
-  variants: [
-    {
-      id: 'high-back',
-      name: 'High Back',
-      imageCode: 'ic-150-hb'  // Cloudinary image code
-    },
-    {
-      id: 'mid-back',
-      name: 'Mid Back',
-      imageCode: 'ic-151-mb'  // Cloudinary image code
-    }
-  ],
-  features: [
-    'Premium aluminum construction',
-    'Ergonomic design for extended comfort',
-    'Weather-resistant materials',
-    'Foldable for easy storage',
-    'Professional appearance',
-    'Available in high-back and mid-back variants'
-  ],
-  defaultVariant: 'high-back'  // Which variant to show by default
-});
+3. **No Registry Needed**
+   - Do NOT use or import any runtime registry or `registerDirectorChair`. All lookups are static and canonical.
 
-// Register this chair with the director series
-registerDirectorChair(executiveDirectorChair);
+4. **UI Integration**
+   - The listing page (`app/chairs/director-series/page.tsx`) automatically lists all chairs in `directorSeries.products`.
+   - The detail page (`app/chairs/director-series/[productId]/page.tsx`) looks up the chair by `productId` in `directorSeries.products`.
 
-export default executiveDirectorChair;
-```
+5. **Testing**
+   - Build and test the app. Your chair should appear automatically in the listing and be accessible by its `id`.
 
-### 2. Add Chair Import to Index File
-
-Update the `lib/data/products/chairs/director-series/index.ts` file to import your new chair:
+## Example
 
 ```typescript
-// Existing imports...
+// lib/data/products/chairs/director-series/my-new-chair/index.ts
+import { ExtendedProductData } from '@/lib/data/product-types';
 
-// Add your new chair import
-import './executive';
+const myNewChair: ExtendedProductData = {
+  id: 'my-new-chair',
+  name: 'My New Chair',
+  // ...other fields...
+};
+
+export default myNewChair;
 ```
-
-### 3. Create the Chair Detail Page
-
-Create a new folder and page file in `app/chairs/director-series/executive/page.tsx`:
 
 ```typescript
-"use client";
+// lib/data/products/chairs/director-series/index.ts
+import myNewChair from './my-new-chair';
 
-import React, { useState } from 'react';
-import executiveDirectorChair from '@/lib/data/products/chairs/director-series/executive';
-import { ChairPageLayout } from '@/components/products/ChairPageLayout';
-
-export default function ExecutiveDirectorChairPage() {
-  const [selectedVariant, setSelectedVariant] = useState(executiveDirectorChair.defaultVariant);
-  
-  return (
-    <ChairPageLayout
-      chair={executiveDirectorChair}
-      selectedVariant={selectedVariant}
-      onVariantChange={setSelectedVariant}
-      breadcrumbs={[
-        { name: 'Chairs', href: '/chairs' },
-        { name: 'Director Series', href: '/chairs/director-series' },
-        { name: executiveDirectorChair.name, href: '/chairs/director-series/executive' }
-      ]}
-    />
-  );
-}
+export const directorSeries = {
+  // ...existing fields...
+  products: {
+    ...,
+    [myNewChair.id]: myNewChair,
+  }
+};
 ```
-
-### 4. Add Chair to Director Series Page
-
-Update the array of chairs in `app/chairs/director-series/page.tsx`:
-
-```typescript
-// Import your new chair
-import executiveDirectorChair from '@/lib/data/products/chairs/director-series/executive';
-
-// Add to the chairs array
-const chairs = [
-  ashleyDirectorChair,
-  operaDirectorChair,
-  tycoonDirectorChair,
-  bigbossGoldDirectorChair,
-  woodlandDirectorChair,
-  bostonDirectorChair,
-  executiveDirectorChair  // Add your new chair here
-];
-```
-
-### 5. Verify Implementation
-
-1. Make sure the application builds without errors
-2. Check that the new chair appears on the Director Series page
-3. Test the chair detail page to ensure variants work correctly
-4. Verify that the chair follows the same styling as other chairs
 
 ## Cloudinary Image Guidelines
-
-- Upload images to the `steelmade/chairs/director-series/{chair-name}/` path
-- Use a consistent naming convention for image codes:
-  - Format: `ic-{number}-{variant}`
-  - Example: `ic-150-hb` for high-back variant
-- Ensure images have the same dimensions and aspect ratio as other chair images
+- Upload images to `steelmade/chairs/director-series/{chair-name}/`
+- Use consistent naming for image codes and variants
 
 ## Troubleshooting
+- If your chair does not appear, check the `products` map in the canonical index file.
+- Do not use any registry or manual array—only the canonical object.
 
-If your chair doesn't appear:
-- Check that it's properly registered via `registerDirectorChair`
-- Verify the import in the index.ts file
-- Ensure the chair is added to the array in the director series page
-
-If images don't display:
-- Verify the Cloudinary image codes are correct
-- Check that the images are uploaded to the right path
-- Ensure the chair ID matches the folder name in Cloudinary
+## Migration Note
+- The runtime registry (`registerDirectorChair`) is deprecated and should not be used.
+- All documentation and onboarding should reference only the canonical pattern.

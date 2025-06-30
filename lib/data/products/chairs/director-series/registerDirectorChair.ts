@@ -1,3 +1,5 @@
+// Deprecated: Legacy runtime registry for director series chairs. Safe to delete.
+// All lookups now use the canonical directorSeries.products object.
 // Functional, declarative registration for director series chairs
 // This file exists to break circular dependencies between the registry and individual chair modules.
 import type { Chair } from '@/lib/types/chair';

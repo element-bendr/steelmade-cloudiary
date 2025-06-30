@@ -35,6 +35,13 @@ export const dcErgonomicChair: ExtendedProductData = {
       name: 'IC-344 HB Grey',
       imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1750684597/steelmade/chairs/ergonomic-series/dc/ic-344-hb-grey.jpg',
       description: 'High-back ergonomic chair in grey, engineered for all-day comfort.'
+    },
+    {
+      variantId: 'ic-343-mb-black',
+      variantName: 'Mid Back Black',
+      name: 'IC-343 MB Black',
+      imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1750684600/steelmade/chairs/ergonomic-series/dc/ic-343-mb-black.jpg',
+      description: 'Ergonomic mid-back chair, black finish, crafted for enduring comfort and poetic productivity.'
     }
   ]
 };

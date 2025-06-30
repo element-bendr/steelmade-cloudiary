@@ -1,7 +1,7 @@
 import { ExtendedProductData } from '@/lib/templates/product-template';
 
 const grandezzaDirectorChair: ExtendedProductData = {
-  id: 'grandezza',
+  id: 'grandezza-director-chair',
   name: 'Grandezza Director Chair',
   description: 'The Grandezza Director Chair embodies grandeur and comfort, crafted for those who command presence and poise.',
   category: 'chairs',
