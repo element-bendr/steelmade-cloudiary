@@ -1,18 +1,23 @@
 "use client"
 
 import * as React from "react"
+import { motion, MotionProps } from "framer-motion"
 import { cn } from "@/lib/utils"
+
+type CardProps = React.HTMLAttributes<HTMLDivElement> & MotionProps;
 
 const Card = React.forwardRef<
   HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
+  CardProps
 >(({ className, ...props }, ref) => (
-  <div
+  <motion.div
     ref={ref}
     className={cn(
-      "rounded-lg border bg-card text-card-foreground shadow-sm",
+      "enhanced-morphism rounded-lg",
       className
     )}
+    whileHover={{ scale: 1.03, rotateX: 10, rotateY: 15 }}
+    transition={{ type: "spring", stiffness: 400, damping: 17 }}
     {...props}
   />
 ))
@@ -50,9 +55,6 @@ const CardFooter = React.forwardRef<
 ))
 CardFooter.displayName = "CardFooter"
 
-/**
- * CardTitle: Optimized for semantic heading, responsive, and accessible.
- */
 const CardTitle = React.forwardRef<
   HTMLHeadingElement,
   React.HTMLAttributes<HTMLHeadingElement>
@@ -70,9 +72,6 @@ const CardTitle = React.forwardRef<
 ))
 CardTitle.displayName = "CardTitle"
 
-/**
- * CardDescription: Optimized for secondary text, responsive, and accessible.
- */
 const CardDescription = React.forwardRef<
   HTMLParagraphElement,
   React.HTMLAttributes<HTMLParagraphElement>
