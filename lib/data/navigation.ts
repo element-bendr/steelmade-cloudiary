@@ -96,6 +96,11 @@ export const mainNavigation: NavigationItem[] = [
               title: "Executive Series",
               href: "/chairs/executive-series",
               description: "Premium executive seating"
+            },
+            {
+              title: "Visitor's Series",
+              href: "/chairs/visitor-series",
+              description: "Poetic visitor seating for every guest"
             }
           ],
           featured: {

@@ -27,6 +27,9 @@
 - Implemented Boston Director Chairs in the Director Series
 - Added comprehensive documentation for Director Series implementation
 - Created enhanced Chair Factory pattern for consistent chair creation
+- Venus & Vista chair added to Visitor Series registry as a modular entry with three variants and Cloudinary images.
+- Updated navigation menu to include Visitor Series.
+- Updated documentation and memory files to reflect new chair and registry pattern.
 
 ### Fixed
 - Fixed duplicate function definition in Director Series index.ts

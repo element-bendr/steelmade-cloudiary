@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { directorSeries } from '@/lib/data/products/chairs/director-series';
-import { ChairCard } from '@/components/products/ChairCard';
+import { ChairGridWithViewMore } from '@/components/ui/ChairGridWithViewMore';
 
 function toChair(data: any): any {
   const defaultVariant = data.variants?.[0]?.variantId || '';
@@ -33,11 +33,7 @@ export default function DirectorSeriesPage() {
         Discover our premium Director Series chairs, designed for professionals who demand the best in comfort and style.
         Each chair is crafted with attention to detail and built to last.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {chairs.map((chair) => (
-          <ChairCard key={chair.id} chair={chair} />
-        ))}
-      </div>
+      <ChairGridWithViewMore chairs={chairs} basePath="/chairs/director-series" />
     </div>
   );
 }

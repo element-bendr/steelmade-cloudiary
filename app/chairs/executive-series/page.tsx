@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { ChairCard } from "@/components/products/ChairCard";
+import { ChairGridWithViewMore } from "@/components/ui/ChairGridWithViewMore";
 import { productCatalog } from "@/lib/data/product-catalog";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
@@ -31,12 +31,7 @@ export default function ExecutiveSeriesPage() {
       <p className="text-gray-600 mb-10 max-w-3xl">
         Discover our premium Executive Series chairs, designed for leaders who demand the highest standards of comfort and prestige. Each chair is a statement of excellence and refined taste.
       </p>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {chairs.map((chair: any) => (
-          <ChairCard key={chair.id} chair={chair} basePath="/chairs/executive-series" />
-        ))}
-      </div>
+      <ChairGridWithViewMore chairs={chairs} basePath="/chairs/executive-series" />
     </div>
   );
 }

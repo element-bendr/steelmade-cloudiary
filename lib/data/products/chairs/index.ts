@@ -2,7 +2,7 @@ import { executiveSeries } from './executive-series/index';
 import { ergonomicSeries } from './ergonomic-series';
 import { ProductCategoryData } from '@/lib/data/product-types';
 import { directorSeries } from './director-series';
-import { visitorSeries } from './visitor-series';
+import { visitorSeries } from './visitor-series/index';
 import { multipurposeSeries } from './multipurpose-series';
 
 // Export the chairs category with all its series

@@ -1,20 +1,30 @@
-import { ExtendedProductData, ProductSeries } from '../../../product-types';
-
-// Placeholder for visitor series products
-export const visitorSeriesProducts: Record<string, ExtendedProductData> = {};
+import { ProductSeries } from '../../../product-types';
+import visitorClassicChair from './classic/index';
+import visitorVenusVistaChair from './venus-vista/index';
+import visitorRegencyChair from './regency/index';
+import visitorLibertyChair from './liberty/index';
+import visitorFloraChair from './flora/index';
+import visitorTitanChair from './titan/index';
 
 export const visitorSeries: ProductSeries = {
   id: 'visitor-series',
   title: 'Visitor Series',
-  description: 'A poetic collection of visitor chairs, designed for comfort, elegance, and welcoming every guest with grace.',
-  seoDescription: 'The Visitor Series: a celebration of hospitality and design, offering poetic comfort for every guest and every space.',
+  description: 'Chairs designed to welcome guests with comfort and style.',
+  seoDescription: 'The Visitor Series: a poetic embrace for every guest, blending hospitality and elegance in every detail.',
   coverImage: {
-    url: '',
+    url: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1752129755/steelmade/chairs/visitor-series/classic.png',
     alt: 'Visitor Series Chair Collection',
     width: 1200,
     height: 800
   },
-  products: visitorSeriesProducts
+  products: {
+    [visitorClassicChair.id]: visitorClassicChair,
+    [visitorVenusVistaChair.id]: visitorVenusVistaChair,
+    [visitorRegencyChair.id]: visitorRegencyChair,
+    [visitorLibertyChair.id]: visitorLibertyChair,
+    [visitorFloraChair.id]: visitorFloraChair,
+    [visitorTitanChair.id]: visitorTitanChair
+  }
 };
 
 export default visitorSeries;

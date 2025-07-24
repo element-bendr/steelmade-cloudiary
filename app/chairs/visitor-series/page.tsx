@@ -1,10 +1,10 @@
 export const metadata = {
-  title: "Ergonomic Series | SteelMade Office Chairs",
-  description: "Science-backed ergonomic designs that promote comfort and wellness during extended periods of sitting.",
+  title: "Visitor Series | SteelMade Office Chairs",
+  description: "Chairs designed to welcome guests with comfort and style.",
 };
 
 import React from 'react';
-import { ergonomicSeries } from '@/lib/data/products/chairs/ergonomic-series';
+import { visitorSeries } from '@/lib/data/products/chairs/visitor-series';
 import { ChairGridWithViewMore } from '@/components/ui/ChairGridWithViewMore';
 
 function toChair(data: any): any {
@@ -27,15 +27,15 @@ function toChair(data: any): any {
   };
 }
 
-export default function ErgonomicSeriesPage() {
-  const chairs = Object.values(ergonomicSeries.products).map(toChair);
+export default function VisitorSeriesPage() {
+  const chairs = Object.values(visitorSeries.products).map(toChair);
   return (
     <div className="container mx-auto py-12">
-      <h1 className="text-3xl font-bold text-gray-900 mb-6">Ergonomic Series Chairs</h1>
+      <h1 className="text-3xl font-bold text-gray-900 mb-6">Visitor Series Chairs</h1>
       <p className="text-gray-600 mb-10 max-w-3xl">
-        Discover our science-backed Ergonomic Series chairs, designed for comfort, wellness, and productivity during extended periods of sitting.
+        Discover our poetic Visitor Series chairs, designed to welcome every guest with comfort and style.
       </p>
-      <ChairGridWithViewMore chairs={chairs} basePath="/chairs/ergonomic-series" />
+      <ChairGridWithViewMore chairs={chairs} basePath="/chairs/visitor-series" />
     </div>
   );
 }

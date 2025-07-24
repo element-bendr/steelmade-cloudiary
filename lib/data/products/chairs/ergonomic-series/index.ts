@@ -13,6 +13,17 @@ import { moscowErgonomicChair } from './moscow/index';
 import { pinePonyWindyErgonomicChair } from './pine-pony-windy/index';
 import { bbErgonomicChair } from './bb/index';
 import { olaRomanErgonomicChair } from './ola-roman/index';
+import hondaErgonomicChair from './honda/index';
+import navyErgonomicChair from './navy/index';
+import roboErgonomicChair from './robo/index';
+import craftErgonomicChair from './craft/index';
+import vivoErgonomicChair from './vivo/index';
+import matrixErgonomicChair from './matrix/index';
+import marvelErgonomicChair from './marvel/index';
+import flameErgonomicChair from './flame/index';
+import cobraErgonomicChair from './cobra/index';
+import zaraErgonomicChair from './zara/index';
+import monoErgonomicChair from './mono/index';
 
 export const ergonomicSeriesProducts: Record<string, ExtendedProductData> = {
   [berlinErgonomicChair.id]: berlinErgonomicChair,
@@ -28,7 +39,18 @@ export const ergonomicSeriesProducts: Record<string, ExtendedProductData> = {
   [moscowErgonomicChair.id]: moscowErgonomicChair,
   [pinePonyWindyErgonomicChair.id]: pinePonyWindyErgonomicChair,
   [bbErgonomicChair.id]: bbErgonomicChair,
-  [olaRomanErgonomicChair.id]: olaRomanErgonomicChair
+  [olaRomanErgonomicChair.id]: olaRomanErgonomicChair,
+  [hondaErgonomicChair.id]: hondaErgonomicChair,
+  [navyErgonomicChair.id]: navyErgonomicChair,
+  [roboErgonomicChair.id]: roboErgonomicChair,
+  [craftErgonomicChair.id]: craftErgonomicChair,
+  [vivoErgonomicChair.id]: vivoErgonomicChair,
+  [matrixErgonomicChair.id]: matrixErgonomicChair,
+  [marvelErgonomicChair.id]: marvelErgonomicChair,
+  [flameErgonomicChair.id]: flameErgonomicChair,
+  [cobraErgonomicChair.id]: cobraErgonomicChair,
+  [zaraErgonomicChair.id]: zaraErgonomicChair,
+  [monoErgonomicChair.id]: monoErgonomicChair
 };
 
 export const ergonomicSeries: ProductSeries = {
