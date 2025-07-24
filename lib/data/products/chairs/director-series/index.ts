@@ -12,7 +12,7 @@ import nissanDirectorChair from './nissan/index';
 import parkerDirectorChair from './parker/index';
 import tridentDirectorChair from './trident/index';
 import bigBossGoldDirectorChair from './bigboss-gold-director-chair/index';
-import classicDirectorChair from './classic-director-chair/index';
+
 
 const directorSeries: ProductSeries = {
   id: 'director-series',
@@ -38,8 +38,8 @@ const directorSeries: ProductSeries = {
     [nissanDirectorChair.id]: nissanDirectorChair,
     [parkerDirectorChair.id]: parkerDirectorChair,
     [tridentDirectorChair.id]: tridentDirectorChair,
-    [bigBossGoldDirectorChair.id]: bigBossGoldDirectorChair,
-    [classicDirectorChair.id]: classicDirectorChair
+    [bigBossGoldDirectorChair.id]: bigBossGoldDirectorChair
+    
   }
 };
 
