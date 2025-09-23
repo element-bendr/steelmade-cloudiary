@@ -6,10 +6,22 @@ const neoSeries = {
   seriesId: 'modular-furniture',
   imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1754355086/steelmade/workstations/desk%20based%20workstation%20legs/neo-legs2.png',
   gallery: [
+    { url: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1754355061/steelmade/workstations/desk%20based%20workstation%20legs/neo-series1.png', alt: 'Neo Series Workstation 1' },
     { url: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1754355086/steelmade/workstations/desk%20based%20workstation%20legs/neo-legs2.png', alt: 'Neo Series Workstation 2' },
     { url: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1754355085/steelmade/workstations/desk%20based%20workstation%20legs/neo-legs3.png', alt: 'Neo Series Workstation 3' }
   ],
   variants: [
+    {
+      variantId: 'neo-series1',
+      variantName: 'Neo Series 1',
+      name: 'Neo Series Workstation 1',
+      imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1754355061/steelmade/workstations/desk%20based%20workstation%20legs/neo-series1.png',
+      specifications: {
+        'Leg Type': 'Steel (Neo 1)',
+        'Surface': 'Engineered wood',
+        'Series': 'Neo'
+      }
+    },
     {
       variantId: 'neo-legs2',
       variantName: 'Neo Legs 2',

@@ -1,9 +1,11 @@
+"use client";
 import React, { useState, useEffect } from 'react';
+import Head from 'next/head';
 import Image from 'next/image';
-import { Button } from "@/components/ui/button";
-import { productStyles } from '@/lib/styles/productStyles';
-import Breadcrumbs from '@/components/ui/Breadcrumbs';
-import { getCategoryUrl, getProductUrl } from '@/lib/navigation';
+import { Button } from "../ui/button";
+import { productStyles } from '../../lib/styles/productStyles';
+import Breadcrumbs from '../ui/Breadcrumbs';
+import { getCategoryUrl, getProductUrl } from '../../lib/navigation';
 
 // Make sure we're properly importing all chair components
 import { 
@@ -11,7 +13,7 @@ import {
   ChairImageDisplay, 
   ChairFeatureList,
   ChairContactButton 
-} from '@/components/chairs';
+} from '../chairs';
 
 interface ProductDetailLayoutProps {
   product: {
@@ -109,14 +111,35 @@ export const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
     : productStyles.layout.grid;
 
   // Breadcrumb logic
-  const breadcrumbItems = [
+  // Dynamic breadcrumb logic
+  const breadcrumbItems: import('../ui/Breadcrumbs').BreadcrumbItem[] = [
     { name: 'Home', href: '/' },
-    { name: 'Chairs', href: getCategoryUrl('chairs') },
   ];
-  if (product.seriesId) {
-    breadcrumbItems.push({ name: product.seriesId.replace(/-/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase()), href: getCategoryUrl('chairs', product.seriesId) });
+  if (product.category) {
+    let categoryHref: string | undefined = getCategoryUrl(product.category as import('../../lib/data/product-types').ProductType);
+    if (categoryHref === '/workstations' || categoryHref === '/workstations/modular-furniture') {
+      categoryHref = undefined;
+    }
+    breadcrumbItems.push({
+      name: product.category.replace(/-/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase()),
+      href: categoryHref ?? undefined
+    });
+
+    // Add series breadcrumb if present
+    if (product.seriesId) {
+      let seriesHref: string | undefined = getCategoryUrl(
+        (product.category || '') as import('../../lib/data/product-types').ProductType,
+        product.seriesId
+      );
+      if (seriesHref === '/workstations/modular-furniture' || seriesHref === '/workstations') {
+        seriesHref = undefined;
+      }
+      breadcrumbItems.push({
+        name: product.seriesId.replace(/-/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase()),
+        href: seriesHref ?? undefined
+      });
+    }
   }
-  breadcrumbItems.push({ name: product.name, href: getProductUrl('chairs', product.seriesId || '', product.id) });
 
   return (
     <main className={productStyles.layout.container}>
@@ -129,30 +152,23 @@ export const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
             alt={imageAlt}
             className={`w-full ${imageClass}`}
           />
-        )}        {/* Product Details Section */}
+        )}
+        {/* Product Details Section */}
         <div className={productStyles.layout.section}>
           <h1 className={productStyles.typography.title}>{product.name}</h1>
           <p className={productStyles.typography.description}>{product.description}</p>
-          {/* Price display removed as per new design guidelines */}
-
           {/* Variant Selector */}
           {variants.length > 0 && selectedVariant && (
             <ChairVariantSelector
               variants={variants}
               selectedVariant={selectedVariant}
               onVariantChange={handleVariantChange}
-              className="mt-6"
             />
           )}
-
-          {/* Features Section */}
+          {/* Features List */}
           {product.features && product.features.length > 0 && (
-            <ChairFeatureList 
-              features={product.features} 
-              className="mt-6"
-            />
+            <ChairFeatureList features={product.features} className="mt-6" />
           )}
-
           {/* Contact Button */}
           <ChairContactButton
             onClick={handleContactClick}
@@ -160,15 +176,12 @@ export const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
             productName={product.name}
             className="mt-6"
           />
-
           {/* Custom Section */}
           {renderCustomSection && renderCustomSection()}
-
-          {/* Additional Children */}
-          {children}
         </div>
       </div>
-
+      {/* Additional Children */}
+      {children}
       {/* Contact Form (simplified) */}
       {showContactForm && selectedVariant && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
@@ -198,23 +211,12 @@ export const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
               <div>
                 <label className={productStyles.components.form.label}>Message</label>
                 <textarea
-                  className={productStyles.components.form.textarea}
-                  rows={3}
-                  placeholder="Tell us about your requirements..."
-                ></textarea>
-              </div>
-              <div className={productStyles.components.form.buttonGroup}>
-                <Button type="submit" className={productStyles.components.contactButton.button}>
-                  Send Message
-                </Button>
-                <Button
-                  variant="outline"
-                  onClick={() => setShowContactForm(false)}
-                >
-                  Cancel
-                </Button>
+                  className={productStyles.components.form.input}
+                  placeholder="Your message"
+                />
               </div>
             </div>
+            <Button className="w-full mt-4">Send</Button>
           </div>
         </div>
       )}

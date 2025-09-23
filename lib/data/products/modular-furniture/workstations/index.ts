@@ -4,6 +4,12 @@ import elevateSeries from './elevate-series/index';
 import neoSeries from './neo-series/index';
 import neoEcoSeries from './neo-eco-series/index';
 import sparkSeries from './spark-series/index';
+import curveSeries from './curve-series/index';
+import impressSeries from './impress-series/index';
+import impactSeries from './impact-series/index';
+import rockSeries from './rock-series/index';
+import hexaSeries from './hexa-series/index';
+import eliteSeries from './elite-series/index';
 
 export const workstationsSeries: ProductSeries = {
   id: 'workstations-series',
@@ -21,7 +27,18 @@ export const workstationsSeries: ProductSeries = {
     [elevateSeries.id]: elevateSeries,
     [neoSeries.id]: neoSeries,
     [neoEcoSeries.id]: neoEcoSeries,
-    [sparkSeries.id]: sparkSeries
+    [sparkSeries.id]: sparkSeries,
+    [curveSeries.id]: curveSeries
+    ,
+    [impressSeries.id]: impressSeries
+    ,
+    [impactSeries.id]: impactSeries
+    ,
+    [rockSeries.id]: rockSeries
+    ,
+    [hexaSeries.id]: hexaSeries
+    ,
+    [eliteSeries.id]: eliteSeries
   }
 };
 

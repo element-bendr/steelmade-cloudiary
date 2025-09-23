@@ -37,47 +37,47 @@ export interface NavigationItem {
 }
 
 export const mainNavigation: NavigationItem[] = [
-  {
-    title: "Modular Furniture",
-    href: "/modular-furniture",
-    megaMenu: {
-      description: "Create flexible and efficient workspaces with our modular furniture solutions",
-      columns: [
-        {
-          header: "Office Systems",
-          links: [
-            {
-              title: "Office Modules",
-              href: "/modular-furniture/office-modules",
-              description: "Customizable office modules for any workspace"
-            },
-            {
-              title: "Workstations",
-              href: "/modular-furniture/workstations",
-              description: "Ergonomic workstations for maximum productivity"
-            },
-          ],
-          featured: {
-            title: "New: Modern Workstation Pro",
-            href: "/modular-furniture/workstations/modern-pro",
-            imageUrl: "/images/placeholder/featured-product.jpg",
-            imageAlt: "Modern Workstation Pro",
-            description: "Discover our latest ergonomic workstation design"
-          }
-        },
-        {
-          header: "Partitions",
-          links: [
-            {
-              title: "Partition Systems",
-              href: "/modular-furniture/partition-systems",
-              description: "Flexible space division solutions"
+    {
+      title: "Modular",
+      href: "/modular-furniture",
+      megaMenu: {
+        description: "Create flexible and efficient workspaces with our modular furniture solutions",
+        columns: [
+          {
+            header: "Office Systems",
+            links: [
+              {
+                title: "Office Modules",
+                href: "/modular-furniture/office-modules",
+                description: "Customizable office modules for any workspace"
+              },
+              {
+                title: "Workstations",
+                href: "/modular-furniture/workstations",
+                description: "Ergonomic workstations for maximum productivity"
+              }
+            ],
+            featured: {
+              title: "New: Modern Workstation Pro",
+              href: "/modular-furniture/workstations/modern-pro",
+              imageUrl: "/images/placeholder/featured-product.jpg",
+              imageAlt: "Modern Workstation Pro",
+              description: "Discover our latest ergonomic workstation design"
             }
-          ]
-        }
-      ]
-    }
-  },
+          },
+          {
+            header: "Partitions",
+            links: [
+              {
+                title: "Partition Systems",
+                href: "/modular-furniture/partition-systems",
+                description: "Flexible space division solutions"
+              }
+            ]
+          }
+        ]
+      }
+    },
   {
     title: "Office Chairs & Seating",
     href: "/chairs",
