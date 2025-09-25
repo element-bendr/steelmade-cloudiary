@@ -4,7 +4,6 @@ const eliteSeries = {
   description: 'The Elite Series Workstation features premium steel leg designs and a sophisticated look for high-end workspaces.',
   category: 'workstations',
   seriesId: 'modular-furniture',
-  price: '',
   imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1754355061/steelmade/workstations/desk%20based%20workstation%20legs/elite-series1.png',
   gallery: [
     { url: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1754355061/steelmade/workstations/desk%20based%20workstation%20legs/elite-series1.png', alt: 'Elite Series Workstation 1' },

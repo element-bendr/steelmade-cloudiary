@@ -20,7 +20,7 @@ interface ProductDetailLayoutProps {
     id: string;
     name: string;
     description: string;
-    price: string;
+    price?: string;
     imageUrl: string;
     seriesId: string; // Added for breadcrumb logic
     category?: string;

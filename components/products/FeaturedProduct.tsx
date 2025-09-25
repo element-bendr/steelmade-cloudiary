@@ -22,11 +22,13 @@ export default function FeaturedProduct({
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
       <div className="relative h-64">
-        <img
+        <Image
           src={imageUrl}
           alt={name}
-          className="w-full h-full object-cover"
-          loading="eager"
+          fill
+          className="object-cover"
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
         />
         <div className="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">
           NEW

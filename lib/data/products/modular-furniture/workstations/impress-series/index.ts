@@ -4,7 +4,6 @@ const impressSeries = {
   description: 'The Impress Series Workstation features striking steel leg designs and a contemporary look for inspiring workspaces.',
   category: 'workstations',
   seriesId: 'modular-furniture',
-  price: '',
   imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1754355066/steelmade/workstations/desk%20based%20workstation%20legs/impress-series1.png',
   gallery: [
     { url: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1754355066/steelmade/workstations/desk%20based%20workstation%20legs/impress-series1.png', alt: 'Impress Series Workstation 1' },

@@ -1,5 +1,7 @@
 import { modularStorage } from "./modular-storage";
+import { metalStorages } from "./metal-storages";
 
 export const storage = {
-  "modular-storage": modularStorage
+  [modularStorage.id]: modularStorage,
+  [metalStorages.id]: metalStorages
 };

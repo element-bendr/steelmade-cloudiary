@@ -7,7 +7,6 @@ const marvelWorkstation: ExtendedProductData = {
   category: 'workstations',
   seriesId: 'modular-furniture',
   inStock: true,
-  price: '',
   imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1754355103/steelmade/workstations/desk%20based%20workstation%20legs/marvel-series01.png',
   features: [
     'Modular design',

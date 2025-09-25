@@ -1,2 +1,60 @@
-{"id": 2048, "title": "Refactor Director Series UI and Data to Canonical Pattern", "description": "Refactored app/chairs/director-series/page.tsx and [productId]/page.tsx to use the canonical directorSeries.products object. Removed all references to the runtime registry and legacy lookup code. Updated documentation and onboarding to reference only the canonical pattern. All code is DRY, modular, declarative, and production-ready. Documented in architecture.md, memory.md, and related docs.", "status": "done", "priority": "high", "tags": ["migration", "canonical", "director-series", "production", "ui", "documentation"]}
-{"id": 2049, "title": "Add Visitor Venus Chair to Visitor Series Registry and UI", "description": "Added Visitor Venus Chair with two variants and images to lib/data/products/chairs/visitor-series/index.ts. Updated navigation and UI to reflect new chair. Documented changes in architecture and memory docs. All code is modular, functional, DRY, and production-ready.", "status": "done", "priority": "high", "tags": ["visitor-series", "venus-chair", "registry", "ui", "documentation", "production"]}
+[
+	{
+		"id": 2048,
+		"title": "Refactor Director Series UI and Data to Canonical Pattern",
+		"description": "Refactored app/chairs/director-series/page.tsx and [productId]/page.tsx to use the canonical directorSeries.products object. Removed all references to the runtime registry and legacy lookup code. Updated documentation and onboarding to reference only the canonical pattern. All code is DRY, modular, declarative, and production-ready. Documented in architecture.md, memory.md, and related docs.",
+		"status": "done",
+		"priority": "high",
+		"tags": [
+			"migration",
+			"canonical",
+			"director-series",
+			"production",
+			"ui",
+			"documentation"
+		]
+	},
+	{
+		"id": 2049,
+		"title": "Add Visitor Venus Chair to Visitor Series Registry and UI",
+		"description": "Added Visitor Venus Chair with two variants and images to lib/data/products/chairs/visitor-series/index.ts. Updated navigation and UI to reflect new chair. Documented changes in architecture and memory docs. All code is modular, functional, DRY, and production-ready.",
+		"status": "done",
+		"priority": "high",
+		"tags": [
+			"visitor-series",
+			"venus-chair",
+			"registry",
+			"ui",
+			"documentation",
+			"production"
+		]
+	},
+	{
+		"id": 2050,
+		"title": "Add Metal Storages Two Drawer Pedestal",
+		"description": "Registered the metalStorages ProductSeries in lib/data/products/storage/metal-storages.ts with Cloudinary-backed imagery and declarative specifications. Updated storage index wiring, refreshed architecture and memory documentation, and kept the catalog DRY, poetic, and production-ready.",
+		"status": "done",
+		"priority": "high",
+		"tags": [
+			"storage-solutions",
+			"metal-storage",
+			"catalog",
+			"documentation",
+			"production"
+		]
+	},
+	{
+		"id": 2051,
+		"title": "Expand Metal Storages with Three Drawer Pedestal",
+		"description": "Introduced the three drawer pedestal in lib/data/products/storage/metal-storages.ts, delivering dual finish variants, updated imagery, and refreshed series metadata. Documented the expansion across architecture and memory logs to keep the catalog canonical and poetic.",
+		"status": "done",
+		"priority": "high",
+		"tags": [
+			"storage-solutions",
+			"metal-storage",
+			"variants",
+			"documentation",
+			"production"
+		]
+	}
+]

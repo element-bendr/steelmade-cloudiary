@@ -1,3 +1,19 @@
+## 2025-09-26: Three Drawer Pedestal Rollout
+
+- Expanded `metalStorages` with the Three Drawer Pedestal, layering dual finishes and variant metadata for richer storage storytelling.
+- Refreshed series imagery to foreground the new pedestal while preserving two drawer references for continuity.
+- Updated feature suite and timestamps to reflect the broadened catalog, keeping the module functional, declarative, and lyrical.
+
+#storage-solutions #metal-storage #catalog #variants #drystandards
+
+## 2025-09-25: Metal Storage Series Expansion
+
+- Introduced `metalStorages` ProductSeries via `lib/data/products/storage/metal-storages.ts`, celebrating the two drawer pedestal with canonical, poetic data.
+- Refined `lib/data/products/storage/index.ts` to surface all storage series through declarative, id-driven keys.
+- Ensured storage catalog remains DRY, modular, functional, and production-ready for upcoming metal storage cohorts.
+
+#storage-solutions #metal-storage #product-catalog #drystandards
+
 ## 2025-06-23: Storage Solutions SeriesMetadata/ProductSeries Type Fix
 
 - Fixed type error in `app/storage-solutions/[seriesId]/collections/page.tsx` by mapping `ProductSeries` to `SeriesMetadata` using a DRY mapping function.
