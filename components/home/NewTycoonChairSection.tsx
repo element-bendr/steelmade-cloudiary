@@ -14,13 +14,18 @@ export default function NewTycoonChairSection() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div className="relative rounded-lg overflow-hidden shadow-lg h-[500px]">
-            <img
+          <div className="relative rounded-lg overflow-hidden shadow-lg h-[500px] hover:scale-[1.01] transition-transform duration-300">
+            <Image
               src="https://res.cloudinary.com/dqde19mfs/image/upload/v1749458143/steelmade/chairs/director-series/tycoon/ic-01-hb.jpg"
               alt="Tycoon Director Chair"
-              className="w-full h-full object-cover"
+              fill
+              priority
+              // set a reasonable quality to reduce bytes while keeping visual fidelity
+              quality={75}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
             />
-            <div className="absolute top-4 right-4 bg-red-600 text-white text-sm font-bold px-3 py-1 rounded-full">
+            <div className="absolute top-4 right-4 bg-red-600 text-white text-sm font-bold px-3 py-1 rounded-full z-10">
               NEW
             </div>
           </div>
@@ -69,6 +74,7 @@ export default function NewTycoonChairSection() {
               <Link 
                 href="/chairs/director-series/tycoon-director-chair"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition duration-300 inline-block"
+                aria-label="View details — Tycoon Director Chair (New)"
               >
                 View Details
               </Link>
