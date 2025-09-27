@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { cloudinaryUrl } from '@/lib/cloudinary';
 
 export default function NewTycoonChairSection() {
   return (
@@ -16,7 +17,7 @@ export default function NewTycoonChairSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="relative rounded-lg overflow-hidden shadow-lg h-[500px] hover:scale-[1.01] transition-transform duration-300">
             <Image
-              src="https://res.cloudinary.com/dqde19mfs/image/upload/v1749458143/steelmade/chairs/director-series/tycoon/ic-01-hb.jpg"
+              src={cloudinaryUrl('v1749458143/steelmade/chairs/director-series/tycoon/ic-01-hb.jpg')}
               alt="Tycoon Director Chair"
               fill
               priority

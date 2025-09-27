@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import { cloudinaryUrl } from '@/lib/cloudinary';
 
 export default function FeaturedProducts() {
   // Sample featured products
@@ -8,7 +10,7 @@ export default function FeaturedProducts() {
       id: 'tycoon-director-chair',
       name: 'Tycoon Director Chair',
       description: 'Our premium director chair designed for comfort and style.',
-      imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749458143/steelmade/chairs/director-series/tycoon/ic-01-hb.jpg',
+      imageUrl: cloudinaryUrl('v1749458143/steelmade/chairs/director-series/tycoon/ic-01-hb.jpg'),
       category: 'chairs',
       series: 'director-series',
     },
@@ -16,7 +18,7 @@ export default function FeaturedProducts() {
       id: 'executive-chair',
       name: 'Executive Office Chair',
       description: 'Ergonomic design for maximum comfort during long working hours.',
-      imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749458143/steelmade/chairs/director-series/director/ic-02-hb.jpg',
+      imageUrl: cloudinaryUrl('v1749458143/steelmade/chairs/director-series/director/ic-02-hb.jpg'),
       category: 'chairs',
       series: 'director-series',
     },
@@ -24,7 +26,7 @@ export default function FeaturedProducts() {
       id: 'conference-table',
       name: 'Conference Table',
       description: 'Premium conference table for your business meetings.',
-      imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749458143/steelmade/chairs/director-series/classic/ic-03-hb.jpg',
+      imageUrl: cloudinaryUrl('v1749458143/steelmade/chairs/director-series/classic/ic-03-hb.jpg'),
       category: 'chairs',
       series: 'director-series',
     },
@@ -42,15 +44,17 @@ export default function FeaturedProducts() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuredProducts.map((product) => (
-            <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="relative h-64">
-                <img
+            <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200">
+              <div className="relative h-64 rounded-t-lg overflow-hidden">
+                <Image
                   src={product.imageUrl}
                   alt={product.name}
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover"
                 />
                 {product.id === 'tycoon-director-chair' && (
-                  <div className="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">
+                  <div className="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded z-10">
                     NEW
                   </div>
                 )}
