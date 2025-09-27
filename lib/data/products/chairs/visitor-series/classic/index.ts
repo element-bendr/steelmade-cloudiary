@@ -1,4 +1,5 @@
 import { ExtendedProductData } from '../../../../product-types';
+import { cloudinaryUrl } from '@/lib/cloudinary';
 
 const visitorClassicChair: ExtendedProductData = {
   id: 'visitor-classic-chair',
@@ -8,7 +9,7 @@ const visitorClassicChair: ExtendedProductData = {
   seriesId: 'visitor-series',
   inStock: true,
   price: '',
-  imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1752129755/steelmade/chairs/visitor-series/classic.png',
+  imageUrl: cloudinaryUrl('v1752129755/steelmade/chairs/visitor-series/classic.png'),
   features: [
     'Classic comfort',
     'Durable build',
@@ -27,7 +28,7 @@ const visitorClassicChair: ExtendedProductData = {
       variantName: 'Black',
       name: 'Visitor Classic Chair Black',
       description: 'Classic black finish for timeless elegance.',
-      imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1752129755/steelmade/chairs/visitor-series/classic.png',
+  imageUrl: cloudinaryUrl('v1752129755/steelmade/chairs/visitor-series/classic.png'),
       specifications: {
         'Color': 'Black',
         'Material': 'Steel, premium upholstery',
@@ -37,7 +38,7 @@ const visitorClassicChair: ExtendedProductData = {
     }
   ],
   images: [
-    { url: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1752129755/steelmade/chairs/visitor-series/classic.png', alt: 'Visitor Classic Chair Black', width: 800, height: 600 }
+    { url: cloudinaryUrl('v1752129755/steelmade/chairs/visitor-series/classic.png'), alt: 'Visitor Classic Chair Black', width: 800, height: 600 }
   ]
 };
 
