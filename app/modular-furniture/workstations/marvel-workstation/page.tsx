@@ -5,7 +5,10 @@ import marvelWorkstation from '../../../../lib/data/products/modular-furniture/w
 export default function MarvelWorkstationPage() {
   return (
     <ProductDetailLayout
-      product={marvelWorkstation}
+      product={{
+        ...marvelWorkstation,
+        seriesId: 'workstations' // Override to fix breadcrumb navigation
+      }}
       layoutOptions={{ imagePosition: 'left' }}
     />
   );

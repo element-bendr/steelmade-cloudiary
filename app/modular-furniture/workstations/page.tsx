@@ -1,36 +1,36 @@
-import React from 'react';
-import Link from 'next/link';
-import workstationsSeries from '../../../lib/data/products/modular-furniture/workstations/index';
+import CategoryPageTemplate from '../../../components/templates/CategoryPageTemplate';
+import { getAllSeries, getRevalidateTime } from '@/lib/services/product-service';
 
-export default function WorkstationsPage() {
-  return (
-    <main className="container mx-auto py-8">
-      <h1 className="text-3xl font-bold mb-4">{workstationsSeries.title}</h1>
-      <p className="mb-6">{workstationsSeries.description}</p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {Object.values(workstationsSeries.products).map(product => {
-          console.log('Product ID:', product.id, typeof product.id);
-          return (
-            <Link key={product.id} href={`/modular-furniture/workstations/${String(product.id)}`}
-              className="border rounded-lg p-4 shadow block hover:shadow-lg transition-shadow duration-200">
-              <img
-                src={product.imageUrl}
-                alt={product.name}
-                width={product.images?.[0]?.width || 400}
-                height={product.images?.[0]?.height || 300}
-                className="mb-4 w-full h-auto object-cover rounded"
-              />
-              <h2 className="text-xl font-semibold mb-2">{product.name}</h2>
-              <p className="mb-2">{product.description}</p>
-              <ul className="mb-2 list-disc pl-5">
-                {product.features?.map((feature, idx) => (
-                  <li key={idx}>{feature}</li>
-                ))}
-              </ul>
-            </Link>
-          );
-        })}
-      </div>
-    </main>
-  );
+export const revalidate = getRevalidateTime();
+
+export default async function WorkstationsPage() {
+  // Get modular-furniture data and extract workstations
+  const modularData = await getAllSeries('modular-furniture');
+  if (!modularData || !modularData.workstations) {
+    return <div>Workstations not found.</div>;
+  }
+
+  // Extract the workstations series data - workstations is already a ProductSeries
+  const workstationsData = modularData.workstations;
+  
+  // Extract individual products from the workstations series
+  const products = Object.values(workstationsData.products || {});
+  
+  // Convert products to the format expected by CategoryPageTemplate
+  // Each product needs to be treated as a "series" with its own id for routing
+  const items = products.map(product => ({
+    id: product.id,
+    title: product.name,
+    description: product.description,
+    seoDescription: product.description || `Discover the ${product.name} - premium workstation for modern workspaces.`,
+    coverImage: {
+      url: product.imageUrl,
+      alt: product.name,
+      width: 800,
+      height: 600
+    },
+    products: { [product.id]: product }
+  }));
+  
+  return <CategoryPageTemplate categoryId="modular-furniture/workstations" items={items} />;
 }

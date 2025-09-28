@@ -4,7 +4,10 @@ import rockSeries from '../../../../lib/data/products/modular-furniture/workstat
 export default function RockSeriesPage() {
   return (
     <ProductDetailLayout
-      product={rockSeries}
+      product={{
+        ...rockSeries,
+        seriesId: 'workstations' // Override to fix breadcrumb navigation
+      }}
       layoutOptions={{ imagePosition: 'left' }}
     />
   );

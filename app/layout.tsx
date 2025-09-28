@@ -111,6 +111,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <meta charSet="utf-8" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#000000" />
+        {/* Preload critical fonts to reduce FOUT/FOIT and improve LCP */}
+        <link rel="preload" href="https://fonts.gstatic.com/s/inter/v12/....woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v29/....woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <CriticalScripts />
       </head>
       <body className={inter.className} suppressHydrationWarning={true}>

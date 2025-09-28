@@ -1,5 +1,5 @@
-import { getAllSeries as getAllSeriesUtil, getSeriesById as getSeriesByIdUtil, getProductById as getProductByIdUtil, getAllProducts as getAllProductsUtil } from "@/lib/utils/product-utils"
-import type { ProductSeries, ExtendedProductData } from '@/lib/data/product-types';
+import { getAllSeries as getAllSeriesUtil, getSeriesById as getSeriesByIdUtil, getProductById as getProductByIdUtil, getAllProducts as getAllProductsUtil } from "../utils/product-utils"
+import type { ProductSeries, ExtendedProductData } from '../data/product-types';
 
 // Common image paths
 const createImagePath = (series: string, variant: string) => `/images/collections/${series}/${variant}.webp`

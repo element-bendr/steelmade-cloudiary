@@ -4,7 +4,10 @@ import impressSeries from '../../../../lib/data/products/modular-furniture/works
 export default function ImpressSeriesPage() {
   return (
     <ProductDetailLayout
-      product={impressSeries}
+      product={{
+        ...impressSeries,
+        seriesId: 'workstations' // Override to fix breadcrumb navigation
+      }}
       layoutOptions={{ imagePosition: 'left' }}
     />
   );

@@ -4,7 +4,10 @@ import neoSeries from '../../../../lib/data/products/modular-furniture/workstati
 export default function NeoSeriesPage() {
   return (
     <ProductDetailLayout
-      product={neoSeries}
+      product={{
+        ...neoSeries,
+        seriesId: 'workstations' // Override to fix breadcrumb navigation
+      }}
       layoutOptions={{ imagePosition: 'left' }}
     />
   );

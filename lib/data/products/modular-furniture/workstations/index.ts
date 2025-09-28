@@ -12,7 +12,7 @@ import hexaSeries from './hexa-series/index';
 import eliteSeries from './elite-series/index';
 
 export const workstationsSeries: ProductSeries = {
-  id: 'workstations-series',
+  id: 'workstations',
   title: 'Workstations',
   description: 'Modular workstations for modern offices and collaborative spaces.',
   seoDescription: 'Explore modular workstations designed for productivity, style, and flexibility.',

@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Button } from "@/components/ui/button"
+import { Button } from "../ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import type { ExtendedProductData } from '../../lib/data/product-types';
 import Link from "next/link"

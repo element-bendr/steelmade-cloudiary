@@ -4,7 +4,10 @@ import impactSeries from '../../../../lib/data/products/modular-furniture/workst
 export default function ImpactSeriesPage() {
   return (
     <ProductDetailLayout
-      product={impactSeries}
+      product={{
+        ...impactSeries,
+        seriesId: 'workstations' // Override to fix breadcrumb navigation
+      }}
       layoutOptions={{ imagePosition: 'left' }}
     />
   );

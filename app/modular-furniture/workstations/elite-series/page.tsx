@@ -4,7 +4,10 @@ import eliteSeries from '../../../../lib/data/products/modular-furniture/worksta
 export default function EliteSeriesPage() {
   return (
     <ProductDetailLayout
-      product={eliteSeries}
+      product={{
+        ...eliteSeries,
+        seriesId: 'workstations' // Override to fix breadcrumb navigation
+      }}
       layoutOptions={{ imagePosition: 'left' }}
     />
   );

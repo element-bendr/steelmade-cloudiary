@@ -12,8 +12,8 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from './ui/navigation-menu';
-import { mainNavigation, type NavigationItem, type MegaMenuColumn } from '@/lib/data/navigation';
-import { cn } from '@/lib/utils';
+import { mainNavigation, type NavigationItem, type MegaMenuColumn } from '../lib/data/navigation';
+import { cn } from '../lib/utils';
 import { User } from 'lucide-react';
 
 /**
@@ -62,7 +62,7 @@ function Header({ className }: HeaderProps) {
 
         {/* Mobile menu button */}
         <button
-          className="lg:hidden p-2 rounded-md hover:bg-accent"
+          className="lg:hidden p-2 rounded-md hover:bg-accent/30 transition-colors duration-200"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
           aria-expanded={isMobileMenuOpen}
@@ -85,9 +85,9 @@ function Header({ className }: HeaderProps) {
                       <NavigationMenuTrigger
                         className={cn(
                           "px-3 py-2 text-sm font-medium",
-                          "dark:text-white dark:hover:text-red-400",
+                          "dark:text-white",
                           "transition-colors duration-200",
-                          "hover:bg-accent/50 rounded-md"
+                          "hover:bg-accent/30 rounded-md"
                         )}
                       >
                         {item.title}
@@ -146,14 +146,14 @@ function Header({ className }: HeaderProps) {
                                   <div className="mt-6 pt-6 border-t">
                                     <Link
                                       href={column.featured.href}
-                                      className="block group rounded-lg overflow-hidden bg-muted hover:bg-accent transition-colors"
+                                      className="block group rounded-lg overflow-hidden bg-muted hover:bg-accent/30 transition-colors"
                                     >
                                       <div className="relative h-40 w-full">
                                         <Image
                                           src={column.featured.imageUrl}
                                           alt={column.featured.imageAlt}
                                           fill
-                                          className="object-cover transition-transform duration-300 group-hover:scale-105"
+                                          className="object-cover transition-opacity duration-300"
                                         />
                                       </div>
                                       <div className="p-4">
@@ -182,13 +182,9 @@ function Header({ className }: HeaderProps) {
                         className={cn(
                           "block px-4 py-2 text-sm font-medium",
                           "rounded-md transition-colors duration-200",
-                          "hover:bg-accent hover:text-accent-foreground",
-                          "focus:bg-accent focus:text-accent-foreground",
-                          "dark:text-white dark:hover:text-red-400",
-                          "relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2",
-                          "after:h-[2px] after:w-0 hover:after:w-full",
-                          "after:bg-gradient-to-r after:from-red-500 after:to-red-600",
-                          "after:transition-all after:duration-300"
+                          "hover:bg-accent/30",
+                          "focus:bg-accent/40",
+                          "dark:text-white"
                         )}
                       >
                         {item.title}
@@ -205,10 +201,9 @@ function Header({ className }: HeaderProps) {
           <button 
             className={cn(
               "inline-flex h-10 w-10 items-center justify-center rounded-md",
-              "text-muted-foreground transition-colors",
-              "hover:bg-accent hover:text-accent-foreground",
-              "focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500",
-              "dark:focus:ring-red-400"
+              "text-muted-foreground transition-colors duration-200",
+              "hover:bg-accent/30",
+              "focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-muted-foreground"
             )}
             aria-label="Account"
           >
@@ -240,7 +235,7 @@ function Header({ className }: HeaderProps) {
                         className={cn(
                           "flex w-full items-center justify-between p-4 my-1",
                           "text-base font-medium rounded-md",
-                          "hover:bg-accent/50 active:bg-accent",
+                          "hover:bg-accent/30",
                           "transition-colors duration-200",
                           openMobileSection === item.title ? "bg-accent/30" : ""
                         )}
@@ -248,7 +243,7 @@ function Header({ className }: HeaderProps) {
                         {item.title}
                         <ChevronDown 
                           className={cn(
-                            "h-5 w-5 transition-transform text-red-500",
+                            "h-5 w-5 transition-transform text-muted-foreground",
                             openMobileSection === item.title ? "rotate-180" : ""
                           )}
                         />
@@ -267,10 +262,10 @@ function Header({ className }: HeaderProps) {
                                   <li key={link.href}>
                                     <Link
                                       href={link.href}
-                                      className="flex items-center gap-2 p-2 text-sm rounded-md hover:bg-accent group"
+                                      className="flex items-center gap-2 p-2 text-sm rounded-md hover:bg-accent/30 transition-colors"
                                     >
-                                      <ChevronRight className="h-3 w-3 text-muted-foreground group-hover:text-red-500 transition-colors" />
-                                      <span className="group-hover:text-red-500 transition-colors">{link.title}</span>
+                                      <ChevronRight className="h-3 w-3 text-muted-foreground" />
+                                      <span>{link.title}</span>
                                     </Link>
                                   </li>
                                 ))}
@@ -292,7 +287,7 @@ function Header({ className }: HeaderProps) {
                                       className="object-cover transition-transform duration-300 group-hover:scale-105"
                                     />
                                   </div>
-                                  <div className="p-3 bg-muted/50 group-hover:bg-accent/80 transition-colors">
+                                  <div className="p-3 bg-muted/50 transition-colors">
                                     <h4 className="text-xs font-medium">
                                       {item.megaMenu.featured.title}
                                     </h4>
@@ -311,10 +306,10 @@ function Header({ className }: HeaderProps) {
                   ) : (
                     <Link
                       href={item.href}
-                      className="flex items-center justify-between p-4 text-base font-medium hover:bg-accent/50 rounded-md group"
+                      className="flex items-center justify-between p-4 text-base font-medium hover:bg-accent/30 rounded-md transition-colors"
                     >
-                      <span className="group-hover:text-red-500 transition-colors">{item.title}</span>
-                      <ChevronRight className="h-4 w-4 text-muted-foreground group-hover:text-red-500 transition-colors" />
+                      <span>{item.title}</span>
+                      <ChevronRight className="h-4 w-4 text-muted-foreground" />
                     </Link>
                   )}
                 </li>

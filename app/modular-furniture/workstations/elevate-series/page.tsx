@@ -4,7 +4,10 @@ import elevateSeries from '../../../../lib/data/products/modular-furniture/works
 export default function ElevateSeriesPage() {
   return (
     <ProductDetailLayout
-      product={elevateSeries}
+      product={{
+        ...elevateSeries,
+        seriesId: 'workstations' // Override to fix breadcrumb navigation
+      }}
       layoutOptions={{ imagePosition: 'left' }}
     />
   );

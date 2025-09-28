@@ -1,0 +1,40 @@
+name: Template Refactoring CI
+
+on:
+  push:
+    branches:
+      - 'feature/template-refactoring*'
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Cache node modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run unit tests
+        run: npm run test:full --if-present
+
+      - name: Build production
+        run: npm run build:production --if-present
+
+      - name: Performance benchmark
+        run: npm run benchmark --if-present

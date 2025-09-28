@@ -4,7 +4,7 @@ const marvelWorkstation: ExtendedProductData = {
   id: 'marvel-workstation',
   name: 'Marvel Series Workstation',
   description: 'A modular desk-based workstation from the Marvel Series, designed for modern productivity and style.',
-  category: 'workstations',
+  category: 'modular-furniture',
   seriesId: 'modular-furniture',
   inStock: true,
   imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1754355103/steelmade/workstations/desk%20based%20workstation%20legs/marvel-series01.png',

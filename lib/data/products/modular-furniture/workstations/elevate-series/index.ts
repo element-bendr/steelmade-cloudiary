@@ -2,7 +2,7 @@ const elevateSeries = {
   id: 'elevate-series',
   name: 'Elevate Series Workstation',
   description: 'The Elevate Series Workstation offers modern design, robust steel legs, and flexible configurations for dynamic workspaces.',
-  category: 'workstations',
+  category: 'modular-furniture',
   seriesId: 'modular-furniture',
   imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1754355090/steelmade/workstations/desk%20based%20workstation%20legs/elevate-series1.png',
   gallery: [

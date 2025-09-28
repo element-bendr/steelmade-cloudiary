@@ -2,7 +2,7 @@ const curveSeries = {
   id: 'curve-series',
   name: 'Curve Series Workstation',
   description: 'The Curve Series Workstation features elegant curved steel legs and a modern, ergonomic design for creative workspaces.',
-  category: 'workstations',
+  category: 'modular-furniture',
   seriesId: 'modular-furniture',
   imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1754355076/steelmade/workstations/desk%20based%20workstation%20legs/curve-series1.png',
   gallery: [

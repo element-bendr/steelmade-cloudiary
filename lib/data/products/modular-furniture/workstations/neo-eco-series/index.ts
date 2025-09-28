@@ -2,7 +2,7 @@ const neoEcoSeries = {
   id: 'neo-eco-series',
   name: 'Neo Eco Series Workstation',
   description: 'The Neo Eco Series Workstation combines eco-friendly materials with modern steel leg designs for sustainable, stylish workspaces.',
-  category: 'workstations',
+  category: 'modular-furniture',
   seriesId: 'modular-furniture',
   imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1754355084/steelmade/workstations/desk%20based%20workstation%20legs/neo-eco-legs1.png',
   gallery: [

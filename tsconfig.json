@@ -2,7 +2,11 @@
   "extends": "./tsconfig.paths.json",
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -21,14 +25,30 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"],
-      "@modules/*": ["./modules/*"],
-      "@app/*": ["./app/*"],
-      "@components/*": ["./components/*"],
-      "@lib/*": ["./lib/*"],
-      "@utils/*": ["./utils/*"],
-      "@public/*": ["./public/*"],
-      "@styles/*": ["./styles/*"]
+      "@/*": [
+        "./*"
+      ],
+      "@modules/*": [
+        "./modules/*"
+      ],
+      "@app/*": [
+        "./app/*"
+      ],
+      "@components/*": [
+        "./components/*"
+      ],
+      "@lib/*": [
+        "./lib/*"
+      ],
+      "@utils/*": [
+        "./utils/*"
+      ],
+      "@public/*": [
+        "./public/*"
+      ],
+      "@styles/*": [
+        "./styles/*"
+      ]
     }
   },
   "include": [
@@ -46,7 +66,11 @@
     "**/__tests__"
   ],
   "references": [
-    { "path": "./modules/shared" },
-    { "path": "./modules/image" }
+    {
+      "path": "./modules/shared"
+    },
+    {
+      "path": "./modules/image"
+    }
   ]
 }

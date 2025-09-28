@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { notFound } from 'next/navigation';
 import { 
   ROUTE_PARAMS, 
   extractProductParams,
@@ -52,6 +53,11 @@ export async function generateMetadata({
 export default async function ProductPage({ params }: ProductPageProps) {
   // Extract parameters using the utility function
   const { categoryId, seriesId, productId } = extractProductParams(params);
+  
+  // Filter out static asset requests that shouldn't be handled by product routes
+  if (categoryId === 'images' || categoryId.includes('.') || seriesId.includes('.') || productId.includes('.')) {
+    notFound();
+  }
   
   try {
     // Fetch product data using the extracted parameters

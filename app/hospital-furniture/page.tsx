@@ -1,98 +1,48 @@
-import { Suspense } from "react";
 import { Metadata } from 'next';
-import { getAllSeries } from "@/lib/services/product-service";
-import ProductCategoryPageLayout from "@/components/products/ProductCategoryPageLayout";
-import { Skeleton } from "@/components/ui/skeleton";
+import CategoryPageTemplate from '../../components/templates/CategoryPageTemplate';
+import { getAllSeries } from '../../lib/services/product-service';
+import { getCategory } from '../../lib/data/products/categories';
+import type { ProductSeries } from '../../lib/data/product-types';
 
-// Revalidate every hour
-export const revalidate = 3600;
+export async function generateMetadata(): Promise<Metadata> {
+  const category = getCategory('hospital-furniture');
+  
+  if (!category) {
+    return {
+      title: 'Hospital Furniture - SteelMade',
+      description: 'Professional hospital furniture solutions',
+    };
+  }
 
-export const metadata: Metadata = {
-  title: "Hospital Furniture",
-  description: "Specialized furniture solutions for healthcare environments. Durable, hygienic, and designed for patient and staff comfort.",
-  openGraph: {
-    title: "Hospital Furniture | SteelMade",
-    description: "Durable, hygienic furniture for healthcare environments.",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Hospital Furniture | SteelMade",
-    description: "Durable, hygienic furniture for healthcare environments.",
-  },
-  alternates: {
-    canonical: "/hospital-furniture",
-  },
-};
+  const seriesData = await getAllSeries('hospital-furniture');
+  const seriesCount = Object.keys(seriesData || {}).length;
+  
+  return {
+    title: `${category.name} - Medical & Healthcare Furniture | SteelMade`,
+    description: `${category.description} Explore ${seriesCount} professional series designed for healthcare environments.`,
+    keywords: ['hospital furniture', 'medical furniture', 'healthcare equipment', 'medical chairs', 'hospital beds', 'medical storage'],
+    openGraph: {
+      title: `${category.name} - SteelMade Furniture`,
+      description: category.description,
+      type: 'website',
+      images: category.imageUrl ? [{ 
+        url: category.imageUrl,
+        width: 1200,
+        height: 630,
+        alt: `${category.name} collection`
+      }] : [],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${category.name} - SteelMade Furniture`,
+      description: category.description,
+    },
+  };
+}
 
 export default async function HospitalFurniturePage() {
-  const seriesData = await getAllSeries("hospital-furniture");
+  const seriesData = await getAllSeries('hospital-furniture');
+  const items = Object.values(seriesData || {}) as ProductSeries[];
 
-  // Defensive mapping: convert ProductSeries to SeriesMetadata for all series
-  const mapProductSeriesToSeriesMetadata = (series: any): import('@/types/collections').SeriesMetadata => ({
-    id: series.id,
-    title: series.title ?? '',
-    description: series.description ?? '',
-    seoDescription: series.seoDescription ?? '',
-    features: series.features ?? [],
-    lastModified: series.lastModified ?? '',
-    products: series.products ?? {},
-    category: series.category ?? 'hospital-furniture',
-    imageUrl: series.imageUrl ?? '',
-    specifications: series.specifications ?? {},
-    tags: series.tags ?? [],
-    coverImage: {
-      url: series.coverImage?.url ?? '',
-      width: series.coverImage?.width ?? 0,
-      height: series.coverImage?.height ?? 0,
-      alt: series.coverImage?.alt ?? '',
-    },
-    images: Array.isArray(series.images)
-      ? series.images.map((img: any) => ({
-          url: img.url ?? '',
-          width: img.width ?? 0,
-          height: img.height ?? 0,
-          alt: img.alt ?? '',
-        }))
-      : [],
-  });
-
-  const mappedSeriesData = Object.fromEntries(
-    Object.entries(seriesData).map(([key, value]) => [
-      key,
-      {
-        ...value,
-        lastModified:
-          value.lastModified &&
-          typeof value.lastModified === 'object' &&
-          Object.prototype.toString.call(value.lastModified) === '[object Date]'
-            ? (value.lastModified as Date).toISOString()
-            : value.lastModified ?? undefined,
-      },
-    ])
-  );
-
-  const pageTitle = "Hospital Furniture";
-  const pageDescription = "Specialized furniture solutions for healthcare environments. Durable, hygienic, and designed for patient and staff comfort.";
-  const breadcrumbItems = [
-    { name: "Home", item: "/" },
-    { name: "Hospital Furniture", item: "/hospital-furniture" }
-  ];
-
-  return (
-    <Suspense fallback={
-      <div className="grid grid-cols-1 gap-8 p-4 md:grid-cols-2 lg:grid-cols-3">
-        {[1, 2, 3].map((i) => (
-          <Skeleton key={i} className="h-[400px] rounded-xl" />
-        ))}
-      </div>
-    }>
-      <ProductCategoryPageLayout
-        category="hospital-furniture"
-        seriesData={mappedSeriesData}
-        pageTitle={pageTitle}
-        pageDescription={pageDescription}
-        breadcrumbItems={breadcrumbItems}
-      />
-    </Suspense>
-  );
+  return <CategoryPageTemplate categoryId="hospital-furniture" items={items} />;
 }

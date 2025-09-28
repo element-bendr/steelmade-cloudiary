@@ -2,7 +2,7 @@ const neoSeries = {
   id: 'neo-series',
   name: 'Neo Series Workstation',
   description: 'The Neo Series Workstation features innovative steel leg designs and modern aesthetics for high-performance workspaces.',
-  category: 'workstations',
+  category: 'modular-furniture',
   seriesId: 'modular-furniture',
   imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1754355086/steelmade/workstations/desk%20based%20workstation%20legs/neo-legs2.png',
   gallery: [

@@ -1,9 +1,11 @@
 "use client"
 
-import { CollectionCarousel } from "@/components/collections/CollectionCarousel"
-import { ProductGrid } from "@/components/products/ProductGrid"
-import { FeaturedProductsDisplay } from "@/components/products/FeaturedProductsDisplay"
-import type { ProductSeries } from "@/lib/data/product-types"
+import { CollectionCarousel } from "../collections/CollectionCarousel"
+import { ProductGrid } from "./ProductGrid"
+import { FeaturedProductsDisplay } from "./FeaturedProductsDisplay"
+import { Slideshow } from "../common/Slideshow"
+import type { ProductSeries } from "../../lib/data/product-types"
+import type { SlideData } from "../common/Slideshow"
 
 interface ProductSeriesPageProps {
   series: ProductSeries
@@ -21,10 +23,36 @@ export default function ProductSeriesPage({
   const featuredProducts = products.slice(0, 4);
   const remainingProducts = products.slice(4);
 
+  // Generate slides for this specific series
+  const seriesSlides: SlideData[] = [
+    {
+      id: `${seriesId}-hero`,
+      title: series.title || 'Premium Collection',
+      subtitle: `${category.charAt(0).toUpperCase() + category.slice(1)} Collection`,
+      description: series.seoDescription || series.description || `Discover our premium ${(series.title || 'furniture').toLowerCase()} collection`,
+      backgroundImage: series.coverImage?.url || '/images/placeholder/series-hero.jpg',
+      ctaText: `Explore ${series.title || 'Collection'}`,
+      ctaLink: `/${category}/${seriesId}`,
+      overlay: 'gradient' as const
+    }
+  ];
+
   return (
-    <div className="min-h-screen py-16 flex flex-col items-center justify-center relative overflow-x-hidden bg-white">
-      {/* Removed floating/animated decorative elements and gradients for minimalism */}
-      <div className="w-full max-w-7xl mx-auto px-4 space-y-16 relative z-10">
+    <div className="min-h-screen relative overflow-x-hidden bg-white">
+      {/* Series Slideshow */}
+      <Slideshow 
+        slides={seriesSlides}
+        height="50vh"
+        autoPlay={false}
+        showNavigation={false}
+        showIndicators={false}
+        showPlayPause={false}
+        className="mb-8"
+      />
+      
+      <div className="py-16 flex flex-col items-center justify-center relative overflow-x-hidden">
+        {/* Removed floating/animated decorative elements and gradients for minimalism */}
+        <div className="w-full max-w-7xl mx-auto px-4 space-y-16 relative z-10">
         {/* Series Title and Description */}
         <div className="text-center mb-10">
           <h1 className="text-5xl font-extrabold tracking-tight text-neutral-900 mb-2 animate-fade-in">
@@ -81,6 +109,7 @@ export default function ProductSeriesPage({
             </div>
           </div>
         )}
+        </div>
       </div>
     </div>
   )

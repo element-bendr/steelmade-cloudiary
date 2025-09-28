@@ -4,7 +4,10 @@ import neoEcoSeries from '../../../../lib/data/products/modular-furniture/workst
 export default function NeoEcoSeriesPage() {
   return (
     <ProductDetailLayout
-      product={neoEcoSeries}
+      product={{
+        ...neoEcoSeries,
+        seriesId: 'workstations' // Override to fix breadcrumb navigation
+      }}
       layoutOptions={{ imagePosition: 'left' }}
     />
   );

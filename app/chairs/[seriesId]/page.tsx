@@ -1,8 +1,8 @@
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
-import { default as ProductSeriesPage } from "@/components/products/ProductSeriesPage"
-import { getSeriesById, getAllSeries, getRevalidateTime, getSeriesProducts } from "@/lib/services/product-service"
-import { getImageUrl } from "@/lib/utils/image-utils"
+import { default as ProductSeriesPage } from "../../../components/products/ProductSeriesPage"
+import { getSeriesById, getAllSeries, getRevalidateTime, getSeriesProducts } from "../../../lib/services/product-service"
+import { getImageUrl } from "../../../lib/utils/image-utils"
 
 // Route segment config for performance optimization
 export const dynamic = 'auto'
@@ -68,11 +68,9 @@ export async function generateMetadata({ params }: ChairSeriesPageProps): Promis
 }
 
 export default async function ChairSeriesPage({ params }: ChairSeriesPageProps) {
-  console.log("[ChairSeriesPage] params.seriesId:", params.seriesId); // Log received seriesId
   const series = await getSeriesById("chairs", params.seriesId)
   
   if (!series) {
-    console.error("[ChairSeriesPage] Series not found for id:", params.seriesId); // Log if series is not found
     notFound()
   }
 

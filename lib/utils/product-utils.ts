@@ -1,11 +1,11 @@
 // Utility functions for product data retrieval, now using canonical types
-import { productCatalog } from '@/lib/data/product-catalog';
+import { productCatalog } from '../data/product-catalog';
 import type {
   ProductImage,
   ProductVariant,
   ExtendedProductData,
   ProductSeries
-} from '@/lib/data/product-types';
+} from '../data/product-types';
 
 /**
  * Get product data by ID (modular, production-ready)

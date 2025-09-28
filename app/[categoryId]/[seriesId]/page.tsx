@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import { 
   ROUTE_PARAMS, 
   extractSeriesParams, 
@@ -39,8 +40,27 @@ export async function generateMetadata({
 }
 
 export default async function SeriesPage({ params }: SeriesPageProps) {
-  // Extract parameters using the utility function
-  const { categoryId, seriesId } = extractSeriesParams(params);
+  // Direct parameter access
+  const categoryId = params.categoryId;
+  const seriesId = params.seriesId;
+  
+  console.log('[GenericRoute] Raw params:', params);
+  console.log('[GenericRoute] Direct categoryId:', categoryId);
+  console.log('[GenericRoute] Direct seriesId:', seriesId);
+  
+  // Filter out static asset requests that shouldn't be handled by product routes
+  if (categoryId === 'images' || categoryId.includes('.') || seriesId.includes('.')) {
+    console.log('[GenericRoute] Filtering out static asset request');
+    notFound();
+  }
+  
+  // Redirect modular-furniture requests to the specific route handler
+  if (categoryId === 'modular-furniture') {
+    console.log('[GenericRoute] Redirecting modular-furniture to specific route');
+    // This should be handled by app/modular-furniture/[seriesId]/page.tsx
+    // If we're here, there's a routing conflict - return 404
+    notFound();
+  }
   
   try {
     // Fetch products data using the extracted parameters
@@ -77,10 +97,13 @@ export default async function SeriesPage({ params }: SeriesPageProps) {
             <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="h-64 relative">
                 {product.imageUrl && (
-                  <img
+                  <Image
                     src={product.imageUrl}
                     alt={product.name}
-                    className="w-full h-full object-cover"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="w-full h-full"
                   />
                 )}
               </div>

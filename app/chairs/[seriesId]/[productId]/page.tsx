@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { notFound } from "next/navigation";
-import { getProductById, getSeriesById } from "@/lib/utils/product-utils";
-import { ProductDetailLayout } from '@/components/products';
+import { getProductById, getSeriesById } from "../../../../lib/utils/product-utils";
+import { ProductDetailLayout } from '../../../../components/products';
 
 export default function ProductDetailRoute({ params }: { params: { seriesId: string; productId: string } }) {
   const { seriesId, productId } = params;

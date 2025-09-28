@@ -4,7 +4,10 @@ import hexaSeries from '../../../../lib/data/products/modular-furniture/workstat
 export default function HexaSeriesPage() {
   return (
     <ProductDetailLayout
-      product={hexaSeries}
+      product={{
+        ...hexaSeries,
+        seriesId: 'workstations' // Override to fix breadcrumb navigation
+      }}
       layoutOptions={{ imagePosition: 'left' }}
     />
   );

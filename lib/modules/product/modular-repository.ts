@@ -53,7 +53,7 @@ export class ModularProductRepository implements ProductRepository {
         throw new CategoryNotFoundError(`Category not found: ${category}`);
       }
       
-      return categoryData[seriesId] || null;
+      return (categoryData as Record<string, ProductSeries>)[seriesId] || null;
     }
     
     // Otherwise, use the individual category exports based on migration status
@@ -66,7 +66,7 @@ export class ModularProductRepository implements ProductRepository {
         const migratedCategories = productModuleConfig.features.migratedCategories as Record<string, boolean>;
         if (migratedCategories[category]) {
           const categoryData = products[category as keyof typeof products];
-          return categoryData ? categoryData[seriesId] || null : null;
+          return categoryData ? (categoryData as Record<string, ProductSeries>)[seriesId] || null : null;
         }
         throw new CategoryNotFoundError(`Category not implemented in modular system: ${category}`);
     }
@@ -80,7 +80,7 @@ export class ModularProductRepository implements ProductRepository {
         throw new CategoryNotFoundError(`Category not found: ${category}`);
       }
       
-      return categoryData;
+      return categoryData as Record<string, ProductSeries>;
     }
     
     // Otherwise, use the individual category exports based on migration status
@@ -93,7 +93,7 @@ export class ModularProductRepository implements ProductRepository {
         const migratedCategories = productModuleConfig.features.migratedCategories as Record<string, boolean>;
         if (migratedCategories[category]) {
           const categoryData = products[category as keyof typeof products];
-          return categoryData || {};
+          return (categoryData as Record<string, ProductSeries>) || {};
         }
         throw new CategoryNotFoundError(`Category not implemented in modular system: ${category}`);
     }

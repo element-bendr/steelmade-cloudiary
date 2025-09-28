@@ -1,10 +1,11 @@
-import type { ProductCategory } from "@/types/collections";
-import type { Series } from "@/components/portfolio/types";
+import type { ProductCategory } from "../../types/collections";
+import type { Series } from "../../components/portfolio/types";
 import { getPortfolioSeries as getPortfolioSeriesHelper, getMockData as getMockDataHelper, getMockProductsData as getMockProductsDataHelper, ProductCatalogData } from "./product-helpers";
-import type { ProductSeries } from "@/lib/data/product-types";
+import type { ProductSeries } from "./product-types";
 import { chairs } from "./products/chairs";
 import { desks } from "./products/desks";
 import { storage } from "./products/storage";
+import { modularFurniture, workstationsSeries } from "./products/modular-furniture";
 
 // Single source of truth for all product data
 export const productCatalog: ProductCatalogData = {
@@ -14,7 +15,11 @@ export const productCatalog: ProductCatalogData = {
   "school-furniture": {},
   "hospital-furniture": {},
   "racking-systems": {},
-  "modular-furniture": {},
+  "modular-furniture": {
+    // Map the modular-furniture entry to production-ready modules. We intentionally
+    // expose each series under the key expected by utils/getAllSeries.
+    workstations: workstationsSeries,
+  },
   "office-accessories": {}
 };
 

@@ -4,7 +4,10 @@ import sparkSeries from '../../../../lib/data/products/modular-furniture/worksta
 export default function SparkSeriesPage() {
   return (
     <ProductDetailLayout
-      product={sparkSeries}
+      product={{
+        ...sparkSeries,
+        seriesId: 'workstations' // Override to fix breadcrumb navigation
+      }}
       layoutOptions={{ imagePosition: 'left' }}
     />
   );

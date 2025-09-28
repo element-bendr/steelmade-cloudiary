@@ -2,7 +2,7 @@ const sparkSeries = {
   id: 'spark-series',
   name: 'Spark Series Workstation',
   description: 'The Spark Series Workstation features vibrant design, durable steel legs, and versatile configurations for energetic workspaces.',
-  category: 'workstations',
+  category: 'modular-furniture',
   seriesId: 'modular-furniture',
   imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1754355081/steelmade/workstations/desk%20based%20workstation%20legs/spark-series1.png',
   gallery: [

@@ -2,7 +2,7 @@ const rockSeries = {
   id: 'rock-series',
   name: 'Rock Series Workstation',
   description: 'The Rock Series Workstation features rugged steel leg designs and a robust look for high-performance workspaces.',
-  category: 'workstations',
+  category: 'modular-furniture',
   seriesId: 'modular-furniture',
   imageUrl: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1754355063/steelmade/workstations/desk%20based%20workstation%20legs/rock-series1.png',
   gallery: [

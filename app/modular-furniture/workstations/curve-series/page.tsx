@@ -4,7 +4,10 @@ import curveSeries from '../../../../lib/data/products/modular-furniture/worksta
 export default function CurveSeriesPage() {
   return (
     <ProductDetailLayout
-      product={curveSeries}
+      product={{
+        ...curveSeries,
+        seriesId: 'workstations' // Override to fix breadcrumb navigation
+      }}
       layoutOptions={{ imagePosition: 'left' }}
     />
   );

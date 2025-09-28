@@ -1,7 +1,8 @@
-import { ProductSeries } from '@/lib/data/product-types';
+import { ProductSeries } from '../product-types';
 import { directorSeries } from './chairs/director-series';
 import { executiveSeries } from './chairs/executive-series/index';
 import { gamingSeries } from './chairs/gaming-series';
+import { workstationsSeries } from './modular-furniture/workstations';
 
 // Define the shape for a product category using canonical types
 export interface ProductCategory {
@@ -43,11 +44,53 @@ const storage: ProductCategory = {
   series: {}
 };
 
+// Define the modular-furniture category
+const modularFurniture: ProductCategory = {
+  id: 'modular-furniture',
+  name: 'Modular Furniture',
+  description: 'Create flexible and efficient workspaces with our modular furniture solutions including workstations and office systems.',
+  imageUrl: '/images/categories/modular-furniture.jpg',
+  series: {
+    'workstations': workstationsSeries
+  }
+};
+
+// Define the hospital-furniture category
+const hospitalFurniture: ProductCategory = {
+  id: 'hospital-furniture',
+  name: 'Hospital Furniture',
+  description: 'Professional medical furniture designed for healthcare environments, combining functionality with patient comfort and safety.',
+  imageUrl: '/images/categories/hospital-furniture.jpg',
+  series: {}
+};
+
+// Define the school-furniture category
+const schoolFurniture: ProductCategory = {
+  id: 'school-furniture',
+  name: 'School Furniture',
+  description: 'Durable and ergonomic furniture solutions for educational institutions, designed to enhance learning environments.',
+  imageUrl: '/images/categories/school-furniture.jpg',
+  series: {}
+};
+
+// Define the racking-systems category
+const rackingSystems: ProductCategory = {
+  id: 'racking-systems',
+  name: 'Racking Systems',
+  description: 'Industrial-strength storage and racking solutions for warehouses, offices, and commercial spaces.',
+  imageUrl: '/images/categories/racking-systems.jpg',
+  series: {}
+};
+
 // Export all categories
 const categories: Record<string, ProductCategory> = {
   chairs,
   tables,
-  storage
+  storage,
+  'modular-furniture': modularFurniture,
+  'hospital-furniture': hospitalFurniture,
+  'school-furniture': schoolFurniture,
+  'racking-systems': rackingSystems
 };
 
 /**
