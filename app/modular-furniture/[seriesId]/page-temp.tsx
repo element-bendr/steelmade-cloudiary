@@ -1,5 +1,6 @@
-// app/modular-furniture/[seriesId]/page.tsx
-// TEMPORARILY DISABLED - Redirect to generic series page during refactoring
+// app/modular-furniture/[seriesId]/page-temp.tsx
+// TEMPORARILY DISABLED - During refactor, send users to the modular-furniture category root
+// to avoid redirect loops until series pages are re-enabled.
 import { redirect } from "next/navigation";
 
 interface ModularFurnitureSeriesPageProps {
@@ -9,6 +10,7 @@ interface ModularFurnitureSeriesPageProps {
 }
 
 export default function ModularFurnitureSeriesPage({ params }: ModularFurnitureSeriesPageProps) {
-  // Redirect to generic series page implementation
-  redirect(`/modular-furniture/${params.seriesId}`);
+  // Previously redirected to the same URL which caused an infinite loop.
+  // Send users to the category index while series pages are being rebuilt.
+  redirect('/modular-furniture');
 }
