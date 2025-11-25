@@ -10,6 +10,7 @@ import impactSeries from './impact-series/index';
 import rockSeries from './rock-series/index';
 import hexaSeries from './hexa-series/index';
 import eliteSeries from './elite-series/index';
+ 
 
 export const workstationsSeries: ProductSeries = {
   id: 'workstations',
@@ -39,6 +40,7 @@ export const workstationsSeries: ProductSeries = {
     [hexaSeries.id]: hexaSeries
     ,
     [eliteSeries.id]: eliteSeries
+     
   }
 };
 

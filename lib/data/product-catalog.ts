@@ -15,11 +15,10 @@ export const productCatalog: ProductCatalogData = {
   "school-furniture": {},
   "hospital-furniture": {},
   "racking-systems": {},
-  "modular-furniture": {
-    // Map the modular-furniture entry to production-ready modules. We intentionally
-    // expose each series under the key expected by utils/getAllSeries.
-    workstations: workstationsSeries,
-  },
+  // Use the canonical modularFurniture mapping so all series (workstations, wire-management, etc.)
+  // are exposed through the productCatalog. Previously only `workstations` was mapped here,
+  // which caused newly added series like `wire-management` to be invisible to the product service.
+  "modular-furniture": modularFurniture,
   "office-accessories": {}
 };
 
