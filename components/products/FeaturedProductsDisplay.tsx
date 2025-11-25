@@ -1,6 +1,5 @@
 "use client"
 
-import { ProductCard } from "./ProductCard"
 import type { ExtendedProductData } from '../../lib/data/product-types';
 import { cn } from "../../lib/utils"
 import Link from "next/link"

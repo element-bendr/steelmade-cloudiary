@@ -37,7 +37,14 @@ export function getAllProducts(category: string): Record<string, ExtendedProduct
   return Object.values(cat).reduce((acc: Record<string, ExtendedProductData>, series: any) => {
     if (series && series.products) {
       Object.entries(series.products).forEach(([id, product]) => {
-        acc[id] = product as ExtendedProductData;
+        // Annotate product objects with category and seriesId so components
+        // that build links (e.g. `/${product.category}/${product.seriesId}/${product.id}`)
+        // have the required fields. This also helps generateStaticParams.
+        acc[id] = {
+          ...(product as ExtendedProductData),
+          category,
+          seriesId: series.id,
+        } as ExtendedProductData;
       });
     }
     return acc;

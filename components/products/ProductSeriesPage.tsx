@@ -20,8 +20,9 @@ export default function ProductSeriesPage({
   category,
   seriesId
 }: ProductSeriesPageProps) {
-  const featuredProducts = products.slice(0, 4);
-  const remainingProducts = products.slice(4);
+  // Prepare featured slice: first 4 products, then the full list for 'All'
+  const featured = products.slice(0, 4);
+  const allProducts = products;
 
   // Generate slides for this specific series
   const seriesSlides: SlideData[] = [
@@ -63,28 +64,18 @@ export default function ProductSeriesPage({
           </p>
         </div>
 
-        {/* Featured Products Section */}
-        {featuredProducts.length > 0 && (
-          <section className="py-12 px-0 md:px-0 relative animate-fade-in">
-            <FeaturedProductsDisplay 
-              products={featuredProducts} 
-              title={`Featured ${series.title}`}
-              category={category}
-              seriesId={seriesId}
-              className="z-10 relative"
-            />
-          </section>
+        {/* Featured Section (first 4 products) */}
+        {featured.length > 0 && (
+          <FeaturedProductsDisplay products={featured} title={`Featured ${series.title}`} category={category} seriesId={seriesId} className="z-10 relative" />
         )}
 
-        {/* Main Product Grid Section */}
-        {remainingProducts.length > 0 && (
-          <section className="py-12 px-0 md:px-0 relative animate-fade-in-slow">
-            <h2 className="text-3xl font-bold tracking-tight mb-8 text-neutral-900">
-              All {series.title}
-            </h2>
-            <ProductGrid products={remainingProducts} />
-          </section>
-        )}
+        {/* All Products Section (full list) */}
+        <section className="py-12 px-0 md:px-0 relative animate-fade-in-slow">
+          <h2 className="text-3xl font-bold tracking-tight mb-8 text-neutral-900">
+            All {series.title}
+          </h2>
+          <ProductGrid products={allProducts} />
+        </section>
 
         {series.features && series.features.length > 0 && (
           <div className="mt-20 rounded-3xl border border-neutral-100 shadow p-12 relative overflow-hidden animate-fade-in-slow bg-white">

@@ -52,6 +52,21 @@ export const mainNavigation: NavigationItem[] = [
                 description: "Customizable office modules for any workspace"
               },
               {
+                title: "Wire Management",
+                href: "/modular-furniture/wire-management",
+                description: "Cable trays, raceways and smart wire routing solutions"
+              },
+              {
+                title: "Privacy Screens",
+                href: "/modular-furniture/privacy-screens",
+                description: "Desk-mounted and freestanding privacy screens for open-plan offices"
+              },
+              {
+                title: "Accessories",
+                href: "/modular-furniture/accessories",
+                description: "Desk accessories and fittings like monitor arms, CPU holders and cable tidies"
+              },
+              {
                 title: "Workstations",
                 href: "/modular-furniture/workstations",
                 description: "Ergonomic workstations for maximum productivity"
@@ -72,6 +87,11 @@ export const mainNavigation: NavigationItem[] = [
                 title: "Partition Systems",
                 href: "/modular-furniture/partition-systems",
                 description: "Flexible space division solutions"
+              },
+              {
+                title: "Low Partition",
+                href: "/modular-furniture/low-partition",
+                description: "Low-height partition options for open-plan workspaces"
               }
             ]
           }

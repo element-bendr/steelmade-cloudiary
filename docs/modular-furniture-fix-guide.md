@@ -94,4 +94,4 @@
 
 ---
 
-**Reminder:** Stick strictly to this checklist. Do not modify unrelated files, feature flags, or data structures. Report any unexpected blockers before deviating.***
+**Reminder:** Stick strictly to this checklist. Do not modify unrelated files, feature flags, or data structures. Report any unexpected blockers before deviating.\*\*\*

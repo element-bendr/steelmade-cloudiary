@@ -39,7 +39,11 @@ export default async function ModularFurnitureSeriesPage({ params }: ModularFurn
   if (!series) return notFound()
 
   const seriesProducts = await getSeriesProducts('modular-furniture', params.seriesId)
-  const productList = seriesProducts ? Object.values(seriesProducts) : []
+  // Annotate products with category and seriesId so client components
+  // (which build URLs using `product.category` and `product.seriesId`) have the fields they expect.
+  const productList = seriesProducts
+    ? Object.values(seriesProducts).map((p) => ({ ...(p as any), category: 'modular-furniture', seriesId: params.seriesId }))
+    : []
 
   return (
     <ProductSeriesPage
