@@ -71,11 +71,11 @@ export default function ConfigurableCard({ item, variant = 'series', categoryId,
   return (
     <Link
       href={`/${categoryId}/${item.id}`}
-      className={`bg-white/60 backdrop-blur-md border border-neutral-200 shadow-lg rounded-xl transition-transform hover:scale-[1.03] hover:shadow-xl flex flex-col items-center p-12 group transition-all duration-300 relative border-l-8 border-l-accent/30 hover:border-l-accent/60 min-h-[420px] animate-fadeinup`}
+      className={`bg-white border border-transparent hover:border-neutral-200 flex flex-col items-center p-6 group transition-all duration-300 relative min-h-[420px] animate-fadeinup hover:shadow-minimal`}
       style={{ animationDelay: `${index * 80}ms`, animationFillMode: 'forwards' }}
       aria-label={`View ${title}`}
     >
-      <div className="w-56 h-56 mb-10 rounded-lg overflow-hidden bg-neutral-100 flex items-center justify-center border border-neutral-100">
+      <div className="w-full h-64 mb-8 rounded-sm overflow-hidden bg-neutral-50 flex items-center justify-center p-4">
         {firstProduct?.imageUrl ? (
           // Use Next Image for optimized loading; fall back to fill layout if size unknown
           <div className="w-full h-full relative">
@@ -92,9 +92,11 @@ export default function ConfigurableCard({ item, variant = 'series', categoryId,
           <div className="w-full h-full flex items-center justify-center text-neutral-400">No image</div>
         )}
       </div>
-      <h3 className="text-2xl font-semibold text-neutral-900 mb-1 group-hover:text-accent transition-colors">{title}</h3>
-      <p className="text-lg text-neutral-500 text-center mb-3 line-clamp-2 min-h-[2.5em]">{description}</p>
-      <span className="inline-block mt-auto px-7 py-3 rounded-md bg-neutral-900 text-white font-medium shadow-sm hover:bg-accent hover:text-white transition">Explore</span>
+      <div className="w-full text-left">
+        <h3 className="text-xl font-serif text-neutral-900 mb-2 group-hover:text-accent transition-colors">{title}</h3>
+        <p className="text-sm text-neutral-500 mb-6 line-clamp-2 min-h-[2.5em] font-light">{description}</p>
+        <span className="inline-block mt-auto text-sm tracking-wide uppercase font-medium text-neutral-900 group-hover:text-accent transition-colors border-b border-transparent group-hover:border-accent pb-1">Explore Collection</span>
+      </div>
     </Link>
   );
 }

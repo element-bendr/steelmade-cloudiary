@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Roboto } from 'next/font/google';
+import { Inter, Playfair_Display } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/providers/theme-provider';
 import { ProtectedHeader } from '@/components/header/protected-header';
@@ -14,17 +14,17 @@ import { AppContextProvider } from '@/context/AppContext';
 const inter = Inter({ 
   subsets: ['latin'],
   display: 'swap',
+  variable: '--font-inter',
   preload: true,
-  weight: ['400', '500', '600', '700']
+  weight: ['300', '400', '500', '600']
 });
 
-// Secondary font for headings
-const roboto = Roboto({
+// Secondary font for headings (Minimalist premium style)
+const playfair = Playfair_Display({
   subsets: ['latin'],
   display: 'swap',
   preload: true,
-  weight: ['700'],
-  variable: '--font-roboto',
+  variable: '--font-playfair',
 });
 
 export const metadata: Metadata = {
@@ -105,18 +105,16 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" className={roboto.variable}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#000000" />
         {/* Preload critical fonts to reduce FOUT/FOIT and improve LCP */}
-        <link rel="preload" href="https://fonts.gstatic.com/s/inter/v12/....woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-        <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v29/....woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <CriticalScripts />
       </head>
-      <body className={inter.className} suppressHydrationWarning={true}>
+      <body className="font-sans font-light antialiased" suppressHydrationWarning={true}>
         {/* Google Analytics - Update with your actual GA ID */}
         {process.env.NODE_ENV === 'production' && (
           <GoogleAnalytics id={process.env.NEXT_PUBLIC_GA_ID || 'G-XXXXXXXXXX'} />

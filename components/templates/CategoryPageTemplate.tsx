@@ -70,9 +70,9 @@ export default function CategoryPageTemplate({ categoryId, items }: Props) {
         {/* SSR-friendly injection point: cssVarsString is available for server-side rendering */}
         <div className="min-h-screen w-full flex flex-col items-center justify-start py-16 px-4" style={{ background: theme.background }}>
           <div className="w-full flex flex-col items-center">
-            <h1 className="text-3xl md:text-4xl font-extrabold text-neutral-900 tracking-tight mb-2">{(categoryId || '').replace(/[-_]/g, ' ').toUpperCase()}</h1>
-            <p className="text-lg text-neutral-500 mb-10 max-w-2xl mx-auto font-medium">Explore our curated collections.</p>
-            <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 w-full max-w-7xl mx-auto">
+            <h1 className="text-3xl md:text-5xl font-serif text-neutral-900 tracking-tight mb-4">{(categoryId || '').replace(/[-_]/g, ' ').toUpperCase()}</h1>
+            <p className="text-lg text-neutral-500 mb-12 max-w-2xl mx-auto font-light">Explore our curated collections.</p>
+            <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 w-full max-w-[1400px] mx-auto">
               {items.map((it, i) => (
                 <CategoryErrorBoundary key={`card-${it.id}`} categoryId={`${categoryId}-card`}>
                   <ConfigurableCard key={it.id} item={it} categoryId={categoryId} index={i} />

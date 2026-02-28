@@ -41,7 +41,7 @@ function Header({ className }: HeaderProps) {
   return (
     <header 
       className={cn(
-        "sticky top-0 z-50 w-full border-b enhanced-morphism",
+        "sticky top-0 z-50 w-full bg-background border-b border-border/40",
         className
       )} 
       role="banner"

@@ -71,16 +71,11 @@ function CategoryCard({ category, index }: CategoryCardProps) {
       <Link href={category.href} className="block h-full">
         <motion.div
           variants={scaleOnHover}
-          className="relative h-64 rounded-xl overflow-hidden shadow-lg transition-all duration-300 group"
-          style={{
-            backgroundColor: theme.surface,
-            borderColor: theme.card.border,
-            boxShadow: theme.card.shadow
-          }}
+          className="relative h-64 rounded-sm overflow-hidden border border-border/50 bg-card hover:shadow-minimal-hover transition-all duration-300 group"
         >
           {/* Background Gradient */}
           <div 
-            className="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity duration-300"
+            className="absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity duration-300 bg-black/5"
             style={{
               background: `linear-gradient(135deg, ${theme.primary}22, ${theme.accent}22)`
             }}
@@ -96,14 +91,12 @@ function CategoryCard({ category, index }: CategoryCardProps) {
             {/* Text Content */}
             <div>
               <h3 
-                className="text-xl font-semibold mb-2 group-hover:text-opacity-90 transition-colors"
-                style={{ color: theme.primary }}
+                className="text-xl font-serif tracking-wide mb-2 group-hover:text-primary/80 transition-colors"
               >
                 {category.title}
               </h3>
               <p 
-                className="text-sm leading-relaxed"
-                style={{ color: theme.text }}
+                className="text-sm leading-relaxed text-muted-foreground"
               >
                 {category.description}
               </p>

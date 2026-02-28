@@ -15,12 +15,12 @@ export const productStyles = {
   
   // Typography
   typography: {
-    title: 'text-3xl font-bold text-gray-900',
-    subtitle: 'text-xl font-semibold text-gray-900',
-    description: 'text-gray-600',
-    sectionHeading: 'font-medium text-lg text-gray-900',
-    featureText: 'text-gray-700',
-    price: 'text-xl font-semibold text-gray-900',
+    title: 'text-4xl md:text-5xl font-serif text-gray-900 tracking-tight',
+    subtitle: 'text-2xl font-serif text-gray-900',
+    description: 'text-gray-600 font-light leading-relaxed text-lg',
+    sectionHeading: 'font-medium font-serif text-xl text-gray-900 border-b border-gray-100 pb-2',
+    featureText: 'text-gray-500 font-light',
+    price: 'text-xl font-medium text-gray-900 font-serif',
   },
   
   // Colors
@@ -30,29 +30,29 @@ export const productStyles = {
     primaryBg: 'bg-red-700',
     primaryBgHover: 'hover:bg-red-800',
     primaryBorder: 'border-red-700',
-    accent: 'text-blue-600',
-    accentHover: 'hover:text-blue-700',
-    accentBg: 'bg-blue-600',
-    accentBgHover: 'hover:bg-blue-700',
+    accent: 'text-red-600',
+    accentHover: 'hover:text-red-700',
+    accentBg: 'bg-red-50',
+    accentBgHover: 'hover:bg-red-100',
   },
   
   // Components
   components: {
     // Image container
     image: {
-      container: 'relative aspect-square overflow-hidden rounded-xl border border-gray-100 shadow-sm',
+      container: 'relative aspect-square overflow-hidden rounded-[2px] bg-neutral-50 shadow-minimal',
       img: 'object-cover object-center transition-opacity duration-300',
-      decorator: 'absolute top-0 right-0 w-16 h-16 bg-red-700 opacity-20 z-10',
+      decorator: 'hidden',
     },
     
     // Variant selector
     variantSelector: {
-      container: 'space-y-2',
-      buttonsContainer: 'flex flex-wrap gap-3',
+      container: 'space-y-4 py-8',
+      buttonsContainer: 'grid grid-cols-2 sm:flex sm:flex-wrap gap-2',
       button: {
-        base: 'px-4 py-2 rounded-md border transition-colors duration-200',
-        selected: 'border-red-700 text-red-700 font-medium',
-        unselected: 'border-gray-300 text-gray-700 hover:border-gray-400 hover:bg-gray-50',
+        base: 'px-6 py-3 border border-border text-sm font-medium tracking-wide uppercase transition-all duration-300 rounded-[2px]',
+        selected: 'border-red-700 bg-red-700 text-white',
+        unselected: 'text-gray-500 hover:border-gray-400 hover:text-gray-900 bg-transparent',
       },
     },
     
@@ -67,7 +67,7 @@ export const productStyles = {
     // Contact button
     contactButton: {
       container: 'space-y-2 pt-2',
-      button: 'w-full sm:w-auto bg-red-700 hover:bg-red-800 text-white transition-colors',
+      button: 'w-full sm:w-auto bg-red-700 hover:bg-red-800 text-white transition-colors rounded-[2px]',
       variantText: 'text-red-700 font-medium text-sm mt-2',
     },
     

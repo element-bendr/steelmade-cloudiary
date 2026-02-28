@@ -71,7 +71,7 @@ const Slide: React.FC<SlideProps> = ({ slide, isActive }) => {
             )}
             
             <motion.h1 
-              className="text-3xl sm:text-4xl md:text-6xl font-bold text-white leading-tight"
+              className="text-3xl sm:text-4xl md:text-6xl font-serif text-white leading-tight font-medium"
               initial={{ opacity: 0, y: 20 }}
               animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.8, delay: 0.3 }}
@@ -97,7 +97,7 @@ const Slide: React.FC<SlideProps> = ({ slide, isActive }) => {
               >
                 <a
                   href={slide.ctaLink}
-                  className="inline-flex items-center px-8 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors duration-300"
+                  className="inline-flex items-center px-8 py-3 bg-white hover:bg-gray-100 text-gray-900 border border-transparent font-medium tracking-wide uppercase text-sm transition-all duration-300 rounded-sm"
                 >
                   {slide.ctaText}
                 </a>

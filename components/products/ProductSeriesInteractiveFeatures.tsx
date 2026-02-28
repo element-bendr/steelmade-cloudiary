@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { GradientButton } from "@/components/ui/gradient-button"
+import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
 import { ImageCarousel } from "@/components/ui/image-carousel"
 import { SeriesMetadata } from "@/types/index"
@@ -27,11 +27,11 @@ export function ProductSeriesInteractiveFeatures({
   return (
     <>
       <div className="mb-8">
-        <Link href={backLink} legacyBehavior passHref>
-          <GradientButton className="mb-4 gap-2 text-black">
+        <Link href={backLink} passHref legacyBehavior>
+          <Button variant="ghost" className="mb-4 gap-2 text-foreground pl-0 hover:bg-transparent hover:text-accent">
             <ArrowLeft className="h-4 w-4" />
             {backText}
-          </GradientButton>
+          </Button>
         </Link>
       </div>      
       <div className="order-2 lg:order-1">        
@@ -44,10 +44,12 @@ export function ProductSeriesInteractiveFeatures({
       </div>
       
       <div className="mt-8">
-        <GradientButton asLink href="/contact" className="gap-2 text-black">
-          Request Quote
-          <ArrowLeft className="h-4 w-4 rotate-180" />
-        </GradientButton>
+        <Link href="/contact" passHref legacyBehavior>
+          <Button variant="default" className="gap-2">
+            Request Quote
+            <ArrowLeft className="h-4 w-4 rotate-180" />
+          </Button>
+        </Link>
       </div>
     </>
   )
