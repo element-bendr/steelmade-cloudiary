@@ -4,10 +4,10 @@ import { getCategory, type ProductCategory } from '../data/products/categories';
 
 // Reusable Cloudinary assets for fallback imagery
 const CLOUDINARY_FALLBACKS = [
-  'https://res.cloudinary.com/dqde19mfs/image/upload/v1749805770/steelmade/chairs/executive-series/amigo/ic-331-hb.jpg',
-  'https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/ashley/ic-361-hb.jpg',
-  'https://res.cloudinary.com/dqde19mfs/image/upload/v1750425884/steelmade/chairs/ergonomic-series/ud/ic-329-hb-grey.png',
-  'https://res.cloudinary.com/dqde19mfs/image/upload/v1752129755/steelmade/chairs/visitor-series/classic.png'
+  'https://res.cloudinary.com/dqde19mfs/image/upload/q_auto,f_auto/v1749805770/steelmade/chairs/executive-series/amigo/ic-331-hb.jpg',
+  'https://res.cloudinary.com/dqde19mfs/image/upload/q_auto,f_auto/v1748785779/steelmade/chairs/director-series/ashley/ic-361-hb.jpg',
+  'https://res.cloudinary.com/dqde19mfs/image/upload/q_auto,f_auto/v1750425884/steelmade/chairs/ergonomic-series/ud/ic-329-hb-grey.png',
+  'https://res.cloudinary.com/dqde19mfs/image/upload/q_auto,f_auto/v1752131212/steelmade/chairs/visitor-series/regency/ic-152.png'
 ];
 
 const CATEGORY_SLIDE_TEMPLATES = {
@@ -179,7 +179,7 @@ export function generateHomepageSlides(): SlideData[] {
       title: 'Crafted for Excellence',
       subtitle: 'steelmade',
       description: 'Where innovative design meets uncompromising quality. Discover furniture that transforms spaces and elevates experiences.',
-      backgroundImage: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749805770/steelmade/chairs/executive-series/amigo/ic-331-hb.jpg',
+      backgroundImage: 'https://res.cloudinary.com/dqde19mfs/image/upload/q_auto,f_auto/v1749805770/steelmade/chairs/executive-series/amigo/ic-331-hb.jpg',
       ctaText: 'Discover Our Collections',
       ctaLink: '/chairs',
       overlay: 'gradient' as const
@@ -189,7 +189,7 @@ export function generateHomepageSlides(): SlideData[] {
       title: 'Executive Excellence',
       subtitle: 'Director Series',
       description: 'Premium chairs designed for leadership presence. Each piece embodies authority, comfort, and refined taste.',
-      backgroundImage: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/ashley/ic-361-hb.jpg',
+      backgroundImage: 'https://res.cloudinary.com/dqde19mfs/image/upload/q_auto,f_auto/v1748785779/steelmade/chairs/director-series/ashley/ic-361-hb.jpg',
       ctaText: 'Explore Director Series',
       ctaLink: '/chairs/director-series',
       overlay: 'gradient' as const
@@ -199,7 +199,7 @@ export function generateHomepageSlides(): SlideData[] {
       title: 'Comfort & Wellness',
       subtitle: 'Ergonomic Series',
       description: 'Science-backed designs that support your posture and productivity with poetic precision.',
-      backgroundImage: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1750425884/steelmade/chairs/ergonomic-series/ud/ic-329-hb-grey.png',
+      backgroundImage: 'https://res.cloudinary.com/dqde19mfs/image/upload/q_auto,f_auto/v1750425884/steelmade/chairs/ergonomic-series/ud/ic-329-hb-grey.png',
       ctaText: 'Discover Ergonomic Comfort',
       ctaLink: '/chairs/ergonomic-series',
       overlay: 'gradient' as const
@@ -209,7 +209,7 @@ export function generateHomepageSlides(): SlideData[] {
       title: 'Welcoming Spaces',
       subtitle: 'Visitor Series',
       description: 'Elegant seating that creates memorable first impressions and embraces every guest with comfort.',
-      backgroundImage: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1752129755/steelmade/chairs/visitor-series/classic.png',
+      backgroundImage: 'https://res.cloudinary.com/dqde19mfs/image/upload/q_auto,f_auto/v1752131212/steelmade/chairs/visitor-series/regency/ic-152.png',
       ctaText: 'View Visitor Collection',
       ctaLink: '/chairs/visitor-series',
       overlay: 'gradient' as const

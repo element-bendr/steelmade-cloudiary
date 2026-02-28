@@ -85,23 +85,17 @@ function Header({ className }: HeaderProps) {
                       <NavigationMenuTrigger
                         className={cn(
                           "px-3 py-2 text-sm font-medium",
-                          "dark:text-white",
+                          "text-zinc-900 dark:text-zinc-100",
                           "transition-colors duration-200",
                           "hover:bg-accent/30 rounded-md"
                         )}
                       >
                         {item.title}
                       </NavigationMenuTrigger>
-                      <NavigationMenuContent className={cn(
-                        idx === 0
-                          ? "absolute left-0"
-                          : idx === mainNavigation.length - 1
-                            ? "absolute right-0"
-                            : "absolute left-1/2 -translate-x-1/2"
-                      )}>
-                        <div className="w-[600px] max-w-[90vw] p-6 mt-2 shadow-sm border border-border rounded-[2px] bg-popover">
+                      <NavigationMenuContent>
+                        <div className="w-[600px] max-w-[90vw] p-6 mt-2 shadow-xl border border-zinc-200 dark:border-zinc-800 rounded-[2px] bg-white dark:bg-zinc-950">
                           {item.megaMenu.description && (
-                            <p className="text-sm text-muted-foreground mb-4">
+                            <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">
                               {item.megaMenu.description}
                             </p>
                           )}
@@ -109,7 +103,7 @@ function Header({ className }: HeaderProps) {
                             {item.megaMenu.columns.map((column, idx) => (
                               <div key={idx} className="space-y-4">
                                 {column.header && (
-                                  <h3 className="font-medium text-foreground mb-3">
+                                  <h3 className="font-medium text-zinc-900 dark:text-zinc-100 mb-3">
                                     {column.header}
                                   </h3>
                                 )}
@@ -125,7 +119,7 @@ function Header({ className }: HeaderProps) {
                                             "transition-colors duration-200",
                                             "hover:bg-accent hover:text-accent-foreground",
                                             "focus:bg-accent focus:text-accent-foreground",
-                                            "text-foreground",
+                                            "text-zinc-700 dark:text-zinc-300",
                                             "group"
                                           )}
                                         >
@@ -157,7 +151,7 @@ function Header({ className }: HeaderProps) {
                                         />
                                       </div>
                                       <div className="p-4">
-                                        <h4 className="text-sm font-medium group-hover:text-accent-foreground">
+                                        <h4 className="text-sm font-medium text-zinc-900 dark:text-zinc-100 group-hover:text-accent-foreground">
                                           {column.featured.title}
                                         </h4>
                                         {column.featured.description && (
@@ -184,7 +178,7 @@ function Header({ className }: HeaderProps) {
                           "rounded-md transition-colors duration-200",
                           "hover:bg-accent/30",
                           "focus:bg-accent/40",
-                          "dark:text-white"
+                          "text-zinc-900 dark:text-zinc-100"
                         )}
                       >
                         {item.title}
