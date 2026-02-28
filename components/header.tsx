@@ -99,7 +99,7 @@ function Header({ className }: HeaderProps) {
                             ? "absolute right-0"
                             : "absolute left-1/2 -translate-x-1/2"
                       )}>
-                        <div className="w-[600px] max-w-[90vw] p-6 mt-2 shadow-lg rounded-lg bg-popover/95 backdrop-blur-sm">
+                        <div className="w-[600px] max-w-[90vw] p-6 mt-2 shadow-sm border border-border rounded-[2px] bg-popover">
                           {item.megaMenu.description && (
                             <p className="text-sm text-muted-foreground mb-4">
                               {item.megaMenu.description}

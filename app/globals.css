@@ -23,7 +23,7 @@
     --border: 220 10% 90%;
     --input: 220 10% 90%;
     --ring: 220 10% 10%;
-    --radius: 0.25rem; /* sharper, minimal radius */
+    --radius: 0.125rem; /* highly sharp minimalist radius (2px) */
 
     /* Chart Colors */
     --chart-1: 222.2 47.4% 11.2%;

@@ -15,12 +15,12 @@ export const productStyles = {
   
   // Typography
   typography: {
-    title: 'text-4xl md:text-5xl font-serif text-gray-900 tracking-tight',
-    subtitle: 'text-2xl font-serif text-gray-900',
-    description: 'text-gray-600 font-light leading-relaxed text-lg',
-    sectionHeading: 'font-medium font-serif text-xl text-gray-900 border-b border-gray-100 pb-2',
-    featureText: 'text-gray-500 font-light',
-    price: 'text-xl font-medium text-gray-900 font-serif',
+    title: 'text-4xl md:text-5xl font-serif text-foreground tracking-tight',
+    subtitle: 'text-2xl font-serif text-foreground',
+    description: 'text-muted-foreground font-light leading-relaxed text-lg',
+    sectionHeading: 'font-medium font-serif text-xl text-foreground border-b border-border pb-2',
+    featureText: 'text-muted-foreground font-light',
+    price: 'text-xl font-medium text-foreground font-serif',
   },
   
   // Colors
@@ -40,7 +40,7 @@ export const productStyles = {
   components: {
     // Image container
     image: {
-      container: 'relative aspect-square overflow-hidden rounded-[2px] bg-neutral-50 shadow-minimal',
+      container: 'relative aspect-square overflow-hidden rounded-[2px] bg-muted shadow-minimal',
       img: 'object-cover object-center transition-opacity duration-300',
       decorator: 'hidden',
     },
@@ -52,7 +52,7 @@ export const productStyles = {
       button: {
         base: 'px-6 py-3 border border-border text-sm font-medium tracking-wide uppercase transition-all duration-300 rounded-[2px]',
         selected: 'border-red-700 bg-red-700 text-white',
-        unselected: 'text-gray-500 hover:border-gray-400 hover:text-gray-900 bg-transparent',
+        unselected: 'text-muted-foreground hover:border-foreground hover:text-foreground bg-transparent',
       },
     },
     
@@ -73,9 +73,9 @@ export const productStyles = {
     
     // Form elements
     form: {
-      input: 'w-full p-2 border border-gray-300 rounded-md',
+      input: 'w-full p-2 border border-border bg-background text-foreground rounded-[2px]',
       label: 'block text-sm font-medium mb-1',
-      textarea: 'w-full p-2 border border-gray-300 rounded-md',
+      textarea: 'w-full p-2 border border-border bg-background text-foreground rounded-[2px]',
       buttonGroup: 'flex gap-2 mt-4',
     },
   },
