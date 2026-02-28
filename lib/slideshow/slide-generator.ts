@@ -2,15 +2,17 @@ import type { SlideData } from '../../components/common/Slideshow';
 import type { ProductSeries } from '../data/product-types';
 import { getCategory, type ProductCategory } from '../data/products/categories';
 
-// Template configurations for categories with sparse data
+// Reusable Cloudinary assets for fallback imagery
+const CLOUDINARY_FALLBACKS = [
+  'https://res.cloudinary.com/dqde19mfs/image/upload/v1749805770/steelmade/chairs/executive-series/amigo/ic-331-hb.jpg',
+  'https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/ashley/ic-361-hb.jpg',
+  'https://res.cloudinary.com/dqde19mfs/image/upload/v1750425884/steelmade/chairs/ergonomic-series/ud/ic-329-hb-grey.png',
+  'https://res.cloudinary.com/dqde19mfs/image/upload/v1752129755/steelmade/chairs/visitor-series/classic.png'
+];
+
 const CATEGORY_SLIDE_TEMPLATES = {
   chairs: {
-    fallbackImages: [
-      'https://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/ashley/ic-361-hb.jpg',
-      'https://res.cloudinary.com/dqde19mfs/image/upload/v1749805770/steelmade/chairs/executive-series/amigo/ic-331-hb.jpg',
-      'https://res.cloudinary.com/dqde19mfs/image/upload/v1750425884/steelmade/chairs/ergonomic-series/ud/ic-329-hb-grey.png',
-      'https://res.cloudinary.com/dqde19mfs/image/upload/v1752129755/steelmade/chairs/visitor-series/classic.png'
-    ],
+    fallbackImages: CLOUDINARY_FALLBACKS,
     fallbackTitles: ['Executive Excellence', 'Professional Authority', 'Comfort & Wellness', 'Welcoming Spaces'],
     fallbackDescriptions: [
       'Premium director chairs that embody leadership and refined taste',
@@ -20,12 +22,7 @@ const CATEGORY_SLIDE_TEMPLATES = {
     ]
   },
   tables: {
-    fallbackImages: [
-      '/images/categories/conference-table-hero.jpg',
-      '/images/categories/executive-desk-hero.jpg', 
-      '/images/categories/modern-workstation.jpg',
-      '/images/categories/reception-table.jpg'
-    ],
+    fallbackImages: CLOUDINARY_FALLBACKS,
     fallbackTitles: ['Meeting Excellence', 'Leadership Workspace', 'Productivity Focus', 'First Impressions'],
     fallbackDescriptions: [
       'Professional conference tables that inspire productive collaborations',
@@ -35,12 +32,7 @@ const CATEGORY_SLIDE_TEMPLATES = {
     ]
   },
   storage: {
-    fallbackImages: [
-      '/images/categories/filing-systems.jpg',
-      '/images/categories/office-lockers.jpg',
-      '/images/categories/modern-shelving.jpg', 
-      '/images/categories/mobile-storage.jpg'
-    ],
+    fallbackImages: CLOUDINARY_FALLBACKS,
     fallbackTitles: ['Organized Excellence', 'Secure Storage', 'Display & Store', 'Flexible Solutions'],
     fallbackDescriptions: [
       'Professional filing systems for efficient document management',
@@ -50,12 +42,7 @@ const CATEGORY_SLIDE_TEMPLATES = {
     ]
   },
   'modular-furniture': {
-    fallbackImages: [
-      '/images/categories/modular-workstation.jpg',
-      '/images/categories/office-partitions.jpg',
-      '/images/categories/collaboration-zone.jpg',
-      '/images/categories/modular-reception.jpg'
-    ],
+    fallbackImages: CLOUDINARY_FALLBACKS,
     fallbackTitles: ['Modular Efficiency', 'Space Definition', 'Team Synergy', 'Professional Welcome'],
     fallbackDescriptions: [
       'Flexible workstation systems that grow and adapt with your team',
@@ -65,12 +52,7 @@ const CATEGORY_SLIDE_TEMPLATES = {
     ]
   },
   'hospital-furniture': {
-    fallbackImages: [
-      '/images/categories/patient-seating.jpg',
-      '/images/categories/medical-storage.jpg',
-      '/images/categories/hospital-waiting.jpg',
-      '/images/categories/medical-workstation.jpg'
-    ],
+    fallbackImages: CLOUDINARY_FALLBACKS,
     fallbackTitles: ['Patient Comfort', 'Organized Care', 'Healing Spaces', 'Efficient Workflow'],
     fallbackDescriptions: [
       'Ergonomic patient seating designed specifically for healthcare environments',
@@ -80,12 +62,7 @@ const CATEGORY_SLIDE_TEMPLATES = {
     ]
   },
   'school-furniture': {
-    fallbackImages: [
-      '/images/categories/student-desks.jpg',
-      '/images/categories/library-furniture.jpg',
-      '/images/categories/auditorium-seating.jpg',
-      '/images/categories/admin-office.jpg'
-    ],
+    fallbackImages: CLOUDINARY_FALLBACKS,
     fallbackTitles: ['Learning Excellence', 'Knowledge Centers', 'Gathering Spaces', 'Educational Leadership'],
     fallbackDescriptions: [
       'Ergonomic student desks and furniture designed for academic success',
@@ -95,12 +72,7 @@ const CATEGORY_SLIDE_TEMPLATES = {
     ]
   },
   'racking-systems': {
-    fallbackImages: [
-      '/images/categories/warehouse-racking.jpg',
-      '/images/categories/office-racking.jpg',
-      '/images/categories/retail-display.jpg',
-      '/images/categories/archive-systems.jpg'
-    ],
+    fallbackImages: CLOUDINARY_FALLBACKS,
     fallbackTitles: ['Storage Efficiency', 'Organized Workspace', 'Product Showcase', 'Document Management'],
     fallbackDescriptions: [
       'Heavy-duty industrial racking systems for maximum warehouse efficiency',
@@ -133,7 +105,7 @@ function generateSeriesSlides(category: ProductCategory): SlideData[] {
     title: series.title || 'Premium Collection',
     subtitle: category.name,
     description: series.seoDescription || series.description || `Discover our premium ${(series.title || 'furniture').toLowerCase()} collection`,
-    backgroundImage: series.coverImage?.url || '/images/placeholder/series-hero.jpg',
+    backgroundImage: series.coverImage?.url || CLOUDINARY_FALLBACKS[index % CLOUDINARY_FALLBACKS.length],
     ctaText: `Explore ${series.title || 'Collection'}`,
     ctaLink: `/${category.id}/${series.id}`,
     overlay: 'gradient' as const
@@ -153,7 +125,7 @@ function generateTemplateSlides(categoryId: string, category: ProductCategory): 
       title: category.name,
       subtitle: 'Premium Collection',
       description: category.description,
-      backgroundImage: category.imageUrl || '/images/placeholder/category-hero.jpg',
+      backgroundImage: category.imageUrl || CLOUDINARY_FALLBACKS[0],
       ctaText: `Explore ${category.name}`,
       ctaLink: `/${categoryId}`,
       overlay: 'gradient' as const
@@ -176,7 +148,6 @@ function generateTemplateSlides(categoryId: string, category: ProductCategory): 
  * Smart slide generator - uses real data when available, templates as fallback
  */
 export function generateCategorySlides(categoryId: string): SlideData[] {
-  // Extract base category from compound paths like "modular-furniture/workstations"
   const baseCategoryId = categoryId.split('/')[0];
   const category = getCategory(baseCategoryId);
   
@@ -189,16 +160,12 @@ export function generateCategorySlides(categoryId: string): SlideData[] {
   const hasRichData = seriesCount >= 3;
 
   if (hasRichData) {
-    // Use real product data when available
     const seriesSlides = generateSeriesSlides(category);
-    
-    // If we got enough quality slides from series data, use them
     if (seriesSlides.length >= 3) {
       return seriesSlides;
     }
   }
 
-  // Fall back to template slides for sparse categories
   return generateTemplateSlides(baseCategoryId, category);
 }
 
@@ -212,7 +179,7 @@ export function generateHomepageSlides(): SlideData[] {
       title: 'Crafted for Excellence',
       subtitle: 'steelmade',
       description: 'Where innovative design meets uncompromising quality. Discover furniture that transforms spaces and elevates experiences.',
-      backgroundImage: '/images/fresh-vegetables-flat-lay-healthy-lifestyle.jpg',
+      backgroundImage: 'https://res.cloudinary.com/dqde19mfs/image/upload/v1749805770/steelmade/chairs/executive-series/amigo/ic-331-hb.jpg',
       ctaText: 'Discover Our Collections',
       ctaLink: '/chairs',
       overlay: 'gradient' as const
