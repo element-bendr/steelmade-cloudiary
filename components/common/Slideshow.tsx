@@ -2,10 +2,12 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 import { cn } from '../../lib/utils';
+import { Button } from '../ui/button';
 
-// Types for slide data
 export interface SlideData {
   id: string;
   title: string;
@@ -23,111 +25,134 @@ export interface SlideshowProps {
   interval?: number;
   showNavigation?: boolean;
   showIndicators?: boolean;
-  showPlayPause?: boolean;
+  showPlayPause?: boolean; // Kept for API compatibility but unused in minimal UI
   height?: string;
   className?: string;
 }
 
-// Individual slide component
-interface SlideProps {
-  slide: SlideData;
-  isActive: boolean;
-}
-
-const Slide: React.FC<SlideProps> = ({ slide, isActive }) => {
-  const overlayClass = {
-    light: 'bg-black bg-opacity-20',
-    dark: 'bg-black bg-opacity-60',
-    gradient: 'bg-gradient-to-b from-black/30 via-black/40 to-black/70'
-  };
-
+const Slide: React.FC<{ slide: SlideData; isActive: boolean; isFirst: boolean }> = ({ slide, isActive, isFirst }) => {
   return (
-    <div
-      className="relative w-full h-full bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${slide.backgroundImage})` }}
-    >
-      <div className={cn(
-        'absolute inset-0',
-        overlayClass[slide.overlay || 'dark']
-      )} />
+    <div className="relative w-full h-full overflow-hidden bg-background">
+      {/* Cinematic Ken Burns Image */}
+      <motion.div
+        className="absolute inset-0 w-full h-full"
+        initial={{ scale: 1.1, opacity: 0 }}
+        animate={{ 
+          scale: isActive ? 1 : 1.1, 
+          opacity: isActive ? 1 : 0 
+        }}
+        transition={{ 
+          scale: { duration: 6, ease: "easeOut" },
+          opacity: { duration: 1.2 }
+        }}
+      >
+        <Image 
+          src={slide.backgroundImage} 
+          alt={slide.title}
+          fill
+          priority={isFirst}
+          className="object-cover"
+          sizes="100vw"
+        />
+      </motion.div>
+
+      {/* Edge-to-Edge Minimal Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
       
-      <div className="relative h-full flex items-center justify-center text-center px-4 sm:px-8">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="space-y-4 sm:space-y-6"
-          >
-            {slide.subtitle && (
-              <motion.p 
-                className="text-sm sm:text-base text-red-400 font-medium tracking-wide uppercase"
-                initial={{ opacity: 0 }}
-                animate={isActive ? { opacity: 1 } : { opacity: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-              >
-                {slide.subtitle}
-              </motion.p>
-            )}
-            
-            <motion.h1 
-              className="text-3xl sm:text-4xl md:text-6xl font-serif text-white leading-tight font-medium"
-              initial={{ opacity: 0, y: 20 }}
-              animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-            >
-              {slide.title}
-            </motion.h1>
-            
-            <motion.p 
-              className="text-lg sm:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed"
-              initial={{ opacity: 0, y: 20 }}
-              animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-            >
-              {slide.description}
-            </motion.p>
-            
-            {slide.ctaText && slide.ctaLink && (
+      {/* Architectural Typography Grid */}
+      <div className="relative h-full flex items-center px-6 md:px-16 lg:px-24">
+        <div className="max-w-2xl">
+          <AnimatePresence mode="wait">
+            {isActive && (
               <motion.div
-                className="pt-4"
-                initial={{ opacity: 0, y: 20 }}
-                animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.8, delay: 0.7 }}
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+                variants={{
+                  hidden: { opacity: 0 },
+                  visible: {
+                    opacity: 1,
+                    transition: { staggerChildren: 0.15, delayChildren: 0.3 }
+                  }
+                }}
+                className="space-y-6"
               >
-                <a
-                  href={slide.ctaLink}
-                  className="inline-flex items-center px-8 py-3 bg-white hover:bg-gray-100 text-gray-900 border border-transparent font-medium tracking-wide uppercase text-sm transition-all duration-300 rounded-sm"
+                {/* Accent Subtitle */}
+                {slide.subtitle && (
+                  <motion.div 
+                    variants={{
+                      hidden: { opacity: 0, x: -20 },
+                      visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+                    }}
+                    className="flex items-center space-x-4"
+                  >
+                    <div className="h-px w-8 bg-red-600" />
+                    <p className="text-sm font-sans text-red-500 font-medium tracking-widest uppercase">
+                      {slide.subtitle}
+                    </p>
+                  </motion.div>
+                )}
+                
+                {/* Main Heading */}
+                <motion.h1 
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+                  }}
+                  className="text-4xl sm:text-5xl md:text-7xl font-serif text-white leading-[1.1] font-medium tracking-tight"
                 >
-                  {slide.ctaText}
-                </a>
+                  {slide.title}
+                </motion.h1>
+                
+                {/* Description */}
+                <motion.p 
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+                  }}
+                  className="text-lg sm:text-xl text-gray-300 max-w-xl leading-relaxed font-light"
+                >
+                  {slide.description}
+                </motion.p>
+                
+                {/* Sharp Minimal CTA */}
+                {slide.ctaText && slide.ctaLink && (
+                  <motion.div
+                    variants={{
+                      hidden: { opacity: 0, y: 20 },
+                      visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+                    }}
+                    className="pt-4"
+                  >
+                    <Link href={slide.ctaLink} passHref>
+                      <Button variant="default" size="lg" className="rounded-[2px] bg-red-700 hover:bg-red-800 text-white border-red-700 tracking-wide h-12 px-8 uppercase text-xs">
+                        {slide.ctaText}
+                      </Button>
+                    </Link>
+                  </motion.div>
+                )}
               </motion.div>
             )}
-          </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </div>
   );
 };
 
-// Main Slideshow component
 export const Slideshow: React.FC<SlideshowProps> = ({
   slides,
   autoPlay = true,
-  interval = 5000,
+  interval = 6000, // Slightly longer interval to appreciate the cinematic slow-zoom
   showNavigation = true,
   showIndicators = true,
-  showPlayPause = true,
-  height = '60vh',
+  height = '100vh',
   className = ''
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(autoPlay);
   const [isPaused, setIsPaused] = useState(false);
   const [touchStart, setTouchStart] = useState<number | null>(null);
-  const [touchEnd, setTouchEnd] = useState<number | null>(null);
 
-  // Navigation functions
   const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   }, [slides.length]);
@@ -140,145 +165,103 @@ export const Slideshow: React.FC<SlideshowProps> = ({
     setCurrentSlide(index);
   }, []);
 
-  const togglePlayPause = useCallback(() => {
-    setIsPlaying(!isPlaying);
-  }, [isPlaying]);
-
-  // Auto-play effect
+  // Standard Autoplay Interval
   useEffect(() => {
-    if (!isPlaying || isPaused || slides.length <= 1) return;
-
+    if (!autoPlay || isPaused || slides.length <= 1) return;
     const timer = setInterval(nextSlide, interval);
     return () => clearInterval(timer);
-  }, [isPlaying, isPaused, nextSlide, interval, slides.length]);
+  }, [autoPlay, isPaused, nextSlide, interval, slides.length]);
 
-  // Touch handlers for swipe support
-  const onTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
-    setTouchEnd(null);
-    setTouchStart(e.targetTouches[0].clientX);
-  };
-
-  const onTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
-    setTouchEnd(e.targetTouches[0].clientX);
-  };
-
-  const onTouchEnd = () => {
-    if (!touchStart || !touchEnd) return;
-    
+  // Touch handlers for mobile
+  const onTouchStart = (e: React.TouchEvent<HTMLDivElement>) => setTouchStart(e.targetTouches[0].clientX);
+  const onTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (!touchStart) return;
+    const touchEnd = e.changedTouches[0].clientX;
     const distance = touchStart - touchEnd;
-    const isLeftSwipe = distance > 50;
-    const isRightSwipe = distance < -50;
-
-    if (isLeftSwipe) {
-      nextSlide();
-    } else if (isRightSwipe) {
-      prevSlide();
-    }
+    if (distance > 50) nextSlide();
+    if (distance < -50) prevSlide();
   };
 
-  if (!slides || slides.length === 0) {
-    return <div className="w-full bg-gray-200 flex items-center justify-center" style={{ height }}>
-      <p className="text-gray-500">No slides available</p>
-    </div>;
-  }
+  if (!slides || slides.length === 0) return null;
 
   return (
     <section 
-      className={cn("relative w-full overflow-hidden", className)}
+      className={cn("relative w-full overflow-hidden bg-background", className)}
       style={{ height }}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onTouchStart={onTouchStart}
-      onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
     >
-      {/* Slides */}
-      <div className="relative h-full w-full">
-        {slides.map((slide, index) => (
-          <div
-            key={slide.id}
-            className={cn(
-              "absolute inset-0 transition-opacity duration-1000",
-              index === currentSlide ? 'opacity-100' : 'opacity-0'
-            )}
-          >
-            <Slide slide={slide} isActive={index === currentSlide} />
-          </div>
-        ))}
-      </div>
+      {/* Image Layer */}
+      {slides.map((slide, index) => (
+        <div
+          key={slide.id}
+          className={cn(
+            "absolute inset-0 z-0",
+            index === currentSlide ? "pointer-events-auto" : "pointer-events-none"
+          )}
+        >
+          <Slide slide={slide} isActive={index === currentSlide} isFirst={index === 0} />
+        </div>
+      ))}
 
-      {/* Navigation Controls */}
+      {/* Floating Side Nav Controls */}
       {showNavigation && slides.length > 1 && (
-        <div className="absolute inset-0 flex items-center justify-between p-4 sm:p-8 pointer-events-none">
-          {/* Previous Button */}
+        <div className="absolute inset-0 z-10 flex items-center justify-between px-4 md:px-8 pointer-events-none">
           <button
             onClick={prevSlide}
-            className="pointer-events-auto w-12 h-12 rounded-full bg-black bg-opacity-30 flex items-center justify-center text-white transition-opacity duration-300 hover:bg-opacity-40"
+            className="pointer-events-auto w-12 h-12 bg-black/20 backdrop-blur-md border border-white/10 flex items-center justify-center text-white transition-all duration-300 hover:bg-black/50 rounded-[2px]"
             aria-label="Previous slide"
           >
-            <ChevronLeft className="w-6 h-6" />
+            <ChevronLeft className="w-5 h-5 font-light" />
           </button>
-
-          {/* Next Button */}
           <button
             onClick={nextSlide}
-            className="pointer-events-auto w-12 h-12 rounded-full bg-black bg-opacity-30 flex items-center justify-center text-white transition-opacity duration-300 hover:bg-opacity-40"
+            className="pointer-events-auto w-12 h-12 bg-black/20 backdrop-blur-md border border-white/10 flex items-center justify-center text-white transition-all duration-300 hover:bg-black/50 rounded-[2px]"
             aria-label="Next slide"
           >
-            <ChevronRight className="w-6 h-6" />
+            <ChevronRight className="w-5 h-5 font-light" />
           </button>
         </div>
       )}
 
-      {/* Bottom Controls */}
-      {(showPlayPause || showIndicators) && (
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex items-center space-x-4">
-          {/* Play/Pause Button */}
-          {showPlayPause && slides.length > 1 && (
-            <button
-              onClick={togglePlayPause}
-              className="w-10 h-10 rounded-full bg-black bg-opacity-30 flex items-center justify-center text-white transition-opacity duration-300 hover:bg-opacity-40"
-              aria-label={isPlaying ? 'Pause slideshow' : 'Play slideshow'}
-            >
-              {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
-            </button>
-          )}
-
-          {/* Slide Indicators */}
-          {showIndicators && slides.length > 1 && (
-            <div className="flex space-x-2">
-              {slides.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => goToSlide(index)}
-                  className={cn(
-                    "w-3 h-3 rounded-full transition-opacity duration-300",
-                    index === currentSlide
-                      ? 'bg-white'
-                      : 'bg-white bg-opacity-50 hover:bg-opacity-65'
-                  )}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
-              ))}
-            </div>
-          )}
-        </div>
-      )}
-
-      {/* Progress Bar */}
-      {isPlaying && !isPaused && slides.length > 1 && (
-        <div className="absolute bottom-0 left-0 w-full h-1 bg-black bg-opacity-20">
-          <motion.div
-            className="h-full bg-white bg-opacity-70"
-            initial={{ width: '0%' }}
-            animate={{ width: '100%' }}
-            transition={{
-              duration: interval / 1000,
-              ease: 'linear',
-              repeat: Infinity,
-            }}
-            key={currentSlide}
-          />
+      {/* Minimalist Progress Trackers (Replaces Dots) */}
+      {showIndicators && slides.length > 1 && (
+        <div className="absolute z-20 bottom-8 md:bottom-12 left-6 md:left-16 lg:left-24 flex items-center space-x-6">
+          <div className="text-white/80 font-mono text-sm tracking-widest font-medium">
+            0{currentSlide + 1} <span className="opacity-40">/ 0{slides.length}</span>
+          </div>
+          
+          <div className="flex space-x-2">
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => goToSlide(index)}
+                className="relative h-[2px] overflow-hidden bg-white/20 transition-all cursor-pointer"
+                style={{ width: index === currentSlide ? '48px' : '24px' }}
+                aria-label={`Go to slide ${index + 1}`}
+              >
+                {/* The Filling Bar Timer */}
+                {index === currentSlide && !isPaused && autoPlay && (
+                  <motion.div 
+                    className="absolute inset-y-0 left-0 bg-white"
+                    initial={{ width: '0%' }}
+                    animate={{ width: '100%' }}
+                    transition={{
+                      duration: interval / 1000,
+                      ease: "linear"
+                    }}
+                    key={currentSlide}
+                  />
+                )}
+                {/* Instant filled state for active paused bar */}
+                {index === currentSlide && (isPaused || !autoPlay) && (
+                  <div className="absolute inset-y-0 left-0 w-full bg-white" />
+                )}
+              </button>
+            ))}
+          </div>
         </div>
       )}
     </section>
