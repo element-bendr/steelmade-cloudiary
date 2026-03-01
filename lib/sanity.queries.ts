@@ -36,6 +36,11 @@ export const productsByCategoryQuery = groq`
       name,
       value
     },
+    variants[]{
+      id,
+      name,
+      "imageUrl": image.asset->url
+    },
     category,
     series
   }
@@ -53,6 +58,11 @@ export const productsBySeriesQuery = groq`
     specifications[]{
       name,
       value
+    },
+    variants[]{
+      id,
+      name,
+      "imageUrl": image.asset->url
     },
     category,
     "seriesId": $seriesId
@@ -72,6 +82,11 @@ export const productByIdQuery = groq`
       name,
       value
     },
+    variants[]{
+      id,
+      name,
+      "imageUrl": image.asset->url
+    },
     category,
     "seriesId": $seriesId
   }
@@ -89,6 +104,11 @@ export const productBySlugQuery = groq`
     specifications[]{
       name,
       value
+    },
+    variants[]{
+      id,
+      name,
+      "imageUrl": image.asset->url
     },
     category,
     series

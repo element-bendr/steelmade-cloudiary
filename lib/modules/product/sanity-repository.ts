@@ -85,6 +85,7 @@ export class SanityProductRepository implements ProductRepository {
       imageUrl: doc.cloudinaryImageUrl || '', 
       features: doc.features || [],
       specifications: {},
+      variants: doc.variants || [],
       // mapping remaining legacy properties if any
     };
   }

@@ -46,6 +46,8 @@ export interface ExtendedProductData {
   
   // Internal tags
   new?: boolean;
+  
+  variants?: ProductVariant[];
 }
 
 export interface ProductSeries {

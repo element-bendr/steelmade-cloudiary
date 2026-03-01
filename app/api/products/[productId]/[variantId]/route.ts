@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
-import { collections } from '@/lib/data/collections-data'
-import { ExtendedProductData, ProductVariant } from '@/lib/data/product-types'
+import { client } from '@/lib/sanity/client'
+import { productBySlugQuery } from '@/lib/sanity.queries'
 
 export const runtime = 'edge'
 
@@ -11,45 +11,24 @@ export async function GET(
   try {
     const { productId, variantId } = params;
     
-    // Find the product globally across all categories and series
-    let targetProduct: ExtendedProductData | null = null;
+    // Fetch directly from sanity using canonical ID (slug)
+    const product = await client.fetch(productBySlugQuery, { slug: productId });
 
-    for (const category of Object.values(collections)) {
-      if (targetProduct) break;
-      for (const series of Object.values(category as any)) {
-        if (series && (series as any).products && (series as any).products[productId]) {
-           targetProduct = (series as any).products[productId] as ExtendedProductData;
-           break;
-        }
-      }
-    }
-
-    if (!targetProduct) {
+    if (!product) {
       return NextResponse.json({ error: `Product not found for id: ${productId}` }, { status: 404 });
     }
 
-    // Try to find the specific variant in the product's features/variants array if applicable.
-    // If we have an array of variants (some legacy structures support this or we map it), try resolving it.
-    let specificVariant = null;
-
-    // Use feature mapping as a mock placeholder for variant definition if explicit 'variants' is missing
-    const extractedVariants: ProductVariant[] = (targetProduct.features || []).map((feature, i) => ({
-      id: `${productId}-v${i}`,
-      variantId: `v${i}`,
-      name: feature,
-      imageUrl: targetProduct?.imageUrl || ''
-    }));
-
-    if (extractedVariants && Array.isArray(extractedVariants)) {
-        specificVariant = extractedVariants.find(v => v.variantId === variantId || v.id === variantId);
-    }
+    const variants = product.variants || [];
+    
+    const specificVariant = variants.find((v: any) => v.id === variantId || v.variantId === variantId);
 
     if (!specificVariant) {
         return NextResponse.json({ error: `Variant ${variantId} not found for product ${productId}` }, { status: 404 });
     }
 
+    // Return the whole combined structure for backwards compat:
     return NextResponse.json({
-        product: targetProduct,
+        product: product,
         variant: specificVariant
     });
     

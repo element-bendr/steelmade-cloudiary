@@ -68,6 +68,26 @@ export default {
           ]
         }
       ]
+    },
+    {
+      name: 'variants',
+      title: 'Variants',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            { name: 'id', type: 'string', title: 'Variant ID' },
+            { name: 'name', type: 'string', title: 'Variant Name' },
+            { 
+              name: 'image', 
+              type: 'image', 
+              title: 'Variant Image',
+              options: { hotspot: true }
+            }
+          ]
+        }
+      ]
     }
   ],
 }
