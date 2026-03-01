@@ -9,7 +9,7 @@ export function GoogleAnalytics({ id = 'G-XXXXXXXXXX' }) {
         src={`https://www.googletagmanager.com/gtag/js?id=${id}`}
         strategy="afterInteractive"
         onLoad={() => {
-          console.log('Google Analytics script loaded successfully');
+          // console.log('Google Analytics script loaded successfully');
         }}
       />
       <Script id="google-analytics" strategy="afterInteractive">

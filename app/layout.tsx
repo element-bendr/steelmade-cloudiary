@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: 'SteelMade',
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: 'https://dummyimage.com/1200x630/000/fff&text=SteelMade',
         width: 1200,
         height: 630,
         alt: 'SteelMade - Premium Steel Solutions',

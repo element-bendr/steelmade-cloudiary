@@ -6,13 +6,11 @@ export async function POST(req: NextRequest) {
     const authHeader = req.headers.get('authorization');
     const secret = process.env.REVALIDATION_SECRET;
 
-    // Check if the secret is configured
     if (!secret) {
-      console.warn('REVALIDATION_SECRET is not set in environment variables');
-      return NextResponse.json({ message: 'Configuration error' }, { status: 500 });
+      // Don't leak what configuration is missing
+      return NextResponse.json({ message: 'Internal configuration error' }, { status: 500 });
     }
 
-    // Verify token
     if (authHeader !== `Bearer ${secret}`) {
       return NextResponse.json({ message: 'Unauthorized' }, { status: 401 });
     }
@@ -24,13 +22,30 @@ export async function POST(req: NextRequest) {
       body = {};
     }
 
-    console.log('Received secured revalidation webhook:', body);
+    // Determine specific paths to invalidate if possible from Sanity webhook payload
+    // E.g., assuming body._type exists for Sanity docs
+    if (body && body._type) {
+        if (body._type === 'product' && body.slug?.current) {
+            revalidatePath(`/products/${body.slug.current}`);
+            revalidatePath('/'); // Usually home page lists products
+        } else if (body._type === 'series') {
+            revalidatePath('/collections');
+            revalidatePath('/');
+        } else {
+            // General content change, but try to avoid heavy global invalidation
+            revalidatePath('/');
+        }
+    } else {
+        // Fallback or explicit instruction
+        revalidatePath('/', 'layout');
+    }
 
-    // Revalidate everything or target paths
-    revalidatePath('/', 'layout');
-
+    // Return generic success
     return NextResponse.json({ message: 'Revalidated safely', now: Date.now() });
+
   } catch (error: any) {
-    return NextResponse.json({ message: 'Error', error: error.message }, { status: 500 });
+    // Avoid returning the raw error message up to the caller
+    console.error('Revalidation failed:', error.message);
+    return NextResponse.json({ message: 'Handler error' }, { status: 500 });
   }
 }

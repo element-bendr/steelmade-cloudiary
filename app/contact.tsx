@@ -24,7 +24,7 @@ export default function ContactPage() {
     }
 
     // Simulate an API call to submit the form data
-    console.log('Form submitted:', { name, email, message });
+    // console.log('Form submitted:', { name, email, message });
     setSuccess('Thank you for your message. We will get back to you soon.');
 
     // Clear form fields after submission
