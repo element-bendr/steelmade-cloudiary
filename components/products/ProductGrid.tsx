@@ -12,7 +12,7 @@ interface ProductGridProps {
   productsPerPage?: number
 }
 
-export function ProductGrid({ products, productsPerPage = 8 }: ProductGridProps) {
+export function ProductGrid({ products, productsPerPage = 8, category, seriesId }: ProductGridProps) {
   const [currentPage, setCurrentPage] = useState(1)
   const totalPages = Math.ceil(products.length / productsPerPage)
   
@@ -48,9 +48,9 @@ export function ProductGrid({ products, productsPerPage = 8 }: ProductGridProps)
   return (
     <div className="space-y-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {currentProducts.map((product: ExtendedProductData) => (
+        {currentProducts.map((product: any) => (
           <div key={product.id} className="rounded-lg overflow-hidden transition-shadow hover:border hover:border-accent bg-white">
-            <Link href={`/${product.category}/${product.seriesId}/${product.id}`}> 
+            <Link href={`/${category || product.category}/${seriesId || product.seriesId}/${product.id}`}> 
               <div className="group">
                 <div className="relative h-64 w-full overflow-hidden bg-neutral-100 flex items-center justify-center">
                   {product.imageUrl ? (

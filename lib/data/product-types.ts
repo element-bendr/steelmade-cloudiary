@@ -1,71 +1,58 @@
-// Core product data types for the modular system
+/**
+ * Global Product Types Configuration Map
+ * (Bridged against Sanity for React Props backward compatibility)
+ */
+
+export type ProductType = 
+  | 'chairs'
+  | 'desks'
+  | 'storage-solutions'
+  | 'modular-furniture'
+  | 'hospital-furniture'
+  | 'racking-systems'
+  | 'school-furniture'
+  | 'office-accessories';
 
 export interface ProductImage {
+  id: string;
   url: string;
   alt: string;
-  width?: number;
-  height?: number;
+  type?: 'primary' | 'gallery' | 'environment';
 }
 
-export interface ProductVariant {
-  variantId: string;
-  variantName: string;
+export interface Specification {
   name: string;
-  description?: string;
-  imageUrl: string;
-  specifications?: Record<string, string>;
-  price?: string;
-  sku?: string;
-  inStock?: boolean;
-  imageClass?: string; // Optional custom image class for styling
+  value: string;
 }
 
-export interface BaseProductData {
+export interface ExtendedProductData {
   id: string;
   name: string;
   description: string;
-  category: string;
-  seriesId: string;
-  inStock?: boolean;
-  imageUrl: string;
-}
-
-export interface ExtendedProductData extends BaseProductData {
-  images?: ProductImage[];
+  // Make features optional but default to array to avoid crashes
   features?: string[];
-  specifications?: Record<string, string>;
-  variants?: ProductVariant[];
-  price?: string;
-  sku?: string;
+  // Fallback to array string for legacy compats, mapped objects for standard usage
+  specifications: Record<string, string> | Specification[];
+  
+  // Mapping cloud links
+  imageUrl: string;
+  url?: string;
+  images?: string[] | ProductImage[];
+  
+  // Legacy routing bindings
+  series?: string;
+  category?: ProductType | string;
+  price?: Record<string, number>;
+  
+  // Internal tags
+  new?: boolean;
 }
 
 export interface ProductSeries {
   id: string;
-  title?: string;
+  title: string;
   description?: string;
-  seoDescription: string; // now required
-  category?: string;
-  imageUrl?: string;
-  coverImage: ProductImage; // now required
-  images?: ProductImage[];
-  features?: string[];
-  lastModified?: string;
-  products: Record<string, ExtendedProductData>;
+  image?: string;
+  href?: string;
+  products?: Record<string, ExtendedProductData> | ExtendedProductData[];
 }
-
-export type ProductCategoryData = Record<string, ProductSeries>;
-
-// Add this export to the product-types.ts file
-export type ProductType = 
-  | "chairs" 
-  | "tables" 
-  | "accessories" 
-  | "desks" 
-  | "storage" 
-  | "lighting"
-  | "hospital-furniture"
-  | "racking-systems"
-  | "school-furniture"
-  | "storage-solutions"
-  | "modular-furniture"
-  | "office-accessories";

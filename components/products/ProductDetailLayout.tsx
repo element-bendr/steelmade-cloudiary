@@ -61,6 +61,8 @@ export const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
   renderCustomSection,
   className = '',
   children,
+  categoryId,
+  seriesId,
 }) => {
   const variants = product.variants || [];
   const defaultVariant = variantOptions.initialVariant || (variants.length > 0 ? variants[0] : null);
@@ -112,31 +114,37 @@ export const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
 
   // Breadcrumb logic
   // Dynamic breadcrumb logic
-  const breadcrumbItems: import('../ui/Breadcrumbs').BreadcrumbItem[] = [
+  const breadcrumbItems = [
     { name: 'Home', href: '/' },
   ];
-  if (product.category) {
-    let categoryHref: string | undefined = getCategoryUrl(product.category as import('../../lib/data/product-types').ProductType);
+  
+  const activeCategory = categoryId || product.category;
+  const activeSeries = seriesId || product.seriesId;
+
+  if (activeCategory) {
+    let categoryHref = `/${activeCategory}`;
+    
+    // Legacy support for older path overrides if needed, left as simple fallback
     if (categoryHref === '/workstations' || categoryHref === '/workstations/modular-furniture') {
-      categoryHref = undefined;
+      categoryHref = '';
     }
+    
     breadcrumbItems.push({
-      name: product.category.replace(/-/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase()),
-      href: categoryHref ?? undefined
+      name: activeCategory.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()),
+      href: categoryHref || undefined
     });
 
     // Add series breadcrumb if present
-    if (product.seriesId) {
-      let seriesHref: string | undefined = getCategoryUrl(
-        (product.category || '') as import('../../lib/data/product-types').ProductType,
-        product.seriesId
-      );
+    if (activeSeries) {
+      let seriesHref = `/${activeCategory}/${activeSeries}`;
+      
       if (seriesHref === '/workstations/modular-furniture' || seriesHref === '/workstations') {
-        seriesHref = undefined;
+        seriesHref = '';
       }
+      
       breadcrumbItems.push({
-        name: product.seriesId.replace(/-/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase()),
-        href: seriesHref ?? undefined
+        name: activeSeries.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()),
+        href: seriesHref || undefined
       });
     }
   }

@@ -50,7 +50,7 @@ interface Props {
  */
 export default function CategoryPageTemplate({ categoryId, items }: Props) {
   const { theme, cssVarsString } = useCategoryTheme(categoryId);
-  const slides = getSlides(categoryId);
+  const slides = getSlides(categoryId, { name: categoryId, series: items });
 
   return (
     <CategoryErrorBoundary categoryId={categoryId}>

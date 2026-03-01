@@ -21,6 +21,11 @@ const nextConfig = {
         hostname: 'res.cloudinary.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'cdn.sanity.io',
+        pathname: '/**',
+      }
     ],
     deviceSizes: [640, 1080, 1920], // Simplified device sizes
     imageSizes: [32, 96, 256], // Simplified image sizes
@@ -56,22 +61,6 @@ const nextConfig = {
   // Temporarily disable all redirects to fix the build issue
   async redirects() {
     return []
-    
-    // Original redirects - re-enable after fixing build issues
-    /*
-    return [
-      {
-        source: '/collections/:path*',
-        destination: '/:path*',
-        permanent: true
-      },
-      {
-        source: '/products/:path*',
-        destination: '/:path*',
-        permanent: true
-      }
-    ]
-    */
   }
 };
 
