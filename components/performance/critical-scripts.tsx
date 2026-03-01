@@ -8,11 +8,10 @@ export function CriticalScripts() {
       {/* Preconnect to improve third-party resource loading */}
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       {/* Preload the font CSS endpoint (if self-hosted or via Google Fonts CSS) */}
-      <link rel="preload" href="/fonts.css" as="style" id="__sm-fonts-css" />
+      {/* Removed missing fonts.css preloader /*}
       <Script id="fonts-css-apply" strategy="afterInteractive">
         {`(function(){
-          var l = document.getElementById('__sm-fonts-css');
-          if (l) { l.addEventListener('load', function(){ l.rel = 'stylesheet'; }); }
+          // No op; }
         })()`}
       </Script>
 

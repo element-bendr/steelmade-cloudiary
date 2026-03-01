@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'SteelMade | Premium Steel Products & Solutions',
     description: 'High-quality steel products, custom fabrication solutions, and expert consultation for industries worldwide.',
-    images: ['/images/twitter-image.jpg'],
+    images: [],
     creator: '@steelmade',
   },
   robots: {
@@ -123,7 +123,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <OrganizationSchema 
           name="SteelMade"
           url="https://steelmade.com"
-          logo="https://steelmade.com/logo.png"
+          logo="https://steelmade.com"
           description="Premium office furniture manufacturer specializing in high-quality steel products and custom solutions."
           contactPoint={{
             telephone: "+1-800-STEEL-MADE",

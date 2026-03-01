@@ -1,11 +1,32 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-export const runtime = 'nodejs'; // Add this line
+export const runtime = 'nodejs';
 
 export async function POST(request: Request) {
   try {
-    const { name, email, message } = await request.json();
+    const body = await request.json();
+    
+    // Basic validation
+    if (!body || typeof body !== 'object') {
+       return NextResponse.json({ success: false, error: 'Invalid payload' }, { status: 400 });
+    }
+    
+    const { name, email, message } = body;
+    
+    if (!name || typeof name !== 'string' || name.length > 200) {
+       return NextResponse.json({ success: false, error: 'Invalid name' }, { status: 400 });
+    }
+    
+    // Simple email regex for API validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email || typeof email !== 'string' || !emailRegex.test(email) || email.length > 200) {
+       return NextResponse.json({ success: false, error: 'Invalid email' }, { status: 400 });
+    }
+    
+    if (!message || typeof message !== 'string' || message.length > 5000) {
+       return NextResponse.json({ success: false, error: 'Invalid message' }, { status: 400 });
+    }
 
     // Create a nodemailer transporter using Gmail
     const transporter = nodemailer.createTransport({
@@ -25,13 +46,16 @@ export async function POST(request: Request) {
     };
 
     // Send the email
-    const info = await transporter.sendMail(mailOptions);
+    await transporter.sendMail(mailOptions);
 
-    return NextResponse.json({ success: true, info });
+    // Return simple success to avoid leaking mail transport data
+    return NextResponse.json({ success: true, message: 'Message sent successfully' });
   } catch (error: unknown) {
-    if (error instanceof Error) {
-      return NextResponse.json({ success: false, error: error.message });
-    }
-    return NextResponse.json({ success: false, error: 'An unknown error occurred' });
+    // Log error internally but return generic response to client
+    console.error('Contact form submission failed:', error);
+    return NextResponse.json(
+      { success: false, error: 'Failed to send message' },
+      { status: 500 }
+    );
   }
 }

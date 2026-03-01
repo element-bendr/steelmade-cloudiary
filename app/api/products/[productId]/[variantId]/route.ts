@@ -1,31 +1,36 @@
 import { NextResponse } from 'next/server'
-import { getProductsByCategoryAndSeries } from '@/lib/api/products'
-import { ProductCategorySlug, isValidCategorySlug } from '@/types/product-categories'
+import { collections } from '@/lib/data/collections-data'
 
-// Configure to use Edge Runtime for improved performance
 export const runtime = 'edge'
 
 export async function GET(
   request: Request,
-  { params }: { params: { category: string; seriesId: string } }
+  { params }: { params: { productId: string; variantId: string } }
 ) {
   try {
-    // Validate that the category is a valid ProductCategorySlug
-    if (!isValidCategorySlug(params.category)) {
-      return NextResponse.json(
-        { error: `Invalid category: ${params.category}` },
-        { status: 400 }
-      )
+    const { productId, variantId } = params;
+    
+    // Find the product globally across all categories and series
+    for (const category of Object.values(collections)) {
+      for (const series of Object.values(category as any)) {
+        if (series && (series as any).products && (series as any).products[productId]) {
+           const product = (series as any).products[productId];
+           // Mock a variant search or return product
+           return NextResponse.json({
+             product,
+             variantInfo: { id: variantId, note: "Variant specific data placeholder" }
+           });
+        }
+      }
     }
     
-    const products = await getProductsByCategoryAndSeries(
-      params.category as ProductCategorySlug, 
-      params.seriesId
+    return NextResponse.json(
+      { error: `Product not found for id: ${productId}` },
+      { status: 404 }
     )
-    return NextResponse.json(products)
   } catch (error) {
     return NextResponse.json(
-      { error: 'Failed to fetch products' },
+      { error: 'Failed to fetch product variant' },
       { status: 500 }
     )
   }

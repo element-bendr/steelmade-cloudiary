@@ -35,8 +35,7 @@ export function OptimizedImage({
   const [localRetryCount, setLocalRetryCount] = useState(0);
 
   // Debug log
-  console.log('Attempting to load image:', { imageUrl, imageSrc, isLocalImage });
-
+  
   const handleImageLoad = () => {
     setIsLoading(false);
     setError(false);
@@ -49,8 +48,7 @@ export function OptimizedImage({
       if (localRetryCount < 2) { // Limit local retries
         setLocalRetryCount(prev => prev + 1);
         const newSrc = `${imageUrl}?v=${Date.now()}`;
-        console.log(`Retrying local image (attempt ${localRetryCount + 1}):`, newSrc);
-        setImageSrc(newSrc);
+                setImageSrc(newSrc);
         return;
       } else {
         console.warn('Local image failed after multiple retries, using fallback:', { imageUrl });
@@ -61,8 +59,7 @@ export function OptimizedImage({
         const response = await fetchImage(imageUrl);
         if (response.ok) {
           const newSrc = `${imageUrl}?retry=${Date.now()}`;
-          console.log('Retrying remote image with:', newSrc);
-          setImageSrc(newSrc);
+                    setImageSrc(newSrc);
           // Reset loading state for the new attempt if it was a remote image that failed initially
           // and is now being retried.
           setIsLoading(true); 

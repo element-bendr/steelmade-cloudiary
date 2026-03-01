@@ -3,14 +3,30 @@ import { revalidatePath } from 'next/cache';
 
 export async function POST(req: NextRequest) {
   try {
-    const { body } = await req.json();
+    const authHeader = req.headers.get('authorization');
+    const secret = process.env.REVALIDATION_SECRET;
 
-    // Ideally, you'd check a signature header here,
-    // like sanity/webhook to secure the endpoint
+    // Check if the secret is configured
+    if (!secret) {
+      console.warn('REVALIDATION_SECRET is not set in environment variables');
+      return NextResponse.json({ message: 'Configuration error' }, { status: 500 });
+    }
 
-    console.log('Received Sanity webhook:', body);
+    // Verify token
+    if (authHeader !== `Bearer ${secret}`) {
+      return NextResponse.json({ message: 'Unauthorized' }, { status: 401 });
+    }
 
-    // Revalidate everything for now or specifically
+    let body;
+    try {
+      body = await req.json();
+    } catch(e) {
+      body = {};
+    }
+
+    console.log('Received secured revalidation webhook:', body);
+
+    // Revalidate everything or target paths
     revalidatePath('/', 'layout');
 
     return NextResponse.json({ message: 'Revalidated safely', now: Date.now() });
