@@ -24,11 +24,11 @@ export const getProductsByCategoryAndSeries = cache(async (
     await new Promise(resolve => setTimeout(resolve, 300));
     
     // Validate category and get series data
-    if (!isValidCategorySlug(category) || !COLLECTIONS_DATA[category]) {
+    if (!isValidCategorySlug(category) || !(COLLECTIONS_DATA as any)[category]) {
       console.warn(`Invalid category: ${category}`);
       return [];
     }
-    const seriesData = COLLECTIONS_DATA[category]?.[seriesId];
+    const seriesData = (COLLECTIONS_DATA as any)[category]?.[seriesId];
     if (!seriesData?.products) {
       console.warn(`No products found for series: ${seriesId} in category: ${category}`);
       return [];
@@ -53,11 +53,11 @@ export const getProductById = cache(async (
     await new Promise(resolve => setTimeout(resolve, 300));
     
     // Validate category and get series data
-    if (!isValidCategorySlug(category) || !COLLECTIONS_DATA[category]) {
+    if (!isValidCategorySlug(category) || !(COLLECTIONS_DATA as any)[category]) {
       console.warn(`Invalid category: ${category}`);
       return null;
     }
-    const seriesData = COLLECTIONS_DATA[category]?.[seriesId];
+    const seriesData = (COLLECTIONS_DATA as any)[category]?.[seriesId];
     if (!seriesData?.products) {
       console.warn(`No products found for series: ${seriesId} in category: ${category}`);
       return null;

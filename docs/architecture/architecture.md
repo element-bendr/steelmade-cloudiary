@@ -1,22 +1,29 @@
-# Director Series Canonical Refactor (2025-06-28)
+## 2025-09-26: Three Drawer Pedestal Rollout
 
-## Summary
-- All Director Series chair data and UI now use the canonical `directorSeries.products` object.
-- Legacy runtime registry and duplicate files are deprecated and safe to delete.
-- UI pages are DRY, modular, and declarative, using the canonical object for all lookups and rendering.
-- Documentation and onboarding have been updated to reference only the canonical pattern.
+- Expanded `metalStorages` with the Three Drawer Pedestal, layering dual finishes and variant metadata for richer storage storytelling.
+- Refreshed series imagery to foreground the new pedestal while preserving two drawer references for continuity.
+- Updated feature suite and timestamps to reflect the broadened catalog, keeping the module functional, declarative, and lyrical.
 
-## Implementation Principles
-- Functional, declarative, and poetic TypeScript
-- DRY, modular, and production-ready code
-- No technical debt, no code smells, no anti-patterns
-- Easy to extend, maintain, and debug
+#storage-solutions #metal-storage #catalog #variants #drystandards
 
-## See Also
-- `docs/adding-new-director-chairs.md`
-- `docs/director-series-rebuild-implementation.md`
-- `docs/architecture/director-series-ui-refactor-2025-06.md`
-- `docs/architecture/director-series-canonical-migration-status.md`
-- `memory.md`
+## 2025-09-25: Metal Storage Series Expansion
 
-#director-series #canonical #drystandards #architecture #production
+- Introduced `metalStorages` ProductSeries via `lib/data/products/storage/metal-storages.ts`, celebrating the two drawer pedestal with canonical, poetic data.
+- Refined `lib/data/products/storage/index.ts` to surface all storage series through declarative, id-driven keys.
+- Ensured storage catalog remains DRY, modular, functional, and production-ready for upcoming metal storage cohorts.
+
+#storage-solutions #metal-storage #product-catalog #drystandards
+
+## 2025-06-23: Storage Solutions SeriesMetadata/ProductSeries Type Fix
+
+- Fixed type error in `app/storage-solutions/[seriesId]/collections/page.tsx` by mapping `ProductSeries` to `SeriesMetadata` using a DRY mapping function.
+- Defensive mapping for `coverImage` to `ImageAsset` in `app/storage-solutions/[seriesId]/page.tsx`.
+- All code is DRY, modular, functional, declarative, and production-ready, following project standards and poetic principles.
+- Change tracked in `task-master-ai.json` and summarized in `memory.md`.
+
+#storage-solutions #typefix #canonical #drystandards
+
+- Removed all mock data and references from products API. Now only canonical, production-ready data and types are used.
+- Updated all types to use ExtendedProductData.
+- Fixed type for getProductDetails to cast categorySlug to ProductCategory for product-service compatibility.
+- File is DRY, modular, and production-ready.

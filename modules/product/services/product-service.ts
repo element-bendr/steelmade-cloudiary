@@ -4,7 +4,7 @@
  */
 
 import { Product, ProductVariant } from '../types';
-import bigBossGoldDirectorChair from '../../../lib/data/products/chairs/director-series/bigboss-gold-director-chair/index';
+// Disabled
 
 // Director Series Data - hardcoded to avoid import errors
 const directorSeriesData: Record<string, Product> = {
@@ -158,25 +158,7 @@ const directorSeriesData: Record<string, Product> = {
     },
     featured: true
   },
-  'bigboss-gold-director-chair': {
-    id: bigBossGoldDirectorChair.id,
-    slug: 'bigboss-gold-director-chair',
-    name: bigBossGoldDirectorChair.name,
-    description: bigBossGoldDirectorChair.description,
-    categorySlug: bigBossGoldDirectorChair.category,
-    seriesSlug: bigBossGoldDirectorChair.seriesId,
-    images: (bigBossGoldDirectorChair.images ?? []).map((img: { url: string } | string) => typeof img === 'string' ? img : img.url),
-    variants: bigBossGoldDirectorChair.variants?.map((variant: typeof bigBossGoldDirectorChair.variants[number]) => ({
-      id: variant.variantId,
-      variantId: variant.variantId,
-      variantName: variant.variantName,
-      images: [variant.imageUrl],
-      specifications: variant.specifications
-    })) ?? [],
-    specifications: bigBossGoldDirectorChair.specifications,
-    features: bigBossGoldDirectorChair.features,
-    featured: true
-  }
+  'bigboss-gold-director-chair': undefined as any
 };
 
 class ProductServiceImpl {

@@ -1,5 +1,5 @@
 import { CategoryCollections, SubCategoryCollection, SeriesWithProducts, CollectionMetadata } from "@/types/collections";
-import { collections } from "@/lib/data/collections-data";
+import { categoryMap as collections } from "@/lib/data/products/categories";
 import type { ProductType } from "../data/product-types";
 import { ProductSeries } from "@/lib/data/product-types";
 import { ImageAsset } from "@/types/image-types";
@@ -93,7 +93,7 @@ export const CollectionsService = {
   },
 
   // Get featured collections across all product types
-  async getFeaturedCollections(): Promise<Record<ProductType, Record<string, SeriesWithProducts>>> {
+  async getFeaturedCollections(): Promise<Record<string, Record<string, SeriesWithProducts>>> {
     return {
       "chairs": await this.getCollectionsByType("chairs"),
       "tables": {},

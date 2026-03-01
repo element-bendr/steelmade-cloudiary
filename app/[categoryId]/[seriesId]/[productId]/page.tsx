@@ -46,7 +46,14 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
   const category = await SanityProductService.getCategoryWithProducts(categoryId);
 
+  if (!category) {
+    notFound();
+  }
   const series = category.series[seriesId];
+
+  if (!series) {
+    notFound();
+  }
 
   const product = series.products[productId];
 

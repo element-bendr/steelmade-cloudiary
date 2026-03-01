@@ -1,4 +1,4 @@
-import { chairs } from '@/lib/data/products/chairs';
+import { categoryMap as products } from "@/lib/data/products/categories";
 import { ProductCategorySlug } from '../../../types/product-categories';
 import { 
   ProductRepository, 
@@ -7,7 +7,6 @@ import {
   CategoryNotFoundError 
 } from './repository';
 import { ProductSeries } from '@/lib/data/product-types';
-import { products } from '@/lib/data/products';
 import { productModuleConfig } from './config';
 
 /**
@@ -23,12 +22,12 @@ export class ModularProductRepository implements ProductRepository {
       throw new SeriesNotFoundError(`Series not found: ${category}/${seriesId}`);
     }
     
-    const product = seriesData.products[productId];
+    const product = seriesData.products?.[productId as keyof typeof seriesData.products];
     
     if (!product) {
       throw new ProductNotFoundError(
         `Product not found: ${category}/${seriesId}/${productId}. ` +
-        `Available products: ${Object.keys(seriesData.products).join(', ')}`
+        `Available products: ${seriesData.products ? Object.keys(seriesData.products).join(', ') : 'none'}`
       );
     }
     
@@ -38,64 +37,30 @@ export class ModularProductRepository implements ProductRepository {
   async getProductsBySeries(category: ProductCategorySlug, seriesId: string): Promise<any[]> {
     const seriesData = await this.getSeriesById(category, seriesId);
     
-    if (!seriesData) {
+    if (!seriesData || !seriesData.products) {
       throw new SeriesNotFoundError(`Series not found: ${category}/${seriesId}`);
     }
     
     return Object.values(seriesData.products);
   }
-    async getSeriesById(category: ProductCategorySlug, seriesId: string): Promise<ProductSeries | null> {
-    // If we're in full modular mode, use the consolidated products object
-    if (productModuleConfig.features.fullModularMode) {
-      const categoryData = products[category as keyof typeof products];
-      
-      if (!categoryData) {
-        throw new CategoryNotFoundError(`Category not found: ${category}`);
-      }
-      
-      return (categoryData as Record<string, ProductSeries>)[seriesId] || null;
+
+  async getSeriesById(category: ProductCategorySlug, seriesId: string): Promise<ProductSeries | null> {
+    const categoryData: any = products[category as keyof typeof products];
+    
+    if (!categoryData || !categoryData.series) {
+      throw new CategoryNotFoundError(`Category not found: ${category}`);
     }
     
-    // Otherwise, use the individual category exports based on migration status
-    switch(category) {
-      case 'chairs':
-        return chairs[seriesId] || null;
-      // Add cases for other categories as they're migrated
-      default:
-        // Check if the category is marked as migrated in the config
-        const migratedCategories = productModuleConfig.features.migratedCategories as Record<string, boolean>;
-        if (migratedCategories[category]) {
-          const categoryData = products[category as keyof typeof products];
-          return categoryData ? (categoryData as Record<string, ProductSeries>)[seriesId] || null : null;
-        }
-        throw new CategoryNotFoundError(`Category not implemented in modular system: ${category}`);
-    }
+    return (categoryData.series as Record<string, ProductSeries>)[seriesId] || null;
   }
-    async getAllSeries(category: ProductCategorySlug): Promise<Record<string, ProductSeries>> {
-    // If we're in full modular mode, use the consolidated products object
-    if (productModuleConfig.features.fullModularMode) {
-      const categoryData = products[category as keyof typeof products];
-      
-      if (!categoryData) {
-        throw new CategoryNotFoundError(`Category not found: ${category}`);
-      }
-      
-      return categoryData as Record<string, ProductSeries>;
+
+  async getAllSeries(category: ProductCategorySlug): Promise<Record<string, ProductSeries>> {
+    const categoryData: any = products[category as keyof typeof products];
+    
+    if (!categoryData || !categoryData.series) {
+      throw new CategoryNotFoundError(`Category not found: ${category}`);
     }
     
-    // Otherwise, use the individual category exports based on migration status
-    switch(category) {
-      case 'chairs':
-        return chairs;
-      // Add cases for other categories as they're migrated
-      default:
-        // Check if the category is marked as migrated in the config
-        const migratedCategories = productModuleConfig.features.migratedCategories as Record<string, boolean>;
-        if (migratedCategories[category]) {
-          const categoryData = products[category as keyof typeof products];
-          return (categoryData as Record<string, ProductSeries>) || {};
-        }
-        throw new CategoryNotFoundError(`Category not implemented in modular system: ${category}`);
-    }
+    return categoryData.series as Record<string, ProductSeries>;
   }
 }

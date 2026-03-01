@@ -9,7 +9,9 @@ import Image from "next/image"
 
 interface ProductGridProps {
   products: ExtendedProductData[]
-  productsPerPage?: number
+  productsPerPage?: number;
+  category?: string;
+  seriesId?: string;
 }
 
 export function ProductGrid({ products, productsPerPage = 8, category, seriesId }: ProductGridProps) {

@@ -5,32 +5,32 @@ import { client } from '@/lib/sanity/client';
 
 export class SanityProductRepository implements ProductRepository {
   
-  async getProductById(category: ProductCategorySlug, seriesId: string, productId: string): Promise<ExtendedProductData> {
-    const query = `*[_type == "product" && categoryId == $category && seriesId == $seriesId && id == $productId][0]`;
-    const doc = await client.fetch(query, { category, seriesId, productId });
+  async getProductById(category: ProductCategorySlug, series: string, productId: string): Promise<ExtendedProductData> {
+    const query = `*[_type == "product" && categoryId == $category && series == $series && id == $productId][0]`;
+    const doc = await client.fetch(query, { category, series, productId });
     
     if (!doc) {
-      throw new ProductNotFoundError(`Product ${productId} not found in series ${seriesId} of category ${category}`);
+      throw new ProductNotFoundError(`Product ${productId} not found in series ${series} of category ${category}`);
     }
     
     // Map Sanity schema back to ExtendedProductData frontend expects
     return this.mapSanityProductToFrontend(doc);
   }
 
-  async getProductsBySeries(category: ProductCategorySlug, seriesId: string): Promise<ExtendedProductData[]> {
-    const query = `*[_type == "product" && categoryId == $category && seriesId == $seriesId]`;
-    const docs = await client.fetch(query, { category, seriesId });
+  async getProductsBySeries(category: ProductCategorySlug, series: string): Promise<ExtendedProductData[]> {
+    const query = `*[_type == "product" && categoryId == $category && series == $series]`;
+    const docs = await client.fetch(query, { category, series });
     
     return docs.map((doc: any) => this.mapSanityProductToFrontend(doc));
   }
 
-  async getSeriesById(category: ProductCategorySlug, seriesId: string): Promise<ProductSeries | null> {
-    const seriesQuery = `*[_type == "series" && categoryId == $category && id == $seriesId][0]`;
-    const seriesDoc = await client.fetch(seriesQuery, { category, seriesId });
+  async getSeriesById(category: ProductCategorySlug, series: string): Promise<ProductSeries | null> {
+    const seriesQuery = `*[_type == "series" && categoryId == $category && id == $series][0]`;
+    const seriesDoc = await client.fetch(seriesQuery, { category, series });
     
     if (!seriesDoc) return null;
 
-    const products = await this.getProductsBySeries(category, seriesId);
+    const products = await this.getProductsBySeries(category, series);
     
     // Map array to object Record<string, ExtendedProductData>
     const productsRecord: Record<string, ExtendedProductData> = {};
@@ -41,10 +41,9 @@ export class SanityProductRepository implements ProductRepository {
     return {
       id: seriesDoc.id,
       title: seriesDoc.title,
-      description: seriesDoc.description,
-      seoDescription: seriesDoc.description || '', // fallback
-      category: seriesDoc.categoryId,
-      coverImage: { url: '', alt: seriesDoc.title }, // Need to map if needed
+      description: seriesDoc.description || '', // fallback
+      // category: seriesDoc.categoryId,
+      // Removed invalid keys mapped to ProductSeries
       products: productsRecord
     };
   }
@@ -65,10 +64,8 @@ export class SanityProductRepository implements ProductRepository {
       result[sDoc.id] = {
         id: sDoc.id,
         title: sDoc.title,
-        description: sDoc.description,
-        seoDescription: sDoc.description || '',
-        category: sDoc.categoryId,
-        coverImage: { url: '', alt: sDoc.title },
+        description: sDoc.description || '',
+        image: '', // Needs Sanity mapping if coverImage was intended
         products: productsRecord
       };
     }
@@ -82,11 +79,12 @@ export class SanityProductRepository implements ProductRepository {
       id: doc.id,
       name: doc.name,
       description: doc.description || '',
-      category: doc.categoryId,
-      seriesId: doc.seriesId,
+      // category: doc.categoryId,
+      series: doc.series,
       price: doc.price || '',
       imageUrl: doc.cloudinaryImageUrl || '', 
       features: doc.features || [],
+      specifications: {},
       // mapping remaining legacy properties if any
     };
   }

@@ -1,7 +1,7 @@
 import type { ProductType } from "../lib/data/product-types";
 
 // Maps ProductType (slug) to its display name (string that should be a ProductCategoryDisplay value)
-export const productCategoryDisplayNames: Record<ProductType, string> = {
+export const productCategoryDisplayNames: Record<string, string> = {
   "chairs": "Chairs",
   "tables": "Tables",
   "accessories": "Accessories",
@@ -17,7 +17,7 @@ export const productCategoryDisplayNames: Record<ProductType, string> = {
 };
 
 // Maps ProductType (slug) to its base URL path
-export const productCategoryPaths: Record<ProductType, string> = {
+export const productCategoryPaths: Record<string, string> = {
   "chairs": "/chairs",
   "tables": "/tables",
   "accessories": "/accessories",

@@ -3,6 +3,7 @@ import {
   categoryByIdQuery,
   productsByCategoryQuery,
   allCategoriesQuery,
+  productBySlugQuery,
 } from '../sanity.queries'
 
 /**
@@ -123,9 +124,28 @@ export class SanityProductService {
   }
 
   /**
+   * Returns metadata for all categories
+   */
+  static async getAllCategories() {
+    return await client.fetch(allCategoriesQuery)
+  }
+
+  /**
    * Returns shallow metadata for all categories
    */
   static async getAllCategoryPaths() {
     return await client.fetch(allCategoriesQuery)
+  }
+
+  /**
+   * Fetch a single product by its slug
+   */
+  static async getProductBySlug(slug: string) {
+    try {
+      return await client.fetch(productBySlugQuery, { slug })
+    } catch (error) {
+      console.error(`[SanityProductService] Failed fetching product by slug ${slug}:`, error)
+      return null
+    }
   }
 }

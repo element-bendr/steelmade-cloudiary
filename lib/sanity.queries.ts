@@ -76,3 +76,21 @@ export const productByIdQuery = groq`
     "seriesId": $seriesId
   }
 `
+
+// Fetch a single product by its slug, regardless of category/series
+export const productBySlugQuery = groq`
+  *[_type == "product" && slug.current == $slug][0] {
+    _id,
+    name,
+    "id": slug.current,
+    "imageUrl": mainImage.asset->url,
+    description,
+    features,
+    specifications[]{
+      name,
+      value
+    },
+    category,
+    series
+  }
+`

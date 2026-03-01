@@ -40,7 +40,7 @@ export async function getLastModified(type: string, seriesId: string): Promise<D
 export async function getSeriesProducts(
   type: string,
   seriesId: string
-): Promise<ProductDataMap | null> {
+): Promise<Record<string, ExtendedProductData> | ExtendedProductData[] | null> {
   const series = getSeriesByIdUtil(type, seriesId)
   if (!series || !series.products) return null
   return series.products

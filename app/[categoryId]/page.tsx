@@ -90,7 +90,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     notFound();
   }
   
-  let items = [];
+  let items: any[] = [];
   
   if (category.series) {
     // Check if it's an object or an array and map accordingly

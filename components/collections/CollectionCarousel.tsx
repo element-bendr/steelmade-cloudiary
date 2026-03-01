@@ -95,7 +95,7 @@ export function CollectionCarousel({
             key={product.id}
             className="min-w-[260px] md:min-w-[300px] w-[260px] md:w-[300px] flex-shrink-0 snap-start"
           >
-            <Link href={`/${productCategory}/${product.seriesId}/${product.id}`} className="group">
+            <Link href={`/${productCategory}/${product.series}/${product.id}`} className="group">
               <div className="relative aspect-square rounded-lg overflow-hidden mb-3">
                 {product.imageUrl ? (
                   <Image

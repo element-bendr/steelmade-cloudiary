@@ -1,5 +1,5 @@
 import type { SlideData } from '../../components/common/Slideshow';
-import type { ProductSeries, ProductCategory } from '../data/product-types';
+import type { ProductSeries } from '../data/product-types';
 
 // Reusable Cloudinary assets for fallback imagery
 const CLOUDINARY_FALLBACKS = [

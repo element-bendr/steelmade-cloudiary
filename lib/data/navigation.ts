@@ -75,7 +75,7 @@ export const mainNavigation: NavigationItem[] = [
             featured: {
               title: "New: Modern Workstation Pro",
               href: "/modular-furniture/workstations/modern-pro",
-              imageUrl: "/images/placeholder/featured-product.jpg",
+              imageUrl: "https://res.cloudinary.com/dqde19mfs/image/upload/q_auto,f_auto/v1749805770/steelmade/chairs/executive-series/amigo/ic-331-hb.jpg",
               imageAlt: "Modern Workstation Pro",
               description: "Discover our latest ergonomic workstation design"
             }
@@ -126,7 +126,7 @@ export const mainNavigation: NavigationItem[] = [
           featured: {
             title: "Featured: Executive Pro Chair",
             href: "/chairs/executive-series/pro",
-            imageUrl: "/images/placeholder/featured-product.jpg",
+            imageUrl: "https://res.cloudinary.com/dqde19mfs/image/upload/q_auto,f_auto/v1749805770/steelmade/chairs/executive-series/amigo/ic-331-hb.jpg",
             imageAlt: "Executive Pro Chair",
             description: "Ultimate comfort meets sophisticated design"
           }
@@ -182,7 +182,7 @@ export const mainNavigation: NavigationItem[] = [
           featured: {
             title: "New: Smart Locker System",
             href: "/storage-solutions/lockers/smart",
-            imageUrl: "/images/placeholder/featured-product.jpg",
+            imageUrl: "https://res.cloudinary.com/dqde19mfs/image/upload/q_auto,f_auto/v1749805770/steelmade/chairs/executive-series/amigo/ic-331-hb.jpg",
             imageAlt: "Smart Locker System",
             description: "Intelligent storage for modern workplaces"
           }
@@ -223,7 +223,7 @@ export const mainNavigation: NavigationItem[] = [
           featured: {
             title: "Featured: Heavy Duty Pallet Rack",
             href: "/racking-systems/pallet-racks/heavy-duty",
-            imageUrl: "/images/placeholder/featured-product.jpg",
+            imageUrl: "https://res.cloudinary.com/dqde19mfs/image/upload/q_auto,f_auto/v1749805770/steelmade/chairs/executive-series/amigo/ic-331-hb.jpg",
             imageAlt: "Heavy Duty Pallet Rack",
             description: "Maximum strength and durability"
           }
@@ -254,7 +254,7 @@ export const mainNavigation: NavigationItem[] = [
           featured: {
             title: "New: Ergonomic Student Chair",
             href: "/school-furniture/classroom-seating/ergonomic",
-            imageUrl: "/images/placeholder/featured-product.jpg",
+            imageUrl: "https://res.cloudinary.com/dqde19mfs/image/upload/q_auto,f_auto/v1749805770/steelmade/chairs/executive-series/amigo/ic-331-hb.jpg",
             imageAlt: "Ergonomic Student Chair",
             description: "Designed for all-day comfort"
           }
@@ -305,7 +305,7 @@ export const mainNavigation: NavigationItem[] = [
           featured: {
             title: "Featured: Antimicrobial Seating",
             href: "/hospital-furniture/waiting-area/antimicrobial",
-            imageUrl: "/images/placeholder/featured-product.jpg",
+            imageUrl: "https://res.cloudinary.com/dqde19mfs/image/upload/q_auto,f_auto/v1749805770/steelmade/chairs/executive-series/amigo/ic-331-hb.jpg",
             imageAlt: "Antimicrobial Waiting Area Seating",
             description: "Safe and comfortable seating solutions"
           }
@@ -315,7 +315,7 @@ export const mainNavigation: NavigationItem[] = [
   },
   {
     title: "Company",
-    href: "#",
+    href: "/about",
     megaMenu: {
       description: "Learn about Steelmade, our services, and how we can help you",
       columns: [
@@ -336,7 +336,7 @@ export const mainNavigation: NavigationItem[] = [
           featured: {
             title: "Our Story",
             href: "/about",
-            imageUrl: "/images/placeholder/featured-product.jpg",
+            imageUrl: "https://res.cloudinary.com/dqde19mfs/image/upload/q_auto,f_auto/v1749805770/steelmade/chairs/executive-series/amigo/ic-331-hb.jpg",
             imageAlt: "Steelmade Company Overview",
             description: "Discover our journey and commitment to quality"
           }
@@ -363,7 +363,7 @@ export const mainNavigation: NavigationItem[] = [
           featured: {
             title: "Custom Design Service",
             href: "/services/custom-design",
-            imageUrl: "/images/placeholder/featured-product.jpg",
+            imageUrl: "https://res.cloudinary.com/dqde19mfs/image/upload/q_auto,f_auto/v1749805770/steelmade/chairs/executive-series/amigo/ic-331-hb.jpg",
             imageAlt: "Custom Furniture Design Service",
             description: "Create your perfect workspace with our design experts"
           }
@@ -395,7 +395,7 @@ export const mainNavigation: NavigationItem[] = [
           featured: {
             title: "Product Care Guide",
             href: "/resources/product-care",
-            imageUrl: "/images/placeholder/featured-product.jpg",
+            imageUrl: "https://res.cloudinary.com/dqde19mfs/image/upload/q_auto,f_auto/v1749805770/steelmade/chairs/executive-series/amigo/ic-331-hb.jpg",
             imageAlt: "Furniture Care Guide",
             description: "Expert tips for maintaining your furniture"
           }

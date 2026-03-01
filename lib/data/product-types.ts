@@ -56,3 +56,10 @@ export interface ProductSeries {
   href?: string;
   products?: Record<string, ExtendedProductData> | ExtendedProductData[];
 }
+
+export interface ProductVariant {
+  id?: string;
+  variantId?: string;
+  name: string;
+  imageUrl: string;
+}

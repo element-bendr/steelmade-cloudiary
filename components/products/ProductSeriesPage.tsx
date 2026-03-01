@@ -8,12 +8,13 @@ import { Slideshow } from "../common/Slideshow"
 import type { SlideData } from "../common/Slideshow"
 
 interface ProductSeriesPageProps {
+  title?: string;
+  description?: string;
+  coverImage?: string;
   features?: any[];
-  features?: any[];
-  series: ProductSeries
-  products: ProductSeries["products"] extends Record<string, infer T> ? T[] : never
-  category: string
-  seriesId: string
+  products: any[];
+  category: string;
+  seriesId: string;
 }
 
 export default function ProductSeriesPage({ 

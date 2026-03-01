@@ -42,7 +42,7 @@ export async function generateMetadata(
       title: `${series.title} Collection | SteelMade ${params.category}`,
       description: series.description,
       type: "website",
-      images: series.imageUrl ? [{ url: series.imageUrl }] : undefined
+      images: []
     }
   };
 }
@@ -57,7 +57,7 @@ function mapProductSeriesToSeriesMetadata(series: any): import("@/types/collecti
     lastModified: series.lastModified || '',
     products: series.products || {},
     category: series.category || '',
-    imageUrl: series.imageUrl,
+    imageUrl: ((series as any).imageUrl || ""),
     coverImage: series.coverImage,
     images: series.images || [],
     specifications: series.specifications || {},
@@ -87,7 +87,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
       id: collectionId, 
       title: data.title,
       description: data.description,
-      imageUrl: data.imageUrl || '',
+      imageUrl: (data as any).image || (data as any).imageUrl || '',
       category: params.category,
       productCount: 8 // Placeholder count, would come from actual data
     }));
@@ -112,7 +112,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
         id: collectionId, 
         title: data.title,
         description: data.description,
-        imageUrl: data.imageUrl || '',
+        imageUrl: (data as any).image || (data as any).imageUrl || '',
         category,
         productCount: 8 // Placeholder count
       };

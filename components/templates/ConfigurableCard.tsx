@@ -66,7 +66,7 @@ interface Props {
 export default function ConfigurableCard({ item, variant = 'series', categoryId, index = 0 }: Props) {
   const title = (item as ProductSeries)?.title || (item as ProductData)?.name || item?.id || 'Item';
   const description = (item as ProductSeries)?.description || (item as ProductData)?.description || '';
-  const firstProduct: ExtendedProductData | undefined = (item as ProductSeries)?.products ? Object.values((item as ProductSeries).products)[0] : undefined;
+  const firstProduct: ExtendedProductData | undefined = (item as ProductSeries)?.products ? Object.values(((item as ProductSeries).products) || {})[0] : undefined;
 
   return (
     <Link

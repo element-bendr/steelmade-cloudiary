@@ -6,56 +6,30 @@ import { motion } from 'framer-motion';
 import { THEMES } from '../../lib/styles/category-themes';
 import { HOMEPAGE_THEME } from '../../lib/styles/homepage-theme';
 import { fadeInUp, staggerChildren, scaleOnHover } from '../../lib/styles/animations';
+import { Armchair, LampDesk, Archive, Box, GraduationCap, HeartPulse } from 'lucide-react';
 
-// Product categories configuration
-const PRODUCT_CATEGORIES = [
-  {
-    id: 'chairs',
-    title: 'Office Chairs',
-    description: 'Ergonomic and executive seating solutions',
-    href: '/chairs',
-    icon: '🪑'
-  },
-  {
-    id: 'desks',
-    title: 'Office Desks',
-    description: 'Professional workstations and desks',
-    href: '/desks',
-    icon: '🪑'
-  },
-  {
-    id: 'storage',
-    title: 'Storage Solutions',
-    description: 'Filing cabinets and storage systems',
-    href: '/storage-solutions',
-    icon: '🗃️'
-  },
-  {
-    id: 'modular-furniture',
-    title: 'Modular Systems',
-    description: 'Flexible modular furniture solutions',
-    href: '/modular-furniture',
-    icon: '🏢'
-  },
-  {
-    id: 'school-furniture',
-    title: 'Educational',
-    description: 'School and educational furniture',
-    href: '/school-furniture',
-    icon: '🎓'
-  },
-  {
-    id: 'hospital-furniture',
-    title: 'Healthcare',
-    description: 'Medical and hospital furniture',
-    href: '/hospital-furniture',
-    icon: '🏥'
-  }
-];
+interface SanityCategory {
+  id: string;
+  title: string;
+  description: string;
+  imageUrl?: string;
+}
 
 interface CategoryCardProps {
-  category: typeof PRODUCT_CATEGORIES[0];
+  category: SanityCategory;
   index: number;
+}
+
+function getCategoryIcon(id: string) {
+  switch (id) {
+    case 'chairs': return <Armchair size={40} strokeWidth={1.5} />;
+    case 'desks': return <LampDesk size={40} strokeWidth={1.5} />;
+    case 'storage-solutions': return <Archive size={40} strokeWidth={1.5} />;
+    case 'modular-furniture': return <Box size={40} strokeWidth={1.5} />;
+    case 'school-furniture': return <GraduationCap size={40} strokeWidth={1.5} />;
+    case 'hospital-furniture': return <HeartPulse size={40} strokeWidth={1.5} />;
+    default: return <Box size={40} strokeWidth={1.5} />;
+  }
 }
 
 function CategoryCard({ category, index }: CategoryCardProps) {
@@ -68,7 +42,7 @@ function CategoryCard({ category, index }: CategoryCardProps) {
       whileHover="hover"
       initial="rest"
     >
-      <Link href={category.href} className="block h-full">
+      <Link href={`/${category.id}`} className="block h-full">
         <motion.div
           variants={scaleOnHover}
           className="relative h-64 rounded-sm overflow-hidden border border-border/50 bg-card hover:shadow-minimal-hover transition-all duration-300 group"
@@ -84,19 +58,21 @@ function CategoryCard({ category, index }: CategoryCardProps) {
           {/* Content */}
           <div className="relative z-10 p-6 h-full flex flex-col justify-between">
             {/* Icon */}
-            <div className="text-4xl mb-4 opacity-80">
-              {category.icon}
+            <div className="mb-4 opacity-80" style={{ color: theme.primary }}>
+              {getCategoryIcon(category.id)}
             </div>
             
             {/* Text Content */}
             <div>
               <h3 
                 className="text-xl font-serif tracking-wide mb-2 group-hover:text-primary/80 transition-colors"
+                style={{ color: HOMEPAGE_THEME.text.primary }}
               >
                 {category.title}
               </h3>
               <p 
-                className="text-sm leading-relaxed text-muted-foreground"
+                className="text-sm leading-relaxed"
+                style={{ color: HOMEPAGE_THEME.text.secondary }}
               >
                 {category.description}
               </p>
@@ -120,7 +96,10 @@ function CategoryCard({ category, index }: CategoryCardProps) {
   );
 }
 
-export default function CategoriesGrid() {
+export default function CategoriesGrid({ initialCategories }: { initialCategories?: SanityCategory[] }) {
+  // Use passed categories or fallback to empty array if not provided yet.
+  const categories = initialCategories || [];
+
   return (
     <section 
       className="py-24 px-4 sm:px-6 lg:px-8"
@@ -147,7 +126,7 @@ export default function CategoriesGrid() {
             className="text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed"
             style={{ color: HOMEPAGE_THEME.text.secondary }}
           >
-            Discover our comprehensive range of professional furniture solutions, 
+            Discover our comprehensive range of professional furniture solutions,
             each designed to meet the unique needs of your workspace.
           </motion.p>
         </motion.div>
@@ -160,7 +139,7 @@ export default function CategoriesGrid() {
           viewport={{ once: true, margin: "-50px" }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {PRODUCT_CATEGORIES.map((category, index) => (
+          {categories.map((category, index) => (
             <CategoryCard 
               key={category.id} 
               category={category} 

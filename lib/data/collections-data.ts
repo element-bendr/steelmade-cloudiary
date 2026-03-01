@@ -1,2 +1,4 @@
-// Re-export from our consolidated data source
-export { productCatalog as collections } from "./product-catalog";
+import { categoryMap } from "./products/categories";
+
+export const collections = categoryMap;
+export const productCatalog = categoryMap;

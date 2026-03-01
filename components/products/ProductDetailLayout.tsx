@@ -51,6 +51,8 @@ interface ProductDetailLayoutProps {
   renderCustomSection?: () => React.ReactNode;
   className?: string;
   children?: React.ReactNode;
+  categoryId?: string;
+  seriesId?: string;
 }
 
 export const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
@@ -114,7 +116,7 @@ export const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
 
   // Breadcrumb logic
   // Dynamic breadcrumb logic
-  const breadcrumbItems = [
+  const breadcrumbItems: Array<{name: string, href?: string}> = [
     { name: 'Home', href: '/' },
   ];
   
@@ -130,7 +132,7 @@ export const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
     }
     
     breadcrumbItems.push({
-      name: activeCategory.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()),
+      name: activeCategory.replace(/-/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase()),
       href: categoryHref || undefined
     });
 
@@ -143,7 +145,7 @@ export const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
       }
       
       breadcrumbItems.push({
-        name: activeSeries.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()),
+        name: activeSeries.replace(/-/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase()),
         href: seriesHref || undefined
       });
     }

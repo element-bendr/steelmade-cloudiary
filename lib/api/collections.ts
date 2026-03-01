@@ -26,8 +26,8 @@ export const getAllSeries = cache(async (category: ProductCategorySlug | 'all'):
     }
 
     // Get series for the specific category
-    if (isValidCategorySlug(category) && COLLECTIONS_DATA[category]) {
-      return COLLECTIONS_DATA[category] as Record<string, ProductSeries>;
+    if (isValidCategorySlug(category) && (COLLECTIONS_DATA as any)[category]) {
+      return (COLLECTIONS_DATA as any)[category] as Record<string, ProductSeries>;
     }
     
     // Return empty object if category doesn't exist
@@ -47,8 +47,8 @@ export const getSeriesById = cache(async (category: ProductCategorySlug, seriesI
     await new Promise(resolve => setTimeout(resolve, 300));
     
     // Get the series data if category is valid
-    if (isValidCategorySlug(category) && COLLECTIONS_DATA[category]) {
-      const seriesData = COLLECTIONS_DATA[category]?.[seriesId] as ProductSeries | undefined;
+    if (isValidCategorySlug(category) && (COLLECTIONS_DATA as any)[category]) {
+      const seriesData = (COLLECTIONS_DATA as any)[category]?.[seriesId] as ProductSeries | undefined;
       return seriesData || null;
     }
     

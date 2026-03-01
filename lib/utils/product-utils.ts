@@ -1,5 +1,5 @@
 // Utility functions for product data retrieval, now using canonical types
-import { productCatalog } from '../data/product-catalog';
+import { categoryMap as productCatalog } from "../data/products/categories";
 import type {
   ProductImage,
   ProductVariant,
