@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 import CategoryPageTemplate from '../../components/templates/CategoryPageTemplate';
 import { getAllSeries } from '../../lib/services/product-service';
-import { getCategory } from '../../lib/data/products/categories';
+import { getCategoryAsync } from '../../lib/data/products/categories-async';
 import type { ProductSeries } from '../../lib/data/product-types';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const category = getCategory('hospital-furniture');
+  const category = await getCategoryAsync('hospital-furniture');
   
   if (!category) {
     return {

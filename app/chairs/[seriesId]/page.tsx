@@ -1,13 +1,15 @@
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
 import { default as ProductSeriesPage } from "../../../components/products/ProductSeriesPage"
-import { getSeriesById, getAllSeries, getRevalidateTime, getSeriesProducts } from "../../../lib/services/product-service"
+import { getSeriesById, getAllSeries } from "../../../lib/services/product-service"
 import { getImageUrl } from "../../../lib/utils/image-utils"
+import { client } from "../../../lib/sanity.client"
+import { productsBySeriesQuery } from "../../../lib/sanity.queries"
 
 // Route segment config for performance optimization
 export const dynamic = 'auto'
 export const dynamicParams = true
-export const revalidate = 3600 // Revalidate at most every hour
+export const revalidate = 60 // Revalidate every minute to sync with Sanity
 
 interface ChairSeriesPageProps {
   params: {
@@ -54,16 +56,6 @@ export async function generateMetadata({ params }: ChairSeriesPageProps): Promis
       creator: "@steelmade",
       site: "@steelmade",
     },
-    alternates: {
-      canonical: `https://steelmade.com/chairs/${params.seriesId}`,
-    },
-    robots: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    }
   }
 }
 
@@ -74,15 +66,17 @@ export default async function ChairSeriesPage({ params }: ChairSeriesPageProps) 
     notFound()
   }
 
-  const seriesProducts = await getSeriesProducts("chairs", params.seriesId)
-
-  // Ensure products is an array, even if it's null or undefined
-  const productList = seriesProducts ? Object.values(seriesProducts) : [];
+  // Swap out logical static pull for Sanity pull!
+  const productList = await client.fetch(productsBySeriesQuery, { 
+    category: 'chairs', 
+    seriesTitle: series.title,
+    seriesId: params.seriesId 
+  });
 
   return (
     <ProductSeriesPage
       series={series}
-      products={productList} // Pass the fetched products
+      products={productList} // Pass the Sanity products!
       category="chairs" // Pass the category
       seriesId={params.seriesId} // Pass the seriesId
     />
@@ -91,7 +85,6 @@ export default async function ChairSeriesPage({ params }: ChairSeriesPageProps) 
 
 export async function generateStaticParams() {
   const allSeries = await getAllSeries("chairs")
-  console.log("All series in generateStaticParams:", allSeries); // Added for debugging
   return Object.keys(allSeries).map((seriesId) => ({
     seriesId,
   }))

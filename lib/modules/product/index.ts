@@ -1,13 +1,7 @@
-/**
- * Product Module
- *
- * This module provides a clean API for accessing product data from the modular system.
- * It abstracts away the details of how products are stored and accessed.
- */
-
 import { ProductRepository } from './repository';
 import { ModularProductRepository } from './modular-repository';
 import { LegacyProductRepository } from './legacy-repository';
+import { SanityProductRepository } from './sanity-repository';
 import { ProductNotFoundError, SeriesNotFoundError, CategoryNotFoundError } from './repository';
 import { productModuleConfig } from './config';
 import { ProductCategorySlug } from '../../../types/product-categories';
@@ -15,46 +9,36 @@ import { ProductCategorySlug } from '../../../types/product-categories';
 // Create the appropriate repository based on configuration
 let repository: ProductRepository;
 
+// USE SANITY FOR NOW!
+// Later this can be toggleable via environment variables.
+repository = new SanityProductRepository();
+
+/* Keep old logic preserved in comments
 if (productModuleConfig.features.disableLegacySystem || productModuleConfig.features.fullModularMode) {
   repository = new ModularProductRepository();
 } else {
   repository = new LegacyProductRepository();
 }
+*/
 
-/**
- * Get a product by its ID within a series and category
- */
-export async function getProductById(categoryId: ProductCategorySlug, seriesId: string, productId: string) {
-  return repository.getProductById(categoryId, seriesId, productId);
+export async function getProductById(category: ProductCategorySlug, seriesId: string, productId: string) {
+  return repository.getProductById(category, seriesId, productId);
 }
 
-/**
- * Get a product (simplified API that assumes some defaults)
- */
-export async function getProduct(categoryId: ProductCategorySlug, seriesId: string, productId: string) {
-  return getProductById(categoryId, seriesId, productId);
+export async function getProduct(category: ProductCategorySlug, seriesId: string, productId: string) {
+  return getProductById(category, seriesId, productId);
 }
 
-/**
- * Get all products in a series
- */
-export async function getProductsBySeries(seriesId: string, categoryId: ProductCategorySlug) {
-  return repository.getProductsBySeries(categoryId, seriesId);
+export async function getProductsBySeries(seriesId: string, category: ProductCategorySlug) {
+  return repository.getProductsBySeries(category, seriesId);
 }
 
-/**
- * Get a series by its ID within a category
- */
-export async function getSeries(categoryId: ProductCategorySlug, seriesId: string) {
-  return repository.getSeriesById(categoryId, seriesId);
+export async function getSeries(category: ProductCategorySlug, seriesId: string) {
+  return repository.getSeriesById(category, seriesId);
 }
 
-/**
- * Get all series in a category
- */
-export async function getAllSeriesInCategory(categoryId: ProductCategorySlug) {
-  return repository.getAllSeries(categoryId);
+export async function getAllSeriesInCategory(category: ProductCategorySlug) {
+  return repository.getAllSeries(category);
 }
 
-// Export error types for use by consumers
 export { ProductNotFoundError, SeriesNotFoundError, CategoryNotFoundError };

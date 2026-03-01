@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { extractCategoryParams } from '../../lib/routes/route-config';
-import { getCategory, getAllCategories } from '../../lib/data/products/categories';
+import { getAllCategories } from '../../lib/data/products/categories';
+import { getCategoryAsync } from '../../lib/data/products/categories-async';
 import CategoryPageTemplate from '../../components/templates/CategoryPageTemplate';
 import { ProductSeries } from '../../lib/data/product-types';
 
@@ -24,7 +25,7 @@ export async function generateMetadata({
   params,
 }: CategoryPageProps): Promise<Metadata> {
   const { categoryId } = extractCategoryParams(params);
-  const category = getCategory(categoryId);
+  const category = await getCategoryAsync(categoryId);
   
   if (!category) {
     return {
@@ -55,7 +56,7 @@ export async function generateMetadata({
   };
 }
 
-export default function CategoryPage({ params }: CategoryPageProps) {
+export default async function CategoryPage({ params }: CategoryPageProps) {
   const { categoryId } = extractCategoryParams(params);
   
   // Filter out static asset requests that shouldn't be handled by product routes
@@ -63,7 +64,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
     notFound();
   }
   
-  const category = getCategory(categoryId);
+  const category = await getCategoryAsync(categoryId);
   
   // Use Next.js notFound() for better SEO and user experience
   if (!category) {

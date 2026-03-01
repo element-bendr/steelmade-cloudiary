@@ -25,3 +25,15 @@
 - Modular folder/index.ts structure is now required for every chair product and every new series in the website.
 - All series (Director, Executive, Ergonomic, Visitor, and future) must follow this pattern for maintainability and extensibility.
 - Documentation updated to reflect this universal standard.
+
+## 2026-02-28
+- Initiated transition from rigid static TS data to Headless CMS (Sanity.io) for managing product catalogs.
+- Using `feature/sanity-cms-migration` branch to keep production safe. 
+- Cloudinary images will still be hosted externally but URLs will be driven via Sanity schema. 
+- Using standard `history.md` and `tasks.md` format for the integration tracker.
+
+## Sanity Context
+- When replacing static data, Sanity query arrays must be explicitly mapped back to original component Types (like `ExtendedProductData`).
+- Next.js requires metadata generations to be strictly synchronous or rely cleanly on explicitly typing async overrides like `getCategoryAsync()`.
+- Use `tsx` directly in CLI rather than Next.js server actions to handle heavily batched script executions (76 documents fetched/pushed using `Promise.all` sets of 10).
+- Setting up the webhook cache invalidation clears out the site automatically without forcing devs to run complete `npm run build` statically.

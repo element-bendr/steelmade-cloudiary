@@ -1,0 +1,10 @@
+{
+  "runtime": "node",
+  "manager": "/opt/dev/nvm",
+  "version": "lts",
+  "commands": {
+    "bootstrap": "nvm use && npm install",
+    "build": "nvm use && npm run build",
+    "test": "nvm use && npm test"
+  }
+}
