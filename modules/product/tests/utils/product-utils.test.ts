@@ -2,7 +2,7 @@ import { describe, test, expect } from 'vitest';
 import { findDefaultVariant, findProductImages } from '../../src/utils';
 import type { Product } from '../../src/types';
 
-describe('Product Utils', () => {
+describe('[unit][product][utils] product utilities', () => {
   const mockProduct: Product = {
     id: 'test',
     title: 'Test Product',
@@ -17,12 +17,12 @@ describe('Product Utils', () => {
     ]
   };
 
-  test('findDefaultVariant returns default variant', () => {
+  test('[variant] findDefaultVariant returns default variant', () => {
     const variant = findDefaultVariant(mockProduct);
     expect(variant?.variantId).toBe('v2');
   });
 
-  test('findProductImages filters by variant', () => {
+  test('[images] findProductImages filters by variant', () => {
     const images = findProductImages(mockProduct, 'v1');
     expect(images).toHaveLength(1);
     expect(images[0].id).toBe('img1-v1');

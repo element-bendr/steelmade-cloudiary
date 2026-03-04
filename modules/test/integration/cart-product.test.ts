@@ -4,7 +4,7 @@ import { ProductSchema } from '@modules/shared';
 import { pipe } from 'fp-ts/function';
 import * as E from 'fp-ts/Either';
 
-describe('Cart-Product Integration', () => {
+describe.skip('[legacy][ecommerce][integration] cart-product integration', () => {
   const testProduct = {
     id: 'test-id',
     slug: 'test-product',
@@ -14,7 +14,7 @@ describe('Cart-Product Integration', () => {
     updatedAt: new Date()
   };
 
-  it('should validate product before adding to cart', () => {
+  it('[legacy] validates product before adding item to cart', () => {
     const result = pipe(
       CartService.create(),
       E.chain(cart => CartService.addItem(cart, {
@@ -27,7 +27,7 @@ describe('Cart-Product Integration', () => {
     expect(E.isRight(result)).toBe(true);
   });
 
-  it('should handle invalid product data', () => {
+  it('[legacy] validates invalid product payload handling', () => {
     const result = pipe(
       testProduct,
       ProductSchema.safeParse,

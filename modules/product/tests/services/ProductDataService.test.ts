@@ -1,7 +1,7 @@
 import { describe, test, expect, beforeEach } from 'vitest';
 import { ProductDataService } from '../../src/services';
 
-describe('ProductDataService', () => {
+describe('[unit][product][service] ProductDataService', () => {
   let service: ProductDataService;
 
   beforeEach(() => {
@@ -9,13 +9,13 @@ describe('ProductDataService', () => {
     service.clearCache();
   });
 
-  test('getInstance returns singleton instance', () => {
+  test('[singleton] getInstance returns same instance', () => {
     const instance1 = ProductDataService.getInstance();
     const instance2 = ProductDataService.getInstance();
     expect(instance1).toBe(instance2);
   });
 
-  test('getProductById returns cached product', async () => {
+  test('[cache] getProductById uses cache on repeated calls', async () => {
     const mockProduct = {
       id: 'test-1',
       title: 'Test Product',

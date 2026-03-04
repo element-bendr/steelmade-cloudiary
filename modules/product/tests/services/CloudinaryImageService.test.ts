@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { CloudinaryImageService } from '../../src/services/CloudinaryImageService';
 import * as E from 'fp-ts/Either';
 
-describe('CloudinaryImageService', () => {
+describe('[unit][product][media] CloudinaryImageService', () => {
   const testImage = {
     publicId: 'test-image',
     url: 'https://res.cloudinary.com/test/image/upload/test-image',
@@ -11,7 +11,7 @@ describe('CloudinaryImageService', () => {
     format: 'jpg',
     resourceType: 'image'
   };
-  it('should transform image with options', () => {
+  it('[transform] applies explicit optimization options', () => {
     const transformed = CloudinaryImageService.optimizeProductImage(testImage, {
       width: 400,
       height: 300,
@@ -23,7 +23,7 @@ describe('CloudinaryImageService', () => {
     expect(transformed.url).toContain('f_webp');
     expect(transformed.format).toBe('webp');
   });
-  it('should optimize image with defaults', () => {
+  it('[transform] applies default optimization options', () => {
     const optimized = CloudinaryImageService.optimizeProductImage(testImage);
 
     expect(optimized.url).toContain('f_webp');

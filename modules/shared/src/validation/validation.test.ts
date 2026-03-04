@@ -5,13 +5,13 @@ import { z } from 'zod';
 import { ValidationService } from './service';
 import { IDSchema } from './schemas';
 
-describe('ValidationService', () => {
+describe('[unit][shared][validation] ValidationService', () => {
   const TestSchema = z.object({
     id: IDSchema,
     value: z.number().min(0)
   });
 
-  it('should validate correct data', () => {
+  it('[schema] validates correct object payload', () => {
     const result = ValidationService.validate(TestSchema)({
       id: 'test-id',
       value: 42
@@ -26,7 +26,7 @@ describe('ValidationService', () => {
     }
   });
 
-  it('should return validation error for invalid data', () => {
+  it('[schema] returns validation error for invalid object payload', () => {
     const result = ValidationService.validate(TestSchema)({
       id: '',
       value: -1
@@ -38,7 +38,7 @@ describe('ValidationService', () => {
     }
   });
 
-  it('should validate arrays', () => {
+  it('[schema] validates arrays of typed objects', () => {
     const result = ValidationService.validateArray(TestSchema)([
       { id: 'id-1', value: 1 },
       { id: 'id-2', value: 2 }
