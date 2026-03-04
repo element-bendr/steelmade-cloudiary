@@ -1,16 +1,22 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { revalidatePath } from 'next/cache';
+import { getRevalidationSecrets, isAuthorizedRevalidationRequest } from '@/lib/revalidation-auth';
+
+export const runtime = 'nodejs';
 
 export async function POST(req: NextRequest) {
   try {
-    const authHeader = req.headers.get('authorization');
-    const secret = process.env.REVALIDATION_SECRET;
+    const requestAuth = {
+      authorizationHeader: req.headers.get('authorization'),
+      secretHeader: req.headers.get('x-revalidation-secret'),
+    };
+    const secrets = getRevalidationSecrets();
 
-    if (!secret) {
+    if (secrets.length === 0) {
       return NextResponse.json({ message: 'Internal configuration error' }, { status: 500 });
     }
 
-    if (authHeader !== `Bearer ${secret}`) {
+    if (!isAuthorizedRevalidationRequest(requestAuth, secrets)) {
       return NextResponse.json({ message: 'Unauthorized' }, { status: 401 });
     }
 

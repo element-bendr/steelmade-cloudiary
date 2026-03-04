@@ -60,3 +60,20 @@ tasks/
 # Dolt database files (added by bd init)
 .dolt/
 *.db
+
+# Local Netlify folder
+.netlify
+
+# Local tooling noise
+deno.lock
+/app/AGENTS.md
+/public/sw.js
+/public/workbox-*.js
+
+# Beads runtime files
+.beads/dolt-monitor.pid
+.beads/dolt-server.activity
+.beads/dolt-server.lock
+.beads/dolt-server.log
+.beads/dolt-server.pid
+.beads/dolt-server.port
