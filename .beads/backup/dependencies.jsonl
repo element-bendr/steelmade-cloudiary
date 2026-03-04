@@ -1,3 +1,4 @@
+{"created_at":"2026-03-04T23:40:36Z","created_by":"Automated Committer","depends_on_id":"steelmade-m06","issue_id":"steelmade-1ro","type":"discovered-from"}
 {"created_at":"2026-03-02T13:58:35Z","created_by":"Automated Committer","depends_on_id":"steelmade-d69","issue_id":"steelmade-d69.1","type":"parent-child"}
 {"created_at":"2026-03-02T13:58:35Z","created_by":"Automated Committer","depends_on_id":"steelmade-d69","issue_id":"steelmade-d69.2","type":"parent-child"}
 {"created_at":"2026-03-02T14:32:02Z","created_by":"Automated Committer","depends_on_id":"steelmade-d69.4","issue_id":"steelmade-d69.2","type":"blocks"}
