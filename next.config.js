@@ -1,7 +1,9 @@
-// @ts-nocheck  // Add this line at the top of the file
+// @ts-nocheck
+const isPwaEnabled = process.env.ENABLE_PWA === 'true'
+
 const withPWA = require('next-pwa')({
   dest: 'public',
-  disable: process.env.NODE_ENV === 'development',
+  disable: !isPwaEnabled,
   register: true,
   skipWaiting: true
 });
@@ -46,10 +48,6 @@ const nextConfig = {
   // Enable HTTP/2 for improved performance
   compress: true,
   poweredByHeader: false,
-  // Simplified build configuration to resolve stack overflow
-  generateBuildId: async () => {
-    return 'build-' + Date.now();
-  },
   // Simplified webpack config
   webpack: (config) => {
     config.module.rules.push({
