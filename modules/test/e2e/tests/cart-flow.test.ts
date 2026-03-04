@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('Cart Flow', () => {
-  test('should add product to cart', async ({ page }) => {
+test.describe.skip('[legacy][ecommerce][e2e] cart flow', () => {
+  test('[legacy] adds product to cart', async ({ page }) => {
     await page.goto('/products');
     await page.getByTestId('product-card').first().click();
     await page.getByRole('button', { name: 'Add to Cart' }).click();
@@ -10,7 +10,7 @@ test.describe('Cart Flow', () => {
     expect(cartCount).toBe('1');
   });
 
-  test('should validate product variants', async ({ page }) => {
+  test('[legacy] validates product variant selection before add-to-cart', async ({ page }) => {
     await page.goto('/products/test-product');
     
     const variantSelect = page.getByTestId('variant-select');

@@ -4,12 +4,12 @@ import * as TE from 'fp-ts/TaskEither';
 import { ProductDataService, ValidationService } from '../services';
 import type { Product } from '../types';
 
-describe('Product Module Integration', () => {
+describe('[integration][product] product module lifecycle', () => {
   beforeEach(() => {
     ProductDataService.clearCache();
   });
 
-  test('Product lifecycle flow', async () => {
+  test('[lifecycle] validates and resolves product through data service', async () => {
     const result = await pipe(
       { id: 'test-1', title: 'Test Product', description: 'Test' } as Product,
       ValidationService.validateProduct,

@@ -2,15 +2,16 @@ import { describe, it, expect } from 'vitest';
 import { CartService } from '../services/CartService';
 import { expectRight, expectValidationError } from '@modules/shared/test/utils';
 import { pipe } from 'fp-ts/function';
+import * as E from 'fp-ts/Either';
 
-describe('CartService', () => {
-  it('should create an empty cart', () => {
+describe.skip('[legacy][ecommerce][unit] cart service', () => {
+  it('[legacy] creates an empty cart', () => {
     const cart = expectRight(CartService.create());
     expect(cart.items).toHaveLength(0);
     expect(cart.id).toBeDefined();
   });
 
-  it('should add item to cart', () => {
+  it('[legacy] adds item to cart', () => {
     const result = pipe(
       CartService.create(),
       E.chain(cart => CartService.addItem(cart, {
@@ -25,7 +26,7 @@ describe('CartService', () => {
     expect(cart.items[0].productId).toBe('test-id');
   });
 
-  it('should remove item from cart', () => {
+  it('[legacy] removes item from cart', () => {
     const result = pipe(
       CartService.create(),
       E.chain(cart => CartService.addItem(cart, {

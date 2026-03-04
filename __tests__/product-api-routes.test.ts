@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import { GET as getProducts } from '../app/api/[categoryId]/[seriesId]/products/route';
 import { GET as getVariant } from '../app/api/products/[productId]/[variantId]/route';
 
@@ -30,8 +30,8 @@ vi.mock('@/lib/sanity/client', () => ({
   }
 }));
 
-describe('API Route: Products by Series', () => {
-  it('should return products using categoryId and seriesId', async () => {
+describe('[api][products] products-by-series route', () => {
+  it('[success] returns products for valid categoryId and seriesId', async () => {
     const request = new Request('http://localhost');
     const response = await getProducts(request, { 
       params: { categoryId: 'desks', seriesId: 'designer-desk-collection' } 
@@ -43,7 +43,7 @@ describe('API Route: Products by Series', () => {
     expect(data[0].id).toBe('apex-workstation');
   });
 
-  it('should return 400 if parameters missing', async () => {
+  it('[validation] returns 400 when route parameters are missing', async () => {
     const request = new Request('http://localhost');
     const response = await getProducts(request, { 
       params: { categoryId: '', seriesId: '' } 
@@ -52,8 +52,8 @@ describe('API Route: Products by Series', () => {
   });
 });
 
-describe('API Route: Variant Resolution', () => {
-  it('should return variant from explicit variants array', async () => {
+describe('[api][products] variant resolution route', () => {
+  it('[success] returns variant from explicit variants array', async () => {
     const request = new Request('http://localhost');
     const response = await getVariant(request, {
       params: { productId: 'apex-workstation', variantId: 'v1' }
@@ -65,7 +65,7 @@ describe('API Route: Variant Resolution', () => {
     expect(data.variant.name).toBe('Oak');
   });
 
-  it('should return 404 if product not found', async () => {
+  it('[not-found] returns 404 when product does not exist', async () => {
       const request = new Request('http://localhost');
       const response = await getVariant(request, {
         params: { productId: 'unknown-product', variantId: 'v1' }
@@ -74,7 +74,7 @@ describe('API Route: Variant Resolution', () => {
       expect(response.status).toBe(404);
   });
 
-  it('should return 404 if variant not found in product', async () => {
+  it('[not-found] returns 404 when variant does not exist for product', async () => {
       const request = new Request('http://localhost');
       const response = await getVariant(request, {
         params: { productId: 'apex-workstation', variantId: 'v99' }

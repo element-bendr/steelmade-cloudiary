@@ -6,8 +6,8 @@ import {
   isAuthorizedRevalidationRequest,
 } from '../lib/revalidation-auth';
 
-describe('revalidation auth helpers', () => {
-  it('prefers the canonical secret but supports the legacy alias', () => {
+describe('[unit][auth] revalidation auth helpers', () => {
+  it('[secrets] returns canonical and legacy secrets in priority order', () => {
     expect(
       getRevalidationSecrets({
         REVALIDATION_SECRET: 'primary-secret',
@@ -16,7 +16,7 @@ describe('revalidation auth helpers', () => {
     ).toEqual(['primary-secret', 'legacy-secret']);
   });
 
-  it('deduplicates and trims configured secrets', () => {
+  it('[secrets] deduplicates and trims configured secrets', () => {
     expect(
       getRevalidationSecrets({
         REVALIDATION_SECRET: ' same-secret ',
@@ -25,11 +25,11 @@ describe('revalidation auth helpers', () => {
     ).toEqual(['same-secret']);
   });
 
-  it('extracts bearer tokens without preserving surrounding whitespace', () => {
+  it('[headers] extracts bearer token and trims whitespace', () => {
     expect(extractBearerToken('  Bearer test-secret  ')).toBe('test-secret');
   });
 
-  it('prefers the explicit secret header when present', () => {
+  it('[headers] prefers explicit secret header over authorization header', () => {
     expect(
       getPresentedRevalidationSecret({
         authorizationHeader: 'Bearer primary-secret',
@@ -38,7 +38,7 @@ describe('revalidation auth helpers', () => {
     ).toBe('legacy-secret');
   });
 
-  it('accepts requests that match either supported secret', () => {
+  it('[authz] accepts requests matching any supported secret', () => {
     expect(
       isAuthorizedRevalidationRequest(
         { authorizationHeader: 'Bearer legacy-secret' },
@@ -59,7 +59,7 @@ describe('revalidation auth helpers', () => {
     ).toBe(true);
   });
 
-  it('rejects malformed or mismatched authorization headers', () => {
+  it('[authz] rejects malformed or mismatched authorization headers', () => {
     expect(
       isAuthorizedRevalidationRequest({ authorizationHeader: 'Token test-secret' }, ['test-secret']),
     ).toBe(false);
