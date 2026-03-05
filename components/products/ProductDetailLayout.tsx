@@ -1,11 +1,8 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import Head from 'next/head';
-import Image from 'next/image';
 import { Button } from "../ui/button";
 import { productStyles } from '../../lib/styles/productStyles';
 import Breadcrumbs from '../ui/Breadcrumbs';
-import { getCategoryUrl, getProductUrl } from '../../lib/navigation';
 
 // Make sure we're properly importing all chair components
 import { 
@@ -166,6 +163,16 @@ export const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
         {/* Product Details Section */}
         <div className={productStyles.layout.section}>
           <h1 className={productStyles.typography.title}>{product.name}</h1>
+          {variants.length > 0 && selectedVariant && (
+            <div className="mb-4 flex flex-wrap items-center gap-2">
+              <span className="inline-flex items-center rounded-full border border-red-300 bg-red-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-red-700">
+                Selected variant: {selectedVariant.name}
+              </span>
+              <span className="inline-flex items-center rounded-full border border-neutral-300 bg-neutral-50 px-3 py-1 text-xs font-medium text-neutral-700">
+                {variants.length} options available
+              </span>
+            </div>
+          )}
           <p className={productStyles.typography.description}>{product.description}</p>
           {/* Variant Selector */}
           {variants.length > 0 && selectedVariant && (
