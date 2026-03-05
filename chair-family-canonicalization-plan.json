@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-05T17:06:26.930Z",
+  "generatedAt": "2026-03-05T17:11:14.159Z",
   "summary": {
     "candidateProducts": 96,
     "plannedFamilies": 37,
@@ -33,14 +33,16 @@
           "slug": "ic-249-hb",
           "name": "Trident High Back",
           "variantLabel": "High Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/director-series/trident/ic-249-hb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/director-series/trident/ic-249-hb",
+          "publicId": "steelmade/chairs/director-series/trident/ic-249-hb"
         },
         {
           "id": "imported-product-trident",
           "slug": "trident",
           "name": "Trident Director Chair",
           "variantLabel": "Trident Director Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/director-series/trident/ic-250-mb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/director-series/trident/ic-250-mb",
+          "publicId": "steelmade/chairs/director-series/trident/ic-250-mb"
         }
       ],
       "deprecatedSlugs": [
@@ -65,28 +67,32 @@
           "slug": "ic-319-hb-black",
           "name": "Ic 319 Hb Black",
           "variantLabel": "High Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/berlin/ic-319-hb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/berlin/ic-319-hb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/berlin/ic-319-hb-black"
         },
         {
           "id": "azxCCZJCUCHUDe0xTqdqc1",
           "slug": "ic-318-mb-white",
           "name": "Ic 318 Mb White",
           "variantLabel": "Mid Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/berlin/ic-318-mb-white"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/berlin/ic-318-mb-white",
+          "publicId": "steelmade/chairs/ergonomic-series/berlin/ic-318-mb-white"
         },
         {
           "id": "SfgI0z4vRA5blg633yFnVh",
           "slug": "ic-320-mb-black",
           "name": "Ic 320 Mb Black",
           "variantLabel": "Ic 320 Mb Black",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/berlin/ic-320-mb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/berlin/ic-320-mb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/berlin/ic-320-mb-black"
         },
         {
           "id": "imported-product-berlin",
           "slug": "berlin",
           "name": "Berlin Ergonomic Chair",
           "variantLabel": "Berlin Ergonomic Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/berlin/ic-317-hb-white"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/berlin/ic-317-hb-white",
+          "publicId": "steelmade/chairs/ergonomic-series/berlin/ic-317-hb-white"
         }
       ],
       "deprecatedSlugs": [
@@ -113,14 +119,16 @@
           "slug": "craft-ic-131-visitor",
           "name": "Craft Ergonomic Chair",
           "variantLabel": "Visitor",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/craft/ic-131-visitor"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/craft/ic-131-visitor",
+          "publicId": "steelmade/chairs/ergonomic-series/craft/ic-131-visitor"
         },
         {
           "id": "imported-product-craft-ergonomic-chair",
           "slug": "craft-ergonomic-chair",
           "name": "Craft Ergonomic Chair",
           "variantLabel": "Craft Ergonomic Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/craft/ic-129-hb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/craft/ic-129-hb",
+          "publicId": "steelmade/chairs/ergonomic-series/craft/ic-129-hb"
         }
       ],
       "deprecatedSlugs": [
@@ -145,28 +153,32 @@
           "slug": "ic-342-hb-black",
           "name": "Ic 342 Hb Black",
           "variantLabel": "High Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/dc/ic-342-hb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/dc/ic-342-hb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/dc/ic-342-hb-black"
         },
         {
           "id": "SfgI0z4vRA5blg633yFpKj",
           "slug": "ic-344-hb-grey",
           "name": "Ic 344 Hb Grey",
           "variantLabel": "Ic 344 Hb Grey",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/dc/ic-344-hb-grey"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/dc/ic-344-hb-grey",
+          "publicId": "steelmade/chairs/ergonomic-series/dc/ic-344-hb-grey"
         },
         {
           "id": "azxCCZJCUCHUDe0xTqdrmb",
           "slug": "ic-345-mb-grey",
           "name": "Ic 345 Mb Grey",
           "variantLabel": "Mid Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/dc/ic-345-mb-grey"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/dc/ic-345-mb-grey",
+          "publicId": "steelmade/chairs/ergonomic-series/dc/ic-345-mb-grey"
         },
         {
           "id": "imported-product-dc",
           "slug": "dc",
           "name": "DC Ergonomic Chair",
           "variantLabel": "DC Ergonomic Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/dc/ic-343-mb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/dc/ic-343-mb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/dc/ic-343-mb-black"
         }
       ],
       "deprecatedSlugs": [
@@ -193,14 +205,16 @@
           "slug": "ic-260-mb-grey",
           "name": "Ic 260 Mb Grey",
           "variantLabel": "Mid Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/feedo/ic-260-mb-grey"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/feedo/ic-260-mb-grey",
+          "publicId": "steelmade/chairs/ergonomic-series/feedo/ic-260-mb-grey"
         },
         {
           "id": "imported-product-feedo",
           "slug": "feedo",
           "name": "Feedo Ergonomic Chair",
           "variantLabel": "Feedo Ergonomic Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/feedo/ic-259-hb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/feedo/ic-259-hb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/feedo/ic-259-hb-black"
         }
       ],
       "deprecatedSlugs": [
@@ -225,35 +239,40 @@
           "slug": "ic-335-hb-black",
           "name": "Ic 335 Hb Black",
           "variantLabel": "High Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/flamingo/ic-335-hb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/flamingo/ic-335-hb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/flamingo/ic-335-hb-black"
         },
         {
           "id": "SfgI0z4vRA5blg633yFrJB",
           "slug": "ic-336-hb-grey",
           "name": "Ic 336 Hb Grey",
           "variantLabel": "Ic 336 Hb Grey",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/flamingo/ic-336-hb-grey"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/flamingo/ic-336-hb-grey",
+          "publicId": "steelmade/chairs/ergonomic-series/flamingo/ic-336-hb-grey"
         },
         {
           "id": "azxCCZJCUCHUDe0xTqdsVM",
           "slug": "ic-337-hb-green",
           "name": "Ic 337 Hb Green",
           "variantLabel": "Ic 337 Hb Green",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/flamingo/ic-337-hb-green"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/flamingo/ic-337-hb-green",
+          "publicId": "steelmade/chairs/ergonomic-series/flamingo/ic-337-hb-green"
         },
         {
           "id": "imported-product-flamingo-ergonomic-chair",
           "slug": "flamingo-ergonomic-chair",
           "name": "Flamingo Ergonomic Chair",
           "variantLabel": "Flamingo Ergonomic Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/flamingo/ic-335-hb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/flamingo/ic-335-hb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/flamingo/ic-335-hb-black"
         },
         {
           "id": "PYCfep3q5TfxEMsSZlygKq",
           "slug": "flamingo-ic-337-hb-orange",
           "name": "Flamingo Ergonomic Chair",
           "variantLabel": "Flamingo Ergonomic Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/flamingo/ic-337-hb-orange"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/flamingo/ic-337-hb-orange",
+          "publicId": "steelmade/chairs/ergonomic-series/flamingo/ic-337-hb-orange"
         }
       ],
       "deprecatedSlugs": [
@@ -281,21 +300,24 @@
           "slug": "ic-353-mb-black",
           "name": "Ic 353 Mb Black",
           "variantLabel": "Mid Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/flea/ic-353-mb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/flea/ic-353-mb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/flea/ic-353-mb-black"
         },
         {
           "id": "SfgI0z4vRA5blg633yFsBL",
           "slug": "ic-354-visi-black",
           "name": "Ic 354 Visi Black",
           "variantLabel": "Visitor",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/flea/ic-354-visi-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/flea/ic-354-visi-black",
+          "publicId": "steelmade/chairs/ergonomic-series/flea/ic-354-visi-black"
         },
         {
           "id": "imported-product-flea",
           "slug": "flea",
           "name": "Flea Ergonomic Series",
           "variantLabel": "Flea Ergonomic Series",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/flea/ic-352-hb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/flea/ic-352-hb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/flea/ic-352-hb-black"
         }
       ],
       "deprecatedSlugs": [
@@ -321,42 +343,48 @@
           "slug": "ic-123d-hb",
           "name": "Honda High Back",
           "variantLabel": "High Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/honda/ic-123d-hb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/honda/ic-123d-hb",
+          "publicId": "steelmade/chairs/ergonomic-series/honda/ic-123d-hb"
         },
         {
           "id": "azxCCZJCUCHUDe0xTqdstY",
           "slug": "ic-123-mb-black",
           "name": "Ic 123 Mb Black",
           "variantLabel": "Mid Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/honda/ic-123-mb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/honda/ic-123-mb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/honda/ic-123-mb-black"
         },
         {
           "id": "SfgI0z4vRA5blg633yFtML",
           "slug": "ic-123c-visi-black",
           "name": "Ic 123c Visi Black",
           "variantLabel": "Visitor",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/honda/ic-123c-visi-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/honda/ic-123c-visi-black",
+          "publicId": "steelmade/chairs/ergonomic-series/honda/ic-123c-visi-black"
         },
         {
           "id": "imported-product-honda-ergonomic-chair",
           "slug": "honda-ergonomic-chair",
           "name": "Honda Ergonomic Chair",
           "variantLabel": "Honda Ergonomic Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/honda/ic-123b-grey"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/honda/ic-123b-grey",
+          "publicId": "steelmade/chairs/ergonomic-series/honda/ic-123b-grey"
         },
         {
           "id": "azxCCZJCUCHUDe0xTqdt4R",
           "slug": "ic-123a-white",
           "name": "Ic 123a White",
           "variantLabel": "Ic 123a White",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/honda/ic-123a-white"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/honda/ic-123a-white",
+          "publicId": "steelmade/chairs/ergonomic-series/honda/ic-123a-white"
         },
         {
           "id": "PYCfep3q5TfxEMsSZm4xf6",
           "slug": "ic-123b-grey",
           "name": "Ic 123b Grey",
           "variantLabel": "Ic 123b Grey",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/honda/ic-123b-grey"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/honda/ic-123b-grey",
+          "publicId": "steelmade/chairs/ergonomic-series/honda/ic-123b-grey"
         }
       ],
       "deprecatedSlugs": [
@@ -385,14 +413,16 @@
           "slug": "matrix-ic-137-visitor",
           "name": "Matrix Ergonomic Chair",
           "variantLabel": "Visitor",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/matrix/ic-137-visitor"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/matrix/ic-137-visitor",
+          "publicId": "steelmade/chairs/ergonomic-series/matrix/ic-137-visitor"
         },
         {
           "id": "imported-product-matrix-ergonomic-chair",
           "slug": "matrix-ergonomic-chair",
           "name": "Matrix Ergonomic Chair",
           "variantLabel": "Matrix Ergonomic Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/matrix/ic-135-hb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/matrix/ic-135-hb",
+          "publicId": "steelmade/chairs/ergonomic-series/matrix/ic-135-hb"
         }
       ],
       "deprecatedSlugs": [
@@ -417,21 +447,24 @@
           "slug": "ic-349-hb-grey",
           "name": "Ic 349 Hb Grey",
           "variantLabel": "High Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/mercedes/ic-349-hb-grey"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/mercedes/ic-349-hb-grey",
+          "publicId": "steelmade/chairs/ergonomic-series/mercedes/ic-349-hb-grey"
         },
         {
           "id": "azxCCZJCUCHUDe0xTqdtfw",
           "slug": "ic-351-visi-grey",
           "name": "Ic 351 Visi Grey",
           "variantLabel": "Visitor",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/mercedes/ic-351-visi-grey"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/mercedes/ic-351-visi-grey",
+          "publicId": "steelmade/chairs/ergonomic-series/mercedes/ic-351-visi-grey"
         },
         {
           "id": "imported-product-mercedes",
           "slug": "mercedes",
           "name": "Mercedes Ergonomic Chair",
           "variantLabel": "Mercedes Ergonomic Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/mercedes/ic-348-visi-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/mercedes/ic-348-visi-black",
+          "publicId": "steelmade/chairs/ergonomic-series/mercedes/ic-348-visi-black"
         }
       ],
       "deprecatedSlugs": [
@@ -457,14 +490,16 @@
           "slug": "ic-28-hb-black",
           "name": "Ic 28 Hb Black",
           "variantLabel": "High Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/moscow/ic-28-hb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/moscow/ic-28-hb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/moscow/ic-28-hb-black"
         },
         {
           "id": "imported-product-moscow",
           "slug": "moscow",
           "name": "Moscow Ergonomic Chair",
           "variantLabel": "Moscow Ergonomic Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/moscow/ic-29-mb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/moscow/ic-29-mb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/moscow/ic-29-mb-black"
         }
       ],
       "deprecatedSlugs": [
@@ -489,28 +524,32 @@
           "slug": "ic-263c-hb-black",
           "name": "Ic 263c Hb Black",
           "variantLabel": "High Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/robo/ic-263c-hb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/robo/ic-263c-hb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/robo/ic-263c-hb-black"
         },
         {
           "id": "azxCCZJCUCHUDe0xTqduPu",
           "slug": "ic-263-black",
           "name": "Ic 263 Black",
           "variantLabel": "Ic 263 Black",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/robo/ic-263-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/robo/ic-263-black",
+          "publicId": "steelmade/chairs/ergonomic-series/robo/ic-263-black"
         },
         {
           "id": "PYCfep3q5TfxEMsSZm52RF",
           "slug": "ic-263b-grey",
           "name": "Ic 263b Grey",
           "variantLabel": "Ic 263b Grey",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/robo/ic-263b-grey"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/robo/ic-263b-grey",
+          "publicId": "steelmade/chairs/ergonomic-series/robo/ic-263b-grey"
         },
         {
           "id": "imported-product-robo-ergonomic-chair",
           "slug": "robo-ergonomic-chair",
           "name": "Robo Ergonomic Chair",
           "variantLabel": "Robo Ergonomic Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/robo/ic-263c-hb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/robo/ic-263c-hb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/robo/ic-263c-hb-black"
         }
       ],
       "deprecatedSlugs": [
@@ -537,28 +576,32 @@
           "slug": "ic-321-hb-white",
           "name": "Ic 321 Hb White",
           "variantLabel": "High Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/roger/ic-321-hb-white"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/roger/ic-321-hb-white",
+          "publicId": "steelmade/chairs/ergonomic-series/roger/ic-321-hb-white"
         },
         {
           "id": "SfgI0z4vRA5blg633yFw5t",
           "slug": "ic-323-hb-black",
           "name": "Ic 323 Hb Black",
           "variantLabel": "Ic 323 Hb Black",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/roger/ic-323-hb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/roger/ic-323-hb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/roger/ic-323-hb-black"
         },
         {
           "id": "SfgI0z4vRA5blg633yFwK1",
           "slug": "ic-324-mb-black",
           "name": "Ic 324 Mb Black",
           "variantLabel": "Mid Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/roger/ic-324-mb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/roger/ic-324-mb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/roger/ic-324-mb-black"
         },
         {
           "id": "imported-product-roger",
           "slug": "roger",
           "name": "Roger Ergonomic Chair",
           "variantLabel": "Roger Ergonomic Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/roger/ic-322-mb-white"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/roger/ic-322-mb-white",
+          "publicId": "steelmade/chairs/ergonomic-series/roger/ic-322-mb-white"
         }
       ],
       "deprecatedSlugs": [
@@ -585,14 +628,16 @@
           "slug": "roman-ic-128-visitor",
           "name": "Roman Ergonomic Chair",
           "variantLabel": "Visitor",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/roman/ic-128-visitor"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/roman/ic-128-visitor",
+          "publicId": "steelmade/chairs/ergonomic-series/roman/ic-128-visitor"
         },
         {
           "id": "SfgI0z4vRA5blg633yDQiF",
           "slug": "roman-ic-127",
           "name": "Roman Ergonomic Chair",
           "variantLabel": "Roman Ergonomic Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/roman/ic-127"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/roman/ic-127",
+          "publicId": "steelmade/chairs/ergonomic-series/roman/ic-127"
         }
       ],
       "deprecatedSlugs": [
@@ -617,28 +662,32 @@
           "slug": "ic-118-hb-black",
           "name": "Ic 118 Hb Black",
           "variantLabel": "High Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/tokyo/ic-118-hb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/tokyo/ic-118-hb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/tokyo/ic-118-hb-black"
         },
         {
           "id": "SfgI0z4vRA5blg633yFwY9",
           "slug": "ic-117-mb-white",
           "name": "Ic 117 Mb White",
           "variantLabel": "Mid Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/tokyo/ic-117-mb-white"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/tokyo/ic-117-mb-white",
+          "publicId": "steelmade/chairs/ergonomic-series/tokyo/ic-117-mb-white"
         },
         {
           "id": "azxCCZJCUCHUDe0xTqdvgX",
           "slug": "ic-119-mb-black",
           "name": "Ic 119 Mb Black",
           "variantLabel": "Ic 119 Mb Black",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/tokyo/ic-119-mb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/tokyo/ic-119-mb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/tokyo/ic-119-mb-black"
         },
         {
           "id": "imported-product-tokyo",
           "slug": "tokyo",
           "name": "Tokyo Ergonomic Series",
           "variantLabel": "Tokyo Ergonomic Series",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/tokyo/ic-116-hb-white"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/tokyo/ic-116-hb-white",
+          "publicId": "steelmade/chairs/ergonomic-series/tokyo/ic-116-hb-white"
         }
       ],
       "deprecatedSlugs": [
@@ -665,28 +714,32 @@
           "slug": "ic-329-hb-grey",
           "name": "Ic 329 Hb Grey",
           "variantLabel": "High Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/ud/ic-329-hb-grey"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/ud/ic-329-hb-grey",
+          "publicId": "steelmade/chairs/ergonomic-series/ud/ic-329-hb-grey"
         },
         {
           "id": "PYCfep3q5TfxEMsSZm56kG",
           "slug": "ic-328-mb-black",
           "name": "Ic 328 Mb Black",
           "variantLabel": "Mid Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/ud/ic-328-mb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/ud/ic-328-mb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/ud/ic-328-mb-black"
         },
         {
           "id": "SfgI0z4vRA5blg633yFxc5",
           "slug": "ic-330-mb-grey",
           "name": "Ic 330 Mb Grey",
           "variantLabel": "Ic 330 Mb Grey",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/ud/ic-330-mb-grey"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/ud/ic-330-mb-grey",
+          "publicId": "steelmade/chairs/ergonomic-series/ud/ic-330-mb-grey"
         },
         {
           "id": "imported-product-ud",
           "slug": "ud",
           "name": "UD Ergonomic Chair",
           "variantLabel": "UD Ergonomic Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/ud/ic-327-hb-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/ud/ic-327-hb-black",
+          "publicId": "steelmade/chairs/ergonomic-series/ud/ic-327-hb-black"
         }
       ],
       "deprecatedSlugs": [
@@ -713,14 +766,16 @@
           "slug": "vivo-ic-134-visitor",
           "name": "Vivo Ergonomic Chair",
           "variantLabel": "Visitor",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/vivo/ic-134-visitor"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/vivo/ic-134-visitor",
+          "publicId": "steelmade/chairs/ergonomic-series/vivo/ic-134-visitor"
         },
         {
           "id": "imported-product-vivo-ergonomic-chair",
           "slug": "vivo-ergonomic-chair",
           "name": "Vivo Ergonomic Chair",
           "variantLabel": "Vivo Ergonomic Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/vivo/ic-132-hb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/vivo/ic-132-hb",
+          "publicId": "steelmade/chairs/ergonomic-series/vivo/ic-132-hb"
         }
       ],
       "deprecatedSlugs": [
@@ -745,21 +800,24 @@
           "slug": "zara-ic-143-visi",
           "name": "Zara Ergonomic Chair",
           "variantLabel": "Visitor",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/zara/ic-143-visi"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/zara/ic-143-visi",
+          "publicId": "steelmade/chairs/ergonomic-series/zara/ic-143-visi"
         },
         {
           "id": "SfgI0z4vRA5blg633yFyIT",
           "slug": "ic-142-black",
           "name": "Ic 142 Black",
           "variantLabel": "Ic 142 Black",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/zara/ic-142-black"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/zara/ic-142-black",
+          "publicId": "steelmade/chairs/ergonomic-series/zara/ic-142-black"
         },
         {
           "id": "imported-product-zara-ergonomic-chair",
           "slug": "zara-ergonomic-chair",
           "name": "Zara Ergonomic Chair",
           "variantLabel": "Zara Ergonomic Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/zara/ic-143-visi"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/ergonomic-series/zara/ic-143-visi",
+          "publicId": "steelmade/chairs/ergonomic-series/zara/ic-143-visi"
         }
       ],
       "deprecatedSlugs": [
@@ -785,14 +843,16 @@
           "slug": "ic-53-hb",
           "name": "Amazon High Back",
           "variantLabel": "High Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/amazon/ic-53-hb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/amazon/ic-53-hb",
+          "publicId": "steelmade/chairs/executive-series/amazon/ic-53-hb"
         },
         {
           "id": "imported-product-amazon",
           "slug": "amazon",
           "name": "Amazon Executive Chair",
           "variantLabel": "Amazon Executive Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/amazon/ic-54-mb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/amazon/ic-54-mb",
+          "publicId": "steelmade/chairs/executive-series/amazon/ic-54-mb"
         }
       ],
       "deprecatedSlugs": [
@@ -817,14 +877,16 @@
           "slug": "ic-331-hb",
           "name": "Amigo High Back",
           "variantLabel": "High Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/amigo/ic-331-hb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/amigo/ic-331-hb",
+          "publicId": "steelmade/chairs/executive-series/amigo/ic-331-hb"
         },
         {
           "id": "imported-product-amigo",
           "slug": "amigo",
           "name": "Amigo Executive Chair",
           "variantLabel": "Amigo Executive Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/amigo/ic-332-mb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/amigo/ic-332-mb",
+          "publicId": "steelmade/chairs/executive-series/amigo/ic-332-mb"
         }
       ],
       "deprecatedSlugs": [
@@ -849,14 +911,16 @@
           "slug": "ic-40-hb",
           "name": "Luxury High Back",
           "variantLabel": "High Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/luxury/ic-40-hb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/luxury/ic-40-hb",
+          "publicId": "steelmade/chairs/executive-series/luxury/ic-40-hb"
         },
         {
           "id": "imported-product-luxury",
           "slug": "luxury",
           "name": "Luxury Executive Chair",
           "variantLabel": "Luxury Executive Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/luxury/ic-39-mb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/luxury/ic-39-mb",
+          "publicId": "steelmade/chairs/executive-series/luxury/ic-39-mb"
         }
       ],
       "deprecatedSlugs": [
@@ -881,14 +945,16 @@
           "slug": "ic-52-mb",
           "name": "Lx Mid Back",
           "variantLabel": "Mid Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/lx/ic-52-mb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/lx/ic-52-mb",
+          "publicId": "steelmade/chairs/executive-series/lx/ic-52-mb"
         },
         {
           "id": "imported-product-lx",
           "slug": "lx",
           "name": "LX Executive Chair",
           "variantLabel": "LX Executive Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/lx/ic-51-hb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/lx/ic-51-hb",
+          "publicId": "steelmade/chairs/executive-series/lx/ic-51-hb"
         }
       ],
       "deprecatedSlugs": [
@@ -913,14 +979,16 @@
           "slug": "mini-markson-ic-68-visitor",
           "name": "Mini markson Executive Chair",
           "variantLabel": "Visitor",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/mini-markson/ic-68-visitor"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/mini-markson/ic-68-visitor",
+          "publicId": "steelmade/chairs/executive-series/mini-markson/ic-68-visitor"
         },
         {
           "id": "imported-product-mini-markson",
           "slug": "mini-markson",
           "name": "Mini Markson Executive Chair",
           "variantLabel": "Mini Markson Executive Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/mini-markson/ic-67-rev"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/mini-markson/ic-67-rev",
+          "publicId": "steelmade/chairs/executive-series/mini-markson/ic-67-rev"
         }
       ],
       "deprecatedSlugs": [
@@ -945,14 +1013,16 @@
           "slug": "ic-302-hb",
           "name": "Obama High Back",
           "variantLabel": "High Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/obama/ic-302-hb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/obama/ic-302-hb",
+          "publicId": "steelmade/chairs/executive-series/obama/ic-302-hb"
         },
         {
           "id": "imported-product-obama",
           "slug": "obama",
           "name": "Obama Executive Chair",
           "variantLabel": "Obama Executive Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/obama/ic-303-mb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/obama/ic-303-mb",
+          "publicId": "steelmade/chairs/executive-series/obama/ic-303-mb"
         }
       ],
       "deprecatedSlugs": [
@@ -977,14 +1047,16 @@
           "slug": "ic-46-hb",
           "name": "Sahara High Back",
           "variantLabel": "High Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/sahara/ic-46-hb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/sahara/ic-46-hb",
+          "publicId": "steelmade/chairs/executive-series/sahara/ic-46-hb"
         },
         {
           "id": "imported-product-sahara",
           "slug": "sahara",
           "name": "Sahara Executive Chair",
           "variantLabel": "Sahara Executive Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/sahara/ic-45-mb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/sahara/ic-45-mb",
+          "publicId": "steelmade/chairs/executive-series/sahara/ic-45-mb"
         }
       ],
       "deprecatedSlugs": [
@@ -1009,14 +1081,16 @@
           "slug": "ic-41-hb",
           "name": "Siemens High Back",
           "variantLabel": "High Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/siemens/ic-41-hb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/siemens/ic-41-hb",
+          "publicId": "steelmade/chairs/executive-series/siemens/ic-41-hb"
         },
         {
           "id": "imported-product-siemens",
           "slug": "siemens",
           "name": "Siemens Executive Chair",
           "variantLabel": "Siemens Executive Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/siemens/ic-42-mb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/siemens/ic-42-mb",
+          "publicId": "steelmade/chairs/executive-series/siemens/ic-42-mb"
         }
       ],
       "deprecatedSlugs": [
@@ -1041,14 +1115,16 @@
           "slug": "supreme-ic-56-mb",
           "name": "Supreme Executive Chair",
           "variantLabel": "Mid Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/supreme/ic-56-mb.jpg"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/supreme/ic-56-mb.jpg",
+          "publicId": "steelmade/chairs/executive-series/supreme/ic-56-mb.jpg"
         },
         {
           "id": "imported-product-supreme",
           "slug": "supreme",
           "name": "Supreme Executive Chair",
           "variantLabel": "Supreme Executive Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/supreme/ic-55-hb.jpg"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/supreme/ic-55-hb.jpg",
+          "publicId": "steelmade/chairs/executive-series/supreme/ic-55-hb.jpg"
         }
       ],
       "deprecatedSlugs": [
@@ -1073,14 +1149,16 @@
           "slug": "ic-60-mb",
           "name": "Syndicate Mid Back",
           "variantLabel": "Mid Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/syndicate/ic-60-mb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/syndicate/ic-60-mb",
+          "publicId": "steelmade/chairs/executive-series/syndicate/ic-60-mb"
         },
         {
           "id": "imported-product-syndicate",
           "slug": "syndicate",
           "name": "Syndicate Executive Chair",
           "variantLabel": "Syndicate Executive Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/syndicate/ic-59-hb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/syndicate/ic-59-hb",
+          "publicId": "steelmade/chairs/executive-series/syndicate/ic-59-hb"
         }
       ],
       "deprecatedSlugs": [
@@ -1105,14 +1183,16 @@
           "slug": "ic-44-hb",
           "name": "Verna High Back",
           "variantLabel": "High Back",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/verna/ic-44-hb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/verna/ic-44-hb",
+          "publicId": "steelmade/chairs/executive-series/verna/ic-44-hb"
         },
         {
           "id": "imported-product-verna",
           "slug": "verna",
           "name": "Verna Executive Chair",
           "variantLabel": "Verna Executive Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/verna/ic-43-mb"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/executive-series/verna/ic-43-mb",
+          "publicId": "steelmade/chairs/executive-series/verna/ic-43-mb"
         }
       ],
       "deprecatedSlugs": [
@@ -1137,14 +1217,16 @@
           "slug": "bubble-visi-ic-312-writing-pad",
           "name": "Bubble visi Visitor Chair",
           "variantLabel": "Visitor",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/bubble-visi/ic-312-writing-pad"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/bubble-visi/ic-312-writing-pad",
+          "publicId": "steelmade/chairs/visitor-series/bubble-visi/ic-312-writing-pad"
         },
         {
           "id": "azxCCZJCUCHUDe0xTqe1AS",
           "slug": "ic-311-arms",
           "name": "Bubble Visi with Arms",
           "variantLabel": "Bubble Visi with Arms",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/bubble-visi/ic-311-arms"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/bubble-visi/ic-311-arms",
+          "publicId": "steelmade/chairs/visitor-series/bubble-visi/ic-311-arms"
         }
       ],
       "deprecatedSlugs": [
@@ -1169,14 +1251,16 @@
           "slug": "index-ic-308-visi",
           "name": "Index Visitor Chair",
           "variantLabel": "Visitor",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/index/ic-308-visi"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/index/ic-308-visi",
+          "publicId": "steelmade/chairs/visitor-series/index/ic-308-visi"
         },
         {
           "id": "azxCCZJCUCHUDe0xTqcKCO",
           "slug": "index-ic-309-castor",
           "name": "Index Visitor Chair",
           "variantLabel": "Index Visitor Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/index/ic-309-castor"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/index/ic-309-castor",
+          "publicId": "steelmade/chairs/visitor-series/index/ic-309-castor"
         }
       ],
       "deprecatedSlugs": [
@@ -1201,14 +1285,16 @@
           "slug": "pearl-ic-155",
           "name": "Pearl Visitor Chair",
           "variantLabel": "Visitor",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/pearl/ic-155"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/pearl/ic-155",
+          "publicId": "steelmade/chairs/visitor-series/pearl/ic-155"
         },
         {
           "id": "azxCCZJCUCHUDe0xTqcNMM",
           "slug": "pearl-ic-156-cushion",
           "name": "Pearl Visitor Chair",
           "variantLabel": "Pearl Visitor Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/pearl/ic-156-cushion"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/pearl/ic-156-cushion",
+          "publicId": "steelmade/chairs/visitor-series/pearl/ic-156-cushion"
         }
       ],
       "deprecatedSlugs": [
@@ -1233,21 +1319,24 @@
           "slug": "venus-ic-148",
           "name": "Venus Visitor Chair",
           "variantLabel": "Visitor",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/venus/ic-148"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/venus/ic-148",
+          "publicId": "steelmade/chairs/visitor-series/venus/ic-148"
         },
         {
           "id": "imported-product-visitor-venus-vista-chair",
           "slug": "visitor-venus-vista-chair",
           "name": "Visitor Venus & Vista Chair",
           "variantLabel": "Visitor Venus & Vista Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/venus/ic-148"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/venus/ic-148",
+          "publicId": "steelmade/chairs/visitor-series/venus/ic-148"
         },
         {
           "id": "PYCfep3q5TfxEMsSZm5LhX",
           "slug": "ic-149-arms",
           "name": "Venus with Arms",
           "variantLabel": "Venus with Arms",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/venus/ic-149-arms"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/venus/ic-149-arms",
+          "publicId": "steelmade/chairs/visitor-series/venus/ic-149-arms"
         }
       ],
       "deprecatedSlugs": [
@@ -1273,14 +1362,16 @@
           "slug": "visitor-flora",
           "name": "Flora Visitor Chair",
           "variantLabel": "Visitor",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/flora/ic-153"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/flora/ic-153",
+          "publicId": "steelmade/chairs/visitor-series/flora/ic-153"
         },
         {
           "id": "azxCCZJCUCHUDe0xTqcJat",
           "slug": "flora-ic-153",
           "name": "Flora Visitor Chair",
           "variantLabel": "Flora Visitor Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/flora/ic-153"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/flora/ic-153",
+          "publicId": "steelmade/chairs/visitor-series/flora/ic-153"
         }
       ],
       "deprecatedSlugs": [
@@ -1305,21 +1396,24 @@
           "slug": "visitor-liberty",
           "name": "Liberty Visitor Chair",
           "variantLabel": "Visitor",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/liberty/ic-151"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/liberty/ic-151",
+          "publicId": "steelmade/chairs/visitor-series/liberty/ic-151"
         },
         {
           "id": "PYCfep3q5TfxEMsSZlzTCG",
           "slug": "liberty-ic-151",
           "name": "Liberty Visitor Chair",
           "variantLabel": "Liberty Visitor Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/liberty/ic-151"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/liberty/ic-151",
+          "publicId": "steelmade/chairs/visitor-series/liberty/ic-151"
         },
         {
           "id": "SfgI0z4vRA5blg633yDfn7",
           "slug": "liberty-ic-175-pad",
           "name": "Liberty Visitor Chair",
           "variantLabel": "Liberty Visitor Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/liberty/ic-175-pad"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/liberty/ic-175-pad",
+          "publicId": "steelmade/chairs/visitor-series/liberty/ic-175-pad"
         }
       ],
       "deprecatedSlugs": [
@@ -1345,21 +1439,24 @@
           "slug": "visitor-regency",
           "name": "Regency Visitor Chair",
           "variantLabel": "Visitor",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/regency/ic-152"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/regency/ic-152",
+          "publicId": "steelmade/chairs/visitor-series/regency/ic-152"
         },
         {
           "id": "azxCCZJCUCHUDe0xTqcNas",
           "slug": "regency-ic-152",
           "name": "Regency Visitor Chair",
           "variantLabel": "Regency Visitor Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/regency/ic-152"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/regency/ic-152",
+          "publicId": "steelmade/chairs/visitor-series/regency/ic-152"
         },
         {
           "id": "azxCCZJCUCHUDe0xTqcNi8",
           "slug": "regency-ic-176-pad",
           "name": "Regency Visitor Chair",
           "variantLabel": "Regency Visitor Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/regency/ic-176-pad"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/regency/ic-176-pad",
+          "publicId": "steelmade/chairs/visitor-series/regency/ic-176-pad"
         }
       ],
       "deprecatedSlugs": [
@@ -1385,14 +1482,16 @@
           "slug": "visitor-titan",
           "name": "Titan Visitor Chair",
           "variantLabel": "Visitor",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/titan/ic-154"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/titan/ic-154",
+          "publicId": "steelmade/chairs/visitor-series/titan/ic-154"
         },
         {
           "id": "SfgI0z4vRA5blg633yDiDp",
           "slug": "titan-ic-154",
           "name": "Titan Visitor Chair",
           "variantLabel": "Titan Visitor Chair",
-          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/titan/ic-154"
+          "imageUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/steelmade/chairs/visitor-series/titan/ic-154",
+          "publicId": "steelmade/chairs/visitor-series/titan/ic-154"
         }
       ],
       "deprecatedSlugs": [

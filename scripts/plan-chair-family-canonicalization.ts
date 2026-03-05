@@ -24,6 +24,7 @@ type PlannedVariant = {
   name: string;
   variantLabel: string;
   imageUrl?: string;
+  publicId?: string;
 };
 
 type FamilyPlan = {
@@ -155,6 +156,7 @@ function buildFamilyPlan(rows: ProductRow[]): FamilyPlan {
       name: row.name,
       variantLabel: label,
       imageUrl: row.imageUrl,
+      publicId: row.publicId,
     };
   });
 

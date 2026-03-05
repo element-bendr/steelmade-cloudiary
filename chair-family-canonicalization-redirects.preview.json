@@ -1,0 +1,436 @@
+[
+  {
+    "category": "chairs",
+    "series": "director series",
+    "from": "/chairs/director series/trident",
+    "to": "/chairs/director series/ic-249-hb",
+    "familyKey": "trident"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-318-mb-white",
+    "to": "/chairs/ergonomic series/ic-319-hb-black",
+    "familyKey": "berlin"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-320-mb-black",
+    "to": "/chairs/ergonomic series/ic-319-hb-black",
+    "familyKey": "berlin"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/berlin",
+    "to": "/chairs/ergonomic series/ic-319-hb-black",
+    "familyKey": "berlin"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/craft-ergonomic-chair",
+    "to": "/chairs/ergonomic series/craft-ic-131-visitor",
+    "familyKey": "craft"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-344-hb-grey",
+    "to": "/chairs/ergonomic series/ic-342-hb-black",
+    "familyKey": "dc"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-345-mb-grey",
+    "to": "/chairs/ergonomic series/ic-342-hb-black",
+    "familyKey": "dc"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/dc",
+    "to": "/chairs/ergonomic series/ic-342-hb-black",
+    "familyKey": "dc"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/feedo",
+    "to": "/chairs/ergonomic series/ic-260-mb-grey",
+    "familyKey": "feedo"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-336-hb-grey",
+    "to": "/chairs/ergonomic series/ic-335-hb-black",
+    "familyKey": "flamingo"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-337-hb-green",
+    "to": "/chairs/ergonomic series/ic-335-hb-black",
+    "familyKey": "flamingo"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/flamingo-ergonomic-chair",
+    "to": "/chairs/ergonomic series/ic-335-hb-black",
+    "familyKey": "flamingo"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/flamingo-ic-337-hb-orange",
+    "to": "/chairs/ergonomic series/ic-335-hb-black",
+    "familyKey": "flamingo"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-354-visi-black",
+    "to": "/chairs/ergonomic series/ic-353-mb-black",
+    "familyKey": "flea"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/flea",
+    "to": "/chairs/ergonomic series/ic-353-mb-black",
+    "familyKey": "flea"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-123-mb-black",
+    "to": "/chairs/ergonomic series/ic-123d-hb",
+    "familyKey": "honda"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-123c-visi-black",
+    "to": "/chairs/ergonomic series/ic-123d-hb",
+    "familyKey": "honda"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/honda-ergonomic-chair",
+    "to": "/chairs/ergonomic series/ic-123d-hb",
+    "familyKey": "honda"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-123a-white",
+    "to": "/chairs/ergonomic series/ic-123d-hb",
+    "familyKey": "honda"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-123b-grey",
+    "to": "/chairs/ergonomic series/ic-123d-hb",
+    "familyKey": "honda"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/matrix-ergonomic-chair",
+    "to": "/chairs/ergonomic series/matrix-ic-137-visitor",
+    "familyKey": "matrix"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-351-visi-grey",
+    "to": "/chairs/ergonomic series/ic-349-hb-grey",
+    "familyKey": "mercedes"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/mercedes",
+    "to": "/chairs/ergonomic series/ic-349-hb-grey",
+    "familyKey": "mercedes"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/moscow",
+    "to": "/chairs/ergonomic series/ic-28-hb-black",
+    "familyKey": "moscow"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-263-black",
+    "to": "/chairs/ergonomic series/ic-263c-hb-black",
+    "familyKey": "robo"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-263b-grey",
+    "to": "/chairs/ergonomic series/ic-263c-hb-black",
+    "familyKey": "robo"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/robo-ergonomic-chair",
+    "to": "/chairs/ergonomic series/ic-263c-hb-black",
+    "familyKey": "robo"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-323-hb-black",
+    "to": "/chairs/ergonomic series/ic-321-hb-white",
+    "familyKey": "roger"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-324-mb-black",
+    "to": "/chairs/ergonomic series/ic-321-hb-white",
+    "familyKey": "roger"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/roger",
+    "to": "/chairs/ergonomic series/ic-321-hb-white",
+    "familyKey": "roger"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/roman-ic-127",
+    "to": "/chairs/ergonomic series/roman-ic-128-visitor",
+    "familyKey": "roman"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-117-mb-white",
+    "to": "/chairs/ergonomic series/ic-118-hb-black",
+    "familyKey": "tokyo"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-119-mb-black",
+    "to": "/chairs/ergonomic series/ic-118-hb-black",
+    "familyKey": "tokyo"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/tokyo",
+    "to": "/chairs/ergonomic series/ic-118-hb-black",
+    "familyKey": "tokyo"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-328-mb-black",
+    "to": "/chairs/ergonomic series/ic-329-hb-grey",
+    "familyKey": "ud"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-330-mb-grey",
+    "to": "/chairs/ergonomic series/ic-329-hb-grey",
+    "familyKey": "ud"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ud",
+    "to": "/chairs/ergonomic series/ic-329-hb-grey",
+    "familyKey": "ud"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/vivo-ergonomic-chair",
+    "to": "/chairs/ergonomic series/vivo-ic-134-visitor",
+    "familyKey": "vivo"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/ic-142-black",
+    "to": "/chairs/ergonomic series/zara-ic-143-visi",
+    "familyKey": "zara"
+  },
+  {
+    "category": "chairs",
+    "series": "ergonomic series",
+    "from": "/chairs/ergonomic series/zara-ergonomic-chair",
+    "to": "/chairs/ergonomic series/zara-ic-143-visi",
+    "familyKey": "zara"
+  },
+  {
+    "category": "chairs",
+    "series": "executive series",
+    "from": "/chairs/executive series/amazon",
+    "to": "/chairs/executive series/ic-53-hb",
+    "familyKey": "amazon"
+  },
+  {
+    "category": "chairs",
+    "series": "executive series",
+    "from": "/chairs/executive series/amigo",
+    "to": "/chairs/executive series/ic-331-hb",
+    "familyKey": "amigo"
+  },
+  {
+    "category": "chairs",
+    "series": "executive series",
+    "from": "/chairs/executive series/luxury",
+    "to": "/chairs/executive series/ic-40-hb",
+    "familyKey": "luxury"
+  },
+  {
+    "category": "chairs",
+    "series": "executive series",
+    "from": "/chairs/executive series/lx",
+    "to": "/chairs/executive series/ic-52-mb",
+    "familyKey": "lx"
+  },
+  {
+    "category": "chairs",
+    "series": "executive series",
+    "from": "/chairs/executive series/mini-markson",
+    "to": "/chairs/executive series/mini-markson-ic-68-visitor",
+    "familyKey": "mini-markson"
+  },
+  {
+    "category": "chairs",
+    "series": "executive series",
+    "from": "/chairs/executive series/obama",
+    "to": "/chairs/executive series/ic-302-hb",
+    "familyKey": "obama"
+  },
+  {
+    "category": "chairs",
+    "series": "executive series",
+    "from": "/chairs/executive series/sahara",
+    "to": "/chairs/executive series/ic-46-hb",
+    "familyKey": "sahara"
+  },
+  {
+    "category": "chairs",
+    "series": "executive series",
+    "from": "/chairs/executive series/siemens",
+    "to": "/chairs/executive series/ic-41-hb",
+    "familyKey": "siemens"
+  },
+  {
+    "category": "chairs",
+    "series": "executive series",
+    "from": "/chairs/executive series/supreme",
+    "to": "/chairs/executive series/supreme-ic-56-mb",
+    "familyKey": "supreme"
+  },
+  {
+    "category": "chairs",
+    "series": "executive series",
+    "from": "/chairs/executive series/syndicate",
+    "to": "/chairs/executive series/ic-60-mb",
+    "familyKey": "syndicate"
+  },
+  {
+    "category": "chairs",
+    "series": "executive series",
+    "from": "/chairs/executive series/verna",
+    "to": "/chairs/executive series/ic-44-hb",
+    "familyKey": "verna"
+  },
+  {
+    "category": "chairs",
+    "series": "visitor series",
+    "from": "/chairs/visitor series/ic-311-arms",
+    "to": "/chairs/visitor series/bubble-visi-ic-312-writing-pad",
+    "familyKey": "bubble-visi"
+  },
+  {
+    "category": "chairs",
+    "series": "visitor series",
+    "from": "/chairs/visitor series/index-ic-309-castor",
+    "to": "/chairs/visitor series/index-ic-308-visi",
+    "familyKey": "index"
+  },
+  {
+    "category": "chairs",
+    "series": "visitor series",
+    "from": "/chairs/visitor series/pearl-ic-156-cushion",
+    "to": "/chairs/visitor series/pearl-ic-155",
+    "familyKey": "pearl"
+  },
+  {
+    "category": "chairs",
+    "series": "visitor series",
+    "from": "/chairs/visitor series/visitor-venus-vista-chair",
+    "to": "/chairs/visitor series/venus-ic-148",
+    "familyKey": "venus"
+  },
+  {
+    "category": "chairs",
+    "series": "visitor series",
+    "from": "/chairs/visitor series/ic-149-arms",
+    "to": "/chairs/visitor series/venus-ic-148",
+    "familyKey": "venus"
+  },
+  {
+    "category": "chairs",
+    "series": "Visitor Series",
+    "from": "/chairs/Visitor Series/flora-ic-153",
+    "to": "/chairs/Visitor Series/visitor-flora",
+    "familyKey": "flora"
+  },
+  {
+    "category": "chairs",
+    "series": "Visitor Series",
+    "from": "/chairs/Visitor Series/liberty-ic-151",
+    "to": "/chairs/Visitor Series/visitor-liberty",
+    "familyKey": "liberty"
+  },
+  {
+    "category": "chairs",
+    "series": "Visitor Series",
+    "from": "/chairs/Visitor Series/liberty-ic-175-pad",
+    "to": "/chairs/Visitor Series/visitor-liberty",
+    "familyKey": "liberty"
+  },
+  {
+    "category": "chairs",
+    "series": "Visitor Series",
+    "from": "/chairs/Visitor Series/regency-ic-152",
+    "to": "/chairs/Visitor Series/visitor-regency",
+    "familyKey": "regency"
+  },
+  {
+    "category": "chairs",
+    "series": "Visitor Series",
+    "from": "/chairs/Visitor Series/regency-ic-176-pad",
+    "to": "/chairs/Visitor Series/visitor-regency",
+    "familyKey": "regency"
+  },
+  {
+    "category": "chairs",
+    "series": "Visitor Series",
+    "from": "/chairs/Visitor Series/titan-ic-154",
+    "to": "/chairs/Visitor Series/visitor-titan",
+    "familyKey": "titan"
+  }
+]
