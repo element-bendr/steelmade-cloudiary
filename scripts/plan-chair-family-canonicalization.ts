@@ -15,6 +15,7 @@ type ProductRow = {
   description?: string;
   features?: string[];
   variantCount: number;
+  publicId?: string;
 };
 
 type PlannedVariant = {
@@ -38,6 +39,7 @@ type FamilyPlan = {
   variants: PlannedVariant[];
   deprecatedSlugs: string[];
   confidence: "high" | "medium";
+  strategy: "image-family" | "name-family";
 };
 
 const sanityClient = createClient({
@@ -73,6 +75,18 @@ const VARIANT_RULES: Array<{
 function extractVariantLabel(row: ProductRow): string | null {
   const rule = VARIANT_RULES.find((entry) => entry.test(row.name || "", row.slug || ""));
   return rule?.label || null;
+}
+
+function normalizeSeries(series: string): string {
+  return String(series || "").trim().toLowerCase();
+}
+
+function extractImageFamily(publicId?: string): string | null {
+  if (!publicId) return null;
+  const parts = publicId.split("/").filter(Boolean);
+  if (parts.length < 2) return null;
+  // .../<family>/<asset-file>
+  return parts[parts.length - 2].toLowerCase();
 }
 
 function familyKey(row: ProductRow): string | null {
@@ -165,6 +179,24 @@ function buildFamilyPlan(rows: ProductRow[]): FamilyPlan {
     variants,
     deprecatedSlugs,
     confidence,
+    strategy: "name-family",
+  };
+}
+
+function buildFamilyPlanWithStrategy(
+  rows: ProductRow[],
+  strategy: FamilyPlan["strategy"],
+  forcedFamilyKey?: string
+): FamilyPlan {
+  const plan = buildFamilyPlan(rows);
+  return {
+    ...plan,
+    familyKey: forcedFamilyKey || plan.familyKey,
+    familyDisplayName:
+      forcedFamilyKey && forcedFamilyKey !== plan.familyKey
+        ? `${toTitleCase(forcedFamilyKey)}${/\bexecutive\b/i.test(plan.familyDisplayName) ? " Executive Chair" : ""}`.trim()
+        : plan.familyDisplayName,
+    strategy,
   };
 }
 
@@ -176,6 +208,7 @@ async function run() {
       name,
       category,
       series,
+      "publicId": mainImage.publicId,
       "imageUrl": select(
         mainImage._type == "cloudinaryImage" => "https://res.cloudinary.com/dqde19mfs/image/upload/" + mainImage.publicId,
         mainImage.asset->url
@@ -187,20 +220,49 @@ async function run() {
   `);
 
   const candidateRows = products.filter((row) => row.variantCount === 0 && familyKey(row));
-  const grouped = new Map<string, ProductRow[]>();
+  const onlyNonVariantRows = products.filter((row) => row.variantCount === 0);
+  const familyPlans: FamilyPlan[] = [];
+  const usedIds = new Set<string>();
 
-  candidateRows.forEach((row) => {
-    const key = `${row.category}::${row.series}::${familyKey(row)}`;
-    const existing = grouped.get(key) || [];
+  // Strategy 1: cluster by normalized series + Cloudinary image family folder.
+  const imageFamilyIndex = new Map<string, ProductRow[]>();
+  onlyNonVariantRows.forEach((row) => {
+    const imageFamily = extractImageFamily(row.publicId);
+    if (!imageFamily) return;
+    const key = `${normalizeSeries(row.series)}::${imageFamily}`;
+    const existing = imageFamilyIndex.get(key) || [];
     existing.push(row);
-    grouped.set(key, existing);
+    imageFamilyIndex.set(key, existing);
   });
 
-  const familyPlans: FamilyPlan[] = [];
-  grouped.forEach((rows) => {
-    if (rows.length >= 2) {
-      familyPlans.push(buildFamilyPlan(rows));
-    }
+  imageFamilyIndex.forEach((rows, key) => {
+    if (rows.length < 2) return;
+    if (!rows.some((row) => candidateRows.some((c) => c.id === row.id))) return;
+    if (rows.some((row) => usedIds.has(row.id))) return;
+
+    const forcedKey = key.split("::")[1];
+    const plan = buildFamilyPlanWithStrategy(rows, "image-family", forcedKey);
+    familyPlans.push(plan);
+    rows.forEach((row) => usedIds.add(row.id));
+  });
+
+  // Strategy 2: fallback legacy name-based grouping for remaining candidate rows.
+  const groupedByName = new Map<string, ProductRow[]>();
+  candidateRows
+    .filter((row) => !usedIds.has(row.id))
+    .forEach((row) => {
+      const key = `${normalizeSeries(row.series)}::${familyKey(row)}`;
+      const existing = groupedByName.get(key) || [];
+      existing.push(row);
+      groupedByName.set(key, existing);
+    });
+
+  groupedByName.forEach((rows) => {
+    if (rows.length < 2) return;
+    if (rows.some((row) => usedIds.has(row.id))) return;
+    const plan = buildFamilyPlanWithStrategy(rows, "name-family");
+    familyPlans.push(plan);
+    rows.forEach((row) => usedIds.add(row.id));
   });
 
   familyPlans.sort((a, b) => {
@@ -209,8 +271,10 @@ async function run() {
   });
 
   const bySeries: Record<string, number> = {};
+  const byStrategy: Record<string, number> = {};
   familyPlans.forEach((plan) => {
     bySeries[plan.series] = (bySeries[plan.series] || 0) + 1;
+    byStrategy[plan.strategy] = (byStrategy[plan.strategy] || 0) + 1;
   });
 
   const totalProducts = familyPlans.reduce((sum, plan) => sum + plan.variants.length, 0);
@@ -225,6 +289,7 @@ async function run() {
       productsInFamilies: totalProducts,
       potentialSkuReduction: reduction,
       bySeries,
+      byStrategy,
     },
     families: familyPlans,
   };
