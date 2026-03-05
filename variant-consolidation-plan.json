@@ -1,0 +1,2744 @@
+{
+  "summary": {
+    "totalProducts": 426,
+    "productsWithVariants": 60,
+    "consolidatedProducts": 29,
+    "spaceSaved": 31
+  },
+  "consolidationPlan": [
+    {
+      "baseName": "Ashley",
+      "series": "chairs/director series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Ashley High Back",
+          "variant": "High Back",
+          "slug": "ic-361-hb",
+          "id": "SfgI0z4vRA5blg633yE8lr",
+          "image": "steelmade/chairs/director-series/ashley/ic-361-hb"
+        },
+        {
+          "name": "Ashley Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-362-mb",
+          "id": "SfgI0z4vRA5blg633yE9GT",
+          "image": "steelmade/chairs/director-series/ashley/ic-362-mb"
+        }
+      ],
+      "suggestedSlug": "ashley",
+      "primaryProduct": {
+        "name": "Ashley High Back",
+        "variant": "High Back",
+        "slug": "ic-361-hb",
+        "id": "SfgI0z4vRA5blg633yE8lr",
+        "image": "steelmade/chairs/director-series/ashley/ic-361-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Ashley High Back",
+          "variant": "High Back",
+          "slug": "ic-361-hb",
+          "id": "SfgI0z4vRA5blg633yE8lr",
+          "image": "steelmade/chairs/director-series/ashley/ic-361-hb"
+        },
+        {
+          "name": "Ashley Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-362-mb",
+          "id": "SfgI0z4vRA5blg633yE9GT",
+          "image": "steelmade/chairs/director-series/ashley/ic-362-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Bigbossgold",
+      "series": "chairs/director series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Bigbossgold High Back",
+          "variant": "High Back",
+          "slug": "ic-255-hb",
+          "id": "SfgI0z4vRA5blg633yE9Pt",
+          "image": "steelmade/chairs/director-series/bigbossgold/ic-255-hb"
+        },
+        {
+          "name": "Bigbossgold Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-256-mb",
+          "id": "SfgI0z4vRA5blg633yEHAH",
+          "image": "steelmade/chairs/director-series/bigbossgold/ic-256-mb"
+        }
+      ],
+      "suggestedSlug": "bigbossgold",
+      "primaryProduct": {
+        "name": "Bigbossgold High Back",
+        "variant": "High Back",
+        "slug": "ic-255-hb",
+        "id": "SfgI0z4vRA5blg633yE9Pt",
+        "image": "steelmade/chairs/director-series/bigbossgold/ic-255-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Bigbossgold High Back",
+          "variant": "High Back",
+          "slug": "ic-255-hb",
+          "id": "SfgI0z4vRA5blg633yE9Pt",
+          "image": "steelmade/chairs/director-series/bigbossgold/ic-255-hb"
+        },
+        {
+          "name": "Bigbossgold Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-256-mb",
+          "id": "SfgI0z4vRA5blg633yEHAH",
+          "image": "steelmade/chairs/director-series/bigbossgold/ic-256-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Boston",
+      "series": "chairs/director series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Boston High Back",
+          "variant": "High Back",
+          "slug": "ic-06-hb",
+          "id": "azxCCZJCUCHUDe0xTqceB6",
+          "image": "steelmade/chairs/director-series/boston/ic-06-hb"
+        },
+        {
+          "name": "Boston Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-07-mb",
+          "id": "SfgI0z4vRA5blg633yEHt1",
+          "image": "steelmade/chairs/director-series/boston/ic-07-mb"
+        }
+      ],
+      "suggestedSlug": "boston",
+      "primaryProduct": {
+        "name": "Boston High Back",
+        "variant": "High Back",
+        "slug": "ic-06-hb",
+        "id": "azxCCZJCUCHUDe0xTqceB6",
+        "image": "steelmade/chairs/director-series/boston/ic-06-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Boston High Back",
+          "variant": "High Back",
+          "slug": "ic-06-hb",
+          "id": "azxCCZJCUCHUDe0xTqceB6",
+          "image": "steelmade/chairs/director-series/boston/ic-06-hb"
+        },
+        {
+          "name": "Boston Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-07-mb",
+          "id": "SfgI0z4vRA5blg633yEHt1",
+          "image": "steelmade/chairs/director-series/boston/ic-07-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Grandezza",
+      "series": "chairs/director series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Grandezza High Back",
+          "variant": "High Back",
+          "slug": "ic-04-hb",
+          "id": "PYCfep3q5TfxEMsSZm0sQY",
+          "image": "steelmade/chairs/director-series/grandezza/ic-04-hb"
+        },
+        {
+          "name": "Grandezza Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-05-mb",
+          "id": "PYCfep3q5TfxEMsSZm1sRa",
+          "image": "steelmade/chairs/director-series/grandezza/ic-05-mb"
+        }
+      ],
+      "suggestedSlug": "grandezza",
+      "primaryProduct": {
+        "name": "Grandezza High Back",
+        "variant": "High Back",
+        "slug": "ic-04-hb",
+        "id": "PYCfep3q5TfxEMsSZm0sQY",
+        "image": "steelmade/chairs/director-series/grandezza/ic-04-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Grandezza High Back",
+          "variant": "High Back",
+          "slug": "ic-04-hb",
+          "id": "PYCfep3q5TfxEMsSZm0sQY",
+          "image": "steelmade/chairs/director-series/grandezza/ic-04-hb"
+        },
+        {
+          "name": "Grandezza Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-05-mb",
+          "id": "PYCfep3q5TfxEMsSZm1sRa",
+          "image": "steelmade/chairs/director-series/grandezza/ic-05-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Kotak",
+      "series": "chairs/director series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Kotak High Back",
+          "variant": "High Back",
+          "slug": "ic-13-hb",
+          "id": "SfgI0z4vRA5blg633yF8UT",
+          "image": "steelmade/chairs/director-series/kotak/ic-13-hb"
+        },
+        {
+          "name": "Kotak Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-12-mb",
+          "id": "PYCfep3q5TfxEMsSZm1tIz",
+          "image": "steelmade/chairs/director-series/kotak/ic-12-mb"
+        }
+      ],
+      "suggestedSlug": "kotak",
+      "primaryProduct": {
+        "name": "Kotak High Back",
+        "variant": "High Back",
+        "slug": "ic-13-hb",
+        "id": "SfgI0z4vRA5blg633yF8UT",
+        "image": "steelmade/chairs/director-series/kotak/ic-13-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Kotak High Back",
+          "variant": "High Back",
+          "slug": "ic-13-hb",
+          "id": "SfgI0z4vRA5blg633yF8UT",
+          "image": "steelmade/chairs/director-series/kotak/ic-13-hb"
+        },
+        {
+          "name": "Kotak Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-12-mb",
+          "id": "PYCfep3q5TfxEMsSZm1tIz",
+          "image": "steelmade/chairs/director-series/kotak/ic-12-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Milano",
+      "series": "chairs/director series",
+      "category": "chairs",
+      "productCount": 3,
+      "products": [
+        {
+          "name": "Milano High Back",
+          "variant": "High Back",
+          "slug": "ic-251-hb",
+          "id": "SfgI0z4vRA5blg633yFVt3",
+          "image": "steelmade/chairs/director-series/milano/ic-251-hb"
+        },
+        {
+          "name": "Milano Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-252-mb",
+          "id": "PYCfep3q5TfxEMsSZm1uOx",
+          "image": "steelmade/chairs/director-series/milano/ic-252-mb"
+        },
+        {
+          "name": "Milano Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-251-mb",
+          "id": "azxCCZJCUCHUDe0xTqdCSV",
+          "image": "steelmade/chairs/director-series/milano/ic-251-mb"
+        }
+      ],
+      "suggestedSlug": "milano",
+      "primaryProduct": {
+        "name": "Milano High Back",
+        "variant": "High Back",
+        "slug": "ic-251-hb",
+        "id": "SfgI0z4vRA5blg633yFVt3",
+        "image": "steelmade/chairs/director-series/milano/ic-251-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Milano High Back",
+          "variant": "High Back",
+          "slug": "ic-251-hb",
+          "id": "SfgI0z4vRA5blg633yFVt3",
+          "image": "steelmade/chairs/director-series/milano/ic-251-hb"
+        },
+        {
+          "name": "Milano Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-252-mb",
+          "id": "PYCfep3q5TfxEMsSZm1uOx",
+          "image": "steelmade/chairs/director-series/milano/ic-252-mb"
+        },
+        {
+          "name": "Milano Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-251-mb",
+          "id": "azxCCZJCUCHUDe0xTqdCSV",
+          "image": "steelmade/chairs/director-series/milano/ic-251-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Monarch",
+      "series": "chairs/director series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Monarch High Back",
+          "variant": "High Back",
+          "slug": "ic-08-hb",
+          "id": "azxCCZJCUCHUDe0xTqdMtg",
+          "image": "steelmade/chairs/director-series/monarch/ic-08-hb"
+        },
+        {
+          "name": "Monarch Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-09-mb",
+          "id": "SfgI0z4vRA5blg633yFkMF",
+          "image": "steelmade/chairs/director-series/monarch/ic-09-mb"
+        }
+      ],
+      "suggestedSlug": "monarch",
+      "primaryProduct": {
+        "name": "Monarch High Back",
+        "variant": "High Back",
+        "slug": "ic-08-hb",
+        "id": "azxCCZJCUCHUDe0xTqdMtg",
+        "image": "steelmade/chairs/director-series/monarch/ic-08-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Monarch High Back",
+          "variant": "High Back",
+          "slug": "ic-08-hb",
+          "id": "azxCCZJCUCHUDe0xTqdMtg",
+          "image": "steelmade/chairs/director-series/monarch/ic-08-hb"
+        },
+        {
+          "name": "Monarch Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-09-mb",
+          "id": "SfgI0z4vRA5blg633yFkMF",
+          "image": "steelmade/chairs/director-series/monarch/ic-09-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Nissan",
+      "series": "chairs/director series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Nissan High Back",
+          "variant": "High Back",
+          "slug": "ic-253-hb",
+          "id": "SfgI0z4vRA5blg633yFkaN",
+          "image": "steelmade/chairs/director-series/nissan/ic-253-hb"
+        },
+        {
+          "name": "Nissan Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-252-mb-2",
+          "id": "azxCCZJCUCHUDe0xTqdpAV",
+          "image": "steelmade/chairs/director-series/nissan/ic-252-mb"
+        }
+      ],
+      "suggestedSlug": "nissan",
+      "primaryProduct": {
+        "name": "Nissan High Back",
+        "variant": "High Back",
+        "slug": "ic-253-hb",
+        "id": "SfgI0z4vRA5blg633yFkaN",
+        "image": "steelmade/chairs/director-series/nissan/ic-253-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Nissan High Back",
+          "variant": "High Back",
+          "slug": "ic-253-hb",
+          "id": "SfgI0z4vRA5blg633yFkaN",
+          "image": "steelmade/chairs/director-series/nissan/ic-253-hb"
+        },
+        {
+          "name": "Nissan Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-252-mb-2",
+          "id": "azxCCZJCUCHUDe0xTqdpAV",
+          "image": "steelmade/chairs/director-series/nissan/ic-252-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Opera",
+      "series": "chairs/director series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Opera High Back",
+          "variant": "High Back",
+          "slug": "ic-340-hb",
+          "id": "PYCfep3q5TfxEMsSZm4m9R",
+          "image": "steelmade/chairs/director-series/opera/ic-340-hb"
+        },
+        {
+          "name": "Opera Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-341-mb",
+          "id": "azxCCZJCUCHUDe0xTqdpKB",
+          "image": "steelmade/chairs/director-series/opera/ic-341-mb"
+        }
+      ],
+      "suggestedSlug": "opera",
+      "primaryProduct": {
+        "name": "Opera High Back",
+        "variant": "High Back",
+        "slug": "ic-340-hb",
+        "id": "PYCfep3q5TfxEMsSZm4m9R",
+        "image": "steelmade/chairs/director-series/opera/ic-340-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Opera High Back",
+          "variant": "High Back",
+          "slug": "ic-340-hb",
+          "id": "PYCfep3q5TfxEMsSZm4m9R",
+          "image": "steelmade/chairs/director-series/opera/ic-340-hb"
+        },
+        {
+          "name": "Opera Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-341-mb",
+          "id": "azxCCZJCUCHUDe0xTqdpKB",
+          "image": "steelmade/chairs/director-series/opera/ic-341-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Parker",
+      "series": "chairs/director series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Parker High Back",
+          "variant": "High Back",
+          "slug": "ic-315-hb",
+          "id": "azxCCZJCUCHUDe0xTqdpV4",
+          "image": "steelmade/chairs/director-series/parker/ic-315-hb"
+        },
+        {
+          "name": "Parker Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-316-mb",
+          "id": "SfgI0z4vRA5blg633yFlJ7",
+          "image": "steelmade/chairs/director-series/parker/ic-316-mb"
+        }
+      ],
+      "suggestedSlug": "parker",
+      "primaryProduct": {
+        "name": "Parker High Back",
+        "variant": "High Back",
+        "slug": "ic-315-hb",
+        "id": "azxCCZJCUCHUDe0xTqdpV4",
+        "image": "steelmade/chairs/director-series/parker/ic-315-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Parker High Back",
+          "variant": "High Back",
+          "slug": "ic-315-hb",
+          "id": "azxCCZJCUCHUDe0xTqdpV4",
+          "image": "steelmade/chairs/director-series/parker/ic-315-hb"
+        },
+        {
+          "name": "Parker Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-316-mb",
+          "id": "SfgI0z4vRA5blg633yFlJ7",
+          "image": "steelmade/chairs/director-series/parker/ic-316-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Tycoon",
+      "series": "chairs/director series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Tycoon High Back",
+          "variant": "High Back",
+          "slug": "ic-01-hb",
+          "id": "azxCCZJCUCHUDe0xTqdpnD",
+          "image": "steelmade/chairs/director-series/tycoon/ic-01-hb"
+        },
+        {
+          "name": "Tycoon Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-02-mb",
+          "id": "azxCCZJCUCHUDe0xTqdq2w",
+          "image": "steelmade/chairs/director-series/tycoon/ic-02-mb"
+        }
+      ],
+      "suggestedSlug": "tycoon",
+      "primaryProduct": {
+        "name": "Tycoon High Back",
+        "variant": "High Back",
+        "slug": "ic-01-hb",
+        "id": "azxCCZJCUCHUDe0xTqdpnD",
+        "image": "steelmade/chairs/director-series/tycoon/ic-01-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Tycoon High Back",
+          "variant": "High Back",
+          "slug": "ic-01-hb",
+          "id": "azxCCZJCUCHUDe0xTqdpnD",
+          "image": "steelmade/chairs/director-series/tycoon/ic-01-hb"
+        },
+        {
+          "name": "Tycoon Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-02-mb",
+          "id": "azxCCZJCUCHUDe0xTqdq2w",
+          "image": "steelmade/chairs/director-series/tycoon/ic-02-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Woodland",
+      "series": "chairs/director series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Woodland High Back",
+          "variant": "High Back",
+          "slug": "ic-338-hb",
+          "id": "azxCCZJCUCHUDe0xTqdqBP",
+          "image": "steelmade/chairs/director-series/woodland/ic-338-hb"
+        },
+        {
+          "name": "Woodland Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-339-mb",
+          "id": "SfgI0z4vRA5blg633yFmbB",
+          "image": "steelmade/chairs/director-series/woodland/ic-339-mb"
+        }
+      ],
+      "suggestedSlug": "woodland",
+      "primaryProduct": {
+        "name": "Woodland High Back",
+        "variant": "High Back",
+        "slug": "ic-338-hb",
+        "id": "azxCCZJCUCHUDe0xTqdqBP",
+        "image": "steelmade/chairs/director-series/woodland/ic-338-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Woodland High Back",
+          "variant": "High Back",
+          "slug": "ic-338-hb",
+          "id": "azxCCZJCUCHUDe0xTqdqBP",
+          "image": "steelmade/chairs/director-series/woodland/ic-338-hb"
+        },
+        {
+          "name": "Woodland Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-339-mb",
+          "id": "SfgI0z4vRA5blg633yFmbB",
+          "image": "steelmade/chairs/director-series/woodland/ic-339-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Bb",
+      "series": "chairs/ergonomic series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Bb Low Back",
+          "variant": "Low Back",
+          "slug": "ic-124-lb",
+          "id": "SfgI0z4vRA5blg633yFmrf",
+          "image": "steelmade/chairs/ergonomic-series/bb/ic-124-lb"
+        },
+        {
+          "name": "Bb Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-264-mb",
+          "id": "SfgI0z4vRA5blg633yFn5n",
+          "image": "steelmade/chairs/ergonomic-series/bb/ic-264-mb"
+        }
+      ],
+      "suggestedSlug": "bb",
+      "primaryProduct": {
+        "name": "Bb Low Back",
+        "variant": "Low Back",
+        "slug": "ic-124-lb",
+        "id": "SfgI0z4vRA5blg633yFmrf",
+        "image": "steelmade/chairs/ergonomic-series/bb/ic-124-lb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Bb Low Back",
+          "variant": "Low Back",
+          "slug": "ic-124-lb",
+          "id": "SfgI0z4vRA5blg633yFmrf",
+          "image": "steelmade/chairs/ergonomic-series/bb/ic-124-lb"
+        },
+        {
+          "name": "Bb Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-264-mb",
+          "id": "SfgI0z4vRA5blg633yFn5n",
+          "image": "steelmade/chairs/ergonomic-series/bb/ic-264-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Cobra",
+      "series": "chairs/ergonomic series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Cobra High Back",
+          "variant": "High Back",
+          "slug": "ic-138-hb",
+          "id": "PYCfep3q5TfxEMsSZm4puT",
+          "image": "steelmade/chairs/ergonomic-series/cobra/ic-138-hb"
+        },
+        {
+          "name": "Cobra Low Back",
+          "variant": "Low Back",
+          "slug": "ic-139-lb",
+          "id": "SfgI0z4vRA5blg633yFo0J",
+          "image": "steelmade/chairs/ergonomic-series/cobra/ic-139-lb"
+        }
+      ],
+      "suggestedSlug": "cobra",
+      "primaryProduct": {
+        "name": "Cobra High Back",
+        "variant": "High Back",
+        "slug": "ic-138-hb",
+        "id": "PYCfep3q5TfxEMsSZm4puT",
+        "image": "steelmade/chairs/ergonomic-series/cobra/ic-138-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Cobra High Back",
+          "variant": "High Back",
+          "slug": "ic-138-hb",
+          "id": "PYCfep3q5TfxEMsSZm4puT",
+          "image": "steelmade/chairs/ergonomic-series/cobra/ic-138-hb"
+        },
+        {
+          "name": "Cobra Low Back",
+          "variant": "Low Back",
+          "slug": "ic-139-lb",
+          "id": "SfgI0z4vRA5blg633yFo0J",
+          "image": "steelmade/chairs/ergonomic-series/cobra/ic-139-lb"
+        }
+      ]
+    },
+    {
+      "baseName": "Craft",
+      "series": "chairs/ergonomic series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Craft High Back",
+          "variant": "High Back",
+          "slug": "ic-129-hb",
+          "id": "SfgI0z4vRA5blg633yFoJ9",
+          "image": "steelmade/chairs/ergonomic-series/craft/ic-129-hb"
+        },
+        {
+          "name": "Craft Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-130-mb",
+          "id": "PYCfep3q5TfxEMsSZm4rwh",
+          "image": "steelmade/chairs/ergonomic-series/craft/ic-130-mb"
+        }
+      ],
+      "suggestedSlug": "craft",
+      "primaryProduct": {
+        "name": "Craft High Back",
+        "variant": "High Back",
+        "slug": "ic-129-hb",
+        "id": "SfgI0z4vRA5blg633yFoJ9",
+        "image": "steelmade/chairs/ergonomic-series/craft/ic-129-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Craft High Back",
+          "variant": "High Back",
+          "slug": "ic-129-hb",
+          "id": "SfgI0z4vRA5blg633yFoJ9",
+          "image": "steelmade/chairs/ergonomic-series/craft/ic-129-hb"
+        },
+        {
+          "name": "Craft Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-130-mb",
+          "id": "PYCfep3q5TfxEMsSZm4rwh",
+          "image": "steelmade/chairs/ergonomic-series/craft/ic-130-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Marvel",
+      "series": "chairs/ergonomic series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Marvel High Back",
+          "variant": "High Back",
+          "slug": "ic-114-hb",
+          "id": "PYCfep3q5TfxEMsSZm4yum",
+          "image": "steelmade/chairs/ergonomic-series/marvel/ic-114-hb"
+        },
+        {
+          "name": "Marvel Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-115-mb",
+          "id": "PYCfep3q5TfxEMsSZm4zEC",
+          "image": "steelmade/chairs/ergonomic-series/marvel/ic-115-mb"
+        }
+      ],
+      "suggestedSlug": "marvel",
+      "primaryProduct": {
+        "name": "Marvel High Back",
+        "variant": "High Back",
+        "slug": "ic-114-hb",
+        "id": "PYCfep3q5TfxEMsSZm4yum",
+        "image": "steelmade/chairs/ergonomic-series/marvel/ic-114-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Marvel High Back",
+          "variant": "High Back",
+          "slug": "ic-114-hb",
+          "id": "PYCfep3q5TfxEMsSZm4yum",
+          "image": "steelmade/chairs/ergonomic-series/marvel/ic-114-hb"
+        },
+        {
+          "name": "Marvel Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-115-mb",
+          "id": "PYCfep3q5TfxEMsSZm4zEC",
+          "image": "steelmade/chairs/ergonomic-series/marvel/ic-115-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Matrix",
+      "series": "chairs/ergonomic series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Matrix High Back",
+          "variant": "High Back",
+          "slug": "ic-135-hb",
+          "id": "SfgI0z4vRA5blg633yFu2j",
+          "image": "steelmade/chairs/ergonomic-series/matrix/ic-135-hb"
+        },
+        {
+          "name": "Matrix Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-136-mb",
+          "id": "azxCCZJCUCHUDe0xTqdtTq",
+          "image": "steelmade/chairs/ergonomic-series/matrix/ic-136-mb"
+        }
+      ],
+      "suggestedSlug": "matrix",
+      "primaryProduct": {
+        "name": "Matrix High Back",
+        "variant": "High Back",
+        "slug": "ic-135-hb",
+        "id": "SfgI0z4vRA5blg633yFu2j",
+        "image": "steelmade/chairs/ergonomic-series/matrix/ic-135-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Matrix High Back",
+          "variant": "High Back",
+          "slug": "ic-135-hb",
+          "id": "SfgI0z4vRA5blg633yFu2j",
+          "image": "steelmade/chairs/ergonomic-series/matrix/ic-135-hb"
+        },
+        {
+          "name": "Matrix Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-136-mb",
+          "id": "azxCCZJCUCHUDe0xTqdtTq",
+          "image": "steelmade/chairs/ergonomic-series/matrix/ic-136-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Vivo",
+      "series": "chairs/ergonomic series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Vivo High Back",
+          "variant": "High Back",
+          "slug": "ic-132-hb",
+          "id": "SfgI0z4vRA5blg633yFxzd",
+          "image": "steelmade/chairs/ergonomic-series/vivo/ic-132-hb"
+        },
+        {
+          "name": "Vivo Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-133-mb",
+          "id": "azxCCZJCUCHUDe0xTqdwEP",
+          "image": "steelmade/chairs/ergonomic-series/vivo/ic-133-mb"
+        }
+      ],
+      "suggestedSlug": "vivo",
+      "primaryProduct": {
+        "name": "Vivo High Back",
+        "variant": "High Back",
+        "slug": "ic-132-hb",
+        "id": "SfgI0z4vRA5blg633yFxzd",
+        "image": "steelmade/chairs/ergonomic-series/vivo/ic-132-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Vivo High Back",
+          "variant": "High Back",
+          "slug": "ic-132-hb",
+          "id": "SfgI0z4vRA5blg633yFxzd",
+          "image": "steelmade/chairs/ergonomic-series/vivo/ic-132-hb"
+        },
+        {
+          "name": "Vivo Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-133-mb",
+          "id": "azxCCZJCUCHUDe0xTqdwEP",
+          "image": "steelmade/chairs/ergonomic-series/vivo/ic-133-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Commander",
+      "series": "chairs/executive series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Commander High Back",
+          "variant": "High Back",
+          "slug": "ic-50-hb",
+          "id": "azxCCZJCUCHUDe0xTqdwaB",
+          "image": "steelmade/chairs/executive-series/commander/ic-50-hb"
+        },
+        {
+          "name": "Commander Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-49-mb",
+          "id": "PYCfep3q5TfxEMsSZm59KT",
+          "image": "steelmade/chairs/executive-series/commander/ic-49-mb"
+        }
+      ],
+      "suggestedSlug": "commander",
+      "primaryProduct": {
+        "name": "Commander High Back",
+        "variant": "High Back",
+        "slug": "ic-50-hb",
+        "id": "azxCCZJCUCHUDe0xTqdwaB",
+        "image": "steelmade/chairs/executive-series/commander/ic-50-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Commander High Back",
+          "variant": "High Back",
+          "slug": "ic-50-hb",
+          "id": "azxCCZJCUCHUDe0xTqdwaB",
+          "image": "steelmade/chairs/executive-series/commander/ic-50-hb"
+        },
+        {
+          "name": "Commander Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-49-mb",
+          "id": "PYCfep3q5TfxEMsSZm59KT",
+          "image": "steelmade/chairs/executive-series/commander/ic-49-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Korean",
+      "series": "chairs/executive series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Korean High Back",
+          "variant": "High Back",
+          "slug": "ic-47-hb",
+          "id": "PYCfep3q5TfxEMsSZm5BMh",
+          "image": "steelmade/chairs/executive-series/korean/ic-47-hb"
+        },
+        {
+          "name": "Korean Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-48-mb",
+          "id": "PYCfep3q5TfxEMsSZm5Bpp",
+          "image": "steelmade/chairs/executive-series/korean/ic-48-mb"
+        }
+      ],
+      "suggestedSlug": "korean",
+      "primaryProduct": {
+        "name": "Korean High Back",
+        "variant": "High Back",
+        "slug": "ic-47-hb",
+        "id": "PYCfep3q5TfxEMsSZm5BMh",
+        "image": "steelmade/chairs/executive-series/korean/ic-47-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Korean High Back",
+          "variant": "High Back",
+          "slug": "ic-47-hb",
+          "id": "PYCfep3q5TfxEMsSZm5BMh",
+          "image": "steelmade/chairs/executive-series/korean/ic-47-hb"
+        },
+        {
+          "name": "Korean Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-48-mb",
+          "id": "PYCfep3q5TfxEMsSZm5Bpp",
+          "image": "steelmade/chairs/executive-series/korean/ic-48-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Makson",
+      "series": "chairs/executive series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Makson High Back",
+          "variant": "High Back",
+          "slug": "ic-76-hb",
+          "id": "PYCfep3q5TfxEMsSZm5Cvn",
+          "image": "steelmade/chairs/executive-series/makson/ic-76-hb"
+        },
+        {
+          "name": "Makson Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-77-mb",
+          "id": "SfgI0z4vRA5blg633yG1PZ",
+          "image": "steelmade/chairs/executive-series/makson/ic-77-mb"
+        }
+      ],
+      "suggestedSlug": "makson",
+      "primaryProduct": {
+        "name": "Makson High Back",
+        "variant": "High Back",
+        "slug": "ic-76-hb",
+        "id": "PYCfep3q5TfxEMsSZm5Cvn",
+        "image": "steelmade/chairs/executive-series/makson/ic-76-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Makson High Back",
+          "variant": "High Back",
+          "slug": "ic-76-hb",
+          "id": "PYCfep3q5TfxEMsSZm5Cvn",
+          "image": "steelmade/chairs/executive-series/makson/ic-76-hb"
+        },
+        {
+          "name": "Makson Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-77-mb",
+          "id": "SfgI0z4vRA5blg633yG1PZ",
+          "image": "steelmade/chairs/executive-series/makson/ic-77-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Nano",
+      "series": "chairs/executive series",
+      "category": "chairs",
+      "productCount": 3,
+      "products": [
+        {
+          "name": "Nano High Back",
+          "variant": "High Back",
+          "slug": "ic-91-hb",
+          "id": "azxCCZJCUCHUDe0xTqdxkl",
+          "image": "steelmade/chairs/executive-series/nano/ic-91-hb"
+        },
+        {
+          "name": "Nano Low Back",
+          "variant": "Low Back",
+          "slug": "ic-93-lb",
+          "id": "SfgI0z4vRA5blg633yG1rp",
+          "image": "steelmade/chairs/executive-series/nano/ic-93-lb"
+        },
+        {
+          "name": "Nano Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-92-mb",
+          "id": "PYCfep3q5TfxEMsSZm5Ds3",
+          "image": "steelmade/chairs/executive-series/nano/ic-92-mb"
+        }
+      ],
+      "suggestedSlug": "nano",
+      "primaryProduct": {
+        "name": "Nano High Back",
+        "variant": "High Back",
+        "slug": "ic-91-hb",
+        "id": "azxCCZJCUCHUDe0xTqdxkl",
+        "image": "steelmade/chairs/executive-series/nano/ic-91-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Nano High Back",
+          "variant": "High Back",
+          "slug": "ic-91-hb",
+          "id": "azxCCZJCUCHUDe0xTqdxkl",
+          "image": "steelmade/chairs/executive-series/nano/ic-91-hb"
+        },
+        {
+          "name": "Nano Low Back",
+          "variant": "Low Back",
+          "slug": "ic-93-lb",
+          "id": "SfgI0z4vRA5blg633yG1rp",
+          "image": "steelmade/chairs/executive-series/nano/ic-93-lb"
+        },
+        {
+          "name": "Nano Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-92-mb",
+          "id": "PYCfep3q5TfxEMsSZm5Ds3",
+          "image": "steelmade/chairs/executive-series/nano/ic-92-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Phantom",
+      "series": "chairs/executive series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Phantom High Back",
+          "variant": "High Back",
+          "slug": "ic-70-hb",
+          "id": "azxCCZJCUCHUDe0xTqdyHQ",
+          "image": "steelmade/chairs/executive-series/phantom/ic-70-hb"
+        },
+        {
+          "name": "Phantom Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-71-mb",
+          "id": "SfgI0z4vRA5blg633yG2On",
+          "image": "steelmade/chairs/executive-series/phantom/ic-71-mb"
+        }
+      ],
+      "suggestedSlug": "phantom",
+      "primaryProduct": {
+        "name": "Phantom High Back",
+        "variant": "High Back",
+        "slug": "ic-70-hb",
+        "id": "azxCCZJCUCHUDe0xTqdyHQ",
+        "image": "steelmade/chairs/executive-series/phantom/ic-70-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Phantom High Back",
+          "variant": "High Back",
+          "slug": "ic-70-hb",
+          "id": "azxCCZJCUCHUDe0xTqdyHQ",
+          "image": "steelmade/chairs/executive-series/phantom/ic-70-hb"
+        },
+        {
+          "name": "Phantom Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-71-mb",
+          "id": "SfgI0z4vRA5blg633yG2On",
+          "image": "steelmade/chairs/executive-series/phantom/ic-71-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Premier",
+      "series": "chairs/executive series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Premier High Back",
+          "variant": "High Back",
+          "slug": "ic-79-hb",
+          "id": "SfgI0z4vRA5blg633yG2YD",
+          "image": "steelmade/chairs/executive-series/premier/ic-79-hb"
+        },
+        {
+          "name": "Premier Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-80-mb",
+          "id": "azxCCZJCUCHUDe0xTqdyTW",
+          "image": "steelmade/chairs/executive-series/premier/ic-80-mb"
+        }
+      ],
+      "suggestedSlug": "premier",
+      "primaryProduct": {
+        "name": "Premier High Back",
+        "variant": "High Back",
+        "slug": "ic-79-hb",
+        "id": "SfgI0z4vRA5blg633yG2YD",
+        "image": "steelmade/chairs/executive-series/premier/ic-79-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Premier High Back",
+          "variant": "High Back",
+          "slug": "ic-79-hb",
+          "id": "SfgI0z4vRA5blg633yG2YD",
+          "image": "steelmade/chairs/executive-series/premier/ic-79-hb"
+        },
+        {
+          "name": "Premier Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-80-mb",
+          "id": "azxCCZJCUCHUDe0xTqdyTW",
+          "image": "steelmade/chairs/executive-series/premier/ic-80-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "Safari",
+      "series": "chairs/executive series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Safari High Back",
+          "variant": "High Back",
+          "slug": "ic-88-hb",
+          "id": "SfgI0z4vRA5blg633yG35B",
+          "image": "steelmade/chairs/executive-series/safari/ic-88-hb"
+        },
+        {
+          "name": "Safari Low Back",
+          "variant": "Low Back",
+          "slug": "ic-89-lb",
+          "id": "SfgI0z4vRA5blg633yG3Eb",
+          "image": "steelmade/chairs/executive-series/safari/ic-89-lb"
+        }
+      ],
+      "suggestedSlug": "safari",
+      "primaryProduct": {
+        "name": "Safari High Back",
+        "variant": "High Back",
+        "slug": "ic-88-hb",
+        "id": "SfgI0z4vRA5blg633yG35B",
+        "image": "steelmade/chairs/executive-series/safari/ic-88-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Safari High Back",
+          "variant": "High Back",
+          "slug": "ic-88-hb",
+          "id": "SfgI0z4vRA5blg633yG35B",
+          "image": "steelmade/chairs/executive-series/safari/ic-88-hb"
+        },
+        {
+          "name": "Safari Low Back",
+          "variant": "Low Back",
+          "slug": "ic-89-lb",
+          "id": "SfgI0z4vRA5blg633yG3Eb",
+          "image": "steelmade/chairs/executive-series/safari/ic-89-lb"
+        }
+      ]
+    },
+    {
+      "baseName": "Skoda",
+      "series": "chairs/executive series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Skoda High Back",
+          "variant": "High Back",
+          "slug": "ic-94-hb",
+          "id": "PYCfep3q5TfxEMsSZm5I1M",
+          "image": "steelmade/chairs/executive-series/skoda/ic-94-hb"
+        },
+        {
+          "name": "Skoda Low Back",
+          "variant": "Low Back",
+          "slug": "ic-95-lb",
+          "id": "azxCCZJCUCHUDe0xTqe0QU",
+          "image": "steelmade/chairs/executive-series/skoda/ic-95-lb"
+        }
+      ],
+      "suggestedSlug": "skoda",
+      "primaryProduct": {
+        "name": "Skoda High Back",
+        "variant": "High Back",
+        "slug": "ic-94-hb",
+        "id": "PYCfep3q5TfxEMsSZm5I1M",
+        "image": "steelmade/chairs/executive-series/skoda/ic-94-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Skoda High Back",
+          "variant": "High Back",
+          "slug": "ic-94-hb",
+          "id": "PYCfep3q5TfxEMsSZm5I1M",
+          "image": "steelmade/chairs/executive-series/skoda/ic-94-hb"
+        },
+        {
+          "name": "Skoda Low Back",
+          "variant": "Low Back",
+          "slug": "ic-95-lb",
+          "id": "azxCCZJCUCHUDe0xTqe0QU",
+          "image": "steelmade/chairs/executive-series/skoda/ic-95-lb"
+        }
+      ]
+    },
+    {
+      "baseName": "Wilson",
+      "series": "chairs/executive series",
+      "category": "chairs",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "Wilson High Back",
+          "variant": "High Back",
+          "slug": "ic-73-hb",
+          "id": "azxCCZJCUCHUDe0xTqe0jq",
+          "image": "steelmade/chairs/executive-series/wilson/ic-73-hb"
+        },
+        {
+          "name": "Wilson Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-74-mb",
+          "id": "azxCCZJCUCHUDe0xTqe0x9",
+          "image": "steelmade/chairs/executive-series/wilson/ic-74-mb"
+        }
+      ],
+      "suggestedSlug": "wilson",
+      "primaryProduct": {
+        "name": "Wilson High Back",
+        "variant": "High Back",
+        "slug": "ic-73-hb",
+        "id": "azxCCZJCUCHUDe0xTqe0jq",
+        "image": "steelmade/chairs/executive-series/wilson/ic-73-hb"
+      },
+      "variantsToAdd": [
+        {
+          "name": "Wilson High Back",
+          "variant": "High Back",
+          "slug": "ic-73-hb",
+          "id": "azxCCZJCUCHUDe0xTqe0jq",
+          "image": "steelmade/chairs/executive-series/wilson/ic-73-hb"
+        },
+        {
+          "name": "Wilson Mid Back",
+          "variant": "Mid Back",
+          "slug": "ic-74-mb",
+          "id": "azxCCZJCUCHUDe0xTqe0x9",
+          "image": "steelmade/chairs/executive-series/wilson/ic-74-mb"
+        }
+      ]
+    },
+    {
+      "baseName": "30mm Panel Based Partition",
+      "series": "modular-furniture/Low Partition",
+      "category": "modular-furniture",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "30mm Panel Based Partition",
+          "variant": "standard",
+          "slug": "30mm-panel-based-partition",
+          "id": "imported-product-30mm-panel-based-partition",
+          "image": "steelmade/modular-furniture/partition-systems/30MM_PANEL_BASED_PARTITION_2"
+        },
+        {
+          "name": "30mm Panel Based Partition (Variant)",
+          "variant": "Variant",
+          "slug": "30mm-panel-based-partition-2",
+          "id": "imported-product-30mm-panel-based-partition-2",
+          "image": "steelmade/modular-furniture/partition-systems/30MM_PANEL_BASED_PARTITION"
+        }
+      ],
+      "suggestedSlug": "30mm-panel-based-partition",
+      "primaryProduct": {
+        "name": "30mm Panel Based Partition",
+        "variant": "standard",
+        "slug": "30mm-panel-based-partition",
+        "id": "imported-product-30mm-panel-based-partition",
+        "image": "steelmade/modular-furniture/partition-systems/30MM_PANEL_BASED_PARTITION_2"
+      },
+      "variantsToAdd": [
+        {
+          "name": "30mm Panel Based Partition",
+          "variant": "standard",
+          "slug": "30mm-panel-based-partition",
+          "id": "imported-product-30mm-panel-based-partition",
+          "image": "steelmade/modular-furniture/partition-systems/30MM_PANEL_BASED_PARTITION_2"
+        },
+        {
+          "name": "30mm Panel Based Partition (Variant)",
+          "variant": "Variant",
+          "slug": "30mm-panel-based-partition-2",
+          "id": "imported-product-30mm-panel-based-partition-2",
+          "image": "steelmade/modular-furniture/partition-systems/30MM_PANEL_BASED_PARTITION"
+        }
+      ]
+    },
+    {
+      "baseName": "50mm Panel Based Partition",
+      "series": "modular-furniture/Low Partition",
+      "category": "modular-furniture",
+      "productCount": 2,
+      "products": [
+        {
+          "name": "50mm Panel Based Partition",
+          "variant": "standard",
+          "slug": "50mm-panel-based-partition",
+          "id": "imported-product-50mm-panel-based-partition",
+          "image": "steelmade/modular-furniture/partition-systems/50MM_PANEL_BASED_PARTITION_2"
+        },
+        {
+          "name": "50mm Panel Based Partition (Variant)",
+          "variant": "Variant",
+          "slug": "50mm-panel-based-partition-2",
+          "id": "imported-product-50mm-panel-based-partition-2",
+          "image": "steelmade/modular-furniture/partition-systems/50MM_PANEL_BASED_PARTITION"
+        }
+      ],
+      "suggestedSlug": "50mm-panel-based-partition",
+      "primaryProduct": {
+        "name": "50mm Panel Based Partition",
+        "variant": "standard",
+        "slug": "50mm-panel-based-partition",
+        "id": "imported-product-50mm-panel-based-partition",
+        "image": "steelmade/modular-furniture/partition-systems/50MM_PANEL_BASED_PARTITION_2"
+      },
+      "variantsToAdd": [
+        {
+          "name": "50mm Panel Based Partition",
+          "variant": "standard",
+          "slug": "50mm-panel-based-partition",
+          "id": "imported-product-50mm-panel-based-partition",
+          "image": "steelmade/modular-furniture/partition-systems/50MM_PANEL_BASED_PARTITION_2"
+        },
+        {
+          "name": "50mm Panel Based Partition (Variant)",
+          "variant": "Variant",
+          "slug": "50mm-panel-based-partition-2",
+          "id": "imported-product-50mm-panel-based-partition-2",
+          "image": "steelmade/modular-furniture/partition-systems/50MM_PANEL_BASED_PARTITION"
+        }
+      ]
+    }
+  ],
+  "bySeries": {
+    "chairs/director series": [
+      {
+        "baseName": "Ashley",
+        "series": "chairs/director series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Ashley High Back",
+            "variant": "High Back",
+            "slug": "ic-361-hb",
+            "id": "SfgI0z4vRA5blg633yE8lr",
+            "image": "steelmade/chairs/director-series/ashley/ic-361-hb"
+          },
+          {
+            "name": "Ashley Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-362-mb",
+            "id": "SfgI0z4vRA5blg633yE9GT",
+            "image": "steelmade/chairs/director-series/ashley/ic-362-mb"
+          }
+        ],
+        "suggestedSlug": "ashley",
+        "primaryProduct": {
+          "name": "Ashley High Back",
+          "variant": "High Back",
+          "slug": "ic-361-hb",
+          "id": "SfgI0z4vRA5blg633yE8lr",
+          "image": "steelmade/chairs/director-series/ashley/ic-361-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Ashley High Back",
+            "variant": "High Back",
+            "slug": "ic-361-hb",
+            "id": "SfgI0z4vRA5blg633yE8lr",
+            "image": "steelmade/chairs/director-series/ashley/ic-361-hb"
+          },
+          {
+            "name": "Ashley Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-362-mb",
+            "id": "SfgI0z4vRA5blg633yE9GT",
+            "image": "steelmade/chairs/director-series/ashley/ic-362-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Bigbossgold",
+        "series": "chairs/director series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Bigbossgold High Back",
+            "variant": "High Back",
+            "slug": "ic-255-hb",
+            "id": "SfgI0z4vRA5blg633yE9Pt",
+            "image": "steelmade/chairs/director-series/bigbossgold/ic-255-hb"
+          },
+          {
+            "name": "Bigbossgold Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-256-mb",
+            "id": "SfgI0z4vRA5blg633yEHAH",
+            "image": "steelmade/chairs/director-series/bigbossgold/ic-256-mb"
+          }
+        ],
+        "suggestedSlug": "bigbossgold",
+        "primaryProduct": {
+          "name": "Bigbossgold High Back",
+          "variant": "High Back",
+          "slug": "ic-255-hb",
+          "id": "SfgI0z4vRA5blg633yE9Pt",
+          "image": "steelmade/chairs/director-series/bigbossgold/ic-255-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Bigbossgold High Back",
+            "variant": "High Back",
+            "slug": "ic-255-hb",
+            "id": "SfgI0z4vRA5blg633yE9Pt",
+            "image": "steelmade/chairs/director-series/bigbossgold/ic-255-hb"
+          },
+          {
+            "name": "Bigbossgold Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-256-mb",
+            "id": "SfgI0z4vRA5blg633yEHAH",
+            "image": "steelmade/chairs/director-series/bigbossgold/ic-256-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Boston",
+        "series": "chairs/director series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Boston High Back",
+            "variant": "High Back",
+            "slug": "ic-06-hb",
+            "id": "azxCCZJCUCHUDe0xTqceB6",
+            "image": "steelmade/chairs/director-series/boston/ic-06-hb"
+          },
+          {
+            "name": "Boston Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-07-mb",
+            "id": "SfgI0z4vRA5blg633yEHt1",
+            "image": "steelmade/chairs/director-series/boston/ic-07-mb"
+          }
+        ],
+        "suggestedSlug": "boston",
+        "primaryProduct": {
+          "name": "Boston High Back",
+          "variant": "High Back",
+          "slug": "ic-06-hb",
+          "id": "azxCCZJCUCHUDe0xTqceB6",
+          "image": "steelmade/chairs/director-series/boston/ic-06-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Boston High Back",
+            "variant": "High Back",
+            "slug": "ic-06-hb",
+            "id": "azxCCZJCUCHUDe0xTqceB6",
+            "image": "steelmade/chairs/director-series/boston/ic-06-hb"
+          },
+          {
+            "name": "Boston Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-07-mb",
+            "id": "SfgI0z4vRA5blg633yEHt1",
+            "image": "steelmade/chairs/director-series/boston/ic-07-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Grandezza",
+        "series": "chairs/director series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Grandezza High Back",
+            "variant": "High Back",
+            "slug": "ic-04-hb",
+            "id": "PYCfep3q5TfxEMsSZm0sQY",
+            "image": "steelmade/chairs/director-series/grandezza/ic-04-hb"
+          },
+          {
+            "name": "Grandezza Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-05-mb",
+            "id": "PYCfep3q5TfxEMsSZm1sRa",
+            "image": "steelmade/chairs/director-series/grandezza/ic-05-mb"
+          }
+        ],
+        "suggestedSlug": "grandezza",
+        "primaryProduct": {
+          "name": "Grandezza High Back",
+          "variant": "High Back",
+          "slug": "ic-04-hb",
+          "id": "PYCfep3q5TfxEMsSZm0sQY",
+          "image": "steelmade/chairs/director-series/grandezza/ic-04-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Grandezza High Back",
+            "variant": "High Back",
+            "slug": "ic-04-hb",
+            "id": "PYCfep3q5TfxEMsSZm0sQY",
+            "image": "steelmade/chairs/director-series/grandezza/ic-04-hb"
+          },
+          {
+            "name": "Grandezza Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-05-mb",
+            "id": "PYCfep3q5TfxEMsSZm1sRa",
+            "image": "steelmade/chairs/director-series/grandezza/ic-05-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Kotak",
+        "series": "chairs/director series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Kotak High Back",
+            "variant": "High Back",
+            "slug": "ic-13-hb",
+            "id": "SfgI0z4vRA5blg633yF8UT",
+            "image": "steelmade/chairs/director-series/kotak/ic-13-hb"
+          },
+          {
+            "name": "Kotak Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-12-mb",
+            "id": "PYCfep3q5TfxEMsSZm1tIz",
+            "image": "steelmade/chairs/director-series/kotak/ic-12-mb"
+          }
+        ],
+        "suggestedSlug": "kotak",
+        "primaryProduct": {
+          "name": "Kotak High Back",
+          "variant": "High Back",
+          "slug": "ic-13-hb",
+          "id": "SfgI0z4vRA5blg633yF8UT",
+          "image": "steelmade/chairs/director-series/kotak/ic-13-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Kotak High Back",
+            "variant": "High Back",
+            "slug": "ic-13-hb",
+            "id": "SfgI0z4vRA5blg633yF8UT",
+            "image": "steelmade/chairs/director-series/kotak/ic-13-hb"
+          },
+          {
+            "name": "Kotak Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-12-mb",
+            "id": "PYCfep3q5TfxEMsSZm1tIz",
+            "image": "steelmade/chairs/director-series/kotak/ic-12-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Milano",
+        "series": "chairs/director series",
+        "category": "chairs",
+        "productCount": 3,
+        "products": [
+          {
+            "name": "Milano High Back",
+            "variant": "High Back",
+            "slug": "ic-251-hb",
+            "id": "SfgI0z4vRA5blg633yFVt3",
+            "image": "steelmade/chairs/director-series/milano/ic-251-hb"
+          },
+          {
+            "name": "Milano Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-252-mb",
+            "id": "PYCfep3q5TfxEMsSZm1uOx",
+            "image": "steelmade/chairs/director-series/milano/ic-252-mb"
+          },
+          {
+            "name": "Milano Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-251-mb",
+            "id": "azxCCZJCUCHUDe0xTqdCSV",
+            "image": "steelmade/chairs/director-series/milano/ic-251-mb"
+          }
+        ],
+        "suggestedSlug": "milano",
+        "primaryProduct": {
+          "name": "Milano High Back",
+          "variant": "High Back",
+          "slug": "ic-251-hb",
+          "id": "SfgI0z4vRA5blg633yFVt3",
+          "image": "steelmade/chairs/director-series/milano/ic-251-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Milano High Back",
+            "variant": "High Back",
+            "slug": "ic-251-hb",
+            "id": "SfgI0z4vRA5blg633yFVt3",
+            "image": "steelmade/chairs/director-series/milano/ic-251-hb"
+          },
+          {
+            "name": "Milano Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-252-mb",
+            "id": "PYCfep3q5TfxEMsSZm1uOx",
+            "image": "steelmade/chairs/director-series/milano/ic-252-mb"
+          },
+          {
+            "name": "Milano Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-251-mb",
+            "id": "azxCCZJCUCHUDe0xTqdCSV",
+            "image": "steelmade/chairs/director-series/milano/ic-251-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Monarch",
+        "series": "chairs/director series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Monarch High Back",
+            "variant": "High Back",
+            "slug": "ic-08-hb",
+            "id": "azxCCZJCUCHUDe0xTqdMtg",
+            "image": "steelmade/chairs/director-series/monarch/ic-08-hb"
+          },
+          {
+            "name": "Monarch Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-09-mb",
+            "id": "SfgI0z4vRA5blg633yFkMF",
+            "image": "steelmade/chairs/director-series/monarch/ic-09-mb"
+          }
+        ],
+        "suggestedSlug": "monarch",
+        "primaryProduct": {
+          "name": "Monarch High Back",
+          "variant": "High Back",
+          "slug": "ic-08-hb",
+          "id": "azxCCZJCUCHUDe0xTqdMtg",
+          "image": "steelmade/chairs/director-series/monarch/ic-08-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Monarch High Back",
+            "variant": "High Back",
+            "slug": "ic-08-hb",
+            "id": "azxCCZJCUCHUDe0xTqdMtg",
+            "image": "steelmade/chairs/director-series/monarch/ic-08-hb"
+          },
+          {
+            "name": "Monarch Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-09-mb",
+            "id": "SfgI0z4vRA5blg633yFkMF",
+            "image": "steelmade/chairs/director-series/monarch/ic-09-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Nissan",
+        "series": "chairs/director series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Nissan High Back",
+            "variant": "High Back",
+            "slug": "ic-253-hb",
+            "id": "SfgI0z4vRA5blg633yFkaN",
+            "image": "steelmade/chairs/director-series/nissan/ic-253-hb"
+          },
+          {
+            "name": "Nissan Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-252-mb-2",
+            "id": "azxCCZJCUCHUDe0xTqdpAV",
+            "image": "steelmade/chairs/director-series/nissan/ic-252-mb"
+          }
+        ],
+        "suggestedSlug": "nissan",
+        "primaryProduct": {
+          "name": "Nissan High Back",
+          "variant": "High Back",
+          "slug": "ic-253-hb",
+          "id": "SfgI0z4vRA5blg633yFkaN",
+          "image": "steelmade/chairs/director-series/nissan/ic-253-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Nissan High Back",
+            "variant": "High Back",
+            "slug": "ic-253-hb",
+            "id": "SfgI0z4vRA5blg633yFkaN",
+            "image": "steelmade/chairs/director-series/nissan/ic-253-hb"
+          },
+          {
+            "name": "Nissan Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-252-mb-2",
+            "id": "azxCCZJCUCHUDe0xTqdpAV",
+            "image": "steelmade/chairs/director-series/nissan/ic-252-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Opera",
+        "series": "chairs/director series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Opera High Back",
+            "variant": "High Back",
+            "slug": "ic-340-hb",
+            "id": "PYCfep3q5TfxEMsSZm4m9R",
+            "image": "steelmade/chairs/director-series/opera/ic-340-hb"
+          },
+          {
+            "name": "Opera Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-341-mb",
+            "id": "azxCCZJCUCHUDe0xTqdpKB",
+            "image": "steelmade/chairs/director-series/opera/ic-341-mb"
+          }
+        ],
+        "suggestedSlug": "opera",
+        "primaryProduct": {
+          "name": "Opera High Back",
+          "variant": "High Back",
+          "slug": "ic-340-hb",
+          "id": "PYCfep3q5TfxEMsSZm4m9R",
+          "image": "steelmade/chairs/director-series/opera/ic-340-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Opera High Back",
+            "variant": "High Back",
+            "slug": "ic-340-hb",
+            "id": "PYCfep3q5TfxEMsSZm4m9R",
+            "image": "steelmade/chairs/director-series/opera/ic-340-hb"
+          },
+          {
+            "name": "Opera Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-341-mb",
+            "id": "azxCCZJCUCHUDe0xTqdpKB",
+            "image": "steelmade/chairs/director-series/opera/ic-341-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Parker",
+        "series": "chairs/director series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Parker High Back",
+            "variant": "High Back",
+            "slug": "ic-315-hb",
+            "id": "azxCCZJCUCHUDe0xTqdpV4",
+            "image": "steelmade/chairs/director-series/parker/ic-315-hb"
+          },
+          {
+            "name": "Parker Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-316-mb",
+            "id": "SfgI0z4vRA5blg633yFlJ7",
+            "image": "steelmade/chairs/director-series/parker/ic-316-mb"
+          }
+        ],
+        "suggestedSlug": "parker",
+        "primaryProduct": {
+          "name": "Parker High Back",
+          "variant": "High Back",
+          "slug": "ic-315-hb",
+          "id": "azxCCZJCUCHUDe0xTqdpV4",
+          "image": "steelmade/chairs/director-series/parker/ic-315-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Parker High Back",
+            "variant": "High Back",
+            "slug": "ic-315-hb",
+            "id": "azxCCZJCUCHUDe0xTqdpV4",
+            "image": "steelmade/chairs/director-series/parker/ic-315-hb"
+          },
+          {
+            "name": "Parker Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-316-mb",
+            "id": "SfgI0z4vRA5blg633yFlJ7",
+            "image": "steelmade/chairs/director-series/parker/ic-316-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Tycoon",
+        "series": "chairs/director series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Tycoon High Back",
+            "variant": "High Back",
+            "slug": "ic-01-hb",
+            "id": "azxCCZJCUCHUDe0xTqdpnD",
+            "image": "steelmade/chairs/director-series/tycoon/ic-01-hb"
+          },
+          {
+            "name": "Tycoon Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-02-mb",
+            "id": "azxCCZJCUCHUDe0xTqdq2w",
+            "image": "steelmade/chairs/director-series/tycoon/ic-02-mb"
+          }
+        ],
+        "suggestedSlug": "tycoon",
+        "primaryProduct": {
+          "name": "Tycoon High Back",
+          "variant": "High Back",
+          "slug": "ic-01-hb",
+          "id": "azxCCZJCUCHUDe0xTqdpnD",
+          "image": "steelmade/chairs/director-series/tycoon/ic-01-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Tycoon High Back",
+            "variant": "High Back",
+            "slug": "ic-01-hb",
+            "id": "azxCCZJCUCHUDe0xTqdpnD",
+            "image": "steelmade/chairs/director-series/tycoon/ic-01-hb"
+          },
+          {
+            "name": "Tycoon Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-02-mb",
+            "id": "azxCCZJCUCHUDe0xTqdq2w",
+            "image": "steelmade/chairs/director-series/tycoon/ic-02-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Woodland",
+        "series": "chairs/director series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Woodland High Back",
+            "variant": "High Back",
+            "slug": "ic-338-hb",
+            "id": "azxCCZJCUCHUDe0xTqdqBP",
+            "image": "steelmade/chairs/director-series/woodland/ic-338-hb"
+          },
+          {
+            "name": "Woodland Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-339-mb",
+            "id": "SfgI0z4vRA5blg633yFmbB",
+            "image": "steelmade/chairs/director-series/woodland/ic-339-mb"
+          }
+        ],
+        "suggestedSlug": "woodland",
+        "primaryProduct": {
+          "name": "Woodland High Back",
+          "variant": "High Back",
+          "slug": "ic-338-hb",
+          "id": "azxCCZJCUCHUDe0xTqdqBP",
+          "image": "steelmade/chairs/director-series/woodland/ic-338-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Woodland High Back",
+            "variant": "High Back",
+            "slug": "ic-338-hb",
+            "id": "azxCCZJCUCHUDe0xTqdqBP",
+            "image": "steelmade/chairs/director-series/woodland/ic-338-hb"
+          },
+          {
+            "name": "Woodland Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-339-mb",
+            "id": "SfgI0z4vRA5blg633yFmbB",
+            "image": "steelmade/chairs/director-series/woodland/ic-339-mb"
+          }
+        ]
+      }
+    ],
+    "chairs/ergonomic series": [
+      {
+        "baseName": "Bb",
+        "series": "chairs/ergonomic series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Bb Low Back",
+            "variant": "Low Back",
+            "slug": "ic-124-lb",
+            "id": "SfgI0z4vRA5blg633yFmrf",
+            "image": "steelmade/chairs/ergonomic-series/bb/ic-124-lb"
+          },
+          {
+            "name": "Bb Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-264-mb",
+            "id": "SfgI0z4vRA5blg633yFn5n",
+            "image": "steelmade/chairs/ergonomic-series/bb/ic-264-mb"
+          }
+        ],
+        "suggestedSlug": "bb",
+        "primaryProduct": {
+          "name": "Bb Low Back",
+          "variant": "Low Back",
+          "slug": "ic-124-lb",
+          "id": "SfgI0z4vRA5blg633yFmrf",
+          "image": "steelmade/chairs/ergonomic-series/bb/ic-124-lb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Bb Low Back",
+            "variant": "Low Back",
+            "slug": "ic-124-lb",
+            "id": "SfgI0z4vRA5blg633yFmrf",
+            "image": "steelmade/chairs/ergonomic-series/bb/ic-124-lb"
+          },
+          {
+            "name": "Bb Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-264-mb",
+            "id": "SfgI0z4vRA5blg633yFn5n",
+            "image": "steelmade/chairs/ergonomic-series/bb/ic-264-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Cobra",
+        "series": "chairs/ergonomic series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Cobra High Back",
+            "variant": "High Back",
+            "slug": "ic-138-hb",
+            "id": "PYCfep3q5TfxEMsSZm4puT",
+            "image": "steelmade/chairs/ergonomic-series/cobra/ic-138-hb"
+          },
+          {
+            "name": "Cobra Low Back",
+            "variant": "Low Back",
+            "slug": "ic-139-lb",
+            "id": "SfgI0z4vRA5blg633yFo0J",
+            "image": "steelmade/chairs/ergonomic-series/cobra/ic-139-lb"
+          }
+        ],
+        "suggestedSlug": "cobra",
+        "primaryProduct": {
+          "name": "Cobra High Back",
+          "variant": "High Back",
+          "slug": "ic-138-hb",
+          "id": "PYCfep3q5TfxEMsSZm4puT",
+          "image": "steelmade/chairs/ergonomic-series/cobra/ic-138-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Cobra High Back",
+            "variant": "High Back",
+            "slug": "ic-138-hb",
+            "id": "PYCfep3q5TfxEMsSZm4puT",
+            "image": "steelmade/chairs/ergonomic-series/cobra/ic-138-hb"
+          },
+          {
+            "name": "Cobra Low Back",
+            "variant": "Low Back",
+            "slug": "ic-139-lb",
+            "id": "SfgI0z4vRA5blg633yFo0J",
+            "image": "steelmade/chairs/ergonomic-series/cobra/ic-139-lb"
+          }
+        ]
+      },
+      {
+        "baseName": "Craft",
+        "series": "chairs/ergonomic series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Craft High Back",
+            "variant": "High Back",
+            "slug": "ic-129-hb",
+            "id": "SfgI0z4vRA5blg633yFoJ9",
+            "image": "steelmade/chairs/ergonomic-series/craft/ic-129-hb"
+          },
+          {
+            "name": "Craft Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-130-mb",
+            "id": "PYCfep3q5TfxEMsSZm4rwh",
+            "image": "steelmade/chairs/ergonomic-series/craft/ic-130-mb"
+          }
+        ],
+        "suggestedSlug": "craft",
+        "primaryProduct": {
+          "name": "Craft High Back",
+          "variant": "High Back",
+          "slug": "ic-129-hb",
+          "id": "SfgI0z4vRA5blg633yFoJ9",
+          "image": "steelmade/chairs/ergonomic-series/craft/ic-129-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Craft High Back",
+            "variant": "High Back",
+            "slug": "ic-129-hb",
+            "id": "SfgI0z4vRA5blg633yFoJ9",
+            "image": "steelmade/chairs/ergonomic-series/craft/ic-129-hb"
+          },
+          {
+            "name": "Craft Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-130-mb",
+            "id": "PYCfep3q5TfxEMsSZm4rwh",
+            "image": "steelmade/chairs/ergonomic-series/craft/ic-130-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Marvel",
+        "series": "chairs/ergonomic series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Marvel High Back",
+            "variant": "High Back",
+            "slug": "ic-114-hb",
+            "id": "PYCfep3q5TfxEMsSZm4yum",
+            "image": "steelmade/chairs/ergonomic-series/marvel/ic-114-hb"
+          },
+          {
+            "name": "Marvel Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-115-mb",
+            "id": "PYCfep3q5TfxEMsSZm4zEC",
+            "image": "steelmade/chairs/ergonomic-series/marvel/ic-115-mb"
+          }
+        ],
+        "suggestedSlug": "marvel",
+        "primaryProduct": {
+          "name": "Marvel High Back",
+          "variant": "High Back",
+          "slug": "ic-114-hb",
+          "id": "PYCfep3q5TfxEMsSZm4yum",
+          "image": "steelmade/chairs/ergonomic-series/marvel/ic-114-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Marvel High Back",
+            "variant": "High Back",
+            "slug": "ic-114-hb",
+            "id": "PYCfep3q5TfxEMsSZm4yum",
+            "image": "steelmade/chairs/ergonomic-series/marvel/ic-114-hb"
+          },
+          {
+            "name": "Marvel Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-115-mb",
+            "id": "PYCfep3q5TfxEMsSZm4zEC",
+            "image": "steelmade/chairs/ergonomic-series/marvel/ic-115-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Matrix",
+        "series": "chairs/ergonomic series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Matrix High Back",
+            "variant": "High Back",
+            "slug": "ic-135-hb",
+            "id": "SfgI0z4vRA5blg633yFu2j",
+            "image": "steelmade/chairs/ergonomic-series/matrix/ic-135-hb"
+          },
+          {
+            "name": "Matrix Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-136-mb",
+            "id": "azxCCZJCUCHUDe0xTqdtTq",
+            "image": "steelmade/chairs/ergonomic-series/matrix/ic-136-mb"
+          }
+        ],
+        "suggestedSlug": "matrix",
+        "primaryProduct": {
+          "name": "Matrix High Back",
+          "variant": "High Back",
+          "slug": "ic-135-hb",
+          "id": "SfgI0z4vRA5blg633yFu2j",
+          "image": "steelmade/chairs/ergonomic-series/matrix/ic-135-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Matrix High Back",
+            "variant": "High Back",
+            "slug": "ic-135-hb",
+            "id": "SfgI0z4vRA5blg633yFu2j",
+            "image": "steelmade/chairs/ergonomic-series/matrix/ic-135-hb"
+          },
+          {
+            "name": "Matrix Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-136-mb",
+            "id": "azxCCZJCUCHUDe0xTqdtTq",
+            "image": "steelmade/chairs/ergonomic-series/matrix/ic-136-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Vivo",
+        "series": "chairs/ergonomic series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Vivo High Back",
+            "variant": "High Back",
+            "slug": "ic-132-hb",
+            "id": "SfgI0z4vRA5blg633yFxzd",
+            "image": "steelmade/chairs/ergonomic-series/vivo/ic-132-hb"
+          },
+          {
+            "name": "Vivo Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-133-mb",
+            "id": "azxCCZJCUCHUDe0xTqdwEP",
+            "image": "steelmade/chairs/ergonomic-series/vivo/ic-133-mb"
+          }
+        ],
+        "suggestedSlug": "vivo",
+        "primaryProduct": {
+          "name": "Vivo High Back",
+          "variant": "High Back",
+          "slug": "ic-132-hb",
+          "id": "SfgI0z4vRA5blg633yFxzd",
+          "image": "steelmade/chairs/ergonomic-series/vivo/ic-132-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Vivo High Back",
+            "variant": "High Back",
+            "slug": "ic-132-hb",
+            "id": "SfgI0z4vRA5blg633yFxzd",
+            "image": "steelmade/chairs/ergonomic-series/vivo/ic-132-hb"
+          },
+          {
+            "name": "Vivo Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-133-mb",
+            "id": "azxCCZJCUCHUDe0xTqdwEP",
+            "image": "steelmade/chairs/ergonomic-series/vivo/ic-133-mb"
+          }
+        ]
+      }
+    ],
+    "chairs/executive series": [
+      {
+        "baseName": "Commander",
+        "series": "chairs/executive series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Commander High Back",
+            "variant": "High Back",
+            "slug": "ic-50-hb",
+            "id": "azxCCZJCUCHUDe0xTqdwaB",
+            "image": "steelmade/chairs/executive-series/commander/ic-50-hb"
+          },
+          {
+            "name": "Commander Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-49-mb",
+            "id": "PYCfep3q5TfxEMsSZm59KT",
+            "image": "steelmade/chairs/executive-series/commander/ic-49-mb"
+          }
+        ],
+        "suggestedSlug": "commander",
+        "primaryProduct": {
+          "name": "Commander High Back",
+          "variant": "High Back",
+          "slug": "ic-50-hb",
+          "id": "azxCCZJCUCHUDe0xTqdwaB",
+          "image": "steelmade/chairs/executive-series/commander/ic-50-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Commander High Back",
+            "variant": "High Back",
+            "slug": "ic-50-hb",
+            "id": "azxCCZJCUCHUDe0xTqdwaB",
+            "image": "steelmade/chairs/executive-series/commander/ic-50-hb"
+          },
+          {
+            "name": "Commander Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-49-mb",
+            "id": "PYCfep3q5TfxEMsSZm59KT",
+            "image": "steelmade/chairs/executive-series/commander/ic-49-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Korean",
+        "series": "chairs/executive series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Korean High Back",
+            "variant": "High Back",
+            "slug": "ic-47-hb",
+            "id": "PYCfep3q5TfxEMsSZm5BMh",
+            "image": "steelmade/chairs/executive-series/korean/ic-47-hb"
+          },
+          {
+            "name": "Korean Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-48-mb",
+            "id": "PYCfep3q5TfxEMsSZm5Bpp",
+            "image": "steelmade/chairs/executive-series/korean/ic-48-mb"
+          }
+        ],
+        "suggestedSlug": "korean",
+        "primaryProduct": {
+          "name": "Korean High Back",
+          "variant": "High Back",
+          "slug": "ic-47-hb",
+          "id": "PYCfep3q5TfxEMsSZm5BMh",
+          "image": "steelmade/chairs/executive-series/korean/ic-47-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Korean High Back",
+            "variant": "High Back",
+            "slug": "ic-47-hb",
+            "id": "PYCfep3q5TfxEMsSZm5BMh",
+            "image": "steelmade/chairs/executive-series/korean/ic-47-hb"
+          },
+          {
+            "name": "Korean Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-48-mb",
+            "id": "PYCfep3q5TfxEMsSZm5Bpp",
+            "image": "steelmade/chairs/executive-series/korean/ic-48-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Makson",
+        "series": "chairs/executive series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Makson High Back",
+            "variant": "High Back",
+            "slug": "ic-76-hb",
+            "id": "PYCfep3q5TfxEMsSZm5Cvn",
+            "image": "steelmade/chairs/executive-series/makson/ic-76-hb"
+          },
+          {
+            "name": "Makson Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-77-mb",
+            "id": "SfgI0z4vRA5blg633yG1PZ",
+            "image": "steelmade/chairs/executive-series/makson/ic-77-mb"
+          }
+        ],
+        "suggestedSlug": "makson",
+        "primaryProduct": {
+          "name": "Makson High Back",
+          "variant": "High Back",
+          "slug": "ic-76-hb",
+          "id": "PYCfep3q5TfxEMsSZm5Cvn",
+          "image": "steelmade/chairs/executive-series/makson/ic-76-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Makson High Back",
+            "variant": "High Back",
+            "slug": "ic-76-hb",
+            "id": "PYCfep3q5TfxEMsSZm5Cvn",
+            "image": "steelmade/chairs/executive-series/makson/ic-76-hb"
+          },
+          {
+            "name": "Makson Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-77-mb",
+            "id": "SfgI0z4vRA5blg633yG1PZ",
+            "image": "steelmade/chairs/executive-series/makson/ic-77-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Nano",
+        "series": "chairs/executive series",
+        "category": "chairs",
+        "productCount": 3,
+        "products": [
+          {
+            "name": "Nano High Back",
+            "variant": "High Back",
+            "slug": "ic-91-hb",
+            "id": "azxCCZJCUCHUDe0xTqdxkl",
+            "image": "steelmade/chairs/executive-series/nano/ic-91-hb"
+          },
+          {
+            "name": "Nano Low Back",
+            "variant": "Low Back",
+            "slug": "ic-93-lb",
+            "id": "SfgI0z4vRA5blg633yG1rp",
+            "image": "steelmade/chairs/executive-series/nano/ic-93-lb"
+          },
+          {
+            "name": "Nano Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-92-mb",
+            "id": "PYCfep3q5TfxEMsSZm5Ds3",
+            "image": "steelmade/chairs/executive-series/nano/ic-92-mb"
+          }
+        ],
+        "suggestedSlug": "nano",
+        "primaryProduct": {
+          "name": "Nano High Back",
+          "variant": "High Back",
+          "slug": "ic-91-hb",
+          "id": "azxCCZJCUCHUDe0xTqdxkl",
+          "image": "steelmade/chairs/executive-series/nano/ic-91-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Nano High Back",
+            "variant": "High Back",
+            "slug": "ic-91-hb",
+            "id": "azxCCZJCUCHUDe0xTqdxkl",
+            "image": "steelmade/chairs/executive-series/nano/ic-91-hb"
+          },
+          {
+            "name": "Nano Low Back",
+            "variant": "Low Back",
+            "slug": "ic-93-lb",
+            "id": "SfgI0z4vRA5blg633yG1rp",
+            "image": "steelmade/chairs/executive-series/nano/ic-93-lb"
+          },
+          {
+            "name": "Nano Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-92-mb",
+            "id": "PYCfep3q5TfxEMsSZm5Ds3",
+            "image": "steelmade/chairs/executive-series/nano/ic-92-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Phantom",
+        "series": "chairs/executive series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Phantom High Back",
+            "variant": "High Back",
+            "slug": "ic-70-hb",
+            "id": "azxCCZJCUCHUDe0xTqdyHQ",
+            "image": "steelmade/chairs/executive-series/phantom/ic-70-hb"
+          },
+          {
+            "name": "Phantom Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-71-mb",
+            "id": "SfgI0z4vRA5blg633yG2On",
+            "image": "steelmade/chairs/executive-series/phantom/ic-71-mb"
+          }
+        ],
+        "suggestedSlug": "phantom",
+        "primaryProduct": {
+          "name": "Phantom High Back",
+          "variant": "High Back",
+          "slug": "ic-70-hb",
+          "id": "azxCCZJCUCHUDe0xTqdyHQ",
+          "image": "steelmade/chairs/executive-series/phantom/ic-70-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Phantom High Back",
+            "variant": "High Back",
+            "slug": "ic-70-hb",
+            "id": "azxCCZJCUCHUDe0xTqdyHQ",
+            "image": "steelmade/chairs/executive-series/phantom/ic-70-hb"
+          },
+          {
+            "name": "Phantom Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-71-mb",
+            "id": "SfgI0z4vRA5blg633yG2On",
+            "image": "steelmade/chairs/executive-series/phantom/ic-71-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Premier",
+        "series": "chairs/executive series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Premier High Back",
+            "variant": "High Back",
+            "slug": "ic-79-hb",
+            "id": "SfgI0z4vRA5blg633yG2YD",
+            "image": "steelmade/chairs/executive-series/premier/ic-79-hb"
+          },
+          {
+            "name": "Premier Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-80-mb",
+            "id": "azxCCZJCUCHUDe0xTqdyTW",
+            "image": "steelmade/chairs/executive-series/premier/ic-80-mb"
+          }
+        ],
+        "suggestedSlug": "premier",
+        "primaryProduct": {
+          "name": "Premier High Back",
+          "variant": "High Back",
+          "slug": "ic-79-hb",
+          "id": "SfgI0z4vRA5blg633yG2YD",
+          "image": "steelmade/chairs/executive-series/premier/ic-79-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Premier High Back",
+            "variant": "High Back",
+            "slug": "ic-79-hb",
+            "id": "SfgI0z4vRA5blg633yG2YD",
+            "image": "steelmade/chairs/executive-series/premier/ic-79-hb"
+          },
+          {
+            "name": "Premier Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-80-mb",
+            "id": "azxCCZJCUCHUDe0xTqdyTW",
+            "image": "steelmade/chairs/executive-series/premier/ic-80-mb"
+          }
+        ]
+      },
+      {
+        "baseName": "Safari",
+        "series": "chairs/executive series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Safari High Back",
+            "variant": "High Back",
+            "slug": "ic-88-hb",
+            "id": "SfgI0z4vRA5blg633yG35B",
+            "image": "steelmade/chairs/executive-series/safari/ic-88-hb"
+          },
+          {
+            "name": "Safari Low Back",
+            "variant": "Low Back",
+            "slug": "ic-89-lb",
+            "id": "SfgI0z4vRA5blg633yG3Eb",
+            "image": "steelmade/chairs/executive-series/safari/ic-89-lb"
+          }
+        ],
+        "suggestedSlug": "safari",
+        "primaryProduct": {
+          "name": "Safari High Back",
+          "variant": "High Back",
+          "slug": "ic-88-hb",
+          "id": "SfgI0z4vRA5blg633yG35B",
+          "image": "steelmade/chairs/executive-series/safari/ic-88-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Safari High Back",
+            "variant": "High Back",
+            "slug": "ic-88-hb",
+            "id": "SfgI0z4vRA5blg633yG35B",
+            "image": "steelmade/chairs/executive-series/safari/ic-88-hb"
+          },
+          {
+            "name": "Safari Low Back",
+            "variant": "Low Back",
+            "slug": "ic-89-lb",
+            "id": "SfgI0z4vRA5blg633yG3Eb",
+            "image": "steelmade/chairs/executive-series/safari/ic-89-lb"
+          }
+        ]
+      },
+      {
+        "baseName": "Skoda",
+        "series": "chairs/executive series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Skoda High Back",
+            "variant": "High Back",
+            "slug": "ic-94-hb",
+            "id": "PYCfep3q5TfxEMsSZm5I1M",
+            "image": "steelmade/chairs/executive-series/skoda/ic-94-hb"
+          },
+          {
+            "name": "Skoda Low Back",
+            "variant": "Low Back",
+            "slug": "ic-95-lb",
+            "id": "azxCCZJCUCHUDe0xTqe0QU",
+            "image": "steelmade/chairs/executive-series/skoda/ic-95-lb"
+          }
+        ],
+        "suggestedSlug": "skoda",
+        "primaryProduct": {
+          "name": "Skoda High Back",
+          "variant": "High Back",
+          "slug": "ic-94-hb",
+          "id": "PYCfep3q5TfxEMsSZm5I1M",
+          "image": "steelmade/chairs/executive-series/skoda/ic-94-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Skoda High Back",
+            "variant": "High Back",
+            "slug": "ic-94-hb",
+            "id": "PYCfep3q5TfxEMsSZm5I1M",
+            "image": "steelmade/chairs/executive-series/skoda/ic-94-hb"
+          },
+          {
+            "name": "Skoda Low Back",
+            "variant": "Low Back",
+            "slug": "ic-95-lb",
+            "id": "azxCCZJCUCHUDe0xTqe0QU",
+            "image": "steelmade/chairs/executive-series/skoda/ic-95-lb"
+          }
+        ]
+      },
+      {
+        "baseName": "Wilson",
+        "series": "chairs/executive series",
+        "category": "chairs",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "Wilson High Back",
+            "variant": "High Back",
+            "slug": "ic-73-hb",
+            "id": "azxCCZJCUCHUDe0xTqe0jq",
+            "image": "steelmade/chairs/executive-series/wilson/ic-73-hb"
+          },
+          {
+            "name": "Wilson Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-74-mb",
+            "id": "azxCCZJCUCHUDe0xTqe0x9",
+            "image": "steelmade/chairs/executive-series/wilson/ic-74-mb"
+          }
+        ],
+        "suggestedSlug": "wilson",
+        "primaryProduct": {
+          "name": "Wilson High Back",
+          "variant": "High Back",
+          "slug": "ic-73-hb",
+          "id": "azxCCZJCUCHUDe0xTqe0jq",
+          "image": "steelmade/chairs/executive-series/wilson/ic-73-hb"
+        },
+        "variantsToAdd": [
+          {
+            "name": "Wilson High Back",
+            "variant": "High Back",
+            "slug": "ic-73-hb",
+            "id": "azxCCZJCUCHUDe0xTqe0jq",
+            "image": "steelmade/chairs/executive-series/wilson/ic-73-hb"
+          },
+          {
+            "name": "Wilson Mid Back",
+            "variant": "Mid Back",
+            "slug": "ic-74-mb",
+            "id": "azxCCZJCUCHUDe0xTqe0x9",
+            "image": "steelmade/chairs/executive-series/wilson/ic-74-mb"
+          }
+        ]
+      }
+    ],
+    "modular-furniture/Low Partition": [
+      {
+        "baseName": "30mm Panel Based Partition",
+        "series": "modular-furniture/Low Partition",
+        "category": "modular-furniture",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "30mm Panel Based Partition",
+            "variant": "standard",
+            "slug": "30mm-panel-based-partition",
+            "id": "imported-product-30mm-panel-based-partition",
+            "image": "steelmade/modular-furniture/partition-systems/30MM_PANEL_BASED_PARTITION_2"
+          },
+          {
+            "name": "30mm Panel Based Partition (Variant)",
+            "variant": "Variant",
+            "slug": "30mm-panel-based-partition-2",
+            "id": "imported-product-30mm-panel-based-partition-2",
+            "image": "steelmade/modular-furniture/partition-systems/30MM_PANEL_BASED_PARTITION"
+          }
+        ],
+        "suggestedSlug": "30mm-panel-based-partition",
+        "primaryProduct": {
+          "name": "30mm Panel Based Partition",
+          "variant": "standard",
+          "slug": "30mm-panel-based-partition",
+          "id": "imported-product-30mm-panel-based-partition",
+          "image": "steelmade/modular-furniture/partition-systems/30MM_PANEL_BASED_PARTITION_2"
+        },
+        "variantsToAdd": [
+          {
+            "name": "30mm Panel Based Partition",
+            "variant": "standard",
+            "slug": "30mm-panel-based-partition",
+            "id": "imported-product-30mm-panel-based-partition",
+            "image": "steelmade/modular-furniture/partition-systems/30MM_PANEL_BASED_PARTITION_2"
+          },
+          {
+            "name": "30mm Panel Based Partition (Variant)",
+            "variant": "Variant",
+            "slug": "30mm-panel-based-partition-2",
+            "id": "imported-product-30mm-panel-based-partition-2",
+            "image": "steelmade/modular-furniture/partition-systems/30MM_PANEL_BASED_PARTITION"
+          }
+        ]
+      },
+      {
+        "baseName": "50mm Panel Based Partition",
+        "series": "modular-furniture/Low Partition",
+        "category": "modular-furniture",
+        "productCount": 2,
+        "products": [
+          {
+            "name": "50mm Panel Based Partition",
+            "variant": "standard",
+            "slug": "50mm-panel-based-partition",
+            "id": "imported-product-50mm-panel-based-partition",
+            "image": "steelmade/modular-furniture/partition-systems/50MM_PANEL_BASED_PARTITION_2"
+          },
+          {
+            "name": "50mm Panel Based Partition (Variant)",
+            "variant": "Variant",
+            "slug": "50mm-panel-based-partition-2",
+            "id": "imported-product-50mm-panel-based-partition-2",
+            "image": "steelmade/modular-furniture/partition-systems/50MM_PANEL_BASED_PARTITION"
+          }
+        ],
+        "suggestedSlug": "50mm-panel-based-partition",
+        "primaryProduct": {
+          "name": "50mm Panel Based Partition",
+          "variant": "standard",
+          "slug": "50mm-panel-based-partition",
+          "id": "imported-product-50mm-panel-based-partition",
+          "image": "steelmade/modular-furniture/partition-systems/50MM_PANEL_BASED_PARTITION_2"
+        },
+        "variantsToAdd": [
+          {
+            "name": "50mm Panel Based Partition",
+            "variant": "standard",
+            "slug": "50mm-panel-based-partition",
+            "id": "imported-product-50mm-panel-based-partition",
+            "image": "steelmade/modular-furniture/partition-systems/50MM_PANEL_BASED_PARTITION_2"
+          },
+          {
+            "name": "50mm Panel Based Partition (Variant)",
+            "variant": "Variant",
+            "slug": "50mm-panel-based-partition-2",
+            "id": "imported-product-50mm-panel-based-partition-2",
+            "image": "steelmade/modular-furniture/partition-systems/50MM_PANEL_BASED_PARTITION"
+          }
+        ]
+      }
+    ]
+  }
+}

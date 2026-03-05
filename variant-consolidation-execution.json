@@ -1,0 +1,272 @@
+{
+  "timestamp": "2026-03-05T14:39:38.734Z",
+  "summary": {
+    "consolidated": 29,
+    "failed": 0,
+    "totalBefore": 426,
+    "totalRemoved": 31
+  },
+  "executionLog": [
+    {
+      "baseName": "Ashley",
+      "series": "chairs/director series",
+      "primaryId": "SfgI0z4vRA5blg633yE8lr",
+      "newSlug": "ashley",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Bigbossgold",
+      "series": "chairs/director series",
+      "primaryId": "SfgI0z4vRA5blg633yE9Pt",
+      "newSlug": "bigbossgold",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Boston",
+      "series": "chairs/director series",
+      "primaryId": "azxCCZJCUCHUDe0xTqceB6",
+      "newSlug": "boston",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Grandezza",
+      "series": "chairs/director series",
+      "primaryId": "PYCfep3q5TfxEMsSZm0sQY",
+      "newSlug": "grandezza",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Kotak",
+      "series": "chairs/director series",
+      "primaryId": "SfgI0z4vRA5blg633yF8UT",
+      "newSlug": "kotak",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Milano",
+      "series": "chairs/director series",
+      "primaryId": "SfgI0z4vRA5blg633yFVt3",
+      "newSlug": "milano",
+      "variantsAdded": 3,
+      "productsDeleted": 2,
+      "status": "success"
+    },
+    {
+      "baseName": "Monarch",
+      "series": "chairs/director series",
+      "primaryId": "azxCCZJCUCHUDe0xTqdMtg",
+      "newSlug": "monarch",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Nissan",
+      "series": "chairs/director series",
+      "primaryId": "SfgI0z4vRA5blg633yFkaN",
+      "newSlug": "nissan",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Opera",
+      "series": "chairs/director series",
+      "primaryId": "PYCfep3q5TfxEMsSZm4m9R",
+      "newSlug": "opera",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Parker",
+      "series": "chairs/director series",
+      "primaryId": "azxCCZJCUCHUDe0xTqdpV4",
+      "newSlug": "parker",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Tycoon",
+      "series": "chairs/director series",
+      "primaryId": "azxCCZJCUCHUDe0xTqdpnD",
+      "newSlug": "tycoon",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Woodland",
+      "series": "chairs/director series",
+      "primaryId": "azxCCZJCUCHUDe0xTqdqBP",
+      "newSlug": "woodland",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Bb",
+      "series": "chairs/ergonomic series",
+      "primaryId": "SfgI0z4vRA5blg633yFn5n",
+      "newSlug": "bb",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Cobra",
+      "series": "chairs/ergonomic series",
+      "primaryId": "PYCfep3q5TfxEMsSZm4puT",
+      "newSlug": "cobra",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Craft",
+      "series": "chairs/ergonomic series",
+      "primaryId": "SfgI0z4vRA5blg633yFoJ9",
+      "newSlug": "craft",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Marvel",
+      "series": "chairs/ergonomic series",
+      "primaryId": "PYCfep3q5TfxEMsSZm4yum",
+      "newSlug": "marvel",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Matrix",
+      "series": "chairs/ergonomic series",
+      "primaryId": "SfgI0z4vRA5blg633yFu2j",
+      "newSlug": "matrix",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Vivo",
+      "series": "chairs/ergonomic series",
+      "primaryId": "SfgI0z4vRA5blg633yFxzd",
+      "newSlug": "vivo",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Commander",
+      "series": "chairs/executive series",
+      "primaryId": "azxCCZJCUCHUDe0xTqdwaB",
+      "newSlug": "commander",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Korean",
+      "series": "chairs/executive series",
+      "primaryId": "PYCfep3q5TfxEMsSZm5BMh",
+      "newSlug": "korean",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Makson",
+      "series": "chairs/executive series",
+      "primaryId": "PYCfep3q5TfxEMsSZm5Cvn",
+      "newSlug": "makson",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Nano",
+      "series": "chairs/executive series",
+      "primaryId": "azxCCZJCUCHUDe0xTqdxkl",
+      "newSlug": "nano",
+      "variantsAdded": 3,
+      "productsDeleted": 2,
+      "status": "success"
+    },
+    {
+      "baseName": "Phantom",
+      "series": "chairs/executive series",
+      "primaryId": "azxCCZJCUCHUDe0xTqdyHQ",
+      "newSlug": "phantom",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Premier",
+      "series": "chairs/executive series",
+      "primaryId": "SfgI0z4vRA5blg633yG2YD",
+      "newSlug": "premier",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Safari",
+      "series": "chairs/executive series",
+      "primaryId": "SfgI0z4vRA5blg633yG35B",
+      "newSlug": "safari",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Skoda",
+      "series": "chairs/executive series",
+      "primaryId": "PYCfep3q5TfxEMsSZm5I1M",
+      "newSlug": "skoda",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "Wilson",
+      "series": "chairs/executive series",
+      "primaryId": "azxCCZJCUCHUDe0xTqe0jq",
+      "newSlug": "wilson",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "30mm Panel Based Partition",
+      "series": "modular-furniture/Low Partition",
+      "primaryId": "imported-product-30mm-panel-based-partition",
+      "newSlug": "30mm-panel-based-partition",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    },
+    {
+      "baseName": "50mm Panel Based Partition",
+      "series": "modular-furniture/Low Partition",
+      "primaryId": "imported-product-50mm-panel-based-partition",
+      "newSlug": "50mm-panel-based-partition",
+      "variantsAdded": 2,
+      "productsDeleted": 1,
+      "status": "success"
+    }
+  ]
+}
