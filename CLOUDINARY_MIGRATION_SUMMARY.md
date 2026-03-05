@@ -3,7 +3,9 @@
 ## What Was Created
 
 ### 1. Main Script: `scripts/assign-cloudinary-images.ts` (174 lines)
+
 The primary entrypoint that orchestrates the entire migration workflow:
+
 - Fetches all products from Sanity
 - Delegates analysis to utility modules
 - Manages user interaction and confirmation
@@ -11,6 +13,7 @@ The primary entrypoint that orchestrates the entire migration workflow:
 - Executes migrations with real-time feedback
 
 **Run with:**
+
 ```bash
 npx tsx scripts/assign-cloudinary-images.ts --analyze
 npx tsx scripts/assign-cloudinary-images.ts --preview
@@ -18,7 +21,9 @@ npx tsx scripts/assign-cloudinary-images.ts --execute
 ```
 
 ### 2. Utilities: `scripts/lib/image-migration.ts` (142 lines)
+
 Pure functional utilities for image analysis and transformation:
+
 - `extractAssetId()`: Parses Sanity CDN URLs to extract asset identifiers
 - `generateCloudinaryUrl()`: Creates Cloudinary URLs from asset IDs and product slugs
 - `analyzeMigrations()`: Categorizes products into migration types
@@ -26,11 +31,14 @@ Pure functional utilities for image analysis and transformation:
 - Type definitions for type safety
 
 ### 3. Reporting: `scripts/lib/report-formatter.ts` (72 lines)
+
 UI/Display functions for clear console output:
+
 - `printAnalysisReport()`: Formatted summary with statistics
 - `printPreviewMode()`: Side-by-side URL comparison preview
 
 ### 4. Documentation
+
 - **docs/CLOUDINARY_IMAGE_MIGRATION.md** (269 lines) - Comprehensive guide
 - **docs/IMAGE_MIGRATION_EXAMPLES.md** (432 lines) - Real-world examples and patterns
 - **scripts/ASSIGN_IMAGES_README.md** (245 lines) - Quick reference card
@@ -40,12 +48,15 @@ UI/Display functions for clear console output:
 ## Three-Mode Workflow
 
 ### Mode 1: `--analyze` (Read-Only Assessment)
+
 ```bash
 npx tsx scripts/assign-cloudinary-images.ts --analyze
 ```
+
 **Purpose:** Understand your current state without making changes
 
 **Output:**
+
 - Console report showing summary statistics
 - `image-migration-map.json` with complete breakdown
 - Breakdown of:
@@ -58,12 +69,15 @@ npx tsx scripts/assign-cloudinary-images.ts --analyze
 ---
 
 ### Mode 2: `--preview` (What-If Analysis)
+
 ```bash
 npx tsx scripts/assign-cloudinary-images.ts --preview
 ```
+
 **Purpose:** See exactly what WOULD happen before execution
 
 **Output:**
+
 - Full analysis report (same as --analyze)
 - Side-by-side comparison of first 3 migrations:
   ```
@@ -78,12 +92,15 @@ npx tsx scripts/assign-cloudinary-images.ts --preview
 ---
 
 ### Mode 3: `--execute` (Apply Changes)
+
 ```bash
 npx tsx scripts/assign-cloudinary-images.ts --execute
 ```
+
 **Purpose:** Actually update Sanity with new Cloudinary URLs
 
 **Workflow:**
+
 1. Shows full analysis report
 2. Prompts for confirmation: `⚠️  This will update 104 products in Sanity. Continue? (yes/no):`
 3. Updates each product in sequence with real-time status
@@ -91,6 +108,7 @@ npx tsx scripts/assign-cloudinary-images.ts --execute
 5. Saves timestamped report
 
 **Safety features:**
+
 - ✅ Requires explicit yes/no confirmation
 - ✅ Real-time feedback per product
 - ✅ Numbered tracking of success/failures
@@ -121,11 +139,13 @@ npx tsx scripts/assign-cloudinary-images.ts --execute
 ## Migration URL Format
 
 All Cloudinary URLs follow this pattern:
+
 ```
 https://res.cloudinary.com/dqde19mfs/image/{product-slug}/{asset-id}.jpg
 ```
 
 **Real example:**
+
 ```
 Before: https://cdn.sanity.io/images/n6xqwypu/production/4625b0e4cfd1776818f1b8376b1aad643029df4b-263x433.jpg
 After:  https://res.cloudinary.com/dqde19mfs/image/amazon/4625b0e4cfd1776818f1b8376b1aad643029df4b.jpg
@@ -136,29 +156,34 @@ After:  https://res.cloudinary.com/dqde19mfs/image/amazon/4625b0e4cfd1776818f1b8
 ## Key Features
 
 ✅ **Three Operational Modes**
+
 - Analyze (safe, read-only)
 - Preview (safe, shows what would happen)
 - Execute (with confirmation, makes changes)
 
 ✅ **Complete Audit Trail**
+
 - Timestamped reports
 - Before/after URLs
 - Success/failure tracking
 - Category breakdown
 
 ✅ **Robust Error Handling**
+
 - Validates URL format
 - Skips products with invalid URLs
 - Reports failures without stopping
 - Tracks partial migrations
 
 ✅ **Production-Ready Code**
+
 - Modular design (3 files, all under 350 lines)
 - TypeScript with full type safety
 - Functional programming style
 - Zero code duplication
 
 ✅ **Safe Workflows**
+
 - User confirmation required before changes
 - Real-time feedback on each update
 - No automatic execution
@@ -186,6 +211,7 @@ docs/
 ## Environment Requirements
 
 Ensure `.env.local` has:
+
 ```env
 NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
 NEXT_PUBLIC_SANITY_DATASET=production
@@ -220,6 +246,7 @@ npx tsx scripts/assign-cloudinary-images.ts --execute
 ## Output Files
 
 After each run:
+
 - **image-migration-map.json** (50KB)
   - Complete analysis results
   - Sorted by migration type
@@ -231,12 +258,14 @@ After each run:
 ## Next Steps
 
 ### For Auto-Migrate (104 products)
+
 1. ✅ Run `--analyze` to confirm 104 candidates
 2. ✅ Run `--preview` for QA
 3. ✅ Run `--execute` to apply changes
 4. ✅ Verify images load in UI
 
 ### For No-Image (75 products)
+
 1. ⚠️ Categorize by product type (chairs, desks, storage)
 2. ⚠️ Search for images (archives, galleries, suppliers)
 3. ⚠️ Upload to Cloudinary
@@ -244,6 +273,7 @@ After each run:
 5. ⚠️ Rerun migration script
 
 ### For Categorization Integration
+
 1. Run: `npx tsx scripts/infer-product-categories.ts --save`
 2. Creates: `categorization-fixes.json` (70 uncategorized)
 3. Cross-reference with `image-migration-map.json`
@@ -255,6 +285,7 @@ After each run:
 ## Testing Verification
 
 The script has been:
+
 - ✅ Compiled with TypeScript (no errors)
 - ✅ Tested in `--analyze` mode (179 products)
 - ✅ Tested in `--preview` mode (URL generation verified)
@@ -309,6 +340,7 @@ Missing Images:           75 ❌
 ## Summary
 
 You now have a complete, production-ready image migration solution that:
+
 - ✅ Analyzes 179 products in seconds
 - ✅ Identifies 104 auto-migration candidates
 - ✅ Generates detailed implementation reports

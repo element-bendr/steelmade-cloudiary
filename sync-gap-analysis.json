@@ -1,0 +1,719 @@
+{
+  "timestamp": "2026-03-05T13:05:48.274Z",
+  "summary": {
+    "totalProducts": 179,
+    "withCloudinary": 81,
+    "withSanityOnly": 51,
+    "withNoImage": 47,
+    "withAnyImage": 132,
+    "unmappedImages": 0,
+    "percentComplete": 45,
+    "percentWithImages": 74
+  },
+  "gaps": {
+    "productsNoImage": [
+      {
+        "id": "imported-product-visitor-classic-chair",
+        "name": "Visitor Classic Chair",
+        "slug": "visitor-classic-chair",
+        "category": "chairs",
+        "series": "Visitor Series"
+      },
+      {
+        "id": "imported-product-apex-workstation",
+        "name": "Apex Workstation",
+        "slug": "apex-workstation",
+        "category": "desks",
+        "series": "Designer Desk Collection"
+      },
+      {
+        "id": "imported-product-horizon-desk",
+        "name": "Horizon Desk",
+        "slug": "horizon-desk",
+        "category": "desks",
+        "series": "Designer Desk Collection"
+      },
+      {
+        "id": "imported-product-modcabinet",
+        "name": "ModCabinet",
+        "slug": "modcabinet",
+        "category": "storage-solutions",
+        "series": "Storage Solutions"
+      },
+      {
+        "id": "imported-product-wallstore",
+        "name": "WallStore",
+        "slug": "wallstore",
+        "category": "storage-solutions",
+        "series": "Storage Solutions"
+      },
+      {
+        "id": "product-chairs-director-series-ashley-director-chair",
+        "name": "Ashley Director Chair",
+        "slug": "ashley-director-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-director-series-bigboss-gold-director-chair",
+        "name": "BigBoss Gold Director Chair",
+        "slug": "bigboss-gold-director-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-director-series-boston-director-chair",
+        "name": "Boston Director Chair",
+        "slug": "boston-director-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-ergonomic-series-cobra-ergonomic-chair",
+        "name": "Cobra Ergonomic Chair",
+        "slug": "cobra-ergonomic-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-executive-series-commander-chair",
+        "name": "Commander Executive Chair",
+        "slug": "commander-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-ergonomic-series-craft-ergonomic-chair",
+        "name": "Craft Ergonomic Chair",
+        "slug": "craft-ergonomic-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-ergonomic-series-flame-ergonomic-chair",
+        "name": "Flame Ergonomic Chair",
+        "slug": "flame-ergonomic-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-ergonomic-series-flamingo-ergonomic-chair",
+        "name": "Flamingo Ergonomic Chair",
+        "slug": "flamingo-ergonomic-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-visitor-series-visitor-flora",
+        "name": "Flora Visitor Chair",
+        "slug": "visitor-flora",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-director-series-grandezza-director-chair",
+        "name": "Grandezza Director Chair",
+        "slug": "grandezza-director-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-ergonomic-series-honda-ergonomic-chair",
+        "name": "Honda Ergonomic Chair",
+        "slug": "honda-ergonomic-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-executive-series-korean-chair",
+        "name": "Korean Executive Chair",
+        "slug": "korean-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-director-series-kotak-director-chair",
+        "name": "Kotak Director Chair",
+        "slug": "kotak-director-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-visitor-series-visitor-liberty",
+        "name": "Liberty Visitor Chair",
+        "slug": "visitor-liberty",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-executive-series-makson-executive-chair",
+        "name": "Makson Executive Chair",
+        "slug": "makson-executive-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-ergonomic-series-marvel-ergonomic-chair",
+        "name": "Marvel Ergonomic Chair",
+        "slug": "marvel-ergonomic-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-ergonomic-series-matrix-ergonomic-chair",
+        "name": "Matrix Ergonomic Chair",
+        "slug": "matrix-ergonomic-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-director-series-milano-director-chair",
+        "name": "Milano Director Chair",
+        "slug": "milano-director-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-executive-series-mini-ginger-dolphin-executive-chair",
+        "name": "Mini / Ginger / Dolphin Executive Chair",
+        "slug": "mini-ginger-dolphin-executive-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-director-series-monarch-director-chair",
+        "name": "Monarch Director Chair",
+        "slug": "monarch-director-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-ergonomic-series-mono-ergonomic-chair",
+        "name": "Mono Ergonomic Chair",
+        "slug": "mono-ergonomic-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-executive-series-nano-executive-chair",
+        "name": "Nano Executive Chair",
+        "slug": "nano-executive-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-ergonomic-series-navy-ergonomic-chair",
+        "name": "Navy Ergonomic Chair",
+        "slug": "navy-ergonomic-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-director-series-nissan-director-chair",
+        "name": "Nissan Director Chair",
+        "slug": "nissan-director-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-ergonomic-series-ola-roman",
+        "name": "Ola & Roman Ergonomic Chairs",
+        "slug": "ola-roman",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-director-series-opera-director-chair",
+        "name": "Opera Director Chair",
+        "slug": "opera-director-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-director-series-parker-director-chair",
+        "name": "Parker Director Chair",
+        "slug": "parker-director-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-executive-series-phantom-executive-chair",
+        "name": "Phantom Executive Chair",
+        "slug": "phantom-executive-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-ergonomic-series-pine-pony-windy",
+        "name": "Pine, Pony & Windy Ergonomic Chairs",
+        "slug": "pine-pony-windy",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-executive-series-premier-executive-chair",
+        "name": "Premier Executive Chair",
+        "slug": "premier-executive-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-visitor-series-visitor-regency",
+        "name": "Regency Visitor Chair",
+        "slug": "visitor-regency",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-ergonomic-series-robo-ergonomic-chair",
+        "name": "Robo Ergonomic Chair",
+        "slug": "robo-ergonomic-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-executive-series-skoda-executive-chair",
+        "name": "Skoda Executive Chair",
+        "slug": "skoda-executive-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-visitor-series-visitor-titan",
+        "name": "Titan Visitor Chair",
+        "slug": "visitor-titan",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-director-series-tycoon-director-chair",
+        "name": "Tycoon Director Chair",
+        "slug": "tycoon-director-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-executive-series-venus-rev-ud",
+        "name": "Venus Rev UD Executive Chair",
+        "slug": "venus-rev-ud",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-visitor-series-visitor-classic-chair",
+        "name": "Visitor Classic Chair",
+        "slug": "visitor-classic-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-visitor-series-visitor-venus-vista-chair",
+        "name": "Visitor Venus & Vista Chair",
+        "slug": "visitor-venus-vista-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-ergonomic-series-vivo-ergonomic-chair",
+        "name": "Vivo Ergonomic Chair",
+        "slug": "vivo-ergonomic-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-executive-series-wilson-executive-chair",
+        "name": "Wilson Executive Chair",
+        "slug": "wilson-executive-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-director-series-woodland-director-chair",
+        "name": "Woodland Director Chair",
+        "slug": "woodland-director-chair",
+        "category": null,
+        "series": null
+      },
+      {
+        "id": "product-chairs-ergonomic-series-zara-ergonomic-chair",
+        "name": "Zara Ergonomic Chair",
+        "slug": "zara-ergonomic-chair",
+        "category": null,
+        "series": null
+      }
+    ],
+    "productsWrongCdn": [
+      {
+        "id": "imported-product-ashley-director-chair",
+        "name": "Ashley Director Chair",
+        "slug": "ashley-director-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/fd4a0c2d2e2c7b55ebc1a9c8ee42a1e2c0de4523-574x863.jpg"
+      },
+      {
+        "id": "imported-product-bigboss-gold-director-chair",
+        "name": "BigBoss Gold Director Chair",
+        "slug": "bigboss-gold-director-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/3e88aec491da65f079818e4dcd17c58b4281ef3c-365x576.jpg"
+      },
+      {
+        "id": "imported-product-boston-director-chair",
+        "name": "Boston Director Chair",
+        "slug": "boston-director-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/7564ca103dcad2936d28703b9f24a5dbf03e697a-462x571.jpg"
+      },
+      {
+        "id": "imported-product-cobra-ergonomic-chair",
+        "name": "Cobra Ergonomic Chair",
+        "slug": "cobra-ergonomic-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/74cda341afec7e6bc29887ba9ec00c53b6ed67d0-500x500.png"
+      },
+      {
+        "id": "imported-product-commander-chair",
+        "name": "Commander Executive Chair",
+        "slug": "commander-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/ebd9d90c9b3b018184997fec9a838bfd43cb925b-283x414.jpg"
+      },
+      {
+        "id": "imported-product-craft-ergonomic-chair",
+        "name": "Craft Ergonomic Chair",
+        "slug": "craft-ergonomic-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/3e36925ccaee8e8b6a3bab4baeec421981c3246f-500x500.png"
+      },
+      {
+        "id": "drafts.imported-product-duster",
+        "name": "Duster Executive Chair",
+        "slug": "duster-executive-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/53035e5e3e9211e988f703d18935780ebe9265ff-262x394.jpg"
+      },
+      {
+        "id": "imported-product-flame-ergonomic-chair",
+        "name": "Flame Ergonomic Chair",
+        "slug": "flame-ergonomic-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/c96f91c461a4b250ec04f72bc29b2c3f4724adcd-500x500.png"
+      },
+      {
+        "id": "imported-product-flamingo-ergonomic-chair",
+        "name": "Flamingo Ergonomic Chair",
+        "slug": "flamingo-ergonomic-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/a88cbdd5eced4d0e9378f3a7cd687286528723ef-800x800.jpg"
+      },
+      {
+        "id": "imported-product-visitor-flora",
+        "name": "Flora Visitor Chair",
+        "slug": "visitor-flora",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/999957a398fdff64f3791ec8d9c07d7b9b3d533a-500x500.png"
+      },
+      {
+        "id": "imported-product-grandezza-director-chair",
+        "name": "Grandezza Director Chair",
+        "slug": "grandezza-director-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/4818bbc2c4ba15236dc87adf7e80bf1de1e29bf1-351x572.jpg"
+      },
+      {
+        "id": "imported-product-honda-ergonomic-chair",
+        "name": "Honda Ergonomic Chair",
+        "slug": "honda-ergonomic-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/247b58fafebb7b0043052fcbe4cd9c2f90135a67-500x500.png"
+      },
+      {
+        "id": "imported-product-korean-chair",
+        "name": "Korean Executive Chair",
+        "slug": "korean-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/ee4d5abc188f60c9dc6417af7816590e06b6188e-266x434.jpg"
+      },
+      {
+        "id": "imported-product-kotak-director-chair",
+        "name": "Kotak Director Chair",
+        "slug": "kotak-director-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/48a51aefb61865d32fefa13da51debbc4134605b-237x395.jpg"
+      },
+      {
+        "id": "imported-product-visitor-liberty",
+        "name": "Liberty Visitor Chair",
+        "slug": "visitor-liberty",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/e40b27a3ff77147135a5d5969f7f17c6733dc08d-500x500.png"
+      },
+      {
+        "id": "imported-product-makson-executive-chair",
+        "name": "Makson Executive Chair",
+        "slug": "makson-executive-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/e6b82275925aeed172c2af2a47eb93dfffa42914-181x276.jpg"
+      },
+      {
+        "id": "imported-product-marvel-ergonomic-chair",
+        "name": "Marvel Ergonomic Chair",
+        "slug": "marvel-ergonomic-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/6d2defb72c98cfc5d0663a4e931e0e26a676a852-500x500.png"
+      },
+      {
+        "id": "imported-product-matrix-ergonomic-chair",
+        "name": "Matrix Ergonomic Chair",
+        "slug": "matrix-ergonomic-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/8dd7ebaf12e4f7b4688e00b68030dee8fb0e8865-500x500.png"
+      },
+      {
+        "id": "imported-product-milano-director-chair",
+        "name": "Milano Director Chair",
+        "slug": "milano-director-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/5b3f1df16df62863a522eff8c0c619a818f14855-386x630.jpg"
+      },
+      {
+        "id": "imported-product-mini-ginger-dolphin-executive-chair",
+        "name": "Mini / Ginger / Dolphin Executive Chair",
+        "slug": "mini-ginger-dolphin-executive-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/fa49a610d9a8d0fb4defe59a1527b015157cc5de-213x276.jpg"
+      },
+      {
+        "id": "imported-product-monarch-director-chair",
+        "name": "Monarch Director Chair",
+        "slug": "monarch-director-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/1d1935b4f5ca25dfb1a01af259ef36b09ab30844-351x571.jpg"
+      },
+      {
+        "id": "imported-product-mono-ergonomic-chair",
+        "name": "Mono Ergonomic Chair",
+        "slug": "mono-ergonomic-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/8fa95f6a6815b94949a991495f0edc1e1ca9b574-500x500.png"
+      },
+      {
+        "id": "imported-product-nano-executive-chair",
+        "name": "Nano Executive Chair",
+        "slug": "nano-executive-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/f1b8914db0433666f473173647f700c0a1d4c70a-152x276.jpg"
+      },
+      {
+        "id": "imported-product-navy-ergonomic-chair",
+        "name": "Navy Ergonomic Chair",
+        "slug": "navy-ergonomic-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/0e159b85e5586e9078cca50c3d1cde750c081f98-500x500.png"
+      },
+      {
+        "id": "imported-product-nissan-director-chair",
+        "name": "Nissan Director Chair",
+        "slug": "nissan-director-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/15ead8fce7152603027d1241cdc28d83e86456a3-299x346.jpg"
+      },
+      {
+        "id": "imported-product-ola-roman",
+        "name": "Ola & Roman Ergonomic Chairs",
+        "slug": "ola-roman",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/0ab65cda20c8a0bc08dbc376a1412dd521a5aa44-500x500.png"
+      },
+      {
+        "id": "imported-product-opera-director-chair",
+        "name": "Opera Director Chair",
+        "slug": "opera-director-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/fa48756b25edf3a62efc41249fc637a65f2de6b8-600x800.jpg"
+      },
+      {
+        "id": "imported-product-parker-director-chair",
+        "name": "Parker Director Chair",
+        "slug": "parker-director-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/88f1ec51e95ff2fa940ce8b2786e4272418e3442-1152x1728.jpg"
+      },
+      {
+        "id": "imported-product-phantom-executive-chair",
+        "name": "Phantom Executive Chair",
+        "slug": "phantom-executive-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/e6cfff55a3faf77780ff46194c0272be4b75cbfb-192x276.jpg"
+      },
+      {
+        "id": "imported-product-pine-pony-windy",
+        "name": "Pine, Pony & Windy Ergonomic Chairs",
+        "slug": "pine-pony-windy",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/2c12d94b883de3e0ff0a5ecb6d6be68578421fd7-500x500.png"
+      },
+      {
+        "id": "imported-product-premier-executive-chair",
+        "name": "Premier Executive Chair",
+        "slug": "premier-executive-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/1f78a0aaf22231391293b55e1a33066f5ab27926-156x276.jpg"
+      },
+      {
+        "id": "imported-product-visitor-regency",
+        "name": "Regency Visitor Chair",
+        "slug": "visitor-regency",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/197f28d616baea89cc6bbb96ae3e3a7d510b520c-500x500.png"
+      },
+      {
+        "id": "imported-product-robo-ergonomic-chair",
+        "name": "Robo Ergonomic Chair",
+        "slug": "robo-ergonomic-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/d9f9e109fe4dd460baa26bd9aa945012d94077a7-500x500.png"
+      },
+      {
+        "id": "imported-product-skoda-executive-chair",
+        "name": "Skoda Executive Chair",
+        "slug": "skoda-executive-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/d601602de35a4985e6547c29e5534e26c082af0d-159x277.jpg"
+      },
+      {
+        "id": "imported-product-visitor-titan",
+        "name": "Titan Visitor Chair",
+        "slug": "visitor-titan",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/66bb964f3ee5c927ca9a487364687d14d71e0cd0-500x500.png"
+      },
+      {
+        "id": "imported-product-tycoon-director-chair",
+        "name": "Tycoon Director Chair",
+        "slug": "tycoon-director-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/c95b1b2d948a013b53f43624eb12a1144b01bbc5-356x572.jpg"
+      },
+      {
+        "id": "imported-product-venus-rev-ud",
+        "name": "Venus Rev UD Executive Chair",
+        "slug": "venus-rev-ud",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/9ab8ef9c14b485fbb76f8e63d3951a8a60b68fa0-600x800.jpg"
+      },
+      {
+        "id": "imported-product-visitor-venus-vista-chair",
+        "name": "Visitor Venus & Vista Chair",
+        "slug": "visitor-venus-vista-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/b9de72c1f996976ef6122a56c5d910af0f5ad359-500x500.png"
+      },
+      {
+        "id": "imported-product-vivo-ergonomic-chair",
+        "name": "Vivo Ergonomic Chair",
+        "slug": "vivo-ergonomic-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/6eb5951683cdc4795ead3ce1e6479c124d12f557-500x500.png"
+      },
+      {
+        "id": "imported-product-wilson-executive-chair",
+        "name": "Wilson Executive Chair",
+        "slug": "wilson-executive-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/043513ad3561a9161faaa25fb52b85947f4653c2-175x276.jpg"
+      },
+      {
+        "id": "imported-product-woodland-director-chair",
+        "name": "Woodland Director Chair",
+        "slug": "woodland-director-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/731d0ed89e59a871b9370ef263b3fb89b352a9f3-600x800.jpg"
+      },
+      {
+        "id": "imported-product-zara-ergonomic-chair",
+        "name": "Zara Ergonomic Chair",
+        "slug": "zara-ergonomic-chair",
+        "category": "chairs",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/d1b0c9d70bfa519f54eb61b91ad6a899d2500c02-500x500.png"
+      },
+      {
+        "id": "imported-product-18mm-accessory-rail",
+        "name": "18mm Accessory Rail",
+        "slug": "18mm-accessory-rail",
+        "category": "modular-furniture",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/7f9552da61461fad97f30b79a2452168bbd8b455-500x500.png"
+      },
+      {
+        "id": "imported-product-30mm-panel-based-partition-2",
+        "name": "30mm Panel Based Partition (Variant)",
+        "slug": "30mm-panel-based-partition-2",
+        "category": "modular-furniture",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/7db21f43e2cd91caf3044b24da475a30b2c62c6f-500x500.png"
+      },
+      {
+        "id": "imported-product-50mm-panel-based-partition-2",
+        "name": "50mm Panel Based Partition (Variant)",
+        "slug": "50mm-panel-based-partition-2",
+        "category": "modular-furniture",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/780dab90569ae362ffdb65656ac462de4788b2db-500x500.png"
+      },
+      {
+        "id": "imported-product-8mm-accessory-rail",
+        "name": "8mm Accessory Rail",
+        "slug": "8mm-accessory-rail",
+        "category": "modular-furniture",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/d1ea46d58efb903b2cbad12c61a38ca764df799e-500x500.png"
+      },
+      {
+        "id": "imported-product-edge-profiler",
+        "name": "Edge Profiler",
+        "slug": "edge-profiler",
+        "category": "modular-furniture",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/e9562bd79c69de48f398c0ec6cc37790c12092eb-500x500.png"
+      },
+      {
+        "id": "imported-product-glass-clamp",
+        "name": "Glass Clamp",
+        "slug": "glass-clamp",
+        "category": "modular-furniture",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/c0983dc481b62ddde5234e4e45b10fc64f2049a9-500x500.png"
+      },
+      {
+        "id": "imported-product-marvel-workstation",
+        "name": "Marvel Series Workstation",
+        "slug": "marvel-workstation",
+        "category": "modular-furniture",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/a9e40adbb67d5e5db733d55d9a9046601cfa8800-500x500.png"
+      },
+      {
+        "id": "imported-product-metal-divider",
+        "name": "Metal Divider",
+        "slug": "metal-divider",
+        "category": "modular-furniture",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/71dda2625ab929b73f8967f07552c6f39d9d0157-500x500.png"
+      },
+      {
+        "id": "imported-product-neo-eco-series",
+        "name": "Neo Eco Series Workstation",
+        "slug": "neo-eco-series",
+        "category": "modular-furniture",
+        "sanityUrl": "https://cdn.sanity.io/images/n6xqwypu/production/7461c196d2610e799d36584f28aff2a8973485a4-500x500.png"
+      }
+    ]
+  },
+  "quickWins": {
+    "highConfidenceMappings": 2,
+    "mediumConfidenceMappings": 19,
+    "estimatedRecovery": 15
+  },
+  "recommendations": [
+    "Apply categorization-fixes.json (steelmade-6md)",
+    "Execute high-confidence image mappings",
+    "Review medium-confidence mappings",
+    "Migrate Sanity CDN images to Cloudinary",
+    "Manual assignment for remaining products",
+    "Establish naming convention and upload process",
+    "Add verification to CI/CD pipeline"
+  ]
+}

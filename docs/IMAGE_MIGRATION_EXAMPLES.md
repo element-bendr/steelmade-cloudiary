@@ -49,6 +49,7 @@ Missing Images:           75
 ```
 
 **Analysis:**
+
 - ✅ 104 products can be automatically migrated
 - ⚠️ 0 issues requiring manual intervention
 - ❌ 75 products need image assignment (blocking user-facing features)
@@ -60,8 +61,8 @@ Missing Images:           75
 ### Example 2: Detailed Analysis
 
 ```bash
-$ cat image-migration-map.json | jq '.migrations.auto[] | 
-  {id: .productId, name: .productName, current: .currentUrl, 
+$ cat image-migration-map.json | jq '.migrations.auto[] |
+  {id: .productId, name: .productName, current: .currentUrl,
    new: .suggestedCloudinaryUrl}' | head -40
 
 {
@@ -80,6 +81,7 @@ $ cat image-migration-map.json | jq '.migrations.auto[] |
 ```
 
 **Pattern observed:**
+
 - Asset IDs are preserved in migration
 - Only the host domain changes
 - Dimensions are removed from new URL
@@ -90,7 +92,7 @@ $ cat image-migration-map.json | jq '.migrations.auto[] |
 ### Example 3: Products Missing Images
 
 ```bash
-$ cat image-migration-map.json | jq '.migrations.noImage[] | 
+$ cat image-migration-map.json | jq '.migrations.noImage[] |
   {id: .productId, name: .productName, category: .category}' | head -30
 
 {
@@ -113,6 +115,7 @@ $ cat image-migration-map.json | jq '.migrations.noImage[] |
 ```
 
 **Action Items:**
+
 1. Categorize by product type
 2. Determine if images exist elsewhere (Google Drive, Archive, etc.)
 3. Prioritize high-visibility products first
@@ -145,6 +148,7 @@ ashley-director-chair:
 ```
 
 **QA Checklist:**
+
 - ✅ URLs are properly formatted
 - ✅ Asset IDs are preserved
 - ✅ Slugs are correctly normalized
@@ -188,6 +192,7 @@ $ npx tsx scripts/assign-cloudinary-images.ts --execute
 ```
 
 **Verification:**
+
 - All 104 products successfully updated
 - Zero failures
 - Sanity database now contains Cloudinary URLs
@@ -329,12 +334,15 @@ if (dryRun) {
 ### Add Batch Processing
 
 ```typescript
-const batchSize = parseInt(args.find(a => a.startsWith('--batch='))?.split('=')[1] || '50', 10);
+const batchSize = parseInt(
+  args.find((a) => a.startsWith('--batch='))?.split('=')[1] || '50',
+  10
+);
 
 for (let i = 0; i < actions.length; i += batchSize) {
   const batch = actions.slice(i, i + batchSize);
   await processBatch(batch);
-  console.log(`✅ Batch ${Math.ceil(i/batchSize)}: ${batch.length} products`);
+  console.log(`✅ Batch ${Math.ceil(i / batchSize)}: ${batch.length} products`);
 }
 ```
 

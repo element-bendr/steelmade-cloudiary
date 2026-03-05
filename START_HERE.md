@@ -3,23 +3,26 @@
 ## 📦 Deliverables Overview
 
 ### ✅ Production Code
-| File | Lines | Purpose |
-|------|-------|---------|
-| [`scripts/assign-cloudinary-images.ts`](scripts/assign-cloudinary-images.ts) | 174 | Main CLI entrypoint with mode selection and Sanity integration |
-| [`scripts/lib/image-migration.ts`](scripts/lib/image-migration.ts) | 142 | Core utilities: URL parsing, asset extraction, migration analysis |
-| [`scripts/lib/report-formatter.ts`](scripts/lib/report-formatter.ts) | 72 | Display/UI functions for console output and reports |
+
+| File                                                                         | Lines | Purpose                                                           |
+| ---------------------------------------------------------------------------- | ----- | ----------------------------------------------------------------- |
+| [`scripts/assign-cloudinary-images.ts`](scripts/assign-cloudinary-images.ts) | 174   | Main CLI entrypoint with mode selection and Sanity integration    |
+| [`scripts/lib/image-migration.ts`](scripts/lib/image-migration.ts)           | 142   | Core utilities: URL parsing, asset extraction, migration analysis |
+| [`scripts/lib/report-formatter.ts`](scripts/lib/report-formatter.ts)         | 72    | Display/UI functions for console output and reports               |
 
 ### 📚 Documentation
-| File | Purpose |
-|------|---------|
+
+| File                                                                       | Purpose                                          |
+| -------------------------------------------------------------------------- | ------------------------------------------------ |
 | [`docs/CLOUDINARY_IMAGE_MIGRATION.md`](docs/CLOUDINARY_IMAGE_MIGRATION.md) | Comprehensive guide with phase-by-phase workflow |
-| [`docs/IMAGE_MIGRATION_EXAMPLES.md`](docs/IMAGE_MIGRATION_EXAMPLES.md) | Real-world usage patterns and recovery scenarios |
-| [`scripts/ASSIGN_IMAGES_README.md`](scripts/ASSIGN_IMAGES_README.md) | Quick reference card for rapid lookup |
-| [`CLOUDINARY_MIGRATION_SUMMARY.md`](CLOUDINARY_MIGRATION_SUMMARY.md) | This file - complete overview |
+| [`docs/IMAGE_MIGRATION_EXAMPLES.md`](docs/IMAGE_MIGRATION_EXAMPLES.md)     | Real-world usage patterns and recovery scenarios |
+| [`scripts/ASSIGN_IMAGES_README.md`](scripts/ASSIGN_IMAGES_README.md)       | Quick reference card for rapid lookup            |
+| [`CLOUDINARY_MIGRATION_SUMMARY.md`](CLOUDINARY_MIGRATION_SUMMARY.md)       | This file - complete overview                    |
 
 ### 📊 Reports Generated
-| File | Purpose |
-|------|---------|
+
+| File                       | Purpose                                             |
+| -------------------------- | --------------------------------------------------- |
 | `image-migration-map.json` | Auto-generated analysis report (50KB, 179 products) |
 
 ---
@@ -27,25 +30,31 @@
 ## 🚀 Quick Start (3 Simple Commands)
 
 ### Step 1: Analyze (Read-Only)
+
 ```bash
 npx tsx scripts/assign-cloudinary-images.ts --analyze
 ```
+
 ✅ Safe - no database changes  
 📊 Shows: 104 can auto-migrate, 75 missing images  
 📄 Creates: image-migration-map.json
 
 ### Step 2: Preview (What-If)
+
 ```bash
 npx tsx scripts/assign-cloudinary-images.ts --preview
 ```
+
 ✅ Safe - no database changes  
 👁️ Shows: 3 example URL transformations  
 📄 Updates: image-migration-map.json
 
 ### Step 3: Execute (Apply Changes)
+
 ```bash
 npx tsx scripts/assign-cloudinary-images.ts --execute
 ```
+
 ⚠️ Requires YES/NO confirmation  
 ✅ Updates: 104 products in Sanity  
 📄 Creates: timestamped audit report
@@ -75,14 +84,17 @@ After:  https://res.cloudinary.com/dqde19mfs/image/amazon/4625b0e4cfd1776...
 ## 🎯 How to Use Each Mode
 
 ### `--analyze` (Assessment)
+
 **When to use:** Understanding scope, tracking progress, reporting to stakeholders
 
 **Command:**
+
 ```bash
 npx tsx scripts/assign-cloudinary-images.ts --analyze
 ```
 
 **Output:**
+
 - Console summary (10 seconds)
 - JSON report with categories
 - No database changes
@@ -92,14 +104,17 @@ npx tsx scripts/assign-cloudinary-images.ts --analyze
 ---
 
 ### `--preview` (Quality Assurance)
+
 **When to use:** Code review, QA, validating transformations
 
 **Command:**
+
 ```bash
 npx tsx scripts/assign-cloudinary-images.ts --preview
 ```
 
 **Output:**
+
 - Full analysis report
 - Side-by-side URL examples
 - No database changes
@@ -109,14 +124,17 @@ npx tsx scripts/assign-cloudinary-images.ts --preview
 ---
 
 ### `--execute` (Production Deployment)
+
 **When to use:** When ready to commit changes to production
 
 **Command:**
+
 ```bash
 npx tsx scripts/assign-cloudinary-images.ts --execute
 ```
 
 **Workflow:**
+
 1. Shows full report (same as `--analyze`)
 2. Prompts: `⚠️  This will update 104 products in Sanity. Continue? (yes/no):`
 3. Updates each product (real-time feedback)
@@ -124,8 +142,9 @@ npx tsx scripts/assign-cloudinary-images.ts --execute
 5. Saves audited report with timestamp
 
 **Safety:**
+
 - ✅ Explicit confirmation required
-- ✅ Real-time progress tracking  
+- ✅ Real-time progress tracking
 - ✅ Failure tracking per product
 - ✅ Complete audit trail
 
@@ -151,7 +170,7 @@ npx tsx scripts/assign-cloudinary-images.ts --execute
         "currentUrl": "https://cdn.sanity.io/images/.../4625b0e4cfd...",
         "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/.../4625b0e4cfd...",
         "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
-      },
+      }
       // ... 103 more
     ],
     "manual": [],
@@ -161,7 +180,7 @@ npx tsx scripts/assign-cloudinary-images.ts --execute
         "productName": "Visitor Classic Chair",
         "type": "no-image",
         "reason": "No images found in Sanity"
-      },
+      }
       // ... 74 more
     ]
   },
@@ -178,49 +197,57 @@ npx tsx scripts/assign-cloudinary-images.ts --execute
 ## 🔧 Technical Details
 
 ### Architecture
+
 - **Modular Design:** 3 files, each under 350 lines (production standard)
 - **Functional Style:** Pure functions, immutable patterns
 - **Type Safety:** Full TypeScript with interfaces
 - **Error Handling:** Graceful failures per product
 
 ### File Breakdown
+
 - **Main Script (174 lines):** CLI, Sanity queries, orchestration
 - **Utilities (142 lines):** URL parsing, asset extraction, analysis logic
 - **Formatter (72 lines):** Console output formatting
 
 ### URL Pattern
+
 All Cloudinary URLs follow:
+
 ```
 https://res.cloudinary.com/dqde19mfs/image/{product-slug}/{asset-id}.jpg
 ```
 
 ### Asset ID Extraction
+
 Regex pattern for Sanity CDN URLs:
+
 ```typescript
-/cdn\.sanity\.io\/images\/[^/]+\/[^/]+\/([a-f0-9]+)-\d+x\d+/
+/cdn\.sanity\.io\/images\/[^/]+\/[^/]+\/([a-f0-9]+)-\d+x\d+/;
 ```
+
 Extracts the 32-character asset ID for Cloudinary mapping
 
 ---
 
 ## ✨ Key Features
 
-| Feature | Details |
-|---------|---------|
-| **Three Modes** | analyze (read), preview (safe), execute (apply) |
-| **Safe Execution** | User confirmation required before changes |
-| **Real-Time Feedback** | Progress shown per product |
-| **Error Handling** | Continues on failure, tracks failures |
-| **Audit Trail** | Timestamped JSON report with all data |
-| **Type Safety** | Full TypeScript, no `any` types |
-| **Modular Code** | Reusable utilities, under 350 lines each |
-| **Zero Dependencies** | Uses existing next-sanity client |
+| Feature                | Details                                         |
+| ---------------------- | ----------------------------------------------- |
+| **Three Modes**        | analyze (read), preview (safe), execute (apply) |
+| **Safe Execution**     | User confirmation required before changes       |
+| **Real-Time Feedback** | Progress shown per product                      |
+| **Error Handling**     | Continues on failure, tracks failures           |
+| **Audit Trail**        | Timestamped JSON report with all data           |
+| **Type Safety**        | Full TypeScript, no `any` types                 |
+| **Modular Code**       | Reusable utilities, under 350 lines each        |
+| **Zero Dependencies**  | Uses existing next-sanity client                |
 
 ---
 
 ## 📋 Usage Examples
 
 ### Example 1: Initial Assessment
+
 ```bash
 $ npx tsx scripts/assign-cloudinary-images.ts --analyze
 
@@ -233,6 +260,7 @@ $ cat image-migration-map.json | jq '.summary'
 ```
 
 ### Example 2: Code Review Preview
+
 ```bash
 $ npx tsx scripts/assign-cloudinary-images.ts --preview
 
@@ -244,6 +272,7 @@ amazon:
 ```
 
 ### Example 3: Production Execution
+
 ```bash
 $ npx tsx scripts/assign-cloudinary-images.ts --execute
 
@@ -264,18 +293,21 @@ $ npx tsx scripts/assign-cloudinary-images.ts --execute
 ## 🔍 Understanding Product States
 
 ### 1. Auto-Migrate (104 products) ✅
+
 - Status: Ready to go
 - From: Sanity CDN (cdn.sanity.io)
 - To: Cloudinary (res.cloudinary.com)
 - Action: Run `--execute`
 
 ### 2. Manual Assign (0 products) ✅
+
 - Status: No issues! (good news)
 - From: Various URLs
 - To: Requires human decision
 - Action: Not needed in this dataset
 
 ### 3. No Image (75 products) ❌
+
 - Status: Blocking users
 - From: Nothing/null
 - To: Needs assignment
@@ -286,6 +318,7 @@ $ npx tsx scripts/assign-cloudinary-images.ts --execute
 ## 🎯 Next Steps
 
 ### Immediate (Auto-Migrations)
+
 ```bash
 # 1. Review analysis
 npx tsx scripts/assign-cloudinary-images.ts --analyze
@@ -298,6 +331,7 @@ npx tsx scripts/assign-cloudinary-images.ts --execute
 ```
 
 ### Following (Missing Images)
+
 ```bash
 # 1. Analyze which categories need images
 cat image-migration-map.json | jq '.migrations.noImage[] | .productId'
@@ -316,12 +350,12 @@ npx tsx scripts/infer-product-categories.ts --save
 
 ## 📖 Documentation Navigation
 
-| Need | Read This |
-|------|-----------|
-| **Quick reference** | [`scripts/ASSIGN_IMAGES_README.md`](scripts/ASSIGN_IMAGES_README.md) |
-| **Complete guide** | [`docs/CLOUDINARY_IMAGE_MIGRATION.md`](docs/CLOUDINARY_IMAGE_MIGRATION.md) |
-| **Real examples** | [`docs/IMAGE_MIGRATION_EXAMPLES.md`](docs/IMAGE_MIGRATION_EXAMPLES.md) |
-| **System overview** | This file |
+| Need                | Read This                                                                  |
+| ------------------- | -------------------------------------------------------------------------- |
+| **Quick reference** | [`scripts/ASSIGN_IMAGES_README.md`](scripts/ASSIGN_IMAGES_README.md)       |
+| **Complete guide**  | [`docs/CLOUDINARY_IMAGE_MIGRATION.md`](docs/CLOUDINARY_IMAGE_MIGRATION.md) |
+| **Real examples**   | [`docs/IMAGE_MIGRATION_EXAMPLES.md`](docs/IMAGE_MIGRATION_EXAMPLES.md)     |
+| **System overview** | This file                                                                  |
 
 ---
 
@@ -343,6 +377,7 @@ npx tsx scripts/infer-product-categories.ts --save
 ## 🚨 Important Notes
 
 ### Environment Setup
+
 ```env
 NEXT_PUBLIC_SANITY_PROJECT_ID=your_id
 NEXT_PUBLIC_SANITY_DATASET=production
@@ -350,6 +385,7 @@ SANITY_API_TOKEN=your_token_with_write_permission
 ```
 
 ### Safety Considerations
+
 - `--analyze` is 100% safe (read-only)
 - `--preview` is 100% safe (read-only)
 - `--execute` requires YES/NO confirmation
@@ -357,7 +393,9 @@ SANITY_API_TOKEN=your_token_with_write_permission
 - Complete audit trail in JSON
 
 ### Rollback
+
 If needed, changes can be reversed via:
+
 1. Git history (check previous state)
 2. Manual Sanity edits
 3. Rerun `--analyze` to see new state
@@ -367,6 +405,7 @@ If needed, changes can be reversed via:
 ## 📞 Support
 
 For issues or questions, refer to:
+
 - Comprehensive guide: [`docs/CLOUDINARY_IMAGE_MIGRATION.md`](docs/CLOUDINARY_IMAGE_MIGRATION.md)
 - Examples & patterns: [`docs/IMAGE_MIGRATION_EXAMPLES.md`](docs/IMAGE_MIGRATION_EXAMPLES.md)
 - Source code: Check script comments

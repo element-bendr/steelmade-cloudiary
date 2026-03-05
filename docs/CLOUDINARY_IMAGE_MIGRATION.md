@@ -20,10 +20,12 @@ npx tsx scripts/assign-cloudinary-images.ts --analyze
 ```
 
 **Output:**
+
 - Console report showing image migration summary
 - `image-migration-map.json` file with detailed breakdown
 
 **What it shows:**
+
 - Total products and categorized image status
 - Number of products that can auto-migrate
 - Number needing manual assignment
@@ -38,12 +40,14 @@ npx tsx scripts/assign-cloudinary-images.ts --preview
 ```
 
 **Output:**
+
 - Full analysis report (same as --analyze)
 - Preview of first 3 migrations showing current vs new URLs
 - Count of remaining migrations
 - `image-migration-map.json` file
 
 **Use this to:**
+
 - Verify the URL transformations are correct
 - Check that asset IDs are being extracted properly
 - Ensure the suggested Cloudinary URLs look valid
@@ -57,6 +61,7 @@ npx tsx scripts/assign-cloudinary-images.ts --execute
 ```
 
 **Workflow:**
+
 1. Fetches all products from Sanity
 2. Analyzes each one
 3. Displays full report
@@ -66,6 +71,7 @@ npx tsx scripts/assign-cloudinary-images.ts --execute
 7. Saves final report to `image-migration-map.json`
 
 **Output:**
+
 ```
 ✅ Success: 45
 ❌ Failed:  2
@@ -193,6 +199,7 @@ npx tsx scripts/assign-cloudinary-images.ts --execute
 ```
 
 **How it works:**
+
 1. Extracts asset ID from Sanity CDN URL
 2. Maps to Cloudinary using product slug + asset ID
 3. Updates Sanity record automatically
@@ -215,6 +222,7 @@ npx tsx scripts/assign-cloudinary-images.ts --execute
 ```
 
 **What to do:**
+
 1. Review the current URL
 2. Determine if it's valid and can be used
 3. Either:
@@ -237,6 +245,7 @@ npx tsx scripts/assign-cloudinary-images.ts --execute
 ```
 
 **What to do:**
+
 1. Check if the product should have an image
 2. If yes:
    - Upload to Cloudinary
@@ -275,6 +284,7 @@ https://res.cloudinary.com/dqde19mfs/image/{product-slug}/{asset-id}.jpg
 ```
 
 **Example:**
+
 ```
 https://res.cloudinary.com/dqde19mfs/image/amazon/abc123def456.jpg
 ```
@@ -288,15 +298,19 @@ https://res.cloudinary.com/dqde19mfs/image/amazon/abc123def456.jpg
 ## Common Issues & Solutions
 
 ### Issue: "SANITY_API_TOKEN not found"
+
 **Solution:** Ensure `.env.local` has valid token with write permissions
 
 ### Issue: Many products in "manual-assign"
+
 **Solution:** Check URL formats in Sanity - may indicate data migration issue
 
 ### Issue: Expected more auto-migrate candidates
+
 **Solution:** Ensure products have `mainImage.asset.*` fields in Sanity schema
 
 ### Issue: "Error patching document"
+
 **Solution:** Verify Sanity token has `POST` permissions on `/documents` endpoint
 
 ---

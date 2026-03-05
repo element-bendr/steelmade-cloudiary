@@ -3,32 +3,38 @@
 ## Three Simple Commands
 
 ### 1. 🔍 Analyze (Safe - Read Only)
+
 ```bash
 npx tsx scripts/assign-cloudinary-images.ts --analyze
 ```
+
 Shows status without making changes. Generates `image-migration-map.json` report.
 
 ### 2. 👁️ Preview (Safe - What-If Analysis)
+
 ```bash
 npx tsx scripts/assign-cloudinary-images.ts --preview
 ```
+
 Shows what WOULD happen. Display first 3 migration examples. Good for QA.
 
 ### 3. 🚀 Execute (Creates Changes)
+
 ```bash
 npx tsx scripts/assign-cloudinary-images.ts --execute
 ```
+
 Makes actual updates to Sanity. Asks for confirmation before proceeding.
 
 ---
 
 ## What Each Mode Does
 
-| Mode | Input | Output | Changes DB? | Best Used For |
-|------|-------|--------|-------------|--------------|
-| `--analyze` | Sanity products | Report JSON | ❌ No | First review |
-| `--preview` | Sanity products | Report + examples | ❌ No | QA review |
-| `--execute` | Sanity products | Report + updates | ✅ Yes | Production |
+| Mode        | Input           | Output            | Changes DB? | Best Used For |
+| ----------- | --------------- | ----------------- | ----------- | ------------- |
+| `--analyze` | Sanity products | Report JSON       | ❌ No       | First review  |
+| `--preview` | Sanity products | Report + examples | ❌ No       | QA review     |
+| `--execute` | Sanity products | Report + updates  | ✅ Yes      | Production    |
 
 ---
 
@@ -90,11 +96,13 @@ npx tsx scripts/assign-cloudinary-images.ts --execute
 ## Cloudinary URL Format
 
 All URLs will be:
+
 ```
 https://res.cloudinary.com/dqde19mfs/image/{product-slug}/{asset-id}.jpg
 ```
 
 Example: `amazon` product
+
 ```
 https://res.cloudinary.com/dqde19mfs/image/amazon/abc123def456.jpg
 ```
@@ -104,18 +112,21 @@ https://res.cloudinary.com/dqde19mfs/image/amazon/abc123def456.jpg
 ## When to Use Each Mode
 
 **Use --analyze when:**
+
 - First time setting up migration
 - You want to understand current state
 - Before scheduling execution
 - To track progress over time
 
 **Use --preview when:**
+
 - Need to validate URL transformations
 - Doing QA or code review
 - Showing stakeholders what will happen
 - Testing in non-production environment
 
 **Use --execute when:**
+
 - You've reviewed --preview output
 - You have production Sanity access
 - You're ready to commit changes
@@ -125,12 +136,12 @@ https://res.cloudinary.com/dqde19mfs/image/amazon/abc123def456.jpg
 
 ## Troubleshooting
 
-| Problem | Cause | Solution |
-|---------|-------|----------|
-| "SANITY_API_TOKEN not found" | Missing .env.local | Add token to .env.local |
-| Script hangs | Network issue | Check Sanity API connectivity |
-| Many in "manual-assign" | URL format issue | Review Sanity schema |
-| Low "auto-migrate" count | Sanity CDN URLs not found | Check mainImage.asset fields |
+| Problem                      | Cause                     | Solution                      |
+| ---------------------------- | ------------------------- | ----------------------------- |
+| "SANITY_API_TOKEN not found" | Missing .env.local        | Add token to .env.local       |
+| Script hangs                 | Network issue             | Check Sanity API connectivity |
+| Many in "manual-assign"      | URL format issue          | Review Sanity schema          |
+| Low "auto-migrate" count     | Sanity CDN URLs not found | Check mainImage.asset fields  |
 
 ---
 
@@ -141,6 +152,7 @@ https://res.cloudinary.com/dqde19mfs/image/amazon/abc123def456.jpg
 - **No Image:** Should approach 0 (blocks users)
 
 **Goal:**
+
 ```
 Auto-Migrate: 140+  ✅
 Manual Assign: 0    ✅
@@ -152,6 +164,7 @@ No Image: 0         ✅
 ## Files Created
 
 After running script:
+
 - ✅ `image-migration-map.json` - Main deliverable
 - ✅ Console output with statistics
 - (For --execute) Sanity database updates
@@ -199,6 +212,7 @@ Missing Images:           74 ❌
 ## Need Help?
 
 Refer to `docs/CLOUDINARY_IMAGE_MIGRATION.md` for:
+
 - Detailed phase-by-phase workflow
 - Integration with categorization
 - Handling different image states
