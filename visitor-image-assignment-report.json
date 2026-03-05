@@ -1,0 +1,94 @@
+{
+  "cloudinaryAssets": 30,
+  "products": 43,
+  "uniqueImagesInUse": 31,
+  "needsReassignment": 12,
+  "availableImages": 0,
+  "productsNeedingImages": [
+    {
+      "productId": "product-chairs-ergonomic-series-bb",
+      "name": "BB Ergonomic Chair",
+      "slug": "bb",
+      "currentImage": "o-arms",
+      "needsImage": true
+    },
+    {
+      "productId": "imported-product-visitor-flora",
+      "name": "Flora Visitor Chair",
+      "slug": "visitor-flora",
+      "currentImage": "ic-153",
+      "needsImage": true
+    },
+    {
+      "productId": "product-chairs-visitor-series-visitor-liberty",
+      "name": "Liberty Visitor Chair",
+      "slug": "visitor-liberty",
+      "currentImage": "ic-93-lb",
+      "needsImage": true
+    },
+    {
+      "productId": "product-chairs-visitor-series-visitor-regency",
+      "name": "Regency Visitor Chair",
+      "slug": "visitor-regency",
+      "currentImage": "ic-93-lb",
+      "needsImage": true
+    },
+    {
+      "productId": "product-chairs-visitor-series-visitor-titan",
+      "name": "Titan Visitor Chair",
+      "slug": "visitor-titan",
+      "currentImage": "ic-93-lb",
+      "needsImage": true
+    },
+    {
+      "productId": "imported-product-visitor-classic-chair",
+      "name": "Visitor Classic Chair",
+      "slug": "visitor-classic-chair",
+      "currentImage": "ic-93-lb",
+      "needsImage": true
+    },
+    {
+      "productId": "product-chairs-visitor-series-visitor-classic-chair",
+      "name": "Visitor Classic Chair",
+      "slug": "visitor-classic-chair",
+      "currentImage": "ic-93-lb",
+      "needsImage": true
+    },
+    {
+      "productId": "product-chairs-visitor-series-visitor-venus-vista-chair",
+      "name": "Visitor Venus & Vista Chair",
+      "slug": "visitor-venus-vista-chair",
+      "currentImage": "ic-93-lb",
+      "needsImage": true
+    },
+    {
+      "productId": "imported-product-visitor-liberty",
+      "name": "Liberty Visitor Chair",
+      "slug": "visitor-liberty",
+      "currentImage": "ic-151",
+      "needsImage": true
+    },
+    {
+      "productId": "imported-product-visitor-regency",
+      "name": "Regency Visitor Chair",
+      "slug": "visitor-regency",
+      "currentImage": "ic-152",
+      "needsImage": true
+    },
+    {
+      "productId": "imported-product-visitor-titan",
+      "name": "Titan Visitor Chair",
+      "slug": "visitor-titan",
+      "currentImage": "ic-154",
+      "needsImage": true
+    },
+    {
+      "productId": "imported-product-visitor-venus-vista-chair",
+      "name": "Visitor Venus & Vista Chair",
+      "slug": "visitor-venus-vista-chair",
+      "currentImage": "ic-148",
+      "needsImage": true
+    }
+  ],
+  "unusedCloudinaryAssets": []
+}
