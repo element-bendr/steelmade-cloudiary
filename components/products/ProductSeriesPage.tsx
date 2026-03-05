@@ -17,6 +17,150 @@ interface ProductSeriesPageProps {
   seriesId: string;
 }
 
+const VARIANT_RULES: Array<{ label: string; test: (name: string, id: string) => boolean }> = [
+  {
+    label: "High Back",
+    test: (name, id) => /\bhigh[\s-]*back\b|\bhb\b/i.test(name) || /-(hb|high-back)$/.test(id),
+  },
+  {
+    label: "Mid Back",
+    test: (name, id) => /\bmid[\s-]*back\b|\bmb\b/i.test(name) || /-(mb|mid-back)$/.test(id),
+  },
+  {
+    label: "Low Back",
+    test: (name, id) => /\blow[\s-]*back\b|\blb\b/i.test(name) || /-(lb|low-back)$/.test(id),
+  },
+  {
+    label: "Visitor",
+    test: (name, id) => /\bvisitor\b|\bvisi\b/i.test(name) || /-(visitor|visi)$/.test(id),
+  },
+];
+
+function toTitleCase(value: string): string {
+  return value
+    .split(" ")
+    .filter(Boolean)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
+
+function extractVariantLabel(product: any): string | null {
+  const name = String(product?.name || "");
+  const id = String(product?.id || "").toLowerCase();
+  const rule = VARIANT_RULES.find((entry) => entry.test(name, id));
+  return rule?.label || null;
+}
+
+function toFamilyKey(product: any): string | null {
+  const name = String(product?.name || "").toLowerCase();
+  const id = String(product?.id || "").toLowerCase();
+  const variantLabel = extractVariantLabel(product);
+
+  if (!variantLabel) {
+    return null;
+  }
+
+  const cleanedName = name
+    .replace(/\b(high[\s-]*back|mid[\s-]*back|low[\s-]*back|visitor|visi|hb|mb|lb)\b/gi, " ")
+    .replace(/[()/_-]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  if (cleanedName.length >= 3) {
+    return cleanedName;
+  }
+
+  const cleanedId = id
+    .replace(/-(hb|mb|lb|high-back|mid-back|low-back|visitor|visi)$/g, "")
+    .replace(/[-_]+/g, " ")
+    .trim();
+
+  return cleanedId.length >= 3 ? cleanedId : null;
+}
+
+function groupStandaloneChairVariants(products: any[]): any[] {
+  const indexed = products.map((product, index) => ({ product, index }));
+  const families = new Map<string, Array<{ product: any; index: number }>>();
+  const passthrough: Array<{ product: any; index: number }> = [];
+
+  indexed.forEach((entry) => {
+    if (Array.isArray(entry.product?.variants) && entry.product.variants.length > 0) {
+      passthrough.push(entry);
+      return;
+    }
+
+    const familyKey = toFamilyKey(entry.product);
+    if (!familyKey) {
+      passthrough.push(entry);
+      return;
+    }
+
+    const existing = families.get(familyKey) || [];
+    existing.push(entry);
+    families.set(familyKey, existing);
+  });
+
+  const merged: Array<{ product: any; index: number }> = [...passthrough];
+
+  families.forEach((entries, familyKey) => {
+    if (entries.length < 2) {
+      merged.push(entries[0]);
+      return;
+    }
+
+    const priority = (label: string | null): number => {
+      if (label === "High Back") return 1;
+      if (label === "Mid Back") return 2;
+      if (label === "Low Back") return 3;
+      if (label === "Visitor") return 4;
+      return 9;
+    };
+
+    const ordered = [...entries].sort((a, b) => {
+      const aPriority = priority(extractVariantLabel(a.product));
+      const bPriority = priority(extractVariantLabel(b.product));
+      if (aPriority !== bPriority) return aPriority - bPriority;
+      return a.index - b.index;
+    });
+
+    const primary = ordered[0];
+    const seen = new Set<string>();
+    const variants = ordered.map((item, idx) => {
+      const preferred = extractVariantLabel(item.product);
+      let name = preferred || item.product.name || `Option ${idx + 1}`;
+      const key = String(name).toLowerCase();
+
+      if (seen.has(key)) {
+        name = item.product.name || `Option ${idx + 1}`;
+      }
+      seen.add(String(name).toLowerCase());
+
+      return {
+        id: item.product.id,
+        variantId: item.product.id,
+        name,
+        imageUrl: item.product.imageUrl,
+      };
+    });
+
+    const hasExecutiveInName = ordered.some((item) => /\bexecutive\b/i.test(String(item.product?.name || "")));
+    const familyDisplay = `${toTitleCase(familyKey)}${hasExecutiveInName ? " Executive Chair" : ""}`.trim();
+
+    merged.push({
+      index: primary.index,
+      product: {
+        ...primary.product,
+        name: familyDisplay || primary.product.name,
+        variants,
+      },
+    });
+  });
+
+  return merged
+    .sort((a, b) => a.index - b.index)
+    .map((entry) => entry.product);
+}
+
 export default function ProductSeriesPage({ 
   title,
   features,
@@ -26,8 +170,10 @@ export default function ProductSeriesPage({
   category, 
   seriesId 
 }: ProductSeriesPageProps) {
+  const listingProducts = category === "chairs" ? groupStandaloneChairVariants(products) : products;
+
   // Prefer variant-enabled products in featured cards so listing pages visibly surface variants.
-  const variantFirst = [...products].sort((a, b) => {
+  const variantFirst = [...listingProducts].sort((a, b) => {
     const aHasVariants = Array.isArray(a?.variants) && a.variants.length > 0 ? 1 : 0;
     const bHasVariants = Array.isArray(b?.variants) && b.variants.length > 0 ? 1 : 0;
     return bHasVariants - aHasVariants;
@@ -35,7 +181,7 @@ export default function ProductSeriesPage({
 
   // Prepare featured slice: first 4 from variant-prioritized list, full list remains unchanged.
   const featured = variantFirst.slice(0, 4);
-  const allProducts = products;
+  const allProducts = listingProducts;
 
   // Generate slides for this specific series
   const seriesSlides: SlideData[] = [
