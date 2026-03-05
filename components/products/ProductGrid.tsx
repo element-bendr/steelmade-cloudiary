@@ -6,6 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import type { ExtendedProductData } from '../../lib/data/product-types';
 import Link from "next/link"
 import Image from "next/image"
+import { QuickVariantChips } from "./QuickVariantChips";
 
 interface ProductGridProps {
   products: ExtendedProductData[]
@@ -72,6 +73,7 @@ export function ProductGrid({ products, productsPerPage = 8, category, seriesId 
                 <div className="p-4">
                   <h3 className="text-lg font-semibold text-neutral-900 group-hover:text-accent transition-colors mb-1">{product.name}</h3>
                   <p className="text-sm text-neutral-500 line-clamp-2 mb-2">{product.description}</p>
+                  <QuickVariantChips variants={product.variants} />
                 </div>
               </div>
             </Link>

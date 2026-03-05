@@ -4,6 +4,7 @@ import type { ExtendedProductData } from '../../lib/data/product-types';
 import { cn } from "../../lib/utils"
 import Link from "next/link"
 import Image from "next/image"
+import { QuickVariantChips } from "./QuickVariantChips";
 
 interface FeaturedProductsDisplayProps {
   products: ExtendedProductData[]
@@ -54,6 +55,7 @@ export function FeaturedProductsDisplay({
                     ? `${product.description.substring(0, 60)}...`
                     : product.description}
                 </p>
+                <QuickVariantChips variants={product.variants} className="pt-1" />
                 <button
                   className="mt-3 px-4 py-2 rounded-lg bg-accent-light text-white font-semibold shadow-md hover:bg-accent-dark transition-colors backdrop-blur-sm border border-accent-light/30"
                   type="button"

@@ -26,8 +26,15 @@ export default function ProductSeriesPage({
   category, 
   seriesId 
 }: ProductSeriesPageProps) {
-  // Prepare featured slice: first 4 products, then the full list for 'All'
-  const featured = products.slice(0, 4);
+  // Prefer variant-enabled products in featured cards so listing pages visibly surface variants.
+  const variantFirst = [...products].sort((a, b) => {
+    const aHasVariants = Array.isArray(a?.variants) && a.variants.length > 0 ? 1 : 0;
+    const bHasVariants = Array.isArray(b?.variants) && b.variants.length > 0 ? 1 : 0;
+    return bHasVariants - aHasVariants;
+  });
+
+  // Prepare featured slice: first 4 from variant-prioritized list, full list remains unchanged.
+  const featured = variantFirst.slice(0, 4);
   const allProducts = products;
 
   // Generate slides for this specific series
