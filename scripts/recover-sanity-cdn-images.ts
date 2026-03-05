@@ -116,7 +116,16 @@ async function recoverSanityCdnImages() {
   // Step 2: Load unmapped Cloudinary images
   const unmappedPath = join(process.cwd(), 'unmapped-cloudinary-images.json');
   const unmappedData: any = JSON.parse(readFileSync(unmappedPath, 'utf-8'));
-  const cloudinaryImages = unmappedData.unmapped || unmappedData.unmappedImages || [];
+  
+  // Extract images from unmappedByFolder structure
+  const cloudinaryImages: CloudinaryImage[] = [];
+  if (unmappedData.unmappedByFolder && typeof unmappedData.unmappedByFolder === 'object') {
+    Object.values(unmappedData.unmappedByFolder).forEach((folderImages: any) => {
+      if (Array.isArray(folderImages)) {
+        cloudinaryImages.push(...folderImages);
+      }
+    });
+  }
 
   console.log(`📁 Loaded ${cloudinaryImages.length} unmapped Cloudinary images for matching\n`);
 

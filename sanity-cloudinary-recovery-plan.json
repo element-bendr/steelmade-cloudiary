@@ -1,0 +1,3327 @@
+{
+  "timestamp": "2026-03-05T13:32:40.646Z",
+  "summary": {
+    "total": 51,
+    "highConfidence": 51,
+    "mediumConfidence": 0,
+    "lowConfidence": 0,
+    "noMatch": 0
+  },
+  "results": [
+    {
+      "product": {
+        "id": "drafts.imported-product-duster",
+        "name": "Duster Executive Chair",
+        "slug": "duster-executive-chair",
+        "originalFile": "ic-36-hb.jpg",
+        "fileSize": 31388
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        },
+        {
+          "image": {
+            "asset_id": "39b5176d353c11a24bc938a2bcdd0427",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+            "format": "jpg",
+            "version": 1750414107,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:27Z",
+            "bytes": 14713,
+            "width": 152,
+            "height": 276,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-91-hb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:13:16+00:00",
+              "updated_at": "2025-06-20T10:13:16+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-18mm-accessory-rail",
+        "name": "18mm Accessory Rail",
+        "slug": "18mm-accessory-rail",
+        "originalFile": "18mm-accessoryrail.png",
+        "fileSize": 15381
+      },
+      "topMatch": {
+        "public_id": "steelmade/modular-furniture/accessories/18mm-accessoryrail",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1757404408/steelmade/modular-furniture/accessories/18mm-accessoryrail.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "8bc90ec954400c9d229aef190e317ac5",
+            "public_id": "steelmade/modular-furniture/accessories/8mm-accessoryrail",
+            "format": "png",
+            "version": 1757404411,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-09-09T07:53:31Z",
+            "bytes": 20791,
+            "width": 500,
+            "height": 500,
+            "asset_folder": "steelmade/workstations/accessories",
+            "display_name": "8mmaccessoryrail",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1757404411/steelmade/modular-furniture/accessories/8mm-accessoryrail.png",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1757404411/steelmade/modular-furniture/accessories/8mm-accessoryrail.png",
+            "last_updated": {
+              "public_id_updated_at": "2025-10-21T13:28:02+00:00",
+              "updated_at": "2025-10-21T13:28:02+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-30mm-panel-based-partition-2",
+        "name": "30mm Panel Based Partition (Variant)",
+        "slug": "30mm-panel-based-partition-2",
+        "originalFile": "30MM_PANEL_BASED_PARTITION_2.png",
+        "fileSize": 101003
+      },
+      "topMatch": {
+        "public_id": "steelmade/modular-furniture/partition-systems/30MM_PANEL_BASED_PARTITION",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1761054744/steelmade/modular-furniture/partition-systems/30MM_PANEL_BASED_PARTITION.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-50mm-panel-based-partition-2",
+        "name": "50mm Panel Based Partition (Variant)",
+        "slug": "50mm-panel-based-partition-2",
+        "originalFile": "50MM_PANEL_BASED_PARTITION_2.png",
+        "fileSize": 85469
+      },
+      "topMatch": {
+        "public_id": "steelmade/modular-furniture/partition-systems/50MM_PANEL_BASED_PARTITION",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1761063493/steelmade/modular-furniture/partition-systems/50MM_PANEL_BASED_PARTITION.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-8mm-accessory-rail",
+        "name": "8mm Accessory Rail",
+        "slug": "8mm-accessory-rail",
+        "originalFile": "8mm-accessoryrail.png",
+        "fileSize": 20791
+      },
+      "topMatch": {
+        "public_id": "steelmade/modular-furniture/accessories/8mm-accessoryrail",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1757404411/steelmade/modular-furniture/accessories/8mm-accessoryrail.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "39ab19f46191f5195e937a729bdc7c7f",
+            "public_id": "steelmade/modular-furniture/accessories/18mm-accessoryrail",
+            "format": "png",
+            "version": 1757404408,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-09-09T07:53:28Z",
+            "bytes": 15381,
+            "width": 500,
+            "height": 500,
+            "asset_folder": "steelmade/workstations/accessories",
+            "display_name": "18mmaccessoryrail",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1757404408/steelmade/modular-furniture/accessories/18mm-accessoryrail.png",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1757404408/steelmade/modular-furniture/accessories/18mm-accessoryrail.png",
+            "last_updated": {
+              "public_id_updated_at": "2025-10-21T13:28:30+00:00",
+              "updated_at": "2025-10-21T13:28:30+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-ashley-director-chair",
+        "name": "Ashley Director Chair",
+        "slug": "ashley-director-chair",
+        "originalFile": "ic-361-hb.jpg",
+        "fileSize": 28928
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/director-series/ashley/ic-361-hb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1748785779/steelmade/chairs/director-series/ashley/ic-361-hb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-bigboss-gold-director-chair",
+        "name": "BigBoss Gold Director Chair",
+        "slug": "bigboss-gold-director-chair",
+        "originalFile": "ic-255-hb.jpg",
+        "fileSize": 20898
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/director-series/bigbossgold/ic-255-hb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1749459939/steelmade/chairs/director-series/bigbossgold/ic-255-hb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-boston-director-chair",
+        "name": "Boston Director Chair",
+        "slug": "boston-director-chair",
+        "originalFile": "ic-06-hb.jpg",
+        "fileSize": 19556
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        },
+        {
+          "image": {
+            "asset_id": "39b5176d353c11a24bc938a2bcdd0427",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+            "format": "jpg",
+            "version": 1750414107,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:27Z",
+            "bytes": 14713,
+            "width": 152,
+            "height": 276,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-91-hb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:13:16+00:00",
+              "updated_at": "2025-06-20T10:13:16+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-cobra-ergonomic-chair",
+        "name": "Cobra Ergonomic Chair",
+        "slug": "cobra-ergonomic-chair",
+        "originalFile": "ic-138-hb.png",
+        "fileSize": 22597
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/ergonomic-series/cobra/ic-138-hb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1752129755/steelmade/chairs/ergonomic-series/cobra/ic-138-hb.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-commander-chair",
+        "name": "Commander Executive Chair",
+        "slug": "commander-chair",
+        "originalFile": "ic-50-hb.jpg",
+        "fileSize": 27874
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        },
+        {
+          "image": {
+            "asset_id": "39b5176d353c11a24bc938a2bcdd0427",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+            "format": "jpg",
+            "version": 1750414107,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:27Z",
+            "bytes": 14713,
+            "width": 152,
+            "height": 276,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-91-hb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:13:16+00:00",
+              "updated_at": "2025-06-20T10:13:16+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-craft-ergonomic-chair",
+        "name": "Craft Ergonomic Chair",
+        "slug": "craft-ergonomic-chair",
+        "originalFile": "ic-129-hb.png",
+        "fileSize": 26555
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/ergonomic-series/craft/ic-129-hb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1751189733/steelmade/chairs/ergonomic-series/craft/ic-129-hb.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-edge-profiler",
+        "name": "Edge Profiler",
+        "slug": "edge-profiler",
+        "originalFile": "edgeprofiler.png",
+        "fileSize": 21133
+      },
+      "topMatch": {
+        "public_id": "steelmade/modular-furniture/accessories/edgeprofiler",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1757404418/steelmade/modular-furniture/accessories/edgeprofiler.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-flame-ergonomic-chair",
+        "name": "Flame Ergonomic Chair",
+        "slug": "flame-ergonomic-chair",
+        "originalFile": "ic-265-black.png",
+        "fileSize": 19595
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/ergonomic-series/flame/ic-265-black",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1751189724/steelmade/chairs/ergonomic-series/flame/ic-265-black.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "3324d85dbf0fef446e4821c4741b04db",
+            "public_id": "steelmade/chairs/ergonomic-series/moscow/ic-28-hb-black",
+            "format": "png",
+            "version": 1751016877,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-27T09:34:37Z",
+            "bytes": 32656,
+            "width": 500,
+            "height": 500,
+            "asset_folder": "steelmade/chairs/ergonomic",
+            "display_name": "ic-28-hb-black",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1751016877/steelmade/chairs/ergonomic-series/moscow/ic-28-hb-black.png",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1751016877/steelmade/chairs/ergonomic-series/moscow/ic-28-hb-black.png",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-27T09:35:10+00:00",
+              "updated_at": "2025-06-27T09:35:10+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-flamingo-ergonomic-chair",
+        "name": "Flamingo Ergonomic Chair",
+        "slug": "flamingo-ergonomic-chair",
+        "originalFile": "ic-335-hb-black.jpg",
+        "fileSize": 102087
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/ergonomic-series/flamingo/ic-335-hb-black",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750682616/steelmade/chairs/ergonomic-series/flamingo/ic-335-hb-black.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "3324d85dbf0fef446e4821c4741b04db",
+            "public_id": "steelmade/chairs/ergonomic-series/moscow/ic-28-hb-black",
+            "format": "png",
+            "version": 1751016877,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-27T09:34:37Z",
+            "bytes": 32656,
+            "width": 500,
+            "height": 500,
+            "asset_folder": "steelmade/chairs/ergonomic",
+            "display_name": "ic-28-hb-black",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1751016877/steelmade/chairs/ergonomic-series/moscow/ic-28-hb-black.png",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1751016877/steelmade/chairs/ergonomic-series/moscow/ic-28-hb-black.png",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-27T09:35:10+00:00",
+              "updated_at": "2025-06-27T09:35:10+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-glass-clamp",
+        "name": "Glass Clamp",
+        "slug": "glass-clamp",
+        "originalFile": "glassclamp.png",
+        "fileSize": 26286
+      },
+      "topMatch": {
+        "public_id": "steelmade/modular-furniture/accessories/glassclamp",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1757404420/steelmade/modular-furniture/accessories/glassclamp.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-grandezza-director-chair",
+        "name": "Grandezza Director Chair",
+        "slug": "grandezza-director-chair",
+        "originalFile": "ic-04-hb.jpg",
+        "fileSize": 20753
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        },
+        {
+          "image": {
+            "asset_id": "39b5176d353c11a24bc938a2bcdd0427",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+            "format": "jpg",
+            "version": 1750414107,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:27Z",
+            "bytes": 14713,
+            "width": 152,
+            "height": 276,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-91-hb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:13:16+00:00",
+              "updated_at": "2025-06-20T10:13:16+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-honda-ergonomic-chair",
+        "name": "Honda Ergonomic Chair",
+        "slug": "honda-ergonomic-chair",
+        "originalFile": "ic-123b-grey.png",
+        "fileSize": 19754
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/ergonomic-series/honda/ic-123b-grey",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1751020437/steelmade/chairs/ergonomic-series/honda/ic-123b-grey.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-korean-chair",
+        "name": "Korean Executive Chair",
+        "slug": "korean-chair",
+        "originalFile": "ic-47-hb.jpg",
+        "fileSize": 34635
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        },
+        {
+          "image": {
+            "asset_id": "39b5176d353c11a24bc938a2bcdd0427",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+            "format": "jpg",
+            "version": 1750414107,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:27Z",
+            "bytes": 14713,
+            "width": 152,
+            "height": 276,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-91-hb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:13:16+00:00",
+              "updated_at": "2025-06-20T10:13:16+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-kotak-director-chair",
+        "name": "Kotak Director Chair",
+        "slug": "kotak-director-chair",
+        "originalFile": "ic-13-hb.jpg",
+        "fileSize": 10908
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        },
+        {
+          "image": {
+            "asset_id": "39b5176d353c11a24bc938a2bcdd0427",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+            "format": "jpg",
+            "version": 1750414107,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:27Z",
+            "bytes": 14713,
+            "width": 152,
+            "height": 276,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-91-hb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:13:16+00:00",
+              "updated_at": "2025-06-20T10:13:16+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-makson-executive-chair",
+        "name": "Makson Executive Chair",
+        "slug": "makson-executive-chair",
+        "originalFile": "ic-76-hb.jpg",
+        "fileSize": 16399
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        },
+        {
+          "image": {
+            "asset_id": "39b5176d353c11a24bc938a2bcdd0427",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+            "format": "jpg",
+            "version": 1750414107,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:27Z",
+            "bytes": 14713,
+            "width": 152,
+            "height": 276,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-91-hb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:13:16+00:00",
+              "updated_at": "2025-06-20T10:13:16+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-marvel-ergonomic-chair",
+        "name": "Marvel Ergonomic Chair",
+        "slug": "marvel-ergonomic-chair",
+        "originalFile": "ic-114-hb.png",
+        "fileSize": 29207
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/ergonomic-series/marvel/ic-114-hb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1751189724/steelmade/chairs/ergonomic-series/marvel/ic-114-hb.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-marvel-workstation",
+        "name": "Marvel Series Workstation",
+        "slug": "marvel-workstation",
+        "originalFile": "marvel-series01.png",
+        "fileSize": 13258
+      },
+      "topMatch": {
+        "public_id": "steelmade/workstations/desk based workstation legs/marvel-series01",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1754355103/steelmade/workstations/desk%20based%20workstation%20legs/marvel-series01.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-matrix-ergonomic-chair",
+        "name": "Matrix Ergonomic Chair",
+        "slug": "matrix-ergonomic-chair",
+        "originalFile": "ic-135-hb.png",
+        "fileSize": 20601
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/ergonomic-series/matrix/ic-135-hb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1751189727/steelmade/chairs/ergonomic-series/matrix/ic-135-hb.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-metal-divider",
+        "name": "Metal Divider",
+        "slug": "metal-divider",
+        "originalFile": "metaldivider.png",
+        "fileSize": 22865
+      },
+      "topMatch": {
+        "public_id": "steelmade/modular-furniture/accessories/metaldivider",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1757404423/steelmade/modular-furniture/accessories/metaldivider.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-milano-director-chair",
+        "name": "Milano Director Chair",
+        "slug": "milano-director-chair",
+        "originalFile": "ic-251-hb.jpg",
+        "fileSize": 17730
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/director-series/milano/ic-251-mb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1748791994/steelmade/chairs/director-series/milano/ic-251-mb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "b40707928351ede66819f26fa947ab27",
+            "public_id": "steelmade/chairs/director-series/milano/ic-251-hb",
+            "format": "jpg",
+            "version": 1748773743,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-01T10:29:03Z",
+            "bytes": 17730,
+            "width": 386,
+            "height": 630,
+            "asset_folder": "steelmade/chairs/director-series/milano",
+            "display_name": "ic-251-hb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1748773743/steelmade/chairs/director-series/milano/ic-251-hb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1748773743/steelmade/chairs/director-series/milano/ic-251-hb.jpg",
+            "last_updated": {
+              "tags_updated_at": "2025-06-01T11:01:33+00:00",
+              "updated_at": "2025-06-01T11:01:33+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        },
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-mini-ginger-dolphin-executive-chair",
+        "name": "Mini / Ginger / Dolphin Executive Chair",
+        "slug": "mini-ginger-dolphin-executive-chair",
+        "originalFile": "ic-64.jpg",
+        "fileSize": 17953
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        },
+        {
+          "image": {
+            "asset_id": "39b5176d353c11a24bc938a2bcdd0427",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+            "format": "jpg",
+            "version": 1750414107,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:27Z",
+            "bytes": 14713,
+            "width": 152,
+            "height": 276,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-91-hb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:13:16+00:00",
+              "updated_at": "2025-06-20T10:13:16+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-monarch-director-chair",
+        "name": "Monarch Director Chair",
+        "slug": "monarch-director-chair",
+        "originalFile": "ic-08-hb.jpg",
+        "fileSize": 19589
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        },
+        {
+          "image": {
+            "asset_id": "39b5176d353c11a24bc938a2bcdd0427",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+            "format": "jpg",
+            "version": 1750414107,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:27Z",
+            "bytes": 14713,
+            "width": 152,
+            "height": 276,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-91-hb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:13:16+00:00",
+              "updated_at": "2025-06-20T10:13:16+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-mono-ergonomic-chair",
+        "name": "Mono Ergonomic Chair",
+        "slug": "mono-ergonomic-chair",
+        "originalFile": "ic-305.png",
+        "fileSize": 21557
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/ergonomic-series/mono/ic-305",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1752129755/steelmade/chairs/ergonomic-series/mono/ic-305.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-nano-executive-chair",
+        "name": "Nano Executive Chair",
+        "slug": "nano-executive-chair",
+        "originalFile": "ic-91-hb.jpg",
+        "fileSize": 14713
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        },
+        {
+          "image": {
+            "asset_id": "39b5176d353c11a24bc938a2bcdd0427",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+            "format": "jpg",
+            "version": 1750414107,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:27Z",
+            "bytes": 14713,
+            "width": 152,
+            "height": 276,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-91-hb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:13:16+00:00",
+              "updated_at": "2025-06-20T10:13:16+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-navy-ergonomic-chair",
+        "name": "Navy Ergonomic Chair",
+        "slug": "navy-ergonomic-chair",
+        "originalFile": "ic-146.png",
+        "fileSize": 25803
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/ergonomic-series/navy/ic-146",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1751189739/steelmade/chairs/ergonomic-series/navy/ic-146.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "62c5c84840e7f31fa7fa6861aa927eda",
+            "public_id": "steelmade/chairs/ergonomic-series/navy/ic-146a-white",
+            "format": "png",
+            "version": 1751189738,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-29T09:35:38Z",
+            "bytes": 23431,
+            "width": 500,
+            "height": 500,
+            "asset_folder": "steelmade/chairs/ergonomic",
+            "display_name": "navy-ic-146a-white",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1751189738/steelmade/chairs/ergonomic-series/navy/ic-146a-white.png",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1751189738/steelmade/chairs/ergonomic-series/navy/ic-146a-white.png",
+            "last_updated": {
+              "public_id_updated_at": "2025-07-03T09:24:33+00:00",
+              "updated_at": "2025-07-03T09:24:33+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "653f0b27c6e5a82e33c7595739cb7ee8",
+            "public_id": "steelmade/chairs/ergonomic-series/navy/ic-146b-grey",
+            "format": "png",
+            "version": 1751189737,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-29T09:35:37Z",
+            "bytes": 21803,
+            "width": 500,
+            "height": 500,
+            "asset_folder": "steelmade/chairs/ergonomic",
+            "display_name": "navy-ic-146b-grey",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1751189737/steelmade/chairs/ergonomic-series/navy/ic-146b-grey.png",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1751189737/steelmade/chairs/ergonomic-series/navy/ic-146b-grey.png",
+            "last_updated": {
+              "public_id_updated_at": "2025-07-03T09:25:25+00:00",
+              "updated_at": "2025-07-03T09:25:25+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-neo-eco-series",
+        "name": "Neo Eco Series Workstation",
+        "slug": "neo-eco-series",
+        "originalFile": "neo-eco-legs1.png",
+        "fileSize": 7906
+      },
+      "topMatch": {
+        "public_id": "steelmade/workstations/desk based workstation legs/neo-eco-legs1",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1754355084/steelmade/workstations/desk%20based%20workstation%20legs/neo-eco-legs1.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-nissan-director-chair",
+        "name": "Nissan Director Chair",
+        "slug": "nissan-director-chair",
+        "originalFile": "ic-253-hb.jpg",
+        "fileSize": 10465
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/director-series/nissan/ic-253-hb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1749460685/steelmade/chairs/director-series/nissan/ic-253-hb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-ola-roman",
+        "name": "Ola & Roman Ergonomic Chairs",
+        "slug": "ola-roman",
+        "originalFile": "ic-144.png",
+        "fileSize": 15244
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/ergonomic-series/ola/ic-144",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1751020488/steelmade/chairs/ergonomic-series/ola/ic-144.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-opera-director-chair",
+        "name": "Opera Director Chair",
+        "slug": "opera-director-chair",
+        "originalFile": "ic-340-hb.jpg",
+        "fileSize": 30858
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/director-series/opera/ic-340-hb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1749454969/steelmade/chairs/director-series/opera/ic-340-hb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-parker-director-chair",
+        "name": "Parker Director Chair",
+        "slug": "parker-director-chair",
+        "originalFile": "ic-315-hb.jpg",
+        "fileSize": 66890
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/director-series/parker/ic-315-hb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1749459331/steelmade/chairs/director-series/parker/ic-315-hb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-phantom-executive-chair",
+        "name": "Phantom Executive Chair",
+        "slug": "phantom-executive-chair",
+        "originalFile": "ic-70-hb.jpg",
+        "fileSize": 17781
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        },
+        {
+          "image": {
+            "asset_id": "39b5176d353c11a24bc938a2bcdd0427",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+            "format": "jpg",
+            "version": 1750414107,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:27Z",
+            "bytes": 14713,
+            "width": 152,
+            "height": 276,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-91-hb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:13:16+00:00",
+              "updated_at": "2025-06-20T10:13:16+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-pine-pony-windy",
+        "name": "Pine, Pony & Windy Ergonomic Chairs",
+        "slug": "pine-pony-windy",
+        "originalFile": "ic-126.png",
+        "fileSize": 18669
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/ergonomic-series/windy/ic-126",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1751017665/steelmade/chairs/ergonomic-series/windy/ic-126.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-premier-executive-chair",
+        "name": "Premier Executive Chair",
+        "slug": "premier-executive-chair",
+        "originalFile": "ic-79-hb.jpg",
+        "fileSize": 16150
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        },
+        {
+          "image": {
+            "asset_id": "39b5176d353c11a24bc938a2bcdd0427",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+            "format": "jpg",
+            "version": 1750414107,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:27Z",
+            "bytes": 14713,
+            "width": 152,
+            "height": 276,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-91-hb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:13:16+00:00",
+              "updated_at": "2025-06-20T10:13:16+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-robo-ergonomic-chair",
+        "name": "Robo Ergonomic Chair",
+        "slug": "robo-ergonomic-chair",
+        "originalFile": "ic-263c-hb-black.png",
+        "fileSize": 23313
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/ergonomic-series/robo/ic-263c-hb-black",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1751189736/steelmade/chairs/ergonomic-series/robo/ic-263c-hb-black.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "3324d85dbf0fef446e4821c4741b04db",
+            "public_id": "steelmade/chairs/ergonomic-series/moscow/ic-28-hb-black",
+            "format": "png",
+            "version": 1751016877,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-27T09:34:37Z",
+            "bytes": 32656,
+            "width": 500,
+            "height": 500,
+            "asset_folder": "steelmade/chairs/ergonomic",
+            "display_name": "ic-28-hb-black",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1751016877/steelmade/chairs/ergonomic-series/moscow/ic-28-hb-black.png",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1751016877/steelmade/chairs/ergonomic-series/moscow/ic-28-hb-black.png",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-27T09:35:10+00:00",
+              "updated_at": "2025-06-27T09:35:10+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-skoda-executive-chair",
+        "name": "Skoda Executive Chair",
+        "slug": "skoda-executive-chair",
+        "originalFile": "ic-94-hb.jpg",
+        "fileSize": 15020
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        },
+        {
+          "image": {
+            "asset_id": "39b5176d353c11a24bc938a2bcdd0427",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+            "format": "jpg",
+            "version": 1750414107,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:27Z",
+            "bytes": 14713,
+            "width": 152,
+            "height": 276,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-91-hb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:13:16+00:00",
+              "updated_at": "2025-06-20T10:13:16+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-tycoon-director-chair",
+        "name": "Tycoon Director Chair",
+        "slug": "tycoon-director-chair",
+        "originalFile": "ic-01-hb.jpg",
+        "fileSize": 19325
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        },
+        {
+          "image": {
+            "asset_id": "39b5176d353c11a24bc938a2bcdd0427",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+            "format": "jpg",
+            "version": 1750414107,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:27Z",
+            "bytes": 14713,
+            "width": 152,
+            "height": 276,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-91-hb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:13:16+00:00",
+              "updated_at": "2025-06-20T10:13:16+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-venus-rev-ud",
+        "name": "Venus Rev UD Executive Chair",
+        "slug": "venus-rev-ud",
+        "originalFile": "ic-304.jpg",
+        "fileSize": 25257
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/Venus-rev-ud/ic-304",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750408453/steelmade/chairs/executive-series/Venus-rev-ud/ic-304.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-visitor-flora",
+        "name": "Flora Visitor Chair",
+        "slug": "visitor-flora",
+        "originalFile": "ic-153.png",
+        "fileSize": 20639
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/visitor-series/flora/ic-153",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1752131208/steelmade/chairs/visitor-series/flora/ic-153.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-visitor-liberty",
+        "name": "Liberty Visitor Chair",
+        "slug": "visitor-liberty",
+        "originalFile": "ic-151.png",
+        "fileSize": 23198
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/visitor-series/liberty/ic-151",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1752594076/steelmade/chairs/visitor-series/liberty/ic-151.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-visitor-regency",
+        "name": "Regency Visitor Chair",
+        "slug": "visitor-regency",
+        "originalFile": "ic-152.png",
+        "fileSize": 19284
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/visitor-series/regency/ic-152",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1752131212/steelmade/chairs/visitor-series/regency/ic-152.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-visitor-titan",
+        "name": "Titan Visitor Chair",
+        "slug": "visitor-titan",
+        "originalFile": "ic-154.png",
+        "fileSize": 23891
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/visitor-series/titan/ic-154",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1752131205/steelmade/chairs/visitor-series/titan/ic-154.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-visitor-venus-vista-chair",
+        "name": "Visitor Venus & Vista Chair",
+        "slug": "visitor-venus-vista-chair",
+        "originalFile": "ic-148.png",
+        "fileSize": 23044
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/visitor-series/venus/ic-148",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1752131388/steelmade/chairs/visitor-series/venus/ic-148.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-vivo-ergonomic-chair",
+        "name": "Vivo Ergonomic Chair",
+        "slug": "vivo-ergonomic-chair",
+        "originalFile": "ic-132-hb.png",
+        "fileSize": 21015
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/ergonomic-series/vivo/ic-132-hb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1751189730/steelmade/chairs/ergonomic-series/vivo/ic-132-hb.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-wilson-executive-chair",
+        "name": "Wilson Executive Chair",
+        "slug": "wilson-executive-chair",
+        "originalFile": "ic-73-hb.jpg",
+        "fileSize": 16353
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        },
+        {
+          "image": {
+            "asset_id": "39b5176d353c11a24bc938a2bcdd0427",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+            "format": "jpg",
+            "version": 1750414107,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:27Z",
+            "bytes": 14713,
+            "width": 152,
+            "height": 276,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-91-hb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:13:16+00:00",
+              "updated_at": "2025-06-20T10:13:16+00:00"
+            }
+          },
+          "confidence": 100,
+          "reason": "Exact filename match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-woodland-director-chair",
+        "name": "Woodland Director Chair",
+        "slug": "woodland-director-chair",
+        "originalFile": "ic-338-hb.jpg",
+        "fileSize": 37509
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/director-series/woodland/ic-338-hb",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1749454239/steelmade/chairs/director-series/woodland/ic-338-hb.jpg",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-zara-ergonomic-chair",
+        "name": "Zara Ergonomic Chair",
+        "slug": "zara-ergonomic-chair",
+        "originalFile": "ic-143-visi.png",
+        "fileSize": 24135
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/ergonomic-series/zara/ic-143-visi",
+        "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1752129755/steelmade/chairs/ergonomic-series/zara/ic-143-visi.png",
+        "confidence": 100,
+        "reason": "Exact filename match"
+      },
+      "allMatches": [
+        {
+          "image": {
+            "asset_id": "774958a773433f647b43230430e19c2f",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+            "format": "jpg",
+            "version": 1750414129,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:49Z",
+            "bytes": 13704,
+            "width": 158,
+            "height": 245,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-93-lb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:11:07+00:00",
+              "updated_at": "2025-06-20T10:11:07+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        },
+        {
+          "image": {
+            "asset_id": "36d9e1d6fd8c0c0a913b434b9c0452f4",
+            "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+            "format": "jpg",
+            "version": 1750414116,
+            "resource_type": "image",
+            "type": "upload",
+            "created_at": "2025-06-20T10:08:36Z",
+            "bytes": 15233,
+            "width": 166,
+            "height": 244,
+            "asset_folder": "steelmade/chairs/executive-series/rest of them",
+            "display_name": "ic-92-mb",
+            "url": "http://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+            "last_updated": {
+              "public_id_updated_at": "2025-06-20T10:12:01+00:00",
+              "updated_at": "2025-06-20T10:12:01+00:00"
+            }
+          },
+          "confidence": 85,
+          "reason": "Filename substring match"
+        }
+      ]
+    }
+  ]
+}

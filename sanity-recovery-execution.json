@@ -1,0 +1,53 @@
+{
+  "startTime": "2026-03-05T13:37:52.725Z",
+  "endTime": "2026-03-05T13:38:46.155Z",
+  "totalSteps": 6,
+  "summary": {
+    "totalApplied": 51,
+    "totalFailed": 0
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "Load recovery plan",
+      "timestamp": "2026-03-05T13:37:52.725Z",
+      "status": "success",
+      "details": "51 total matches loaded",
+      "affectedProducts": 51
+    },
+    {
+      "step": 2,
+      "action": "Validate Sanity connectivity",
+      "timestamp": "2026-03-05T13:37:52.726Z",
+      "status": "success"
+    },
+    {
+      "step": 3,
+      "action": "Apply recovery matches",
+      "timestamp": "2026-03-05T13:37:53.463Z",
+      "status": "success",
+      "affectedProducts": 51,
+      "details": "51 successful, 0 errors"
+    },
+    {
+      "step": 4,
+      "action": "Confidence analysis",
+      "timestamp": "2026-03-05T13:38:46.155Z",
+      "status": "success",
+      "details": "High: 51, Medium: 0, Low: 0"
+    },
+    {
+      "step": 5,
+      "action": "Verify updates",
+      "timestamp": "2026-03-05T13:38:46.155Z",
+      "status": "error"
+    },
+    {
+      "step": 6,
+      "action": "Save execution log",
+      "timestamp": "2026-03-05T13:38:46.155Z",
+      "status": "in-progress"
+    }
+  ],
+  "errors": []
+}
