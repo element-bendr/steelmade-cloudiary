@@ -15,6 +15,12 @@ export interface MappedProduct {
   name: string
   imageUrl: string
   images?: string[] // Optional secondary images
+  variants?: Array<{
+    id?: string
+    variantId?: string
+    name: string
+    imageUrl: string
+  }>
   description: string
   features: string[]
   specifications: Record<string, string>
@@ -100,13 +106,27 @@ export class SanityProductService {
         }
 
         // Map the product and assign into the Series Map
+        const mappedVariants = Array.isArray(prod.variants)
+          ? prod.variants
+              .filter((variant: any) => variant?.name && variant?.imageUrl)
+              .map((variant: any) => ({
+                id: variant.id,
+                variantId: variant.variantId || variant.id,
+                name: variant.name,
+                imageUrl: variant.imageUrl,
+              }))
+          : []
+
         seriesMap[seriesKey].products[prod.id] = {
           id: prod.id,
           name: prod.name,
           imageUrl: prod.imageUrl,
+          variants: mappedVariants,
           description: prod.description || '',
           features: prod.features || [],
-          specifications: specsMap
+          specifications: specsMap,
+          category: prod.category,
+          seriesId: seriesKey,
         }
       })
 
