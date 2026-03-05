@@ -7,7 +7,10 @@ export const allCategoriesQuery = groq`
     "id": slug.current,
     title,
     description,
-    "imageUrl": mainImage.asset->url
+    "imageUrl": select(
+      mainImage._type == "cloudinaryImage" => "https://res.cloudinary.com/dqde19mfs/image/upload/" + mainImage.publicId,
+      mainImage.asset->url
+    )
   }
 `
 
@@ -19,7 +22,10 @@ export const categoryByIdQuery = groq`
     "name": title,
     title,
     description,
-    "imageUrl": mainImage.asset->url
+    "imageUrl": select(
+      mainImage._type == "cloudinaryImage" => "https://res.cloudinary.com/dqde19mfs/image/upload/" + mainImage.publicId,
+      mainImage.asset->url
+    )
   }
 `
 
@@ -29,7 +35,10 @@ export const productsByCategoryQuery = groq`
     _id,
     name,
     "id": slug.current,
-    "imageUrl": mainImage.asset->url,
+    "imageUrl": select(
+      mainImage._type == "cloudinaryImage" => "https://res.cloudinary.com/dqde19mfs/image/upload/" + mainImage.publicId,
+      mainImage.asset->url
+    ),
     description,
     features,
     specifications[]{
@@ -39,7 +48,10 @@ export const productsByCategoryQuery = groq`
     variants[]{
       id,
       name,
-      "imageUrl": image.asset->url
+      "imageUrl": select(
+        image._type == "cloudinaryImage" => "https://res.cloudinary.com/dqde19mfs/image/upload/" + image.publicId,
+        image.asset->url
+      )
     },
     category,
     series
@@ -52,7 +64,10 @@ export const productsBySeriesQuery = groq`
     _id,
     name,
     "id": slug.current,
-    "imageUrl": mainImage.asset->url,
+    "imageUrl": select(
+      mainImage._type == "cloudinaryImage" => "https://res.cloudinary.com/dqde19mfs/image/upload/" + mainImage.publicId,
+      mainImage.asset->url
+    ),
     description,
     features,
     specifications[]{
@@ -62,7 +77,10 @@ export const productsBySeriesQuery = groq`
     variants[]{
       id,
       name,
-      "imageUrl": image.asset->url
+      "imageUrl": select(
+        image._type == "cloudinaryImage" => "https://res.cloudinary.com/dqde19mfs/image/upload/" + image.publicId,
+        image.asset->url
+      )
     },
     category,
     "seriesId": $seriesId
@@ -75,7 +93,10 @@ export const productByIdQuery = groq`
     _id,
     name,
     "id": slug.current,
-    "imageUrl": mainImage.asset->url,
+    "imageUrl": select(
+      mainImage._type == "cloudinaryImage" => "https://res.cloudinary.com/dqde19mfs/image/upload/" + mainImage.publicId,
+      mainImage.asset->url
+    ),
     description,
     features,
     specifications[]{
@@ -85,7 +106,10 @@ export const productByIdQuery = groq`
     variants[]{
       id,
       name,
-      "imageUrl": image.asset->url
+      "imageUrl": select(
+        image._type == "cloudinaryImage" => "https://res.cloudinary.com/dqde19mfs/image/upload/" + image.publicId,
+        image.asset->url
+      )
     },
     category,
     "seriesId": $seriesId
@@ -98,7 +122,10 @@ export const productBySlugQuery = groq`
     _id,
     name,
     "id": slug.current,
-    "imageUrl": mainImage.asset->url,
+    "imageUrl": select(
+      mainImage._type == "cloudinaryImage" => "https://res.cloudinary.com/dqde19mfs/image/upload/" + mainImage.publicId,
+      mainImage.asset->url
+    ),
     description,
     features,
     specifications[]{
@@ -108,7 +135,10 @@ export const productBySlugQuery = groq`
     variants[]{
       id,
       name,
-      "imageUrl": image.asset->url
+      "imageUrl": select(
+        image._type == "cloudinaryImage" => "https://res.cloudinary.com/dqde19mfs/image/upload/" + image.publicId,
+        image.asset->url
+      )
     },
     category,
     series
