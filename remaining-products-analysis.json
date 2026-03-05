@@ -1,0 +1,1612 @@
+{
+  "timestamp": "2026-03-05T13:42:46.821Z",
+  "productsAnalyzed": 47,
+  "summary": {
+    "highConfidence": 47,
+    "mediumConfidence": 0,
+    "lowConfidence": 0,
+    "noMatch": 0,
+    "totalMatches": 47,
+    "matchRate": 100
+  },
+  "results": [
+    {
+      "product": {
+        "id": "imported-product-apex-workstation",
+        "name": "Apex Workstation",
+        "slug": "apex-workstation",
+        "category": "desks"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-horizon-desk",
+        "name": "Horizon Desk",
+        "slug": "horizon-desk",
+        "category": "desks"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-modcabinet",
+        "name": "ModCabinet",
+        "slug": "modcabinet",
+        "category": "storage-solutions"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-visitor-classic-chair",
+        "name": "Visitor Classic Chair",
+        "slug": "visitor-classic-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "imported-product-wallstore",
+        "name": "WallStore",
+        "slug": "wallstore",
+        "category": "storage-solutions"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-director-series-ashley-director-chair",
+        "name": "Ashley Director Chair",
+        "slug": "ashley-director-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-director-series-bigboss-gold-director-chair",
+        "name": "BigBoss Gold Director Chair",
+        "slug": "bigboss-gold-director-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-director-series-boston-director-chair",
+        "name": "Boston Director Chair",
+        "slug": "boston-director-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-director-series-grandezza-director-chair",
+        "name": "Grandezza Director Chair",
+        "slug": "grandezza-director-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-director-series-kotak-director-chair",
+        "name": "Kotak Director Chair",
+        "slug": "kotak-director-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-director-series-milano-director-chair",
+        "name": "Milano Director Chair",
+        "slug": "milano-director-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-director-series-monarch-director-chair",
+        "name": "Monarch Director Chair",
+        "slug": "monarch-director-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-director-series-nissan-director-chair",
+        "name": "Nissan Director Chair",
+        "slug": "nissan-director-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-director-series-opera-director-chair",
+        "name": "Opera Director Chair",
+        "slug": "opera-director-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-director-series-parker-director-chair",
+        "name": "Parker Director Chair",
+        "slug": "parker-director-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-director-series-tycoon-director-chair",
+        "name": "Tycoon Director Chair",
+        "slug": "tycoon-director-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-director-series-woodland-director-chair",
+        "name": "Woodland Director Chair",
+        "slug": "woodland-director-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-ergonomic-series-cobra-ergonomic-chair",
+        "name": "Cobra Ergonomic Chair",
+        "slug": "cobra-ergonomic-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-ergonomic-series-craft-ergonomic-chair",
+        "name": "Craft Ergonomic Chair",
+        "slug": "craft-ergonomic-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-ergonomic-series-flame-ergonomic-chair",
+        "name": "Flame Ergonomic Chair",
+        "slug": "flame-ergonomic-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-ergonomic-series-flamingo-ergonomic-chair",
+        "name": "Flamingo Ergonomic Chair",
+        "slug": "flamingo-ergonomic-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-ergonomic-series-honda-ergonomic-chair",
+        "name": "Honda Ergonomic Chair",
+        "slug": "honda-ergonomic-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-ergonomic-series-marvel-ergonomic-chair",
+        "name": "Marvel Ergonomic Chair",
+        "slug": "marvel-ergonomic-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-ergonomic-series-matrix-ergonomic-chair",
+        "name": "Matrix Ergonomic Chair",
+        "slug": "matrix-ergonomic-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-ergonomic-series-mono-ergonomic-chair",
+        "name": "Mono Ergonomic Chair",
+        "slug": "mono-ergonomic-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-ergonomic-series-navy-ergonomic-chair",
+        "name": "Navy Ergonomic Chair",
+        "slug": "navy-ergonomic-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-ergonomic-series-ola-roman",
+        "name": "Ola & Roman Ergonomic Chairs",
+        "slug": "ola-roman",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-ergonomic-series-pine-pony-windy",
+        "name": "Pine, Pony & Windy Ergonomic Chairs",
+        "slug": "pine-pony-windy",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-ergonomic-series-robo-ergonomic-chair",
+        "name": "Robo Ergonomic Chair",
+        "slug": "robo-ergonomic-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-ergonomic-series-vivo-ergonomic-chair",
+        "name": "Vivo Ergonomic Chair",
+        "slug": "vivo-ergonomic-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-ergonomic-series-zara-ergonomic-chair",
+        "name": "Zara Ergonomic Chair",
+        "slug": "zara-ergonomic-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-executive-series-commander-chair",
+        "name": "Commander Executive Chair",
+        "slug": "commander-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-executive-series-korean-chair",
+        "name": "Korean Executive Chair",
+        "slug": "korean-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-executive-series-makson-executive-chair",
+        "name": "Makson Executive Chair",
+        "slug": "makson-executive-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-executive-series-mini-ginger-dolphin-executive-chair",
+        "name": "Mini / Ginger / Dolphin Executive Chair",
+        "slug": "mini-ginger-dolphin-executive-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-executive-series-nano-executive-chair",
+        "name": "Nano Executive Chair",
+        "slug": "nano-executive-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-executive-series-phantom-executive-chair",
+        "name": "Phantom Executive Chair",
+        "slug": "phantom-executive-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-executive-series-premier-executive-chair",
+        "name": "Premier Executive Chair",
+        "slug": "premier-executive-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-executive-series-skoda-executive-chair",
+        "name": "Skoda Executive Chair",
+        "slug": "skoda-executive-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-executive-series-venus-rev-ud",
+        "name": "Venus Rev UD Executive Chair",
+        "slug": "venus-rev-ud",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-executive-series-wilson-executive-chair",
+        "name": "Wilson Executive Chair",
+        "slug": "wilson-executive-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-visitor-series-visitor-classic-chair",
+        "name": "Visitor Classic Chair",
+        "slug": "visitor-classic-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-visitor-series-visitor-flora",
+        "name": "Flora Visitor Chair",
+        "slug": "visitor-flora",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-visitor-series-visitor-liberty",
+        "name": "Liberty Visitor Chair",
+        "slug": "visitor-liberty",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-visitor-series-visitor-regency",
+        "name": "Regency Visitor Chair",
+        "slug": "visitor-regency",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-visitor-series-visitor-titan",
+        "name": "Titan Visitor Chair",
+        "slug": "visitor-titan",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    },
+    {
+      "product": {
+        "id": "product-chairs-visitor-series-visitor-venus-vista-chair",
+        "name": "Visitor Venus & Vista Chair",
+        "slug": "visitor-venus-vista-chair",
+        "category": "chairs"
+      },
+      "topMatch": {
+        "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+        "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+        "confidence": 95,
+        "reason": "Slug in image name"
+      },
+      "allMatches": [
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-93-lb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414129/steelmade/chairs/executive-series/nano/ic-93-lb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-92-mb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414116/steelmade/chairs/executive-series/nano/ic-92-mb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        },
+        {
+          "public_id": "steelmade/chairs/executive-series/nano/ic-91-hb",
+          "secure_url": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750414107/steelmade/chairs/executive-series/nano/ic-91-hb.jpg",
+          "confidence": 95,
+          "reason": "Slug in image name"
+        }
+      ]
+    }
+  ]
+}
