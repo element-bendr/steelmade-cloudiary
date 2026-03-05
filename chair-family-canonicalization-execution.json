@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-03-05T18:02:02.006Z",
+  "generatedAt": "2026-03-05T18:08:46.443Z",
   "options": {
     "execute": true,
-    "deleteStandalone": false,
+    "deleteStandalone": true,
     "setFamilyName": false,
     "force": false,
     "planPath": "chair-family-canonicalization-plan.json"
@@ -11,229 +11,229 @@
     "familiesAttempted": 37,
     "familiesSucceeded": 37,
     "familiesFailed": 0,
-    "standaloneDeleted": 0
+    "standaloneDeleted": 62
   },
   "executionLog": [
     {
       "familyKey": "trident",
       "canonicalId": "PYCfep3q5TfxEMsSZm4nFP",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "berlin",
       "canonicalId": "azxCCZJCUCHUDe0xTqdqkU",
-      "deleted": 0,
+      "deleted": 3,
       "status": "success"
     },
     {
       "familyKey": "craft",
       "canonicalId": "PYCfep3q5TfxEMsSZlyfi0",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "dc",
       "canonicalId": "SfgI0z4vRA5blg633yFp4F",
-      "deleted": 0,
+      "deleted": 3,
       "status": "success"
     },
     {
       "familyKey": "feedo",
       "canonicalId": "SfgI0z4vRA5blg633yFqcn",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "flamingo",
       "canonicalId": "PYCfep3q5TfxEMsSZm4vEb",
-      "deleted": 0,
+      "deleted": 4,
       "status": "success"
     },
     {
       "familyKey": "flea",
       "canonicalId": "SfgI0z4vRA5blg633yFrj5",
-      "deleted": 0,
+      "deleted": 2,
       "status": "success"
     },
     {
       "familyKey": "honda",
       "canonicalId": "azxCCZJCUCHUDe0xTqdtCu",
-      "deleted": 0,
+      "deleted": 5,
       "status": "success"
     },
     {
       "familyKey": "matrix",
       "canonicalId": "SfgI0z4vRA5blg633yDOoV",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "mercedes",
       "canonicalId": "azxCCZJCUCHUDe0xTqdtb6",
-      "deleted": 0,
+      "deleted": 2,
       "status": "success"
     },
     {
       "familyKey": "moscow",
       "canonicalId": "SfgI0z4vRA5blg633yFuxF",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "robo",
       "canonicalId": "SfgI0z4vRA5blg633yFvfz",
-      "deleted": 0,
+      "deleted": 3,
       "status": "success"
     },
     {
       "familyKey": "roger",
       "canonicalId": "azxCCZJCUCHUDe0xTqduc0",
-      "deleted": 0,
+      "deleted": 3,
       "status": "success"
     },
     {
       "familyKey": "roman",
       "canonicalId": "azxCCZJCUCHUDe0xTqcCmi",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "tokyo",
       "canonicalId": "SfgI0z4vRA5blg633yFx0P",
-      "deleted": 0,
+      "deleted": 3,
       "status": "success"
     },
     {
       "familyKey": "ud",
       "canonicalId": "PYCfep3q5TfxEMsSZm57N6",
-      "deleted": 0,
+      "deleted": 3,
       "status": "success"
     },
     {
       "familyKey": "vivo",
       "canonicalId": "SfgI0z4vRA5blg633yDRY3",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "zara",
       "canonicalId": "SfgI0z4vRA5blg633yDS7N",
-      "deleted": 0,
+      "deleted": 2,
       "status": "success"
     },
     {
       "familyKey": "amazon",
       "canonicalId": "PYCfep3q5TfxEMsSZm58OD",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "amigo",
       "canonicalId": "PYCfep3q5TfxEMsSZm58hd",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "luxury",
       "canonicalId": "azxCCZJCUCHUDe0xTqdxCt",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "lx",
       "canonicalId": "azxCCZJCUCHUDe0xTqdxOz",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "mini-markson",
       "canonicalId": "PYCfep3q5TfxEMsSZlyteA",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "obama",
       "canonicalId": "SfgI0z4vRA5blg633yG25x",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "sahara",
       "canonicalId": "PYCfep3q5TfxEMsSZm5H56",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "siemens",
       "canonicalId": "azxCCZJCUCHUDe0xTqe0Al",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "supreme",
       "canonicalId": "SfgI0z4vRA5blg633yDW1v",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "syndicate",
       "canonicalId": "PYCfep3q5TfxEMsSZm5Ixc",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "verna",
       "canonicalId": "azxCCZJCUCHUDe0xTqe0aA",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "bubble-visi",
       "canonicalId": "SfgI0z4vRA5blg633yDeCD",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "index",
       "canonicalId": "PYCfep3q5TfxEMsSZlzSPi",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "pearl",
       "canonicalId": "azxCCZJCUCHUDe0xTqcNDt",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "venus",
       "canonicalId": "azxCCZJCUCHUDe0xTqcOEn",
-      "deleted": 0,
+      "deleted": 2,
       "status": "success"
     },
     {
       "familyKey": "flora",
       "canonicalId": "imported-product-visitor-flora",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     },
     {
       "familyKey": "liberty",
       "canonicalId": "imported-product-visitor-liberty",
-      "deleted": 0,
+      "deleted": 2,
       "status": "success"
     },
     {
       "familyKey": "regency",
       "canonicalId": "imported-product-visitor-regency",
-      "deleted": 0,
+      "deleted": 2,
       "status": "success"
     },
     {
       "familyKey": "titan",
       "canonicalId": "imported-product-visitor-titan",
-      "deleted": 0,
+      "deleted": 1,
       "status": "success"
     }
   ]

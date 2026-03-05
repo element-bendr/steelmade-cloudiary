@@ -115,7 +115,7 @@ async function run() {
   let skipped = 0;
   let toDeleteCount = 0;
   const skippedReasons: Array<{ familyKey: string; reason: string }> = [];
-  const operations: FamilyPlan[] = [];
+  const operations: Array<{ family: FamilyPlan; deleteOnly: boolean }> = [];
 
   for (const family of plan.families) {
     const canonicalDoc = docMap.get(family.canonical.id);
@@ -144,7 +144,8 @@ async function run() {
       continue;
     }
 
-    if (canonicalDoc.variantCount > 0 && !force) {
+    const deleteOnly = canonicalDoc.variantCount > 0 && !force;
+    if (deleteOnly && !deleteStandalone) {
       skipped++;
       skippedReasons.push({
         familyKey: family.familyKey,
@@ -154,7 +155,7 @@ async function run() {
     }
 
     eligible++;
-    operations.push(family);
+    operations.push({ family, deleteOnly });
     toDeleteCount += family.variants.filter((variant) => variant.id !== family.canonical.id).length;
   }
 
@@ -179,7 +180,7 @@ async function run() {
     }
   }
 
-  const redirectMap = operations.flatMap((family) =>
+  const redirectMap = operations.flatMap(({ family }) =>
     family.deprecatedSlugs.map((deprecatedSlug) => ({
       category: family.category,
       series: family.series,
@@ -199,15 +200,16 @@ async function run() {
 
   const executionLog: Array<{ familyKey: string; canonicalId: string; deleted: number; status: string; error?: string }> = [];
 
-  for (const family of operations) {
+  for (const { family, deleteOnly } of operations) {
     try {
-      const sanityVariants = toSanityVariants(family.variants);
-      const patchPayload: Record<string, unknown> = { variants: sanityVariants };
-      if (setFamilyName) {
-        patchPayload.name = family.familyDisplayName;
+      if (!deleteOnly) {
+        const sanityVariants = toSanityVariants(family.variants);
+        const patchPayload: Record<string, unknown> = { variants: sanityVariants };
+        if (setFamilyName) {
+          patchPayload.name = family.familyDisplayName;
+        }
+        await sanityClient.patch(family.canonical.id).set(patchPayload).commit();
       }
-
-      await sanityClient.patch(family.canonical.id).set(patchPayload).commit();
 
       let deleted = 0;
       if (deleteStandalone) {

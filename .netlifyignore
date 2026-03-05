@@ -1,0 +1,54 @@
+# VCS / local editor / local tooling state
+.git/
+.github/
+.cursor/
+.roo/
+.netlify/
+.beads/
+
+# Dependencies and local build cache (re-created by Netlify)
+node_modules/
+.next/
+dist/
+coverage/
+
+# Local env and machine-specific files
+.env.local
+*.log
+
+# Documentation and task artifacts not required for build output
+docs/
+documentation/
+reports/
+tasks/
+task-master-ai/
+.taskmaster/
+memory.md
+history.md
+progress.md
+planner.md
+tasks.md
+
+# Analysis / execution artifacts (large JSON outputs)
+*-analysis.json
+*-execution.json
+*-plan.json
+unmapped-cloudinary-images.json
+image-migration-map.json
+cloudinary-*.json
+visitor-*.json
+categorization-fixes.json
+remaining-products-*.json
+sync-gap-analysis.json
+product-creation-*.json
+variant-consolidation-*.json
+sanity-*-plan.json
+sanity-*-execution.json
+
+# Ad-hoc patch helpers and local scratch files
+patch_*.js
+fix_*.js
+edit_tasks.mjs
+*.ps1
+*.bat
+
