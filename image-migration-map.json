@@ -1,0 +1,1303 @@
+{
+  "timestamp": "2026-03-05T11:20:32.260Z",
+  "summary": {
+    "total": 179,
+    "autoMigrate": 104,
+    "manualAssign": 0,
+    "noImage": 75
+  },
+  "migrations": {
+    "auto": [
+      {
+        "productId": "amazon",
+        "productName": "Amazon Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/4625b0e4cfd1776818f1b8376b1aad643029df4b-263x433.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/amazon/4625b0e4cfd1776818f1b8376b1aad643029df4b.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "amigo",
+        "productName": "Amigo Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/831a1747078f8413dc05656a25c40af6950e93b4-1200x1200.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/amigo/831a1747078f8413dc05656a25c40af6950e93b4.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "ashley-director-chair",
+        "productName": "Ashley Director Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/fd4a0c2d2e2c7b55ebc1a9c8ee42a1e2c0de4523-574x863.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/ashley_director_chair/fd4a0c2d2e2c7b55ebc1a9c8ee42a1e2c0de4523.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "bb",
+        "productName": "BB Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/ceee06875bd958a77bc08cf68729666cdb39b45e-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/bb/ceee06875bd958a77bc08cf68729666cdb39b45e.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "benz",
+        "productName": "Benz Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/b0980d92d8e19d91870e268466530b19d7b5d217-260x394.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/benz/b0980d92d8e19d91870e268466530b19d7b5d217.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "berlin",
+        "productName": "Berlin Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/150f21cc0ddb6a22b8ef68c7c46d14e1b5023c98-600x600.webp",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/berlin/150f21cc0ddb6a22b8ef68c7c46d14e1b5023c98.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "bigboss-gold-director-chair",
+        "productName": "BigBoss Gold Director Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/3e88aec491da65f079818e4dcd17c58b4281ef3c-365x576.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/bigboss_gold_director_chair/3e88aec491da65f079818e4dcd17c58b4281ef3c.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "boston-director-chair",
+        "productName": "Boston Director Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/7564ca103dcad2936d28703b9f24a5dbf03e697a-462x571.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/boston_director_chair/7564ca103dcad2936d28703b9f24a5dbf03e697a.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "cobra-ergonomic-chair",
+        "productName": "Cobra Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/74cda341afec7e6bc29887ba9ec00c53b6ed67d0-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/cobra_ergonomic_chair/74cda341afec7e6bc29887ba9ec00c53b6ed67d0.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "commander-chair",
+        "productName": "Commander Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/ebd9d90c9b3b018184997fec9a838bfd43cb925b-283x414.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/commander_chair/ebd9d90c9b3b018184997fec9a838bfd43cb925b.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "craft-ergonomic-chair",
+        "productName": "Craft Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/3e36925ccaee8e8b6a3bab4baeec421981c3246f-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/craft_ergonomic_chair/3e36925ccaee8e8b6a3bab4baeec421981c3246f.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "dc",
+        "productName": "DC Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/af5eb3c8c65b4e0f7d81aabd07bb9e2a32e2ff53-372x640.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/dc/af5eb3c8c65b4e0f7d81aabd07bb9e2a32e2ff53.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "duster-executive-chair",
+        "productName": "Duster Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/53035e5e3e9211e988f703d18935780ebe9265ff-262x394.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/duster_executive_chair/53035e5e3e9211e988f703d18935780ebe9265ff.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "duster",
+        "productName": "Duster Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/53035e5e3e9211e988f703d18935780ebe9265ff-262x394.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/duster/53035e5e3e9211e988f703d18935780ebe9265ff.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "ev",
+        "productName": "EV Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/3fd279b031efc5ddc6e41c1670af70c7c67498cc-600x600.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/ev/3fd279b031efc5ddc6e41c1670af70c7c67498cc.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "feedo",
+        "productName": "Feedo Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/9ded607207b9b2335b36889b9ce826603bad7457-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/feedo/9ded607207b9b2335b36889b9ce826603bad7457.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "flame-ergonomic-chair",
+        "productName": "Flame Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/c96f91c461a4b250ec04f72bc29b2c3f4724adcd-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/flame_ergonomic_chair/c96f91c461a4b250ec04f72bc29b2c3f4724adcd.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "flamingo-ergonomic-chair",
+        "productName": "Flamingo Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/a88cbdd5eced4d0e9378f3a7cd687286528723ef-800x800.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/flamingo_ergonomic_chair/a88cbdd5eced4d0e9378f3a7cd687286528723ef.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "flea",
+        "productName": "Flea Ergonomic Series",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/b9effca808a95b21fd047604b19a87301e2b7258-600x600.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/flea/b9effca808a95b21fd047604b19a87301e2b7258.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "visitor-flora",
+        "productName": "Flora Visitor Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/999957a398fdff64f3791ec8d9c07d7b9b3d533a-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/visitor_flora/999957a398fdff64f3791ec8d9c07d7b9b3d533a.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "grandezza-director-chair",
+        "productName": "Grandezza Director Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/4818bbc2c4ba15236dc87adf7e80bf1de1e29bf1-351x572.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/grandezza_director_chair/4818bbc2c4ba15236dc87adf7e80bf1de1e29bf1.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "honda-ergonomic-chair",
+        "productName": "Honda Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/247b58fafebb7b0043052fcbe4cd9c2f90135a67-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/honda_ergonomic_chair/247b58fafebb7b0043052fcbe4cd9c2f90135a67.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "irana",
+        "productName": "Irana Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/5df14d1cb8d69e883e39048b9d3413db67d28b9f-192x276.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/irana/5df14d1cb8d69e883e39048b9d3413db67d28b9f.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "korean-chair",
+        "productName": "Korean Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/ee4d5abc188f60c9dc6417af7816590e06b6188e-266x434.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/korean_chair/ee4d5abc188f60c9dc6417af7816590e06b6188e.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "kotak-director-chair",
+        "productName": "Kotak Director Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/48a51aefb61865d32fefa13da51debbc4134605b-237x395.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/kotak_director_chair/48a51aefb61865d32fefa13da51debbc4134605b.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "lx",
+        "productName": "LX Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/3c99bd752b104284a2bb069b3d9ad2a4393c733b-274x414.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/lx/3c99bd752b104284a2bb069b3d9ad2a4393c733b.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "visitor-liberty",
+        "productName": "Liberty Visitor Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/e40b27a3ff77147135a5d5969f7f17c6733dc08d-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/visitor_liberty/e40b27a3ff77147135a5d5969f7f17c6733dc08d.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "luxury",
+        "productName": "Luxury Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/205db070a9967573a9ae06441ca5cdce4295bb79-286x433.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/luxury/205db070a9967573a9ae06441ca5cdce4295bb79.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "makson-executive-chair",
+        "productName": "Makson Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/e6b82275925aeed172c2af2a47eb93dfffa42914-181x276.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/makson_executive_chair/e6b82275925aeed172c2af2a47eb93dfffa42914.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "marvel-ergonomic-chair",
+        "productName": "Marvel Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/6d2defb72c98cfc5d0663a4e931e0e26a676a852-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/marvel_ergonomic_chair/6d2defb72c98cfc5d0663a4e931e0e26a676a852.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "matrix-ergonomic-chair",
+        "productName": "Matrix Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/8dd7ebaf12e4f7b4688e00b68030dee8fb0e8865-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/matrix_ergonomic_chair/8dd7ebaf12e4f7b4688e00b68030dee8fb0e8865.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "mercedes",
+        "productName": "Mercedes Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/74b1c864ac0d2c430e4b7fe782e32e77638fe299-432x432.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/mercedes/74b1c864ac0d2c430e4b7fe782e32e77638fe299.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "milano-director-chair",
+        "productName": "Milano Director Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/5b3f1df16df62863a522eff8c0c619a818f14855-386x630.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/milano_director_chair/5b3f1df16df62863a522eff8c0c619a818f14855.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "mini-ginger-dolphin-executive-chair",
+        "productName": "Mini / Ginger / Dolphin Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/fa49a610d9a8d0fb4defe59a1527b015157cc5de-213x276.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/mini_ginger_dolphin_executive_chair/fa49a610d9a8d0fb4defe59a1527b015157cc5de.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "mini-markson",
+        "productName": "Mini Markson Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/7758f0466d26735669fb5a886c24bdb23adcf36a-175x277.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/mini_markson/7758f0466d26735669fb5a886c24bdb23adcf36a.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "monarch-director-chair",
+        "productName": "Monarch Director Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/1d1935b4f5ca25dfb1a01af259ef36b09ab30844-351x571.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/monarch_director_chair/1d1935b4f5ca25dfb1a01af259ef36b09ab30844.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "mono-ergonomic-chair",
+        "productName": "Mono Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/8fa95f6a6815b94949a991495f0edc1e1ca9b574-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/mono_ergonomic_chair/8fa95f6a6815b94949a991495f0edc1e1ca9b574.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "moscow",
+        "productName": "Moscow Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/fd6b17dbdffcca12fff74486ae219adedbad2f50-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/moscow/fd6b17dbdffcca12fff74486ae219adedbad2f50.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "nano-executive-chair",
+        "productName": "Nano Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/f1b8914db0433666f473173647f700c0a1d4c70a-152x276.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/nano_executive_chair/f1b8914db0433666f473173647f700c0a1d4c70a.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "navy-ergonomic-chair",
+        "productName": "Navy Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/0e159b85e5586e9078cca50c3d1cde750c081f98-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/navy_ergonomic_chair/0e159b85e5586e9078cca50c3d1cde750c081f98.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "nissan-director-chair",
+        "productName": "Nissan Director Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/15ead8fce7152603027d1241cdc28d83e86456a3-299x346.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/nissan_director_chair/15ead8fce7152603027d1241cdc28d83e86456a3.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "obama",
+        "productName": "Obama Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/18d146da520921ea573dc452604f2573a6ac347b-720x960.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/obama/18d146da520921ea573dc452604f2573a6ac347b.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "ola-roman",
+        "productName": "Ola & Roman Ergonomic Chairs",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/0ab65cda20c8a0bc08dbc376a1412dd521a5aa44-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/ola_roman/0ab65cda20c8a0bc08dbc376a1412dd521a5aa44.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "opera-director-chair",
+        "productName": "Opera Director Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/fa48756b25edf3a62efc41249fc637a65f2de6b8-600x800.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/opera_director_chair/fa48756b25edf3a62efc41249fc637a65f2de6b8.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "parker-director-chair",
+        "productName": "Parker Director Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/88f1ec51e95ff2fa940ce8b2786e4272418e3442-1152x1728.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/parker_director_chair/88f1ec51e95ff2fa940ce8b2786e4272418e3442.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "perk",
+        "productName": "Perk Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/dc47597e85f774cb1e6bc1e484742130aa4e0af1-268x394.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/perk/dc47597e85f774cb1e6bc1e484742130aa4e0af1.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "perkshynl",
+        "productName": "Perkshynl Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/ac44ad61780b29c4c50b55a1bd7df3ccbd621d6e-254x394.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/perkshynl/ac44ad61780b29c4c50b55a1bd7df3ccbd621d6e.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "phantom-executive-chair",
+        "productName": "Phantom Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/e6cfff55a3faf77780ff46194c0272be4b75cbfb-192x276.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/phantom_executive_chair/e6cfff55a3faf77780ff46194c0272be4b75cbfb.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "pine-pony-windy",
+        "productName": "Pine, Pony & Windy Ergonomic Chairs",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/2c12d94b883de3e0ff0a5ecb6d6be68578421fd7-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/pine_pony_windy/2c12d94b883de3e0ff0a5ecb6d6be68578421fd7.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "premier-executive-chair",
+        "productName": "Premier Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/1f78a0aaf22231391293b55e1a33066f5ab27926-156x276.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/premier_executive_chair/1f78a0aaf22231391293b55e1a33066f5ab27926.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "visitor-regency",
+        "productName": "Regency Visitor Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/197f28d616baea89cc6bbb96ae3e3a7d510b520c-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/visitor_regency/197f28d616baea89cc6bbb96ae3e3a7d510b520c.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "robo-ergonomic-chair",
+        "productName": "Robo Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/d9f9e109fe4dd460baa26bd9aa945012d94077a7-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/robo_ergonomic_chair/d9f9e109fe4dd460baa26bd9aa945012d94077a7.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "roger",
+        "productName": "Roger Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/be9b14d9b477dd44644494d6db2acb689a5af1f0-504x504.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/roger/be9b14d9b477dd44644494d6db2acb689a5af1f0.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "sahara",
+        "productName": "Sahara Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/6c1b03fcad3e17dfc53cf7804b27cb35b1adb96d-274x434.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/sahara/6c1b03fcad3e17dfc53cf7804b27cb35b1adb96d.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "siemens",
+        "productName": "Siemens Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/74e3707c282d9d3c7a35f629b2b4255bf81183fd-296x434.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/siemens/74e3707c282d9d3c7a35f629b2b4255bf81183fd.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "skoda-executive-chair",
+        "productName": "Skoda Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/d601602de35a4985e6547c29e5534e26c082af0d-159x277.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/skoda_executive_chair/d601602de35a4985e6547c29e5534e26c082af0d.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "supreme",
+        "productName": "Supreme Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/fbd4daeaf1d84caef75e8e7af04a86a1effe59e7-287x434.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/supreme/fbd4daeaf1d84caef75e8e7af04a86a1effe59e7.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "syndicate",
+        "productName": "Syndicate Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/282326edaa00e554ab2f8d7e0e8c09de8ce3eb2e-297x414.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/syndicate/282326edaa00e554ab2f8d7e0e8c09de8ce3eb2e.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "visitor-titan",
+        "productName": "Titan Visitor Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/66bb964f3ee5c927ca9a487364687d14d71e0cd0-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/visitor_titan/66bb964f3ee5c927ca9a487364687d14d71e0cd0.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "tokyo",
+        "productName": "Tokyo Ergonomic Series",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/fb71acbd0008bb3e10bd7d83090bb4455960fda6-600x600.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/tokyo/fb71acbd0008bb3e10bd7d83090bb4455960fda6.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "trident",
+        "productName": "Trident Director Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/ab02f4457b4e69e4ebe6b3d8ce654364e7550f64-720x720.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/trident/ab02f4457b4e69e4ebe6b3d8ce654364e7550f64.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "tycoon-director-chair",
+        "productName": "Tycoon Director Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/c95b1b2d948a013b53f43624eb12a1144b01bbc5-356x572.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/tycoon_director_chair/c95b1b2d948a013b53f43624eb12a1144b01bbc5.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "ud",
+        "productName": "UD Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/a8bd011be63df159e87682d66218d2ff3c1bb0de-582x961.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/ud/a8bd011be63df159e87682d66218d2ff3c1bb0de.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "venus-rev-ud",
+        "productName": "Venus Rev UD Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/9ab8ef9c14b485fbb76f8e63d3951a8a60b68fa0-600x800.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/venus_rev_ud/9ab8ef9c14b485fbb76f8e63d3951a8a60b68fa0.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "verna",
+        "productName": "Verna Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/3de2cc5bd37151a664fa30e06e13e26497698888-296x433.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/verna/3de2cc5bd37151a664fa30e06e13e26497698888.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "visitor-venus-vista-chair",
+        "productName": "Visitor Venus & Vista Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/b9de72c1f996976ef6122a56c5d910af0f5ad359-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/visitor_venus_vista_chair/b9de72c1f996976ef6122a56c5d910af0f5ad359.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "vivo-ergonomic-chair",
+        "productName": "Vivo Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/6eb5951683cdc4795ead3ce1e6479c124d12f557-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/vivo_ergonomic_chair/6eb5951683cdc4795ead3ce1e6479c124d12f557.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "wilson-executive-chair",
+        "productName": "Wilson Executive Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/043513ad3561a9161faaa25fb52b85947f4653c2-175x276.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/wilson_executive_chair/043513ad3561a9161faaa25fb52b85947f4653c2.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "woodland-director-chair",
+        "productName": "Woodland Director Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/731d0ed89e59a871b9370ef263b3fb89b352a9f3-600x800.jpg",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/woodland_director_chair/731d0ed89e59a871b9370ef263b3fb89b352a9f3.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "zara-ergonomic-chair",
+        "productName": "Zara Ergonomic Chair",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/d1b0c9d70bfa519f54eb61b91ad6a899d2500c02-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/zara_ergonomic_chair/d1b0c9d70bfa519f54eb61b91ad6a899d2500c02.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "18mm-accessory-rail",
+        "productName": "18mm Accessory Rail",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/7f9552da61461fad97f30b79a2452168bbd8b455-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/18mm_accessory_rail/7f9552da61461fad97f30b79a2452168bbd8b455.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "18mm-screen",
+        "productName": "18mm Privacy Screen",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/63be296a4cab3bf84b49457b8f768fa9a87d6010-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/18mm_screen/63be296a4cab3bf84b49457b8f768fa9a87d6010.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "30mm-screen",
+        "productName": "30mm Acoustic Screen",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/8aa40b2b71784627a0c1fe8fdebe2cf2ce1154dc-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/30mm_screen/8aa40b2b71784627a0c1fe8fdebe2cf2ce1154dc.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "30mm-panel-based-partition",
+        "productName": "30mm Panel Based Partition",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/16551156763423dc012fabc684e12c8acb2a3b57-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/30mm_panel_based_partition/16551156763423dc012fabc684e12c8acb2a3b57.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "30mm-panel-based-partition-2",
+        "productName": "30mm Panel Based Partition (Variant)",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/7db21f43e2cd91caf3044b24da475a30b2c62c6f-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/30mm_panel_based_partition_2/7db21f43e2cd91caf3044b24da475a30b2c62c6f.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "50mm-panel-based-partition",
+        "productName": "50mm Panel Based Partition",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/ecb8482820d0349cfa7ef70d0b87348453212040-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/50mm_panel_based_partition/ecb8482820d0349cfa7ef70d0b87348453212040.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "50mm-panel-based-partition-2",
+        "productName": "50mm Panel Based Partition (Variant)",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/780dab90569ae362ffdb65656ac462de4788b2db-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/50mm_panel_based_partition_2/780dab90569ae362ffdb65656ac462de4788b2db.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "60mm-panel-based-partition",
+        "productName": "60mm Panel Based Partition",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/ab5d2b0f1b1c312d90c4921d428a90603f502afd-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/60mm_panel_based_partition/ab5d2b0f1b1c312d90c4921d428a90603f502afd.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "8mm-accessory-rail",
+        "productName": "8mm Accessory Rail",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/d1ea46d58efb903b2cbad12c61a38ca764df799e-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/8mm_accessory_rail/d1ea46d58efb903b2cbad12c61a38ca764df799e.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "8mm-laminated-glass",
+        "productName": "8mm Laminated Glass Screen",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/b005842335fade7f8e5810fb3aac73a91dd1a7af-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/8mm_laminated_glass/b005842335fade7f8e5810fb3aac73a91dd1a7af.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "accessflap",
+        "productName": "Access Flap",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/b5ac559f8ea0e9d3eea980a96d3631c1adcc3260-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/accessflap/b5ac559f8ea0e9d3eea980a96d3631c1adcc3260.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "access-flapbox",
+        "productName": "Access Flapbox",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/d13971ec251e0a1441e328abd9c63d1420559696-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/access_flapbox/d13971ec251e0a1441e328abd9c63d1420559696.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "aluminium-raceway",
+        "productName": "Aluminium Raceway",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/8b93351cb85ba298b4569178d885ff2b7d3e5b2f-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/aluminium_raceway/8b93351cb85ba298b4569178d885ff2b7d3e5b2f.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "c-access-raleway-above",
+        "productName": "C-Access Raleway Above",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/1aabef4df16e7460609f5ac1b632287cf32b9a94-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/c_access_raleway_above/1aabef4df16e7460609f5ac1b632287cf32b9a94.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "c-access-raleway-below",
+        "productName": "C-Access Raleway Below",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/2c97cd304b224cdd129c0ae95a46c64fab1292b7-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/c_access_raleway_below/2c97cd304b224cdd129c0ae95a46c64fab1292b7.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "curve-series",
+        "productName": "Curve Series Workstation",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/eca31d8046ac600c6c99b771a57b61d54ec433ed-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/curve_series/eca31d8046ac600c6c99b771a57b61d54ec433ed.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "dual-raceway",
+        "productName": "Dual Raceway",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/205add720ebb42cae9f9967e467d7289fab9adb5-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/dual_raceway/205add720ebb42cae9f9967e467d7289fab9adb5.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "edge-profiler",
+        "productName": "Edge Profiler",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/e9562bd79c69de48f398c0ec6cc37790c12092eb-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/edge_profiler/e9562bd79c69de48f398c0ec6cc37790c12092eb.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "elevate-series",
+        "productName": "Elevate Series Workstation",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/b97ed1652ffedecd24763b87a30a11b51ab0e3fe-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/elevate_series/b97ed1652ffedecd24763b87a30a11b51ab0e3fe.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "elite-series",
+        "productName": "Elite Series Workstation",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/baa2c4304cc50d0391a2440234217e128c77b85d-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/elite_series/baa2c4304cc50d0391a2440234217e128c77b85d.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "flexi-raceway",
+        "productName": "Flexi Raceway",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/f35f87d254072068cd79d3fdffa395d3eb338fa6-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/flexi_raceway/f35f87d254072068cd79d3fdffa395d3eb338fa6.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "glass-clamp",
+        "productName": "Glass Clamp",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/c0983dc481b62ddde5234e4e45b10fc64f2049a9-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/glass_clamp/c0983dc481b62ddde5234e4e45b10fc64f2049a9.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "hexa-series",
+        "productName": "Hexa Series Workstation",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/5c43e354808c649d32aadbcfeb32a5e5641dec43-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/hexa_series/5c43e354808c649d32aadbcfeb32a5e5641dec43.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "impact-series",
+        "productName": "Impact Series Workstation",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/964503ac2239917b4e43c5caec2b6373312cfce0-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/impact_series/964503ac2239917b4e43c5caec2b6373312cfce0.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "impress-series",
+        "productName": "Impress Series Workstation",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/d9a15d3f9d9577e6ac63a9c3abb858e96b0dc5f2-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/impress_series/d9a15d3f9d9577e6ac63a9c3abb858e96b0dc5f2.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "marvel-workstation",
+        "productName": "Marvel Series Workstation",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/a9e40adbb67d5e5db733d55d9a9046601cfa8800-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/marvel_workstation/a9e40adbb67d5e5db733d55d9a9046601cfa8800.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "metal-divider",
+        "productName": "Metal Divider",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/71dda2625ab929b73f8967f07552c6f39d9d0157-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/metal_divider/71dda2625ab929b73f8967f07552c6f39d9d0157.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "neo-eco-series",
+        "productName": "Neo Eco Series Workstation",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/7461c196d2610e799d36584f28aff2a8973485a4-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/neo_eco_series/7461c196d2610e799d36584f28aff2a8973485a4.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "neo-series",
+        "productName": "Neo Series Workstation",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/e5d7907eed2fed78ce40156aae0c08c69204b67f-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/neo_series/e5d7907eed2fed78ce40156aae0c08c69204b67f.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "riser",
+        "productName": "Riser",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/df640f95e7cc727d97e8abda0f1e4dee7ec98b69-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/riser/df640f95e7cc727d97e8abda0f1e4dee7ec98b69.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "rock-series",
+        "productName": "Rock Series Workstation",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/78b233e3621ba2974eb4bf631b80d037a35a44e6-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/rock_series/78b233e3621ba2974eb4bf631b80d037a35a44e6.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "spark-series",
+        "productName": "Spark Series Workstation",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/51919e42f36b8aa69d2779584feb38bb4770dfac-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/spark_series/51919e42f36b8aa69d2779584feb38bb4770dfac.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "three-drawerpedestal",
+        "productName": "Three Drawer Pedestal",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/2c329060ecf361fae1c4a96c5a76491574ff7ef2-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/three_drawerpedestal/2c329060ecf361fae1c4a96c5a76491574ff7ef2.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      },
+      {
+        "productId": "two-drawerpedestal",
+        "productName": "Two Drawer Pedestal",
+        "type": "auto-migrate",
+        "currentUrl": "https://cdn.sanity.io/images/n6xqwypu/production/020085f25d0f7c4dbebc52d2ac97d379b713fe09-500x500.png",
+        "suggestedCloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/two_drawerpedestal/020085f25d0f7c4dbebc52d2ac97d379b713fe09.jpg",
+        "reason": "Can auto-migrate from Sanity CDN to Cloudinary"
+      }
+    ],
+    "manual": [],
+    "noImage": [
+      {
+        "productId": "visitor-classic-chair",
+        "productName": "Visitor Classic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "apex-workstation",
+        "productName": "Apex Workstation",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "horizon-desk",
+        "productName": "Horizon Desk",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "modcabinet",
+        "productName": "ModCabinet",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "wallstore",
+        "productName": "WallStore",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "amazon",
+        "productName": "Amazon Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "amigo",
+        "productName": "Amigo Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "ashley-director-chair",
+        "productName": "Ashley Director Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "bb",
+        "productName": "BB Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "benz",
+        "productName": "Benz Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "berlin",
+        "productName": "Berlin Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "bigboss-gold-director-chair",
+        "productName": "BigBoss Gold Director Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "boston-director-chair",
+        "productName": "Boston Director Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "cobra-ergonomic-chair",
+        "productName": "Cobra Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "commander-chair",
+        "productName": "Commander Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "craft-ergonomic-chair",
+        "productName": "Craft Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "dc",
+        "productName": "DC Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "duster",
+        "productName": "Duster Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "ev",
+        "productName": "EV Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "feedo",
+        "productName": "Feedo Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "flame-ergonomic-chair",
+        "productName": "Flame Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "flamingo-ergonomic-chair",
+        "productName": "Flamingo Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "flea",
+        "productName": "Flea Ergonomic Series",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "visitor-flora",
+        "productName": "Flora Visitor Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "grandezza-director-chair",
+        "productName": "Grandezza Director Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "honda-ergonomic-chair",
+        "productName": "Honda Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "irana",
+        "productName": "Irana Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "korean-chair",
+        "productName": "Korean Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "kotak-director-chair",
+        "productName": "Kotak Director Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "lx",
+        "productName": "LX Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "visitor-liberty",
+        "productName": "Liberty Visitor Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "luxury",
+        "productName": "Luxury Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "makson-executive-chair",
+        "productName": "Makson Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "marvel-ergonomic-chair",
+        "productName": "Marvel Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "matrix-ergonomic-chair",
+        "productName": "Matrix Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "mercedes",
+        "productName": "Mercedes Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "milano-director-chair",
+        "productName": "Milano Director Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "mini-ginger-dolphin-executive-chair",
+        "productName": "Mini / Ginger / Dolphin Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "mini-markson",
+        "productName": "Mini Markson Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "monarch-director-chair",
+        "productName": "Monarch Director Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "mono-ergonomic-chair",
+        "productName": "Mono Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "moscow",
+        "productName": "Moscow Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "nano-executive-chair",
+        "productName": "Nano Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "navy-ergonomic-chair",
+        "productName": "Navy Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "nissan-director-chair",
+        "productName": "Nissan Director Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "obama",
+        "productName": "Obama Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "ola-roman",
+        "productName": "Ola & Roman Ergonomic Chairs",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "opera-director-chair",
+        "productName": "Opera Director Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "parker-director-chair",
+        "productName": "Parker Director Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "perk",
+        "productName": "Perk Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "perkshynl",
+        "productName": "Perkshynl Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "phantom-executive-chair",
+        "productName": "Phantom Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "pine-pony-windy",
+        "productName": "Pine, Pony & Windy Ergonomic Chairs",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "premier-executive-chair",
+        "productName": "Premier Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "visitor-regency",
+        "productName": "Regency Visitor Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "robo-ergonomic-chair",
+        "productName": "Robo Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "roger",
+        "productName": "Roger Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "sahara",
+        "productName": "Sahara Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "siemens",
+        "productName": "Siemens Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "skoda-executive-chair",
+        "productName": "Skoda Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "supreme",
+        "productName": "Supreme Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "syndicate",
+        "productName": "Syndicate Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "visitor-titan",
+        "productName": "Titan Visitor Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "tokyo",
+        "productName": "Tokyo Ergonomic Series",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "trident",
+        "productName": "Trident Director Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "tycoon-director-chair",
+        "productName": "Tycoon Director Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "ud",
+        "productName": "UD Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "venus-rev-ud",
+        "productName": "Venus Rev UD Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "verna",
+        "productName": "Verna Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "visitor-classic-chair",
+        "productName": "Visitor Classic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "visitor-venus-vista-chair",
+        "productName": "Visitor Venus & Vista Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "vivo-ergonomic-chair",
+        "productName": "Vivo Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "wilson-executive-chair",
+        "productName": "Wilson Executive Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "woodland-director-chair",
+        "productName": "Woodland Director Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      },
+      {
+        "productId": "zara-ergonomic-chair",
+        "productName": "Zara Ergonomic Chair",
+        "type": "no-image",
+        "reason": "No images found in Sanity (mainImage and variants)"
+      }
+    ]
+  },
+  "stats": {
+    "sanityUrlsFound": 104,
+    "cloudinaryUrlsFound": 0,
+    "missingImages": 75
+  }
+}

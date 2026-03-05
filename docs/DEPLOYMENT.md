@@ -1,10 +1,12 @@
 # Deployment Instructions for steelmade.co.in
+
 **Related Issue:** steelmade-e6o (Visual inconsistency investigation)  
 **Date:** 2026-03-04
 
 ## Context
 
 Recent analysis identified deployment cache inconsistency causing visual/asset mismatch across routes. The root cause was:
+
 - Timestamp-based build IDs causing unstable asset hashes
 - Active PWA service worker caching stale HTML/assets
 - Mixed cache generations serving simultaneously at edge
@@ -12,6 +14,7 @@ Recent analysis identified deployment cache inconsistency causing visual/asset m
 ## Pre-Deploy Checklist
 
 ✅ Code changes committed:
+
 - `next.config.js`: Removed timestamp build ID, made PWA opt-in
 - Test suite normalized and tagged properly
 - All tests passing (13/13), typecheck clean
@@ -88,6 +91,7 @@ node scripts/verify-deployment.mjs
 ### What to Look For
 
 **✅ Good Signs:**
+
 - All routes return HTTP 200
 - CSS/JS assets from `/_next/static/` return 200
 - Cache-Control headers present on static assets
@@ -95,6 +99,7 @@ node scripts/verify-deployment.mjs
 - Visual consistency across all pages
 
 **❌ Warning Signs:**
+
 - Any `/_next/static/` assets returning 404
 - Dramatically different cache ages between routes (e.g., / has age=350000, /chairs has age=100)
 - Console errors about failed chunk loading
@@ -124,6 +129,7 @@ bd update steelmade-e6o --append-notes "Deploy failed verification: [details]"
 **Symptoms:** Users still seeing old cached content even after fresh deploy
 
 **Fix:**
+
 1. Confirm PWA is disabled (check `ENABLE_PWA` not set in deployment env)
 2. Users may need to:
    - Hard refresh (Ctrl+Shift+R / Cmd+Shift+R)
@@ -135,6 +141,7 @@ bd update steelmade-e6o --append-notes "Deploy failed verification: [details]"
 **Symptoms:** Assets still 404 even though build succeeded
 
 **Fix:**
+
 ```bash
 # Use Netlify API to purge cache (if you have API token)
 curl -X POST \
@@ -169,6 +176,7 @@ Deployment is successful when:
 ## Support
 
 If deployment issues persist:
+
 - Check beads issue: `bd show steelmade-e6o`
 - Review verification results: `cat deployment-verification-results.json`
 - Check Netlify deploy logs for build errors

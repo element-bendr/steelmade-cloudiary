@@ -1,0 +1,739 @@
+{
+  "uncategorized_products_found": 70,
+  "generated_at": "2026-03-05T11:14:10.242Z",
+  "sample_categorizations": [
+    {
+      "id": "amazon",
+      "name": "Amazon Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Amazon Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Amazon Executive Chair\""
+    },
+    {
+      "id": "amigo",
+      "name": "Amigo Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Amigo Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Amigo Executive Chair\""
+    },
+    {
+      "id": "ashley-director-chair",
+      "name": "Ashley Director Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Ashley Director",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "bb",
+      "name": "BB Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": null,
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "benz",
+      "name": "Benz Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Benz Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Benz Executive Chair\""
+    },
+    {
+      "id": "berlin",
+      "name": "Berlin Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Berlin Ergonomic",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "bigboss-gold-director-chair",
+      "name": "BigBoss Gold Director Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Big",
+      "reason": "keyword: \"chair\", keyword: \"executive\""
+    },
+    {
+      "id": "boston-director-chair",
+      "name": "Boston Director Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Boston Director",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "cobra-ergonomic-chair",
+      "name": "Cobra Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Cobra Ergonomic",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "commander-chair",
+      "name": "Commander Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Commander Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Commander Executive Chair\""
+    }
+  ],
+  "category_distribution": {
+    "chairs": 70,
+    "desks": 0,
+    "modular-furniture": 0,
+    "storage-solutions": 0
+  },
+  "confidence_distribution": {
+    "high": 38,
+    "medium": 32,
+    "low": 0
+  },
+  "full_categorizations": [
+    {
+      "id": "amazon",
+      "name": "Amazon Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Amazon Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Amazon Executive Chair\""
+    },
+    {
+      "id": "amigo",
+      "name": "Amigo Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Amigo Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Amigo Executive Chair\""
+    },
+    {
+      "id": "ashley-director-chair",
+      "name": "Ashley Director Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Ashley Director",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "bb",
+      "name": "BB Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": null,
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "benz",
+      "name": "Benz Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Benz Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Benz Executive Chair\""
+    },
+    {
+      "id": "berlin",
+      "name": "Berlin Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Berlin Ergonomic",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "bigboss-gold-director-chair",
+      "name": "BigBoss Gold Director Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Big",
+      "reason": "keyword: \"chair\", keyword: \"executive\""
+    },
+    {
+      "id": "boston-director-chair",
+      "name": "Boston Director Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Boston Director",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "cobra-ergonomic-chair",
+      "name": "Cobra Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Cobra Ergonomic",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "commander-chair",
+      "name": "Commander Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Commander Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Commander Executive Chair\""
+    },
+    {
+      "id": "craft-ergonomic-chair",
+      "name": "Craft Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Craft Ergonomic",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "dc",
+      "name": "DC Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": null,
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "duster",
+      "name": "Duster Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Duster Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Duster Executive Chair\""
+    },
+    {
+      "id": "ev",
+      "name": "EV Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": null,
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "feedo",
+      "name": "Feedo Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Feedo Ergonomic",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "flame-ergonomic-chair",
+      "name": "Flame Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Flame Ergonomic",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "flamingo-ergonomic-chair",
+      "name": "Flamingo Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Flamingo Ergonomic",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "flea",
+      "name": "Flea Ergonomic Series",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Flea Ergonomic",
+      "reason": "keyword: \"seating\", keyword: \"seat\""
+    },
+    {
+      "id": "visitor-flora",
+      "name": "Flora Visitor Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Flora Visitor",
+      "reason": "keyword: \"chair\", keyword: \"seat\", keyword: \"visitor chair\""
+    },
+    {
+      "id": "grandezza-director-chair",
+      "name": "Grandezza Director Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Grandezza Director",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "honda-ergonomic-chair",
+      "name": "Honda Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Honda Ergonomic",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "irana",
+      "name": "Irana Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Irana Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Irana Executive Chair\""
+    },
+    {
+      "id": "korean-chair",
+      "name": "Korean Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Korean Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Korean Executive Chair\""
+    },
+    {
+      "id": "kotak-director-chair",
+      "name": "Kotak Director Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Kotak Director",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "lx",
+      "name": "LX Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": null,
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"LX Executive Chair\""
+    },
+    {
+      "id": "visitor-liberty",
+      "name": "Liberty Visitor Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Liberty Visitor",
+      "reason": "keyword: \"chair\", keyword: \"seat\", keyword: \"visitor chair\""
+    },
+    {
+      "id": "luxury",
+      "name": "Luxury Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Luxury Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Luxury Executive Chair\""
+    },
+    {
+      "id": "makson-executive-chair",
+      "name": "Makson Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Makson Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Makson Executive Chair\""
+    },
+    {
+      "id": "marvel-ergonomic-chair",
+      "name": "Marvel Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Marvel Ergonomic",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "matrix-ergonomic-chair",
+      "name": "Matrix Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Matrix Ergonomic",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "mercedes",
+      "name": "Mercedes Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Mercedes Ergonomic",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "milano-director-chair",
+      "name": "Milano Director Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Milano Director",
+      "reason": "keyword: \"chair\", keyword: \"executive\""
+    },
+    {
+      "id": "mini-ginger-dolphin-executive-chair",
+      "name": "Mini / Ginger / Dolphin Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Mini",
+      "reason": "keyword: \"chair\", keyword: \"executive\""
+    },
+    {
+      "id": "mini-markson",
+      "name": "Mini Markson Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Mini Markson",
+      "reason": "keyword: \"chair\", keyword: \"executive\""
+    },
+    {
+      "id": "monarch-director-chair",
+      "name": "Monarch Director Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Monarch Director",
+      "reason": "keyword: \"chair\", keyword: \"executive\""
+    },
+    {
+      "id": "mono-ergonomic-chair",
+      "name": "Mono Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Mono Ergonomic",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "moscow",
+      "name": "Moscow Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Moscow Ergonomic",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "nano-executive-chair",
+      "name": "Nano Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Nano Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Nano Executive Chair\""
+    },
+    {
+      "id": "navy-ergonomic-chair",
+      "name": "Navy Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Navy Ergonomic",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "nissan-director-chair",
+      "name": "Nissan Director Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Nissan Director",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "obama",
+      "name": "Obama Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Obama Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Obama Executive Chair\""
+    },
+    {
+      "id": "ola-roman",
+      "name": "Ola & Roman Ergonomic Chairs",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Ola",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "opera-director-chair",
+      "name": "Opera Director Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Opera Director",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "parker-director-chair",
+      "name": "Parker Director Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Parker Director",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "perk",
+      "name": "Perk Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Perk Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Perk Executive Chair\""
+    },
+    {
+      "id": "perkshynl",
+      "name": "Perkshynl Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Perkshynl Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Perkshynl Executive Chair\""
+    },
+    {
+      "id": "phantom-executive-chair",
+      "name": "Phantom Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Phantom Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Phantom Executive Chair\""
+    },
+    {
+      "id": "pine-pony-windy",
+      "name": "Pine, Pony & Windy Ergonomic Chairs",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Pine",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "premier-executive-chair",
+      "name": "Premier Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Premier Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Premier Executive Chair\""
+    },
+    {
+      "id": "visitor-regency",
+      "name": "Regency Visitor Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Regency Visitor",
+      "reason": "keyword: \"chair\", keyword: \"seat\", keyword: \"visitor chair\""
+    },
+    {
+      "id": "robo-ergonomic-chair",
+      "name": "Robo Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Robo Ergonomic",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "roger",
+      "name": "Roger Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Roger Ergonomic",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "sahara",
+      "name": "Sahara Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Sahara Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Sahara Executive Chair\""
+    },
+    {
+      "id": "siemens",
+      "name": "Siemens Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Siemens Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Siemens Executive Chair\""
+    },
+    {
+      "id": "skoda-executive-chair",
+      "name": "Skoda Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Skoda Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Skoda Executive Chair\""
+    },
+    {
+      "id": "supreme",
+      "name": "Supreme Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Supreme Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Supreme Executive Chair\""
+    },
+    {
+      "id": "syndicate",
+      "name": "Syndicate Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Syndicate Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Syndicate Executive Chair\""
+    },
+    {
+      "id": "visitor-titan",
+      "name": "Titan Visitor Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Titan Visitor",
+      "reason": "keyword: \"chair\", keyword: \"seat\", keyword: \"visitor chair\""
+    },
+    {
+      "id": "tokyo",
+      "name": "Tokyo Ergonomic Series",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Tokyo Ergonomic",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "trident",
+      "name": "Trident Director Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Trident Director",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "tycoon-director-chair",
+      "name": "Tycoon Director Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Tycoon Director",
+      "reason": "keyword: \"chair\", keyword: \"executive\""
+    },
+    {
+      "id": "ud",
+      "name": "UD Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": null,
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "venus-rev-ud",
+      "name": "Venus Rev UD Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Venus Rev",
+      "reason": "keyword: \"chair\", keyword: \"executive\""
+    },
+    {
+      "id": "verna",
+      "name": "Verna Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Verna Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Verna Executive Chair\""
+    },
+    {
+      "id": "visitor-classic-chair",
+      "name": "Visitor Classic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Visitor Classic",
+      "reason": "keyword: \"chair\", keyword: \"visitor chair\""
+    },
+    {
+      "id": "visitor-venus-vista-chair",
+      "name": "Visitor Venus & Vista Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Visitor Venus",
+      "reason": "keyword: \"chair\", keyword: \"visitor chair\""
+    },
+    {
+      "id": "vivo-ergonomic-chair",
+      "name": "Vivo Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Vivo Ergonomic",
+      "reason": "keyword: \"chair\""
+    },
+    {
+      "id": "wilson-executive-chair",
+      "name": "Wilson Executive Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Wilson Executive",
+      "reason": "keyword: \"chair\", keyword: \"executive\", series pattern: \"Wilson Executive Chair\""
+    },
+    {
+      "id": "woodland-director-chair",
+      "name": "Woodland Director Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 100,
+      "inferredSeries": "Woodland Director",
+      "reason": "keyword: \"chair\", keyword: \"executive\""
+    },
+    {
+      "id": "zara-ergonomic-chair",
+      "name": "Zara Ergonomic Chair",
+      "currentCategory": null,
+      "inferredCategory": "chairs",
+      "confidence": 50,
+      "inferredSeries": "Zara Ergonomic",
+      "reason": "keyword: \"chair\""
+    }
+  ]
+}

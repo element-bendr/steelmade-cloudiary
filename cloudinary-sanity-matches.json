@@ -1,0 +1,819 @@
+{
+  "timestamp": "2026-03-05T11:30:04.180Z",
+  "totalCloudinaryImages": 308,
+  "totalSanityProducts": 179,
+  "totalMatches": 81,
+  "unmatchedProducts": 98,
+  "matches": [
+    {
+      "productId": "imported-product-18mm-screen",
+      "productName": "18mm Privacy Screen",
+      "productSlug": "18mm-screen",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1757404526/steelmade/modular/privacyscreens/18mm-screen.png",
+      "cloudinaryPublicId": "steelmade/modular/privacyscreens/18mm-screen",
+      "matchConfidence": "high",
+      "matchReason": "Exact slug match in public_id"
+    },
+    {
+      "productId": "imported-product-30mm-panel-based-partition",
+      "productName": "30mm Panel Based Partition",
+      "productSlug": "30mm-panel-based-partition",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1761062832/steelmade/modular-furniture/partition-systems/30MM_PANEL_BASED_PARTITION_2.png",
+      "cloudinaryPublicId": "steelmade/modular-furniture/partition-systems/30MM_PANEL_BASED_PARTITION_2",
+      "matchConfidence": "low",
+      "matchReason": "Fuzzy match on product name"
+    },
+    {
+      "productId": "imported-product-30mm-screen",
+      "productName": "30mm Acoustic Screen",
+      "productSlug": "30mm-screen",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1757404530/steelmade/modular/privacyscreens/30mm-screen.png",
+      "cloudinaryPublicId": "steelmade/modular/privacyscreens/30mm-screen",
+      "matchConfidence": "high",
+      "matchReason": "Exact slug match in public_id"
+    },
+    {
+      "productId": "imported-product-50mm-panel-based-partition",
+      "productName": "50mm Panel Based Partition",
+      "productSlug": "50mm-panel-based-partition",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1761063496/steelmade/modular-furniture/partition-systems/50MM_PANEL_BASED_PARTITION_2.png",
+      "cloudinaryPublicId": "steelmade/modular-furniture/partition-systems/50MM_PANEL_BASED_PARTITION_2",
+      "matchConfidence": "low",
+      "matchReason": "Fuzzy match on product name"
+    },
+    {
+      "productId": "imported-product-60mm-panel-based-partition",
+      "productName": "60mm Panel Based Partition",
+      "productSlug": "60mm-panel-based-partition",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1761316990/60MM_PANEL_BASED_PARTITION_3_bwjnvd.png",
+      "cloudinaryPublicId": "60MM_PANEL_BASED_PARTITION_3_bwjnvd",
+      "matchConfidence": "low",
+      "matchReason": "Fuzzy match on product name"
+    },
+    {
+      "productId": "imported-product-8mm-laminated-glass",
+      "productName": "8mm Laminated Glass Screen",
+      "productSlug": "8mm-laminated-glass",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1757404533/steelmade/modular/privacyscreens/8mm-laminated-glass.png",
+      "cloudinaryPublicId": "steelmade/modular/privacyscreens/8mm-laminated-glass",
+      "matchConfidence": "high",
+      "matchReason": "Exact slug match in public_id"
+    },
+    {
+      "productId": "imported-product-access-flapbox",
+      "productName": "Access Flapbox",
+      "productSlug": "access-flapbox",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1757404415/steelmade/modular-furniture/accessories/access-flapbox.png",
+      "cloudinaryPublicId": "steelmade/modular-furniture/accessories/access-flapbox",
+      "matchConfidence": "high",
+      "matchReason": "Exact slug match in public_id"
+    },
+    {
+      "productId": "imported-product-accessflap",
+      "productName": "Access Flap",
+      "productSlug": "accessflap",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1757404413/steelmade/modular-furniture/accessories/accessflap.png",
+      "cloudinaryPublicId": "steelmade/modular-furniture/accessories/accessflap",
+      "matchConfidence": "high",
+      "matchReason": "Exact slug match in public_id"
+    },
+    {
+      "productId": "imported-product-aluminium-raceway",
+      "productName": "Aluminium Raceway",
+      "productSlug": "aluminium-raceway",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1757404253/steelmade/modular/wire%20management/aluminium-raceway.png",
+      "cloudinaryPublicId": "steelmade/modular/wire management/aluminium-raceway",
+      "matchConfidence": "high",
+      "matchReason": "Exact slug match in public_id"
+    },
+    {
+      "productId": "imported-product-amazon",
+      "productName": "Amazon Executive Chair",
+      "productSlug": "amazon",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749802784/steelmade/chairs/executive-series/amazon/ic-54-mb.png",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/amazon/ic-54-mb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-amigo",
+      "productName": "Amigo Executive Chair",
+      "productSlug": "amigo",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749805780/steelmade/chairs/executive-series/amigo/ic-332-mb.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/amigo/ic-332-mb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-bb",
+      "productName": "BB Ergonomic Chair",
+      "productSlug": "bb",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1752131151/steelmade/chairs/visitor-series/bubble-visi/ic-310-w/o-arms.png",
+      "cloudinaryPublicId": "steelmade/chairs/visitor-series/bubble-visi/ic-310-w/o-arms",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-benz",
+      "productName": "Benz Executive Chair",
+      "productSlug": "benz",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749619914/steelmade/chairs/executive-series/benz/ic-34.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/benz/ic-34",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-berlin",
+      "productName": "Berlin Ergonomic Chair",
+      "productSlug": "berlin",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750417822/steelmade/chairs/ergonomic-series/berlin/ic-317-hb-white.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/ergonomic-series/berlin/ic-317-hb-white",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-c-access-raleway-above",
+      "productName": "C-Access Raleway Above",
+      "productSlug": "c-access-raleway-above",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1757404254/steelmade/moduiar/wire%20management/c-access-raleway-above.png",
+      "cloudinaryPublicId": "steelmade/moduiar/wire management/c-access-raleway-above",
+      "matchConfidence": "high",
+      "matchReason": "Exact slug match in public_id"
+    },
+    {
+      "productId": "imported-product-c-access-raleway-below",
+      "productName": "C-Access Raleway Below",
+      "productSlug": "c-access-raleway-below",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1757404254/steelmade/modular/wire%20management/c-access-raleway-below.png",
+      "cloudinaryPublicId": "steelmade/modular/wire management/c-access-raleway-below",
+      "matchConfidence": "high",
+      "matchReason": "Exact slug match in public_id"
+    },
+    {
+      "productId": "imported-product-curve-series",
+      "productName": "Curve Series Workstation",
+      "productSlug": "curve-series",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1754355076/steelmade/workstations/desk%20based%20workstation%20legs/curve-series1.png",
+      "cloudinaryPublicId": "steelmade/workstations/desk based workstation legs/curve-series1",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-dc",
+      "productName": "DC Ergonomic Chair",
+      "productSlug": "dc",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750926412/steelmade/chairs/ergonomic-series/dc/ic-343-mb-black.png",
+      "cloudinaryPublicId": "steelmade/chairs/ergonomic-series/dc/ic-343-mb-black",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-dual-raceway",
+      "productName": "Dual Raceway",
+      "productSlug": "dual-raceway",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1757404254/steelmade/modular/wire%20management/dual-raceway.png",
+      "cloudinaryPublicId": "steelmade/modular/wire management/dual-raceway",
+      "matchConfidence": "high",
+      "matchReason": "Exact slug match in public_id"
+    },
+    {
+      "productId": "imported-product-duster",
+      "productName": "Duster Executive Chair",
+      "productSlug": "duster",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749619677/steelmade/chairs/executive-series/duster/ic-36-hb.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/duster/ic-36-hb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-elevate-series",
+      "productName": "Elevate Series Workstation",
+      "productSlug": "elevate-series",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1754355090/steelmade/workstations/desk%20based%20workstation%20legs/elevate-series1.png",
+      "cloudinaryPublicId": "steelmade/workstations/desk based workstation legs/elevate-series1",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-elite-series",
+      "productName": "Elite Series Workstation",
+      "productSlug": "elite-series",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1754355062/steelmade/workstations/desk%20based%20workstation%20legs/elite-series3.png",
+      "cloudinaryPublicId": "steelmade/workstations/desk based workstation legs/elite-series3",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-ev",
+      "productName": "EV Ergonomic Chair",
+      "productSlug": "ev",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1754355090/steelmade/workstations/desk%20based%20workstation%20legs/elevate-series1.png",
+      "cloudinaryPublicId": "steelmade/workstations/desk based workstation legs/elevate-series1",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-feedo",
+      "productName": "Feedo Ergonomic Chair",
+      "productSlug": "feedo",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1751015058/steelmade/chairs/ergonomic-series/feedo/ic-259-hb-black.png",
+      "cloudinaryPublicId": "steelmade/chairs/ergonomic-series/feedo/ic-259-hb-black",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-flea",
+      "productName": "Flea Ergonomic Series",
+      "productSlug": "flea",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750934235/steelmade/chairs/ergonomic-series/flea/ic-352-hb-black.png",
+      "cloudinaryPublicId": "steelmade/chairs/ergonomic-series/flea/ic-352-hb-black",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-flexi-raceway",
+      "productName": "Flexi Raceway",
+      "productSlug": "flexi-raceway",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1757404260/steelmade/modular/wire%20management/flexi-raceway.png",
+      "cloudinaryPublicId": "steelmade/modular/wire management/flexi-raceway",
+      "matchConfidence": "high",
+      "matchReason": "Exact slug match in public_id"
+    },
+    {
+      "productId": "imported-product-hexa-series",
+      "productName": "Hexa Series Workstation",
+      "productSlug": "hexa-series",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1754355062/steelmade/workstations/desk%20based%20workstation%20legs/hexa-series2.png",
+      "cloudinaryPublicId": "steelmade/workstations/desk based workstation legs/hexa-series2",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-impact-series",
+      "productName": "Impact Series Workstation",
+      "productSlug": "impact-series",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1754355066/steelmade/workstations/desk%20based%20workstation%20legs/impact-series1.png",
+      "cloudinaryPublicId": "steelmade/workstations/desk based workstation legs/impact-series1",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-impress-series",
+      "productName": "Impress Series Workstation",
+      "productSlug": "impress-series",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1754355074/steelmade/workstations/desk%20based%20workstation%20legs/impress-series2.png",
+      "cloudinaryPublicId": "steelmade/workstations/desk based workstation legs/impress-series2",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-irana",
+      "productName": "Irana Executive Chair",
+      "productSlug": "irana",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750408457/steelmade/chairs/executive-series/irana/ic-62.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/irana/ic-62",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-luxury",
+      "productName": "Luxury Executive Chair",
+      "productSlug": "luxury",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749801328/steelmade/chairs/executive-series/luxury/ic-39-mb.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/luxury/ic-39-mb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-lx",
+      "productName": "LX Executive Chair",
+      "productSlug": "lx",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749800988/steelmade/chairs/executive-series/lx/ic-51-hb.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/lx/ic-51-hb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-mercedes",
+      "productName": "Mercedes Ergonomic Chair",
+      "productSlug": "mercedes",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/74b1c864ac0d2c430e4b7fe782e32e77638fe299-432x432.png",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750741597/steelmade/chairs/ergonomic-series/mercedes/ic-348-visi-black.png",
+      "cloudinaryPublicId": "steelmade/chairs/ergonomic-series/mercedes/ic-348-visi-black",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-mini-markson",
+      "productName": "Mini Markson Executive Chair",
+      "productSlug": "mini-markson",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/7758f0466d26735669fb5a886c24bdb23adcf36a-175x277.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750408462/steelmade/chairs/executive-series/mini-markson/ic-67-rev.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/mini-markson/ic-67-rev",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-moscow",
+      "productName": "Moscow Ergonomic Chair",
+      "productSlug": "moscow",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/fd6b17dbdffcca12fff74486ae219adedbad2f50-500x500.png",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1751016881/steelmade/chairs/ergonomic-series/moscow/ic-29-mb-black.png",
+      "cloudinaryPublicId": "steelmade/chairs/ergonomic-series/moscow/ic-29-mb-black",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-neo-series",
+      "productName": "Neo Series Workstation",
+      "productSlug": "neo-series",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/e5d7907eed2fed78ce40156aae0c08c69204b67f-500x500.png",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1754355061/steelmade/workstations/desk%20based%20workstation%20legs/neo-series1.png",
+      "cloudinaryPublicId": "steelmade/workstations/desk based workstation legs/neo-series1",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-obama",
+      "productName": "Obama Executive Chair",
+      "productSlug": "obama",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/18d146da520921ea573dc452604f2573a6ac347b-720x960.png",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749639075/steelmade/chairs/executive-series/obama/ic-303-mb.png",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/obama/ic-303-mb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-perk",
+      "productName": "Perk Executive Chair",
+      "productSlug": "perk",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/dc47597e85f774cb1e6bc1e484742130aa4e0af1-268x394.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749461921/steelmade/chairs/executive-series/perkshynl/ic-32.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/perkshynl/ic-32",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-perkshynl",
+      "productName": "Perkshynl Executive Chair",
+      "productSlug": "perkshynl",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/ac44ad61780b29c4c50b55a1bd7df3ccbd621d6e-254x394.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749461921/steelmade/chairs/executive-series/perkshynl/ic-32.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/perkshynl/ic-32",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-riser",
+      "productName": "Riser",
+      "productSlug": "riser",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/df640f95e7cc727d97e8abda0f1e4dee7ec98b69-500x500.png",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1757404262/steelmade/moduiar/wire%20management/riser.png",
+      "cloudinaryPublicId": "steelmade/moduiar/wire management/riser",
+      "matchConfidence": "high",
+      "matchReason": "Exact slug match in public_id"
+    },
+    {
+      "productId": "imported-product-rock-series",
+      "productName": "Rock Series Workstation",
+      "productSlug": "rock-series",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/78b233e3621ba2974eb4bf631b80d037a35a44e6-500x500.png",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1754355063/steelmade/workstations/desk%20based%20workstation%20legs/rock-series1.png",
+      "cloudinaryPublicId": "steelmade/workstations/desk based workstation legs/rock-series1",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-roger",
+      "productName": "Roger Ergonomic Chair",
+      "productSlug": "roger",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/be9b14d9b477dd44644494d6db2acb689a5af1f0-504x504.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750424632/steelmade/chairs/ergonomic-series/roger/ic-322-mb-white.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/ergonomic-series/roger/ic-322-mb-white",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-sahara",
+      "productName": "Sahara Executive Chair",
+      "productSlug": "sahara",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/6c1b03fcad3e17dfc53cf7804b27cb35b1adb96d-274x434.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749799359/steelmade/chairs/executive-series/sahara/ic-45-mb.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/sahara/ic-45-mb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-siemens",
+      "productName": "Siemens Executive Chair",
+      "productSlug": "siemens",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/74e3707c282d9d3c7a35f629b2b4255bf81183fd-296x434.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749797285/steelmade/chairs/executive-series/siemens/ic-42-mb.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/siemens/ic-42-mb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-spark-series",
+      "productName": "Spark Series Workstation",
+      "productSlug": "spark-series",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/51919e42f36b8aa69d2779584feb38bb4770dfac-500x500.png",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1754355081/steelmade/workstations/desk%20based%20workstation%20legs/spark-series1.png",
+      "cloudinaryPublicId": "steelmade/workstations/desk based workstation legs/spark-series1",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-supreme",
+      "productName": "Supreme Executive Chair",
+      "productSlug": "supreme",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/fbd4daeaf1d84caef75e8e7af04a86a1effe59e7-287x434.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749803024/steelmade/chairs/executive-series/supreme/ic-55-hb.jpg.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/supreme/ic-55-hb.jpg",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-syndicate",
+      "productName": "Syndicate Executive Chair",
+      "productSlug": "syndicate",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/282326edaa00e554ab2f8d7e0e8c09de8ce3eb2e-297x414.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749802268/steelmade/chairs/executive-series/syndicate/ic-59-hb.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/syndicate/ic-59-hb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-three-drawerpedestal",
+      "productName": "Three Drawer Pedestal",
+      "productSlug": "three-drawerpedestal",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/2c329060ecf361fae1c4a96c5a76491574ff7ef2-500x500.png",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1757404460/steelmade/metal%20storage/three-drawerpedestal.png",
+      "cloudinaryPublicId": "steelmade/metal storage/three-drawerpedestal",
+      "matchConfidence": "high",
+      "matchReason": "Exact slug match in public_id"
+    },
+    {
+      "productId": "imported-product-tokyo",
+      "productName": "Tokyo Ergonomic Series",
+      "productSlug": "tokyo",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/fb71acbd0008bb3e10bd7d83090bb4455960fda6-600x600.png",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750935594/steelmade/chairs/ergonomic-series/tokyo/ic-116-hb-white.png",
+      "cloudinaryPublicId": "steelmade/chairs/ergonomic-series/tokyo/ic-116-hb-white",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-trident",
+      "productName": "Trident Director Chair",
+      "productSlug": "trident",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/ab02f4457b4e69e4ebe6b3d8ce654364e7550f64-720x720.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1748809633/steelmade/chairs/director-series/trident/ic-250-mb.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/director-series/trident/ic-250-mb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-two-drawerpedestal",
+      "productName": "Two Drawer Pedestal",
+      "productSlug": "two-drawerpedestal",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/020085f25d0f7c4dbebc52d2ac97d379b713fe09-500x500.png",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1757404465/steelmade/metal%20storage/two-drawerpedestal.png",
+      "cloudinaryPublicId": "steelmade/metal storage/two-drawerpedestal",
+      "matchConfidence": "high",
+      "matchReason": "Exact slug match in public_id"
+    },
+    {
+      "productId": "imported-product-ud",
+      "productName": "UD Ergonomic Chair",
+      "productSlug": "ud",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/a8bd011be63df159e87682d66218d2ff3c1bb0de-582x961.png",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750425932/steelmade/chairs/ergonomic-series/ud/ic-327-hb-black.png",
+      "cloudinaryPublicId": "steelmade/chairs/ergonomic-series/ud/ic-327-hb-black",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "imported-product-verna",
+      "productName": "Verna Executive Chair",
+      "productSlug": "verna",
+      "currentImageUrl": "https://cdn.sanity.io/images/n6xqwypu/production/3de2cc5bd37151a664fa30e06e13e26497698888-296x433.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749797678/steelmade/chairs/executive-series/verna/ic-43-mb.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/verna/ic-43-mb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-director-series-trident",
+      "productName": "Trident Director Chair",
+      "productSlug": "trident",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1748809633/steelmade/chairs/director-series/trident/ic-250-mb.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/director-series/trident/ic-250-mb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-ergonomic-series-bb",
+      "productName": "BB Ergonomic Chair",
+      "productSlug": "bb",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1752131151/steelmade/chairs/visitor-series/bubble-visi/ic-310-w/o-arms.png",
+      "cloudinaryPublicId": "steelmade/chairs/visitor-series/bubble-visi/ic-310-w/o-arms",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-ergonomic-series-berlin",
+      "productName": "Berlin Ergonomic Chair",
+      "productSlug": "berlin",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750417822/steelmade/chairs/ergonomic-series/berlin/ic-317-hb-white.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/ergonomic-series/berlin/ic-317-hb-white",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-ergonomic-series-dc",
+      "productName": "DC Ergonomic Chair",
+      "productSlug": "dc",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750926412/steelmade/chairs/ergonomic-series/dc/ic-343-mb-black.png",
+      "cloudinaryPublicId": "steelmade/chairs/ergonomic-series/dc/ic-343-mb-black",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-ergonomic-series-ev",
+      "productName": "EV Ergonomic Chair",
+      "productSlug": "ev",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1754355090/steelmade/workstations/desk%20based%20workstation%20legs/elevate-series1.png",
+      "cloudinaryPublicId": "steelmade/workstations/desk based workstation legs/elevate-series1",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-ergonomic-series-feedo",
+      "productName": "Feedo Ergonomic Chair",
+      "productSlug": "feedo",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1751015058/steelmade/chairs/ergonomic-series/feedo/ic-259-hb-black.png",
+      "cloudinaryPublicId": "steelmade/chairs/ergonomic-series/feedo/ic-259-hb-black",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-ergonomic-series-flea",
+      "productName": "Flea Ergonomic Series",
+      "productSlug": "flea",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750934235/steelmade/chairs/ergonomic-series/flea/ic-352-hb-black.png",
+      "cloudinaryPublicId": "steelmade/chairs/ergonomic-series/flea/ic-352-hb-black",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-ergonomic-series-mercedes",
+      "productName": "Mercedes Ergonomic Chair",
+      "productSlug": "mercedes",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750741597/steelmade/chairs/ergonomic-series/mercedes/ic-348-visi-black.png",
+      "cloudinaryPublicId": "steelmade/chairs/ergonomic-series/mercedes/ic-348-visi-black",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-ergonomic-series-moscow",
+      "productName": "Moscow Ergonomic Chair",
+      "productSlug": "moscow",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1751016881/steelmade/chairs/ergonomic-series/moscow/ic-29-mb-black.png",
+      "cloudinaryPublicId": "steelmade/chairs/ergonomic-series/moscow/ic-29-mb-black",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-ergonomic-series-roger",
+      "productName": "Roger Ergonomic Chair",
+      "productSlug": "roger",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750424632/steelmade/chairs/ergonomic-series/roger/ic-322-mb-white.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/ergonomic-series/roger/ic-322-mb-white",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-ergonomic-series-tokyo",
+      "productName": "Tokyo Ergonomic Series",
+      "productSlug": "tokyo",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750935594/steelmade/chairs/ergonomic-series/tokyo/ic-116-hb-white.png",
+      "cloudinaryPublicId": "steelmade/chairs/ergonomic-series/tokyo/ic-116-hb-white",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-ergonomic-series-ud",
+      "productName": "UD Ergonomic Chair",
+      "productSlug": "ud",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750425932/steelmade/chairs/ergonomic-series/ud/ic-327-hb-black.png",
+      "cloudinaryPublicId": "steelmade/chairs/ergonomic-series/ud/ic-327-hb-black",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-executive-series-amazon",
+      "productName": "Amazon Executive Chair",
+      "productSlug": "amazon",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749802784/steelmade/chairs/executive-series/amazon/ic-54-mb.png",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/amazon/ic-54-mb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-executive-series-amigo",
+      "productName": "Amigo Executive Chair",
+      "productSlug": "amigo",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749805780/steelmade/chairs/executive-series/amigo/ic-332-mb.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/amigo/ic-332-mb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-executive-series-benz",
+      "productName": "Benz Executive Chair",
+      "productSlug": "benz",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749619914/steelmade/chairs/executive-series/benz/ic-34.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/benz/ic-34",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-executive-series-duster",
+      "productName": "Duster Executive Chair",
+      "productSlug": "duster",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749619677/steelmade/chairs/executive-series/duster/ic-36-hb.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/duster/ic-36-hb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-executive-series-irana",
+      "productName": "Irana Executive Chair",
+      "productSlug": "irana",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750408457/steelmade/chairs/executive-series/irana/ic-62.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/irana/ic-62",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-executive-series-luxury",
+      "productName": "Luxury Executive Chair",
+      "productSlug": "luxury",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749801328/steelmade/chairs/executive-series/luxury/ic-39-mb.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/luxury/ic-39-mb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-executive-series-lx",
+      "productName": "LX Executive Chair",
+      "productSlug": "lx",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749800988/steelmade/chairs/executive-series/lx/ic-51-hb.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/lx/ic-51-hb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-executive-series-mini-markson",
+      "productName": "Mini Markson Executive Chair",
+      "productSlug": "mini-markson",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1750408462/steelmade/chairs/executive-series/mini-markson/ic-67-rev.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/mini-markson/ic-67-rev",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-executive-series-obama",
+      "productName": "Obama Executive Chair",
+      "productSlug": "obama",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749639075/steelmade/chairs/executive-series/obama/ic-303-mb.png",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/obama/ic-303-mb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-executive-series-perk",
+      "productName": "Perk Executive Chair",
+      "productSlug": "perk",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749461921/steelmade/chairs/executive-series/perkshynl/ic-32.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/perkshynl/ic-32",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-executive-series-perkshynl",
+      "productName": "Perkshynl Executive Chair",
+      "productSlug": "perkshynl",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749461921/steelmade/chairs/executive-series/perkshynl/ic-32.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/perkshynl/ic-32",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-executive-series-sahara",
+      "productName": "Sahara Executive Chair",
+      "productSlug": "sahara",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749799359/steelmade/chairs/executive-series/sahara/ic-45-mb.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/sahara/ic-45-mb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-executive-series-siemens",
+      "productName": "Siemens Executive Chair",
+      "productSlug": "siemens",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749797285/steelmade/chairs/executive-series/siemens/ic-42-mb.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/siemens/ic-42-mb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-executive-series-supreme",
+      "productName": "Supreme Executive Chair",
+      "productSlug": "supreme",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749803024/steelmade/chairs/executive-series/supreme/ic-55-hb.jpg.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/supreme/ic-55-hb.jpg",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-executive-series-syndicate",
+      "productName": "Syndicate Executive Chair",
+      "productSlug": "syndicate",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749802268/steelmade/chairs/executive-series/syndicate/ic-59-hb.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/syndicate/ic-59-hb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    },
+    {
+      "productId": "product-chairs-executive-series-verna",
+      "productName": "Verna Executive Chair",
+      "productSlug": "verna",
+      "currentImageUrl": null,
+      "cloudinaryUrl": "https://res.cloudinary.com/dqde19mfs/image/upload/v1749797678/steelmade/chairs/executive-series/verna/ic-43-mb.jpg",
+      "cloudinaryPublicId": "steelmade/chairs/executive-series/verna/ic-43-mb",
+      "matchConfidence": "medium",
+      "matchReason": "Slug found in public_id"
+    }
+  ]
+}
