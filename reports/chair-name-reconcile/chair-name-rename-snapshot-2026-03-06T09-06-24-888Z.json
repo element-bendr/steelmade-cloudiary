@@ -1,0 +1,364 @@
+{
+  "generatedAt": "2026-03-06T09:06:24.889Z",
+  "execute": true,
+  "includeMedium": false,
+  "rows": [
+    {
+      "id": "PYCfep3q5TfxEMsSZlyWcq",
+      "slug": "oppo-ic-290",
+      "beforeName": "Oppo Dining Chair",
+      "afterName": "Oppo Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlybOz",
+      "slug": "union-ic-288",
+      "beforeName": "Union Dining Chair",
+      "afterName": "Union Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlycGO",
+      "slug": "wave-ic-287",
+      "beforeName": "Wave Dining Chair",
+      "afterName": "Wave Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlz1rv",
+      "slug": "4-seater-royal-ic-242-sofa",
+      "beforeName": "4 seater royal Lounge Chair",
+      "afterName": "4 Seater Royal Sofa Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzA0p",
+      "slug": "glory-ic-363",
+      "beforeName": "Glory Multipurpose Chair",
+      "afterName": "Glory Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzAnN",
+      "slug": "omega-ic-365",
+      "beforeName": "Omega Multipurpose Chair",
+      "afterName": "Omega Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzSPi",
+      "slug": "index-ic-308-visi",
+      "beforeName": "Index Visitor Chair",
+      "afterName": "Index Vis Visitor Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm0sQY",
+      "slug": "grandezza",
+      "beforeName": "Grandezza",
+      "afterName": "Grandezza Director Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm4nFP",
+      "slug": "ic-249-hb",
+      "beforeName": "Trident High Back",
+      "afterName": "Trident Director Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm4yum",
+      "slug": "marvel",
+      "beforeName": "Marvel",
+      "afterName": "Marvel Ergonomic Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm58OD",
+      "slug": "ic-53-hb",
+      "beforeName": "Amazon High Back",
+      "afterName": "Amazon Executive Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm5AQR",
+      "slug": "ic-83-lb",
+      "beforeName": "Jet Low Back",
+      "afterName": "Jet Executive Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm5BMh",
+      "slug": "korean",
+      "beforeName": "Korean",
+      "afterName": "Korean Executive Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm5H56",
+      "slug": "ic-46-hb",
+      "beforeName": "Sahara High Back",
+      "afterName": "Sahara Executive Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm5I1M",
+      "slug": "skoda",
+      "beforeName": "Skoda",
+      "afterName": "Skoda Executive Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm5Ixc",
+      "slug": "ic-60-mb",
+      "beforeName": "Syndicate Mid Back",
+      "afterName": "Syndicate Executive Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDIaJ",
+      "slug": "mint-ic-289",
+      "beforeName": "Mint Dining Chair",
+      "afterName": "Mint Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDJ9d",
+      "slug": "modern-counter-ic-294",
+      "beforeName": "Modern counter Dining Chair",
+      "afterName": "Modern Counter Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDJsN",
+      "slug": "petal-ic-208",
+      "beforeName": "Petal Dining Chair",
+      "afterName": "Petal Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDKMz",
+      "slug": "planet-b-ic-292",
+      "beforeName": "Planet b Dining Chair",
+      "afterName": "Planet B Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDKfp",
+      "slug": "planet-c-ic-293",
+      "beforeName": "Planet c Dining Chair",
+      "afterName": "Planet C Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDa5t",
+      "slug": "beta-ic-206-cushion",
+      "beforeName": "Beta Multipurpose Chair",
+      "afterName": "Beta Cushion Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDeCD",
+      "slug": "bubble-visi-ic-312-writing-pad",
+      "beforeName": "Bubble visi Visitor Chair",
+      "afterName": "Bubble Visitor Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yF8UT",
+      "slug": "kotak",
+      "beforeName": "Kotak",
+      "afterName": "Kotak Director Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFVt3",
+      "slug": "milano",
+      "beforeName": "Milano",
+      "afterName": "Milano Director Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFkaN",
+      "slug": "nissan",
+      "beforeName": "Nissan",
+      "afterName": "Nissan Director Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFn5n",
+      "slug": "bb",
+      "beforeName": "Bb",
+      "afterName": "BB Ergonomic Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yG25x",
+      "slug": "ic-302-hb",
+      "beforeName": "Obama High Back",
+      "afterName": "Obama Executive Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yG2YD",
+      "slug": "premier",
+      "beforeName": "Premier",
+      "afterName": "Premier Executive Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqc87b",
+      "slug": "gem-ic-212",
+      "beforeName": "Gem Dining Chair",
+      "afterName": "Gem Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqc8eG",
+      "slug": "lbt-counter-ic-227",
+      "beforeName": "Lbt counter Dining Chair",
+      "afterName": "Lbt Counter Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqc8tz",
+      "slug": "lily-ic-281",
+      "beforeName": "Lily Dining Chair",
+      "afterName": "Lily Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqc97I",
+      "slug": "mario-ic-210",
+      "beforeName": "Mario Dining Chair",
+      "afterName": "Mario Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcA5m",
+      "slug": "rose-counter-ic-225",
+      "beforeName": "Rose counter Dining Chair",
+      "afterName": "Rose Counter Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcAJ5",
+      "slug": "rose-ic-213",
+      "beforeName": "Rose Dining Chair",
+      "afterName": "Rose Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcGbo",
+      "slug": "austria-ic-366",
+      "beforeName": "Austria Multipurpose Chair",
+      "afterName": "Austria L Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcHf8",
+      "slug": "colaba-visi-ic-356",
+      "beforeName": "Colaba visi Multipurpose Chair",
+      "afterName": "Colaba Vis Grey Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcZAD",
+      "slug": "ic-228-arms",
+      "beforeName": "Lbt Counter with Arms",
+      "afterName": "Lbt Counter Arms Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqceB6",
+      "slug": "boston",
+      "beforeName": "Boston",
+      "afterName": "Boston Director Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdMtg",
+      "slug": "monarch",
+      "beforeName": "Monarch",
+      "afterName": "Monarch Director Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdpnD",
+      "slug": "tycoon",
+      "beforeName": "Tycoon",
+      "afterName": "Tycoon Director Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdrrR",
+      "slug": "ic-358-hb",
+      "beforeName": "Ev High Back",
+      "afterName": "EV Grey Ergonomic Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdtb6",
+      "slug": "ic-349-hb-grey",
+      "beforeName": "Ic 349 Hb Grey",
+      "afterName": "Mercedes Grey Ergonomic Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdxCt",
+      "slug": "ic-40-hb",
+      "beforeName": "Luxury High Back",
+      "afterName": "Luxury Executive Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdxOz",
+      "slug": "ic-52-mb",
+      "beforeName": "Lx Mid Back",
+      "afterName": "LX Executive Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdyHQ",
+      "slug": "phantom",
+      "beforeName": "Phantom",
+      "afterName": "Phantom Executive Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqe0Al",
+      "slug": "ic-41-hb",
+      "beforeName": "Siemens High Back",
+      "afterName": "Siemens Executive Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqe0aA",
+      "slug": "ic-44-hb",
+      "beforeName": "Verna High Back",
+      "afterName": "Verna Executive Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "imported-product-bigboss-gold-director-chair",
+      "slug": "bigboss-gold-director-chair",
+      "beforeName": "BigBoss Gold Director Chair",
+      "afterName": "Big Boss Gold Director Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "imported-product-perk",
+      "slug": "perk",
+      "beforeName": "Perk Executive Chair",
+      "afterName": "Perk Shynl Executive Chair",
+      "confidence": "high"
+    },
+    {
+      "id": "product-chairs-executive-series-perk",
+      "slug": "perk",
+      "beforeName": "Perk Executive Chair",
+      "afterName": "Perk Shynl Executive Chair",
+      "confidence": "high"
+    }
+  ]
+}

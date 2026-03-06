@@ -1,0 +1,2305 @@
+{
+  "generatedAt": "2026-03-06T09:04:38.037Z",
+  "count": 260,
+  "chairs": [
+    {
+      "id": "PYCfep3q5TfxEMsSZlyTjD",
+      "name": "Jewel Dining Chair",
+      "slug": "jewel-ic-211",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/jewel/ic-211",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlyWcq",
+      "name": "Oppo Dining Chair",
+      "slug": "oppo-ic-290",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/oppo/ic-290",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlyZuk",
+      "name": "Spark counter Dining Chair",
+      "slug": "spark-counter-ic-220",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/spark-counter/ic-220",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlybOz",
+      "name": "Union Dining Chair",
+      "slug": "union-ic-288",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/union/ic-288",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlycGO",
+      "name": "Wave Dining Chair",
+      "slug": "wave-ic-287",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/wave/ic-287",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlye8u",
+      "name": "Bb Ergonomic Chair",
+      "slug": "bb-ic-125-visitor",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/bb/ic-125-visitor",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlyfi0",
+      "name": "Craft Ergonomic Chair",
+      "slug": "craft-ic-131-visitor",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/craft/ic-131-visitor",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/craft/ic-131-visitor",
+        "steelmade/chairs/ergonomic-series/craft/ic-129-hb"
+      ]
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlyiWm",
+      "name": "Mono Ergonomic Chair",
+      "slug": "mono-ic-305",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/mono/ic-305",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlykdr",
+      "name": "Ola Ergonomic Chair",
+      "slug": "ola-ic-144",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/ola/ic-144",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlyltX",
+      "name": "Pine Ergonomic Chair",
+      "slug": "pine-ic-145",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/pine/ic-145",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlysYC",
+      "name": "Mini activa Executive Chair",
+      "slug": "mini-activa-ic-64",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/mini-activa/ic-64",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlyteA",
+      "name": "Mini markson Executive Chair",
+      "slug": "mini-markson-ic-68-visitor",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/mini-markson/ic-68-visitor",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/mini-markson/ic-68-visitor",
+        "steelmade/chairs/executive-series/mini-markson/ic-67-rev"
+      ]
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlyufH",
+      "name": "Perk Executive Chair",
+      "slug": "perk-ic-33",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/perk/ic-33",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlywmM",
+      "name": "Premier Executive Chair",
+      "slug": "premier-ic-81-visitor",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/premier/ic-81-visitor",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlyx5m",
+      "name": "Safari Executive Chair",
+      "slug": "safari-ic-90-visitor",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/safari/ic-90-visitor",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlyzkq",
+      "name": "2 seater royal Lounge Chair",
+      "slug": "2-seater-royal-ic-240-sofa",
+      "series": "lounge series",
+      "mainPublicId": "steelmade/chairs/lounge-series/2-seater-royal/ic-240-sofa",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlz0Dy",
+      "name": "3 seater airport Lounge Chair",
+      "slug": "3-seater-airport-ic-237-sofa",
+      "series": "lounge series",
+      "mainPublicId": "steelmade/chairs/lounge-series/3-seater-airport/ic-237-sofa",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlz1rv",
+      "name": "4 seater royal Lounge Chair",
+      "slug": "4-seater-royal-ic-242-sofa",
+      "series": "lounge series",
+      "mainPublicId": "steelmade/chairs/lounge-series/4-seater-royal/ic-242-sofa",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlz4qP",
+      "name": "Alpha Multipurpose Chair",
+      "slug": "alpha-ic-200-cushion",
+      "series": "multipurpose series",
+      "mainPublicId": "steelmade/chairs/multipurpose-series/alpha/ic-200-cushion",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlz7Qc",
+      "name": "Bunny Multipurpose Chair",
+      "slug": "bunny-ic-189",
+      "series": "multipurpose series",
+      "mainPublicId": "steelmade/chairs/multipurpose-series/bunny/ic-189",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzA0p",
+      "name": "Glory Multipurpose Chair",
+      "slug": "glory-ic-363",
+      "series": "multipurpose series",
+      "mainPublicId": "steelmade/chairs/multipurpose-series/glory/ic-363",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzAnN",
+      "name": "Omega Multipurpose Chair",
+      "slug": "omega-ic-365",
+      "series": "multipurpose series",
+      "mainPublicId": "steelmade/chairs/multipurpose-series/omega/ic-365",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzCCl",
+      "name": "Spring Multipurpose Chair",
+      "slug": "spring-ic-195",
+      "series": "multipurpose series",
+      "mainPublicId": "steelmade/chairs/multipurpose-series/spring/ic-195",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzF6O",
+      "name": "Tiana Multipurpose Chair",
+      "slug": "tiana-ic-274",
+      "series": "multipurpose series",
+      "mainPublicId": "steelmade/chairs/multipurpose-series/tiana/ic-274",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzFUf",
+      "name": "Visa Multipurpose Chair",
+      "slug": "visa-ic-280",
+      "series": "multipurpose series",
+      "mainPublicId": "steelmade/chairs/multipurpose-series/visa/ic-280",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzGu3",
+      "name": "Arrow Visitor Chair",
+      "slug": "arrow-ic-272",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/arrow/ic-272",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzSPi",
+      "name": "Index Visitor Chair",
+      "slug": "index-ic-308-visi",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/index/ic-308-visi",
+      "variantPublicIds": [
+        "steelmade/chairs/visitor-series/index/ic-308-visi",
+        "steelmade/chairs/visitor-series/index/ic-309-castor"
+      ]
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzSsq",
+      "name": "Leo Visitor Chair",
+      "slug": "leo-ic-181",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/leo/ic-181",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzWUA",
+      "name": "Planet Visitor Chair",
+      "slug": "planet-ic-158",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/planet/ic-158",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzYRX",
+      "name": "Sohit Visitor Chair",
+      "slug": "sohit-ic-307-visi",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/sohit/ic-307-visi",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm0sQY",
+      "name": "Grandezza",
+      "slug": "grandezza",
+      "series": "director series",
+      "mainPublicId": "steelmade/chairs/director-series/grandezza/ic-04-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/director-series/grandezza/ic-04-hb",
+        "steelmade/chairs/director-series/grandezza/ic-05-mb"
+      ]
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm4m9R",
+      "name": "Opera",
+      "slug": "opera",
+      "series": "director series",
+      "mainPublicId": "steelmade/chairs/director-series/opera/ic-340-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/director-series/opera/ic-340-hb",
+        "steelmade/chairs/director-series/opera/ic-341-mb"
+      ]
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm4nFP",
+      "name": "Trident High Back",
+      "slug": "ic-249-hb",
+      "series": "director series",
+      "mainPublicId": "steelmade/chairs/director-series/trident/ic-249-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/director-series/trident/ic-249-hb",
+        "steelmade/chairs/director-series/trident/ic-250-mb"
+      ]
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm4puT",
+      "name": "Cobra",
+      "slug": "cobra",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/cobra/ic-138-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/cobra/ic-138-hb",
+        "steelmade/chairs/ergonomic-series/cobra/ic-139-lb"
+      ]
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm4qXJ",
+      "name": "Ic 266a Grey",
+      "slug": "ic-266a-grey",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/cobra/ic-266a-grey",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm4vEb",
+      "name": "Ic 335 Hb Black",
+      "slug": "ic-335-hb-black",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/flamingo/ic-335-hb-black",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/flamingo/ic-335-hb-black",
+        "steelmade/chairs/ergonomic-series/flamingo/ic-336-hb-grey",
+        "steelmade/chairs/ergonomic-series/flamingo/ic-337-hb-green",
+        "steelmade/chairs/ergonomic-series/flamingo/ic-335-hb-black",
+        "steelmade/chairs/ergonomic-series/flamingo/ic-337-hb-orange"
+      ]
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm4yum",
+      "name": "Marvel",
+      "slug": "marvel",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/marvel/ic-114-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/marvel/ic-114-hb",
+        "steelmade/chairs/ergonomic-series/marvel/ic-115-mb"
+      ]
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm57N6",
+      "name": "Ic 329 Hb Grey",
+      "slug": "ic-329-hb-grey",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/ud/ic-329-hb-grey",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/ud/ic-329-hb-grey",
+        "steelmade/chairs/ergonomic-series/ud/ic-328-mb-black",
+        "steelmade/chairs/ergonomic-series/ud/ic-330-mb-grey",
+        "steelmade/chairs/ergonomic-series/ud/ic-327-hb-black"
+      ]
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm58OD",
+      "name": "Amazon High Back",
+      "slug": "ic-53-hb",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/amazon/ic-53-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/amazon/ic-53-hb",
+        "steelmade/chairs/executive-series/amazon/ic-54-mb"
+      ]
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm58hd",
+      "name": "Amigo High Back",
+      "slug": "ic-331-hb",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/amigo/ic-331-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/amigo/ic-331-hb",
+        "steelmade/chairs/executive-series/amigo/ic-332-mb"
+      ]
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm5AQR",
+      "name": "Jet Low Back",
+      "slug": "ic-83-lb",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/jet/ic-83-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm5BMh",
+      "name": "Korean",
+      "slug": "korean",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/korean/ic-47-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/korean/ic-47-hb",
+        "steelmade/chairs/executive-series/korean/ic-48-mb"
+      ]
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm5Cvn",
+      "name": "Makson",
+      "slug": "makson",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/makson/ic-76-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/makson/ic-76-hb",
+        "steelmade/chairs/executive-series/makson/ic-77-mb"
+      ]
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm5H56",
+      "name": "Sahara High Back",
+      "slug": "ic-46-hb",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/sahara/ic-46-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/sahara/ic-46-hb",
+        "steelmade/chairs/executive-series/sahara/ic-45-mb"
+      ]
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm5I1M",
+      "name": "Skoda",
+      "slug": "skoda",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/skoda/ic-94-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/skoda/ic-94-hb",
+        "steelmade/chairs/executive-series/skoda/ic-95-lb"
+      ]
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm5Ixc",
+      "name": "Syndicate Mid Back",
+      "slug": "ic-60-mb",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/syndicate/ic-60-mb",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/syndicate/ic-60-mb",
+        "steelmade/chairs/executive-series/syndicate/ic-59-hb"
+      ]
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm5MsM",
+      "name": "Director Series",
+      "slug": "director-series",
+      "series": "",
+      "mainPublicId": "steelmade/chairs/director-series",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDGQ5",
+      "name": "Bettle Dining Chair",
+      "slug": "bettle-ic-207",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/bettle/ic-207",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDIaJ",
+      "name": "Mint Dining Chair",
+      "slug": "mint-ic-289",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/mint/ic-289",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDJ9d",
+      "name": "Modern counter Dining Chair",
+      "slug": "modern-counter-ic-294",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/modern-counter/ic-294",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDJsN",
+      "name": "Petal Dining Chair",
+      "slug": "petal-ic-208",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/petal/ic-208",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDKMz",
+      "name": "Planet b Dining Chair",
+      "slug": "planet-b-ic-292",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/planet-B/ic-292",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDKfp",
+      "name": "Planet c Dining Chair",
+      "slug": "planet-c-ic-293",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/planet-C/ic-293",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDL5j",
+      "name": "Rise Dining Chair",
+      "slug": "rise-ic-217",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/rise/ic-217",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDMXD",
+      "name": "Spark Dining Chair",
+      "slug": "spark-ic-219",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/spark/ic-219",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDOoV",
+      "name": "Matrix Ergonomic Chair",
+      "slug": "matrix-ic-137-visitor",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/matrix/ic-137-visitor",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/matrix/ic-137-visitor",
+        "steelmade/chairs/ergonomic-series/matrix/ic-135-hb"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDQPP",
+      "name": "Pine Ergonomic Chair",
+      "slug": "pine-ic-121",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/pine/ic-121",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDRY3",
+      "name": "Vivo Ergonomic Chair",
+      "slug": "vivo-ic-134-visitor",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/vivo/ic-134-visitor",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/vivo/ic-134-visitor",
+        "steelmade/chairs/ergonomic-series/vivo/ic-132-hb"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDS7N",
+      "name": "Zara Ergonomic Chair",
+      "slug": "zara-ic-143-visi",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/zara/ic-143-visi",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/zara/ic-143-visi",
+        "steelmade/chairs/ergonomic-series/zara/ic-142-black",
+        "steelmade/chairs/ergonomic-series/zara/ic-143-visi"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDSSZ",
+      "name": "Computer Executive Chair",
+      "slug": "computer-ic-86",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/computer/ic-86",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDTBJ",
+      "name": "Makson Executive Chair",
+      "slug": "makson-ic-78-visitor",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/makson/ic-78-visitor",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDW1v",
+      "name": "Supreme Executive Chair",
+      "slug": "supreme-ic-56-mb",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/supreme/ic-56-mb.jpg",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/supreme/ic-56-mb.jpg",
+        "steelmade/chairs/executive-series/supreme/ic-55-hb.jpg"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDXcp",
+      "name": "3 seater royal Lounge Chair",
+      "slug": "3-seater-royal-ic-241-sofa",
+      "series": "lounge series",
+      "mainPublicId": "steelmade/chairs/lounge-series/3-seater-royal/ic-241-sofa",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDYUz",
+      "name": "Royal sofa Lounge Chair",
+      "slug": "royal-sofa-ic-231",
+      "series": "lounge series",
+      "mainPublicId": "steelmade/chairs/lounge-series/royal-sofa/ic-231",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDYxF",
+      "name": "Royal sofa Lounge Chair",
+      "slug": "royal-sofa-ic-241a-cushion",
+      "series": "lounge series",
+      "mainPublicId": "steelmade/chairs/lounge-series/royal-sofa/ic-241A-cushion",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDZ6f",
+      "name": "Alpha Multipurpose Chair",
+      "slug": "alpha-ic-199",
+      "series": "multipurpose series",
+      "mainPublicId": "steelmade/chairs/multipurpose-series/alpha/ic-199",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDa5t",
+      "name": "Beta Multipurpose Chair",
+      "slug": "beta-ic-206-cushion",
+      "series": "multipurpose series",
+      "mainPublicId": "steelmade/chairs/multipurpose-series/beta/ic-206-cushion",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDaFJ",
+      "name": "Beta Multipurpose Chair",
+      "slug": "beta-ic-206a-cushion-sb",
+      "series": "multipurpose series",
+      "mainPublicId": "steelmade/chairs/multipurpose-series/beta/ic-206a-cushion-sb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDaOj",
+      "name": "Bunny Multipurpose Chair",
+      "slug": "bunny-ic-190-counter",
+      "series": "multipurpose series",
+      "mainPublicId": "steelmade/chairs/multipurpose-series/bunny/ic-190-counter",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDavh",
+      "name": "Folding wp Multipurpose Chair",
+      "slug": "folding-wp-ic-278",
+      "series": "multipurpose series",
+      "mainPublicId": "steelmade/chairs/multipurpose-series/folding-wp/ic-278",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDb57",
+      "name": "Folding Multipurpose Chair",
+      "slug": "folding-ic-277",
+      "series": "multipurpose series",
+      "mainPublicId": "steelmade/chairs/multipurpose-series/folding/ic-277",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDcNB",
+      "name": "Sunset Multipurpose Chair",
+      "slug": "sunset-ic-202",
+      "series": "multipurpose series",
+      "mainPublicId": "steelmade/chairs/multipurpose-series/sunset/ic-202",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDeCD",
+      "name": "Bubble visi Visitor Chair",
+      "slug": "bubble-visi-ic-312-writing-pad",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/bubble-visi/ic-312-writing-pad",
+      "variantPublicIds": [
+        "steelmade/chairs/visitor-series/bubble-visi/ic-312-writing-pad",
+        "steelmade/chairs/visitor-series/bubble-visi/ic-311-arms"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDfwX",
+      "name": "Newton Visitor Chair",
+      "slug": "newton-ic-179",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/newton/ic-179",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDgHj",
+      "name": "Nokia Visitor Chair",
+      "slug": "nokia-ic-171",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/nokia/ic-171",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDhnv",
+      "name": "Samsung Visitor Chair",
+      "slug": "samsung-ic-150",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/samsung/ic-150",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDipV",
+      "name": "Vista Visitor Chair",
+      "slug": "vista-ic-169",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/vista/ic-169",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yE8lr",
+      "name": "Ashley",
+      "slug": "ashley",
+      "series": "director series",
+      "mainPublicId": "steelmade/chairs/director-series/ashley/ic-361-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/director-series/ashley/ic-361-hb",
+        "steelmade/chairs/director-series/ashley/ic-362-mb"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yE9Pt",
+      "name": "Bigbossgold",
+      "slug": "bigbossgold",
+      "series": "director series",
+      "mainPublicId": "steelmade/chairs/director-series/bigbossgold/ic-255-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/director-series/bigbossgold/ic-255-hb",
+        "steelmade/chairs/director-series/bigbossgold/ic-256-mb"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yF8UT",
+      "name": "Kotak",
+      "slug": "kotak",
+      "series": "director series",
+      "mainPublicId": "steelmade/chairs/director-series/kotak/ic-13-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/director-series/kotak/ic-13-hb",
+        "steelmade/chairs/director-series/kotak/ic-12-mb"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFVt3",
+      "name": "Milano",
+      "slug": "milano",
+      "series": "director series",
+      "mainPublicId": "steelmade/chairs/director-series/milano/ic-251-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/director-series/milano/ic-251-hb",
+        "steelmade/chairs/director-series/milano/ic-252-mb",
+        "steelmade/chairs/director-series/milano/ic-251-mb"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFkaN",
+      "name": "Nissan",
+      "slug": "nissan",
+      "series": "director series",
+      "mainPublicId": "steelmade/chairs/director-series/nissan/ic-253-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/director-series/nissan/ic-253-hb",
+        "steelmade/chairs/director-series/nissan/ic-252-mb"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFn5n",
+      "name": "Bb",
+      "slug": "bb",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/bb/ic-264-mb",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/bb/ic-264-mb",
+        "steelmade/chairs/ergonomic-series/bb/ic-124-lb"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFoJ9",
+      "name": "Craft",
+      "slug": "craft",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/craft/ic-129-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/craft/ic-129-hb",
+        "steelmade/chairs/ergonomic-series/craft/ic-130-mb"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFp4F",
+      "name": "Ic 342 Hb Black",
+      "slug": "ic-342-hb-black",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/dc/ic-342-hb-black",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/dc/ic-342-hb-black",
+        "steelmade/chairs/ergonomic-series/dc/ic-344-hb-grey",
+        "steelmade/chairs/ergonomic-series/dc/ic-345-mb-grey",
+        "steelmade/chairs/ergonomic-series/dc/ic-343-mb-black"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFqcn",
+      "name": "Ic 260 Mb Grey",
+      "slug": "ic-260-mb-grey",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/feedo/ic-260-mb-grey",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/feedo/ic-260-mb-grey",
+        "steelmade/chairs/ergonomic-series/feedo/ic-259-hb-black"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFrj5",
+      "name": "Ic 353 Mb Black",
+      "slug": "ic-353-mb-black",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/flea/ic-353-mb-black",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/flea/ic-353-mb-black",
+        "steelmade/chairs/ergonomic-series/flea/ic-354-visi-black",
+        "steelmade/chairs/ergonomic-series/flea/ic-352-hb-black"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFu2j",
+      "name": "Matrix",
+      "slug": "matrix",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/matrix/ic-135-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/matrix/ic-135-hb",
+        "steelmade/chairs/ergonomic-series/matrix/ic-136-mb"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFuxF",
+      "name": "Ic 28 Hb Black",
+      "slug": "ic-28-hb-black",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/moscow/ic-28-hb-black",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/moscow/ic-28-hb-black",
+        "steelmade/chairs/ergonomic-series/moscow/ic-29-mb-black"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFvfz",
+      "name": "Ic 263c Hb Black",
+      "slug": "ic-263c-hb-black",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/robo/ic-263c-hb-black",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/robo/ic-263c-hb-black",
+        "steelmade/chairs/ergonomic-series/robo/ic-263-black",
+        "steelmade/chairs/ergonomic-series/robo/ic-263b-grey",
+        "steelmade/chairs/ergonomic-series/robo/ic-263c-hb-black"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFx0P",
+      "name": "Ic 118 Hb Black",
+      "slug": "ic-118-hb-black",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/tokyo/ic-118-hb-black",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/tokyo/ic-118-hb-black",
+        "steelmade/chairs/ergonomic-series/tokyo/ic-117-mb-white",
+        "steelmade/chairs/ergonomic-series/tokyo/ic-119-mb-black",
+        "steelmade/chairs/ergonomic-series/tokyo/ic-116-hb-white"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFxzd",
+      "name": "Vivo",
+      "slug": "vivo",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/vivo/ic-132-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/vivo/ic-132-hb",
+        "steelmade/chairs/ergonomic-series/vivo/ic-133-mb"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFzTT",
+      "name": "Dolphn Low Back",
+      "slug": "ic-66-lb",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/dolphn/ic-66-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yG0EZ",
+      "name": "Lazer Low Back",
+      "slug": "ic-85-lb",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/lazer/ic-85-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yG25x",
+      "name": "Obama High Back",
+      "slug": "ic-302-hb",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/obama/ic-302-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/obama/ic-302-hb",
+        "steelmade/chairs/executive-series/obama/ic-303-mb"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yG2YD",
+      "name": "Premier",
+      "slug": "premier",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/premier/ic-79-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/premier/ic-79-hb",
+        "steelmade/chairs/executive-series/premier/ic-80-mb"
+      ]
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yG35B",
+      "name": "Safari",
+      "slug": "safari",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/safari/ic-88-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/safari/ic-88-hb",
+        "steelmade/chairs/executive-series/safari/ic-89-lb"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqc87b",
+      "name": "Gem Dining Chair",
+      "slug": "gem-ic-212",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/gem/ic-212",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqc8eG",
+      "name": "Lbt counter Dining Chair",
+      "slug": "lbt-counter-ic-227",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/lbt-counter/ic-227",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqc8tz",
+      "name": "Lily Dining Chair",
+      "slug": "lily-ic-281",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/lily/ic-281",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqc97I",
+      "name": "Mario Dining Chair",
+      "slug": "mario-ic-210",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/mario/ic-210",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcA5m",
+      "name": "Rose counter Dining Chair",
+      "slug": "rose-counter-ic-225",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/rose-counter/ic-225",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcAJ5",
+      "name": "Rose Dining Chair",
+      "slug": "rose-ic-213",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/rose/ic-213",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcB1q",
+      "name": "Collection cover Director Chair",
+      "slug": "collection-cover-collection-cover",
+      "series": "director series",
+      "mainPublicId": "steelmade/chairs/director-series/collection-cover",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcC5A",
+      "name": "Navy Ergonomic Chair",
+      "slug": "navy-ic-146",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/navy/ic-146",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcCmi",
+      "name": "Roman Ergonomic Chair",
+      "slug": "roman-ic-128-visitor",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/roman/ic-128-visitor",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/roman/ic-128-visitor",
+        "steelmade/chairs/ergonomic-series/roman/ic-127"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcD3e",
+      "name": "Windy Ergonomic Chair",
+      "slug": "windy-ic-126",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/windy/ic-126",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcDZ6",
+      "name": "Ginger Executive Chair",
+      "slug": "ginger-ic-65",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/ginger/ic-65",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcEJ4",
+      "name": "Phantom Executive Chair",
+      "slug": "phantom-ic-72-visitor",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/phantom/ic-72-visitor",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcEjg",
+      "name": "Skoda Executive Chair",
+      "slug": "skoda-ic-96-visitor",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/skoda/ic-96-visitor",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcF7s",
+      "name": "Venus rev ud Executive Chair",
+      "slug": "venus-rev-ud-ic-304",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/Venus-rev-ud/ic-304",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcFSR",
+      "name": "Wilson Executive Chair",
+      "slug": "wilson-ic-75-visitor",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/wilson/ic-75-visitor",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcGbo",
+      "name": "Austria Multipurpose Chair",
+      "slug": "austria-ic-366",
+      "series": "multipurpose series",
+      "mainPublicId": "steelmade/chairs/multipurpose-series/austria/ic-366",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcGge",
+      "name": "Beta Multipurpose Chair",
+      "slug": "beta-ic-205",
+      "series": "multipurpose series",
+      "mainPublicId": "steelmade/chairs/multipurpose-series/beta/ic-205",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcHf8",
+      "name": "Colaba visi Multipurpose Chair",
+      "slug": "colaba-visi-ic-356",
+      "series": "multipurpose series",
+      "mainPublicId": "steelmade/chairs/multipurpose-series/colaba-visi/ic-356",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcIED",
+      "name": "Spider Multipurpose Chair",
+      "slug": "spider-ic-196",
+      "series": "multipurpose series",
+      "mainPublicId": "steelmade/chairs/multipurpose-series/spider/ic-196",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcIWM",
+      "name": "Tango Multipurpose Chair",
+      "slug": "tango-ic-197",
+      "series": "multipurpose series",
+      "mainPublicId": "steelmade/chairs/multipurpose-series/tango/ic-197",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcJ5R",
+      "name": "Ace Visitor Chair",
+      "slug": "ace-ic-161",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/ace/ic-161",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcJjM",
+      "name": "Geo Visitor Chair",
+      "slug": "geo-ic-180",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/geo/ic-180",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcK58",
+      "name": "Honey Visitor Chair",
+      "slug": "honey-ic-163",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/honey/ic-163",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcMyA",
+      "name": "Orchid Visitor Chair",
+      "slug": "orchid-ic-164",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/orchid/ic-164",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcNDt",
+      "name": "Pearl Visitor Chair",
+      "slug": "pearl-ic-155",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/pearl/ic-155",
+      "variantPublicIds": [
+        "steelmade/chairs/visitor-series/pearl/ic-155",
+        "steelmade/chairs/visitor-series/pearl/ic-156-cushion"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcNwe",
+      "name": "Sigma Visitor Chair",
+      "slug": "sigma-ic-165",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/sigma/ic-165",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcOEn",
+      "name": "Venus Visitor Chair",
+      "slug": "venus-ic-148",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/venus/ic-148",
+      "variantPublicIds": [
+        "steelmade/chairs/visitor-series/venus/ic-148",
+        "steelmade/chairs/visitor-series/venus/ic-148",
+        "steelmade/chairs/visitor-series/venus/ic-149-arms"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcZAD",
+      "name": "Lbt Counter with Arms",
+      "slug": "ic-228-arms",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/lbt-counter/ic-228-arms",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcZHT",
+      "name": "Modern Visi Variant A",
+      "slug": "ic-294a",
+      "series": "dining series",
+      "mainPublicId": "steelmade/chairs/dining-series/modern-visi/ic-294A",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqceB6",
+      "name": "Boston",
+      "slug": "boston",
+      "series": "director series",
+      "mainPublicId": "steelmade/chairs/director-series/boston/ic-06-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/director-series/boston/ic-06-hb",
+        "steelmade/chairs/director-series/boston/ic-07-mb"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdMtg",
+      "name": "Monarch",
+      "slug": "monarch",
+      "series": "director series",
+      "mainPublicId": "steelmade/chairs/director-series/monarch/ic-08-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/director-series/monarch/ic-08-hb",
+        "steelmade/chairs/director-series/monarch/ic-09-mb"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdpV4",
+      "name": "Parker",
+      "slug": "parker",
+      "series": "director series",
+      "mainPublicId": "steelmade/chairs/director-series/parker/ic-315-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/director-series/parker/ic-315-hb",
+        "steelmade/chairs/director-series/parker/ic-316-mb"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdpnD",
+      "name": "Tycoon",
+      "slug": "tycoon",
+      "series": "director series",
+      "mainPublicId": "steelmade/chairs/director-series/tycoon/ic-01-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/director-series/tycoon/ic-01-hb",
+        "steelmade/chairs/director-series/tycoon/ic-02-mb"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdqBP",
+      "name": "Woodland",
+      "slug": "woodland",
+      "series": "director series",
+      "mainPublicId": "steelmade/chairs/director-series/woodland/ic-338-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/director-series/woodland/ic-338-hb",
+        "steelmade/chairs/director-series/woodland/ic-339-mb"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdqkU",
+      "name": "Ic 319 Hb Black",
+      "slug": "ic-319-hb-black",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/berlin/ic-319-hb-black",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/berlin/ic-319-hb-black",
+        "steelmade/chairs/ergonomic-series/berlin/ic-318-mb-white",
+        "steelmade/chairs/ergonomic-series/berlin/ic-320-mb-black",
+        "steelmade/chairs/ergonomic-series/berlin/ic-317-hb-white"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdrrR",
+      "name": "Ev High Back",
+      "slug": "ic-358-hb",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/ev/ic-358-hb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqds3X",
+      "name": "Ic 265 Black",
+      "slug": "ic-265-black",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/flame/ic-265-black",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdtCu",
+      "name": "Honda High Back",
+      "slug": "ic-123d-hb",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/honda/ic-123d-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/honda/ic-123d-hb",
+        "steelmade/chairs/ergonomic-series/honda/ic-123-mb-black",
+        "steelmade/chairs/ergonomic-series/honda/ic-123c-visi-black",
+        "steelmade/chairs/ergonomic-series/honda/ic-123b-grey",
+        "steelmade/chairs/ergonomic-series/honda/ic-123a-white",
+        "steelmade/chairs/ergonomic-series/honda/ic-123b-grey"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdtb6",
+      "name": "Ic 349 Hb Grey",
+      "slug": "ic-349-hb-grey",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/mercedes/ic-349-hb-grey",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/mercedes/ic-349-hb-grey",
+        "steelmade/chairs/ergonomic-series/mercedes/ic-351-visi-grey",
+        "steelmade/chairs/ergonomic-series/mercedes/ic-348-visi-black"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdu1i",
+      "name": "Ic 146a White",
+      "slug": "ic-146a-white",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/navy/ic-146a-white",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqduF1",
+      "name": "Ic 146b Grey",
+      "slug": "ic-146b-grey",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/navy/ic-146b-grey",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqduc0",
+      "name": "Ic 321 Hb White",
+      "slug": "ic-321-hb-white",
+      "series": "ergonomic series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/roger/ic-321-hb-white",
+      "variantPublicIds": [
+        "steelmade/chairs/ergonomic-series/roger/ic-321-hb-white",
+        "steelmade/chairs/ergonomic-series/roger/ic-323-hb-black",
+        "steelmade/chairs/ergonomic-series/roger/ic-324-mb-black",
+        "steelmade/chairs/ergonomic-series/roger/ic-322-mb-white"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdwaB",
+      "name": "Commander",
+      "slug": "commander",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/commander/ic-50-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/commander/ic-50-hb",
+        "steelmade/chairs/executive-series/commander/ic-49-mb"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdxCt",
+      "name": "Luxury High Back",
+      "slug": "ic-40-hb",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/luxury/ic-40-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/luxury/ic-40-hb",
+        "steelmade/chairs/executive-series/luxury/ic-39-mb"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdxOz",
+      "name": "Lx Mid Back",
+      "slug": "ic-52-mb",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/lx/ic-52-mb",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/lx/ic-52-mb",
+        "steelmade/chairs/executive-series/lx/ic-51-hb"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdxkl",
+      "name": "Nano",
+      "slug": "nano",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-91-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/nano/ic-91-hb",
+        "steelmade/chairs/executive-series/nano/ic-92-mb",
+        "steelmade/chairs/executive-series/nano/ic-93-lb"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdyHQ",
+      "name": "Phantom",
+      "slug": "phantom",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/phantom/ic-70-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/phantom/ic-70-hb",
+        "steelmade/chairs/executive-series/phantom/ic-71-mb"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqe0Al",
+      "name": "Siemens High Back",
+      "slug": "ic-41-hb",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/siemens/ic-41-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/siemens/ic-41-hb",
+        "steelmade/chairs/executive-series/siemens/ic-42-mb"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqe0aA",
+      "name": "Verna High Back",
+      "slug": "ic-44-hb",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/verna/ic-44-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/verna/ic-44-hb",
+        "steelmade/chairs/executive-series/verna/ic-43-mb"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqe0jq",
+      "name": "Wilson",
+      "slug": "wilson",
+      "series": "executive series",
+      "mainPublicId": "steelmade/chairs/executive-series/wilson/ic-73-hb",
+      "variantPublicIds": [
+        "steelmade/chairs/executive-series/wilson/ic-73-hb",
+        "steelmade/chairs/executive-series/wilson/ic-74-mb"
+      ]
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqe1h7",
+      "name": "Ic 273 Black",
+      "slug": "ic-273-black",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/zebra/ic-273-black",
+      "variantPublicIds": []
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqe2GC",
+      "name": "Ic 273a Grey",
+      "slug": "ic-273a-grey",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/zebra/ic-273a-grey",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-ashley-director-chair",
+      "name": "Ashley Director Chair",
+      "slug": "ashley-director-chair",
+      "series": "Director Series",
+      "mainPublicId": "steelmade/chairs/director-series/ashley/ic-361-hb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-bb",
+      "name": "BB Ergonomic Chair",
+      "slug": "bb",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/bubble-visi/ic-310-w/o-arms",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-benz",
+      "name": "Benz Executive Chair",
+      "slug": "benz",
+      "series": "Executive Series",
+      "mainPublicId": "steelmade/chairs/executive-series/benz/ic-34",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-bigboss-gold-director-chair",
+      "name": "BigBoss Gold Director Chair",
+      "slug": "bigboss-gold-director-chair",
+      "series": "Director Series",
+      "mainPublicId": "steelmade/chairs/director-series/bigbossgold/ic-255-hb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-boston-director-chair",
+      "name": "Boston Director Chair",
+      "slug": "boston-director-chair",
+      "series": "Director Series",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-cobra-ergonomic-chair",
+      "name": "Cobra Ergonomic Chair",
+      "slug": "cobra-ergonomic-chair",
+      "series": "Ergonomic Series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/cobra/ic-138-hb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-commander-chair",
+      "name": "Commander Executive Chair",
+      "slug": "commander-chair",
+      "series": "Executive Series",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-duster",
+      "name": "Duster Executive Chair",
+      "slug": "duster",
+      "series": "Executive Series",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-ev",
+      "name": "EV Ergonomic Chair",
+      "slug": "ev",
+      "series": "Ergonomic Series",
+      "mainPublicId": "steelmade/workstations/desk based workstation legs/elevate-series1",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-flame-ergonomic-chair",
+      "name": "Flame Ergonomic Chair",
+      "slug": "flame-ergonomic-chair",
+      "series": "Ergonomic Series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/flame/ic-265-black",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-grandezza-director-chair",
+      "name": "Grandezza Director Chair",
+      "slug": "grandezza-director-chair",
+      "series": "Director Series",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-irana",
+      "name": "Irana Executive Chair",
+      "slug": "irana",
+      "series": "Executive Series",
+      "mainPublicId": "steelmade/chairs/executive-series/irana/ic-62",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-korean-chair",
+      "name": "Korean Executive Chair",
+      "slug": "korean-chair",
+      "series": "Executive Series",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-kotak-director-chair",
+      "name": "Kotak Director Chair",
+      "slug": "kotak-director-chair",
+      "series": "Director Series",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-makson-executive-chair",
+      "name": "Makson Executive Chair",
+      "slug": "makson-executive-chair",
+      "series": "Executive Series",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-marvel-ergonomic-chair",
+      "name": "Marvel Ergonomic Chair",
+      "slug": "marvel-ergonomic-chair",
+      "series": "Ergonomic Series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/marvel/ic-114-hb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-milano-director-chair",
+      "name": "Milano Director Chair",
+      "slug": "milano-director-chair",
+      "series": "Director Series",
+      "mainPublicId": "steelmade/chairs/director-series/milano/ic-251-mb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-mini-ginger-dolphin-executive-chair",
+      "name": "Mini / Ginger / Dolphin Executive Chair",
+      "slug": "mini-ginger-dolphin-executive-chair",
+      "series": "Executive Series",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-monarch-director-chair",
+      "name": "Monarch Director Chair",
+      "slug": "monarch-director-chair",
+      "series": "Director Series",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-mono-ergonomic-chair",
+      "name": "Mono Ergonomic Chair",
+      "slug": "mono-ergonomic-chair",
+      "series": "Ergonomic Series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/mono/ic-305",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-nano-executive-chair",
+      "name": "Nano Executive Chair",
+      "slug": "nano-executive-chair",
+      "series": "Executive Series",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-navy-ergonomic-chair",
+      "name": "Navy Ergonomic Chair",
+      "slug": "navy-ergonomic-chair",
+      "series": "Ergonomic Series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/navy/ic-146",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-nissan-director-chair",
+      "name": "Nissan Director Chair",
+      "slug": "nissan-director-chair",
+      "series": "Director Series",
+      "mainPublicId": "steelmade/chairs/director-series/nissan/ic-253-hb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-ola-roman",
+      "name": "Ola & Roman Ergonomic Chairs",
+      "slug": "ola-roman",
+      "series": "Ergonomic Series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/ola/ic-144",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-opera-director-chair",
+      "name": "Opera Director Chair",
+      "slug": "opera-director-chair",
+      "series": "Director Series",
+      "mainPublicId": "steelmade/chairs/director-series/opera/ic-340-hb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-parker-director-chair",
+      "name": "Parker Director Chair",
+      "slug": "parker-director-chair",
+      "series": "Director Series",
+      "mainPublicId": "steelmade/chairs/director-series/parker/ic-315-hb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-perk",
+      "name": "Perk Executive Chair",
+      "slug": "perk",
+      "series": "Executive Series",
+      "mainPublicId": "steelmade/chairs/executive-series/perkshynl/ic-32",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-perkshynl",
+      "name": "Perkshynl Executive Chair",
+      "slug": "perkshynl",
+      "series": "Executive Series",
+      "mainPublicId": "steelmade/chairs/executive-series/perkshynl/ic-32",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-phantom-executive-chair",
+      "name": "Phantom Executive Chair",
+      "slug": "phantom-executive-chair",
+      "series": "Executive Series",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-pine-pony-windy",
+      "name": "Pine, Pony & Windy Ergonomic Chairs",
+      "slug": "pine-pony-windy",
+      "series": "Ergonomic Series",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/windy/ic-126",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-premier-executive-chair",
+      "name": "Premier Executive Chair",
+      "slug": "premier-executive-chair",
+      "series": "Executive Series",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-skoda-executive-chair",
+      "name": "Skoda Executive Chair",
+      "slug": "skoda-executive-chair",
+      "series": "Executive Series",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-tycoon-director-chair",
+      "name": "Tycoon Director Chair",
+      "slug": "tycoon-director-chair",
+      "series": "Director Series",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-venus-rev-ud",
+      "name": "Venus Rev UD Executive Chair",
+      "slug": "venus-rev-ud",
+      "series": "Executive Series",
+      "mainPublicId": "steelmade/chairs/executive-series/Venus-rev-ud/ic-304",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-visitor-classic-chair",
+      "name": "Visitor Classic Chair",
+      "slug": "visitor-classic-chair",
+      "series": "Visitor Series",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-visitor-flora",
+      "name": "Flora Visitor Chair",
+      "slug": "visitor-flora",
+      "series": "Visitor Series",
+      "mainPublicId": "steelmade/chairs/visitor-series/flora/ic-153",
+      "variantPublicIds": [
+        "steelmade/chairs/visitor-series/flora/ic-153",
+        "steelmade/chairs/visitor-series/flora/ic-153"
+      ]
+    },
+    {
+      "id": "imported-product-visitor-liberty",
+      "name": "Liberty Visitor Chair",
+      "slug": "visitor-liberty",
+      "series": "Visitor Series",
+      "mainPublicId": "steelmade/chairs/visitor-series/liberty/ic-151",
+      "variantPublicIds": [
+        "steelmade/chairs/visitor-series/liberty/ic-151",
+        "steelmade/chairs/visitor-series/liberty/ic-151",
+        "steelmade/chairs/visitor-series/liberty/ic-175-pad"
+      ]
+    },
+    {
+      "id": "imported-product-visitor-regency",
+      "name": "Regency Visitor Chair",
+      "slug": "visitor-regency",
+      "series": "Visitor Series",
+      "mainPublicId": "steelmade/chairs/visitor-series/regency/ic-152",
+      "variantPublicIds": [
+        "steelmade/chairs/visitor-series/regency/ic-152",
+        "steelmade/chairs/visitor-series/regency/ic-152",
+        "steelmade/chairs/visitor-series/regency/ic-176-pad"
+      ]
+    },
+    {
+      "id": "imported-product-visitor-titan",
+      "name": "Titan Visitor Chair",
+      "slug": "visitor-titan",
+      "series": "Visitor Series",
+      "mainPublicId": "steelmade/chairs/visitor-series/titan/ic-154",
+      "variantPublicIds": [
+        "steelmade/chairs/visitor-series/titan/ic-154",
+        "steelmade/chairs/visitor-series/titan/ic-154"
+      ]
+    },
+    {
+      "id": "imported-product-wilson-executive-chair",
+      "name": "Wilson Executive Chair",
+      "slug": "wilson-executive-chair",
+      "series": "Executive Series",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "imported-product-woodland-director-chair",
+      "name": "Woodland Director Chair",
+      "slug": "woodland-director-chair",
+      "series": "Director Series",
+      "mainPublicId": "steelmade/chairs/director-series/woodland/ic-338-hb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-director-series-ashley-director-chair",
+      "name": "Ashley Director Chair",
+      "slug": "ashley-director-chair",
+      "series": "Ashley Director",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-director-series-bigboss-gold-director-chair",
+      "name": "BigBoss Gold Director Chair",
+      "slug": "bigboss-gold-director-chair",
+      "series": "Big",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-director-series-boston-director-chair",
+      "name": "Boston Director Chair",
+      "slug": "boston-director-chair",
+      "series": "Boston Director",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-director-series-grandezza-director-chair",
+      "name": "Grandezza Director Chair",
+      "slug": "grandezza-director-chair",
+      "series": "Grandezza Director",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-director-series-kotak-director-chair",
+      "name": "Kotak Director Chair",
+      "slug": "kotak-director-chair",
+      "series": "Kotak Director",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-director-series-milano-director-chair",
+      "name": "Milano Director Chair",
+      "slug": "milano-director-chair",
+      "series": "Milano Director",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-director-series-monarch-director-chair",
+      "name": "Monarch Director Chair",
+      "slug": "monarch-director-chair",
+      "series": "Monarch Director",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-director-series-nissan-director-chair",
+      "name": "Nissan Director Chair",
+      "slug": "nissan-director-chair",
+      "series": "Nissan Director",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-director-series-opera-director-chair",
+      "name": "Opera Director Chair",
+      "slug": "opera-director-chair",
+      "series": "Opera Director",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-director-series-parker-director-chair",
+      "name": "Parker Director Chair",
+      "slug": "parker-director-chair",
+      "series": "Parker Director",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-director-series-trident",
+      "name": "Trident Director Chair",
+      "slug": "trident",
+      "series": "Trident Director",
+      "mainPublicId": "steelmade/chairs/director-series/trident/ic-250-mb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-director-series-tycoon-director-chair",
+      "name": "Tycoon Director Chair",
+      "slug": "tycoon-director-chair",
+      "series": "Tycoon Director",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-director-series-woodland-director-chair",
+      "name": "Woodland Director Chair",
+      "slug": "woodland-director-chair",
+      "series": "Woodland Director",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-bb",
+      "name": "BB Ergonomic Chair",
+      "slug": "bb",
+      "series": "visitor series",
+      "mainPublicId": "steelmade/chairs/visitor-series/bubble-visi/ic-310-w/o-arms",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-berlin",
+      "name": "Berlin Ergonomic Chair",
+      "slug": "berlin",
+      "series": "Berlin Ergonomic",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/berlin/ic-317-hb-white",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-cobra-ergonomic-chair",
+      "name": "Cobra Ergonomic Chair",
+      "slug": "cobra-ergonomic-chair",
+      "series": "Cobra Ergonomic",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-craft-ergonomic-chair",
+      "name": "Craft Ergonomic Chair",
+      "slug": "craft-ergonomic-chair",
+      "series": "Craft Ergonomic",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-dc",
+      "name": "DC Ergonomic Chair",
+      "slug": "dc",
+      "series": "",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/dc/ic-343-mb-black",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-ev",
+      "name": "EV Ergonomic Chair",
+      "slug": "ev",
+      "series": "",
+      "mainPublicId": "steelmade/workstations/desk based workstation legs/elevate-series1",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-feedo",
+      "name": "Feedo Ergonomic Chair",
+      "slug": "feedo",
+      "series": "Feedo Ergonomic",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/feedo/ic-259-hb-black",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-flame-ergonomic-chair",
+      "name": "Flame Ergonomic Chair",
+      "slug": "flame-ergonomic-chair",
+      "series": "Flame Ergonomic",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-flamingo-ergonomic-chair",
+      "name": "Flamingo Ergonomic Chair",
+      "slug": "flamingo-ergonomic-chair",
+      "series": "Flamingo Ergonomic",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-flea",
+      "name": "Flea Ergonomic Series",
+      "slug": "flea",
+      "series": "Flea Ergonomic",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/flea/ic-352-hb-black",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-honda-ergonomic-chair",
+      "name": "Honda Ergonomic Chair",
+      "slug": "honda-ergonomic-chair",
+      "series": "Honda Ergonomic",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-marvel-ergonomic-chair",
+      "name": "Marvel Ergonomic Chair",
+      "slug": "marvel-ergonomic-chair",
+      "series": "Marvel Ergonomic",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-matrix-ergonomic-chair",
+      "name": "Matrix Ergonomic Chair",
+      "slug": "matrix-ergonomic-chair",
+      "series": "Matrix Ergonomic",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-mercedes",
+      "name": "Mercedes Ergonomic Chair",
+      "slug": "mercedes",
+      "series": "Mercedes Ergonomic",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/mercedes/ic-348-visi-black",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-mono-ergonomic-chair",
+      "name": "Mono Ergonomic Chair",
+      "slug": "mono-ergonomic-chair",
+      "series": "Mono Ergonomic",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-moscow",
+      "name": "Moscow Ergonomic Chair",
+      "slug": "moscow",
+      "series": "Moscow Ergonomic",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/moscow/ic-29-mb-black",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-navy-ergonomic-chair",
+      "name": "Navy Ergonomic Chair",
+      "slug": "navy-ergonomic-chair",
+      "series": "Navy Ergonomic",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-ola-roman",
+      "name": "Ola & Roman Ergonomic Chairs",
+      "slug": "ola-roman",
+      "series": "Ola",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-pine-pony-windy",
+      "name": "Pine, Pony & Windy Ergonomic Chairs",
+      "slug": "pine-pony-windy",
+      "series": "Pine",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-robo-ergonomic-chair",
+      "name": "Robo Ergonomic Chair",
+      "slug": "robo-ergonomic-chair",
+      "series": "Robo Ergonomic",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-roger",
+      "name": "Roger Ergonomic Chair",
+      "slug": "roger",
+      "series": "Roger Ergonomic",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/roger/ic-322-mb-white",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-tokyo",
+      "name": "Tokyo Ergonomic Series",
+      "slug": "tokyo",
+      "series": "Tokyo Ergonomic",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/tokyo/ic-116-hb-white",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-ud",
+      "name": "UD Ergonomic Chair",
+      "slug": "ud",
+      "series": "",
+      "mainPublicId": "steelmade/chairs/ergonomic-series/ud/ic-327-hb-black",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-vivo-ergonomic-chair",
+      "name": "Vivo Ergonomic Chair",
+      "slug": "vivo-ergonomic-chair",
+      "series": "Vivo Ergonomic",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-ergonomic-series-zara-ergonomic-chair",
+      "name": "Zara Ergonomic Chair",
+      "slug": "zara-ergonomic-chair",
+      "series": "Zara Ergonomic",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-amazon",
+      "name": "Amazon Executive Chair",
+      "slug": "amazon",
+      "series": "Amazon Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/amazon/ic-54-mb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-amigo",
+      "name": "Amigo Executive Chair",
+      "slug": "amigo",
+      "series": "Amigo Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/amigo/ic-332-mb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-benz",
+      "name": "Benz Executive Chair",
+      "slug": "benz",
+      "series": "Benz Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/benz/ic-34",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-commander-chair",
+      "name": "Commander Executive Chair",
+      "slug": "commander-chair",
+      "series": "Commander Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-duster",
+      "name": "Duster Executive Chair",
+      "slug": "duster",
+      "series": "Duster Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/duster/ic-36-hb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-irana",
+      "name": "Irana Executive Chair",
+      "slug": "irana",
+      "series": "Irana Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/irana/ic-62",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-korean-chair",
+      "name": "Korean Executive Chair",
+      "slug": "korean-chair",
+      "series": "Korean Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-luxury",
+      "name": "Luxury Executive Chair",
+      "slug": "luxury",
+      "series": "Luxury Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/luxury/ic-39-mb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-lx",
+      "name": "LX Executive Chair",
+      "slug": "lx",
+      "series": "",
+      "mainPublicId": "steelmade/chairs/executive-series/lx/ic-51-hb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-makson-executive-chair",
+      "name": "Makson Executive Chair",
+      "slug": "makson-executive-chair",
+      "series": "Makson Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-mini-ginger-dolphin-executive-chair",
+      "name": "Mini / Ginger / Dolphin Executive Chair",
+      "slug": "mini-ginger-dolphin-executive-chair",
+      "series": "Mini",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-mini-markson",
+      "name": "Mini Markson Executive Chair",
+      "slug": "mini-markson",
+      "series": "Mini Markson",
+      "mainPublicId": "steelmade/chairs/executive-series/mini-markson/ic-67-rev",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-nano-executive-chair",
+      "name": "Nano Executive Chair",
+      "slug": "nano-executive-chair",
+      "series": "Nano Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-obama",
+      "name": "Obama Executive Chair",
+      "slug": "obama",
+      "series": "Obama Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/obama/ic-303-mb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-perk",
+      "name": "Perk Executive Chair",
+      "slug": "perk",
+      "series": "Perk Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/perkshynl/ic-32",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-perkshynl",
+      "name": "Perkshynl Executive Chair",
+      "slug": "perkshynl",
+      "series": "Perkshynl Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/perkshynl/ic-32",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-phantom-executive-chair",
+      "name": "Phantom Executive Chair",
+      "slug": "phantom-executive-chair",
+      "series": "Phantom Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-premier-executive-chair",
+      "name": "Premier Executive Chair",
+      "slug": "premier-executive-chair",
+      "series": "Premier Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-sahara",
+      "name": "Sahara Executive Chair",
+      "slug": "sahara",
+      "series": "Sahara Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/sahara/ic-45-mb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-siemens",
+      "name": "Siemens Executive Chair",
+      "slug": "siemens",
+      "series": "Siemens Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/siemens/ic-42-mb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-skoda-executive-chair",
+      "name": "Skoda Executive Chair",
+      "slug": "skoda-executive-chair",
+      "series": "Skoda Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-supreme",
+      "name": "Supreme Executive Chair",
+      "slug": "supreme",
+      "series": "Supreme Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/supreme/ic-55-hb.jpg",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-syndicate",
+      "name": "Syndicate Executive Chair",
+      "slug": "syndicate",
+      "series": "Syndicate Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/syndicate/ic-59-hb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-venus-rev-ud",
+      "name": "Venus Rev UD Executive Chair",
+      "slug": "venus-rev-ud",
+      "series": "Venus Rev",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-verna",
+      "name": "Verna Executive Chair",
+      "slug": "verna",
+      "series": "Verna Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/verna/ic-43-mb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-executive-series-wilson-executive-chair",
+      "name": "Wilson Executive Chair",
+      "slug": "wilson-executive-chair",
+      "series": "Wilson Executive",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-visitor-series-visitor-classic-chair",
+      "name": "Visitor Classic Chair",
+      "slug": "visitor-classic-chair",
+      "series": "Visitor Classic",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-visitor-series-visitor-flora",
+      "name": "Flora Visitor Chair",
+      "slug": "visitor-flora",
+      "series": "Flora Visitor",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-visitor-series-visitor-liberty",
+      "name": "Liberty Visitor Chair",
+      "slug": "visitor-liberty",
+      "series": "Liberty Visitor",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-visitor-series-visitor-regency",
+      "name": "Regency Visitor Chair",
+      "slug": "visitor-regency",
+      "series": "Regency Visitor",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-visitor-series-visitor-titan",
+      "name": "Titan Visitor Chair",
+      "slug": "visitor-titan",
+      "series": "Titan Visitor",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    },
+    {
+      "id": "product-chairs-visitor-series-visitor-venus-vista-chair",
+      "name": "Visitor Venus & Vista Chair",
+      "slug": "visitor-venus-vista-chair",
+      "series": "Visitor Venus",
+      "mainPublicId": "steelmade/chairs/executive-series/nano/ic-93-lb",
+      "variantPublicIds": []
+    }
+  ]
+}

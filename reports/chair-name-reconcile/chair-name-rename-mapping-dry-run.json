@@ -1,0 +1,1842 @@
+{
+  "generatedAt": "2026-03-06T09:04:38.037Z",
+  "summary": {
+    "pdfEntries": 144,
+    "sanityChairs": 260,
+    "renameProposals": 67,
+    "highConfidence": 51,
+    "mediumConfidence": 16,
+    "unmatchedSanity": 168,
+    "unchanged": 193
+  },
+  "proposals": [
+    {
+      "id": "PYCfep3q5TfxEMsSZlyWcq",
+      "slug": "oppo-ic-290",
+      "currentName": "Oppo Dining Chair",
+      "suggestedName": "Oppo Chair",
+      "series": "dining series",
+      "codes": [
+        "IC-290"
+      ],
+      "matchedPdfCode": "IC-290",
+      "matchedPdfName": "OPPO",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlybOz",
+      "slug": "union-ic-288",
+      "currentName": "Union Dining Chair",
+      "suggestedName": "Union Chair",
+      "series": "dining series",
+      "codes": [
+        "IC-288"
+      ],
+      "matchedPdfCode": "IC-288",
+      "matchedPdfName": "UNION",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlycGO",
+      "slug": "wave-ic-287",
+      "currentName": "Wave Dining Chair",
+      "suggestedName": "Wave Chair",
+      "series": "dining series",
+      "codes": [
+        "IC-287"
+      ],
+      "matchedPdfCode": "IC-287",
+      "matchedPdfName": "WAVE",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlz1rv",
+      "slug": "4-seater-royal-ic-242-sofa",
+      "currentName": "4 seater royal Lounge Chair",
+      "suggestedName": "4 Seater Royal Sofa Chair",
+      "series": "lounge series",
+      "codes": [
+        "IC-242"
+      ],
+      "matchedPdfCode": "IC-242",
+      "matchedPdfName": "4 SEATER ROYAL SOFA",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzA0p",
+      "slug": "glory-ic-363",
+      "currentName": "Glory Multipurpose Chair",
+      "suggestedName": "Glory Chair",
+      "series": "multipurpose series",
+      "codes": [
+        "IC-363"
+      ],
+      "matchedPdfCode": "IC-363",
+      "matchedPdfName": "GLORY",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzAnN",
+      "slug": "omega-ic-365",
+      "currentName": "Omega Multipurpose Chair",
+      "suggestedName": "Omega Chair",
+      "series": "multipurpose series",
+      "codes": [
+        "IC-365"
+      ],
+      "matchedPdfCode": "IC-365",
+      "matchedPdfName": "OMEGA",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzSPi",
+      "slug": "index-ic-308-visi",
+      "currentName": "Index Visitor Chair",
+      "suggestedName": "Index Vis Visitor Chair",
+      "series": "visitor series",
+      "codes": [
+        "IC-308",
+        "IC-309"
+      ],
+      "matchedPdfCode": "IC-308",
+      "matchedPdfName": "INDEX VIS",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm0sQY",
+      "slug": "grandezza",
+      "currentName": "Grandezza",
+      "suggestedName": "Grandezza Director Chair",
+      "series": "director series",
+      "codes": [
+        "IC-04",
+        "IC-05"
+      ],
+      "matchedPdfCode": "IC-04",
+      "matchedPdfName": "GRANDEZZA HB S.DX",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm4nFP",
+      "slug": "ic-249-hb",
+      "currentName": "Trident High Back",
+      "suggestedName": "Trident Director Chair",
+      "series": "director series",
+      "codes": [
+        "IC-249",
+        "IC-250"
+      ],
+      "matchedPdfCode": "IC-249",
+      "matchedPdfName": "TRIDENT HB S.DX",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm4puT",
+      "slug": "cobra",
+      "currentName": "Cobra",
+      "suggestedName": "Polo Ergonomic Chair",
+      "series": "ergonomic series",
+      "codes": [
+        "IC-138",
+        "IC-139"
+      ],
+      "matchedPdfCode": "IC-139",
+      "matchedPdfName": "POLO WHITE",
+      "confidence": "medium",
+      "reason": "Matched by code signal but token overlap/uniqueness is weak (requires review)"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm4vEb",
+      "slug": "ic-335-hb-black",
+      "currentName": "Ic 335 Hb Black",
+      "suggestedName": "Flamingo Ergonomic Chair",
+      "series": "ergonomic series",
+      "codes": [
+        "IC-335",
+        "IC-336",
+        "IC-337"
+      ],
+      "matchedPdfCode": "IC-335",
+      "matchedPdfName": "FLAMINGO HB BLACK",
+      "confidence": "medium",
+      "reason": "Matched by code signal but token overlap/uniqueness is weak (requires review)"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm4yum",
+      "slug": "marvel",
+      "currentName": "Marvel",
+      "suggestedName": "Marvel Ergonomic Chair",
+      "series": "ergonomic series",
+      "codes": [
+        "IC-114",
+        "IC-115"
+      ],
+      "matchedPdfCode": "IC-114",
+      "matchedPdfName": "MARVEL HB",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm57N6",
+      "slug": "ic-329-hb-grey",
+      "currentName": "Ic 329 Hb Grey",
+      "suggestedName": "U & D Grey Ergonomic Chair",
+      "series": "ergonomic series",
+      "codes": [
+        "IC-329",
+        "IC-328",
+        "IC-330",
+        "IC-327"
+      ],
+      "matchedPdfCode": "IC-330",
+      "matchedPdfName": "U & D HB GREY",
+      "confidence": "medium",
+      "reason": "Matched by code signal but token overlap/uniqueness is weak (requires review)"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm58OD",
+      "slug": "ic-53-hb",
+      "currentName": "Amazon High Back",
+      "suggestedName": "Amazon Executive Chair",
+      "series": "executive series",
+      "codes": [
+        "IC-53",
+        "IC-54"
+      ],
+      "matchedPdfCode": "IC-53",
+      "matchedPdfName": "AMAZON HB",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm5AQR",
+      "slug": "ic-83-lb",
+      "currentName": "Jet Low Back",
+      "suggestedName": "Jet Executive Chair",
+      "series": "executive series",
+      "codes": [
+        "IC-83"
+      ],
+      "matchedPdfCode": "IC-83",
+      "matchedPdfName": "JET LB",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm5BMh",
+      "slug": "korean",
+      "currentName": "Korean",
+      "suggestedName": "Korean Executive Chair",
+      "series": "executive series",
+      "codes": [
+        "IC-47",
+        "IC-48"
+      ],
+      "matchedPdfCode": "IC-47",
+      "matchedPdfName": "KOREAN HB",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm5H56",
+      "slug": "ic-46-hb",
+      "currentName": "Sahara High Back",
+      "suggestedName": "Sahara Executive Chair",
+      "series": "executive series",
+      "codes": [
+        "IC-46",
+        "IC-45"
+      ],
+      "matchedPdfCode": "IC-46",
+      "matchedPdfName": "SAHARA MB",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm5I1M",
+      "slug": "skoda",
+      "currentName": "Skoda",
+      "suggestedName": "Skoda Executive Chair",
+      "series": "executive series",
+      "codes": [
+        "IC-94",
+        "IC-95"
+      ],
+      "matchedPdfCode": "IC-94",
+      "matchedPdfName": "SKODA HB",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm5Ixc",
+      "slug": "ic-60-mb",
+      "currentName": "Syndicate Mid Back",
+      "suggestedName": "Syndicate Executive Chair",
+      "series": "executive series",
+      "codes": [
+        "IC-60",
+        "IC-59"
+      ],
+      "matchedPdfCode": "IC-60",
+      "matchedPdfName": "SYNDICATE MB",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDIaJ",
+      "slug": "mint-ic-289",
+      "currentName": "Mint Dining Chair",
+      "suggestedName": "Mint Chair",
+      "series": "dining series",
+      "codes": [
+        "IC-289"
+      ],
+      "matchedPdfCode": "IC-289",
+      "matchedPdfName": "MINT",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDJ9d",
+      "slug": "modern-counter-ic-294",
+      "currentName": "Modern counter Dining Chair",
+      "suggestedName": "Modern Counter Chair",
+      "series": "dining series",
+      "codes": [
+        "IC-294"
+      ],
+      "matchedPdfCode": "IC-294",
+      "matchedPdfName": "MODERN COUNTER",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDJsN",
+      "slug": "petal-ic-208",
+      "currentName": "Petal Dining Chair",
+      "suggestedName": "Petal Chair",
+      "series": "dining series",
+      "codes": [
+        "IC-208"
+      ],
+      "matchedPdfCode": "IC-208",
+      "matchedPdfName": "PETAL",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDKMz",
+      "slug": "planet-b-ic-292",
+      "currentName": "Planet b Dining Chair",
+      "suggestedName": "Planet B Chair",
+      "series": "dining series",
+      "codes": [
+        "IC-292"
+      ],
+      "matchedPdfCode": "IC-292",
+      "matchedPdfName": "PLANET B",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDKfp",
+      "slug": "planet-c-ic-293",
+      "currentName": "Planet c Dining Chair",
+      "suggestedName": "Planet C Chair",
+      "series": "dining series",
+      "codes": [
+        "IC-293"
+      ],
+      "matchedPdfCode": "IC-293",
+      "matchedPdfName": "PLANET C",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDa5t",
+      "slug": "beta-ic-206-cushion",
+      "currentName": "Beta Multipurpose Chair",
+      "suggestedName": "Beta Cushion Chair",
+      "series": "multipurpose series",
+      "codes": [
+        "IC-206"
+      ],
+      "matchedPdfCode": "IC-206",
+      "matchedPdfName": "BETA CUSHION",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDcNB",
+      "slug": "sunset-ic-202",
+      "currentName": "Sunset Multipurpose Chair",
+      "suggestedName": "Bunny DX Chair",
+      "series": "multipurpose series",
+      "codes": [
+        "IC-202"
+      ],
+      "matchedPdfCode": "IC-202",
+      "matchedPdfName": "BUNNY DX",
+      "confidence": "medium",
+      "reason": "Matched by code signal but token overlap/uniqueness is weak (requires review)"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDeCD",
+      "slug": "bubble-visi-ic-312-writing-pad",
+      "currentName": "Bubble visi Visitor Chair",
+      "suggestedName": "Bubble Visitor Chair",
+      "series": "visitor series",
+      "codes": [
+        "IC-312",
+        "IC-311"
+      ],
+      "matchedPdfCode": "IC-312",
+      "matchedPdfName": "BUBBLE VISI",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yE9Pt",
+      "slug": "bigbossgold",
+      "currentName": "Bigbossgold",
+      "suggestedName": "Big Boss Gold Director Chair",
+      "series": "director series",
+      "codes": [
+        "IC-255",
+        "IC-256"
+      ],
+      "matchedPdfCode": "IC-255",
+      "matchedPdfName": "BIG BOSS GOLD HB",
+      "confidence": "medium",
+      "reason": "Matched by code signal but token overlap/uniqueness is weak (requires review)"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yF8UT",
+      "slug": "kotak",
+      "currentName": "Kotak",
+      "suggestedName": "Kotak Director Chair",
+      "series": "director series",
+      "codes": [
+        "IC-13",
+        "IC-12"
+      ],
+      "matchedPdfCode": "IC-13",
+      "matchedPdfName": "KOTAK MB",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFVt3",
+      "slug": "milano",
+      "currentName": "Milano",
+      "suggestedName": "Milano Director Chair",
+      "series": "director series",
+      "codes": [
+        "IC-251",
+        "IC-252"
+      ],
+      "matchedPdfCode": "IC-251",
+      "matchedPdfName": "MILANO HB S.DX",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFkaN",
+      "slug": "nissan",
+      "currentName": "Nissan",
+      "suggestedName": "Nissan Director Chair",
+      "series": "director series",
+      "codes": [
+        "IC-253",
+        "IC-252"
+      ],
+      "matchedPdfCode": "IC-253",
+      "matchedPdfName": "NISSAN HB",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFn5n",
+      "slug": "bb",
+      "currentName": "Bb",
+      "suggestedName": "BB Ergonomic Chair",
+      "series": "ergonomic series",
+      "codes": [
+        "IC-264",
+        "IC-124"
+      ],
+      "matchedPdfCode": "IC-264",
+      "matchedPdfName": "BB MB",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFp4F",
+      "slug": "ic-342-hb-black",
+      "currentName": "Ic 342 Hb Black",
+      "suggestedName": "DC Ergonomic Chair",
+      "series": "ergonomic series",
+      "codes": [
+        "IC-342",
+        "IC-344",
+        "IC-345",
+        "IC-343"
+      ],
+      "matchedPdfCode": "IC-343",
+      "matchedPdfName": "DC HB BLACK",
+      "confidence": "medium",
+      "reason": "Matched by code signal but token overlap/uniqueness is weak (requires review)"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFvfz",
+      "slug": "ic-263c-hb-black",
+      "currentName": "Ic 263c Hb Black",
+      "suggestedName": "Robo Ergonomic Chair",
+      "series": "ergonomic series",
+      "codes": [
+        "IC-263C",
+        "IC-263",
+        "IC-263B"
+      ],
+      "matchedPdfCode": "IC-263",
+      "matchedPdfName": "ROBO BLACK",
+      "confidence": "medium",
+      "reason": "Matched by code signal but token overlap/uniqueness is weak (requires review)"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yG0EZ",
+      "slug": "ic-85-lb",
+      "currentName": "Lazer Low Back",
+      "suggestedName": "Lezer Executive Chair",
+      "series": "executive series",
+      "codes": [
+        "IC-85"
+      ],
+      "matchedPdfCode": "IC-85",
+      "matchedPdfName": "LEZER LB",
+      "confidence": "medium",
+      "reason": "Matched by code signal but token overlap/uniqueness is weak (requires review)"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yG25x",
+      "slug": "ic-302-hb",
+      "currentName": "Obama High Back",
+      "suggestedName": "Obama Executive Chair",
+      "series": "executive series",
+      "codes": [
+        "IC-302",
+        "IC-303"
+      ],
+      "matchedPdfCode": "IC-302",
+      "matchedPdfName": "OBAMA HB",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yG2YD",
+      "slug": "premier",
+      "currentName": "Premier",
+      "suggestedName": "Premier Executive Chair",
+      "series": "executive series",
+      "codes": [
+        "IC-79",
+        "IC-80"
+      ],
+      "matchedPdfCode": "IC-79",
+      "matchedPdfName": "PREMIER HB",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqc87b",
+      "slug": "gem-ic-212",
+      "currentName": "Gem Dining Chair",
+      "suggestedName": "Gem Chair",
+      "series": "dining series",
+      "codes": [
+        "IC-212"
+      ],
+      "matchedPdfCode": "IC-212",
+      "matchedPdfName": "GEM",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqc8eG",
+      "slug": "lbt-counter-ic-227",
+      "currentName": "Lbt counter Dining Chair",
+      "suggestedName": "Lbt Counter Chair",
+      "series": "dining series",
+      "codes": [
+        "IC-227"
+      ],
+      "matchedPdfCode": "IC-227",
+      "matchedPdfName": "LBT COUNTER",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqc8tz",
+      "slug": "lily-ic-281",
+      "currentName": "Lily Dining Chair",
+      "suggestedName": "Lily Chair",
+      "series": "dining series",
+      "codes": [
+        "IC-281"
+      ],
+      "matchedPdfCode": "IC-281",
+      "matchedPdfName": "LILY",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqc97I",
+      "slug": "mario-ic-210",
+      "currentName": "Mario Dining Chair",
+      "suggestedName": "Mario Chair",
+      "series": "dining series",
+      "codes": [
+        "IC-210"
+      ],
+      "matchedPdfCode": "IC-210",
+      "matchedPdfName": "MARIO",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcA5m",
+      "slug": "rose-counter-ic-225",
+      "currentName": "Rose counter Dining Chair",
+      "suggestedName": "Rose Counter Chair",
+      "series": "dining series",
+      "codes": [
+        "IC-225"
+      ],
+      "matchedPdfCode": "IC-225",
+      "matchedPdfName": "ROSE COUNTER",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcAJ5",
+      "slug": "rose-ic-213",
+      "currentName": "Rose Dining Chair",
+      "suggestedName": "Rose Chair",
+      "series": "dining series",
+      "codes": [
+        "IC-213"
+      ],
+      "matchedPdfCode": "IC-213",
+      "matchedPdfName": "ROSE",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcGbo",
+      "slug": "austria-ic-366",
+      "currentName": "Austria Multipurpose Chair",
+      "suggestedName": "Austria L Chair",
+      "series": "multipurpose series",
+      "codes": [
+        "IC-366"
+      ],
+      "matchedPdfCode": "IC-366",
+      "matchedPdfName": "AUSTRIA BLACK L",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcHf8",
+      "slug": "colaba-visi-ic-356",
+      "currentName": "Colaba visi Multipurpose Chair",
+      "suggestedName": "Colaba Vis Grey Chair",
+      "series": "multipurpose series",
+      "codes": [
+        "IC-356"
+      ],
+      "matchedPdfCode": "IC-356",
+      "matchedPdfName": "COLABA VIS GREY",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcZAD",
+      "slug": "ic-228-arms",
+      "currentName": "Lbt Counter with Arms",
+      "suggestedName": "Lbt Counter Arms Chair",
+      "series": "dining series",
+      "codes": [
+        "IC-228"
+      ],
+      "matchedPdfCode": "IC-228",
+      "matchedPdfName": "LBT COUNTER ARMS",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqceB6",
+      "slug": "boston",
+      "currentName": "Boston",
+      "suggestedName": "Boston Director Chair",
+      "series": "director series",
+      "codes": [
+        "IC-06",
+        "IC-07"
+      ],
+      "matchedPdfCode": "IC-06",
+      "matchedPdfName": "BOSTON HB S.DX",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdMtg",
+      "slug": "monarch",
+      "currentName": "Monarch",
+      "suggestedName": "Monarch Director Chair",
+      "series": "director series",
+      "codes": [
+        "IC-08",
+        "IC-09"
+      ],
+      "matchedPdfCode": "IC-08",
+      "matchedPdfName": "MONARCH HB",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdpnD",
+      "slug": "tycoon",
+      "currentName": "Tycoon",
+      "suggestedName": "Tycoon Director Chair",
+      "series": "director series",
+      "codes": [
+        "IC-01",
+        "IC-02"
+      ],
+      "matchedPdfCode": "IC-01",
+      "matchedPdfName": "TYCOON HB S.DX",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdqkU",
+      "slug": "ic-319-hb-black",
+      "currentName": "Ic 319 Hb Black",
+      "suggestedName": "Berlin Ergonomic Chair",
+      "series": "ergonomic series",
+      "codes": [
+        "IC-319",
+        "IC-318",
+        "IC-320",
+        "IC-317"
+      ],
+      "matchedPdfCode": "IC-319",
+      "matchedPdfName": "BERLIN HB BLACK S.DX",
+      "confidence": "medium",
+      "reason": "Matched by code signal but token overlap/uniqueness is weak (requires review)"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdrrR",
+      "slug": "ic-358-hb",
+      "currentName": "Ev High Back",
+      "suggestedName": "EV Grey Ergonomic Chair",
+      "series": "ergonomic series",
+      "codes": [
+        "IC-358"
+      ],
+      "matchedPdfCode": "IC-358",
+      "matchedPdfName": "EV HB GREY",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqds3X",
+      "slug": "ic-265-black",
+      "currentName": "Ic 265 Black",
+      "suggestedName": "Flame Ergonomic Chair",
+      "series": "ergonomic series",
+      "codes": [
+        "IC-265"
+      ],
+      "matchedPdfCode": "IC-265",
+      "matchedPdfName": "FLAME BLACK",
+      "confidence": "medium",
+      "reason": "Matched by code signal but token overlap/uniqueness is weak (requires review)"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdtCu",
+      "slug": "ic-123d-hb",
+      "currentName": "Honda High Back",
+      "suggestedName": "Honda Ergonomic Chair",
+      "series": "ergonomic series",
+      "codes": [
+        "IC-123D",
+        "IC-123",
+        "IC-123C",
+        "IC-123B",
+        "IC-123A"
+      ],
+      "matchedPdfCode": "IC-123",
+      "matchedPdfName": "HONDA",
+      "confidence": "medium",
+      "reason": "Matched by code signal but token overlap/uniqueness is weak (requires review)"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdtb6",
+      "slug": "ic-349-hb-grey",
+      "currentName": "Ic 349 Hb Grey",
+      "suggestedName": "Mercedes Grey Ergonomic Chair",
+      "series": "ergonomic series",
+      "codes": [
+        "IC-349",
+        "IC-351",
+        "IC-348"
+      ],
+      "matchedPdfCode": "IC-349",
+      "matchedPdfName": "MERCEDES HB GREY",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqduc0",
+      "slug": "ic-321-hb-white",
+      "currentName": "Ic 321 Hb White",
+      "suggestedName": "Roger Ergonomic Chair",
+      "series": "ergonomic series",
+      "codes": [
+        "IC-321",
+        "IC-323",
+        "IC-324",
+        "IC-322"
+      ],
+      "matchedPdfCode": "IC-321",
+      "matchedPdfName": "ROGER HB WHITE",
+      "confidence": "medium",
+      "reason": "Matched by code signal but token overlap/uniqueness is weak (requires review)"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdxCt",
+      "slug": "ic-40-hb",
+      "currentName": "Luxury High Back",
+      "suggestedName": "Luxury Executive Chair",
+      "series": "executive series",
+      "codes": [
+        "IC-40",
+        "IC-39"
+      ],
+      "matchedPdfCode": "IC-40",
+      "matchedPdfName": "LUXURY MB",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdxOz",
+      "slug": "ic-52-mb",
+      "currentName": "Lx Mid Back",
+      "suggestedName": "LX Executive Chair",
+      "series": "executive series",
+      "codes": [
+        "IC-52",
+        "IC-51"
+      ],
+      "matchedPdfCode": "IC-52",
+      "matchedPdfName": "LX MB",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdyHQ",
+      "slug": "phantom",
+      "currentName": "Phantom",
+      "suggestedName": "Phantom Executive Chair",
+      "series": "executive series",
+      "codes": [
+        "IC-70",
+        "IC-71"
+      ],
+      "matchedPdfCode": "IC-70",
+      "matchedPdfName": "PHANTOM HB",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqe0Al",
+      "slug": "ic-41-hb",
+      "currentName": "Siemens High Back",
+      "suggestedName": "Siemens Executive Chair",
+      "series": "executive series",
+      "codes": [
+        "IC-41",
+        "IC-42"
+      ],
+      "matchedPdfCode": "IC-41",
+      "matchedPdfName": "SIEMENS HB",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqe0aA",
+      "slug": "ic-44-hb",
+      "currentName": "Verna High Back",
+      "suggestedName": "Verna Executive Chair",
+      "series": "executive series",
+      "codes": [
+        "IC-44",
+        "IC-43"
+      ],
+      "matchedPdfCode": "IC-44",
+      "matchedPdfName": "VERNA MB",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "imported-product-bb",
+      "slug": "bb",
+      "currentName": "BB Ergonomic Chair",
+      "suggestedName": "Bubble Visitor Chair",
+      "series": "visitor series",
+      "codes": [
+        "IC-310"
+      ],
+      "matchedPdfCode": "IC-310",
+      "matchedPdfName": "BUBBLE VISI",
+      "confidence": "medium",
+      "reason": "Matched by code signal but token overlap/uniqueness is weak (requires review)"
+    },
+    {
+      "id": "imported-product-bigboss-gold-director-chair",
+      "slug": "bigboss-gold-director-chair",
+      "currentName": "BigBoss Gold Director Chair",
+      "suggestedName": "Big Boss Gold Director Chair",
+      "series": "Director Series",
+      "codes": [
+        "IC-255"
+      ],
+      "matchedPdfCode": "IC-255",
+      "matchedPdfName": "BIG BOSS GOLD HB",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "imported-product-perk",
+      "slug": "perk",
+      "currentName": "Perk Executive Chair",
+      "suggestedName": "Perk Shynl Executive Chair",
+      "series": "Executive Series",
+      "codes": [
+        "IC-32"
+      ],
+      "matchedPdfCode": "IC-32",
+      "matchedPdfName": "PERK SHYNL",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "imported-product-perkshynl",
+      "slug": "perkshynl",
+      "currentName": "Perkshynl Executive Chair",
+      "suggestedName": "Perk Shynl Executive Chair",
+      "series": "Executive Series",
+      "codes": [
+        "IC-32"
+      ],
+      "matchedPdfCode": "IC-32",
+      "matchedPdfName": "PERK SHYNL",
+      "confidence": "medium",
+      "reason": "Matched by code signal but token overlap/uniqueness is weak (requires review)"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-bb",
+      "slug": "bb",
+      "currentName": "BB Ergonomic Chair",
+      "suggestedName": "Bubble Visitor Chair",
+      "series": "visitor series",
+      "codes": [
+        "IC-310"
+      ],
+      "matchedPdfCode": "IC-310",
+      "matchedPdfName": "BUBBLE VISI",
+      "confidence": "medium",
+      "reason": "Matched by code signal but token overlap/uniqueness is weak (requires review)"
+    },
+    {
+      "id": "product-chairs-executive-series-perk",
+      "slug": "perk",
+      "currentName": "Perk Executive Chair",
+      "suggestedName": "Perk Shynl Executive Chair",
+      "series": "Perk Executive",
+      "codes": [
+        "IC-32"
+      ],
+      "matchedPdfCode": "IC-32",
+      "matchedPdfName": "PERK SHYNL",
+      "confidence": "high",
+      "reason": "Matched by unique mainImage code -> PDF code"
+    },
+    {
+      "id": "product-chairs-executive-series-perkshynl",
+      "slug": "perkshynl",
+      "currentName": "Perkshynl Executive Chair",
+      "suggestedName": "Perk Shynl Executive Chair",
+      "series": "Perkshynl Executive",
+      "codes": [
+        "IC-32"
+      ],
+      "matchedPdfCode": "IC-32",
+      "matchedPdfName": "PERK SHYNL",
+      "confidence": "medium",
+      "reason": "Matched by code signal but token overlap/uniqueness is weak (requires review)"
+    }
+  ],
+  "unmatchedSanity": [
+    {
+      "id": "PYCfep3q5TfxEMsSZlyTjD",
+      "slug": "jewel-ic-211",
+      "name": "Jewel Dining Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlyZuk",
+      "slug": "spark-counter-ic-220",
+      "name": "Spark counter Dining Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlye8u",
+      "slug": "bb-ic-125-visitor",
+      "name": "Bb Ergonomic Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlyfi0",
+      "slug": "craft-ic-131-visitor",
+      "name": "Craft Ergonomic Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlyiWm",
+      "slug": "mono-ic-305",
+      "name": "Mono Ergonomic Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlykdr",
+      "slug": "ola-ic-144",
+      "name": "Ola Ergonomic Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlyltX",
+      "slug": "pine-ic-145",
+      "name": "Pine Ergonomic Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlysYC",
+      "slug": "mini-activa-ic-64",
+      "name": "Mini activa Executive Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlyteA",
+      "slug": "mini-markson-ic-68-visitor",
+      "name": "Mini markson Executive Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlyx5m",
+      "slug": "safari-ic-90-visitor",
+      "name": "Safari Executive Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlyzkq",
+      "slug": "2-seater-royal-ic-240-sofa",
+      "name": "2 seater royal Lounge Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlz0Dy",
+      "slug": "3-seater-airport-ic-237-sofa",
+      "name": "3 seater airport Lounge Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlz4qP",
+      "slug": "alpha-ic-200-cushion",
+      "name": "Alpha Multipurpose Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlz7Qc",
+      "slug": "bunny-ic-189",
+      "name": "Bunny Multipurpose Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzCCl",
+      "slug": "spring-ic-195",
+      "name": "Spring Multipurpose Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzF6O",
+      "slug": "tiana-ic-274",
+      "name": "Tiana Multipurpose Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzFUf",
+      "slug": "visa-ic-280",
+      "name": "Visa Multipurpose Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzGu3",
+      "slug": "arrow-ic-272",
+      "name": "Arrow Visitor Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzSsq",
+      "slug": "leo-ic-181",
+      "name": "Leo Visitor Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzWUA",
+      "slug": "planet-ic-158",
+      "name": "Planet Visitor Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZlzYRX",
+      "slug": "sohit-ic-307-visi",
+      "name": "Sohit Visitor Chair"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm4m9R",
+      "slug": "opera",
+      "name": "Opera"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm4qXJ",
+      "slug": "ic-266a-grey",
+      "name": "Ic 266a Grey"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm58hd",
+      "slug": "ic-331-hb",
+      "name": "Amigo High Back"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm5Cvn",
+      "slug": "makson",
+      "name": "Makson"
+    },
+    {
+      "id": "PYCfep3q5TfxEMsSZm5MsM",
+      "slug": "director-series",
+      "name": "Director Series"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDGQ5",
+      "slug": "bettle-ic-207",
+      "name": "Bettle Dining Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDL5j",
+      "slug": "rise-ic-217",
+      "name": "Rise Dining Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDMXD",
+      "slug": "spark-ic-219",
+      "name": "Spark Dining Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDOoV",
+      "slug": "matrix-ic-137-visitor",
+      "name": "Matrix Ergonomic Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDQPP",
+      "slug": "pine-ic-121",
+      "name": "Pine Ergonomic Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDRY3",
+      "slug": "vivo-ic-134-visitor",
+      "name": "Vivo Ergonomic Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDSSZ",
+      "slug": "computer-ic-86",
+      "name": "Computer Executive Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDTBJ",
+      "slug": "makson-ic-78-visitor",
+      "name": "Makson Executive Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDW1v",
+      "slug": "supreme-ic-56-mb",
+      "name": "Supreme Executive Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDXcp",
+      "slug": "3-seater-royal-ic-241-sofa",
+      "name": "3 seater royal Lounge Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDYUz",
+      "slug": "royal-sofa-ic-231",
+      "name": "Royal sofa Lounge Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDYxF",
+      "slug": "royal-sofa-ic-241a-cushion",
+      "name": "Royal sofa Lounge Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDZ6f",
+      "slug": "alpha-ic-199",
+      "name": "Alpha Multipurpose Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDaFJ",
+      "slug": "beta-ic-206a-cushion-sb",
+      "name": "Beta Multipurpose Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDaOj",
+      "slug": "bunny-ic-190-counter",
+      "name": "Bunny Multipurpose Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDavh",
+      "slug": "folding-wp-ic-278",
+      "name": "Folding wp Multipurpose Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDb57",
+      "slug": "folding-ic-277",
+      "name": "Folding Multipurpose Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDfwX",
+      "slug": "newton-ic-179",
+      "name": "Newton Visitor Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDgHj",
+      "slug": "nokia-ic-171",
+      "name": "Nokia Visitor Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDhnv",
+      "slug": "samsung-ic-150",
+      "name": "Samsung Visitor Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yDipV",
+      "slug": "vista-ic-169",
+      "name": "Vista Visitor Chair"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yE8lr",
+      "slug": "ashley",
+      "name": "Ashley"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFoJ9",
+      "slug": "craft",
+      "name": "Craft"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFqcn",
+      "slug": "ic-260-mb-grey",
+      "name": "Ic 260 Mb Grey"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFrj5",
+      "slug": "ic-353-mb-black",
+      "name": "Ic 353 Mb Black"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFu2j",
+      "slug": "matrix",
+      "name": "Matrix"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFuxF",
+      "slug": "ic-28-hb-black",
+      "name": "Ic 28 Hb Black"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFx0P",
+      "slug": "ic-118-hb-black",
+      "name": "Ic 118 Hb Black"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFxzd",
+      "slug": "vivo",
+      "name": "Vivo"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yFzTT",
+      "slug": "ic-66-lb",
+      "name": "Dolphn Low Back"
+    },
+    {
+      "id": "SfgI0z4vRA5blg633yG35B",
+      "slug": "safari",
+      "name": "Safari"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcB1q",
+      "slug": "collection-cover-collection-cover",
+      "name": "Collection cover Director Chair"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcC5A",
+      "slug": "navy-ic-146",
+      "name": "Navy Ergonomic Chair"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcCmi",
+      "slug": "roman-ic-128-visitor",
+      "name": "Roman Ergonomic Chair"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcD3e",
+      "slug": "windy-ic-126",
+      "name": "Windy Ergonomic Chair"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcDZ6",
+      "slug": "ginger-ic-65",
+      "name": "Ginger Executive Chair"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcF7s",
+      "slug": "venus-rev-ud-ic-304",
+      "name": "Venus rev ud Executive Chair"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcFSR",
+      "slug": "wilson-ic-75-visitor",
+      "name": "Wilson Executive Chair"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcGge",
+      "slug": "beta-ic-205",
+      "name": "Beta Multipurpose Chair"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcIED",
+      "slug": "spider-ic-196",
+      "name": "Spider Multipurpose Chair"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcIWM",
+      "slug": "tango-ic-197",
+      "name": "Tango Multipurpose Chair"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcJ5R",
+      "slug": "ace-ic-161",
+      "name": "Ace Visitor Chair"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcJjM",
+      "slug": "geo-ic-180",
+      "name": "Geo Visitor Chair"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcK58",
+      "slug": "honey-ic-163",
+      "name": "Honey Visitor Chair"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcMyA",
+      "slug": "orchid-ic-164",
+      "name": "Orchid Visitor Chair"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcNDt",
+      "slug": "pearl-ic-155",
+      "name": "Pearl Visitor Chair"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcNwe",
+      "slug": "sigma-ic-165",
+      "name": "Sigma Visitor Chair"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcOEn",
+      "slug": "venus-ic-148",
+      "name": "Venus Visitor Chair"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqcZHT",
+      "slug": "ic-294a",
+      "name": "Modern Visi Variant A"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdpV4",
+      "slug": "parker",
+      "name": "Parker"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdqBP",
+      "slug": "woodland",
+      "name": "Woodland"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdu1i",
+      "slug": "ic-146a-white",
+      "name": "Ic 146a White"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqduF1",
+      "slug": "ic-146b-grey",
+      "name": "Ic 146b Grey"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdwaB",
+      "slug": "commander",
+      "name": "Commander"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqdxkl",
+      "slug": "nano",
+      "name": "Nano"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqe0jq",
+      "slug": "wilson",
+      "name": "Wilson"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqe1h7",
+      "slug": "ic-273-black",
+      "name": "Ic 273 Black"
+    },
+    {
+      "id": "azxCCZJCUCHUDe0xTqe2GC",
+      "slug": "ic-273a-grey",
+      "name": "Ic 273a Grey"
+    },
+    {
+      "id": "imported-product-ashley-director-chair",
+      "slug": "ashley-director-chair",
+      "name": "Ashley Director Chair"
+    },
+    {
+      "id": "imported-product-boston-director-chair",
+      "slug": "boston-director-chair",
+      "name": "Boston Director Chair"
+    },
+    {
+      "id": "imported-product-cobra-ergonomic-chair",
+      "slug": "cobra-ergonomic-chair",
+      "name": "Cobra Ergonomic Chair"
+    },
+    {
+      "id": "imported-product-commander-chair",
+      "slug": "commander-chair",
+      "name": "Commander Executive Chair"
+    },
+    {
+      "id": "imported-product-duster",
+      "slug": "duster",
+      "name": "Duster Executive Chair"
+    },
+    {
+      "id": "imported-product-ev",
+      "slug": "ev",
+      "name": "EV Ergonomic Chair"
+    },
+    {
+      "id": "imported-product-grandezza-director-chair",
+      "slug": "grandezza-director-chair",
+      "name": "Grandezza Director Chair"
+    },
+    {
+      "id": "imported-product-irana",
+      "slug": "irana",
+      "name": "Irana Executive Chair"
+    },
+    {
+      "id": "imported-product-korean-chair",
+      "slug": "korean-chair",
+      "name": "Korean Executive Chair"
+    },
+    {
+      "id": "imported-product-kotak-director-chair",
+      "slug": "kotak-director-chair",
+      "name": "Kotak Director Chair"
+    },
+    {
+      "id": "imported-product-makson-executive-chair",
+      "slug": "makson-executive-chair",
+      "name": "Makson Executive Chair"
+    },
+    {
+      "id": "imported-product-mini-ginger-dolphin-executive-chair",
+      "slug": "mini-ginger-dolphin-executive-chair",
+      "name": "Mini / Ginger / Dolphin Executive Chair"
+    },
+    {
+      "id": "imported-product-monarch-director-chair",
+      "slug": "monarch-director-chair",
+      "name": "Monarch Director Chair"
+    },
+    {
+      "id": "imported-product-mono-ergonomic-chair",
+      "slug": "mono-ergonomic-chair",
+      "name": "Mono Ergonomic Chair"
+    },
+    {
+      "id": "imported-product-nano-executive-chair",
+      "slug": "nano-executive-chair",
+      "name": "Nano Executive Chair"
+    },
+    {
+      "id": "imported-product-navy-ergonomic-chair",
+      "slug": "navy-ergonomic-chair",
+      "name": "Navy Ergonomic Chair"
+    },
+    {
+      "id": "imported-product-ola-roman",
+      "slug": "ola-roman",
+      "name": "Ola & Roman Ergonomic Chairs"
+    },
+    {
+      "id": "imported-product-opera-director-chair",
+      "slug": "opera-director-chair",
+      "name": "Opera Director Chair"
+    },
+    {
+      "id": "imported-product-parker-director-chair",
+      "slug": "parker-director-chair",
+      "name": "Parker Director Chair"
+    },
+    {
+      "id": "imported-product-phantom-executive-chair",
+      "slug": "phantom-executive-chair",
+      "name": "Phantom Executive Chair"
+    },
+    {
+      "id": "imported-product-pine-pony-windy",
+      "slug": "pine-pony-windy",
+      "name": "Pine, Pony & Windy Ergonomic Chairs"
+    },
+    {
+      "id": "imported-product-premier-executive-chair",
+      "slug": "premier-executive-chair",
+      "name": "Premier Executive Chair"
+    },
+    {
+      "id": "imported-product-skoda-executive-chair",
+      "slug": "skoda-executive-chair",
+      "name": "Skoda Executive Chair"
+    },
+    {
+      "id": "imported-product-tycoon-director-chair",
+      "slug": "tycoon-director-chair",
+      "name": "Tycoon Director Chair"
+    },
+    {
+      "id": "imported-product-venus-rev-ud",
+      "slug": "venus-rev-ud",
+      "name": "Venus Rev UD Executive Chair"
+    },
+    {
+      "id": "imported-product-visitor-classic-chair",
+      "slug": "visitor-classic-chair",
+      "name": "Visitor Classic Chair"
+    },
+    {
+      "id": "imported-product-visitor-flora",
+      "slug": "visitor-flora",
+      "name": "Flora Visitor Chair"
+    },
+    {
+      "id": "imported-product-visitor-liberty",
+      "slug": "visitor-liberty",
+      "name": "Liberty Visitor Chair"
+    },
+    {
+      "id": "imported-product-visitor-regency",
+      "slug": "visitor-regency",
+      "name": "Regency Visitor Chair"
+    },
+    {
+      "id": "imported-product-visitor-titan",
+      "slug": "visitor-titan",
+      "name": "Titan Visitor Chair"
+    },
+    {
+      "id": "imported-product-wilson-executive-chair",
+      "slug": "wilson-executive-chair",
+      "name": "Wilson Executive Chair"
+    },
+    {
+      "id": "imported-product-woodland-director-chair",
+      "slug": "woodland-director-chair",
+      "name": "Woodland Director Chair"
+    },
+    {
+      "id": "product-chairs-director-series-ashley-director-chair",
+      "slug": "ashley-director-chair",
+      "name": "Ashley Director Chair"
+    },
+    {
+      "id": "product-chairs-director-series-bigboss-gold-director-chair",
+      "slug": "bigboss-gold-director-chair",
+      "name": "BigBoss Gold Director Chair"
+    },
+    {
+      "id": "product-chairs-director-series-boston-director-chair",
+      "slug": "boston-director-chair",
+      "name": "Boston Director Chair"
+    },
+    {
+      "id": "product-chairs-director-series-grandezza-director-chair",
+      "slug": "grandezza-director-chair",
+      "name": "Grandezza Director Chair"
+    },
+    {
+      "id": "product-chairs-director-series-kotak-director-chair",
+      "slug": "kotak-director-chair",
+      "name": "Kotak Director Chair"
+    },
+    {
+      "id": "product-chairs-director-series-milano-director-chair",
+      "slug": "milano-director-chair",
+      "name": "Milano Director Chair"
+    },
+    {
+      "id": "product-chairs-director-series-monarch-director-chair",
+      "slug": "monarch-director-chair",
+      "name": "Monarch Director Chair"
+    },
+    {
+      "id": "product-chairs-director-series-nissan-director-chair",
+      "slug": "nissan-director-chair",
+      "name": "Nissan Director Chair"
+    },
+    {
+      "id": "product-chairs-director-series-opera-director-chair",
+      "slug": "opera-director-chair",
+      "name": "Opera Director Chair"
+    },
+    {
+      "id": "product-chairs-director-series-parker-director-chair",
+      "slug": "parker-director-chair",
+      "name": "Parker Director Chair"
+    },
+    {
+      "id": "product-chairs-director-series-tycoon-director-chair",
+      "slug": "tycoon-director-chair",
+      "name": "Tycoon Director Chair"
+    },
+    {
+      "id": "product-chairs-director-series-woodland-director-chair",
+      "slug": "woodland-director-chair",
+      "name": "Woodland Director Chair"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-cobra-ergonomic-chair",
+      "slug": "cobra-ergonomic-chair",
+      "name": "Cobra Ergonomic Chair"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-craft-ergonomic-chair",
+      "slug": "craft-ergonomic-chair",
+      "name": "Craft Ergonomic Chair"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-ev",
+      "slug": "ev",
+      "name": "EV Ergonomic Chair"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-feedo",
+      "slug": "feedo",
+      "name": "Feedo Ergonomic Chair"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-flame-ergonomic-chair",
+      "slug": "flame-ergonomic-chair",
+      "name": "Flame Ergonomic Chair"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-flamingo-ergonomic-chair",
+      "slug": "flamingo-ergonomic-chair",
+      "name": "Flamingo Ergonomic Chair"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-flea",
+      "slug": "flea",
+      "name": "Flea Ergonomic Series"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-honda-ergonomic-chair",
+      "slug": "honda-ergonomic-chair",
+      "name": "Honda Ergonomic Chair"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-marvel-ergonomic-chair",
+      "slug": "marvel-ergonomic-chair",
+      "name": "Marvel Ergonomic Chair"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-matrix-ergonomic-chair",
+      "slug": "matrix-ergonomic-chair",
+      "name": "Matrix Ergonomic Chair"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-mono-ergonomic-chair",
+      "slug": "mono-ergonomic-chair",
+      "name": "Mono Ergonomic Chair"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-moscow",
+      "slug": "moscow",
+      "name": "Moscow Ergonomic Chair"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-navy-ergonomic-chair",
+      "slug": "navy-ergonomic-chair",
+      "name": "Navy Ergonomic Chair"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-ola-roman",
+      "slug": "ola-roman",
+      "name": "Ola & Roman Ergonomic Chairs"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-pine-pony-windy",
+      "slug": "pine-pony-windy",
+      "name": "Pine, Pony & Windy Ergonomic Chairs"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-robo-ergonomic-chair",
+      "slug": "robo-ergonomic-chair",
+      "name": "Robo Ergonomic Chair"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-tokyo",
+      "slug": "tokyo",
+      "name": "Tokyo Ergonomic Series"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-ud",
+      "slug": "ud",
+      "name": "UD Ergonomic Chair"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-vivo-ergonomic-chair",
+      "slug": "vivo-ergonomic-chair",
+      "name": "Vivo Ergonomic Chair"
+    },
+    {
+      "id": "product-chairs-ergonomic-series-zara-ergonomic-chair",
+      "slug": "zara-ergonomic-chair",
+      "name": "Zara Ergonomic Chair"
+    },
+    {
+      "id": "product-chairs-executive-series-amigo",
+      "slug": "amigo",
+      "name": "Amigo Executive Chair"
+    },
+    {
+      "id": "product-chairs-executive-series-commander-chair",
+      "slug": "commander-chair",
+      "name": "Commander Executive Chair"
+    },
+    {
+      "id": "product-chairs-executive-series-irana",
+      "slug": "irana",
+      "name": "Irana Executive Chair"
+    },
+    {
+      "id": "product-chairs-executive-series-korean-chair",
+      "slug": "korean-chair",
+      "name": "Korean Executive Chair"
+    },
+    {
+      "id": "product-chairs-executive-series-makson-executive-chair",
+      "slug": "makson-executive-chair",
+      "name": "Makson Executive Chair"
+    },
+    {
+      "id": "product-chairs-executive-series-mini-ginger-dolphin-executive-chair",
+      "slug": "mini-ginger-dolphin-executive-chair",
+      "name": "Mini / Ginger / Dolphin Executive Chair"
+    },
+    {
+      "id": "product-chairs-executive-series-mini-markson",
+      "slug": "mini-markson",
+      "name": "Mini Markson Executive Chair"
+    },
+    {
+      "id": "product-chairs-executive-series-nano-executive-chair",
+      "slug": "nano-executive-chair",
+      "name": "Nano Executive Chair"
+    },
+    {
+      "id": "product-chairs-executive-series-phantom-executive-chair",
+      "slug": "phantom-executive-chair",
+      "name": "Phantom Executive Chair"
+    },
+    {
+      "id": "product-chairs-executive-series-premier-executive-chair",
+      "slug": "premier-executive-chair",
+      "name": "Premier Executive Chair"
+    },
+    {
+      "id": "product-chairs-executive-series-skoda-executive-chair",
+      "slug": "skoda-executive-chair",
+      "name": "Skoda Executive Chair"
+    },
+    {
+      "id": "product-chairs-executive-series-supreme",
+      "slug": "supreme",
+      "name": "Supreme Executive Chair"
+    },
+    {
+      "id": "product-chairs-executive-series-venus-rev-ud",
+      "slug": "venus-rev-ud",
+      "name": "Venus Rev UD Executive Chair"
+    },
+    {
+      "id": "product-chairs-executive-series-wilson-executive-chair",
+      "slug": "wilson-executive-chair",
+      "name": "Wilson Executive Chair"
+    },
+    {
+      "id": "product-chairs-visitor-series-visitor-classic-chair",
+      "slug": "visitor-classic-chair",
+      "name": "Visitor Classic Chair"
+    },
+    {
+      "id": "product-chairs-visitor-series-visitor-flora",
+      "slug": "visitor-flora",
+      "name": "Flora Visitor Chair"
+    },
+    {
+      "id": "product-chairs-visitor-series-visitor-liberty",
+      "slug": "visitor-liberty",
+      "name": "Liberty Visitor Chair"
+    },
+    {
+      "id": "product-chairs-visitor-series-visitor-regency",
+      "slug": "visitor-regency",
+      "name": "Regency Visitor Chair"
+    },
+    {
+      "id": "product-chairs-visitor-series-visitor-titan",
+      "slug": "visitor-titan",
+      "name": "Titan Visitor Chair"
+    },
+    {
+      "id": "product-chairs-visitor-series-visitor-venus-vista-chair",
+      "slug": "visitor-venus-vista-chair",
+      "name": "Visitor Venus & Vista Chair"
+    }
+  ]
+}

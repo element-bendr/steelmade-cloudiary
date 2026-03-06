@@ -1,0 +1,1163 @@
+{
+  "generatedAt": "2026-03-06T09:04:38.037Z",
+  "sourcePdf": "/mnt/shared/projects/node/steelmade-cloudiary-chairs/docs/2026 chairs docs/STEELMADE CHAIR NEW 2026.pdf",
+  "entries": [
+    {
+      "code": "IC-01",
+      "rawName": "TYCOON HB S.DX",
+      "baseName": "Tycoon",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "code": "IC-02",
+      "rawName": "TYCOON MB S.DX",
+      "baseName": "Tycoon",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "code": "IC-04",
+      "rawName": "GRANDEZZA HB S.DX",
+      "baseName": "Grandezza",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "code": "IC-05",
+      "rawName": "GRANDEZZA MB S.DX",
+      "baseName": "Grandezza",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "code": "IC-06",
+      "rawName": "BOSTON HB S.DX",
+      "baseName": "Boston",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "code": "IC-07",
+      "rawName": "BOSTON MB S.DX",
+      "baseName": "Boston",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "code": "IC-08",
+      "rawName": "MONARCH HB",
+      "baseName": "Monarch",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "code": "IC-09",
+      "rawName": "MONARCH MB",
+      "baseName": "Monarch",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "code": "IC-12",
+      "rawName": "KOTAK HB",
+      "baseName": "Kotak",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "code": "IC-13",
+      "rawName": "KOTAK MB",
+      "baseName": "Kotak",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "code": "IC-32",
+      "rawName": "PERK SHYNL",
+      "baseName": "Perk Shynl",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "code": "IC-33",
+      "rawName": "PERK",
+      "baseName": "Perk",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "code": "IC-34",
+      "rawName": "BENZ",
+      "baseName": "Benz",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "code": "IC-36",
+      "rawName": "DUSTER HB",
+      "baseName": "Duster",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "code": "IC-39",
+      "rawName": "LUXURY HB",
+      "baseName": "Luxury",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "code": "IC-40",
+      "rawName": "LUXURY MB",
+      "baseName": "Luxury",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "code": "IC-41",
+      "rawName": "SIEMENS HB",
+      "baseName": "Siemens",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "code": "IC-42",
+      "rawName": "SIEMENS MB",
+      "baseName": "Siemens",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "code": "IC-43",
+      "rawName": "VERNA HB",
+      "baseName": "Verna",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "code": "IC-44",
+      "rawName": "VERNA MB",
+      "baseName": "Verna",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "code": "IC-45",
+      "rawName": "SAHARA HB",
+      "baseName": "Sahara",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "code": "IC-46",
+      "rawName": "SAHARA MB",
+      "baseName": "Sahara",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "code": "IC-47",
+      "rawName": "KOREAN HB",
+      "baseName": "Korean",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "code": "IC-48",
+      "rawName": "KOREAN MB",
+      "baseName": "Korean",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "code": "IC-51",
+      "rawName": "LX HB",
+      "baseName": "LX",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "code": "IC-52",
+      "rawName": "LX MB",
+      "baseName": "LX",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "code": "IC-53",
+      "rawName": "AMAZON HB",
+      "baseName": "Amazon",
+      "pages": [
+        21,
+        26
+      ]
+    },
+    {
+      "code": "IC-54",
+      "rawName": "AMAZON MB",
+      "baseName": "Amazon",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "code": "IC-59",
+      "rawName": "SYNDICATE HB",
+      "baseName": "Syndicate",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "code": "IC-60",
+      "rawName": "SYNDICATE MB",
+      "baseName": "Syndicate",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "code": "IC-70",
+      "rawName": "PHANTOM HB",
+      "baseName": "Phantom",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "code": "IC-71",
+      "rawName": "PHANTOM MB",
+      "baseName": "Phantom",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "code": "IC-72",
+      "rawName": "PHANTOM VISITOR",
+      "baseName": "Phantom",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "code": "IC-79",
+      "rawName": "PREMIER HB",
+      "baseName": "Premier",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "code": "IC-80",
+      "rawName": "PREMIER MB",
+      "baseName": "Premier",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "code": "IC-81",
+      "rawName": "PREMIER VISITOR",
+      "baseName": "Premier",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "code": "IC-83",
+      "rawName": "JET LB",
+      "baseName": "Jet",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "code": "IC-85",
+      "rawName": "LEZER LB",
+      "baseName": "Lezer",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "code": "IC-94",
+      "rawName": "SKODA HB",
+      "baseName": "Skoda",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "code": "IC-95",
+      "rawName": "SKODA LB",
+      "baseName": "Skoda",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "code": "IC-96",
+      "rawName": "SKODA VISITOR",
+      "baseName": "Skoda",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "code": "IC-114",
+      "rawName": "MARVEL HB",
+      "baseName": "Marvel",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "code": "IC-123",
+      "rawName": "HONDA",
+      "baseName": "Honda",
+      "pages": [
+        42
+      ]
+    },
+    {
+      "code": "IC-139",
+      "rawName": "POLO WHITE",
+      "baseName": "Polo",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "code": "IC-143",
+      "rawName": "ZARA BLACK",
+      "baseName": "Zara",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "code": "IC-202",
+      "rawName": "BUNNY DX",
+      "baseName": "Bunny DX",
+      "pages": [
+        55
+      ]
+    },
+    {
+      "code": "IC-206",
+      "rawName": "BETA CUSHION",
+      "baseName": "Beta Cushion",
+      "pages": [
+        56
+      ]
+    },
+    {
+      "code": "IC-208",
+      "rawName": "PETAL",
+      "baseName": "Petal",
+      "pages": [
+        63
+      ]
+    },
+    {
+      "code": "IC-210",
+      "rawName": "MARIO",
+      "baseName": "Mario",
+      "pages": [
+        63
+      ]
+    },
+    {
+      "code": "IC-212",
+      "rawName": "GEM",
+      "baseName": "Gem",
+      "pages": [
+        63
+      ]
+    },
+    {
+      "code": "IC-213",
+      "rawName": "ROSE",
+      "baseName": "Rose",
+      "pages": [
+        63
+      ]
+    },
+    {
+      "code": "IC-225",
+      "rawName": "ROSE COUNTER",
+      "baseName": "Rose Counter",
+      "pages": [
+        69
+      ]
+    },
+    {
+      "code": "IC-227",
+      "rawName": "LBT COUNTER",
+      "baseName": "Lbt Counter",
+      "pages": [
+        69
+      ]
+    },
+    {
+      "code": "IC-228",
+      "rawName": "LBT COUNTER ARMS",
+      "baseName": "Lbt Counter Arms",
+      "pages": [
+        69
+      ]
+    },
+    {
+      "code": "IC-242",
+      "rawName": "4 SEATER ROYAL SOFA",
+      "baseName": "4 Seater Royal Sofa",
+      "pages": [
+        66
+      ]
+    },
+    {
+      "code": "IC-249",
+      "rawName": "TRIDENT HB S.DX",
+      "baseName": "Trident",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "code": "IC-250",
+      "rawName": "TRIDENT MB S.DX",
+      "baseName": "Trident",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "code": "IC-251",
+      "rawName": "MILANO HB S.DX",
+      "baseName": "Milano",
+      "pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "code": "IC-252",
+      "rawName": "MILANO MB S.DX",
+      "baseName": "Milano",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "code": "IC-253",
+      "rawName": "NISSAN HB",
+      "baseName": "Nissan",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "code": "IC-254",
+      "rawName": "NISSAN MB",
+      "baseName": "Nissan",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "code": "IC-255",
+      "rawName": "BIG BOSS GOLD HB",
+      "baseName": "Big Boss Gold",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "code": "IC-256",
+      "rawName": "BIG BOSS GOLD MB",
+      "baseName": "Big Boss Gold",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "code": "IC-263",
+      "rawName": "ROBO BLACK",
+      "baseName": "Robo",
+      "pages": [
+        43
+      ]
+    },
+    {
+      "code": "IC-264",
+      "rawName": "BB MB",
+      "baseName": "BB",
+      "pages": [
+        41
+      ]
+    },
+    {
+      "code": "IC-265",
+      "rawName": "FLAME BLACK",
+      "baseName": "Flame",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "code": "IC-281",
+      "rawName": "LILY",
+      "baseName": "Lily",
+      "pages": [
+        64
+      ]
+    },
+    {
+      "code": "IC-287",
+      "rawName": "WAVE",
+      "baseName": "Wave",
+      "pages": [
+        64
+      ]
+    },
+    {
+      "code": "IC-288",
+      "rawName": "UNION",
+      "baseName": "Union",
+      "pages": [
+        64
+      ]
+    },
+    {
+      "code": "IC-289",
+      "rawName": "MINT",
+      "baseName": "Mint",
+      "pages": [
+        64
+      ]
+    },
+    {
+      "code": "IC-290",
+      "rawName": "OPPO",
+      "baseName": "Oppo",
+      "pages": [
+        64
+      ]
+    },
+    {
+      "code": "IC-292",
+      "rawName": "PLANET B",
+      "baseName": "Planet B",
+      "pages": [
+        64
+      ]
+    },
+    {
+      "code": "IC-293",
+      "rawName": "PLANET C",
+      "baseName": "Planet C",
+      "pages": [
+        64
+      ]
+    },
+    {
+      "code": "IC-294",
+      "rawName": "MODERN COUNTER",
+      "baseName": "Modern Counter",
+      "pages": [
+        69
+      ]
+    },
+    {
+      "code": "IC-302",
+      "rawName": "OBAMA HB",
+      "baseName": "Obama",
+      "pages": [
+        16,
+        17
+      ]
+    },
+    {
+      "code": "IC-303",
+      "rawName": "OBAMA MB",
+      "baseName": "Obama",
+      "pages": [
+        17
+      ]
+    },
+    {
+      "code": "IC-308",
+      "rawName": "INDEX VIS",
+      "baseName": "Index Vis",
+      "pages": [
+        51
+      ]
+    },
+    {
+      "code": "IC-309",
+      "rawName": "INDEX",
+      "baseName": "Index",
+      "pages": [
+        51
+      ]
+    },
+    {
+      "code": "IC-310",
+      "rawName": "BUBBLE VISI",
+      "baseName": "Bubble",
+      "pages": [
+        51
+      ]
+    },
+    {
+      "code": "IC-311",
+      "rawName": "BUBBLE VISI",
+      "baseName": "Bubble",
+      "pages": [
+        51
+      ]
+    },
+    {
+      "code": "IC-312",
+      "rawName": "BUBBLE VISI",
+      "baseName": "Bubble",
+      "pages": [
+        51
+      ]
+    },
+    {
+      "code": "IC-317",
+      "rawName": "BERLIN HB WHITE S.DX",
+      "baseName": "Berlin",
+      "pages": [
+        28
+      ]
+    },
+    {
+      "code": "IC-318",
+      "rawName": "BERLIN MB WHITE S.DX",
+      "baseName": "Berlin",
+      "pages": [
+        28
+      ]
+    },
+    {
+      "code": "IC-319",
+      "rawName": "BERLIN HB BLACK S.DX",
+      "baseName": "Berlin",
+      "pages": [
+        28
+      ]
+    },
+    {
+      "code": "IC-320",
+      "rawName": "BERLIN MB BLACK S.DX",
+      "baseName": "Berlin",
+      "pages": [
+        28
+      ]
+    },
+    {
+      "code": "IC-321",
+      "rawName": "ROGER HB WHITE",
+      "baseName": "Roger",
+      "pages": [
+        29,
+        30
+      ]
+    },
+    {
+      "code": "IC-322",
+      "rawName": "ROGER MB WHITE",
+      "baseName": "Roger",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "code": "IC-323",
+      "rawName": "ROGER HB BLACK",
+      "baseName": "Roger",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "code": "IC-324",
+      "rawName": "ROGER MB BLACK",
+      "baseName": "Roger",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "code": "IC-328",
+      "rawName": "U & D HB BLACK",
+      "baseName": "U & D",
+      "pages": [
+        31
+      ]
+    },
+    {
+      "code": "IC-330",
+      "rawName": "U & D HB GREY",
+      "baseName": "U & D Grey",
+      "pages": [
+        31
+      ]
+    },
+    {
+      "code": "IC-335",
+      "rawName": "FLAMINGO HB BLACK",
+      "baseName": "Flamingo",
+      "pages": [
+        33
+      ]
+    },
+    {
+      "code": "IC-336",
+      "rawName": "FLAMINGO HB GREY",
+      "baseName": "Flamingo Grey",
+      "pages": [
+        33
+      ]
+    },
+    {
+      "code": "IC-337",
+      "rawName": "FLAMINGO HB GREEN",
+      "baseName": "Flamingo Green",
+      "pages": [
+        32
+      ]
+    },
+    {
+      "code": "IC-343",
+      "rawName": "DC HB BLACK",
+      "baseName": "DC",
+      "pages": [
+        34
+      ]
+    },
+    {
+      "code": "IC-345",
+      "rawName": "DC HB GREY",
+      "baseName": "DC Grey",
+      "pages": [
+        34
+      ]
+    },
+    {
+      "code": "IC-348",
+      "rawName": "MERCEDES HB BLACK",
+      "baseName": "Mercedes",
+      "pages": [
+        37
+      ]
+    },
+    {
+      "code": "IC-349",
+      "rawName": "MERCEDES HB GREY",
+      "baseName": "Mercedes Grey",
+      "pages": [
+        37
+      ]
+    },
+    {
+      "code": "IC-350",
+      "rawName": "MERCEDES MB GREY",
+      "baseName": "Mercedes Grey",
+      "pages": [
+        37
+      ]
+    },
+    {
+      "code": "IC-351",
+      "rawName": "MERCEDES VISI GREY",
+      "baseName": "Mercedes Grey",
+      "pages": [
+        37
+      ]
+    },
+    {
+      "code": "IC-356",
+      "rawName": "COLABA VIS GREY",
+      "baseName": "Colaba Vis Grey",
+      "pages": [
+        50
+      ]
+    },
+    {
+      "code": "IC-357",
+      "rawName": "EV HB BLACK",
+      "baseName": "EV",
+      "pages": [
+        38
+      ]
+    },
+    {
+      "code": "IC-358",
+      "rawName": "EV HB GREY",
+      "baseName": "EV Grey",
+      "pages": [
+        38
+      ]
+    },
+    {
+      "code": "IC-363",
+      "rawName": "GLORY",
+      "baseName": "Glory",
+      "pages": [
+        55
+      ]
+    },
+    {
+      "code": "IC-365",
+      "rawName": "OMEGA",
+      "baseName": "Omega",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "code": "IC-366",
+      "rawName": "AUSTRIA BLACK L",
+      "baseName": "Austria L",
+      "pages": [
+        55
+      ]
+    },
+    {
+      "code": "IC-367",
+      "rawName": "AUSTRIA WHITE L",
+      "baseName": "Austria L",
+      "pages": [
+        55
+      ]
+    },
+    {
+      "code": "IC-368",
+      "rawName": "PROFIT HB",
+      "baseName": "Profit",
+      "pages": [
+        22
+      ]
+    },
+    {
+      "code": "IC-369",
+      "rawName": "FRANCE",
+      "baseName": "France",
+      "pages": [
+        64
+      ]
+    },
+    {
+      "code": "IC-370",
+      "rawName": "POLO BLACK",
+      "baseName": "Polo",
+      "pages": [
+        45
+      ]
+    },
+    {
+      "code": "IC-371",
+      "rawName": "POLO BLACK",
+      "baseName": "Polo",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "code": "IC-372",
+      "rawName": "MIRRA WITH ARMS",
+      "baseName": "Mirra With Arms",
+      "pages": [
+        54,
+        58
+      ]
+    },
+    {
+      "code": "IC-373",
+      "rawName": "MIRRA W/O ARMS",
+      "baseName": "Mirra W/o Arms",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "code": "IC-375",
+      "rawName": "CAMLIN",
+      "baseName": "Camlin",
+      "pages": [
+        56
+      ]
+    },
+    {
+      "code": "IC-376",
+      "rawName": "TITANIUM VISITOR",
+      "baseName": "Titanium",
+      "pages": [
+        37
+      ]
+    },
+    {
+      "code": "IC-377",
+      "rawName": "SETU VISI BLACK",
+      "baseName": "Setu",
+      "pages": [
+        37
+      ]
+    },
+    {
+      "code": "IC-378",
+      "rawName": "SETU VISI GREY",
+      "baseName": "Setu Grey",
+      "pages": [
+        37
+      ]
+    },
+    {
+      "code": "IC-379",
+      "rawName": "DORIS HB BLACK",
+      "baseName": "Doris",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "code": "IC-380",
+      "rawName": "SOUL MB BLUE",
+      "baseName": "Soul Blue",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "code": "IC-380",
+      "rawName": "SOUL MB RED",
+      "baseName": "Soul Red",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "code": "IC-381",
+      "rawName": "SMART",
+      "baseName": "Smart",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "code": "IC-382",
+      "rawName": "SMART COUNTER",
+      "baseName": "Smart Counter",
+      "pages": [
+        69
+      ]
+    },
+    {
+      "code": "IC-383",
+      "rawName": "ROYAL P BASE",
+      "baseName": "Royal P Base",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "code": "IC-384",
+      "rawName": "ROYAL REV",
+      "baseName": "Royal Rev",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "code": "IC-385",
+      "rawName": "ROYAL COUNTER",
+      "baseName": "Royal Counter",
+      "pages": [
+        69
+      ]
+    },
+    {
+      "code": "IC-388",
+      "rawName": "PRIME CUSHION",
+      "baseName": "Prime Cushion",
+      "pages": [
+        58
+      ]
+    },
+    {
+      "code": "IC-391",
+      "rawName": "OXI COUNTER",
+      "baseName": "Oxi Counter",
+      "pages": [
+        68
+      ]
+    },
+    {
+      "code": "IC-392",
+      "rawName": "OM REV COUNTER",
+      "baseName": "OM Rev Counter",
+      "pages": [
+        68
+      ]
+    },
+    {
+      "code": "IC-394",
+      "rawName": "AMAN FIX COUNTER",
+      "baseName": "Aman Fix Counter",
+      "pages": [
+        68
+      ]
+    },
+    {
+      "code": "IC-395",
+      "rawName": "AKASA COUNTER",
+      "baseName": "Akasa Counter",
+      "pages": [
+        68
+      ]
+    },
+    {
+      "code": "IC-397",
+      "rawName": "MATA COUNTER",
+      "baseName": "Mata Counter",
+      "pages": [
+        68
+      ]
+    },
+    {
+      "code": "IC-398",
+      "rawName": "PAPA CHAIR",
+      "baseName": "Papa Chair",
+      "pages": [
+        69
+      ]
+    },
+    {
+      "code": "IC-399",
+      "rawName": "PAPA REV COUNTER",
+      "baseName": "Papa Rev Counter",
+      "pages": [
+        69
+      ]
+    },
+    {
+      "code": "IC-402",
+      "rawName": "MACK HB BLACK",
+      "baseName": "Mack",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "code": "IC-403",
+      "rawName": "CLAY FOLDING CHAIR",
+      "baseName": "Clay Folding Chair",
+      "pages": [
+        59
+      ]
+    },
+    {
+      "code": "IC-404",
+      "rawName": "MOMO MASSAGE",
+      "baseName": "Momo Massage",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "code": "IC-405",
+      "rawName": "MERRY HB BLACK",
+      "baseName": "Merry",
+      "pages": [
+        36
+      ]
+    },
+    {
+      "code": "IC-406",
+      "rawName": "MERRY HB GREY",
+      "baseName": "Merry Grey",
+      "pages": [
+        36
+      ]
+    },
+    {
+      "code": "IC-407",
+      "rawName": "CASPER",
+      "baseName": "Casper",
+      "pages": [
+        57
+      ]
+    },
+    {
+      "code": "IC-408",
+      "rawName": "PIPER HB BLACK",
+      "baseName": "Piper",
+      "pages": [
+        36
+      ]
+    },
+    {
+      "code": "IC-410",
+      "rawName": "PIPER HB GREEN",
+      "baseName": "Piper Green",
+      "pages": [
+        36
+      ]
+    },
+    {
+      "code": "IC-411",
+      "rawName": "COMET HB",
+      "baseName": "Comet",
+      "pages": [
+        36
+      ]
+    },
+    {
+      "code": "IC-412",
+      "rawName": "SOUL HB BLACK",
+      "baseName": "Soul",
+      "pages": [
+        35
+      ]
+    },
+    {
+      "code": "IC-413",
+      "rawName": "SOUL MB BLACK",
+      "baseName": "Soul",
+      "pages": [
+        35
+      ]
+    }
+  ]
+}

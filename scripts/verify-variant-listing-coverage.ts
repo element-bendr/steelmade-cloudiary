@@ -91,8 +91,15 @@ async function verifySingleListing(path: string): Promise<ListingCheckResult> {
       const beforeY = await page.evaluate(() => window.scrollY);
 
       await nextButton.click();
-      await page.waitForTimeout(750);
-      const nextStatus = await pageStatus.textContent();
+      let nextStatus = await pageStatus.textContent();
+      for (let attempt = 0; attempt < 6 && nextStatus === previousStatus; attempt += 1) {
+        // Hydration/dev overlays can delay click handlers in dev mode.
+        // Retry status polling briefly before failing pagination behavior.
+        // eslint-disable-next-line no-await-in-loop
+        await page.waitForTimeout(500);
+        // eslint-disable-next-line no-await-in-loop
+        nextStatus = await pageStatus.textContent();
+      }
       if (!nextStatus || nextStatus === previousStatus) {
         result.passed = false;
         result.failures.push("Pagination next click did not advance page status");
