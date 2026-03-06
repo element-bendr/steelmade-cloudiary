@@ -43,6 +43,17 @@ type FamilyPlan = {
   strategy: "image-family" | "name-family";
 };
 
+type ResidualCandidate = {
+  id: string;
+  slug: string;
+  name: string;
+  category: string;
+  series: string;
+  publicId?: string;
+  signal: "strong" | "weak";
+  unresolvedReason: "no-family-match";
+};
+
 const sanityClient = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "",
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
@@ -72,6 +83,9 @@ const VARIANT_RULES: Array<{
     test: (name, slug) => /\bvisitor\b|\bvisi\b/i.test(name) || /-(visitor|visi)$/.test(slug),
   },
 ];
+
+const STRONG_VARIANT_SIGNAL = /\b(high[\s-]*back|mid[\s-]*back|low[\s-]*back|\bhb\b|\bmb\b|\blb\b|castor|writing[\s-]*pad|with[\s-]*arms|without[\s-]*arms|w\/o[\s-]*arms)\b/i;
+const WEAK_VARIANT_SIGNAL = /\b(visitor|visi|cushion|pad)\b/i;
 
 function extractVariantLabel(row: ProductRow): string | null {
   const rule = VARIANT_RULES.find((entry) => entry.test(row.name || "", row.slug || ""));
@@ -221,8 +235,46 @@ async function run() {
     }
   `);
 
-  const candidateRows = products.filter((row) => row.variantCount === 0 && familyKey(row));
   const onlyNonVariantRows = products.filter((row) => row.variantCount === 0);
+  const imageFamilyIndexForSignals = new Map<string, ProductRow[]>();
+  onlyNonVariantRows.forEach((row) => {
+    const imageFamily = extractImageFamily(row.publicId);
+    if (!imageFamily) return;
+    const key = `${normalizeSeries(row.series)}::${imageFamily}`;
+    const existing = imageFamilyIndexForSignals.get(key) || [];
+    existing.push(row);
+    imageFamilyIndexForSignals.set(key, existing);
+  });
+
+  const candidateRows = onlyNonVariantRows.filter((row) => {
+    const hasFamilyKey = Boolean(familyKey(row));
+    if (!hasFamilyKey) return false;
+
+    const name = `${row.name || ""} ${row.slug || ""}`;
+    const strong = STRONG_VARIANT_SIGNAL.test(name);
+    if (strong) return true;
+
+    if (!WEAK_VARIANT_SIGNAL.test(name)) return false;
+    const imageFamily = extractImageFamily(row.publicId);
+    if (!imageFamily) return false;
+    const key = `${normalizeSeries(row.series)}::${imageFamily}`;
+    const siblings = imageFamilyIndexForSignals.get(key) || [];
+    return siblings.length >= 2;
+  });
+  const residualCandidates: ResidualCandidate[] = candidateRows.map((row) => {
+    const name = `${row.name || ""} ${row.slug || ""}`;
+    const signal: ResidualCandidate["signal"] = STRONG_VARIANT_SIGNAL.test(name) ? "strong" : "weak";
+    return {
+      id: row.id,
+      slug: row.slug,
+      name: row.name,
+      category: row.category,
+      series: row.series,
+      publicId: row.publicId,
+      signal,
+      unresolvedReason: "no-family-match",
+    };
+  });
   const familyPlans: FamilyPlan[] = [];
   const usedIds = new Set<string>();
 
@@ -274,9 +326,13 @@ async function run() {
 
   const bySeries: Record<string, number> = {};
   const byStrategy: Record<string, number> = {};
+  const candidateBySeries: Record<string, number> = {};
   familyPlans.forEach((plan) => {
     bySeries[plan.series] = (bySeries[plan.series] || 0) + 1;
     byStrategy[plan.strategy] = (byStrategy[plan.strategy] || 0) + 1;
+  });
+  residualCandidates.forEach((candidate) => {
+    candidateBySeries[candidate.series] = (candidateBySeries[candidate.series] || 0) + 1;
   });
 
   const totalProducts = familyPlans.reduce((sum, plan) => sum + plan.variants.length, 0);
@@ -287,13 +343,16 @@ async function run() {
     generatedAt: new Date().toISOString(),
     summary: {
       candidateProducts: candidateRows.length,
+      unresolvedCandidates: residualCandidates.length,
       plannedFamilies: consolidatedProducts,
       productsInFamilies: totalProducts,
       potentialSkuReduction: reduction,
       bySeries,
       byStrategy,
+      candidateBySeries,
     },
     families: familyPlans,
+    residualCandidates,
   };
 
   const outPath = "chair-family-canonicalization-plan.json";
