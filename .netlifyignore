@@ -28,6 +28,8 @@ history.md
 progress.md
 planner.md
 tasks.md
+PHASE-*.md
+SESSION-*.md
 
 # Analysis / execution artifacts (large JSON outputs)
 *-analysis.json
@@ -51,4 +53,3 @@ fix_*.js
 edit_tasks.mjs
 *.ps1
 *.bat
-
