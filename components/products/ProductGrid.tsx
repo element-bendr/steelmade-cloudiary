@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useLayoutEffect, useRef, useState } from "react"
 import { Button } from "../ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import type { ExtendedProductData } from '../../lib/data/product-types';
@@ -17,20 +17,38 @@ interface ProductGridProps {
 
 export function ProductGrid({ products, productsPerPage = 8, category, seriesId }: ProductGridProps) {
   const [currentPage, setCurrentPage] = useState(1)
+  const paginationRef = useRef<HTMLDivElement | null>(null);
+  const restorePaginationTopRef = useRef<number | null>(null);
   const totalPages = Math.ceil(products.length / productsPerPage)
   
   const startIndex = (currentPage - 1) * productsPerPage
   const endIndex = startIndex + productsPerPage
   const currentProducts = products.slice(startIndex, endIndex)
   
+  useLayoutEffect(() => {
+    if (restorePaginationTopRef.current === null) return;
+    if (!paginationRef.current) {
+      restorePaginationTopRef.current = null;
+      return;
+    }
+    const currentTop = paginationRef.current.getBoundingClientRect().top;
+    const delta = restorePaginationTopRef.current - currentTop;
+    if (Math.abs(delta) > 1) {
+      window.scrollBy({ top: delta, behavior: "auto" });
+    }
+    restorePaginationTopRef.current = null;
+  }, [currentPage]);
+
   const nextPage = () => {
     if (currentPage < totalPages) {
+      restorePaginationTopRef.current = paginationRef.current?.getBoundingClientRect().top ?? null;
       setCurrentPage(currentPage + 1)
     }
   }
   
   const prevPage = () => {
     if (currentPage > 1) {
+      restorePaginationTopRef.current = paginationRef.current?.getBoundingClientRect().top ?? null;
       setCurrentPage(currentPage - 1)
     }
   }
@@ -47,10 +65,16 @@ export function ProductGrid({ products, productsPerPage = 8, category, seriesId 
   }
   
   return (
-    <div className="space-y-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    <div className="space-y-8" data-testid="product-grid">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" data-testid="product-grid-cards">
         {currentProducts.map((product: any) => (
-          <div key={product.id} className="rounded-lg overflow-hidden transition-shadow hover:border hover:border-accent bg-white">
+          <div
+            key={product.id}
+            className="rounded-lg overflow-hidden transition-shadow hover:border hover:border-accent bg-white"
+            data-testid="product-card"
+            data-product-name={product.name}
+            data-product-id={product.id}
+          >
             <Link href={`/${category || product.category}/${seriesId || product.seriesId}/${product.id}`}> 
               <div className="group">
                 <div className="relative h-64 w-full overflow-hidden bg-neutral-100 flex items-center justify-center">
@@ -80,17 +104,18 @@ export function ProductGrid({ products, productsPerPage = 8, category, seriesId 
       </div>
       
       {totalPages > 1 && (
-        <div className="flex items-center justify-between mt-8">
+        <div className="flex items-center justify-between mt-8" data-testid="product-grid-pagination" ref={paginationRef}>
           <Button 
             onClick={prevPage} 
             disabled={currentPage === 1}
             variant="outline"
             className="flex items-center gap-2"
+            data-testid="product-grid-prev"
           >
             <ChevronLeft className="h-4 w-4" /> Previous
           </Button>
           
-          <div className="text-muted-foreground">
+          <div className="text-muted-foreground" data-testid="product-grid-page-status">
             Page {currentPage} of {totalPages}
           </div>
           
@@ -99,6 +124,7 @@ export function ProductGrid({ products, productsPerPage = 8, category, seriesId 
             disabled={currentPage === totalPages}
             variant="outline"
             className="flex items-center gap-2"
+            data-testid="product-grid-next"
           >
             Next <ChevronRight className="h-4 w-4" />
           </Button>
