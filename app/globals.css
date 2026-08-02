@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 10% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 10% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 10%;
+    --primary: 220 10% 10%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 10% 97%;
+    --secondary-foreground: 220 10% 10%;
+    --muted: 220 10% 97%;
+    --muted-foreground: 220 10% 40%;
+    --accent: 0 72% 42%; /* Minimalist red accent */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 10% 90%;
+    --input: 220 10% 90%;
+    --ring: 220 10% 10%;
+    --radius: 0.125rem; /* highly sharp minimalist radius (2px) */
+
+    /* Chart Colors */
+    --chart-1: 222.2 47.4% 11.2%;
+    --chart-2: 215.4 16.3% 46.9%;
+    --chart-3: 210 40% 96.1%;
+    --chart-4: 0 72% 42%;
+    --chart-5: 0 84.2% 60.2%;
+  }
+
+  .dark {
+    --background: 220 10% 4%;
+    --foreground: 0 0% 100%;
+    --card: 220 10% 7%;
+    --card-foreground: 0 0% 100%;
+    --popover: 220 10% 7%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 220 10% 10%;
+    --secondary: 220 10% 12%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 10% 12%;
+    --muted-foreground: 220 10% 60%;
+    --accent: 0 72% 42%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 10% 15%;
+    --input: 220 10% 15%;
+    --ring: 220 10% 30%;
+
+    /* Chart Colors - Dark Mode */
+    --chart-1: 210 40% 98%;
+    --chart-2: 215 20.2% 65.1%;
+    --chart-3: 217.2 32.6% 17.5%;
+    --chart-4: 0 72% 42%;
+    --chart-5: 0 62.8% 30.6%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Aurora keyframe animation removed for cleaner professional design */
+
+.prevent-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Morphism styles totally removed for minimal aesthetics */
+
+.dark-text-gradient {
+    @apply bg-gradient-to-r from-white to-red-300 text-transparent bg-clip-text;
+    text-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+}
+
+@keyframes fadeinup {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeinup {
+  animation: fadeinup 0.7s cubic-bezier(0.22,0.61,0.36,1) both;
+}

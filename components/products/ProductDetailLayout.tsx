@@ -1,0 +1,244 @@
+"use client";
+import React, { useState, useEffect } from 'react';
+import { Button } from "../ui/button";
+import { productStyles } from '../../lib/styles/productStyles';
+import Breadcrumbs from '../ui/Breadcrumbs';
+
+// Make sure we're properly importing all chair components
+import { 
+  ChairVariantSelector, 
+  ChairImageDisplay, 
+  ChairFeatureList,
+  ChairContactButton 
+} from '../chairs';
+
+interface ProductDetailLayoutProps {
+  product: {
+    id: string;
+    name: string;
+    description: string;
+    price?: string;
+    imageUrl: string;
+    seriesId: string; // Added for breadcrumb logic
+    category?: string;
+    variants?: Array<{
+      id?: string;
+      variantId?: string;
+      name: string;
+      imageUrl: string;
+    }>;
+    features?: string[];
+    gallery?: Array<{
+      url: string;
+      alt: string;
+    }>;
+  };
+  variantOptions?: {
+    initialVariant?: any;
+    onVariantChange?: (variant: any) => void;
+  };
+  contactOptions?: {
+    onContactClick?: () => void;
+    contactButtonText?: string;
+  };
+  layoutOptions?: {
+    imagePosition?: 'left' | 'right';
+    showMetaSection?: boolean;
+  };
+  renderCustomSection?: () => React.ReactNode;
+  className?: string;
+  children?: React.ReactNode;
+  categoryId?: string;
+  seriesId?: string;
+}
+
+export const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
+  product,
+  variantOptions = {},
+  contactOptions = {},
+  layoutOptions = { imagePosition: 'left', showMetaSection: false },
+  renderCustomSection,
+  className = '',
+  children,
+  categoryId,
+  seriesId,
+}) => {
+  const variants = product.variants || [];
+  const defaultVariant = variantOptions.initialVariant || (variants.length > 0 ? variants[0] : null);
+  
+  const [selectedVariant, setSelectedVariant] = useState<any>(defaultVariant);
+  const [showContactForm, setShowContactForm] = useState(false);
+
+  // Ensure we have a selected variant when component mounts
+  useEffect(() => {
+    if (!selectedVariant && defaultVariant) {
+      setSelectedVariant(defaultVariant);
+    }
+  }, [defaultVariant, selectedVariant]);
+
+  const handleVariantChange = (variant: any) => {
+    setSelectedVariant(variant);
+    if (variantOptions.onVariantChange) {
+      variantOptions.onVariantChange(variant);
+    }
+  };
+
+  const handleContactClick = () => {
+    setShowContactForm(true);
+    if (contactOptions.onContactClick) {
+      contactOptions.onContactClick();
+    }
+  };
+
+  // Handle case where product data is missing
+  if (!product) {
+    return (
+      <div className="py-12 text-center">
+        <h2 className="text-2xl font-bold text-red-700">Product Not Found</h2>
+        <p className="mt-4">The requested product could not be loaded.</p>
+      </div>
+    );
+  }
+
+  // Determine which image to display
+  const displayImage = selectedVariant?.imageUrl || product.imageUrl;
+  const imageAlt = selectedVariant 
+    ? `${product.name} - ${selectedVariant.name}` 
+    : product.name;
+  const imageClass = selectedVariant?.imageClass || '';
+  // Create grid layout based on image position
+  const gridClasses = layoutOptions.imagePosition === 'right' 
+    ? 'grid grid-cols-1 md:grid-cols-2 md:flex md:flex-row-reverse gap-8' 
+    : productStyles.layout.grid;
+
+  // Breadcrumb logic
+  // Dynamic breadcrumb logic
+  const breadcrumbItems: Array<{name: string, href?: string}> = [
+    { name: 'Home', href: '/' },
+  ];
+  
+  const activeCategory = categoryId || product.category;
+  const activeSeries = seriesId || product.seriesId;
+
+  if (activeCategory) {
+    let categoryHref = `/${activeCategory}`;
+    
+    // Legacy support for older path overrides if needed, left as simple fallback
+    if (categoryHref === '/workstations' || categoryHref === '/workstations/modular-furniture') {
+      categoryHref = '';
+    }
+    
+    breadcrumbItems.push({
+      name: activeCategory.replace(/-/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase()),
+      href: categoryHref || undefined
+    });
+
+    // Add series breadcrumb if present
+    if (activeSeries) {
+      let seriesHref = `/${activeCategory}/${activeSeries}`;
+      
+      if (seriesHref === '/workstations/modular-furniture' || seriesHref === '/workstations') {
+        seriesHref = '';
+      }
+      
+      breadcrumbItems.push({
+        name: activeSeries.replace(/-/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase()),
+        href: seriesHref || undefined
+      });
+    }
+  }
+
+  return (
+    <main className={productStyles.layout.container}>
+      <Breadcrumbs items={breadcrumbItems} />
+      <div className={`${gridClasses} ${className}`}>
+        {/* Product Image Section */}
+        {displayImage && (
+          <ChairImageDisplay 
+            imageUrl={displayImage}
+            alt={imageAlt}
+            className={`w-full ${imageClass}`}
+          />
+        )}
+        {/* Product Details Section */}
+        <div className={productStyles.layout.section}>
+          <h1 className={productStyles.typography.title}>{product.name}</h1>
+          {variants.length > 0 && selectedVariant && (
+            <div className="mb-4 flex flex-wrap items-center gap-2">
+              <span className="inline-flex items-center rounded-full border border-red-300 bg-red-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-red-700">
+                Selected variant: {selectedVariant.name}
+              </span>
+              <span className="inline-flex items-center rounded-full border border-neutral-300 bg-neutral-50 px-3 py-1 text-xs font-medium text-neutral-700">
+                {variants.length} options available
+              </span>
+            </div>
+          )}
+          <p className={productStyles.typography.description}>{product.description}</p>
+          {/* Variant Selector */}
+          {variants.length > 0 && selectedVariant && (
+            <ChairVariantSelector
+              variants={variants}
+              selectedVariant={selectedVariant}
+              onVariantChange={handleVariantChange}
+            />
+          )}
+          {/* Features List */}
+          {product.features && product.features.length > 0 && (
+            <ChairFeatureList features={product.features} className="mt-6" />
+          )}
+          {/* Contact Button */}
+          <ChairContactButton
+            onClick={handleContactClick}
+            selectedVariant={selectedVariant}
+            productName={product.name}
+            className="mt-6"
+          />
+          {/* Custom Section */}
+          {renderCustomSection && renderCustomSection()}
+        </div>
+      </div>
+      {/* Additional Children */}
+      {children}
+      {/* Contact Form (simplified) */}
+      {showContactForm && selectedVariant && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+          <div className="bg-white rounded-xl p-6 max-w-md w-full space-y-4">
+            <h2 className="text-2xl font-bold">Contact Sales</h2>
+            <p>
+              Interested in the {product.name} {selectedVariant && `(${selectedVariant.name})`}?
+              Fill out the form below and our sales team will get back to you.
+            </p>
+            <div className="space-y-4">
+              <div>
+                <label className={productStyles.components.form.label}>Full Name</label>
+                <input
+                  type="text"
+                  className={productStyles.components.form.input}
+                  placeholder="Your name"
+                />
+              </div>
+              <div>
+                <label className={productStyles.components.form.label}>Email</label>
+                <input
+                  type="email"
+                  className={productStyles.components.form.input}
+                  placeholder="your.email@example.com"
+                />
+              </div>
+              <div>
+                <label className={productStyles.components.form.label}>Message</label>
+                <textarea
+                  className={productStyles.components.form.input}
+                  placeholder="Your message"
+                />
+              </div>
+            </div>
+            <Button className="w-full mt-4">Send</Button>
+          </div>
+        </div>
+      )}
+    </main>
+  );
+};
+
+export default ProductDetailLayout;

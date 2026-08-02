@@ -1,0 +1,1 @@
+export { Slideshow, type SlideData, type SlideshowProps } from './Slideshow';

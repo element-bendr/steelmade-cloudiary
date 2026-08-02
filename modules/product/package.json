@@ -1,0 +1,17 @@
+{
+  "name": "@modules/product",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "dependencies": {
+    "@modules/shared": "workspace:*",
+    "@modules/image": "workspace:*",
+    "fp-ts": "^2.16.10",
+    "zod": "^3.25.62"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.3",
+    "typescript": "^5.2.2",
+    "@types/node": "^20.8.7"
+  }
+}
